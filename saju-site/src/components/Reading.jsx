@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState, Fragment } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { interpret } from '../saju/interpret.js';
+import { buildFaq } from '../saju/faq.js';
+import { buildGaeun } from '../saju/gaeun.js';
 import { READING_SOURCES } from '../saju/context.js';
 import { CATS, CAT_META, STEMS as KSTEMS, ELEMENTS as KEL, SINSAL as KSINSAL, TEN_GOD_GROUP } from '../data/knowledge.js';
 import { GLOSSARY } from '../data/glossary.js';
@@ -294,18 +296,59 @@ function buildPages(R, data) {
     </>
   ) });
 
-  pages.push({ id: 'advice', title: '조언과 개운법', terms: ['용신', '희신·기신·구신', '조후'], body: (
+  pages.push({ id: 'advice', title: '조언과 개운법 — 생활에서 운을 바꾸는 법', terms: ['용신', '희신·기신·구신·한신', '조후', '신살'], body: (
     <>
       <Callout><b>{R.advice[0]}</b></Callout>
       <Chips items={[{ label: `용신 ${y.el} — ${y.open.color}`, tone: 'good' }, { label: `${y.open.dir} 방향`, tone: 'good' }, { label: `숫자 ${y.open.num}`, tone: 'good' }, { label: `기신 ${y.gi} 환경 주의`, tone: 'bad' }]} />
       {R.advice.slice(1).map((p, i) => <P key={i} words={elWords}>{p}</P>)}
+      {buildGaeun(R, data).map((sec) => (
+        <Fragment key={sec.title}>
+          <Divider /><Sub>{sec.icon} {sec.title}</Sub>
+          {sec.chips?.length ? <Chips items={sec.chips} /> : null}
+          {sec.paras.map((p, i) => <P key={i} words={[...elWords, '조후', '한신', '요일', '일진']}>{p}</P>)}
+        </Fragment>
+      ))}
       <Divider /><Sub>이 풀이를 읽는 법</Sub>
       <P>사주는 정해진 운명이 아니라 타고난 기질과 흐름의 지도예요. 좋은 시기에는 과감하게, 낮은 시기에는 지키면서 가면 같은 길도 덜 헤매며 갈 수 있어요. 점수·그래프는 참고 지수이고 건강 문구는 진단이 아닌 생활 관리의 힌트예요.</P>
       <details className="bmore"><summary>참고 자료</summary>{READING_SOURCES.map((s) => <a key={s.url} className="srclink" href={s.url} target="_blank" rel="noreferrer">{s.title} ↗<small>{s.note}</small></a>)}<a className="srclink" href="https://doc.8-codes.com/docs/lecture/16/" target="_blank" rel="noreferrer">정해 만세력 · 격국 ↗</a><a className="srclink" href="https://www.sajuforum.com/01forum/nm/05_youngsin.php" target="_blank" rel="noreferrer">사주포럼 · 용신 ↗</a><a className="srclink" href="https://giunsa.com/blog/four-pillars-guide" target="_blank" rel="noreferrer">기운사 · 네 기둥 ↗</a></details>
     </>
   ) });
 
+  pages.push({ id: 'faq', title: '자주 묻는 질문 — 내 사주로 답하기', terms: ['대운·세운·월운', '용신', '삼재', '역마살', '도화살'], body: (
+    <>
+      <Callout>궁금한 질문을 누르면 <b>{name}의 사주와 올해·앞으로의 운</b>을 바탕으로 답을 보여 드려요.</Callout>
+      <FaqList items={buildFaq(R, data)} data={data} />
+      <p className="faq-note">답변은 위 풀이의 점수·흐름을 질문별로 다시 정리한 것이에요. 점수는 참고 지수이고 건강 문구는 진단이 아닌 생활 관리의 힌트예요.</p>
+    </>
+  ) });
+
   return pages.map((p, i) => ({ ...p, num: p.cover ? 0 : i }));
+}
+
+function FaqList({ items, data }) {
+  const [open, setOpen] = useState(() => new Set([items[0]?.id]));
+  const toggle = (id) => setOpen((prev) => { const n = new Set(prev); if (n.has(id)) n.delete(id); else n.add(id); return n; });
+  return (
+    <div className="faq">
+      {items.map((it) => {
+        const on = open.has(it.id);
+        const color = it.cat ? CAT_META[it.cat].color : '#c9962e';
+        return (
+          <div key={it.id} className={`faq-item ${on ? 'open' : ''}`}>
+            <button type="button" className="faq-q" aria-expanded={on} onClick={() => toggle(it.id)}><span className="ic">{it.icon}</span><span>{it.q}</span><span className="chev">⌄</span></button>
+            {on && (
+              <div className="faq-a">
+                <Callout>{it.lead}</Callout>
+                {it.chips?.length ? <Chips items={it.chips} /> : null}
+                {it.paras.map((p, i) => <P key={i} words={['용신', '기신', '희신', '삼재', '충', '원진', '도화', '역마', '지살', '관성', '재성', '인성', '식상', '비겁', '공망', '편관']}>{p}</P>)}
+                {it.months?.length ? <><Sub>{data.current.nowYear}년 열두 달 {it.cat ? `${it.cat}운` : '종합운'}</Sub><MonthBars months={it.months} color={color} nowMonth={data.current.nowMonth} getValue={it.cat ? (m) => m.luck.scores[it.cat] : undefined} /></> : null}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 function require_(data) { return KELBRANCH[data.pillars.day.branch]; }
 import { BRANCHES as KELBRANCH } from '../data/knowledge.js';

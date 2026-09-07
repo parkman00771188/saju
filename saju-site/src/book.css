@@ -108,3 +108,16 @@ html.book-open body { overflow-x: clip; }
 .pairrow.pick { background: var(--or-soft); } .pairrow .pt { margin-left: auto; font-size: 12px; color: var(--mute); } .pairrow .pt.on { color: #fff; background: var(--or); border-radius: 6px; padding: 2px 8px; font-weight: 700; }
 
 .pairrow.wrap { flex-wrap: wrap; } .pairrow.wrap .pt { flex: 1 1 100%; margin-left: 0; color: #555; line-height: 1.55; }
+
+/* 자주 묻는 질문 */
+.faq { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.faq-item { border: 1px solid var(--ln); border-radius: 14px; overflow: hidden; background: #fff; }
+.faq-item.open { border-color: #f4c9b3; box-shadow: 0 6px 18px -12px rgba(240, 98, 42, .45); }
+.faq-q { width: 100%; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 0; background: transparent; text-align: left; font-family: var(--sans); font-size: clamp(14.5px, 3.9vw, 16px); font-weight: 700; color: #2b2b2b; cursor: pointer; line-height: 1.4; }
+.faq-q .ic { font-size: 20px; flex: 0 0 auto; } .faq-q .chev { margin-left: auto; color: var(--or); font-size: 20px; line-height: 1; transition: transform .2s; }
+.faq-item.open .faq-q { color: var(--or); } .faq-item.open .faq-q .chev { transform: rotate(180deg); }
+.faq-a { padding: 0 16px 16px; border-top: 1px dashed var(--ln); }
+.faq-a .callout { margin: 14px 0 12px; font-size: clamp(14px, 3.7vw, 15px); }
+.faq-a .bp { font-size: clamp(13.5px, 3.6vw, 14.5px); }
+.faq-a .bsub { margin-top: 14px; font-size: clamp(14px, 3.7vw, 15px); }
+.faq-note { font-size: 12.5px; color: var(--mute); margin: 14px 0 0; line-height: 1.6; }
