@@ -316,7 +316,7 @@ function buildPages(R, data) {
 
   pages.push({ id: 'faq', title: '자주 묻는 질문 — 내 사주로 답하기', terms: ['대운·세운·월운', '용신', '삼재', '역마살', '도화살'], body: (
     <>
-      <Callout>궁금한 질문을 누르면 <b>{name}의 사주와 올해·앞으로의 운</b>을 바탕으로 답을 보여 드려요.</Callout>
+      <Callout>궁금한 질문을 누르면 <b>{name}의 사주와 올해·앞으로의 운</b>을 바탕으로 답을 보여 드려요. 시기 질문은 추천 연도마다 <b>좋은 달과 그 이유</b>를 함께 적었어요.</Callout>
       <FaqList items={buildFaq(R, data)} data={data} />
       <p className="faq-note">답변은 위 풀이의 점수·흐름을 질문별로 다시 정리한 것이에요. 점수는 참고 지수이고 건강 문구는 진단이 아닌 생활 관리의 힌트예요.</p>
     </>
@@ -332,7 +332,7 @@ function FaqList({ items, data }) {
     <div className="faq">
       {items.map((it) => {
         const on = open.has(it.id);
-        const color = it.cat ? CAT_META[it.cat].color : '#c9962e';
+        const color = (it.cat && CAT_META[it.cat]?.color) || '#c9962e';
         return (
           <div key={it.id} className={`faq-item ${on ? 'open' : ''}`}>
             <button type="button" className="faq-q" aria-expanded={on} onClick={() => toggle(it.id)}><span className="ic">{it.icon}</span><span>{it.q}</span><span className="chev">⌄</span></button>
@@ -341,7 +341,19 @@ function FaqList({ items, data }) {
                 <Callout>{it.lead}</Callout>
                 {it.chips?.length ? <Chips items={it.chips} /> : null}
                 {it.paras.map((p, i) => <P key={i} words={['용신', '기신', '희신', '삼재', '충', '원진', '도화', '역마', '지살', '관성', '재성', '인성', '식상', '비겁', '공망', '편관']}>{p}</P>)}
-                {it.months?.length ? <><Sub>{data.current.nowYear}년 열두 달 {it.cat ? `${it.cat}운` : '종합운'}</Sub><MonthBars months={it.months} color={color} nowMonth={data.current.nowMonth} getValue={it.cat ? (m) => m.luck.scores[it.cat] : undefined} /></> : null}
+                {it.timeline?.length ? (
+                  <div className="faq-years">
+                    {it.timeline.map((yc) => (
+                      <div key={yc.year} className="fy">
+                        <div className="fy-head"><b>{yc.year}년 {yc.text}</b><span className="fy-age">{yc.age}세</span><Score n={yc.score} color={color} /></div>
+                        <p className="fy-why">{yc.why}</p>
+                        {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
+                        {yc.avoid.length ? <p className="fy-avoid">피할 달: {yc.avoid.join(', ')}</p> : null}
+                        {yc.cautions.length ? <p className="fy-avoid">이 해 주의: {yc.cautions.join(' · ')}</p> : null}
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             )}
           </div>

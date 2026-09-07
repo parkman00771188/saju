@@ -136,7 +136,7 @@ export function interpret(data) {
       (yongEl === needEl ? ` 조후(계절)로 본 필요 기운 ${needEl}과 억부 용신이 일치하니 방향이 분명합니다 — ${needEl} 기운이 들어오는 때가 곧 큰 기회입니다.`
         : ` 조후로 본 필요 기운은 ${needEl}(${ELEMENT_KO[needEl]})이라 억부 용신과 다릅니다. 두 기운은 각각 "균형(${yongEl})"과 "온도(${needEl})"를 맡으니, 둘 중 어느 하나가 운으로 들어와도 삶이 편해지고 둘이 함께 오는 때가 가장 큰 기회입니다.`),
     open: D.YONG[yongEl],
-    openText: `${yongEl}(${ELEMENT_KO[yongEl]}) 기운을 생활에 두는 개운법 — 색은 ${D.YONG[yongEl].color}, 방향은 ${D.YONG[yongEl].dir}, 숫자는 ${D.YONG[yongEl].num}, 어울리는 일은 ${D.YONG[yongEl].job}, 습관은 ${D.YONG[yongEl].habit}. 반대로 기신 ${giEl}(${ELEMENT_KO[giEl]})이 지나친 환경은 피하세요 — ${D.YONG[yongEl].avoid}`,
+    openText: `${yongEl}(${ELEMENT_KO[yongEl]}) 기운을 생활에 두는 개운법 — 색은 ${D.YONG[yongEl].color}, 방향은 ${D.YONG[yongEl].dir}, 숫자는 ${D.YONG[yongEl].num}, 어울리는 일은 ${D.YONG[yongEl].job}, 습관은 ${D.YONG[yongEl].habit}. 반대로 기신 ${giEl}(${ELEMENT_KO[giEl]})이 지나친 환경 — ${D.YONG[giEl].color} 계열이 가득한 공간, ${D.YONG[giEl].dir} 방향에 오래 머무는 일, ${D.YONG[giEl].mean}만 좇는 생활 — 은 피하세요.`,
   };
 
   // ---------- 자리(궁)별 풀이 ----------

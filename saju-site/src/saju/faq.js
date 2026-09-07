@@ -1,41 +1,51 @@
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
-import { ELEMENT_KO } from './tables.js';
+import { ELEMENT_KO, STEMS, STEM_ELEMENT, STEM_KO, BRANCH_ANIMAL, BRANCH_YUKHAP, BRANCH_SAMHAP, BRANCH_CHUNG, BRANCH_WONJIN } from './tables.js';
 
-/** 해석 결과(R)와 원국(data)에서 자주 묻는 질문 10개의 답을 만든다. */
+/** 해석 결과(R)와 원국(data)에서 자주 묻는 질문 14개의 답을 만든다. 시기 질문은 연도 카드(그 해에 좋은 달과 이유)로 답한다. */
 const first = (s) => (s?.match(/^[^.!?]*[.!?]/) || [s || ''])[0];
 const uniq = (a) => [...new Set(a.filter(Boolean))];
 const mList = (ms) => ms.map((m) => `${m.monthNo}월`).join('·');
 const yList = (ys) => ys.map((y) => `${y.year}년(${y.text})`).join(', ');
 const scoreTone = (n) => (n >= 4 ? 'good' : n <= 2 ? 'bad' : 'gray');
-const GOOD_SAL = ['천을귀인', '천덕귀인', '월덕귀인', '문창귀인', '학당귀인', '금여', '천주귀인', '태극귀인', '천의성', '암록', '천관귀인', '복성귀인', '건록'];
+const GOOD_SAL = ['천을귀인', '천덕귀인', '월덕귀인', '문창귀인', '학당귀인', '금여록', '천주귀인', '태극귀인', '천의성', '암록', '천관귀인', '복성귀인', '건록'];
 const KW_JUNK = /(일주|일간|사주|인데|태어|이라|라고|분들|같은|이런|그런|이제|그냥|정도|경우)/;
+const STAGE_UP = ['장생', '관대', '건록', '제왕'];
+const PEOPLE = {
+  비겁: '같은 길을 가는 동료·형제 같은 사람(경쟁보다 협업이 되는 관계)',
+  식상: '나를 표현하게 하고 결과물을 만들게 하는 사람(후배·제자·창작 파트너)',
+  재성: '현실 감각이 있고 실속을 챙겨 주는 사람(재무·실행에 밝은 사람)',
+  관성: '규칙과 책임감이 있어 나를 관리해 주는 윗사람·조직형 사람',
+  인성: '가르쳐 주고 보호해 주는 멘토·연장자·학문적인 사람',
+};
+const pairHas = (table, a, b) => table.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
 
 export function buildFaq(R, data) {
-  const { current, meta, pillars, dayStem, sinsal = {}, order = [], missing = [], strongest } = data;
+  const { current, meta, pillars, dayStem, sinsal = {}, order = [], missing = [], strongest, elements = {} } = data;
   const ko = ELEMENT_KO;
   const nowY = current.nowYear, nowM = current.nowMonth;
-  const years = R.years.filter((y) => y.year >= nowY);
-  const thisYear = R.years.find((y) => y.year === nowY) || years[0];
+  const years = R.years.filter((yy) => yy.year >= nowY);
+  const thisYear = R.years.find((yy) => yy.year === nowY) || years[0];
   const months = R.monthsOf(nowY) || [];
   const S = K.STEMS[dayStem] || {};
-  const gy = R.gyeok, y = R.yong, prof = R.profile;
-  const group = (g) => K.TEN_GOD_GROUP[g] || '';
-  const godIn = (g, grp) => group(g.branchGod) === grp || group(g.stemGod) === grp;
-
-  const sortM = (arr, val, desc = true) => [...arr].sort((a, b) => (desc ? val(b) - val(a) : val(a) - val(b)) || a.monthNo - b.monthNo);
-  const topM = (cat, n = 3) => sortM(months, (m) => m.luck.scores[cat]).slice(0, n).sort((a, b) => a.monthNo - b.monthNo);
-  const lowM = (cat, n = 2) => sortM(months, (m) => m.luck.scores[cat], false).slice(0, n).sort((a, b) => a.monthNo - b.monthNo);
-  const topY = (cat, n = 2) => [...years].sort((a, b) => b.luck.scores[cat] - a.luck.scores[cat] || a.year - b.year).slice(0, n);
-  const bestOverallM = sortM(months, (m) => m.luck.overall).slice(0, 3).sort((a, b) => a.monthNo - b.monthNo);
-  const lowOverallM = sortM(months, (m) => m.luck.overall, false).slice(0, 2).sort((a, b) => a.monthNo - b.monthNo);
+  const gy = R.gyeok, y = R.yong, prof = R.profile, needEl = R.needEl;
+  const dayBranch = pillars.day.branch, yearBranch = pillars.year.branch;
+  const grp = (g) => K.TEN_GOD_GROUP[g] || '';
+  const hasG = (g, G) => grp(g.branchGod) === G || grp(g.stemGod) === G;
   const hasFlag = (g, type, pos) => (g.luck?.flags || []).some((f) => f.type === type && (!pos || f.pos === pos));
+  const byNo = (a, b) => a.monthNo - b.monthNo;
+  const sortM = (arr, val, desc = true) => [...arr].sort((a, b) => (desc ? val(b) - val(a) : val(a) - val(b)) || byNo(a, b));
+  const topM = (cat, n = 3) => sortM(months, (m) => m.luck.scores[cat]).slice(0, n).sort(byNo);
+  const lowM = (cat, n = 2) => sortM(months, (m) => m.luck.scores[cat], false).slice(0, n).sort(byNo);
+  const bestOverallM = sortM(months, (m) => m.luck.overall).slice(0, 3).sort(byNo);
+  const lowOverallM = sortM(months, (m) => m.luck.overall, false).slice(0, 2).sort(byNo);
+  const stemsOf = (el) => STEMS.filter((s) => STEM_ELEMENT[s] === el).map((s) => `${s}(${STEM_KO[s]})`).join('·');
 
   const dAll = R.daeunAll || [];
   const dNow = dAll.find((d) => d.isNow);
   const rank = (d) => d.luck.overall * 10 + (d.luck.hasNeed ? 3 : 0) + (d.luck.hasYong ? 2 : 0) - (d.luck.hasGi ? 1 : 0) - (d.luck.isGong ? 1 : 0);
-  const dSpan = (d) => `${d.age}~${d.age + 9}세 ${d.text} 대운(${d.startYear}~${d.endYear})`;
+  const dSpan = (d) => `${d.age}~${d.age + 9}세 ${d.stem}${d.branch} 대운(${d.startYear}~${d.endYear})`;
   const dFuture = dAll.filter((d) => !d.past).sort((a, b) => rank(b) - rank(a));
   const dBestAll = [...dAll].sort((a, b) => rank(b) - rank(a))[0];
   const dBestFuture = dFuture[0];
@@ -49,11 +59,50 @@ export function buildFaq(R, data) {
   const keywords = (R.keywords || []).filter((k) => k && !KW_JUNK.test(k)).slice(0, 6);
   const catScoreChips = (l) => K.CATS.map((c) => ({ label: `${c} ${l.scores[c]}/5`, tone: scoreTone(l.scores[c]) }));
 
+  // ---- 연·월 공통: 이유와 주의 ----
+  const reasonsFor = (g, cat) => {
+    const r = [];
+    if (cat === '직장') { if (hasG(g, '관성')) r.push('관성(자리·발령·합격)'); if (hasG(g, '인성')) r.push('인성(자격·서류·추천)'); if (hasG(g, '식상')) r.push('식상(면접·표현력)'); }
+    if (cat === '금전') { if (hasG(g, '재성')) r.push('재성(수입·계약)'); if (hasG(g, '식상')) r.push('식상생재(만든 것이 돈이 됨)'); if (hasG(g, '관성')) r.push('관성(급여·직위)'); }
+    if (cat === '연애') { if (hasG(g, spouseGroup)) r.push(`${spouseWord} 등장`); if (g.sal === '년살') r.push('도화(매력·만남)'); if (hasFlag(g, '합', 'day')) r.push('일지 합(인연이 맺어짐)'); }
+    if (cat === '결혼') { if (hasG(g, spouseGroup)) r.push(`${spouseWord} 등장`); if (hasFlag(g, '합', 'day')) r.push('일지(배우자궁) 합·결합의 기운'); if (hasG(g, '관성') && spouseGroup !== '관성') r.push('관성(약속·책임)'); if (hasG(g, '재성') && spouseGroup !== '재성') r.push('재성(살림·현실 기반)'); if (g.sal === '년살') r.push('도화(인연 활발)'); }
+    if (cat === '도전') { if (hasG(g, '식상')) r.push('식상(새 일을 벌이는 힘)'); if (hasG(g, '비겁')) r.push('비겁(추진력)'); if (STAGE_UP.includes(g.stage)) r.push(`12운성 ${g.stage}(오르는 기운)`); if (hasG(g, '재성')) r.push('재성(결과가 손에 잡힘)'); }
+    if (g.luck.hasNeed) r.push(`조후 ${needEl}(${ko[needEl]}) 충족`);
+    if (g.luck.hasYong) r.push(`용신 ${y.el}(${ko[y.el]}) 유입`);
+    return uniq(r);
+  };
+  const cautionsFor = (g) => uniq([hasFlag(g, '충', 'day') ? '일지 충' : null, hasFlag(g, '원진') ? '원진' : null, g.luck.hasGi ? `기신 ${y.gi}` : null, g.luck.isGong ? '공망' : null, g.samjae ? '삼재' : null]);
+  const cautionWeight = (g) => (g.samjae ? 0.9 : 0) + (hasFlag(g, '충', 'day') ? 0.7 : 0) + (hasFlag(g, '원진') ? 0.5 : 0) + (g.luck.hasGi ? 0.5 : 0) + (g.luck.isGong ? 0.3 : 0);
+  const scoreOf = (g, key) => (key ? g.luck.scores[key] : g.luck.overall);
+  const yearCard = (yy, cat, key) => {
+    const ms = R.monthsOf(yy.year) || [];
+    const val = (m) => scoreOf(m, key) + reasonsFor(m, cat).length * 0.6 - cautionWeight(m);
+    const top = sortM(ms, val).filter((m) => reasonsFor(m, cat).length || scoreOf(m, key) >= 4).slice(0, 3).sort(byNo);
+    const avoid = ms.filter((m) => cautionsFor(m).length && scoreOf(m, key) <= 2).slice(0, 2);
+    const why = reasonsFor(yy, cat);
+    return {
+      year: yy.year, text: yy.text, age: yy.age, score: scoreOf(yy, key),
+      why: (why.length ? `${why.join(', ')}. ` : '') + first(yy.luck.texts[key || '직장']),
+      months: top.map((m) => ({ no: m.monthNo, text: m.text, score: scoreOf(m, key), why: reasonsFor(m, cat).join(', ') || '흐름이 높은 달' })),
+      avoid: avoid.map((m) => `${m.monthNo}월(${cautionsFor(m).join('·')})`),
+      cautions: cautionsFor(yy),
+    };
+  };
+  const pickYears = (cat, key, n = 3) => [...years]
+    .map((yy) => ({ yy, s: scoreOf(yy, key) + reasonsFor(yy, cat).length * 0.7 - cautionWeight(yy) }))
+    .sort((a, b) => b.s - a.s || a.yy.year - b.yy.year).slice(0, n).map((x) => x.yy).sort((a, b) => a.year - b.year);
+  const timelineOf = (cat, key, n = 3) => pickYears(cat, key, n).map((yy) => yearCard(yy, cat, key));
+  const bestOf = (tl) => [...tl].sort((a, b) => b.score - a.score || a.year - b.year)[0];
+  const leadOf = (tl, label) => { const b = bestOf(tl); return b ? `가까운 해 중 ${b.year}년(${b.text})이 ${label} ${b.score}/5로 가장 강하고, ${tl.filter((c) => c !== b).map((c) => `${c.year}년`).join('·')}도 좋은 해예요. 각 해의 좋은 달과 이유는 아래에 정리했어요.` : `${label} 흐름을 계산할 해가 없어요.`; };
+  const chipsOf = (tl) => tl.map((c) => ({ label: `${c.year}년 ${c.text} ${c.score}/5`, tone: scoreTone(c.score) }));
+
   const items = [];
 
   // 1. 올해 운의 흐름
   if (thisYear) {
     const l = thisYear.luck;
+    const bestCat = K.CATS.reduce((a, c) => (l.scores[c] > l.scores[a] ? c : a), K.CATS[0]);
+    const worstCat = K.CATS.reduce((a, c) => (l.scores[c] < l.scores[a] ? c : a), K.CATS[0]);
     items.push({
       id: 'year', icon: '🔮', q: '올해 내 운의 흐름은?',
       lead: `${nowY}년 ${thisYear.text}년은 종합 ${l.overall}/5 — ${l.head}이 한 해의 주제예요.`,
@@ -61,35 +110,46 @@ export function buildFaq(R, data) {
       paras: [
         ...l.summary.slice(0, 3),
         months.length ? `달로 보면 ${mList(bestOverallM)}에 흐름이 가장 좋고, ${mList(lowOverallM)}에는 속도를 늦추고 지키는 쪽이 좋아요. 지금 ${nowM}월은 ${months[nowM - 1]?.luck.head || ''} 흐름이에요.` : null,
-        `가장 좋은 영역은 ${K.CATS.reduce((a, c) => (l.scores[c] > l.scores[a] ? c : a), K.CATS[0])}운, 신경 쓸 영역은 ${K.CATS.reduce((a, c) => (l.scores[c] < l.scores[a] ? c : a), K.CATS[0])}운이에요. ${first(l.texts[K.CATS.reduce((a, c) => (l.scores[c] > l.scores[a] ? c : a), K.CATS[0])])}`,
+        `가장 좋은 영역은 ${bestCat}운, 신경 쓸 영역은 ${worstCat}운이에요. ${first(l.texts[bestCat])}`,
       ].filter(Boolean),
-      months, cat: null,
     });
   }
 
   // 2. 연애운
   {
-    const ys = topY('연애', 2);
-    const spouseYears = years.filter((yy) => godIn(yy, spouseGroup)).slice(0, 3);
-    const tm = topM('연애', 3);
-    const dohwaM = months.filter((m) => m.sal === '년살');
+    const tl = timelineOf('연애', '연애');
     const bestD = dBestCat('연애');
     items.push({
-      id: 'love', icon: '❤️', q: '내 연애운은 언제 강해질까?',
-      lead: ys.length ? `가까운 해 중에는 ${yList(ys)}에 연애운이 가장 강해요 (${ys[0].luck.scores.연애}/5).` : '연애운 흐름을 계산할 해가 없어요.',
-      chips: [...ys.map((yy) => ({ label: `${yy.year}년 ${yy.luck.scores.연애}/5`, tone: scoreTone(yy.luck.scores.연애) })), ...(tm.length ? [{ label: `올해 ${mList(tm)}`, tone: 'good' }] : [])],
+      id: 'love', icon: '❤️', q: '내 연애운은 언제 강해질까?', cat: '연애',
+      lead: leadOf(tl, '연애운'), chips: chipsOf(tl), timeline: tl,
       paras: [
         first(S.love || ''),
-        spouseYears.length ? `${spouseWord}이 운으로 들어오는 ${yList(spouseYears)}에 인연이 구체적으로 나타나기 쉬워요. ${ys[0] ? first(ys[0].luck.texts.연애) : ''}` : `앞으로 9년 안에 ${spouseWord}이 정면으로 들어오는 해는 없어 큰 흐름보다 달 단위의 기회를 잡는 편이에요.`,
-        tm.length ? `올해는 ${mList(tm)}에 연애운이 높고${dohwaM.length ? `, 특히 ${mList(dohwaM)}은 도화(년살)가 들어와 이성의 눈에 띄는 달이에요` : ''}.` : null,
+        `${spouseWord}이 운으로 들어오거나 일지(배우자 자리)와 합이 되는 해·달에 인연이 구체적으로 나타나요. 올해는 ${months.length ? `${mList(topM('연애', 3))}이 연애운이 높아요` : '월 흐름을 계산할 수 없어요'}.`,
         bestD ? `긴 흐름으로는 ${dSpan(bestD)}이 연애·결혼 인연에 가장 유리한 10년이에요.` : null,
         R.cats.연애?.worst ? `반대로 ${R.cats.연애.worst.year}년(${R.cats.연애.worst.text})은 관계가 흔들리기 쉬운 해라 다툼과 성급한 결정을 조심하세요.` : null,
       ].filter(Boolean),
-      months, cat: '연애',
     });
   }
 
-  // 3. 직업
+  // 3. 결혼운
+  {
+    const tl = timelineOf('결혼', '연애');
+    const lv = prof.level(spouseGroup);
+    const shake = years.filter((yy) => hasFlag(yy, '충', 'day')).slice(0, 2);
+    const bestD = dBestCat('연애');
+    items.push({
+      id: 'marriage', icon: '💍', q: '결혼운이 강해지는 시기는 언제일까?', cat: '연애',
+      lead: leadOf(tl, '결혼 인연'), chips: chipsOf(tl), timeline: tl,
+      paras: [
+        `배우자 자리인 일지 ${dayBranch}(${BRANCH_ANIMAL[dayBranch]})로 보면 인연은 "${D.SPOUSE[dayBranch] || ''}"`,
+        lv === '무' ? `원국에 ${spouseWord}이 없어 인연은 운에서 들어올 때 뚜렷해져요. 위 연도 카드처럼 배우자 별이 들어오는 해·달을 놓치지 마세요.` : lv === '강' ? `원국에 ${spouseWord}이 많아 인연은 잦지만 "고르는 것"이 과제예요. 배우자 별이 아닌 일지 합·관성(약속)의 해가 오히려 결혼으로 이어지기 쉬워요.` : `원국에 ${spouseWord}이 적당히 있어 배우자 별이 운으로 들어오는 해에 만남이 결혼으로 이어지기 쉬워요.`,
+        shake.length ? `${yList(shake)}은 세운이 일지와 충해 배우자궁이 흔들리는 해예요 — 결혼·이별·동거 변화 양쪽으로 움직이니 이 해의 결정은 좋은 달에 몰아서 하세요.` : `앞으로 9년 안에 일지와 충하는 해는 없어 배우자궁이 비교적 안정적이에요.`,
+        bestD ? `대운으로는 ${dSpan(bestD)}이 결혼에 가장 유리한 10년이에요.` : null,
+      ].filter(Boolean),
+    });
+  }
+
+  // 4. 직업
   {
     const jobs = uniq([...(P.JOBS[prof.dominant] || []), ...(P.JOBS[prof.second] || []), ...(gy.career || [])]).slice(0, 8);
     const gauge = R.cats.직장?.gauge;
@@ -107,55 +167,46 @@ export function buildFaq(R, data) {
     });
   }
 
-  // 4. 재물운
+  // 5. 재물운
   {
-    const ys = topY('금전', 2);
-    const jaeYears = years.filter((yy) => godIn(yy, '재성')).slice(0, 3);
-    const tm = topM('금전', 3);
+    const tl = timelineOf('금전', '금전');
     const bestD = dBestCat('금전');
     const moneySec = R.cats.금전?.sections?.[0]?.paras?.[0];
     items.push({
-      id: 'money', icon: '💰', q: '재물운이 강해지는 시기는 언제일까?',
-      lead: ys.length ? `${yList(ys)}에 재물운이 가장 강해요 (${ys[0].luck.scores.금전}/5).` : '재물운 흐름을 계산할 해가 없어요.',
-      chips: [...ys.map((yy) => ({ label: `${yy.year}년 ${yy.luck.scores.금전}/5`, tone: scoreTone(yy.luck.scores.금전) })), ...(tm.length ? [{ label: `올해 ${mList(tm)}`, tone: 'good' }] : [])],
+      id: 'money', icon: '💰', q: '재물운이 강해지는 시기는 언제일까?', cat: '금전',
+      lead: leadOf(tl, '재물운'), chips: chipsOf(tl), timeline: tl,
       paras: [
         moneySec ? first(moneySec) : null,
-        jaeYears.length ? `재성(재물의 별)이 들어오는 ${yList(jaeYears)}에 수입·계약·투자 기회가 구체화돼요. ${ys[0] ? first(ys[0].luck.texts.금전) : ''}` : `앞으로 9년 안에 재성이 정면으로 들어오는 해는 없어, ${prof.dominant === '식상' ? '식상(재능·생산)으로 벌어 재성으로 잇는 흐름' : '용신 운에 맞춰 준비한 것을 수입으로 바꾸는 흐름'}이 열쇠예요.`,
-        tm.length ? `올해는 ${mList(tm)}에 돈이 움직이기 쉽고, ${mList(lowM('금전', 2))}은 지출·손재를 조심할 달이에요.` : null,
+        `재성(재물의 별)이 들어오는 해·달에 수입·계약·투자가 구체화되고, 식상 운은 만든 것이 돈으로 바뀌는 흐름이에요. 올해는 ${months.length ? `${mList(topM('금전', 3))}에 돈이 움직이기 쉽고 ${mList(lowM('금전', 2))}은 지출·손재를 조심할 달이에요` : '월 흐름을 계산할 수 없어요'}.`,
         bestD ? `크게 보면 ${dSpan(bestD)}이 재물 흐름이 가장 좋은 10년이에요.` : null,
+        y.gi === D.GEN_OF[D.GEN_OF[STEM_ELEMENT[dayStem]]] ? `재성 오행 ${y.gi}이 이 사주의 기신이라 돈을 좇을수록 균형이 깨지기 쉬워요. 돈은 결과로 따라오게 하세요.` : null,
       ].filter(Boolean),
-      months, cat: '금전',
     });
   }
 
-  // 5. 장점과 약점
+  // 6. 장점과 약점
   {
     const missTxt = missing.length ? `없는 오행 ${missing.map((m) => `${m}(${ko[m]})`).join('·')}은 ${missing.map((m) => K.ELEMENTS[m]?.remedy).filter(Boolean).join(', ')}로 채우면 약점이 덜 드러나요.` : '다섯 오행을 모두 갖춰 어느 한쪽으로 크게 치우치지 않아요.';
     items.push({
       id: 'traits', icon: '🧠', q: '내가 타고난 장점과 약점은?',
       lead: `${S.title || dayStem} 일간의 ${R.strength.label} 사주 — 장점은 "${first(S.strengths || '')}"`,
       chips: keywords.map((k) => ({ label: k, tone: 'gray' })),
-      paras: [
-        `장점 — ${S.strengths || ''} ${gy.strength || ''}`,
-        `약점 — ${S.cautions || ''} ${gy.weakness || ''}`,
-        first(R.overview?.[1] || ''),
-        missTxt,
-      ].filter(Boolean),
+      paras: [`장점 — ${S.strengths || ''} ${gy.strength || ''}`, `약점 — ${S.cautions || ''} ${gy.weakness || ''}`, first(R.overview?.[1] || ''), missTxt].filter(Boolean),
     });
   }
 
-  // 6. 올해 조심할 시기
+  // 7. 올해 조심할 시기
   if (thisYear) {
     const reasons = (m) => uniq([
-      hasFlag(m, '충', 'day') ? '일지와 충 — 거처·건강·관계 변동' : null,
-      hasFlag(m, '충') && !hasFlag(m, '충', 'day') ? '원국과 충 — 일정·계획이 흔들림' : null,
-      hasFlag(m, '원진') ? '원진 — 오해와 감정 소모' : null,
-      m.luck.hasGi ? `기신 ${y.gi} — 판단이 흐려지기 쉬움` : null,
-      m.branchGod === '편관' ? '편관 — 압박·사고·건강 주의' : null,
-      m.luck.isGong ? '공망 — 기대만큼 손에 잡히지 않음' : null,
+      hasFlag(m, '충', 'day') ? '일지와 충(거처·건강·관계 변동)' : null,
+      hasFlag(m, '충') && !hasFlag(m, '충', 'day') ? '원국과 충(일정·계획이 흔들림)' : null,
+      hasFlag(m, '원진') ? '원진(오해와 감정 소모)' : null,
+      m.luck.hasGi ? `기신 ${y.gi}(판단이 흐려지기 쉬움)` : null,
+      m.branchGod === '편관' ? '편관(압박·사고·건강 주의)' : null,
+      m.luck.isGong ? '공망(기대만큼 손에 잡히지 않음)' : null,
       m.luck.scores.건강 <= 2 ? '건강 점수 낮음' : null,
     ]);
-    const risky = sortM(months, (m) => m.luck.overall, false).filter((m) => reasons(m).length || m.luck.overall <= 2).slice(0, 3).sort((a, b) => a.monthNo - b.monthNo);
+    const risky = sortM(months, (m) => m.luck.overall, false).filter((m) => reasons(m).length || m.luck.overall <= 2).slice(0, 3).sort(byNo);
     items.push({
       id: 'caution', icon: '⚠️', q: '올해 조심해야 할 시기는?',
       lead: risky.length ? `${nowY}년에는 ${mList(risky)}을 특히 조심하세요.${thisYear.samjae ? ' 올해는 삼재에 해당해 무리한 확장을 피하는 해예요.' : ''}` : `${nowY}년은 크게 조심할 달이 두드러지지 않아요.${thisYear.samjae ? ' 다만 삼재에 해당해 무리한 확장은 피하세요.' : ''}`,
@@ -166,29 +217,29 @@ export function buildFaq(R, data) {
         thisYear.luck.hasGi ? `올해는 기신 ${y.gi}(${ko[y.gi]})이 들어와 잘 풀리는 와중에도 판단이 흐려질 수 있어요. 계약·투자는 확인을 두 번.` : null,
         `건강은 ${K.ELEMENTS[y.gi]?.organ || '기신 오행의 장부'} 쪽을 살피고, 낮은 달에는 새 판보다 정리에 집중하세요.`,
       ].filter(Boolean),
-      months, cat: '건강',
     });
   }
 
-  // 7. 인생의 상승기
+  // 8. 인생의 상승기
   {
     const need = R.climate?.timing?.daeun || [];
-    const peakY = [...years].sort((a, b) => b.luck.overall - a.luck.overall || a.year - b.year).slice(0, 2);
+    const peakY = [...years].sort((a, b) => b.luck.overall - a.luck.overall || a.year - b.year).slice(0, 2).sort((a, b) => a.year - b.year);
+    const tl = peakY.map((yy) => yearCard(yy, null, null));
     items.push({
       id: 'rise', icon: '📈', q: '내 인생의 상승기는 언제일까?',
-      lead: dBestFuture ? `${dSpan(dBestFuture)}이 앞으로 가장 크게 올라가는 10년이에요 (${dBestFuture.luck.overall}/5).` : '대운 정보가 없어요.',
-      chips: [...(dBestFuture ? [{ label: `${dBestFuture.age}~${dBestFuture.age + 9}세 ${dBestFuture.text}`, tone: 'good' }] : []), ...peakY.map((yy) => ({ label: `${yy.year}년 ${yy.luck.overall}/5`, tone: scoreTone(yy.luck.overall) }))],
+      lead: dBestFuture ? `${dSpan(dBestFuture)}이 앞으로 가장 크게 올라가는 10년이에요 (${dBestFuture.luck.overall}/5). 가까운 해로는 ${peakY.map((yy) => `${yy.year}년`).join('·')}이 도약의 해예요.` : '대운 정보가 없어요.',
+      chips: [...(dBestFuture ? [{ label: `${dBestFuture.age}~${dBestFuture.age + 9}세 ${dBestFuture.stem}${dBestFuture.branch} 대운`, tone: 'good' }] : []), ...chipsOf(tl)],
+      timeline: tl,
       paras: [
         dNow ? `지금은 ${dSpan(dNow)}, ${dNow.luck.head}이 주제인 시기예요 (${dNow.luck.overall}/5).` : null,
-        dBestFuture ? first(dBestFuture.text) + (dBestFuture.luck.hasNeed ? ` 이 대운에 필요한 ${R.needEl}(${ko[R.needEl]})이 들어와 웅크렸던 힘이 밖으로 드러나요.` : dBestFuture.luck.hasYong ? ` 용신 ${y.el}이 들어와 균형이 잡히는 대운이에요.` : '') : null,
+        dBestFuture ? first(dBestFuture.text) + (dBestFuture.luck.hasNeed ? ` 이 대운에 필요한 ${needEl}(${ko[needEl]})이 들어와 웅크렸던 힘이 밖으로 드러나요.` : dBestFuture.luck.hasYong ? ` 용신 ${y.el}이 들어와 균형이 잡히는 대운이에요.` : '') : null,
         dBestAll && dBestAll.past ? `이미 지나온 ${dSpan(dBestAll)}이 전체 중 가장 높았고, 앞으로는 ${dBestFuture ? dSpan(dBestFuture) : '현재 대운'}이 두 번째 상승기예요.` : null,
-        need.length ? `조후로 보면 ${need.map((d) => `${d.startYear}년(${d.age}세) ${d.text} 대운`).join(', ')}에 얼어 있던 기운이 풀려 크게 움직여요.` : `조후로 필요한 ${R.needEl}(${ko[R.needEl]})이 대운으로 크게 오지는 않아 세운·월운에서 ${R.needEl}이 오는 때를 잡는 편이에요.`,
-        peakY.length ? `가까운 해로는 ${yList(peakY)}이 종합운이 높아 도약의 해로 삼기 좋아요.` : null,
+        need.length ? `조후로 보면 ${need.map((d) => `${d.startYear}년(${d.age}세) ${d.text} 대운`).join(', ')}에 얼어 있던 기운이 풀려 크게 움직여요.` : `조후로 필요한 ${needEl}(${ko[needEl]})이 대운으로 크게 오지는 않아 세운·월운에서 ${needEl}이 오는 때를 잡는 편이에요.`,
       ].filter(Boolean),
     });
   }
 
-  // 8. 가장 강한 장점
+  // 9. 가장 강한 장점
   {
     const ilju = P.ILJU[pillars.day.text];
     items.push({
@@ -205,7 +256,7 @@ export function buildFaq(R, data) {
     });
   }
 
-  // 9. 이사운
+  // 10. 이사운
   if (thisYear) {
     const moveSig = uniq([
       hasFlag(thisYear, '충', 'day') ? '세운이 일지와 충(거처 변동)' : null,
@@ -224,32 +275,79 @@ export function buildFaq(R, data) {
       chips: [...good.map((m) => ({ label: `${m.monthNo}월 ${m.text} 좋음`, tone: 'good' })), ...avoid.map((m) => ({ label: `${m.monthNo}월 피함`, tone: 'bad' }))],
       paras: [
         moveSig.length ? `이동 신호: ${moveSig.join(', ')}. ${hasFlag(thisYear, '충', 'day') ? '일지 충은 살던 곳·함께 사는 사람에 변화가 오는 신호라 이사가 자연스럽게 따라오기 쉬워요.' : '역마·지살과 편재·편인 운은 옮기고 넓히는 기운이라 옮겨도 손해가 적어요.'}` : `올해 세운 ${thisYear.text}은 원국과 큰 충이 없고 이동의 별도 두드러지지 않아 굳이 움직일 이유가 적어요.${stay ? ' 오히려 안정(합·정인·정관)의 흐름이라 지금 자리에서 다지는 게 유리해요.' : ''}`,
-        good.length ? `달로는 ${mList(good)}이 이동 기운과 운의 높이가 함께 맞아 계약·이사에 좋고, ${avoid.length ? `${mList(avoid)}은 피하세요` : '피할 달은 두드러지지 않아요'}.` : `이동 기운이 실린 달이 뚜렷하지 않아, 꼭 옮겨야 한다면 종합운이 높은 ${mList(bestOverallM)}을 고르세요.`,
+        good.length ? `달로는 ${good.map((m) => `${m.monthNo}월(${m.text}${['역마', '지살'].includes(m.sal) ? `·${m.sal}` : ''}${hasFlag(m, '충', 'day') ? '·일지 충' : ''}${['편인', '편재'].includes(m.branchGod) ? `·${m.branchGod}` : ''})`).join(', ')}이 이동 기운과 운의 높이가 함께 맞아 계약·이사에 좋고, ${avoid.length ? `${mList(avoid)}은 피하세요` : '피할 달은 두드러지지 않아요'}.` : `이동 기운이 실린 달이 뚜렷하지 않아, 꼭 옮겨야 한다면 종합운이 높은 ${mList(bestOverallM)}을 고르세요.`,
         `방향은 용신 ${y.el}(${ko[y.el]})의 ${D.YONG[y.el].dir}쪽, 색은 ${D.YONG[y.el].color} 계열이 유리하고, 기신 ${y.gi}(${ko[y.gi]})의 ${D.YONG[y.gi].dir}쪽은 피하는 편이 좋아요.`,
         thisYear.samjae ? '올해는 삼재라 큰 이사·신축보다 리모델링·정리 정도가 무난해요.' : null,
       ].filter(Boolean),
     });
   }
 
-  // 10. 취업운
+  // 11. 취업운
   {
-    const ys = topY('직장', 2);
-    const gwanYears = years.filter((yy) => godIn(yy, '관성') || godIn(yy, '인성')).slice(0, 3);
-    const tm = topM('직장', 3);
-    const gwanM = months.filter((m) => group(m.branchGod) === '관성');
-    const insM = months.filter((m) => group(m.branchGod) === '인성');
-    const siksangM = months.filter((m) => group(m.branchGod) === '식상');
+    const tl = timelineOf('직장', '직장');
     items.push({
-      id: 'career', icon: '💼', q: '취업운이 강해지는 시기는?',
-      lead: ys.length ? `${yList(ys)}에 직장·취업운이 가장 강해요 (${ys[0].luck.scores.직장}/5).` : '직장운 흐름을 계산할 해가 없어요.',
-      chips: [...ys.map((yy) => ({ label: `${yy.year}년 ${yy.luck.scores.직장}/5`, tone: scoreTone(yy.luck.scores.직장) })), ...(tm.length ? [{ label: `올해 ${mList(tm)}`, tone: 'good' }] : [])],
+      id: 'career', icon: '💼', q: '취업운이 강해지는 시기는?', cat: '직장',
+      lead: leadOf(tl, '직장·취업운'), chips: chipsOf(tl), timeline: tl,
       paras: [
-        gwanYears.length ? `관성(자리·조직)과 인성(자격·문서)이 들어오는 ${yList(gwanYears)}에 합격·입사·승진의 문이 열려요. ${ys[0] ? first(ys[0].luck.texts.직장) : ''}` : `앞으로 9년 안에 관성·인성이 정면으로 들어오는 해는 없어, 용신 ${y.el} 운과 좋은 달을 골라 움직이는 전략이 좋아요.`,
-        tm.length ? `올해는 ${mList(tm)}에 직장운이 높아요.${gwanM.length ? ` ${mList(gwanM)}은 관성 달이라 지원·면접·발령이 맞물리고,` : ''}${insM.length ? ` ${mList(insM)}은 인성 달이라 자격·서류·추천이 유리하고,` : ''}${siksangM.length ? ` ${mList(siksangM)}은 식상 달이라 면접·발표에서 표현력이 살아나요.` : ''}` : null,
+        `관성(자리·조직)이 들어오는 달은 지원·면접·발령이, 인성(자격·문서)이 들어오는 달은 서류·추천·시험이, 식상 달은 면접·발표의 표현력이 살아나요. 올해는 ${months.length ? `${mList(topM('직장', 3))}이 직장운이 높아요` : '월 흐름을 계산할 수 없어요'}.`,
         dNow ? `현재 ${dSpan(dNow)}의 직장운은 ${dNow.luck.scores.직장}/5 — ${first(dNow.luck.texts.직장)}` : null,
         `${gy.key}의 방향인 ${(gy.career || []).slice(0, 3).join('·')} 분야를 우선 노리고, 낮은 달에는 준비(자격·포트폴리오)에 쓰세요.`,
       ].filter(Boolean),
-      months, cat: '직장',
+    });
+  }
+
+  // 12. 삶의 방향
+  {
+    const cl = R.climate;
+    items.push({
+      id: 'direction', icon: '🎯', q: '내 사주에 가장 잘 맞는 삶의 방향은?',
+      lead: `"${gy.tag}" — ${D.YONG[y.el].mean}을 향해 갈 때 운이 따라오는 사주예요.`,
+      chips: uniq([gy.key, `용신 ${y.el} ${D.YONG[y.el].mean.split('·')[0]}`, prof.dominant ? `${prof.dominant} 중심` : null, R.strength.label]).map((k) => ({ label: k, tone: 'good' })),
+      paras: [
+        `${first(S.nature || '')} ${gy.desc}`,
+        `${R.strength.label} 사주라 ${R.strength.label === '신강' ? '힘을 밖으로 써야 해요 — 표현하고, 만들고, 책임지는 자리로 나가는 방향' : R.strength.label === '신약' ? '나를 채우며 가야 해요 — 배움·자격·좋은 사람 곁에서 한 가지를 깊게 하는 방향' : '완급을 조절하는 방향 — 좋은 때 과감하게, 낮은 때 지키며 가는 길'}이 맞아요.`,
+        `용신 ${y.el}(${ko[y.el]})의 뜻은 ${D.YONG[y.el].mean}이에요. 진로·관계·거주지를 고를 때 이 방향(${D.YONG[y.el].job.split('·').slice(0, 3).join('·')}, ${D.YONG[y.el].dir})으로 선택하면 힘이 덜 들고, 기신 ${y.gi}(${ko[y.gi]}) 쪽(${D.YONG[y.gi].mean})으로 치우칠수록 소모가 커요.`,
+        cl?.image ? `형국으로 보면 "${cl.image}"예요. ${cl.imageNote || ''} ${cl.needWhy ? `이 사주에 필요한 것은 ${cl.needWhy}이니, 그 기운을 주는 일과 사람 곁에 서세요.` : ''}` : null,
+        prof.dominant ? `${prof.dominant}이 두드러진 구조라 ${D.GROUP_OPEN[prof.dominant]}` : null,
+      ].filter(Boolean),
+    });
+  }
+
+  // 13. 새로운 도전의 시기
+  {
+    const tl = timelineOf('도전', null);
+    const nowGood = dNow ? reasonsFor(dNow, '도전') : [];
+    const needYears = (R.climate?.timing?.years || []).slice(0, 3);
+    items.push({
+      id: 'challenge', icon: '🌱', q: '새로운 도전을 시작하기 좋은 시기는?',
+      lead: leadOf(tl, '시작의 기운'), chips: chipsOf(tl), timeline: tl,
+      paras: [
+        dNow ? `지금 ${dSpan(dNow)}은 ${nowGood.length ? `${nowGood.join(', ')} — 새 판을 벌이기에 나쁘지 않은 10년이에요` : `${dNow.luck.head} 흐름이라 큰 도전보다 준비와 축적에 맞는 10년이에요`}.` : null,
+        `시작에 좋은 신호는 식상(새 일을 벌이는 힘)·비겁(추진력)·12운성 장생·관대·건록·제왕, 그리고 조후 ${needEl}·용신 ${y.el} 기운이에요. 반대로 삼재·일지 충·기신 ${y.gi}이 겹치는 때는 시작보다 정리가 맞아요.`,
+        R.strength.label === '신강' ? '신강한 사주는 결심하면 바로 움직여도 버틸 힘이 있어요. 다만 혼자 다 하려 하지 말고 역할을 나눠 시작하세요.' : R.strength.label === '신약' ? '신약한 사주는 준비 기간을 충분히 두고, 용신·조후 달에 "작게" 시작해 키우는 방식이 맞아요.' : '중화 사주는 시기를 잘 타는 것이 곧 실력이에요. 위 카드의 좋은 달에 첫 단추를 끼우세요.',
+        needYears.length ? `조후로 보면 ${needYears.map((s) => `${s.year}년(${s.text})`).join(', ')}에 ${needEl}이 들어와 미뤄 둔 도전을 꺼내기 좋아요.` : null,
+      ].filter(Boolean),
+    });
+  }
+
+  // 14. 함께하면 운이 좋아지는 사람
+  {
+    const yukhap = BRANCH_YUKHAP.find((p) => p.includes(dayBranch))?.find((b) => b !== dayBranch);
+    const samhap = (BRANCH_SAMHAP.find((g) => g.includes(dayBranch)) || []).filter((b) => b !== dayBranch);
+    const goodAnimals = uniq([yukhap, ...samhap]).map((b) => `${BRANCH_ANIMAL[b]}띠(${b})`);
+    const badBranches = uniq([BRANCH_CHUNG.find((p) => p.includes(dayBranch))?.find((b) => b !== dayBranch), BRANCH_WONJIN.find((p) => p.includes(dayBranch))?.find((b) => b !== dayBranch)]);
+    const badAnimals = badBranches.map((b) => `${BRANCH_ANIMAL[b]}띠(${b})`);
+    const heeG = y.groups?.hee, yongG = y.group;
+    items.push({
+      id: 'people', icon: '👥', q: '나는 어떤 사람과 함께할 때 운이 좋아질까?',
+      lead: `${stemsOf(y.el)} 일간처럼 ${y.el}(${ko[y.el]}) 기운이 강한 사람, 그리고 ${PEOPLE[yongG]?.split('(')[0] || ''}이 나를 살려요.`,
+      chips: uniq([`${y.el} 일간 ${stemsOf(y.el)}`, needEl !== y.el ? `${needEl} 일간 ${stemsOf(needEl)}` : null, ...goodAnimals.map((a) => `${a} 궁합`)]).map((k) => ({ label: k, tone: 'good' })),
+      paras: [
+        `용신 ${y.el}(${ko[y.el]})은 내게 ${D.YONG[y.el].mean}을 주는 기운이에요. ${stemsOf(y.el)} 일간인 사람 곁에서는 힘이 덜 들고 일이 풀리기 쉬워요.${needEl !== y.el ? ` 조후로 필요한 ${needEl}(${ko[needEl]}) 기운의 ${stemsOf(needEl)} 일간은 "온도"를 맞춰 주는 사람이라 오래 함께하면 편해요.` : ''}`,
+        `십성으로는 ${R.strength.label === '신약' ? '나를 채워 주는 쪽' : R.strength.label === '신강' ? '내 힘을 다스리고 흘려 주는 쪽' : '균형을 잡아 주는 쪽'} — 용신 ${yongG}에 해당하는 ${PEOPLE[yongG] || ''}${heeG ? `, 희신 ${heeG}에 해당하는 ${PEOPLE[heeG] || ''}` : ''}이 좋은 인연이에요.`,
+        goodAnimals.length ? `띠로는 일지 ${dayBranch}(${BRANCH_ANIMAL[dayBranch]})와 합이 되는 ${goodAnimals.join('·')} 사람이 함께 있으면 편하고 일이 맞물려요.${badAnimals.length ? ` 반대로 ${badAnimals.join('·')}은 일지와 충·원진이라 가까울수록 부딪히기 쉬워 거리와 역할을 분명히 두세요.` : ''}` : null,
+        `피할 조합은 기신 ${y.gi}(${ko[y.gi]}) 기운이 강한 ${stemsOf(y.gi)} 일간과 오래 붙어 있는 것이에요. 그 곁에서는 내 안의 ${y.gi}도 함께 넘쳐요 — ${(K.ELEMENTS[y.gi]?.excess || '').split('. ').slice(1).join('. ')}`,
+      ].filter(Boolean),
     });
   }
 

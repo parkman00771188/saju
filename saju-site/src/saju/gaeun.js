@@ -36,7 +36,7 @@ export function buildGaeun(R, data) {
     icon: '🚫', title: `기신 ${gi}(${ko[gi]}) 기운 줄이기`,
     chips: [{ label: `${G.color} 옷·소품 줄이기`, tone: 'bad' }, { label: `${G.dir} 장기 체류 피하기`, tone: 'bad' }, { label: `${GD.weekday}엔 큰 결정 보류`, tone: 'bad' }, { label: `구신 ${gu}(${ko[gu]})도 절제`, tone: 'gray' }],
     paras: [
-      `${Y.avoid}`,
+      `기신 ${gi}(${ko[gi]})은 본래 ${G.mean}의 기운이지만 이 사주에서는 균형을 깨뜨리는 쪽이에요. ${(K.ELEMENTS[gi]?.excess || '').split('. ').slice(1).join('. ')}`,
       `${gi}(${ko[gi]})이 지나친 환경 — ${GD.space.split('.')[0]} 같은 배치, ${G.food} 위주의 식단, ${GD.activity.split(',')[0]} 같은 활동 — 을 "없애기"보다 비중을 줄이세요. 이미 원국에 ${gi}이 ${data.elements[gi]}개 있어 운에서 더해질 때 균형이 깨지기 쉬워요.`,
       `건강으로는 ${K.ELEMENTS[gi].organ} 쪽이 기신 오행의 자리예요. ${gi} 운이 오는 달(아래 달력의 주의 달)에는 검진과 휴식을 앞당기세요.`,
     ],
