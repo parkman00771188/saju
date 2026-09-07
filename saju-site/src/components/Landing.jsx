@@ -58,8 +58,6 @@ export default function Landing({ onSubmit, error, busy }) {
     });
   };
 
-  const example = () => setF((s) => ({ ...s, name: '예시', gender: '남', calendar: 'solar', year: '1991', month: '12', day: '10', hour: '16', minute: '45', unknownTime: false, city: '대전' }));
-
   return (
     <div className="landing-inner">
       <motion.header className="hero" {...fade(0.1)}>
@@ -119,7 +117,6 @@ export default function Landing({ onSubmit, error, busy }) {
         {error && <p className="error">{error}</p>}
 
         <div className="row actions">
-          <button type="button" className="ghost" onClick={example}>예시 채우기</button>
           <button type="submit" className={`primary ${valid && !busy ? '' : 'disabled'}`} disabled={!valid || busy}>
             {busy ? '하늘을 여는 중…' : '천기 열어보기'}
             <i />

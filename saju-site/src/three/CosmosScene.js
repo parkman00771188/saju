@@ -80,7 +80,7 @@ export class CosmosScene {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.scene = new THREE.Scene();
-    this.scene.fog = new THREE.FogExp2(0x070912, 0.0045);
+    this.scene.fog = new THREE.FogExp2(0x1b2247, 0.0038);
     this.camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
     this.camera.position.set(0, 6, 64);
 

@@ -8,3 +8,5 @@ __pycache__/
 *.err
 .DS_Store
 Thumbs.db
+# analysis (원문 발췌 조각은 공개 저장소에 올리지 않음)
+analysis/excerpts/

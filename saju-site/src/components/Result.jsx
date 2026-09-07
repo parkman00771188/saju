@@ -3,7 +3,7 @@ import PillarBoard from './PillarBoard.jsx';
 import Ohaeng from './Ohaeng.jsx';
 import Fortune from './Fortune.jsx';
 import Relations from './Relations.jsx';
-import Tile from './Tile.jsx';
+import Interpretation from './Interpretation.jsx';
 import { ELEMENT_COLOR, ELEMENT_KO, STEM_KO } from '../saju/tables.js';
 
 const sec = (delay = 0) => ({
@@ -38,28 +38,12 @@ export default function Result({ data, onReset }) {
               {meta.correctedTime && <span><b>보정시</b> {meta.correctedTime} ({meta.correctionMin > 0 ? '+' : ''}{meta.correctionMin}분)</span>}
             </p>
             <p className="opts">{meta.options.join(' · ')} · 절기 {meta.prevJieqi.name} {meta.prevJieqi.time.slice(0, 16)} ~ {meta.nextJieqi.name}</p>
+            <p className="gz">{summary}</p>
           </div>
-        </div>
-        <div className="summary">
-          <p className="eyebrow">사주팔자 四柱八字</p>
-          <div className="eight">
-            {['year', 'month', 'day', 'time'].map((k, i) => (
-              <div className="pillar-mini" key={k}>
-                <small>{{ year: '년주', month: '월주', day: '일주', time: '시주' }[k]}</small>
-                {pillars[k] ? (
-                  <>
-                    <Tile ch={pillars[k].stem} ko={pillars[k].stemKo} el={pillars[k].stemEl} size="md" delay={0.3 + i * 0.1} />
-                    <Tile ch={pillars[k].branch} ko={pillars[k].branchKo} el={pillars[k].branchEl} size="md" delay={0.38 + i * 0.1} />
-                  </>
-                ) : (
-                  <><Tile ghost size="md" delay={0.3} /><Tile ghost size="md" delay={0.38} /></>
-                )}
-              </div>
-            ))}
-          </div>
-          <p className="gz">{summary}</p>
         </div>
       </motion.header>
+
+      <Interpretation data={data} />
 
       <motion.section className="card" {...sec(0)}>
         <div className="sec-head">

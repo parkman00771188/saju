@@ -3,7 +3,16 @@ import { HIDDEN_STEMS, STEM_KO, STEM_ELEMENT, ELEMENT_COLOR, tenGod, TEN_GOD_DES
 
 const rows = ['십성', '천간', '지지', '십성', '십이운성', '십이신살', '지장간'];
 
-function Col({ label, d, dayStem, delay, dim = false, ghostTime = false }) {
+function Labels() {
+  return (
+    <div className="pcol labels">
+      <div className="phead"> </div>
+      {rows.map((r, i) => <div key={i} className={`pcell lab ${i === 1 || i === 2 ? 'tall' : ''}`}>{r}</div>)}
+    </div>
+  );
+}
+
+function Col({ label, d, dayStem, delay, dim = false }) {
   if (!d) {
     return (
       <div className="pcol">
@@ -39,20 +48,25 @@ function Col({ label, d, dayStem, delay, dim = false, ghostTime = false }) {
   );
 }
 
+/**
+ * 원국 보드. 데스크톱: [사주 4기둥] | [현재세운·현재대운] 가로 배치
+ * 모바일: 4기둥이 화면 폭에 맞게 4열로 꽉 차고, 현재 운은 아래에 별도 블록으로 쌓인다.
+ */
 export default function PillarBoard({ data }) {
   const { detail, order, dayStem, current } = data;
   return (
     <div className="board">
-      <div className="pcol labels">
-        <div className="phead"> </div>
-        {rows.map((r, i) => <div key={i} className={`pcell lab ${i === 1 || i === 2 ? 'tall' : ''}`}>{r}</div>)}
+      <div className="bgroup main">
+        <Labels />
+        {order.map((k, i) => (
+          <Col key={k} label={{ time: '시', day: '일', month: '월', year: '년' }[k]} d={detail[k]} dayStem={dayStem} delay={0.15 + i * 0.12} />
+        ))}
       </div>
-      <Col label="현재세운" d={{ ...current.year, pos: 'seun' }} dayStem={dayStem} delay={0.05} dim />
-      <Col label="현재대운" d={{ ...current.daeun, pos: 'daeun' }} dayStem={dayStem} delay={0.1} dim />
-      <div className="pdivider" />
-      {order.map((k, i) => (
-        <Col key={k} label={{ time: '시', day: '일', month: '월', year: '년' }[k]} d={detail[k]} dayStem={dayStem} delay={0.2 + i * 0.12} />
-      ))}
+      <div className="bgroup now">
+        <Labels />
+        <Col label="현재세운" d={{ ...current.year, pos: 'seun' }} dayStem={dayStem} delay={0.6} dim />
+        <Col label="현재대운" d={{ ...current.daeun, pos: 'daeun' }} dayStem={dayStem} delay={0.68} dim />
+      </div>
     </div>
   );
 }
