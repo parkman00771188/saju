@@ -1,0 +1,44 @@
+/* 심층 해석 페이지 전용 */
+.deep .stats { margin: 14px 0 6px; }
+.deep .stat { border-color: #e6ded3; }
+.deep .rsec { border-color: #e6ded3; box-shadow: 0 5px 18px #34242a05; }
+.deep .rsec > header h4 { font-family: var(--sans); font-size: 16px; letter-spacing: -0.02em; }
+.deep .rsec-ic { background: var(--c, #b58b42); }
+.deep .rsec-body p { color: #4f434c; font-size: 15px; line-height: 1.95; word-break: keep-all; overflow-wrap: anywhere; }
+.overview-paper { padding: 26px 28px; margin-bottom: 14px; }
+.overview-grid { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
+.overview-title { font-family: var(--serif); font-size: 26px; font-weight: 500; line-height: 1.5; letter-spacing: -0.03em; margin: 2px 0 8px; word-break: keep-all; }
+.overview-sub { font-size: 13px; color: #6f6068; margin: 0 0 14px; line-height: 1.8; }
+.overview-radars { display: flex; gap: 8px; }
+.overview-radars > div { text-align: center; } .overview-radars small { display: block; font-size: 11px; color: #8a7a83; margin-top: -6px; }
+.posgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 6px; }
+.poscard { background: #fbf9f5; border: 1px solid #e8e0d4; border-radius: 12px; padding: 12px 14px; }
+.poscard.me { border-color: #cfb27f; background: #fbf5ea; }
+.poscard header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.poscard header b { font-size: 14px; display: block; } .poscard header small { font-size: 11px; color: #85757d; line-height: 1.6; }
+.posmeta { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.posmeta span { font-size: 11px; background: #f1ebe1; color: #6a5a48; border-radius: 999px; padding: 2px 8px; }
+.posmeta span.gm { background: #efe6f7; color: #6a52a8; }
+.poscard p { margin: 0 0 6px; font-size: 13.5px; line-height: 1.8; color: #55474f; }
+.lifeline { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.lifeline .drow { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; background: #fbf9f5; border: 1px solid #e8e0d4; border-radius: 12px; padding: 10px 12px; }
+.lifeline .drow.now { border-color: #cfb27f; background: #fbf5ea; } .lifeline .drow.past { opacity: 0.8; }
+.lifeline .dtop { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; } .lifeline .dtop b { font-size: 14px; }
+.lifeline .drow p { margin: 0; font-size: 13.5px; line-height: 1.8; color: #55474f; }
+.deep .period-reading h3 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.deep .period-reading .ytags { display: flex; gap: 4px; flex-wrap: wrap; margin: 8px 0 0; }
+.deep .cathead { margin: 6px 0 12px; }
+.topic-switch { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: #7d6b75; margin: 6px 0 0; }
+.topic-switch button { border: 1px solid #ddd0bd; background: #fff; border-radius: 999px; padding: 6px 12px; font-size: 12.5px; color: #6c5340; }
+.deep .plist .pcard { border-color: #e6ded3; }
+.deep .evbox { background: transparent; }
+.deep .ylist .yhead { grid-template-columns: 58px auto 1fr auto 14px; }
+.deep .gauge, .deep .evsum .col { border-color: #e6ded3; }
+.deep .graph-paper { margin-top: 12px; }
+@media (max-width: 760px) {
+  .overview-grid { grid-template-columns: 1fr; }
+  .overview-radars { justify-content: center; }
+  .posgrid { grid-template-columns: 1fr; }
+  .overview-title { font-size: 22px; }
+  .deep .rsec-body p { font-size: 14.5px; }
+}

@@ -42,6 +42,13 @@ python build_kb.py     # data/ 의 자막 원문 전체를 분석
   `saju-site/src/saju/interpret.js` 가 사주에 해당하는 항목만 골라 **종합(형국+레이더) · 형국·조합(조후, 필요한 기운이 들어오는 대운/세운 시점, 조합 카드+원문 극성)
   · 성격 · 직장/금전/연애/건강/학업(항목별 고유 섹션 + 10년 추세 그래프) · 연도별 · 월별**로 구성합니다.
 
+## 해석 엔진 구성
+
+- `saju-site/src/saju/interpret.js` — 심층 해석: 형국·조후, 격국, 억부용신/희신/기신, 자리별 풀이, 통근·투출, 합충·신살, 대운 전 생애, 5대 운 점수(연·월), 원문 주장 결합
+- `saju-site/src/saju/context.js` — 연·월의 합충 맥락, 절기 구간, 생활 제안
+- `saju-site/src/data/knowledge.js` · `patterns.js` · `deep.js` — 해석 문장(일간·십성·운·신살·오행 / 조후·형국·60일주·구조·충합 / 격국·용신·자리·배우자상·개운)
+- `saju-site/src/components/Reading.jsx` — 심층 해석 페이지
+
 ## 사주 사이트
 
 ```bash
