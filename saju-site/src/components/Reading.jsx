@@ -1,222 +1,391 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, Fragment } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { interpret } from '../saju/interpret.js';
-import { contextualReading, READING_SOURCES } from '../saju/context.js';
-import { CATS, CAT_META } from '../data/knowledge.js';
-import { ELEMENT_COLOR, ELEMENT_KO, STEM_KO } from '../saju/tables.js';
-import { Radar, Trend, MonthBars } from './Charts.jsx';
+import { READING_SOURCES } from '../saju/context.js';
+import { CATS, CAT_META, STEMS as KSTEMS, ELEMENTS as KEL, SINSAL as KSINSAL, TEN_GOD_GROUP } from '../data/knowledge.js';
+import { GLOSSARY } from '../data/glossary.js';
+import * as D from '../data/deep.js';
+import { ELEMENT_COLOR, ELEMENT_KO, STEM_KO, BRANCH_KO, ELEMENTS, HIDDEN_STEMS, STEM_ELEMENT } from '../saju/tables.js';
+import { Trend, MonthBars } from './Charts.jsx';
 import Tile from './Tile.jsx';
-import { Score, Paras, GZ, Bars, Gauge, Sec, Stats, Evidence, PatternCard, polClass } from './ReadingParts.jsx';
+import { Score, GZ, Evidence, PatternCard, polClass, cleanKw } from './ReadingParts.jsx';
 
-const WEB_SOURCES = [
-  { title: '정해 만세력 · 격국(내격) 강의', url: 'https://doc.8-codes.com/docs/lecture/16/', note: '월지 십성으로 격을 정하는 내격 분류' },
-  { title: '사주포럼 · 용신(억부·조후·통관·병약)', url: 'https://www.sajuforum.com/01forum/nm/05_youngsin.php', note: '억부용신과 조후용신을 함께 보는 관점' },
-  { title: '위키백과 · 용신(사주팔자)', url: 'https://ko.wikipedia.org/wiki/%EC%9A%A9%EC%8B%A0_(%EC%82%AC%EC%A3%BC%ED%8C%94%EC%9E%90)', note: '용신·희신·기신·구신의 정의' },
-  { title: '기운사 · 년주·월주·일주·시주 가이드', url: 'https://giunsa.com/blog/four-pillars-guide', note: '근묘화실 — 네 기둥과 인생 시기·가족 자리' },
-  { title: '정해 만세력 · 십이신살', url: 'https://doc.8-codes.com/docs/lecture/19/', note: '일지 기준 십이신살과 운에서의 적용' },
-  { title: '사주스터디 · 행운론(세운·월운)', url: 'https://www.sajustudy.com/97', note: '대운·세운·월운을 겹쳐 읽는 방법' },
-];
-const NAV = [['#r-summary', '종합평가'], ['#r-character', '성격'], ['#r-flow', '운의 흐름'], ['#r-topic', '주제별'], ['#r-patterns', '조합'], ['#r-sources', '참고']];
+const STEM_KEYS = { 甲: ['추진력', '책임감', '정직함'], 乙: ['적응력', '사교성', '실속'], 丙: ['열정', '솔직함', '표현력'], 丁: ['집중력', '헌신', '직관'], 戊: ['신뢰', '포용', '안정'], 己: ['실속', '꼼꼼함', '돌봄'], 庚: ['결단', '의리', '실행'], 辛: ['섬세함', '분석력', '심미안'], 壬: ['지혜', '포용', '기획력'], 癸: ['감성', '통찰', '인내'] };
+const EL_HEX = { 木: '#5f9a2c', 火: '#c8442f', 土: '#d69a2c', 金: '#8c8c8c', 水: '#3b3f47' };
+const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const first = (s) => (s?.match(/^[^.!?]*[.!?]/) || [s])[0];
 
-function Connection({ r }) {
-  return <div className={`reading-connection ${r.kind.includes('충') ? 'is-change' : ''}`}><div><span>{r.kind}</span><b>{r.members.map((m) => `${m.ch}(${m.label})`).join(' + ')}</b></div><p>{r.effect}</p>{r.caveat && <small>{r.caveat}</small>}</div>;
+/** 핵심 단어 강조 */
+function Hl({ text, words = [] }) {
+  const ws = [...new Set(words.filter((w) => w && text?.includes(w)))];
+  if (!ws.length || !text) return text || null;
+  const rx = new RegExp(`(${ws.map(esc).join('|')})`, 'g');
+  return text.split(rx).map((part, i) => (ws.includes(part) ? <b key={i} className="hl">{part}</b> : <Fragment key={i}>{part}</Fragment>));
+}
+const P = ({ children, words }) => <p className="bp">{typeof children === 'string' ? <Hl text={children} words={words} /> : children}</p>;
+const Sub = ({ children }) => <h3 className="bsub">{children}</h3>;
+const Callout = ({ children, tone = 'green' }) => <div className={`callout ${tone}`}>{children}</div>;
+const Chips = ({ items, tone }) => <div className="bchips">{items.filter(Boolean).map((c, i) => <span key={i} className={`bchip ${tone || ''} ${typeof c === 'object' ? c.tone || '' : ''}`}>{typeof c === 'object' ? c.label : c}</span>)}</div>;
+const Divider = () => <hr className="bdiv" />;
+const More = ({ title = '더 자세히 보기', children }) => <details className="bmore"><summary>{title}</summary><div>{children}</div></details>;
+
+function PillarsRow({ data, labels = {} }) {
+  const keys = ['time', 'day', 'month', 'year'];
+  const names = { time: '시', day: '일', month: '월', year: '년' };
+  return (
+    <div className="prow">
+      {keys.map((k) => {
+        const p = data.pillars[k];
+        return (
+          <div key={k} className={`pcol2 ${k === 'day' ? 'me' : ''}`}>
+            <span className="pname">{names[k]}</span>
+            <span className="plabel">{labels[k] || ' '}</span>
+            {p ? <><Tile ch={p.stem} ko={p.stemKo} el={p.stemEl} size="md" flip={false} /><Tile ch={p.branch} ko={p.branchKo} el={p.branchEl} size="md" flip={false} /></> : <><Tile ghost size="md" flip={false} /><Tile ghost size="md" flip={false} /></>}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+function BarChart({ rows, unit = '%' }) {
+  const max = Math.max(1, ...rows.map((r) => r.value));
+  return (
+    <div className="bars2">
+      {rows.map((r) => (
+        <div key={r.label} className="bar2c">
+          <b style={{ color: r.color }}>{r.value}{unit}</b>
+          <div className="bar2t"><motion.i style={{ background: r.color }} initial={{ height: 0 }} animate={{ height: `${(r.value / max) * 100}%` }} transition={{ duration: 0.8 }} /></div>
+          <span style={{ color: r.color }}>{r.label}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+function Gauge2({ pct, left, right, color }) {
+  return <div className="gauge2"><div className="g2l"><span>{left}</span><span>{right}</span></div><div className="g2t"><motion.i style={{ background: color }} initial={{ width: 0 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.9 }} /><em style={{ left: `${pct}%` }}>{pct}%</em></div></div>;
 }
 
-export default function Reading({ data, onBack }) {
-  const heading = useRef(null);
-  const R = useMemo(() => interpret(data), [data]);
-  const [cat, setCat] = useState('직장');
+/* ---------------- 페이지 구성 ---------------- */
+function buildPages(R, data) {
+  const S = KSTEMS[data.dayStem];
+  const dayEl = data.pillars.day.stemEl;
+  const ko = ELEMENT_KO;
+  const name = data.meta.name ? `${data.meta.name}님` : '나';
+  const present = data.order.filter((k) => data.pillars[k]);
+  // 오행 % (자리 가중치: 월지 2, 일지 1.5, 월간 1.2, 나머지 1)
+  const w = { year: [1, 1], month: [1.2, 2], day: [1, 1.5], time: [1, 1] };
+  const acc = Object.fromEntries(ELEMENTS.map((e) => [e, 0]));
+  for (const k of present) { acc[data.pillars[k].stemEl] += w[k][0]; acc[data.pillars[k].branchEl] += w[k][1]; }
+  const tot = Object.values(acc).reduce((a, b) => a + b, 0);
+  const elRows = ELEMENTS.map((e) => ({ label: `${ko[e]} ${e}`, value: Math.round((acc[e] / tot) * 1000) / 10, color: EL_HEX[e] }));
+  const groups = ['비겁', '식상', '재성', '관성', '인성'];
+  const gtot = Object.values(R.profile.groups).reduce((a, b) => a + b, 0) || 1;
+  const gRows = groups.map((g) => ({ label: g, value: Math.round(((R.profile.groups[g] || 0) / gtot) * 100), color: ['#7a6a5a', '#5f9a2c', '#d69a2c', '#4f6fd8', '#8a63c9'][groups.indexOf(g)] }));
+  const gy = R.gyeok, y = R.yong;
+  const elWords = [...ELEMENTS.flatMap((e) => [`${e}(${ko[e]})`, e]), '용신', '희신', '기신', '구신'];
+  const sumGroup = (title) => R.summary.find((g) => g.title === title);
+  const seun = R.years.find((yy) => yy.year === data.current.nowYear);
+  const monthsNow = R.monthsOf(data.current.nowYear);
+  const monthNow = monthsNow.find((m) => m.monthNo === data.current.nowMonth);
+  const evAll = Object.values(R.evidenceByCat).flat().sort((a, b) => b.weight - a.weight).slice(0, 7);
+
+  const pages = [];
+  pages.push({ id: 'cover', title: `${name}의 사주풀이`, cover: true, terms: ['사주팔자', '일간', '형국'], body: (
+    <>
+      <PillarsRow data={data} labels={{ day: '일간(나)' }} />
+      <Callout><b>"{R.climate.image}"</b><br />{R.climate.season}에 태어난 {ko[dayEl]} 일간 · {gy.key} · {R.strength.label}</Callout>
+      <Chips items={[`일간 ${data.dayStem} ${ko[dayEl]}`, gy.key, `용신 ${y.el}(${ko[y.el]})`, `필요한 기운 ${R.needEl}(${ko[R.needEl]})`]} />
+      <P>아래 화살표나 좌우 스와이프로 한 장씩 넘겨 보세요. 각 장은 <b className="hl">쉬운 한 줄 요약</b>과 핵심 설명, 그리고 "더 자세히 보기"로 이루어져 있어요. 모르는 말이 나오면 아래 <b className="hl">용어해석</b>을 누르세요.</P>
+      <P>이 풀이는 만세력 계산 + 명리 규칙(격국·용신·자리·신살·대운) + 사주 강의 {R.meta.docs.toLocaleString()}편의 원문 통계를 합쳐 만든 참고 자료예요. 점수와 그래프는 비교를 돕는 지수이고, 정해진 답이 아니라 나를 이해하는 힌트로 읽어 주세요.</P>
+    </>
+  ) });
+
+  pages.push({ id: 'ilgan', title: '나를 나타내는 글자 (일간)', terms: ['일간', '천간·지지', '오행'], body: (
+    <>
+      <div className="hero-tile"><Tile ch={data.dayStem} ko={STEM_KO[data.dayStem]} el={dayEl} size="lg" flip={false} /><div><b>{S.title}</b><span>{S.sub}</span></div></div>
+      <Callout>{S.sub}. <b>{first(S.nature)}</b></Callout>
+      <Chips items={STEM_KEYS[data.dayStem]} />
+      <Sub>성격</Sub><P words={STEM_KEYS[data.dayStem]}>{S.nature}</P>
+      <Divider /><Sub>강점</Sub><P words={STEM_KEYS[data.dayStem]}>{S.strengths}</P>
+      <Divider /><Sub>주의할 점</Sub><P>{S.cautions}</P>
+      <Divider /><Sub>사람을 대할 때</Sub><P>{S.love}</P>
+      <More><Sub>일하는 방식</Sub><P>{S.work}</P><Sub>돈을 다루는 방식</Sub><P>{S.money}</P></More>
+    </>
+  ) });
+
+  pages.push({ id: 'climate', title: '태어난 계절과 형국', terms: ['조후', '형국', '오행'], body: (
+    <>
+      <div className="hero-quote"><span>“</span>{R.climate.image}<span>”</span></div>
+      <Callout>{R.climate.season}에 태어난 {ko[dayEl]} 일간이라 <b>{R.needEl}({ko[R.needEl]}) 기운</b>이 가장 필요해요 — {R.climate.needWhy}.</Callout>
+      <Chips items={[`${R.climate.season}생`, `필요한 기운 ${R.needEl}`, R.climate.needCount ? `원국에 ${R.climate.needCount}개` : '원국에 없음', R.climate.inNeedDaeun ? '지금 대운에 들어옴' : null]} />
+      {R.climate.paras.map((p, i) => <P key={i} words={[`${R.needEl}(${ko[R.needEl]})`, R.needEl, '투출']}>{p}</P>)}
+      {R.climate.timing.years.length > 0 && <><Sub>{R.needEl} 기운이 들어오는 해</Sub><Chips items={R.climate.timing.years.map((yy) => `${yy.year} ${yy.text}`)} /></>}
+      {R.climate.timing.daeun.length > 0 && <><Sub>{R.needEl} 기운이 들어오는 대운</Sub><Chips items={R.climate.timing.daeun.map((d) => `${d.age}세~ ${d.text}`)} /></>}
+    </>
+  ) });
+
+  const iljuPat = R.patterns.find((p) => p.kind === '일주');
+  pages.push({ id: 'ilju', title: '나의 일주 이야기', terms: ['일주', '십이운성', '지장간'], body: (
+    <>
+      <div className="hero-ilju"><span className="hj" style={{ color: EL_HEX[dayEl] }}>{data.pillars.day.text}</span><b>{STEM_KO[data.dayStem]}{BRANCH_KO[data.pillars.day.branch]}일주</b></div>
+      {iljuPat && <div className="hero-quote small"><span>“</span>{iljuPat.img}<span>”</span></div>}
+      <Callout>{iljuPat ? first(iljuPat.pos) : first(D.POS_BRANCH.day[data.detail.day.branchGod])}</Callout>
+      <Chips items={[data.detail.day.branchGod, data.detail.day.stage, data.detail.day.salDay, ...(iljuPat?.stats?.keywords ? cleanKw(iljuPat.stats.keywords).filter((k) => !/일주|일간/.test(k)).slice(0, 2) : [])]} />
+      <Sub>성격</Sub>
+      {iljuPat && <><P words={['자립', '독립', '추진력', '명예', '매력', '총명', '인내', '예술']}>{iljuPat.pos}</P><P words={['고독', '갈등', '마찰', '주의', '조심']}>다만 {iljuPat.neg}</P></>}
+      <P>{D.POS_BRANCH.day[data.detail.day.branchGod]}</P>
+      <Divider /><Sub>배우자 자리</Sub>
+      <P words={['배우자']}>{`배우자상은 "${D.SPOUSE[data.pillars.day.branch]}"`}</P>
+      <P>일지의 십이운성이 {data.detail.day.stage}이라 결혼 생활은 {D.STAGE_LIFE[data.detail.day.stage]}.</P>
+      <Divider /><Sub>대인관계</Sub><P>{require_(data)}</P>
+      <More><P>지장간 {data.detail.day.hidden.map((h) => `${h.ko}(${h.god})`).join('·')}이 숨어 있어 배우자와 가정 안에 이 기운들이 함께 작용해요.</P>{iljuPat?.stats && <P>강의 원문에서 {data.pillars.day.text} 일주는 {iljuPat.stats.docs}편에서 다뤄졌고, 어조는 {iljuPat.stats.polarity > 0.15 ? '긍정 쪽' : iljuPat.stats.polarity < -0.15 ? '부정 쪽' : '중립'}이에요.</P>}</More>
+    </>
+  ) });
+
+  pages.push({ id: 'elements', title: '나의 에너지는 어떤 모습 (오행)', terms: ['오행', '지장간'], body: (
+    <>
+      <BarChart rows={elRows} />
+      <p className="legend"><i style={{ background: EL_HEX[R.climate.dayEl] }} />타고난 오행 (자리 가중치 반영 %)</p>
+      <Callout><b>{data.elements[R.profile.dominant] !== undefined ? '' : ''}{ELEMENTS.reduce((a, b) => (acc[b] > acc[a] ? b : a))}({ko[ELEMENTS.reduce((a, b) => (acc[b] > acc[a] ? b : a))]}) 기운</b>이 가장 강하고{data.missing.length ? <>, <b>{data.missing.map((m) => `${m}(${ko[m]})`).join('·')}</b> 기운은 비어 있어요.</> : ', 다섯 기운이 모두 있어요.'}</Callout>
+      <Sub>겉으로 드러나는 힘</Sub>
+      <P words={elWords}>{KEL[ELEMENTS.reduce((a, b) => (acc[b] > acc[a] ? b : a))].excess}</P>
+      {data.missing.length > 0 && <><Divider /><Sub>비어 있는 기운</Sub>{data.missing.map((m) => <P key={m} words={elWords}>{`${KEL[m].lack} ${m}(${ko[m]})은 ${KEL[m].organ} 계통과 "${D.YONG[m].mean}"의 영역을 뜻해요. ${KEL[m].remedy} 같은 것으로 채우고, ${m} 운(${KEL[m].luckBranches.join('·')} 해·달)에 그 영역이 움직이는 것을 기회로 삼으세요.`}</P>)}</>}
+      <More>{(sumGroup('오행과 십성의 구조')?.paras || []).slice(0, 1).map((p, i) => <P key={i}>{p}</P>)}</More>
+    </>
+  ) });
+
+  pages.push({ id: 'gyeok', title: '관계 속에서의 내 스타일 (격국으로 보는 나)', terms: ['격국', '십성(십신)'], body: (
+    <>
+      <PillarsRow data={data} labels={{ month: gy.key, day: '일간(나)' }} />
+      <Callout><b>{gy.tag}</b>. {first(gy.desc)}</Callout>
+      <Chips items={gy.career} />
+      <Sub>관계 속에서 만나는 나</Sub><P words={[gy.key, '명예', '책임', '표현', '재물', '배움', '자립']}>{gy.desc}</P>
+      <Divider /><Sub>나를 이끄는 기운의 틀</Sub><P>{gy.strength}</P>
+      <Divider /><Sub>조심할 점</Sub><P>{gy.weakness}</P>
+      <Divider /><Sub>이렇게 쓰면 좋아요</Sub><P>{gy.advice}</P>
+      <More><P>{`격국은 태어난 달(월지 ${data.pillars.month.branch})의 십성 ${data.detail.month.branchGod}으로 정해요. 월지는 부모·사회·직장 환경을 뜻하는 자리라, 격국은 "내가 세상과 만나는 방식"을 보여 줍니다.`}</P><P>{D.POS_BRANCH.month[data.detail.month.branchGod]}</P></More>
+    </>
+  ) });
+
+  pages.push({ id: 'yong', title: '힘의 균형과 나를 돕는 기운 (용신)', terms: ['신강·신약', '용신', '희신·기신·구신', '통근·투출'], body: (
+    <>
+      <Gauge2 pct={R.strength.pct} left="신약 (나를 채워야 함)" right="신강 (밖으로 써야 함)" color="#d69a2c" />
+      <Callout>{name}은 <b>{R.strength.label}</b> 사주예요. 힘이 되는 기운은 <b>{y.el}({ko[y.el]})</b>과 {y.hee}({ko[y.hee]}), 조심할 기운은 <b>{y.gi}({ko[y.gi]})</b>이에요.</Callout>
+      <Chips items={[{ label: `용신 ${y.el} ${ko[y.el]}`, tone: 'good' }, { label: `희신 ${y.hee} ${ko[y.hee]}`, tone: 'good' }, { label: `기신 ${y.gi} ${ko[y.gi]}`, tone: 'bad' }, { label: `구신 ${y.gu} ${ko[y.gu]}`, tone: 'gray' }, { label: `조후 ${R.needEl} ${ko[R.needEl]}`, tone: 'good' }]} />
+      <Sub>나의 힘</Sub><P words={['신강', '신약', '중화']}>{R.overview[1]}</P>
+      <Divider /><Sub>용신이란 — 내게 가장 필요한 기운</Sub><P words={elWords}>{y.text}</P>
+      <Divider /><Sub>이렇게 채워요 (개운법)</Sub>
+      <Chips items={[`색 ${y.open.color}`, `방향 ${y.open.dir}`, `숫자 ${y.open.num}`, `계절·시간 ${y.open.season}`, `음식 ${y.open.food}`]} tone="soft" />
+      <P>{y.open.habit}. 어울리는 일은 {y.open.job}. {y.open.avoid}</P>
+      <More><Sub>뿌리와 투출</Sub><P words={['통근', '투출']}>{R.roots.text}</P></More>
+    </>
+  ) });
+
+  pages.push({ id: 'structure', title: '십성으로 본 나의 구조', terms: ['십성(십신)', '비견', '식신', '편재', '편관', '정인'], body: (
+    <>
+      <BarChart rows={gRows} />
+      <p className="legend"><i style={{ background: '#7a6a5a' }} />비겁=나 · 식상=표현 · 재성=재물 · 관성=책임 · 인성=배움</p>
+      <Callout><b>{R.profile.dominant}</b> 중심의 구조예요{R.profile.missing.length ? <> — <b>{R.profile.missing.join('·')}</b>은 비어 있어요.</> : '.'}</Callout>
+      {(sumGroup('오행과 십성의 구조')?.paras || []).slice(1).map((p, i) => <P key={i} words={['비겁', '식상', '재성', '관성', '인성', '비견', '겁재', '식신', '상관', '편재', '정재', '편관', '정관', '편인', '정인']}>{p}</P>)}
+    </>
+  ) });
+
+  pages.push({ id: 'pillars', title: '네 기둥, 인생의 네 시기', terms: ['천간·지지', '십이운성', '십이신살', '공망'], body: (
+    <>
+      <Callout>년주는 <b>초년·조상</b>, 월주는 <b>청년·사회</b>, 일주는 <b>중년·나와 배우자</b>, 시주는 <b>말년·자식</b>을 보여 줘요.</Callout>
+      <div className="posgrid book">
+        {R.positions.map((p) => (
+          <article key={p.pos} className={`poscard ${p.pos === 'day' ? 'me' : ''}`}>
+            <header><GZ g={p.gz} /><div><b>{p.ko} · {p.root}</b><small>{p.period}<br />{p.who}</small></div></header>
+            <div className="posmeta"><span>{p.pos !== 'day' ? `천간 ${p.stemGod}` : '일간(나)'}</span><span>지지 {p.branchGod}</span><span>{p.stage}</span><span>{p.sal}</span>{p.gongmang && <span className="gm">공망</span>}</div>
+            {p.texts.slice(0, 2).map((t, i) => <p key={i}>{t}</p>)}
+            <details className="bmore tiny"><summary>더 보기</summary>{p.texts.slice(2).map((t, i) => <p key={i}>{t}</p>)}</details>
+          </article>
+        ))}
+      </div>
+      <More title="인생 4단계 한눈에">{R.lifeStages.map((l, i) => <P key={i}>{l.text}</P>)}</More>
+    </>
+  ) });
+
+  const rel = data.relations;
+  const pairs = [...rel.stemHap.map((r) => ({ ...r, kind: '천간합' })), ...rel.stemChung.map((r) => ({ ...r, kind: '천간충' })), ...rel.yukhap.map((r) => ({ ...r, kind: '육합' })), ...rel.samhap.filter((r) => r.full).map((r) => ({ ...r, kind: '삼합' })), ...rel.chung.map((r) => ({ ...r, kind: '충' })), ...rel.hyeong.map((r) => ({ ...r, kind: r.label })), ...rel.pa.map((r) => ({ ...r, kind: '파' })), ...rel.hae.map((r) => ({ ...r, kind: '해' })), ...rel.wonjin.map((r) => ({ ...r, kind: '원진' })), ...rel.gwimun.map((r) => ({ ...r, kind: '귀문' }))];
+  pages.push({ id: 'relations', title: '글자들의 만남 (합·충)', terms: ['합', '충', '형·파·해', '원진', '귀문관살', '공망'], body: (
+    <>
+      <Callout>여덟 글자 사이에 <b>{pairs.length}개</b>의 특별한 만남이 있어요. 합은 묶임·인연, 충은 변화·움직임이에요.</Callout>
+      <div className="pairlist">{pairs.length ? pairs.map((r, i) => <div key={i} className={`pairrow ${/충|원진|형|파|해|귀문/.test(r.kind) ? 'bad' : 'good'}`}><span className="pk">{r.kind}</span><b>{r.chars.map((c) => `${c.posKo}주 ${c.ch}`).join(' + ')}</b></div>) : <p className="bp">뚜렷한 합·충이 없어요.</p>}</div>
+      {(sumGroup('글자들의 관계와 신살')?.paras || []).filter((p) => !/있어 /.test(p) || /충|합|원진|귀문|형|해/.test(p)).slice(0, pairs.length ? pairs.length + 1 : 1).map((p, i) => <P key={i} words={['충(沖)', '합', '원진(怨嗔)', '귀문관살', '해(害)', '형(刑)']}>{p}</P>)}
+    </>
+  ) });
+
+  const sinsalList = [...new Set(present.flatMap((k) => (data.sinsal[k] || []).map((s) => s.name)))];
+  pages.push({ id: 'sinsal', title: '나를 따르는 별 (신살)', terms: ['십이신살', '도화살', '역마살', '화개살', '천을귀인', '백호대살·괴강', '양인·홍염'], body: (
+    <>
+      <Callout>{sinsalList.length ? <>{name}에게는 <b>{sinsalList.slice(0, 4).join('·')}</b>{sinsalList.length > 4 ? ` 등 ${sinsalList.length}개` : ''}의 별이 있어요.</> : '두드러지는 신살이 없어 오행과 십성의 구조가 삶을 이끌어요.'}</Callout>
+      <div className="sinsalgrid">
+        {sinsalList.map((n) => { const s = KSINSAL[n]; const where = present.filter((k) => (data.sinsal[k] || []).some((x) => x.name === n)).map((k) => ({ year: '년주', month: '월주', day: '일주', time: '시주' }[k])).join('·'); return s ? <article key={n} className="sinsalcard"><header><b>{s.title}</b><small>{where}</small></header><p>{s.text}</p></article> : null; })}
+      </div>
+    </>
+  ) });
+
+  pages.push({ id: 'daeun', title: '인생의 큰 흐름 (대운)', terms: ['대운', '십이운성', '십이신살'], body: (
+    <>
+      <div className="dstrip">
+        {R.daeunAll.map((d) => <div key={d.index} className={`dcard ${d.isNow ? 'now' : ''} ${d.past ? 'past' : ''}`}><span className="dage">{d.age}<small>세</small></span><span className="dyear">{d.startYear}</span><GZ g={d} /><span className="dgod">{d.stemGod}<br />{d.branchGod}</span><Score n={d.luck.overall} />{d.isNow && <em>지금</em>}</div>)}
+      </div>
+      {R.daeunFlow[0] && <Callout>지금은 <b>{R.daeunFlow[0].age}세부터의 {R.daeunFlow[0].stem}{R.daeunFlow[0].branch} 대운</b> — {R.daeunFlow[0].luck.head}이 10년의 주제예요.</Callout>}
+      {R.daeunFlow.map((d) => <P key={d.index} words={['투출', '용신', '기신', '충', '공망']}>{d.text}</P>)}
+      <More title="지나온 대운과 인생 4단계"><Sub>지나온 대운</Sub>{R.daeunAll.filter((d) => d.past).map((d) => <P key={d.index}>{d.text}</P>)}<Sub>인생 4단계</Sub>{R.lifeStages.map((l, i) => <P key={i}>{l.text}</P>)}</More>
+    </>
+  ) });
+
+  for (const cat of CATS) {
+    const c = R.cats[cat], m = CAT_META[cat];
+    pages.push({ id: `cat-${cat}`, title: `${cat}운 — ${m.desc}`, terms: cat === '직장' ? ['격국', '정관', '편관(칠살)'] : cat === '금전' ? ['편재', '정재', '식신'] : cat === '연애' ? ['일주', '합', '충', '도화살'] : cat === '건강' ? ['오행', '편관(칠살)', '충'] : ['정인', '편인', '정관'], cat, color: m.color, body: <CategoryPage R={R} data={data} cat={cat} /> });
+  }
+
+  pages.push({ id: 'thisyear', title: `올해와 이달 (${data.current.nowYear}년 ${data.current.nowMonth}월)`, terms: ['세운', '월운', '삼재'], body: (
+    <>
+      {seun && <>
+        <div className="hero-tile"><GZ g={seun} size="lg" /><div><b>{data.current.nowYear}년 {seun.text}년</b><span>{seun.age}세 · {seun.luck.head}</span></div></div>
+        <Callout><b>{seun.luck.head}</b>이 올해의 중심이에요. {seun.luck.summary[1] ? first(seun.luck.summary[1]) : ''}</Callout>
+        <div className="ytags">{seun.luck.hasNeed && <em className="ytag need">{R.needEl} 투출</em>}{seun.luck.hasYong && <em className="ytag hap">용신</em>}{seun.luck.hasGi && <em className="ytag chung">기신</em>}{seun.samjae && <em className="ytag">삼재</em>}{seun.luck.flags.map((f, i) => <em key={i} className={`ytag ${f.type === '충' ? 'chung' : f.type === '합' || f.type === '삼합' ? 'hap' : ''}`}>{f.ch} {f.type}</em>)}</div>
+        {seun.luck.summary.map((s, i) => <P key={i} words={['투출', '용신', '기신', '삼재']}>{s}</P>)}
+        <Sub>올해의 다섯 가지 운</Sub>
+        <div className="catrows">{CATS.map((k) => <div key={k} className="catrow"><b style={{ color: CAT_META[k].color }}>{k}</b><Score n={seun.luck.scores[k]} color={CAT_META[k].color} /><p>{first(seun.luck.texts[k])}</p></div>)}</div>
+      </>}
+      <Divider /><Sub>{data.current.nowYear}년 열두 달 흐름</Sub>
+      <MonthBars months={monthsNow} nowMonth={data.current.nowMonth} />
+      {monthNow && <><Callout tone="orange">이달({data.current.nowMonth}월 {monthNow.text}) — <b>{monthNow.luck.head}</b></Callout>{monthNow.luck.summary.map((s, i) => <P key={i}>{s}</P>)}<div className="catrows">{CATS.map((k) => <div key={k} className="catrow"><b style={{ color: CAT_META[k].color }}>{k}</b><Score n={monthNow.luck.scores[k]} color={CAT_META[k].color} /><p>{monthNow.luck.texts[k]}</p></div>)}</div></>}
+    </>
+  ) });
+
+  pages.push({ id: 'years', title: '앞으로 10년의 흐름', terms: ['세운', '대운', '삼재'], body: (
+    <>
+      <div className="flow-chart-scroll"><Trend points={R.years.map((yy) => ({ key: yy.year, label: String(yy.year).slice(2), value: yy.luck.overall, now: yy.year === data.current.nowYear, mark: yy.luck.hasNeed ? R.needEl : yy.samjae ? '삼재' : null }))} height={170} /></div>
+      <Callout>가장 좋은 해는 <b>{[...R.years].sort((a, b) => b.luck.overall - a.luck.overall)[0].year}년</b>, 조심할 해는 <b>{[...R.years].sort((a, b) => a.luck.overall - b.luck.overall)[0].year}년</b>이에요. {R.needEl} 표시는 필요한 기운이 들어오는 해예요.</Callout>
+      <div className="ylist book">
+        {R.years.map((yy) => (
+          <details key={yy.year} className={`ycard ${yy.year === data.current.nowYear ? 'now' : ''}`}>
+            <summary className="yhead"><span className="yyear">{yy.year}<small>{yy.age}세</small></span><GZ g={yy} /><span className="ygod"><span>{yy.stemGod}·{yy.branchGod}</span><small>{yy.luck.head}</small></span><Score n={yy.luck.overall} /><i className="chev" /></summary>
+            <div className="ybody">{yy.luck.summary.map((s, i) => <p key={i}>{s}</p>)}<div className="catrows">{CATS.map((k) => <div key={k} className="catrow"><b style={{ color: CAT_META[k].color }}>{k}</b><Score n={yy.luck.scores[k]} color={CAT_META[k].color} /><p>{first(yy.luck.texts[k])}</p></div>)}</div></div>
+          </details>
+        ))}
+      </div>
+    </>
+  ) });
+
+  pages.push({ id: 'evidence', title: '강의 원문이 말하는 나', terms: ['십성(십신)', '격국', '십이신살'], body: (
+    <>
+      <Callout>{name}의 글자·조합을 다룬 사주 강의 원문에서 <b>실제로 반복된 이야기</b>를 좋은 것·조심할 것 가리지 않고 모았어요.</Callout>
+      <div className="evsum"><div className="col p"><h5>吉 · 좋게 보는 점</h5>{R.evidenceSummary.pos.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div><div className="col n"><h5>凶 · 조심하라는 점</h5>{R.evidenceSummary.neg.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div></div>
+      <Evidence rows={evAll} />
+      {R.keywords.length > 0 && <><Sub>함께 자주 나오는 말</Sub><div className="kws">{R.keywords.map((k) => <i key={k}>#{k}</i>)}</div></>}
+      <More title={`이 사주의 조합 ${R.patterns.length}개 (吉/凶·원문 어조)`}><div className="plist">{R.patterns.map((p, i) => <PatternCard key={p.key} p={p} i={i} claimMeta={R.meta.claims || {}} />)}</div></More>
+    </>
+  ) });
+
+  pages.push({ id: 'advice', title: '조언과 개운법', terms: ['용신', '희신·기신·구신', '조후'], body: (
+    <>
+      <Callout><b>{R.advice[0]}</b></Callout>
+      <Chips items={[{ label: `용신 ${y.el} — ${y.open.color}`, tone: 'good' }, { label: `${y.open.dir} 방향`, tone: 'good' }, { label: `숫자 ${y.open.num}`, tone: 'good' }, { label: `기신 ${y.gi} 환경 주의`, tone: 'bad' }]} />
+      {R.advice.slice(1).map((p, i) => <P key={i} words={elWords}>{p}</P>)}
+      <Divider /><Sub>이 풀이를 읽는 법</Sub>
+      <P>사주는 정해진 운명이 아니라 타고난 기질과 흐름의 지도예요. 좋은 시기에는 과감하게, 낮은 시기에는 지키면서 가면 같은 길도 덜 헤매며 갈 수 있어요. 점수·그래프는 참고 지수이고 건강 문구는 진단이 아닌 생활 관리의 힌트예요.</P>
+      <details className="bmore"><summary>참고 자료</summary>{READING_SOURCES.map((s) => <a key={s.url} className="srclink" href={s.url} target="_blank" rel="noreferrer">{s.title} ↗<small>{s.note}</small></a>)}<a className="srclink" href="https://doc.8-codes.com/docs/lecture/16/" target="_blank" rel="noreferrer">정해 만세력 · 격국 ↗</a><a className="srclink" href="https://www.sajuforum.com/01forum/nm/05_youngsin.php" target="_blank" rel="noreferrer">사주포럼 · 용신 ↗</a><a className="srclink" href="https://giunsa.com/blog/four-pillars-guide" target="_blank" rel="noreferrer">기운사 · 네 기둥 ↗</a></details>
+    </>
+  ) });
+
+  return pages.map((p, i) => ({ ...p, num: p.cover ? 0 : i }));
+}
+function require_(data) { return KELBRANCH[data.pillars.day.branch]; }
+import { BRANCHES as KELBRANCH } from '../data/knowledge.js';
+
+/* 카테고리 페이지 (내부 상태: 선택 연도) */
+function CategoryPage({ R, data, cat }) {
+  const c = R.cats[cat], m = CAT_META[cat];
   const [year, setYear] = useState(data.current.nowYear);
-  const [month, setMonth] = useState(data.current.nowMonth);
-  const [openDaeun, setOpenDaeun] = useState(false);
-  const ctx = useMemo(() => contextualReading(data, year, cat === '건강' ? '생활' : cat), [data, year, cat]);
+  const yy = R.years.find((y) => y.year === year);
   const months = useMemo(() => R.monthsOf(year), [R, year]);
-  const c = R.cats[cat];
-  const m = CAT_META[cat];
-  const yearObj = R.years.find((y) => y.year === year);
-  const monthObj = months.find((mm) => mm.monthNo === month);
-  const ctxMonth = ctx.months.find((mm) => mm.month === month);
-  const elements = Object.fromEntries(['목', '화', '토', '금', '수'].map((k, i) => [k, Object.values(data.elements)[i]]));
-  const radarMeta = { 목: { color: '#457459' }, 화: { color: '#b3473c' }, 토: { color: '#987021' }, 금: { color: '#6c647b' }, 수: { color: '#416b9a' } };
-  const pickYear = (y) => { setYear(y); setMonth(y === data.current.nowYear ? data.current.nowMonth : 1); };
-  useEffect(() => { heading.current?.focus({ preventScroll: true }); }, []);
-  const catValues = Object.fromEntries(CATS.map((k) => [k, R.cats[k].score]));
+  const key = cat === '직장' ? ['격국', '관성', '명예', '승진', '독립'] : cat === '금전' ? ['재성', '재물', '식상', '용신'] : cat === '연애' ? ['배우자', '인연', '일지', '합', '충'] : cat === '건강' ? ['체질', '오행', '검진', '수면'] : ['인성', '자격', '시험', '배움'];
+  return (
+    <>
+      <div className="catstats">
+        <div><small>{cat}운 종합</small><Score n={c.score} color={m.color} /></div>
+        <div><small>가장 좋은 해</small><b style={{ color: '#2f8a4b' }}>{c.best?.year}</b><span>{c.best?.text}</span></div>
+        <div><small>조심할 해</small><b style={{ color: '#d6453d' }}>{c.worst?.year}</b><span>{c.worst?.text}</span></div>
+      </div>
+      <Callout><b>{cat}운 {c.score}/5</b>. {first(c.sections[0].paras[0])}</Callout>
+      {c.gauge && <Gauge2 pct={c.gauge.value} left={c.gauge.left} right={c.gauge.right} color={m.color} />}
+      <Sub>{c.sections[0].title}</Sub>{c.sections[0].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
+      <Divider /><Sub>{c.sections[1].title}</Sub>{c.sections[1].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
+      <Divider /><Sub>앞으로 10년 {cat}운</Sub>
+      <div className="flow-chart-scroll"><Trend points={c.series} color={m.color} height={160} selected={year} onPick={(p) => setYear(p.key)} /></div>
+      {yy && <div className="yearnote"><b>{year}년 {yy.text}</b><Score n={yy.luck.scores[cat]} color={m.color} /><p>{yy.luck.texts[cat]}</p><MonthBars months={months} color={m.color} nowMonth={year === data.current.nowYear ? data.current.nowMonth : null} getValue={(mm) => mm.luck.scores[cat]} /><small>{year}년 열두 달 {cat}운 — 막대가 높을수록 그 달에 유리해요.</small></div>}
+      <Divider /><Sub>기운이 들어오는 때</Sub>{(c.sections.find((s) => /때/.test(s.title))?.paras || []).slice(0, 3).map((p, i) => <P key={i} words={[R.needEl, `${R.needEl}(${ELEMENT_KO[R.needEl]})`]}>{p}</P>)}
+      <Divider /><Sub>지금 흐르는 운</Sub><div className="nowlist">{c.now.map((n, i) => <div className="nowitem" key={i}><div className="nowlabel"><span>{n.label}</span><Score n={n.score} color={m.color} /></div><p>{n.text}</p></div>)}</div>
+      <More title="더 자세히 보기 (전체 설명 · 조합 · 원문)">
+        {c.sections.slice(2).map((s, i) => <div key={i}><Sub>{s.title}</Sub>{s.paras.map((p, j) => <P key={j}>{p}</P>)}</div>)}
+        {c.evidence?.length > 0 && <><Sub>강의 원문이 말하는 이 사주의 {cat}</Sub><Evidence rows={c.evidence} /></>}
+      </More>
+    </>
+  );
+}
+
+/* ---------------- 책 뷰어 ---------------- */
+export default function Reading({ data, onBack }) {
+  const R = useMemo(() => interpret(data), [data]);
+  const pages = useMemo(() => buildPages(R, data), [R, data]);
+  const [idx, setIdx] = useState(0);
+  const [dir, setDir] = useState(1);
+  const [gloss, setGloss] = useState(false);
+  const [toc, setToc] = useState(false);
+  const top = useRef(null);
+  const go = (i) => { const n = Math.max(0, Math.min(pages.length - 1, i)); if (n === idx) return; setDir(n > idx ? 1 : -1); setIdx(n); window.scrollTo({ top: 0 }); };
+  useEffect(() => { const onKey = (e) => { if (e.key === 'ArrowRight') go(idx + 1); if (e.key === 'ArrowLeft') go(idx - 1); if (e.key === 'Escape') { setGloss(false); setToc(false); } }; window.addEventListener('keydown', onKey); return () => window.removeEventListener('keydown', onKey); });
+  const page = pages[idx];
+  const terms = page.terms || [];
+  const glossSorted = [...GLOSSARY].sort((a, b) => Number(terms.includes(b.t)) - Number(terms.includes(a.t)));
 
   return (
-    <div className="analysis-page deep">
-      <header className="report-top"><span className="report-brand">天機錄 <small>사주 해석</small></span><button className="text-button" onClick={onBack}>← 만세력으로 돌아가기</button></header>
-      <div className="analysis-heading">
-        <p className="kicker">여덟 글자, 하나의 이야기</p>
-        <h1 tabIndex={-1} ref={heading}>{data.meta.name ? `${data.meta.name} 님의` : '나의'} 사주 심층 해석</h1>
-        <p>"{R.climate.image}" — {R.gyeok.key}, {R.strength.label}. 타고난 바탕과 다가오는 흐름을 격국·용신·자리·조합·원문 통계로 함께 읽습니다.</p>
-      </div>
-      <nav className="section-links" aria-label="해석 빠른 이동">{NAV.map(([h, t]) => <a key={h} href={h}>{t}</a>)}<button onClick={onBack}>만세력 보기 ↗</button></nav>
-      {!data.pillars.time && <p className="gentle-note">시간을 제외한 여섯 글자로 풀었어요. 태어난 시간에 따라 시주(말년·자식) 관련 해석은 달라질 수 있어요.</p>}
+    <div className="book" ref={top}>
+      <header className="book-top"><button className="icon" onClick={onBack} aria-label="만세력으로">☰</button><b>사주풀이</b><button className="icon" onClick={onBack} aria-label="닫기">✕</button></header>
+      <AnimatePresence mode="wait" custom={dir}>
+        <motion.section key={page.id} className="book-page" custom={dir} drag="x" dragDirectionLock dragConstraints={{ left: 0, right: 0 }} dragElastic={0.12}
+          onDragEnd={(_, info) => { if (info.offset.x < -70) go(idx + 1); else if (info.offset.x > 70) go(idx - 1); }}
+          initial={{ opacity: 0, x: dir * 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -dir * 40 }} transition={{ duration: 0.28, ease: 'easeOut' }}>
+          <div className={`page-head ${page.cover ? 'cover' : ''}`} style={page.color ? { '--c': page.color } : undefined}>{!page.cover && <span className="pnum">{page.num}</span>}<h2>{page.title}</h2></div>
+          <div className="page-body">{page.body}</div>
+          <div className="page-foot"><button type="button" disabled={idx === 0} onClick={() => go(idx - 1)}>‹ 이전</button><span>{idx + 1} / {pages.length}</span><button type="button" disabled={idx === pages.length - 1} onClick={() => go(idx + 1)}>다음 ›</button></div>
+        </motion.section>
+      </AnimatePresence>
 
-      <Stats items={[
-        { label: '일간', value: `${data.dayStem} ${ELEMENT_KO[data.pillars.day.stemEl]}`, sub: `${STEM_KO[data.dayStem]} · ${R.strength.label} (${R.strength.pct}%)` },
-        { label: '격국', value: R.gyeok.key, sub: R.gyeok.tag },
-        { label: '용신 · 희신', value: `${R.yong.el} · ${R.yong.hee}`, sub: `기신 ${R.yong.gi} · 구신 ${R.yong.gu}`, color: ELEMENT_COLOR[R.yong.el].bg },
-        { label: '조후 필요 기운', value: `${R.needEl} ${ELEMENT_KO[R.needEl]}`, sub: R.climate.needCount ? `원국에 ${R.climate.needCount}개` : '원국에 없음 → 운에서', color: ELEMENT_COLOR[R.needEl].bg },
-      ]} />
+      <nav className="book-bar" aria-label="풀이 이동">
+        <button type="button" className="gloss" onClick={() => setGloss(true)}>📖 용어해석</button>
+        <button type="button" className="tocbtn" onClick={() => setToc(true)} aria-label="목차">⊟</button>
+        <button type="button" className="book-prev" disabled={idx === 0} onClick={() => go(idx - 1)} aria-label="이전">‹</button>
+        <span className="pagenum">{idx + 1} / {pages.length}</span>
+        <button type="button" className="book-next" disabled={idx === pages.length - 1} onClick={() => go(idx + 1)} aria-label="다음">›</button>
+      </nav>
 
-      {/* 01 종합평가 */}
-      <section id="r-summary" className="reading-flow-section">
-        <div className="section-heading"><div><span>01</span><h2>종합평가</h2></div><p>형국 · 격국 · 용신 · 구조 · 네 기둥 · 관계 · 대운 · 원문 · 조언</p></div>
-        <div className="paper overview-paper">
-          <div className="overview-grid">
-            <div>
-              <p className="kicker">형국 形局</p>
-              <h3 className="overview-title">{R.climate.image}</h3>
-              <p className="overview-sub">{R.climate.imageNote ? R.climate.imageNote + ' · ' : ''}{R.climate.season}생 {ELEMENT_KO[R.climate.dayEl]} 일간 · {R.profile.dominant ? `${R.profile.dominant} 중심` : ''} · 필요한 기운 {R.needEl}({ELEMENT_KO[R.needEl]})</p>
-              <Bars scores={catValues} />
-            </div>
-            <div className="overview-radars">
-              <div><Radar values={elements} axes={['목', '화', '토', '금', '수']} meta={radarMeta} max={Math.max(4, ...Object.values(elements))} unit="개" size={200} /><small>오행 분포</small></div>
-              <div><Radar values={catValues} size={200} /><small>5대 운 종합</small></div>
-            </div>
-          </div>
-        </div>
-        {R.summary.map((g, gi) => (
-          <Sec key={g.title} icon={g.icon} title={g.title} sub={g.sub}>
-            <Paras items={g.paras} />
-            {g.positions && (
-              <div className="posgrid">
-                {g.positions.map((p) => (
-                  <article key={p.pos} className={`poscard ${p.pos === 'day' ? 'me' : ''}`}>
-                    <header><GZ g={p.gz} /><div><b>{p.ko} · {p.root}</b><small>{p.period}<br />{p.who}</small></div></header>
-                    <div className="posmeta"><span>{p.pos !== 'day' ? `천간 ${p.stemGod}` : '일간(나)'}</span><span>지지 {p.branchGod}</span><span>{p.stage}</span><span>{p.sal}</span>{p.gongmang && <span className="gm">공망</span>}</div>
-                    {p.texts.map((t, i) => <p key={i}>{t}</p>)}
-                  </article>
-                ))}
-              </div>
-            )}
-            {g.daeunAll && (
-              <div className="lifeline">
-                {(openDaeun ? g.daeunAll : g.daeunAll.filter((d) => !d.past)).map((d) => (
-                  <div key={d.index} className={`drow ${d.isNow ? 'now' : ''} ${d.past ? 'past' : ''}`}><GZ g={d} /><div><div className="dtop"><b>{d.age}세~ {d.text.split(' 대운')[0].split(' ').slice(-1)[0]} 대운</b><Score n={d.luck.overall} />{d.isNow && <em className="ytag need">지금</em>}{d.luck.hasNeed && <em className="ytag need">{R.needEl}</em>}{d.luck.hasYong && <em className="ytag hap">용신</em>}{d.luck.hasGi && <em className="ytag chung">기신</em>}</div><p>{d.text}</p></div></div>
-                ))}
-                {g.daeunAll.some((d) => d.past) && <button type="button" className="ylink" onClick={() => setOpenDaeun((v) => !v)}>{openDaeun ? '지나온 대운 접기' : `지나온 대운 ${g.daeunAll.filter((d) => d.past).length}개 펼치기`}</button>}
-              </div>
-            )}
-            {g.evidenceSummary && (
-              <>
-                <div className="evsum">
-                  <div className="col p"><h5>吉 · 좋게 보는 점</h5>{g.evidenceSummary.pos.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div>
-                  <div className="col n"><h5>凶 · 조심하라는 점</h5>{g.evidenceSummary.neg.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div>
-                </div>
-                <p className="muted">이 사주의 일간·일주·십성·신살·충합·구조를 다룬 강의 원문에서 실제로 반복된 결과·특성을 집계한 것입니다. 각 주제 탭에서 근거와 함께 자세히 볼 수 있습니다.</p>
-                {g.keywords.length > 0 && <div className="kws">{g.keywords.map((k) => <i key={k}>#{k}</i>)}</div>}
-              </>
-            )}
-          </Sec>
-        ))}
-      </section>
-
-      {/* 02 성격 */}
-      <section id="r-character" className="reading-flow-section">
-        <div className="section-heading"><div><span>02</span><h2>성격과 기질</h2></div><p>일간 · 일주 · 일지 · 십이운성 · 신살 · 원문</p></div>
-        <Sec icon="性" title="타고난 기질" sub={`${R.gyeok.tag} · ${R.strength.label}`}>
-          <div className="character-intro"><span className="character-glyph">{data.dayStem}</span><div><h3>{ctx.character[0]}</h3><p>{ctx.character[1]}을 상징해요.</p></div></div>
-          <Paras items={R.character} />
-        </Sec>
-        <Sec icon="言" title="강의 원문이 말하는 이 사주의 기질" sub="좋은 평가와 조심하라는 평가를 가리지 않고 반복된 것">
-          <Evidence rows={R.evidenceByCat['성격']} />
-          <Evidence rows={R.evidenceByCat['가족']} title="가족·인간관계에 대해 말하는 것" />
-        </Sec>
-        <Sec icon="結" title="글자들이 만나며 달라지는 면" sub="원국 안의 합·충·삼합·방합">
-          {ctx.natal.length ? ctx.natal.map((r) => <Connection key={r.key} r={r} />) : <p>뚜렷한 합·충·삼합·방합은 없어, 계절과 전체 기운의 분포를 중심으로 읽어요.</p>}
-        </Sec>
-      </section>
-
-      {/* 03 운의 흐름 */}
-      <section id="r-flow" className="reading-flow-section">
-        <div className="section-heading"><div><span>03</span><h2>운의 흐름</h2></div><p>주제를 고르고 연도 → 달을 눌러 보세요</p></div>
-        <div className="topic-picker" role="group" aria-label="해석 주제">{CATS.map((k) => <button key={k} aria-pressed={cat === k} className={cat === k ? 'on' : ''} onClick={() => setCat(k)}><span aria-hidden="true">{CAT_META[k].hanja}</span>{k}운</button>)}</div>
-        <Stats items={[
-          { label: `${cat}운 종합`, value: `${c.score} / 5`, color: m.color },
-          { label: '가장 좋은 해', value: c.best ? `${c.best.year}` : '-', sub: c.best ? `${c.best.text} · ${c.best.score}점` : '', color: '#2f8a4b' },
-          { label: '조심할 해', value: c.worst ? `${c.worst.year}` : '-', sub: c.worst ? `${c.worst.text} · ${c.worst.score}점` : '', color: '#d6453d' },
-          { label: '열쇠 기운', value: `${R.needEl} · ${R.yong.el}`, sub: R.climate.inNeedDaeun ? '지금 대운에 들어옴' : '운에서 올 때 풀림' },
-        ]} />
-        <div className="paper graph-paper">
-          <div className="graph-title"><div><h3>앞으로 10년 {cat}운 흐름</h3><p>연도를 누르면 그 해의 월별 {cat}운이 아래에 펼쳐져요. {R.needEl}=필요한 기운, 삼재 표시.</p></div><label className="year-control"><span className="sr-only">해석 연도</span><select value={year} onChange={(e) => pickYear(+e.target.value)}>{R.years.map((y) => <option key={y.year} value={y.year}>{y.year}년</option>)}</select></label></div>
-          <div className="flow-chart-scroll"><Trend points={c.series} color={m.color} height={190} selected={year} onPick={(p) => pickYear(p.key)} /></div>
-          <p className="graph-note">십성·십이운성·십이신살·조후·용신·합충·공망·삼재를 종합한 참고 지수(1~5)이며 사건의 확률을 뜻하지 않아요.</p>
-        </div>
-        {yearObj && (
-          <motion.article key={year} className="period-reading" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-            <header><span className="kicker">{year}년 · {yearObj.age}세 · {cat}운 {yearObj.luck.scores[cat]}점</span><h3><GZ g={yearObj} /> {yearObj.text}년 — {yearObj.luck.head}</h3></header>
-            <div className="ytags">{yearObj.luck.hasNeed && <em className="ytag need">{R.needEl} 투출</em>}{yearObj.luck.hasYong && <em className="ytag hap">용신</em>}{yearObj.luck.hasGi && <em className="ytag chung">기신</em>}{yearObj.samjae && <em className="ytag">삼재</em>}{yearObj.luck.isGong && <em className="ytag">공망</em>}{yearObj.luck.flags.map((f, i) => <em key={i} className={`ytag ${f.type === '충' ? 'chung' : f.type === '합' || f.type === '삼합' ? 'hap' : ''}`}>{f.ch} {f.type}</em>)}</div>
-            <p className="period-lead">{yearObj.luck.texts[cat]}</p>
-            <div className="reading-reasons">
-              <div><span className="reason-label">이 해의 흐름</span>{yearObj.luck.summary.map((s, i) => <p key={i}>{s}</p>)}</div>
-              {ctx.annual.rels[0] && <div><span className="reason-label">함께 살펴볼 글자</span>{ctx.annual.rels.slice(0, 2).map((r) => <Connection key={r.key} r={r} />)}</div>}
-              <div className="action-box"><span className="reason-label">이렇게 활용해 보세요</span><h4>{ctx.annual.actionTitle}</h4><p>{ctx.annual.action}</p></div>
-            </div>
-            <Bars scores={yearObj.luck.scores} small />
-          </motion.article>
+      <AnimatePresence>
+        {gloss && (
+          <motion.div className="sheet-bg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setGloss(false)}>
+            <motion.div className="sheet" initial={{ y: 60 }} animate={{ y: 0 }} exit={{ y: 60 }} onClick={(e) => e.stopPropagation()}>
+              <header><b>📖 용어해석</b><button type="button" onClick={() => setGloss(false)}>✕</button></header>
+              <p className="sheet-note">이 페이지와 관련된 용어가 먼저 나와요.</p>
+              <div className="gloss-list">{glossSorted.map((g) => <div key={g.t} className={`gitem ${terms.includes(g.t) ? 'rel' : ''}`}><span className="gg">{g.g}</span><b>{g.t}</b><p>{g.d}</p></div>)}</div>
+            </motion.div>
+          </motion.div>
         )}
-        <div className="paper graph-paper">
-          <div className="graph-title"><div><h3>{year}년 열두 달 {cat}운</h3><p>막대를 누르면 그 달의 풀이가 아래에 나와요. 사주의 한 달은 절기에 시작해요.</p></div></div>
-          <MonthBars months={months} color={m.color} nowMonth={year === data.current.nowYear ? data.current.nowMonth : null} getValue={(mm) => mm.luck.scores[cat]} selected={month} onPick={(mm) => setMonth(mm.monthNo)} />
-        </div>
-        {monthObj && (
-          <motion.article key={`${year}-${month}`} className="period-reading" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-            <header><span className="kicker">{year}년 {month}월 · {ctxMonth ? `${ctxMonth.term} ${ctxMonth.start.slice(5, 10).replace('-', '.')} ~ ${ctxMonth.end.slice(5, 10).replace('-', '.')}` : ''} · {cat}운 {monthObj.luck.scores[cat]}점</span><h3><GZ g={monthObj} /> {monthObj.text}월 — {monthObj.luck.head}</h3></header>
-            <p className="period-lead">{monthObj.luck.texts[cat]}</p>
-            <div className="reading-reasons">
-              <div><span className="reason-label">이 달의 흐름</span>{monthObj.luck.summary.map((s, i) => <p key={i}>{s}</p>)}</div>
-              {ctxMonth?.rels?.[0] && <div><span className="reason-label">함께 살펴볼 글자</span>{ctxMonth.rels.slice(0, 2).map((r) => <Connection key={r.key} r={r} />)}</div>}
-              {ctxMonth && <div className="action-box"><span className="reason-label">이렇게 활용해 보세요</span><h4>{ctxMonth.actionTitle}</h4><p>{ctxMonth.action}</p></div>}
-            </div>
-            <Bars scores={monthObj.luck.scores} small />
-          </motion.article>
+        {toc && (
+          <motion.div className="sheet-bg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setToc(false)}>
+            <motion.div className="sheet" initial={{ y: 60 }} animate={{ y: 0 }} exit={{ y: 60 }} onClick={(e) => e.stopPropagation()}>
+              <header><b>목차</b><button type="button" onClick={() => setToc(false)}>✕</button></header>
+              <div className="toc-list">{pages.map((p, i) => <button type="button" key={p.id} className={i === idx ? 'on' : ''} onClick={() => { go(i); setToc(false); }}><span>{p.cover ? '표지' : p.num}</span>{p.title}</button>)}</div>
+            </motion.div>
+          </motion.div>
         )}
-        <details className="reading-detail"><summary>10년 연도별 요약 한 번에 보기</summary>
-          <div className="ylist">
-            {R.years.map((y) => (
-              <div key={y.year} className={`ycard ${y.year === data.current.nowYear ? 'now' : ''}`}>
-                <button type="button" className="yhead" onClick={() => pickYear(y.year)}><span className="yyear">{y.year}<small>{y.age}세</small></span><GZ g={y} /><span className="ygod"><span>{y.stemGod}·{y.branchGod}</span><small>{y.luck.head}</small></span><Score n={y.luck.overall} /><i className="chev" /></button>
-              </div>
-            ))}
-          </div>
-        </details>
-      </section>
-
-      {/* 04 주제별 상세 */}
-      <section id="r-topic" className="reading-flow-section">
-        <div className="section-heading"><div><span>04</span><h2>{cat}운 자세히</h2></div><p>위에서 고른 주제의 타고난 기운 · 조합 · 원문 · 시기 · 지금</p></div>
-        <div className="cathead" style={{ '--c': m.color }}><span className="cathanja">{m.hanja}</span><div><h3>{cat}운 <small>{m.desc}</small></h3><Score n={c.score} color={m.color} /></div></div>
-        {c.gauge && <Gauge g={c.gauge} color={m.color} />}
-        {c.sections.map((s, i) => (
-          <Sec key={i} icon={['基', '適', '人', '合', '時', '流'][i] || '記'} title={s.title} color={m.color}><Paras items={s.paras} /></Sec>
-        ))}
-        <Sec icon="言" title={`강의 원문이 말하는 이 사주의 ${cat}`} sub="이 사주의 글자·조합을 다룬 강의에서 반복된 이야기 · 吉/凶 함께" color={m.color}>
-          <Evidence rows={c.evidence} />
-          {!c.evidence?.length && <p className="muted">이 주제와 직접 연결된 원문 주장이 충분히 모이지 않았어요.</p>}
-        </Sec>
-        <Sec icon="今" title="지금 흐르는 운" sub="대운 · 세운 · 월운" color={m.color}>
-          <div className="nowlist">{c.now.map((n, i) => <div className="nowitem" key={i}><div className="nowlabel"><span>{n.label}</span><Score n={n.score} color={m.color} /></div><p>{n.text}</p></div>)}</div>
-        </Sec>
-        <div className="topic-switch">다른 주제 보기: {CATS.filter((k) => k !== cat).map((k) => <button key={k} type="button" onClick={() => { setCat(k); document.getElementById('r-topic')?.scrollIntoView({ behavior: 'smooth' }); }}>{k}운</button>)}</div>
-      </section>
-
-      {/* 05 조합 */}
-      <section id="r-patterns" className="reading-flow-section">
-        <div className="section-heading"><div><span>05</span><h2>이 사주에 해당하는 조합</h2></div><p>{R.patterns.length}개 · 吉/凶 병기 · 미터는 강의 원문의 어조, 칩은 함께 언급된 결과</p></div>
-        <div className="plist">{R.patterns.map((p, i) => <PatternCard key={p.key} p={p} i={i} claimMeta={R.meta.claims || {}} />)}</div>
-      </section>
-
-      {/* 06 참고 */}
-      <section id="r-sources" className="reading-flow-section">
-        <details className="reading-detail source-detail" open><summary>풀이 방식과 참고 자료</summary>
-          <p>이 해석은 (1) 만세력 계산(lunar-javascript, 한국시·야자시·입춘 기준), (2) 명리 규칙 — 격국(월지 십성), 억부·조후 용신, 자리별 십성·십이운성·십이신살, 지장간 통근·투출, 공망, 합충형파해, 대운·세운·월운 —, (3) 수집한 사주 강의 자막 {R.meta.docs.toLocaleString()}편에서 개념·조합별로 추출한 반복 주장(吉/凶)·어조·키워드를 결합한 규칙 기반 풀이예요. 점수와 그래프는 비교를 돕는 참고 지수이며 사건의 확률이 아니고, 건강 문구는 진단이 아닌 생활 관리의 힌트예요.</p>
-          {[...READING_SOURCES, ...WEB_SOURCES].map((s) => <a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.title} ↗<small>{s.note}</small></a>)}
-        </details>
-      </section>
-
-      <footer className="report-footer"><button className="gold-button" onClick={onBack}>만세력으로 돌아가기</button><p>나를 이해하는 힌트로 읽고, 선택은 나의 현실에 맞게.</p></footer>
+      </AnimatePresence>
     </div>
   );
 }

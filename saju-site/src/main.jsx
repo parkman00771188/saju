@@ -4,6 +4,7 @@ import App from './App.jsx';
 import './styles.css';
 import './theme.css';
 import './reading.css';
+import './book.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

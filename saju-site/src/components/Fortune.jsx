@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Tile from './Tile.jsx';
 
@@ -21,8 +21,10 @@ function Card({ g, top, sub, active, onClick, delay = 0, badge, small }) {
 }
 
 function Block({ title, sub, children }) {
+  const ref = useRef(null);
+  useEffect(() => { const el = ref.current?.querySelector('.fcard.active'); el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); });
   return (
-    <div className="fblock">
+    <div className="fblock" ref={ref}>
       <div className="fbhead">
         <h3>{title} <small>{sub}</small></h3>
       </div>

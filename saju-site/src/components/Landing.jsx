@@ -1,13 +1,24 @@
-﻿import { useState } from 'react';
+﻿import { useRef, useState } from 'react';
 import { CITIES } from '../saju/calc.js';
 
 function Seg({ label, value, onChange, options }) {
   return <div className="seg" role="group" aria-label={label}>{options.map(([v, text]) => <button type="button" key={v} aria-pressed={value === v} className={value === v ? 'on' : ''} onClick={() => onChange(v)}>{text}</button>)}</div>;
 }
 export default function Landing({ onSubmit, error, initialInput }) {
-  const [f, setF] = useState(() => ({ name: '', gender: '남', calendar: 'solar', year: '', month: '', day: '', hour: '', minute: '0', unknownTime: false, city: '서울', koreaTime: true, yajasi: true, jeolgi: 'ipchun', ...initialInput }));
+  const [f, setF] = useState(() => ({ name: '', gender: '남', calendar: 'solar', year: '', month: '', day: '', hour: '', minute: '', unknownTime: false, city: '서울', koreaTime: true, yajasi: true, jeolgi: 'ipchun', ...initialInput }));
   const set = (k, v) => setF(s => ({ ...s, [k]: v }));
-  const numeric = (key, label, placeholder, min, max) => <label className="birth-field with-unit"><span>{label}</span><input type="number" inputMode="numeric" aria-label={label} placeholder={placeholder} min={min} max={max} required disabled={['hour','minute'].includes(key) && f.unknownTime} value={f[key]} onChange={e => set(key, e.target.value)} /><i className="birth-unit" aria-hidden="true">{ {year:'년',month:'월',day:'일',hour:'시',minute:'분'}[key]}</i></label>;
+  // 년(4자리)·월·일·시·분을 다 치면 자동으로 다음 칸으로 이동
+  const ORDER = ['year', 'month', 'day', 'hour', 'minute'];
+  const refs = useRef({});
+  const LIMIT = { year: 4, month: 2, day: 2, hour: 2, minute: 2 };
+  const FIRST_MAX = { month: 1, day: 3, hour: 2, minute: 5 }; // 첫 자리가 이보다 크면 한 자리로 확정
+  const advance = (key) => { const i = ORDER.indexOf(key); for (let j = i + 1; j < ORDER.length; j++) { const el = refs.current[ORDER[j]]; if (el && !el.disabled) { el.focus(); el.select?.(); return; } } };
+  const onNum = (key) => (e) => {
+    const v = e.target.value.replace(/[^\d]/g, '').slice(0, LIMIT[key]);
+    set(key, v);
+    if (v.length >= LIMIT[key] || (v.length === 1 && FIRST_MAX[key] != null && Number(v) > FIRST_MAX[key])) advance(key);
+  };
+  const numeric = (key, label, placeholder, min, max) => <label className="birth-field with-unit"><span>{label}</span><input ref={el => (refs.current[key] = el)} type="text" inputMode="numeric" pattern="[0-9]*" aria-label={label} placeholder="" min={min} max={max} required disabled={['hour','minute'].includes(key) && f.unknownTime} value={f[key]} onChange={onNum(key)} /><i className="birth-unit" aria-hidden="true">{ {year:'년',month:'월',day:'일',hour:'시',minute:'분'}[key]}</i></label>;
   const submit = e => {
     e.preventDefault();
     onSubmit({ ...f, year: +f.year, month: +f.month, day: +f.day, hour: f.unknownTime ? 12 : +f.hour, minute: f.unknownTime ? 0 : +f.minute, lon: (CITIES.find(c => c.name === f.city) || CITIES[0]).lon });
