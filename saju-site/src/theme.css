@@ -84,3 +84,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .orbit-note .lead b { font-weight:700; }
 .orbit-note .sub { font-size:14px; color:#7a6c72; line-height:1.8; margin:0; word-break:keep-all; }
 @media(max-width:560px) { .orb { grid-template-columns:22px 46px 1fr 22px; gap:8px; font-size:13px; } .orb-ko { font-size:18px; } .orb-lab { font-size:12px; } .orbit-note .lead { font-size:17px; } .orbit-note .sub { font-size:13px; } }
+
+/* 운 카드 타일: 한자 위·한글 아래로 분리(작은 타일에서 겹침 방지) */
+.fortune-paper .fcard .tile.sm { flex-direction:column; justify-content:center; gap:1px; width:38px; height:40px; }
+.fortune-paper .fcard .tile.sm .hanja { font-size:18px; line-height:1; }
+.fortune-paper .fcard .tile.sm .ko { position:static; right:auto; bottom:auto; font-size:8.5px; line-height:1; opacity:.95; }
+@media (max-width:600px) {
+  .fortune-paper .fcard .tile.sm { width:34px; height:38px; }
+  .fortune-paper .fcard .tile.sm .hanja { font-size:16px; }
+  .fortune-paper .fcard .tile.sm .ko { font-size:8px; }
+}

@@ -163,7 +163,13 @@ function buildPages(R, data) {
       <Divider /><Sub>나를 이끄는 기운의 틀</Sub><P>{gy.strength}</P>
       <Divider /><Sub>조심할 점</Sub><P>{gy.weakness}</P>
       <Divider /><Sub>이렇게 쓰면 좋아요</Sub><P>{gy.advice}</P>
-      <More><P>{`격국은 태어난 달(월지 ${data.pillars.month.branch})의 십성 ${data.detail.month.branchGod}으로 정해요. 월지는 부모·사회·직장 환경을 뜻하는 자리라, 격국은 "내가 세상과 만나는 방식"을 보여 줍니다.`}</P><P>{D.POS_BRANCH.month[data.detail.month.branchGod]}</P></More>
+      <More title="격은 어떻게 정했나요?">
+        <P words={[gy.key, '투출', '정기', '중기', '여기', '왕지', '삼합']}>{gy.how.reason}</P>
+        <div className="pairlist">{gy.how.hidden.map((h) => <div key={h.stem} className={`pairrow ${h === gy.how.pick ? 'pick' : ''}`}><span className="pk">{h.role}</span><b>{h.stem}({h.ko})</b><span>{h.god}</span>{h.transparent && <span className="pt">{h.at.join('·')} 투출</span>}{h === gy.how.pick && <span className="pt on">격</span>}</div>)}</div>
+        {gy.how.altNote && <P words={[gy.how.alt]}>{gy.how.altNote}</P>}
+        <P>{`격국은 태어난 달(월지 ${data.pillars.month.branch})의 지장간 가운데 천간에 드러난(투출) 글자로 정해요. 월지는 부모·사회·직장 환경을 뜻하는 자리라, 격국은 "내가 세상과 만나는 방식"을 보여 줍니다.`}</P>
+        <P>{D.POS_BRANCH.month[data.detail.month.branchGod]}</P>
+      </More>
     </>
   ) });
 

@@ -1,6 +1,7 @@
 // 사주 결과(calc.js) → 심층 해석 데이터
 //  overview(총평 그룹) · character · cats[5] · years · monthsOf · patterns · evidence · deep(격국/용신/자리/뿌리/대운 전 생애/배우자/개운)
 import kb from '../data/kb_stats.json';
+import { determineGyeok } from './gyeokguk.js';
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
@@ -119,8 +120,9 @@ export function interpret(data) {
   };
 
   // ---------- 격국 ----------
-  const gyeokKey = D.GYEOKGUK_OF[monthGod];
-  const gyeok = { key: gyeokKey, ...D.GYEOKGUK[gyeokKey] };
+  const how = determineGyeok({ dayStem, pillars });
+  const gyeokKey = how.key;
+  const gyeok = { key: gyeokKey, ...D.GYEOKGUK[gyeokKey], how };
 
   // ---------- 억부용신 · 희신 · 기신 ----------
   const groupEl = { 비겁: dayEl, 식상: GEN[dayEl], 재성: GEN[GEN[dayEl]], 관성: ctrlBy(dayEl), 인성: genBy(dayEl) };
@@ -399,7 +401,7 @@ export function interpret(data) {
       gauge: { label: '조직 ↔ 독립', value: indep, left: '조직형', right: '독립형' },
       sections: [
         { title: '타고난 직장 기운 — 격국으로 보는 나의 무대', paras: [
-          `월지 ${monthGod}으로 이 사주는 ${gyeok.key}(${gyeok.hanja}), "${gyeok.tag}"입니다. ${gyeok.desc}`, gyeok.strength, gyeok.weakness,
+          `${gyeok.how.reason} 그래서 이 사주는 ${gyeok.key}(${gyeok.hanja}), "${gyeok.tag}"입니다. ${gyeok.desc}`, gyeok.strength, gyeok.weakness,
           lvG === '강' ? '관성(직장·명예·책임)이 강한 구조입니다. 조직과 직책, 사회적 인정이 인생의 큰 주제이고 압박 속에서 성장합니다. 소속이 있을 때 안정되고 책임이 클수록 오히려 힘이 납니다.' : lvG === '중' ? '관성이 적당히 있어 조직 생활과 자유를 둘 다 소화합니다. 규범을 지키면서도 자기 색을 낼 수 있는 자리가 가장 잘 맞습니다.' : '관성이 없어 조직·규범에 얽매이지 않는 자유인입니다. 소속보다 자기 브랜드·전문성으로 서는 것이 어울리고, 승진보다 실력으로 인정받는 길을 택하세요.',
           indep >= 60 ? `조직·독립 지수 ${indep}%로 독립형에 가깝습니다. 남의 지시보다 스스로 판을 짜는 자리에서 성과가 납니다.` : indep <= 40 ? `조직·독립 지수 ${indep}%로 조직형에 가깝습니다. 체계와 역할이 분명한 곳에서 안정적으로 성장합니다.` : `조직·독립 지수 ${indep}%로 균형형입니다. 조직 안에서도 자율이 보장되는 자리가 이상적입니다.`,
         ] },
@@ -542,7 +544,7 @@ export function interpret(data) {
   // ---------- 종합평가 (그룹) ----------
   const summary = [
     { icon: '形', title: '형국과 조후', sub: `${season}에 태어난 ${ELEMENT_KO[dayEl]} 일간 · 필요한 기운 ${needEl}`, paras: climate.paras },
-    { icon: '命', title: '일간과 격국', sub: `${S.title} · ${gyeok.key}`, paras: [overview[0], `월지 ${pillars.month.branch}의 ${monthGod}으로 격국은 ${gyeok.key}(${gyeok.hanja}) — "${gyeok.tag}"입니다. ${gyeok.desc}`, gyeok.strength, gyeok.weakness] },
+    { icon: '命', title: '일간과 격국', sub: `${S.title} · ${gyeok.key}`, paras: [overview[0], `${gyeok.how.reason} 격국은 ${gyeok.key}(${gyeok.hanja}) — "${gyeok.tag}"입니다. ${gyeok.how.altNote} ${gyeok.desc}`, gyeok.strength, gyeok.weakness] },
     { icon: '衡', title: '신강·신약과 용신', sub: `${st.label} · 용신 ${yongEl} · 희신 ${heeEl} · 기신 ${giEl}`, paras: [overview[1], yong.text, roots.text] },
     { icon: '構', title: '오행과 십성의 구조', sub: `${strongest} 강 · ${missing.length ? missing.join('·') + ' 없음' : '오행 구비'} · ${prof.dominant} 중심`, paras: [...elementParas, ...structureParas] },
     { icon: '宮', title: '네 기둥, 인생의 네 시기', sub: '년주=초년·조상 / 월주=청년·사회 / 일주=중년·배우자 / 시주=말년·자식', paras: [], positions },
