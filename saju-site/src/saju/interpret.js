@@ -153,10 +153,50 @@ export function interpret(data) {
   }
   const patFor = (cat) => patterns.filter((p) => p.cats.includes(cat));
 
+  // ---------- 원문 '주장' 층: 이 사주에 해당하는 개념·조합마다 강의 원문이 실제로 말하는 결과·특성 ----------
+  const CLAIM_META = kb.meta.claims || {};
+  const claimsOf = (key) => {
+    const src = kb.concepts[key] || kb.patterns[key];
+    return (src?.claims || []).map(([label, n, docs]) => ({ label, n, docs, cat: CLAIM_META[label]?.[0] || '운', pol: CLAIM_META[label]?.[1] ?? 0 }));
+  };
+  const evidenceKeys = [
+    [dayStem, `${S.title.split(' ')[0]} 일간`], [pillars.day.text, `${pillars.day.text} 일주`],
+    [monthGod, `월지 ${monthGod}`], [detail.day.branchGod, `일지 ${detail.day.branchGod}`],
+    ...sinsalNames.map((n) => [n, K.SINSAL[n]?.title || n]),
+    ...patterns.filter((p) => p.kind !== '일주' && p.kind !== '일간×십성').map((p) => [p.key, p.title]),
+    ...missing.map((m) => [`${m}결핍`, `${m}(${ELEMENT_KO[m]}) 없음`]),
+    [`${strongest}과다`, `${strongest}(${ELEMENT_KO[strongest]}) 과다`],
+    st.label !== '중화' ? [st.label, st.label] : null,
+  ].filter(Boolean);
+  const evidence = [];
+  for (const [key, title] of evidenceKeys) {
+    if (evidence.some((e) => e.key === key)) continue;
+    const claims = claimsOf(key);
+    if (claims.length) evidence.push({ key, title, claims, stats: kb.concepts[key] || kb.patterns[key] });
+  }
+  // 카테고리별로 합산 (문서 수 가중) — 좋은 것·나쁜 것 모두
+  const evidenceByCat = {};
+  for (const e of evidence) for (const c of e.claims) {
+    const bucket = (evidenceByCat[c.cat] ||= {});
+    const row = (bucket[c.label] ||= { label: c.label, pol: c.pol, weight: 0, docs: 0, from: [] });
+    row.weight += c.docs * (e.key === pillars.day.text || e.key === dayStem ? 1.5 : 1);
+    row.docs += c.docs;
+    if (!row.from.includes(e.title)) row.from.push(e.title);
+  }
+  for (const cat of Object.keys(evidenceByCat)) {
+    evidenceByCat[cat] = Object.values(evidenceByCat[cat]).sort((a, b) => b.weight - a.weight).slice(0, 8)
+      .map((r) => ({ ...r, text: P.CLAIM_TEXT[r.label] || '' }));
+  }
+  const evidenceSummary = (() => {
+    const all = Object.values(evidenceByCat).flat().sort((a, b) => b.weight - a.weight);
+    const pos = all.filter((r) => r.pol > 0).slice(0, 5), neg = all.filter((r) => r.pol < 0).slice(0, 5);
+    return { pos, neg, total: evidence.reduce((a, e) => a + (e.stats?.docs || 0), 0) };
+  })();
+
   // ---------- 키워드 ----------
   const kwKeys = [dayStem, pillars.day.text, monthGod, detail.day.branchGod, ...sinsalNames.slice(0, 3), ...structs.slice(0, 2), st.label === '중화' ? null : st.label].filter(Boolean);
   const keywords = [];
-  const KW_JUNK = /(일주|일간|사주|인데|태어|이라|라고|이신|하신|하시|되시|분들|같은|이런|그런|저런|이제|그냥|정도|경우)/;
+  const KW_JUNK = /(일주|일간|사주|인데|태어|이라|라고|이신|하신|하시|되시|분들|같은|이런|그런|저런|이제|그냥|정도|경우|들여$|있거$|거$|여$|은$|는$|을$|를$|에$|의$|으로$|해서$|하고$)/;
   for (const k of kwKeys) for (const w of (kb.concepts[k] || kb.patterns[k])?.keywords || []) if (!KW_JUNK.test(w) && !keywords.includes(w) && keywords.length < 14) keywords.push(w);
 
   // ---------- 운 생성기 ----------
@@ -194,7 +234,9 @@ export function interpret(data) {
       if (samjae) s -= 0.3;
       scores[cat] = clamp(Math.round(s), 1, 5);
       const base = K.LUCK[g.branchGod][cat];
-      texts[cat] = short ? first(base) : base + (g.stemGod !== g.branchGod && K.STEM_NOTE[g.stemGod] ? ` 천간으로는 ${K.STEM_NOTE[g.stemGod]}, 속으로는 ${K.LUCK[g.branchGod].head}이 흐릅니다.` : '');
+      const salNote = P.SAL_LUCK[g.sal]?.[cat] || '';
+      texts[cat] = short ? `${first(base)} ${salNote}`.trim()
+        : base + (g.stemGod !== g.branchGod && K.STEM_NOTE[g.stemGod] ? ` 천간으로는 ${K.STEM_NOTE[g.stemGod]}, 속으로는 ${K.LUCK[g.branchGod].head}이 흐릅니다.` : '') + (salNote ? ` 십이신살로는 ${P.SAL_LUCK[g.sal].all}이니 ${salNote}` : '');
     }
     const summary = [
       `${g.text}(${g.stemKo}${g.branchKo}) · 천간 ${g.stemGod} / 지지 ${g.branchGod}. ${stage.t ? stage.t + ' 흐름으로, ' : ''}${K.LUCK[g.branchGod].head}이 중심이 됩니다.`,
@@ -225,12 +267,14 @@ export function interpret(data) {
     prof.dominant ? K.GROUP_DESC[prof.dominant] : '',
   ].filter(Boolean);
   const ilju = P.ILJU[pillars.day.text];
+  const sinsalWhere = (n) => order.filter((k) => (sinsal[k] || []).some((x) => x.name === n)).map((k) => posKo[k]).join('·');
+  const sinsalSentence = (n) => K.SINSAL[n] ? `${sinsalWhere(n)}에 ${K.SINSAL[n].title}이 있어 ${K.SINSAL[n].text}` : null;
   const character = [
     S.strengths, S.cautions,
-    ilju ? `【${pillars.day.text} 일주 · ${ilju.img}】 ${ilju.pos} 다만 ${ilju.neg}` : null,
-    `${K.BRANCHES[dayBranch]} 일지가 ${detail.day.branchGod}이라 ${K.TEN_GODS[detail.day.branchGod]?.core || ''}`,
+    ilju ? `일주가 ${pillars.day.text}, "${ilju.img}"입니다. ${ilju.pos} 다만 ${ilju.neg}` : null,
+    `${K.BRANCHES[dayBranch]} 이 일지가 ${detail.day.branchGod}이어서 ${K.TEN_GODS[detail.day.branchGod]?.core || ''}`,
     K.STAGES[detail.day.stage],
-    ...sinsalNames.slice(0, 4).map((n) => K.SINSAL[n] ? `【${K.SINSAL[n].title}】 ${K.SINSAL[n].text}` : null),
+    sinsalNames.length ? sinsalNames.slice(0, 4).map(sinsalSentence).filter(Boolean).join(' ') : null,
   ].filter(Boolean);
 
   // ---------- 카테고리별 (각각 다른 구성) ----------
@@ -240,7 +284,10 @@ export function interpret(data) {
     mLuck && mNow && { label: `${current.nowMonth}월 월운 ${mNow.text}`, text: mLuck.texts[cat], score: mLuck.scores[cat] },
   ].filter(Boolean);
   const patSection = (cat) => { const ps = patFor(cat); return ps.length ? { title: '이 사주의 조합에서', paras: ps.map((p) => `【${p.title}】 ${p.pos} 반대로 ${p.neg}`) } : null; };
-  const sinsalFor = (cat) => sinsalNames.filter((n) => K.SINSAL[n]?.cats[cat]).map((n) => `${K.SINSAL[n].title}: ${first(K.SINSAL[n].text)}`);
+  const sinsalFor = (cat) => {
+    const list = sinsalNames.filter((n) => K.SINSAL[n]?.cats[cat]);
+    return list.length ? [list.map((n) => `${sinsalWhere(n)}의 ${K.SINSAL[n].title}은(는) ${cat}운에 ${K.SINSAL[n].cats[cat] > 0 ? '힘이 되는' : '조심할'} 별입니다 — ${first(K.SINSAL[n].text)}`).join(' ')] : [];
+  };
   const best = (cat) => `가까운 해 중 ${cat}운이 가장 좋은 때는 ${bestYears(cat).map((y) => `${y.year}년(${y.text})`).join(', ')}이고, 조심할 해는 ${worstYears(cat).map((y) => `${y.year}년(${y.text})`).join(', ')}입니다.`;
 
   const cats = {};
@@ -372,8 +419,17 @@ export function interpret(data) {
     for (const p of patFor(cat)) baseScore += (p.stats?.polarity || 0) * 0.4;
     if (cat === '건강') baseScore -= missing.length * 0.3 + relations.chung.length * 0.3;
     const nowAvg = c.now.length ? c.now.reduce((a, x) => a + x.score, 0) / c.now.length : 3;
+    // 원문 주장 극성도 점수에 반영 (좋은 것·나쁜 것 모두)
+    const ev = evidenceByCat[cat] || [];
+    const evSum = ev.reduce((a, r) => a + r.pol * r.weight, 0), evW = ev.reduce((a, r) => a + r.weight, 0);
+    if (evW) baseScore += (evSum / evW) * 0.6;
     c.score = clamp(Math.round(baseScore * 0.5 + nowAvg * 0.5), 1, 5);
     c.series = seriesFor(cat);
+    c.evidence = ev;
+    const b = bestYears(cat, 1)[0], w = worstYears(cat, 1)[0];
+    c.best = b ? { year: b.year, text: b.text, score: b.luck.scores[cat] } : null;
+    c.worst = w ? { year: w.year, text: w.text, score: w.luck.scores[cat] } : null;
+    c.summary = `${cat}운 ${c.score}/5 · ${c.now[0]?.label?.split(' ')[0] || ''} 대운 ${c.now[0]?.score ?? '-'}점 · 올해 ${c.now[1]?.score ?? '-'}점`;
   }
 
   const advice = [
@@ -382,5 +438,11 @@ export function interpret(data) {
     prof.dominant ? { 비겁: '경쟁보다 협업의 기술을, 승부보다 지키는 힘을 기르면 강점이 완성됩니다.', 식상: '재능을 세상에 꺼내 놓는 것을 두려워하지 마세요. 보여줄수록 길이 열립니다.', 재성: '벌어들이는 힘은 충분하니 쓰는 원칙과 쉬는 시간을 정해 두세요.', 관성: '책임을 감당하는 힘이 큰 만큼 몸을 먼저 챙기세요. 건강이 곧 명예의 밑천입니다.', 인성: '배운 것을 세상에 내놓는 실행이 과제입니다. 완벽해질 때까지 기다리지 말고 지금 시작하세요.' }[prof.dominant] : null,
   ].filter(Boolean);
 
-  return { strength: st, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, meta: kb.meta };
+  // 대운 흐름 총평 (현재 포함 앞으로 3개)
+  const daeunFlow = daeun.filter((d) => d.endYear >= nowY).slice(0, 3).map((d) => {
+    const l = luckOf(d);
+    return { ...d, luck: l, text: `${d.age}세~${d.age + 9}세 (${d.startYear}~${d.endYear}) ${d.text} 대운 — 천간 ${d.stemGod}·지지 ${d.branchGod}, ${K.STAGE_TONE[d.stage]?.t || ''} 시기. ${K.LUCK[d.branchGod].head}이 10년의 주제가 되어 ${first(K.LUCK[d.branchGod].직장)} ${first(K.LUCK[d.branchGod].금전)}${l.hasNeed ? ` 이 대운에 필요한 ${needEl}이 들어와 웅크렸던 힘이 밖으로 드러납니다.` : ''}${d.branch === dayBranch || pairHas(BRANCH_CHUNG, d.branch, dayBranch) ? ' 대운 지지가 일지와 부딪혀 거처·배우자·건강 영역에 큰 변화가 있는 10년입니다.' : ''}` };
+  });
+
+  return { strength: st, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, evidence, evidenceByCat, evidenceSummary, daeunFlow, meta: kb.meta };
 }
