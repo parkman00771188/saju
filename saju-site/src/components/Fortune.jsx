@@ -14,15 +14,21 @@ function Card({ g, top, sub, active, onClick, delay = 0, badge, small }) {
       <Tile ch={g.stem} ko={g.stemKo} el={g.stemEl} size="sm" flip={false} />
       <Tile ch={g.branch} ko={g.branchKo} el={g.branchEl} size="sm" flip={false} />
       <div className="fgod">{g.branchGod}</div>
-      <div className="fmeta">{g.stage}</div>
-      <div className="fmeta">{g.sal}</div>
+      <div className="fmeta">{[g.stage, g.sal].filter(Boolean).join(' · ')}</div>
     </Component>
   );
 }
 
 function Block({ title, sub, children }) {
   const ref = useRef(null);
-  useEffect(() => { const el = ref.current?.querySelector('.fcard.active'); el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); });
+  useEffect(() => {
+    // 창(세로)은 건드리지 않고 카드 띠 안에서만 가로로 가운데 정렬
+    const strip = ref.current?.querySelector('.strip'); const el = strip?.querySelector('.fcard.active');
+    if (!strip || !el) return;
+    const sr = strip.getBoundingClientRect(), er = el.getBoundingClientRect();
+    const delta = (er.left + er.width / 2) - (sr.left + sr.width / 2);
+    if (Math.abs(delta) > 2) strip.scrollBy({ left: delta, behavior: 'smooth' });
+  });
   return (
     <div className="fblock" ref={ref}>
       <div className="fbhead">

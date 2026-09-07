@@ -42,6 +42,6 @@ export default function Result({ data, onReset }) {
       <footer className="report-footer"><span>天機錄</span><p>나를 이해하는 힌트, 천기록</p></footer>
     </div>
     {view === 'reading' && <Reading data={data} onBack={backToChart}/>}
-    <AnimatePresence>{opening && <Passage key="reading-passage" kind="reading" data={data} onDone={() => { setOpening(false); setView('reading'); window.scrollTo({top:0}); }}/>}</AnimatePresence>
+    <AnimatePresence>{opening && <Passage key="reading-passage" kind="reading" data={data} onDone={() => { setOpening(false); setView('reading'); window.scrollTo({top:0, behavior:'instant'}); }}/>}</AnimatePresence>
   </>;
 }

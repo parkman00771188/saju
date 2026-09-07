@@ -15,7 +15,7 @@ export default function App() {
     try {
       const data = calculate(value);
       setInput(value); setResult(data); setError(''); setPhase('calculating');
-      window.scrollTo({ top: 0 });
+      window.scrollTo({ top: 0, behavior: 'instant' });
     } catch {
       setError('날짜를 다시 확인해 주세요. 음력이라면 해당 월의 날짜와 윤달 여부도 확인해 주세요.');
     }
@@ -27,7 +27,7 @@ export default function App() {
       </motion.div>
       <button className="skip-intro" onClick={() => setPhase('input')}>건너뛰기 →</button>
     </motion.div> : phase === 'calculating' ? <Passage key="calculating" data={result} onDone={() => setPhase('result')} /> : phase === 'result' ? <motion.main key="result" className="result" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <Result data={result} onReset={() => { setPhase('input'); window.scrollTo({ top: 0 }); }} />
+      <Result data={result} onReset={() => { setPhase('input'); window.scrollTo({ top: 0, behavior: 'instant' }); }} />
     </motion.main> : <motion.main key="input" className="landing" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: reduced ? 0 : .6 }}>
       <Landing onSubmit={submit} error={error} initialInput={input} />
     </motion.main>}

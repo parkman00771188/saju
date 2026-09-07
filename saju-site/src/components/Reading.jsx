@@ -340,7 +340,11 @@ export default function Reading({ data, onBack }) {
   const [gloss, setGloss] = useState(false);
   const [toc, setToc] = useState(false);
   const top = useRef(null);
-  const go = (i) => { const n = Math.max(0, Math.min(pages.length - 1, i)); if (n === idx) return; setDir(n > idx ? 1 : -1); setIdx(n); window.scrollTo({ top: 0 }); };
+  const touch = useRef(null);
+  // 책이 열려 있는 동안 스크롤바 폭 고정 + 즉시 스크롤(페이지 전환 시 좌우 흔들림 방지)
+  useEffect(() => { document.documentElement.classList.add('book-open'); return () => document.documentElement.classList.remove('book-open'); }, []);
+  const go = (i) => { const n = Math.max(0, Math.min(pages.length - 1, i)); if (n === idx) return; setDir(n > idx ? 1 : -1); setIdx(n); window.scrollTo({ top: 0, behavior: 'instant' }); };
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }); const t = setTimeout(() => window.scrollTo({ top: 0, behavior: 'instant' }), 320); return () => clearTimeout(t); }, [idx]);
   useEffect(() => { const onKey = (e) => { if (e.key === 'ArrowRight') go(idx + 1); if (e.key === 'ArrowLeft') go(idx - 1); if (e.key === 'Escape') { setGloss(false); setToc(false); } }; window.addEventListener('keydown', onKey); return () => window.removeEventListener('keydown', onKey); });
   const page = pages[idx];
   const terms = page.terms || [];
@@ -350,9 +354,10 @@ export default function Reading({ data, onBack }) {
     <div className="book" ref={top}>
       <header className="book-top"><button className="icon" onClick={onBack} aria-label="만세력으로">☰</button><b>사주풀이</b><button className="icon" onClick={onBack} aria-label="닫기">✕</button></header>
       <AnimatePresence mode="wait" custom={dir}>
-        <motion.section key={page.id} className="book-page" custom={dir} drag="x" dragDirectionLock dragConstraints={{ left: 0, right: 0 }} dragElastic={0.12}
-          onDragEnd={(_, info) => { if (info.offset.x < -70) go(idx + 1); else if (info.offset.x > 70) go(idx - 1); }}
-          initial={{ opacity: 0, x: dir * 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -dir * 40 }} transition={{ duration: 0.28, ease: 'easeOut' }}>
+        <motion.section key={page.id} className="book-page"
+          onTouchStart={(e) => { const t = e.touches[0]; touch.current = { x: t.clientX, y: t.clientY, at: Date.now() }; }}
+          onTouchEnd={(e) => { const s0 = touch.current; if (!s0) return; touch.current = null; const t = e.changedTouches[0]; const dx = t.clientX - s0.x, dy = t.clientY - s0.y; if (Date.now() - s0.at < 700 && Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.6) { if (dx < 0) go(idx + 1); else go(idx - 1); } }}
+          initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.22, ease: 'easeOut' }}>
           <div className={`page-head ${page.cover ? 'cover' : ''}`} style={page.color ? { '--c': page.color } : undefined}>{!page.cover && <span className="pnum">{page.num}</span>}<h2>{page.title}</h2></div>
           <div className="page-body">{page.body}</div>
           <div className="page-foot"><button type="button" disabled={idx === 0} onClick={() => go(idx - 1)}>‹ 이전</button><span>{idx + 1} / {pages.length}</span><button type="button" disabled={idx === pages.length - 1} onClick={() => go(idx + 1)}>다음 ›</button></div>
