@@ -52,7 +52,7 @@ function starField(count, rMin, rMax, color, size, map) {
   geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   const mat = new THREE.PointsMaterial({
     color, size, map, transparent: true, opacity: 0.9, sizeAttenuation: true,
-    depthWrite: false, blending: THREE.AdditiveBlending,
+    depthWrite: false, blending: THREE.NormalBlending,
   });
   return new THREE.Points(geo, mat);
 }
@@ -71,7 +71,7 @@ export class CosmosScene {
     this.spriteMats = [];
     this.disposed = false;
     // 목표값 (모드 전환 시 부드럽게 보간)
-    this.target = { camZ: 64, camY: 6, ringOpacity: 1, starOpacity: 0.9, coreOpacity: 1 };
+    this.target = { camZ: 64, camY: 6, ringOpacity: 1, starOpacity: 0.75, coreOpacity: 1 };
     this.cur = { ...this.target };
   }
 
@@ -80,14 +80,14 @@ export class CosmosScene {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.scene = new THREE.Scene();
-    this.scene.fog = new THREE.FogExp2(0x1b2247, 0.0038);
+    this.scene.fog = new THREE.FogExp2(0xf7f5f0, 0.0042);
     this.camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
     this.camera.position.set(0, 6, 64);
 
     // 별 (둥근 글로우 점 텍스처)
     const dot = glowTexture('rgba(255,255,255,1)', 'rgba(255,255,255,.28)');
-    this.stars = starField(2600, 90, 320, 0xcbd5ff, 1.6, dot);
-    this.dust = starField(900, 30, 110, 0xd9b46a, 1.1, dot);
+    this.stars = starField(2200, 90, 320, 0x6f6aa8, 1.7, dot);
+    this.dust = starField(900, 30, 110, 0xc9962e, 1.2, dot);
     this.scene.add(this.stars, this.dust);
 
     // 성반 (지지 12 / 천간 10)
@@ -100,7 +100,7 @@ export class CosmosScene {
 
     const ringLine = (r, opacity) => {
       const geo = new THREE.TorusGeometry(r, 0.035, 8, 160);
-      const mat = new THREE.MeshBasicMaterial({ color: 0xd9b46a, transparent: true, opacity });
+      const mat = new THREE.MeshBasicMaterial({ color: 0xc9962e, transparent: true, opacity: opacity + 0.15 });
       const m = new THREE.Mesh(geo, mat);
       m.rotation.x = Math.PI / 2;
       this.spriteMats.push(mat);
@@ -137,15 +137,15 @@ export class CosmosScene {
     this.core = new THREE.Group();
     const wire = new THREE.Mesh(
       new THREE.IcosahedronGeometry(4.2, 1),
-      new THREE.MeshBasicMaterial({ color: 0xd9b46a, wireframe: true, transparent: true, opacity: 0.35 })
+      new THREE.MeshBasicMaterial({ color: 0xc9962e, wireframe: true, transparent: true, opacity: 0.55 })
     );
     const inner = new THREE.Mesh(
       new THREE.SphereGeometry(2.4, 32, 32),
-      new THREE.MeshBasicMaterial({ color: 0xffe6b0, transparent: true, opacity: 0.22 })
+      new THREE.MeshBasicMaterial({ color: 0xf3dca3, transparent: true, opacity: 0.45 })
     );
     const glow = new THREE.Sprite(new THREE.SpriteMaterial({
-      map: glowTexture('rgba(255,236,190,.95)', 'rgba(217,180,106,.35)'),
-      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      map: glowTexture('rgba(243,220,163,.9)', 'rgba(201,150,46,.25)'),
+      transparent: true, depthWrite: false, blending: THREE.NormalBlending,
     }));
     glow.scale.set(16, 16, 1);
     this.core.add(wire, inner, glow);
@@ -154,8 +154,8 @@ export class CosmosScene {
 
     // 은은한 성운
     const nebula = new THREE.Sprite(new THREE.SpriteMaterial({
-      map: glowTexture('rgba(90,70,160,.35)', 'rgba(40,60,120,.18)'),
-      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      map: glowTexture('rgba(230,224,255,.7)', 'rgba(255,233,201,.35)'),
+      transparent: true, depthWrite: false, blending: THREE.NormalBlending,
     }));
     nebula.scale.set(170, 170, 1);
     nebula.position.set(20, -10, -80);
@@ -187,7 +187,7 @@ export class CosmosScene {
 
   setMode(mode) {
     this.mode = mode;
-    if (mode === 'intro') this.target = { camZ: 64, camY: 6, ringOpacity: 1, starOpacity: 0.9, coreOpacity: 1 };
+    if (mode === 'intro') this.target = { camZ: 64, camY: 6, ringOpacity: 1, starOpacity: 0.75, coreOpacity: 1 };
     else this.target = { camZ: 96, camY: 18, ringOpacity: 0.28, starOpacity: 0.5, coreOpacity: 0.35 };
   }
 

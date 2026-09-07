@@ -1,88 +1,86 @@
 import { motion } from 'framer-motion';
-import { ELEMENTS, ELEMENT_COLOR, ELEMENT_KO } from '../saju/tables.js';
+import { ELEMENTS, ELEMENT_COLOR, ELEMENT_KO, STEMS, BRANCHES, STEM_ELEMENT, BRANCH_ELEMENT, STEM_KO, BRANCH_KO } from '../saju/tables.js';
 
-// 木(좌상) → 火(상) → 土(우상) → 金(우하) → 水(좌하) : 시계방향 상생
-const ORDER = ['木', '火', '土', '金', '水'];
-const ANGLE = { 木: 198, 火: -90, 土: -18, 金: 54, 水: 126 };
-const S = 340, C = S / 2, R = 118;
-const pt = (el, r = R) => {
-  const a = (ANGLE[el] * Math.PI) / 180;
-  return [C + Math.cos(a) * r, C + Math.sin(a) * r];
-};
+// 시안과 같은 배치: 土 상단, 金 우, 水 우하, 木 좌하, 火 좌
+const ANGLE = { 土: -90, 金: -18, 水: 54, 木: 126, 火: 198 };
+const S = 360, C = S / 2, R = 150, r = 58;
+const pt = (el, rad) => { const a = (ANGLE[el] * Math.PI) / 180; return [C + Math.cos(a) * rad, C + Math.sin(a) * rad]; };
+
+function Glyph({ ch, ko, el, on, i }) {
+  const c = ELEMENT_COLOR[el];
+  return on ? (
+    <motion.span className="og on" style={{ background: c.bg, color: c.fg }} initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.5 + i * 0.05, type: 'spring', stiffness: 220, damping: 16 }}>
+      {ch}<small>{ko}</small>
+    </motion.span>
+  ) : <span className="og">{ch}</span>;
+}
+
+function Group({ el, presentStems, presentBranches, align, tags }) {
+  const stems = STEMS.filter((s) => STEM_ELEMENT[s] === el);
+  const brs = BRANCHES.filter((b) => BRANCH_ELEMENT[b] === el);
+  return (
+    <div className={`ogroup ${align}`}>
+      <div className="orow">{stems.map((s, i) => <Glyph key={s} ch={s} ko={STEM_KO[s]} el={el} on={presentStems.has(s)} i={i} />)}{tags?.stem}</div>
+      <div className="orow">{brs.map((b, i) => <Glyph key={b} ch={b} ko={BRANCH_KO[b]} el={el} on={presentBranches.has(b)} i={i + 2} />)}{tags?.branch}</div>
+    </div>
+  );
+}
 
 export default function Ohaeng({ data }) {
-  const { elements, missing, strongest, pillars, order } = data;
+  const { elements, missing, strongest, pillars, order, dayStem } = data;
   const total = Object.values(elements).reduce((a, b) => a + b, 0);
-  const chars = order.filter((k) => pillars[k]).flatMap((k) => [
-    { ch: pillars[k].stem, el: pillars[k].stemEl }, { ch: pillars[k].branch, el: pillars[k].branchEl },
-  ]);
+  const presentStems = new Set(order.filter((k) => pillars[k]).map((k) => pillars[k].stem));
+  const presentBranches = new Set(order.filter((k) => pillars[k]).map((k) => pillars[k].branch));
+  const dayBranch = pillars.day.branch;
+  const dayEl = STEM_ELEMENT[dayStem];
+  const g = (el, align) => (
+    <Group el={el} align={align} presentStems={presentStems} presentBranches={presentBranches}
+      tags={el === dayEl ? { stem: <span className="otag">일간</span>, branch: BRANCH_ELEMENT[dayBranch] === el ? <span className="otag">일지</span> : null }
+        : BRANCH_ELEMENT[dayBranch] === el ? { branch: <span className="otag">일지</span> } : null} />
+  );
 
   return (
     <div className="ohaeng">
-      <svg viewBox={`0 0 ${S} ${S}`} className="pent">
-        <defs>
-          <filter id="glow"><feGaussianBlur stdDeviation="3" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
-        </defs>
-        {/* 상극 (별) */}
-        {ORDER.map((el, i) => {
-          const [x1, y1] = pt(el), [x2, y2] = pt(ORDER[(i + 2) % 5]);
-          return <motion.line key={'k' + el} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(230,120,120,.25)" strokeWidth="1" strokeDasharray="4 5"
-            initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 1.2, delay: 0.6 + i * 0.1 }} />;
-        })}
-        {/* 상생 (오각) */}
-        {ORDER.map((el, i) => {
-          const [x1, y1] = pt(el), [x2, y2] = pt(ORDER[(i + 1) % 5]);
-          return <motion.line key={'g' + el} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(217,180,106,.55)" strokeWidth="1.5"
-            initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1, delay: 0.2 + i * 0.12 }} />;
-        })}
-        {/* 태극 중심 */}
-        <circle cx={C} cy={C} r="26" fill="url(#tg)" opacity=".9" />
-        <defs>
-          <linearGradient id="tg" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stopColor="#e9a0a0" /><stop offset="1" stopColor="#7d86d8" />
-          </linearGradient>
-        </defs>
-        <circle cx={C} cy={C} r="26" fill="none" stroke="rgba(255,255,255,.35)" />
-        {ORDER.map((el, i) => {
-          const [x, y] = pt(el);
-          const n = elements[el];
-          const r = 20 + Math.min(n, 5) * 6;
-          const c = ELEMENT_COLOR[el];
-          return (
-            <motion.g key={el} initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 160, damping: 14, delay: 0.3 + i * 0.12 }} style={{ transformOrigin: `${x}px ${y}px` }}>
-              <circle cx={x} cy={y} r={r + 8} fill={c.glow} opacity={n ? 0.35 : 0.08} filter="url(#glow)" />
-              <circle cx={x} cy={y} r={r} fill={n ? c.bg : 'rgba(255,255,255,.06)'} stroke={n ? 'rgba(255,255,255,.35)' : 'rgba(255,255,255,.18)'} strokeDasharray={n ? '0' : '3 3'} />
-              <text x={x} y={y - 2} textAnchor="middle" className="pel" fill={n ? c.fg : 'rgba(255,255,255,.4)'}>{el}</text>
-              <text x={x} y={y + 16} textAnchor="middle" className="pcnt" fill={n ? c.fg : 'rgba(255,255,255,.4)'}>{n}</text>
-            </motion.g>
-          );
-        })}
-      </svg>
+      <div className="ostar">
+        <div className="oc top">{g('土', 'center')}</div>
+        <div className="oc left">{g('火', 'right')}</div>
+        <div className="oc center">
+          <svg viewBox={`0 0 ${S} ${S}`} className="pent">
+            {ELEMENTS.map((el, i) => {
+              const [x, y] = pt(el, R);
+              const prev = ELEMENTS[(i + 4) % 5], next = ELEMENTS[(i + 1) % 5];
+              const [px, py] = pt(prev, r), [nx, ny] = pt(next, r), [ax, ay] = pt(el, r);
+              const l = [(ax + px) / 2, (ay + py) / 2], rr = [(ax + nx) / 2, (ay + ny) / 2];
+              const on = elements[el] > 0;
+              return (
+                <motion.polygon key={el} points={`${l[0]},${l[1]} ${x},${y} ${rr[0]},${rr[1]} ${ax},${ay}`} fill={on ? ELEMENT_COLOR[el].bg : '#ececec'} stroke="#fff" strokeWidth="2"
+                  initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.1 + i * 0.1, duration: 0.6, ease: 'easeOut' }} style={{ transformOrigin: `${C}px ${C}px` }} />
+              );
+            })}
+            <circle cx={C} cy={C} r={r * 0.78} fill="url(#tg)" />
+            <defs><linearGradient id="tg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stopColor="#f2a3a3" /><stop offset="1" stopColor="#8b93dc" /></linearGradient></defs>
+            <path d={`M ${C} ${C - r * 0.78} A ${r * 0.39} ${r * 0.39} 0 0 1 ${C} ${C} A ${r * 0.39} ${r * 0.39} 0 0 0 ${C} ${C + r * 0.78} A ${r * 0.78} ${r * 0.78} 0 0 1 ${C} ${C - r * 0.78}`} fill="rgba(255,255,255,.55)" />
+            {ELEMENTS.map((el) => { const [x, y] = pt(el, R * 0.66); return <text key={el} x={x} y={y + 8} textAnchor="middle" className="pel" fill={elements[el] ? ELEMENT_COLOR[el].fg : '#9a9a9a'}>{el}</text>; })}
+          </svg>
+        </div>
+        <div className="oc right">{g('金', 'left')}</div>
+        <div className="oc bl">{g('木', 'left')}</div>
+        <div className="oc br">{g('水', 'right')}</div>
+      </div>
 
       <div className="ostats">
         <div className="bars">
           {ELEMENTS.map((el, i) => (
             <div className="bar" key={el}>
               <span className="lab" style={{ color: ELEMENT_COLOR[el].bg }}>{el} {ELEMENT_KO[el]}</span>
-              <div className="track">
-                <motion.i style={{ background: ELEMENT_COLOR[el].bg }} initial={{ width: 0 }} animate={{ width: `${(elements[el] / total) * 100}%` }} transition={{ duration: 1, delay: 0.4 + i * 0.1 }} />
-              </div>
+              <div className="track"><motion.i style={{ background: ELEMENT_COLOR[el].bg }} initial={{ width: 0 }} animate={{ width: `${(elements[el] / total) * 100}%` }} transition={{ duration: 0.9, delay: 0.3 + i * 0.08 }} /></div>
               <b>{elements[el]}</b>
             </div>
           ))}
         </div>
-        <div className="chars">
-          {chars.map((c, i) => (
-            <motion.span key={i} className="mini" style={{ background: ELEMENT_COLOR[c.el].bg, color: ELEMENT_COLOR[c.el].fg }}
-              initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 + i * 0.05 }}>{c.ch}</motion.span>
-          ))}
-        </div>
         <p className="onote">
           가장 강한 기운은 <b style={{ color: ELEMENT_COLOR[strongest].bg }}>{strongest}({ELEMENT_KO[strongest]})</b>
-          {missing.length
-            ? <> · 사주에 없는 오행은 <b>{missing.map((m) => `${m}(${ELEMENT_KO[m]})`).join(', ')}</b> 입니다. 비어 있는 오행은 운에서 채워질 때 크게 움직입니다.</>
-            : <> · 다섯 오행이 모두 갖추어진 사주입니다.</>}
+          {missing.length ? <> · 없는 오행은 <b>{missing.map((m) => `${m}(${ELEMENT_KO[m]})`).join(', ')}</b> 입니다. 비어 있는 오행은 운에서 채워질 때 크게 움직입니다.</> : <> · 다섯 오행이 모두 갖추어진 사주입니다.</>}
         </p>
       </div>
     </div>
