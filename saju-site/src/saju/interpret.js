@@ -2,6 +2,7 @@
 //  overview(총평 그룹) · character · cats[5] · years · monthsOf · patterns · evidence · deep(격국/용신/자리/뿌리/대운 전 생애/배우자/개운)
 import kb from '../data/kb_stats.json';
 import { determineGyeok } from './gyeokguk.js';
+import { pickYong, GROUP_EL } from './yongshin.js';
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
@@ -25,11 +26,11 @@ export function strength(data) {
   for (const k of order) {
     const p = pillars[k]; if (!p) continue;
     if (k !== 'day') { const w = k === 'month' ? 1.2 : 1; tot += w; if (helps(p.stemEl)) sup += w; }
-    const bw = k === 'month' ? 2 : k === 'day' ? 1.5 : 1;
+    const bw = k === 'month' ? 3 : k === 'day' ? 1.5 : 1; // 월지(득령, 약 30%) > 일지(득지) > 년지·시지
     tot += bw; if (helps(p.branchEl)) sup += bw;
   }
   const r = sup / tot;
-  return { ratio: r, label: r >= 0.5 ? '신강' : r <= 0.3 ? '신약' : '중화', pct: Math.round(r * 100) };
+  return { ratio: r, label: r >= 0.5 ? '신강' : r < 0.4 ? '신약' : '중화', pct: Math.round(r * 100) };
 }
 
 export function tenGodProfile(data) {
@@ -79,7 +80,7 @@ export function interpret(data) {
 
   // ---------- 조후 · 형국 ----------
   const season = P.SEASON_OF[pillars.month.branch];
-  const [needEl, needWhy] = P.CLIMATE_NEED[season][dayEl];
+  const [needEl, needWhy] = P.CLIMATE_NEED[season][dayStem];
   const needCount = elements[needEl];
   const image = P.IMAGE[dayEl][season];
   const imageNote = strongest !== dayEl && elements[strongest] >= 3 ? `주위에 ${strongest}(${ELEMENT_KO[strongest]})이 많아 ${P.EXCESS_IMAGE[strongest]}` : null;
@@ -124,27 +125,14 @@ export function interpret(data) {
   const gyeokKey = how.key;
   const gyeok = { key: gyeokKey, ...D.GYEOKGUK[gyeokKey], how };
 
-  // ---------- 억부용신 · 희신 · 기신 ----------
-  const groupEl = { 비겁: dayEl, 식상: GEN[dayEl], 재성: GEN[GEN[dayEl]], 관성: ctrlBy(dayEl), 인성: genBy(dayEl) };
-  let yongGroup, yongWhy;
-  if (st.label === '신강') {
-    if ((prof.groups['비겁'] || 0) >= (prof.groups['인성'] || 0)) { yongGroup = lv('관성') !== '무' ? '관성' : '식상'; yongWhy = `비겁(나와 같은 기운)이 많아 일간이 강하니, 그 힘을 ${yongGroup === '관성' ? '다스리는 관성(책임·규범)' : '흘려보내는 식상(표현·생산)'}이 균형을 잡습니다.`; }
-    else { yongGroup = lv('재성') !== '무' ? '재성' : '식상'; yongWhy = `인성(나를 돕는 기운)이 많아 일간이 강하니, 그 힘을 ${yongGroup === '재성' ? '쓰게 하는 재성(재물·현실)' : '밖으로 내는 식상(표현·생산)'}이 균형을 잡습니다.`; }
-  } else if (st.label === '신약') {
-    if (lv('관성') === '강') { yongGroup = '인성'; yongWhy = '관성(압박)이 강해 일간이 약하니, 압박을 지혜로 바꾸는 인성(배움·보호)이 용신입니다(살인상생).'; }
-    else if (lv('재성') === '강') { yongGroup = '비겁'; yongWhy = '재성(재물)이 많아 일간이 약하니(재다신약), 나를 세우는 비겁(동료·자립)이 용신입니다.'; }
-    else if (lv('식상') === '강') { yongGroup = '인성'; yongWhy = '식상(발산)이 많아 기운이 새니, 발산을 다스리고 나를 채우는 인성이 용신입니다.'; }
-    else { yongGroup = '인성'; yongWhy = '일간이 약하니 나를 생하는 인성(배움·자격·보호)이 용신입니다.'; }
-  } else {
-    yongGroup = Object.entries(groupEl).find(([, el]) => el === needEl)?.[0] || '식상';
-    yongWhy = `일간의 강약이 중화에 가까워 억부보다 조후가 우선입니다. 계절이 필요로 하는 ${needEl}(${ELEMENT_KO[needEl]}) 기운, 곧 ${yongGroup}이 용신입니다.`;
-  }
-  const yongEl = groupEl[yongGroup];
-  const heeEl = genBy(yongEl), giEl = ctrlBy(yongEl), guEl = ctrlBy(heeEl);
+  // ---------- 억부용신 · 희신 · 기신 · 구신 · 한신 ----------
+  const groupEl = GROUP_EL(dayEl);
+  const yg = pickYong({ label: st.label, groups: prof.groups, needEl, dayEl });
+  const yongGroup = yg.group, yongEl = yg.el, heeEl = yg.hee, giEl = yg.gi, guEl = yg.gu, hanEl = yg.han, yongWhy = yg.why;
   const yong = {
-    group: yongGroup, el: yongEl, hee: heeEl, gi: giEl, gu: guEl, why: yongWhy,
+    ...yg,
     agree: yongEl === needEl,
-    text: `억부(抑扶)로 보면 용신은 ${yongEl}(${ELEMENT_KO[yongEl]}) · ${yongGroup}입니다. ${yongWhy} 용신을 낳는 희신은 ${heeEl}(${ELEMENT_KO[heeEl]}), 용신을 치는 기신은 ${giEl}(${ELEMENT_KO[giEl]}), 희신을 치는 구신은 ${guEl}(${ELEMENT_KO[guEl]})입니다.` +
+    text: `억부(抑扶)로 보면 용신은 ${yongEl}(${ELEMENT_KO[yongEl]}) · ${yongGroup}입니다. ${yongWhy} 희신은 ${heeEl}(${ELEMENT_KO[heeEl]}) · ${yg.groups.hee}으로 ${yg.how.hee}이고, 기신은 ${giEl}(${ELEMENT_KO[giEl]}) · ${yg.groups.gi}으로 ${yg.how.gi}입니다. 구신은 ${guEl}(${ELEMENT_KO[guEl]}) · ${yg.groups.gu}으로 ${yg.how.gu}이며, 한신은 ${hanEl}(${ELEMENT_KO[hanEl]}) · ${yg.groups.han}입니다.` +
       (yongEl === needEl ? ` 조후(계절)로 본 필요 기운 ${needEl}과 억부 용신이 일치하니 방향이 분명합니다 — ${needEl} 기운이 들어오는 때가 곧 큰 기회입니다.`
         : ` 조후로 본 필요 기운은 ${needEl}(${ELEMENT_KO[needEl]})이라 억부 용신과 다릅니다. 두 기운은 각각 "균형(${yongEl})"과 "온도(${needEl})"를 맡으니, 둘 중 어느 하나가 운으로 들어와도 삶이 편해지고 둘이 함께 오는 때가 가장 큰 기회입니다.`),
     open: D.YONG[yongEl],

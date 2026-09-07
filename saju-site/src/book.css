@@ -106,3 +106,5 @@ html.book-open body { overflow-x: clip; }
 .book .flow-chart-scroll .trend { width: 100%; height: auto; display: block; min-width: 520px; }
 
 .pairrow.pick { background: var(--or-soft); } .pairrow .pt { margin-left: auto; font-size: 12px; color: var(--mute); } .pairrow .pt.on { color: #fff; background: var(--or); border-radius: 6px; padding: 2px 8px; font-weight: 700; }
+
+.pairrow.wrap { flex-wrap: wrap; } .pairrow.wrap .pt { flex: 1 1 100%; margin-left: 0; color: #555; line-height: 1.55; }

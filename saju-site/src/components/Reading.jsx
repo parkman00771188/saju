@@ -177,9 +177,13 @@ function buildPages(R, data) {
     <>
       <Gauge2 pct={R.strength.pct} left="신약 (나를 채워야 함)" right="신강 (밖으로 써야 함)" color="#d69a2c" />
       <Callout>{name}은 <b>{R.strength.label}</b> 사주예요. 힘이 되는 기운은 <b>{y.el}({ko[y.el]})</b>과 {y.hee}({ko[y.hee]}), 조심할 기운은 <b>{y.gi}({ko[y.gi]})</b>이에요.</Callout>
-      <Chips items={[{ label: `용신 ${y.el} ${ko[y.el]}`, tone: 'good' }, { label: `희신 ${y.hee} ${ko[y.hee]}`, tone: 'good' }, { label: `기신 ${y.gi} ${ko[y.gi]}`, tone: 'bad' }, { label: `구신 ${y.gu} ${ko[y.gu]}`, tone: 'gray' }, { label: `조후 ${R.needEl} ${ko[R.needEl]}`, tone: 'good' }]} />
+      <Chips items={[{ label: `용신 ${y.el} ${ko[y.el]}`, tone: 'good' }, { label: `희신 ${y.hee} ${ko[y.hee]}`, tone: 'good' }, { label: `기신 ${y.gi} ${ko[y.gi]}`, tone: 'bad' }, { label: `구신 ${y.gu} ${ko[y.gu]}`, tone: 'gray' }, { label: `한신 ${y.han} ${ko[y.han]}`, tone: 'gray' }, { label: `조후 ${R.needEl} ${ko[R.needEl]}`, tone: 'good' }]} />
       <Sub>나의 힘</Sub><P words={['신강', '신약', '중화']}>{R.overview[1]}</P>
       <Divider /><Sub>용신이란 — 내게 가장 필요한 기운</Sub><P words={elWords}>{y.text}</P>
+      <More title="용신·희신·기신은 어떻게 정했나요?">
+        <div className="pairlist">{[['용신', y.el, y.group, y.why], ['희신', y.hee, y.groups.hee, y.how.hee], ['기신', y.gi, y.groups.gi, y.how.gi], ['구신', y.gu, y.groups.gu, y.how.gu], ['한신', y.han, y.groups.han, y.how.han]].map(([r, e, g, d]) => <div key={r} className={`pairrow wrap ${r === '용신' ? 'pick' : ''}`}><span className="pk">{r}</span><b>{e}({ko[e]})</b><span>{g}</span><span className="pt">{d}</span></div>)}</div>
+        <P>{R.strength.label === '신강' ? '신강한 사주는 힘을 눌러 주는 식상·재성·관성이 좋은 편(용신·희신)이고, 힘을 더 보태는 비겁·인성이 조심할 편(기신·구신)이에요. 그중 균형을 깨뜨린 원인이 되는 기운을 기신으로 봅니다.' : R.strength.label === '신약' ? '신약한 사주는 힘을 세워 주는 인성·비겁이 좋은 편(용신·희신)이고, 힘을 빼앗는 식상·재성·관성이 조심할 편(기신·구신·한신)이에요. 그중 약하게 만든 원인(병)이 되는 기운을 기신으로 봅니다.' : '강약이 균형에 가까운 중화 사주는 계절(조후)이 필요로 하는 기운을 용신으로 삼고, 용신을 낳는 기운을 희신, 용신을 치는 기운을 기신으로 봅니다.'}</P>
+      </More>
       <Divider /><Sub>이렇게 채워요 (개운법)</Sub>
       <Chips items={[`색 ${y.open.color}`, `방향 ${y.open.dir}`, `숫자 ${y.open.num}`, `계절·시간 ${y.open.season}`, `음식 ${y.open.food}`]} tone="soft" />
       <P>{y.open.habit}. 어울리는 일은 {y.open.job}. {y.open.avoid}</P>
