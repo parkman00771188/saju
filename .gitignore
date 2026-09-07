@@ -1,0 +1,10 @@
+# node
+saju-site/node_modules/
+saju-site/dist/
+# python
+__pycache__/
+*.pyc
+# logs / temp
+*.err
+.DS_Store
+Thumbs.db

@@ -1,0 +1,903 @@
+
+===== [videos] 목록 수집 중 =====
+총 255개
+ERROR: [youtube] jj2LntbLR-E: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[  1] SKIP jj2LntbLR-E (members_only)
+[  3] OK   3TV9IqIKQ_c  (30519자)
+[  2] OK   NaSO0nj7tkw  (56032자)
+[  4] OK   xf3kdVRMmB8  (31666자)
+ERROR: [youtube] dEpgK_8Qcy0: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[  5] SKIP dEpgK_8Qcy0 (members_only)
+ERROR: [youtube] _78OYOBL0jA: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[  6] SKIP _78OYOBL0jA (members_only)
+ERROR: [youtube] NXE8OVxcQxY: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[  9] SKIP NXE8OVxcQxY (members_only)
+[  7] OK   x6z0as6H-hE  (15212자)
+[  8] OK   8VZMmnK-jII  (38738자)
+ERROR: [youtube] Nar4mbwPBKY: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 11] SKIP Nar4mbwPBKY (members_only)
+[ 10] OK   AZ_JaqQFmFU  (57971자)
+[ 12] OK   LW9UEec5uEM  (12344자)
+[ 13] OK   sdGUxQ-eiI4  (17288자)
+ERROR: [youtube] 6mM3TmvcLKU: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 14] SKIP 6mM3TmvcLKU (members_only)
+ERROR: [youtube] FBGU4nJieME: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 16] SKIP FBGU4nJieME (members_only)
+ERROR: [youtube] HbfDN7ixAz4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 17] SKIP HbfDN7ixAz4 (members_only)
+[ 15] OK   zFgTCU1HF1w  (58597자)
+[ 18] OK   Q69NMW8ceEc  (15198자)
+[ 19] OK   AZDrjQ1WBUc  (11514자)
+ERROR: [youtube] roTt1E0P4hI: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 20] SKIP roTt1E0P4hI (members_only)
+ERROR: [youtube] Rc24FhNWO48: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 22] SKIP Rc24FhNWO48 (members_only)
+[ 21] OK   Aks01uMljX4  (54299자)
+[ 23] OK   mEpzUdYQEaQ  (14713자)
+ERROR: [youtube] 5N8Nmdzbmv0: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 25] SKIP 5N8Nmdzbmv0 (members_only)
+[ 24] OK   JMCgXyFr2hg  (9057자)
+ERROR: [youtube] c98HU0FG0tE: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 27] SKIP c98HU0FG0tE (members_only)
+ERROR: [youtube] Gw-Tg9wFYVM: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 28] SKIP Gw-Tg9wFYVM (members_only)
+[ 26] OK   ADK7WqK4d1Y  (32725자)
+[ 29] NOSUB z2qCI8DZa28
+ERROR: [youtube] DZdQGfyC_zU: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 31] SKIP DZdQGfyC_zU (members_only)
+[ 30] OK   g_pf1FHQGVs  (31308자)
+[ 33] OK   1mRtMD6TXQg  (15559자)
+[ 32] OK   a3qufG3oEug  (32636자)
+ERROR: [youtube] qbpNraAZKEc: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 34] SKIP qbpNraAZKEc (members_only)
+ERROR: [youtube] ZzqNiTgG4Y4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 36] SKIP ZzqNiTgG4Y4 (members_only)
+ERROR: [youtube] dbfELJSWNlc: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 37] SKIP dbfELJSWNlc (members_only)
+[ 35] OK   U2lkItDJ4kE  (56147자)
+ERROR: [youtube] IGC-4vVuuyI: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 40] SKIP IGC-4vVuuyI (members_only)
+[ 38] OK   TvZdJ1J3Bpw  (10639자)
+[ 39] OK   HFNZmoinSmQ  (21457자)
+[ 41] OK   79K-rIkJSNU  (13103자)
+ERROR: [youtube] aMBNZHV8jjA: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 42] SKIP aMBNZHV8jjA (members_only)
+ERROR: [youtube] dNcDVsE5wo8: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 44] SKIP dNcDVsE5wo8 (members_only)
+[ 43] OK   kpErnlo838s  (23483자)
+ERROR: [youtube] C5YRgrSpWdk: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 46] SKIP C5YRgrSpWdk (members_only)
+[ 45] OK   6ljooVVZpps  (49814자)
+ERROR: [youtube] Z1gRGHWBSvM: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 47] SKIP Z1gRGHWBSvM (members_only)
+[ 48] OK   obnysj4TEv8  (38299자)
+ERROR: [youtube] LZpAPT7emI4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 49] SKIP LZpAPT7emI4 (members_only)
+[ 50] OK   9w_nPKVm8Bk  (14944자)
+ERROR: [youtube] -IP7ZcPMs-4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 52] SKIP -IP7ZcPMs-4 (members_only)
+[ 51] OK   C1_8B9XOAeg  (52139자)
+[ 53] OK   OMtnPc_jaGo  (22666자)
+[ 54] OK   MKn_My9P2_s  (25175자)
+[ 55] OK   rUN3J7L2Nno  (10839자)
+ERROR: [youtube] QTxoKBfXK98: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 57] SKIP QTxoKBfXK98 (members_only)
+[ 56] OK   GY_jTMvvxL0  (28030자)
+ERROR: [youtube] fFRX_urIuk4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 59] SKIP fFRX_urIuk4 (members_only)
+[ 58] OK   Hdn_wEMauGQ  (25340자)
+[ 61] OK   vEosWRH759M  (7093자)
+[ 60] OK   UjuZNix2BAw  (29810자)
+[ 62] OK   XRguIFZZ2dc  (1495자)
+[ 63] OK   UqPE99sviz0  (8129자)
+[ 64] OK   wWFGPqEbinc  (14871자)
+[ 66] OK   YgQqVcGpua0  (10378자)
+[ 65] OK   5nHIVlZcpdA  (19472자)
+[ 67] OK   G5GFdpXb9o0  (9425자)
+ERROR: [youtube] QEWqBvU7AOE: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 68] SKIP QEWqBvU7AOE (members_only)
+[ 69] OK   uGR5D3bQO7E  (11929자)
+[ 70] OK   eGtd1FGiMoc  (14931자)
+[ 72] OK   Gzjx7_a4WYQ  (6031자)
+ERROR: [youtube] 9vqMm6fYuF0: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 73] SKIP 9vqMm6fYuF0 (members_only)
+[ 74] OK   NjG_bF5_LYM  (18883자)
+[ 75] OK   ZF2bRuWyCXU  (7246자)
+ERROR: [youtube] l8_LyBHzbj8: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 76] SKIP l8_LyBHzbj8 (members_only)
+ERROR: [youtube] 9Mx_xu5FQD4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 77] SKIP 9Mx_xu5FQD4 (members_only)
+ERROR: [youtube] iurEBAFZeEk: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 78] SKIP iurEBAFZeEk (members_only)
+[ 79] OK   J6yMBhXevK8  (11878자)
+ERROR: [youtube] WFJotOsenow: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 80] SKIP WFJotOsenow (members_only)
+ERROR: [youtube] 9w8tu8NuVV4: This video is available to this channel's members on level: 사린이🍀 : 이모티콘으로 내 사주 표현하기❤ (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 81] SKIP 9w8tu8NuVV4 (members_only)
+[ 82] OK   VSuNGpYP_RM  (7983자)
+ERROR: [youtube] yXFPiEuB690: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 84] SKIP yXFPiEuB690 (members_only)
+[ 83] OK   Wx9mdJL0uq4  (18498자)
+ERROR: [youtube] 9uhQjPOmyf4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 86] SKIP 9uhQjPOmyf4 (members_only)
+ERROR: [youtube] qYrm7X2z0qw: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 87] SKIP qYrm7X2z0qw (members_only)
+[ 85] OK   LTnuvjiwvLY  (13539자)
+ERROR: [youtube] frVL-5oNCGc: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 90] SKIP frVL-5oNCGc (members_only)
+[ 88] OK   nNuYJ3WYNIU  (11181자)
+[ 89] OK   97xRBoAAij0  (10527자)
+[ 71] OK   vaNzYu9NJ04  (7418자)
+ERROR: [youtube] CG3m8BaNXeI: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 92] SKIP CG3m8BaNXeI (members_only)
+[ 91] OK   Uc2kImcX2jY  (16829자)
+ERROR: [youtube] fECJuVel0lc: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 93] SKIP fECJuVel0lc (members_only)
+[ 94] OK   DgDFDJ07k1E  (10337자)
+[ 95] OK   rXNlPbwUt3Q  (11134자)
+ERROR: [youtube] grWcYjAwvnY: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 97] SKIP grWcYjAwvnY (members_only)
+[ 96] OK   UGiCEV6yYug  (10141자)
+[ 98] OK   FWbDk9WIWe0  (15630자)
+ERROR: [youtube] yt8Zj9q8a8E: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[ 99] SKIP yt8Zj9q8a8E (members_only)
+[100] OK   QjG2lqieYGo  (35757자)
+[101] OK   HAozfFV3QlA  (11981자)
+[103] NOSUB 9aFkGK2_ORE
+[102] OK   cQmdxGPWaaA  (32652자)
+ERROR: [youtube] hsn6oMyqrrQ: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[105] SKIP hsn6oMyqrrQ (members_only)
+ERROR: [youtube] G0Mf_p2CWZM: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[104] SKIP G0Mf_p2CWZM (members_only)
+ERROR: [youtube] hCptUnMv66I: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[106] SKIP hCptUnMv66I (members_only)
+ERROR: [youtube] tzSSjUk3jOI: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[107] SKIP tzSSjUk3jOI (members_only)
+ERROR: [youtube] BRGYp83Yd8A: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[109] SKIP BRGYp83Yd8A (members_only)
+[108] OK   gaXiufjSY6U  (29613자)
+ERROR: [youtube] pa3Njp0hwJg: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[111] SKIP pa3Njp0hwJg (members_only)
+[110] OK   bWc7HnTe4mU  (24460자)
+ERROR: [youtube] 7FpuvBNohVs: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[113] SKIP 7FpuvBNohVs (members_only)
+ERROR: [youtube] vreAWInbG5c: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[115] SKIP vreAWInbG5c (members_only)
+[112] OK   v-xZDRAU5iY  (10825자)
+[114] OK   HarGYzqNrwo  (26723자)
+ERROR: [youtube] b5GLhEoAi7c: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[116] SKIP b5GLhEoAi7c (members_only)
+ERROR: [youtube] 3HWJxajOJ_U: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[118] SKIP 3HWJxajOJ_U (members_only)
+ERROR: [youtube] aH0_MwjJ1ZA: This video is available to this channel's members on level: 사린이🍀 : 이모티콘으로 내 사주 표현하기❤ (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[119] SKIP aH0_MwjJ1ZA (members_only)
+[120] OK   fnxjOcI9_4c  (12311자)
+ERROR: [youtube] tlwtiISMgU4: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[121] SKIP tlwtiISMgU4 (members_only)
+ERROR: [youtube] IeTS6NXAUPQ: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[122] SKIP IeTS6NXAUPQ (members_only)
+[123] OK   yjBoFOrtZ78  (11347자)
+[117] OK   sMcTVFMJEf4  (14653자)
+ERROR: [youtube] _ftUIhcWaVM: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[124] SKIP _ftUIhcWaVM (members_only)
+[125] OK   YHqzIdmdwvQ  (14521자)
+ERROR: [youtube] n5iT1WwSmgA: This video is available to this channel's members on level: 사린이🍀 : 이모티콘으로 내 사주 표현하기❤ (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[126] SKIP n5iT1WwSmgA (members_only)
+ERROR: [youtube] nbDWB99z2cg: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[127] SKIP nbDWB99z2cg (members_only)
+[128] OK   lQE5kWBt6Zc  (12218자)
+[129] OK   MtP9MSn9hl4  (7143자)
+[130] OK   g6gc3v2lleo  (8841자)
+ERROR: [youtube] 5AK6V93YdH8: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[132] SKIP 5AK6V93YdH8 (members_only)
+[131] OK   uMGbLN-m3mI  (9115자)
+[133] OK   fTpXuWLd9DM  (8186자)
+[134] OK   yhJrZbg-qbA  (10117자)
+[135] OK   Kil7zPN1Q8c  (6115자)
+[136] OK   T7UQDNLwySQ  (7473자)
+[137] OK   uVMW_Mknsu4  (12651자)
+[139] OK   MAk4ijyIkHw  (4605자)
+[138] OK   HbsnHAzilL8  (63128자)
+ERROR: [youtube] 7z9YQrlvMjA: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.
+[141] SKIP 7z9YQrlvMjA (members_only)
+[140] OK   5SM82rhWs-0  (8500자)
+[142] OK   f9-p9uxCDj4  (24185자)
+[145] NOSUB xgU-imzhMSo
+[143] OK   h4QQewUuAKI  (8318자)
+[144] OK   Z9wu5X2HIqA  (12351자)
+[146] NOSUB Xv6tyMVGG88
+[148] OK   nygIAOJA5nw  (8709자)
+[149] OK   GlfU8FxeUA8  (8465자)
+[147] OK   QpevQ48fu48  (4117자)
+[150] OK   jqG3vNTkE5w  (7951자)
+[151] OK   6oWy16JDWy4  (4984자)
+[152] OK   iZK8iXCbPLw  (6040자)
+[153] OK   _3ifZZLqiJs  (6642자)
+[154] OK   5hhtuaJ3ZAI  (3068자)
+[155] OK   PgfikxJbtkU  (3752자)
+[156] OK   f-IwYteO31g  (8442자)
+[157] OK   hAB_Guc67wk  (13929자)
+[158] OK   FQFn50b5Puk  (5843자)
+[159] OK   8cIfHjtcOGQ  (13114자)
+[160] OK   7hCA91KPO-Q  (5078자)
+[161] OK   k5uT3mVn9sM  (6527자)
+[162] OK   JlHMZ7W_5P0  (7779자)
+[163] OK   9QxeOe9YePA  (9331자)
+[164] OK   J_hAAoWgl6g  (5265자)
+[165] OK   Cze75yL7KrM  (6078자)
+[166] OK   0bt7Tthh0Uo  (7576자)
+[167] OK   rlEndeiZC1A  (11656자)
+[168] OK   vaVeraLH2cA  (6814자)
+[169] OK   LxWOHkb83rg  (12098자)
+[170] OK   RDnI8YmqxiA  (3362자)
+[171] OK   5MGLF0bf5uY  (12882자)
+[172] OK   usJ2dOCC_xQ  (12135자)
+ERROR: [youtube] lqAYv-8RxgI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[173] SKIP lqAYv-8RxgI (extract_failed)
+[174] OK   iB3rIQ1s5cg  (9487자)
+ERROR: [youtube] NcVrXCQfueE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[175] SKIP NcVrXCQfueE (extract_failed)
+[176] OK   1bDCxXsxDS8  (2567자)
+[177] OK   Soy2YhFrFgM  (9537자)
+ERROR: [youtube] buyszXEwVao: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[178] SKIP buyszXEwVao (extract_failed)
+[179] OK   4-TZbMZVpdQ  (16471자)
+ERROR: [youtube] kjXJrjFgzyc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[180] SKIP kjXJrjFgzyc (extract_failed)
+ERROR: [youtube] ePGHKb38KuU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[181] SKIP ePGHKb38KuU (extract_failed)
+ERROR: [youtube] cU-NNTocv_o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[182] SKIP cU-NNTocv_o (extract_failed)
+ERROR: [youtube] f_Z4ZgsOdLc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[183] SKIP f_Z4ZgsOdLc (extract_failed)
+ERROR: [youtube] S--sJwiLI6M: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[184] SKIP S--sJwiLI6M (extract_failed)
+ERROR: [youtube] i3ihBIaLWPQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[185] SKIP i3ihBIaLWPQ (extract_failed)
+ERROR: [youtube] oBzfusEOdMY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[186] SKIP oBzfusEOdMY (extract_failed)
+ERROR: [youtube] RNaXmpHKnaI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[187] SKIP RNaXmpHKnaI (extract_failed)
+ERROR: [youtube] sinPPkIhi9o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[188] SKIP sinPPkIhi9o (extract_failed)
+ERROR: [youtube] bezweordZYA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[189] SKIP bezweordZYA (extract_failed)
+ERROR: [youtube] zV5r61fI7zE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[190] SKIP zV5r61fI7zE (extract_failed)
+ERROR: [youtube] OyWMkMM1Rxw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[191] SKIP OyWMkMM1Rxw (extract_failed)
+ERROR: [youtube] Eh3NO6tF9zk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[192] SKIP Eh3NO6tF9zk (extract_failed)
+ERROR: [youtube] e8FNV7JAcao: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[193] SKIP e8FNV7JAcao (extract_failed)
+ERROR: [youtube] BoP0bxW3XAo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[194] SKIP BoP0bxW3XAo (extract_failed)
+ERROR: [youtube] 05zw4geLxUE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[195] SKIP 05zw4geLxUE (extract_failed)
+ERROR: [youtube] 7UPOzS4oJms: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[196] SKIP 7UPOzS4oJms (extract_failed)
+ERROR: [youtube] 5FicObGJHlY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[197] SKIP 5FicObGJHlY (extract_failed)
+ERROR: [youtube] iGUblr7Ts38: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[198] SKIP iGUblr7Ts38 (extract_failed)
+ERROR: [youtube] JchNg3hnHtw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[199] SKIP JchNg3hnHtw (extract_failed)
+ERROR: [youtube] 0fSdulW3K-4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[201] SKIP 0fSdulW3K-4 (extract_failed)
+ERROR: [youtube] TSyBimyglxQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[200] SKIP TSyBimyglxQ (extract_failed)
+ERROR: [youtube] L1FB3EWqkrw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[202] SKIP L1FB3EWqkrw (extract_failed)
+ERROR: [youtube] XPDOcsTvFAQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[203] SKIP XPDOcsTvFAQ (extract_failed)
+ERROR: [youtube] xOcikQJ6j_U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[204] SKIP xOcikQJ6j_U (extract_failed)
+ERROR: [youtube] p1pEx1tkdQE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[205] SKIP p1pEx1tkdQE (extract_failed)
+ERROR: [youtube] gDDyZkXcfpI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[206] SKIP gDDyZkXcfpI (extract_failed)
+ERROR: [youtube] oE_5Lruwe30: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[207] SKIP oE_5Lruwe30 (extract_failed)
+ERROR: [youtube] Q7TbralZp5w: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[208] SKIP Q7TbralZp5w (extract_failed)
+ERROR: [youtube] Akl_furFk7k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[209] SKIP Akl_furFk7k (extract_failed)
+ERROR: [youtube] tIjb3ZaKh7c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[210] SKIP tIjb3ZaKh7c (extract_failed)
+ERROR: [youtube] S8WRMGzni0k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[211] SKIP S8WRMGzni0k (extract_failed)
+ERROR: [youtube] RqgNsROCqaQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[212] SKIP RqgNsROCqaQ (extract_failed)
+ERROR: [youtube] iutB4e0Aq5g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[213] SKIP iutB4e0Aq5g (extract_failed)
+ERROR: [youtube] JiuGGi_w3lY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[214] SKIP JiuGGi_w3lY (extract_failed)
+ERROR: [youtube] uzZjlpOzAX4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[215] SKIP uzZjlpOzAX4 (extract_failed)
+ERROR: [youtube] HMtJnqSDG-U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[216] SKIP HMtJnqSDG-U (extract_failed)
+ERROR: [youtube] pNOqeQE-8VY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[218] SKIP pNOqeQE-8VY (extract_failed)
+ERROR: [youtube] C4nxRtqsPIY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[217] SKIP C4nxRtqsPIY (extract_failed)
+ERROR: [youtube] gquIOverZW8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[219] SKIP gquIOverZW8 (extract_failed)
+ERROR: [youtube] m7cf9FYk0Jw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[220] SKIP m7cf9FYk0Jw (extract_failed)
+ERROR: [youtube] ZGctMY87eiE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[222] SKIP ZGctMY87eiE (extract_failed)
+ERROR: [youtube] WFKgoJef0uM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[221] SKIP WFKgoJef0uM (extract_failed)
+ERROR: [youtube] C8ckZsMLB30: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[223] SKIP C8ckZsMLB30 (extract_failed)
+ERROR: [youtube] h2-mlG5Xaog: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[224] SKIP h2-mlG5Xaog (extract_failed)
+ERROR: [youtube] Oa3mln8GqZg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[226] SKIP Oa3mln8GqZg (extract_failed)
+ERROR: [youtube] gVMbkzm7zT8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[225] SKIP gVMbkzm7zT8 (extract_failed)
+ERROR: [youtube] oVuus4OINy0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[227] SKIP oVuus4OINy0 (extract_failed)
+ERROR: [youtube] JVa2RcrSI3Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[228] SKIP JVa2RcrSI3Y (extract_failed)
+ERROR: [youtube] s6yCJlfsC2s: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[229] SKIP s6yCJlfsC2s (extract_failed)
+ERROR: [youtube] 6mbUhGY5MQ0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[230] SKIP 6mbUhGY5MQ0 (extract_failed)
+ERROR: [youtube] asp0sPTPl2Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[231] SKIP asp0sPTPl2Q (extract_failed)
+ERROR: [youtube] sGZhl-HQTKA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[232] SKIP sGZhl-HQTKA (extract_failed)
+ERROR: [youtube] JPOHjEOSsto: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[233] SKIP JPOHjEOSsto (members_only)
+ERROR: [youtube] 8k_WR69ZeQM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[235] SKIP 8k_WR69ZeQM (extract_failed)
+ERROR: [youtube] sIdlhPO2Ado: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[234] SKIP sIdlhPO2Ado (extract_failed)
+ERROR: [youtube] jxoxkl1WZHM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[236] SKIP jxoxkl1WZHM (extract_failed)
+ERROR: [youtube] d79uykAeN8E: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[237] SKIP d79uykAeN8E (extract_failed)
+ERROR: [youtube] 1J8V1iabvQY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[238] SKIP 1J8V1iabvQY (extract_failed)
+ERROR: [youtube] nBYU5N6MIVM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[239] SKIP nBYU5N6MIVM (extract_failed)
+ERROR: [youtube] wrS7B_Za56Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[240] SKIP wrS7B_Za56Y (extract_failed)
+ERROR: [youtube] gB29SELVya0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[241] SKIP gB29SELVya0 (extract_failed)
+ERROR: [youtube] 1CcVIkrBd4w: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[242] SKIP 1CcVIkrBd4w (extract_failed)
+ERROR: [youtube] kHaL2Y5qbUY: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[243] SKIP kHaL2Y5qbUY (members_only)
+ERROR: [youtube] 6UZ1yJCucA0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[244] SKIP 6UZ1yJCucA0 (extract_failed)
+ERROR: [youtube] XdnSJZJZTKk: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[245] SKIP XdnSJZJZTKk (members_only)
+ERROR: [youtube] o2W75GXrrrg: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[246] SKIP o2W75GXrrrg (members_only)
+ERROR: [youtube] KsHHrRY1d_c: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[247] SKIP KsHHrRY1d_c (members_only)
+ERROR: [youtube] -MoVbcCyqtM: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[248] SKIP -MoVbcCyqtM (members_only)
+ERROR: [youtube] A7MwVr95OvA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[249] SKIP A7MwVr95OvA (extract_failed)
+ERROR: [youtube] RKi4mnDU62Y: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[250] SKIP RKi4mnDU62Y (members_only)
+ERROR: [youtube] EcKOCkQqNx8: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[251] SKIP EcKOCkQqNx8 (members_only)
+ERROR: [youtube] Y7O3vFkKBIE: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[252] SKIP Y7O3vFkKBIE (members_only)
+ERROR: [youtube] -hvURIjTr8Y: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[253] SKIP -hvURIjTr8Y (members_only)
+ERROR: [youtube] 8X98TRWmBTo: This video is available to this channel's members on level: 홍염🌺 : 멤버십 전용 프리미엄 사주 콘텐츠 (or any higher level). Join this YouTube channel from your computer or mobile app.
+[254] SKIP 8X98TRWmBTo (members_only)
+ERROR: [youtube] NaAwl5Tx1s0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[255] SKIP NaAwl5Tx1s0 (extract_failed)
+
+[videos] 완료: 113/255 성공 -> videos/
+
+===== [shorts] 목록 수집 중 =====
+총 249개
+ERROR: [youtube] rebgb3uN43U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  3] SKIP rebgb3uN43U (extract_failed)
+ERROR: [youtube] y0UxfPX392I: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  4] SKIP y0UxfPX392I (extract_failed)
+ERROR: [youtube] FvbUvMl8Lx0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  1] SKIP FvbUvMl8Lx0 (extract_failed)
+ERROR: [youtube] Z_0M1RjIEI0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  2] SKIP Z_0M1RjIEI0 (extract_failed)
+ERROR: [youtube] XXy9-b3L6QM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  5] SKIP XXy9-b3L6QM (extract_failed)
+ERROR: [youtube] xWXCYxTpaEc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  6] SKIP xWXCYxTpaEc (extract_failed)
+ERROR: [youtube] iOdgtUJ33E0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  7] SKIP iOdgtUJ33E0 (extract_failed)
+ERROR: [youtube] nMMFWF7Z3uA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  8] SKIP nMMFWF7Z3uA (extract_failed)
+ERROR: [youtube] OOfgbPBEuWU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[  9] SKIP OOfgbPBEuWU (extract_failed)
+ERROR: [youtube] m6MI-9B2g5o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 10] SKIP m6MI-9B2g5o (extract_failed)
+ERROR: [youtube] s9dcrtX9Wgo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 12] SKIP s9dcrtX9Wgo (extract_failed)
+ERROR: [youtube] Hiv4hCwKXns: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 11] SKIP Hiv4hCwKXns (extract_failed)
+ERROR: [youtube] GjTshpZWY5E: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 13] SKIP GjTshpZWY5E (extract_failed)
+ERROR: [youtube] -ySpKdFnD_o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 15] SKIP -ySpKdFnD_o (extract_failed)
+ERROR: [youtube] tzu9tDvBza4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 16] SKIP tzu9tDvBza4 (extract_failed)
+ERROR: [youtube] 0OiM2nviCec: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 14] SKIP 0OiM2nviCec (extract_failed)
+ERROR: [youtube] mJQiF-yEkd4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 17] SKIP mJQiF-yEkd4 (extract_failed)
+ERROR: [youtube] KpiZMcjOUDg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 18] SKIP KpiZMcjOUDg (extract_failed)
+ERROR: [youtube] 5RjJF3EXIHY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 19] SKIP 5RjJF3EXIHY (extract_failed)
+ERROR: [youtube] pZ_139FWmCQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 20] SKIP pZ_139FWmCQ (extract_failed)
+ERROR: [youtube] Xs64CtGuhQM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 21] SKIP Xs64CtGuhQM (extract_failed)
+ERROR: [youtube] Be5lrEZivqg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 23] SKIP Be5lrEZivqg (extract_failed)
+ERROR: [youtube] 3VxLKWWI3rM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 22] SKIP 3VxLKWWI3rM (extract_failed)
+ERROR: [youtube] i1zwf_lnjs0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 24] SKIP i1zwf_lnjs0 (extract_failed)
+ERROR: [youtube] dipskcOwsu8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 25] SKIP dipskcOwsu8 (extract_failed)
+ERROR: [youtube] mRXUiy4MpO0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 26] SKIP mRXUiy4MpO0 (extract_failed)
+ERROR: [youtube] JryRLeDJUrY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 27] SKIP JryRLeDJUrY (extract_failed)
+ERROR: [youtube] 0aWGudUQsg4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 28] SKIP 0aWGudUQsg4 (extract_failed)
+ERROR: [youtube] R27Q2jU11fU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 29] SKIP R27Q2jU11fU (extract_failed)
+ERROR: [youtube] 3aF-N45Nk2s: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 30] SKIP 3aF-N45Nk2s (extract_failed)
+ERROR: [youtube] CcsdbW991Qk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 31] SKIP CcsdbW991Qk (extract_failed)
+ERROR: [youtube] 8oGpuz_uStE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 32] SKIP 8oGpuz_uStE (extract_failed)
+ERROR: [youtube] L1-2dSiVccE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 33] SKIP L1-2dSiVccE (extract_failed)
+ERROR: [youtube] 2rbHBGv-TyU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 34] SKIP 2rbHBGv-TyU (extract_failed)
+ERROR: [youtube] mPuxCpxTWfo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 35] SKIP mPuxCpxTWfo (extract_failed)
+ERROR: [youtube] 8SapcOgaZyY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 37] SKIP 8SapcOgaZyY (extract_failed)
+ERROR: [youtube] nDGuh0frAn4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 38] SKIP nDGuh0frAn4 (extract_failed)
+ERROR: [youtube] JWiuTVvYPq0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 39] SKIP JWiuTVvYPq0 (extract_failed)
+ERROR: [youtube] f2lusSQ05-k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 40] SKIP f2lusSQ05-k (extract_failed)
+ERROR: [youtube] BaNzn026Qm0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 36] SKIP BaNzn026Qm0 (extract_failed)
+ERROR: [youtube] 2ybQ79lo26M: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 41] SKIP 2ybQ79lo26M (extract_failed)
+ERROR: [youtube] Fz3cFej9aiU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 42] SKIP Fz3cFej9aiU (extract_failed)
+ERROR: [youtube] saRLczVpIco: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 43] SKIP saRLczVpIco (extract_failed)
+ERROR: [youtube] 3o7DGSHMF-E: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 44] SKIP 3o7DGSHMF-E (extract_failed)
+ERROR: [youtube] L7fr-0lwveg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 45] SKIP L7fr-0lwveg (extract_failed)
+ERROR: [youtube] x4S6AHvE0vs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 46] SKIP x4S6AHvE0vs (extract_failed)
+ERROR: [youtube] lcFCgiJnw-U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 47] SKIP lcFCgiJnw-U (extract_failed)
+ERROR: [youtube] cs9sP9fifi0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 48] SKIP cs9sP9fifi0 (extract_failed)
+ERROR: [youtube] U_ABe1RGktQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 49] SKIP U_ABe1RGktQ (extract_failed)
+ERROR: [youtube] 5g4YY253KN0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 50] SKIP 5g4YY253KN0 (extract_failed)
+ERROR: [youtube] ttZUg_s7zik: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 51] SKIP ttZUg_s7zik (extract_failed)
+ERROR: [youtube] YlJan7v8xSk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 52] SKIP YlJan7v8xSk (extract_failed)
+ERROR: [youtube] ld7LJsE_HO0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 53] SKIP ld7LJsE_HO0 (extract_failed)
+ERROR: [youtube] p_12XILqaMY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 54] SKIP p_12XILqaMY (extract_failed)
+ERROR: [youtube] N4qyMbMo34s: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 55] SKIP N4qyMbMo34s (extract_failed)
+ERROR: [youtube] XvccxgERx6M: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 56] SKIP XvccxgERx6M (extract_failed)
+ERROR: [youtube] 1SrCKGKKicY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 57] SKIP 1SrCKGKKicY (extract_failed)
+ERROR: [youtube] nCyU5BNho7Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 58] SKIP nCyU5BNho7Q (extract_failed)
+ERROR: [youtube] wxpDgyV4Z8k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 59] SKIP wxpDgyV4Z8k (extract_failed)
+ERROR: [youtube] IlRL4FPfDBk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 60] SKIP IlRL4FPfDBk (extract_failed)
+ERROR: [youtube] r9px7uWF7WQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 61] SKIP r9px7uWF7WQ (extract_failed)
+ERROR: [youtube] GXC7lvtWPZw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 62] SKIP GXC7lvtWPZw (extract_failed)
+ERROR: [youtube] g6mWrfjYBuE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 63] SKIP g6mWrfjYBuE (extract_failed)
+ERROR: [youtube] hCamElFUV5U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 64] SKIP hCamElFUV5U (extract_failed)
+ERROR: [youtube] oSmeW-R4ElQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 65] SKIP oSmeW-R4ElQ (extract_failed)
+ERROR: [youtube] k2UKD1m58j8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 66] SKIP k2UKD1m58j8 (extract_failed)
+ERROR: [youtube] RDJiYMOim5Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 67] SKIP RDJiYMOim5Q (extract_failed)
+ERROR: [youtube] JfZ05qk_CSI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 68] SKIP JfZ05qk_CSI (extract_failed)
+ERROR: [youtube] B8-GQGH_qL4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 69] SKIP B8-GQGH_qL4 (extract_failed)
+ERROR: [youtube] 9jY-xWUcTn4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 70] SKIP 9jY-xWUcTn4 (extract_failed)
+ERROR: [youtube] S2QjJyXLFfU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 71] SKIP S2QjJyXLFfU (extract_failed)
+ERROR: [youtube] HyHsRKluhAQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 72] SKIP HyHsRKluhAQ (extract_failed)
+ERROR: [youtube] MMG5VZnPa8w: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 73] SKIP MMG5VZnPa8w (extract_failed)
+ERROR: [youtube] h2zEHpTM4nk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 74] SKIP h2zEHpTM4nk (extract_failed)
+ERROR: [youtube] araM-YBtrvg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 75] SKIP araM-YBtrvg (extract_failed)
+ERROR: [youtube] Nya7dug0gBk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 76] SKIP Nya7dug0gBk (extract_failed)
+ERROR: [youtube] LVdADSnlX7A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 77] SKIP LVdADSnlX7A (extract_failed)
+ERROR: [youtube] M5jtAXWgDpM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 78] SKIP M5jtAXWgDpM (extract_failed)
+ERROR: [youtube] muQ4lzGF5bw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 79] SKIP muQ4lzGF5bw (extract_failed)
+ERROR: [youtube] AikJGCW4Sx0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 80] SKIP AikJGCW4Sx0 (extract_failed)
+ERROR: [youtube] QtXH99nFTSE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 81] SKIP QtXH99nFTSE (extract_failed)
+ERROR: [youtube] ix5uuxvCbKM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 82] SKIP ix5uuxvCbKM (extract_failed)
+ERROR: [youtube] kPmi-R8S3UE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 83] SKIP kPmi-R8S3UE (extract_failed)
+ERROR: [youtube] BvTVYAzPV8E: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 84] SKIP BvTVYAzPV8E (extract_failed)
+ERROR: [youtube] lTwE-HoGFaM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 85] SKIP lTwE-HoGFaM (extract_failed)
+ERROR: [youtube] cP3Gi9bIcuk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 86] SKIP cP3Gi9bIcuk (extract_failed)
+ERROR: [youtube] dONAYYGgodw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 88] SKIP dONAYYGgodw (extract_failed)
+ERROR: [youtube] aQ6rIdDyqdc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 87] SKIP aQ6rIdDyqdc (extract_failed)
+ERROR: [youtube] BE4M_0y_HSw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 89] SKIP BE4M_0y_HSw (extract_failed)
+ERROR: [youtube] q7-7UKQxyN8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 90] SKIP q7-7UKQxyN8 (extract_failed)
+ERROR: [youtube] n1F3D4ykayM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 91] SKIP n1F3D4ykayM (extract_failed)
+ERROR: [youtube] XJ_mK4rLksE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 92] SKIP XJ_mK4rLksE (extract_failed)
+ERROR: [youtube] zd0gzlB8ba4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 93] SKIP zd0gzlB8ba4 (extract_failed)
+ERROR: [youtube] QwDilug5zu8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 94] SKIP QwDilug5zu8 (extract_failed)
+ERROR: [youtube] T7keVKf8IfA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 95] SKIP T7keVKf8IfA (extract_failed)
+ERROR: [youtube] qAeHv4WoNZU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 96] SKIP qAeHv4WoNZU (extract_failed)
+ERROR: [youtube] ezqJn5Hwnqg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 97] SKIP ezqJn5Hwnqg (extract_failed)
+ERROR: [youtube] m1WhB8J7c0A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 98] SKIP m1WhB8J7c0A (extract_failed)
+ERROR: [youtube] iRWKVS-cSGc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[ 99] SKIP iRWKVS-cSGc (extract_failed)
+ERROR: [youtube] hR5qea4FY3I: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[100] SKIP hR5qea4FY3I (extract_failed)
+ERROR: [youtube] --_F3j5iB2A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[101] SKIP --_F3j5iB2A (extract_failed)
+ERROR: [youtube] 1qzWzkbU81Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[102] SKIP 1qzWzkbU81Q (extract_failed)
+ERROR: [youtube] MFRjrLQIpj0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[103] SKIP MFRjrLQIpj0 (extract_failed)
+ERROR: [youtube] ii_eaEQUNow: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[104] SKIP ii_eaEQUNow (extract_failed)
+ERROR: [youtube] sCT82QUlRS4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[105] SKIP sCT82QUlRS4 (extract_failed)
+ERROR: [youtube] bmfQ9iHZEoU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[106] SKIP bmfQ9iHZEoU (extract_failed)
+ERROR: [youtube] YOW3xjYwPPg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[107] SKIP YOW3xjYwPPg (extract_failed)
+ERROR: [youtube] UQbVT7BSlGc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[108] SKIP UQbVT7BSlGc (extract_failed)
+ERROR: [youtube] Ws_dssloblo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[109] SKIP Ws_dssloblo (extract_failed)
+ERROR: [youtube] eCPgv1Tmzf0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[110] SKIP eCPgv1Tmzf0 (extract_failed)
+ERROR: [youtube] Ovlcxh7nZz0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[111] SKIP Ovlcxh7nZz0 (extract_failed)
+ERROR: [youtube] wFxV_VNzFUE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[112] SKIP wFxV_VNzFUE (extract_failed)
+ERROR: [youtube] m6qKv1vtPzw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[113] SKIP m6qKv1vtPzw (extract_failed)
+ERROR: [youtube] ZIPuSIQnIxE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[114] SKIP ZIPuSIQnIxE (extract_failed)
+ERROR: [youtube] bel8Rn8N6uI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[115] SKIP bel8Rn8N6uI (extract_failed)
+ERROR: [youtube] DK6aLu3lpkI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[116] SKIP DK6aLu3lpkI (extract_failed)
+ERROR: [youtube] RPoNQZZQ-3I: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[117] SKIP RPoNQZZQ-3I (extract_failed)
+ERROR: [youtube] IAiRF3NKHQE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[118] SKIP IAiRF3NKHQE (extract_failed)
+ERROR: [youtube] AwMYvGJWaBs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[119] SKIP AwMYvGJWaBs (extract_failed)
+ERROR: [youtube] GbKAGVh9nxA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[120] SKIP GbKAGVh9nxA (extract_failed)
+ERROR: [youtube] tWyefLTbUyY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[121] SKIP tWyefLTbUyY (extract_failed)
+ERROR: [youtube] ANF5Xib1eRs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[122] SKIP ANF5Xib1eRs (extract_failed)
+ERROR: [youtube] W3PzKiOS7no: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[123] SKIP W3PzKiOS7no (extract_failed)
+ERROR: [youtube] ZmwzFVcaTxI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[124] SKIP ZmwzFVcaTxI (extract_failed)
+ERROR: [youtube] 7CD5IrVmNN8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[125] SKIP 7CD5IrVmNN8 (extract_failed)
+ERROR: [youtube] GzD8GtRjcwA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[127] SKIP GzD8GtRjcwA (extract_failed)
+ERROR: [youtube] zlqZIwcB_FI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[126] SKIP zlqZIwcB_FI (extract_failed)
+ERROR: [youtube] -X2dPlCSeM0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[128] SKIP -X2dPlCSeM0 (extract_failed)
+ERROR: [youtube] 64Yi1n3EE8Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[129] SKIP 64Yi1n3EE8Q (extract_failed)
+ERROR: [youtube] Zm_jLT33q3U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[131] SKIP Zm_jLT33q3U (extract_failed)
+ERROR: [youtube] wqy6IOsScoM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[130] SKIP wqy6IOsScoM (extract_failed)
+ERROR: [youtube] PNUtWgR9vgM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[132] SKIP PNUtWgR9vgM (extract_failed)
+ERROR: [youtube] Xk4p2LHb84g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[133] SKIP Xk4p2LHb84g (extract_failed)
+ERROR: [youtube] vYUAr89P6Jw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[135] SKIP vYUAr89P6Jw (extract_failed)
+ERROR: [youtube] NYByqrp6JDE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[134] SKIP NYByqrp6JDE (extract_failed)
+ERROR: [youtube] 69vHCVsqQm8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[136] SKIP 69vHCVsqQm8 (extract_failed)
+ERROR: [youtube] -Sh2WrbAZOI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[137] SKIP -Sh2WrbAZOI (extract_failed)
+ERROR: [youtube] 4hx9MFVmJjs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[138] SKIP 4hx9MFVmJjs (extract_failed)
+ERROR: [youtube] UnDwnc7bYTo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[139] SKIP UnDwnc7bYTo (extract_failed)
+ERROR: [youtube] OUDBF6t488Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[140] SKIP OUDBF6t488Q (extract_failed)
+ERROR: [youtube] 47hvVgNMcKA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[141] SKIP 47hvVgNMcKA (extract_failed)
+ERROR: [youtube] srxG1yRYLmU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[142] SKIP srxG1yRYLmU (extract_failed)
+ERROR: [youtube] 3G1Eg1t5Q1M: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[143] SKIP 3G1Eg1t5Q1M (extract_failed)
+ERROR: [youtube] nXcUBWc_5NM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[144] SKIP nXcUBWc_5NM (extract_failed)
+ERROR: [youtube] zuVV17SI7wA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[145] SKIP zuVV17SI7wA (extract_failed)
+ERROR: [youtube] Vk3scYCoPzk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[146] SKIP Vk3scYCoPzk (extract_failed)
+ERROR: [youtube] yHkNrDfW79Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[147] SKIP yHkNrDfW79Q (extract_failed)
+ERROR: [youtube] 3FE8dnw6jc8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[148] SKIP 3FE8dnw6jc8 (extract_failed)
+ERROR: [youtube] eYxHXiYRQPY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[149] SKIP eYxHXiYRQPY (extract_failed)
+ERROR: [youtube] yCIx4D43NQE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[150] SKIP yCIx4D43NQE (extract_failed)
+ERROR: [youtube] jxHhVs6wkh8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[152] SKIP jxHhVs6wkh8 (extract_failed)
+ERROR: [youtube] 3eEsGcsSyJU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[151] SKIP 3eEsGcsSyJU (extract_failed)
+ERROR: [youtube] pGQBKLqnTvs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[153] SKIP pGQBKLqnTvs (extract_failed)
+ERROR: [youtube] ehPBN1Rvw9o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[154] SKIP ehPBN1Rvw9o (extract_failed)
+ERROR: [youtube] z65My-DzPNE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[156] SKIP z65My-DzPNE (extract_failed)
+ERROR: [youtube] sqcLjIBl7-I: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[155] SKIP sqcLjIBl7-I (extract_failed)
+ERROR: [youtube] EnUE77Ng4JY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[157] SKIP EnUE77Ng4JY (extract_failed)
+ERROR: [youtube] XjCbcxYISyo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[158] SKIP XjCbcxYISyo (extract_failed)
+ERROR: [youtube] 68t37UcRGSg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[159] SKIP 68t37UcRGSg (extract_failed)
+ERROR: [youtube] KtBcdd0Sio0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[160] SKIP KtBcdd0Sio0 (extract_failed)
+ERROR: [youtube] 0LIcgCzuQNE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[161] SKIP 0LIcgCzuQNE (extract_failed)
+ERROR: [youtube] TPuop8ENxA8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[162] SKIP TPuop8ENxA8 (extract_failed)
+ERROR: [youtube] vM99fBXxCA0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[164] SKIP vM99fBXxCA0 (extract_failed)
+ERROR: [youtube] tOtR97DVfbQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[163] SKIP tOtR97DVfbQ (extract_failed)
+ERROR: [youtube] GSMX1ocr1dM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[165] SKIP GSMX1ocr1dM (extract_failed)
+ERROR: [youtube] Jxt0TS0Ox4c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[166] SKIP Jxt0TS0Ox4c (extract_failed)
+ERROR: [youtube] x25fox_7Rvo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[167] SKIP x25fox_7Rvo (extract_failed)
+ERROR: [youtube] XJySNHfnAtY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[168] SKIP XJySNHfnAtY (extract_failed)
+ERROR: [youtube] JCC2Z3vyKHw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[169] SKIP JCC2Z3vyKHw (extract_failed)
+ERROR: [youtube] Mdp1KvI1tA0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[170] SKIP Mdp1KvI1tA0 (extract_failed)
+ERROR: [youtube] 7Ggj0lmdYg4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[172] SKIP 7Ggj0lmdYg4 (extract_failed)
+ERROR: [youtube] q0TtLjV7u1k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[171] SKIP q0TtLjV7u1k (extract_failed)
+ERROR: [youtube] LripohfMDEs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[173] SKIP LripohfMDEs (extract_failed)
+ERROR: [youtube] bMjPdLLK7FM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[176] SKIP bMjPdLLK7FM (extract_failed)
+ERROR: [youtube] opxkOUyJ36E: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[174] SKIP opxkOUyJ36E (extract_failed)
+ERROR: [youtube] VRJOl5kyt1g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[175] SKIP VRJOl5kyt1g (extract_failed)
+ERROR: [youtube] tUgw3VZDr2I: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[177] SKIP tUgw3VZDr2I (extract_failed)
+ERROR: [youtube] ECbY5Fh_L1k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[180] SKIP ECbY5Fh_L1k (extract_failed)
+ERROR: [youtube] oE9BN_-Sr2k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[179] SKIP oE9BN_-Sr2k (extract_failed)
+ERROR: [youtube] gXk6Dz5oE1U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[178] SKIP gXk6Dz5oE1U (extract_failed)
+ERROR: [youtube] 7ZuQ5Xi6G98: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[181] SKIP 7ZuQ5Xi6G98 (extract_failed)
+ERROR: [youtube] bqoVJPzwfyM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[182] SKIP bqoVJPzwfyM (extract_failed)
+ERROR: [youtube] flRQTq6nNZw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[184] SKIP flRQTq6nNZw (extract_failed)
+ERROR: [youtube] YcR2SRxi3ss: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[183] SKIP YcR2SRxi3ss (extract_failed)
+ERROR: [youtube] a11MoZwd1sY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[185] SKIP a11MoZwd1sY (extract_failed)
+ERROR: [youtube] SE6ubdY9BHc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[186] SKIP SE6ubdY9BHc (extract_failed)
+ERROR: [youtube] U_xSmD5PJxQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[187] SKIP U_xSmD5PJxQ (extract_failed)
+ERROR: [youtube] ItdulA2Xl_o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[188] SKIP ItdulA2Xl_o (extract_failed)
+ERROR: [youtube] VWHcqeLLFDA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[189] SKIP VWHcqeLLFDA (extract_failed)
+ERROR: [youtube] qh_592eFz3k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[190] SKIP qh_592eFz3k (extract_failed)
+ERROR: [youtube] uzj3YakiMRs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[191] SKIP uzj3YakiMRs (extract_failed)
+ERROR: [youtube] Wj96ATE8cfM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[192] SKIP Wj96ATE8cfM (extract_failed)
+ERROR: [youtube] gOZ1OibKbEU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[193] SKIP gOZ1OibKbEU (extract_failed)
+ERROR: [youtube] 6LSNkAgfLoM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[194] SKIP 6LSNkAgfLoM (extract_failed)
+ERROR: [youtube] dzu9KITolsw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[195] SKIP dzu9KITolsw (extract_failed)
+ERROR: [youtube] 8bLlsIbsKXE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[197] SKIP 8bLlsIbsKXE (extract_failed)
+ERROR: [youtube] 5k-OOxgiYxQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[196] SKIP 5k-OOxgiYxQ (extract_failed)
+ERROR: [youtube] IgHD_ZRN6qs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[198] SKIP IgHD_ZRN6qs (extract_failed)
+ERROR: [youtube] Ne7t7dw_0n8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[199] SKIP Ne7t7dw_0n8 (extract_failed)
+ERROR: [youtube] GCPzn9khJFA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[201] SKIP GCPzn9khJFA (extract_failed)
+ERROR: [youtube] Jk-PeCCWKPE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[200] SKIP Jk-PeCCWKPE (extract_failed)
+ERROR: [youtube] 9tU2vLtoWbI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[202] SKIP 9tU2vLtoWbI (extract_failed)
+ERROR: [youtube] g0yCqIfBVgk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[203] SKIP g0yCqIfBVgk (extract_failed)
+ERROR: [youtube] PxL0Sh0J6uI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[205] SKIP PxL0Sh0J6uI (extract_failed)
+ERROR: [youtube] QCBYB37Xt2A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[204] SKIP QCBYB37Xt2A (extract_failed)
+ERROR: [youtube] 1kjQupFHrJA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[206] SKIP 1kjQupFHrJA (extract_failed)
+ERROR: [youtube] Cn2KJIPutFE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[207] SKIP Cn2KJIPutFE (extract_failed)
+ERROR: [youtube] -RV7Jmyym4o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[208] SKIP -RV7Jmyym4o (extract_failed)
+ERROR: [youtube] zUjWSXNxGM8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[209] SKIP zUjWSXNxGM8 (extract_failed)
+ERROR: [youtube] yutr06IO6f4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[210] SKIP yutr06IO6f4 (extract_failed)
+ERROR: [youtube] t3nsHkjmG64: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[211] SKIP t3nsHkjmG64 (extract_failed)
+ERROR: [youtube] M1ZJ0kjxMyY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[212] SKIP M1ZJ0kjxMyY (extract_failed)
+ERROR: [youtube] GNJxU-GyQ20: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[213] SKIP GNJxU-GyQ20 (extract_failed)
+ERROR: [youtube] 1TQ5NM7Yxoo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[214] SKIP 1TQ5NM7Yxoo (extract_failed)
+ERROR: [youtube] GNNicV0hM1U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[215] SKIP GNNicV0hM1U (extract_failed)
+ERROR: [youtube] ZxwRphFZhGw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[217] SKIP ZxwRphFZhGw (extract_failed)
+ERROR: [youtube] NOWzKWMmcyc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[216] SKIP NOWzKWMmcyc (extract_failed)
+ERROR: [youtube] Qqz6g7sPmos: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[218] SKIP Qqz6g7sPmos (extract_failed)
+ERROR: [youtube] 6j600cqFTwM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[220] SKIP 6j600cqFTwM (extract_failed)
+ERROR: [youtube] 6kOEIXCYVtU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[219] SKIP 6kOEIXCYVtU (extract_failed)
+ERROR: [youtube] V5XLO5NZ6yY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[221] SKIP V5XLO5NZ6yY (extract_failed)
+ERROR: [youtube] WbmER077vXw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[222] SKIP WbmER077vXw (extract_failed)
+ERROR: [youtube] vWM2hCZtGTw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[223] SKIP vWM2hCZtGTw (extract_failed)
+ERROR: [youtube] NTT51LfJfWs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[225] SKIP NTT51LfJfWs (extract_failed)
+ERROR: [youtube] s-WKH_Hh2bw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[224] SKIP s-WKH_Hh2bw (extract_failed)
+ERROR: [youtube] f2s9B1Jss2o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[226] SKIP f2s9B1Jss2o (extract_failed)
+ERROR: [youtube] t1cfbOJ_tmY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[227] SKIP t1cfbOJ_tmY (extract_failed)
+ERROR: [youtube] PDZvJLu5FdM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[229] SKIP PDZvJLu5FdM (extract_failed)
+ERROR: [youtube] 0klKOW0Hx4Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[228] SKIP 0klKOW0Hx4Q (extract_failed)
+ERROR: [youtube] _sXxtPnxm-E: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[230] SKIP _sXxtPnxm-E (extract_failed)
+ERROR: [youtube] eIUDru7vs74: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[231] SKIP eIUDru7vs74 (extract_failed)
+ERROR: [youtube] lTnLi_SfEFM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[232] SKIP lTnLi_SfEFM (extract_failed)
+ERROR: [youtube] DPqVcZQ0WVw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[233] SKIP DPqVcZQ0WVw (extract_failed)
+ERROR: [youtube] QJGQUuGBsRY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[234] SKIP QJGQUuGBsRY (extract_failed)
+ERROR: [youtube] Np90SPPTRWY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[237] SKIP Np90SPPTRWY (extract_failed)
+ERROR: [youtube] 0soRi1HYRgg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[236] SKIP 0soRi1HYRgg (extract_failed)
+ERROR: [youtube] mJesGoothwk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[235] SKIP mJesGoothwk (extract_failed)
+ERROR: [youtube] S4g0j-AAJis: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[238] SKIP S4g0j-AAJis (extract_failed)
+ERROR: [youtube] DTxqALOtZhA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[240] SKIP DTxqALOtZhA (extract_failed)
+ERROR: [youtube] 4LThh_vNfcA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[241] SKIP 4LThh_vNfcA (extract_failed)
+ERROR: [youtube] kx4XFz4lV4g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[239] SKIP kx4XFz4lV4g (extract_failed)
+ERROR: [youtube] 01pOepbBfGA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[242] SKIP 01pOepbBfGA (extract_failed)
+ERROR: [youtube] lH6wZf_2yFM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[243] SKIP lH6wZf_2yFM (extract_failed)
+ERROR: [youtube] rRvMiwOh5s4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[245] SKIP rRvMiwOh5s4 (extract_failed)
+ERROR: [youtube] 2Hz9fUjEgGU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[244] SKIP 2Hz9fUjEgGU (extract_failed)
+ERROR: [youtube] 3dGIzpLrwHE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[246] SKIP 3dGIzpLrwHE (extract_failed)
+ERROR: [youtube] SRVytP7Y9DU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[247] SKIP SRVytP7Y9DU (extract_failed)
+ERROR: [youtube] WdnbSiCfLbc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[249] SKIP WdnbSiCfLbc (extract_failed)
+ERROR: [youtube] j9xcZM9FF9k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[248] SKIP j9xcZM9FF9k (extract_failed)
+
+[shorts] 완료: 0/249 성공 -> shorts/
+
+총 소요: 4.2분
