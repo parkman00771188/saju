@@ -27,7 +27,7 @@ const Sub = ({ children }) => <h3 className="bsub">{children}</h3>;
 const Callout = ({ children, tone = 'green' }) => <div className={`callout ${tone}`}>{children}</div>;
 const Chips = ({ items, tone }) => <div className="bchips">{items.filter(Boolean).map((c, i) => <span key={i} className={`bchip ${tone || ''} ${typeof c === 'object' ? c.tone || '' : ''}`}>{typeof c === 'object' ? c.label : c}</span>)}</div>;
 const Divider = () => <hr className="bdiv" />;
-const More = ({ title = '더 자세히 보기', children }) => <details className="bmore"><summary>{title}</summary><div>{children}</div></details>;
+const More = ({ title = '더 자세히 보기', children }) => <details className="bmore" open><summary>{title}</summary><div>{children}</div></details>;
 
 function PillarsRow({ data, labels = {} }) {
   const keys = ['time', 'day', 'month', 'year'];
@@ -199,7 +199,7 @@ function buildPages(R, data) {
             <header><GZ g={p.gz} /><div><b>{p.ko} · {p.root}</b><small>{p.period}<br />{p.who}</small></div></header>
             <div className="posmeta"><span>{p.pos !== 'day' ? `천간 ${p.stemGod}` : '일간(나)'}</span><span>지지 {p.branchGod}</span><span>{p.stage}</span><span>{p.sal}</span>{p.gongmang && <span className="gm">공망</span>}</div>
             {p.texts.slice(0, 2).map((t, i) => <p key={i}>{t}</p>)}
-            <details className="bmore tiny"><summary>더 보기</summary>{p.texts.slice(2).map((t, i) => <p key={i}>{t}</p>)}</details>
+            <details className="bmore tiny" open><summary>더 보기</summary>{p.texts.slice(2).map((t, i) => <p key={i}>{t}</p>)}</details>
           </article>
         ))}
       </div>
@@ -265,7 +265,7 @@ function buildPages(R, data) {
       <Callout>가장 좋은 해는 <b>{[...R.years].sort((a, b) => b.luck.overall - a.luck.overall)[0].year}년</b>, 조심할 해는 <b>{[...R.years].sort((a, b) => a.luck.overall - b.luck.overall)[0].year}년</b>이에요. {R.needEl} 표시는 필요한 기운이 들어오는 해예요.</Callout>
       <div className="ylist book">
         {R.years.map((yy) => (
-          <details key={yy.year} className={`ycard ${yy.year === data.current.nowYear ? 'now' : ''}`}>
+          <details key={yy.year} className={`ycard ${yy.year === data.current.nowYear ? 'now' : ''}`} open={yy.year === data.current.nowYear}>
             <summary className="yhead"><span className="yyear">{yy.year}<small>{yy.age}세</small></span><GZ g={yy} /><span className="ygod"><span>{yy.stemGod}·{yy.branchGod}</span><small>{yy.luck.head}</small></span><Score n={yy.luck.overall} /><i className="chev" /></summary>
             <div className="ybody">{yy.luck.summary.map((s, i) => <p key={i}>{s}</p>)}<div className="catrows">{CATS.map((k) => <div key={k} className="catrow"><b style={{ color: CAT_META[k].color }}>{k}</b><Score n={yy.luck.scores[k]} color={CAT_META[k].color} /><p>{first(yy.luck.texts[k])}</p></div>)}</div></div>
           </details>
@@ -340,7 +340,6 @@ export default function Reading({ data, onBack }) {
   const [gloss, setGloss] = useState(false);
   const [toc, setToc] = useState(false);
   const top = useRef(null);
-  const touch = useRef(null);
   // 책이 열려 있는 동안 스크롤바 폭 고정 + 즉시 스크롤(페이지 전환 시 좌우 흔들림 방지)
   useEffect(() => { document.documentElement.classList.add('book-open'); return () => document.documentElement.classList.remove('book-open'); }, []);
   const go = (i) => { const n = Math.max(0, Math.min(pages.length - 1, i)); if (n === idx) return; setDir(n > idx ? 1 : -1); setIdx(n); window.scrollTo({ top: 0, behavior: 'instant' }); };
@@ -355,8 +354,6 @@ export default function Reading({ data, onBack }) {
       <header className="book-top"><button className="icon" onClick={onBack} aria-label="만세력으로">☰</button><b>사주풀이</b><button className="icon" onClick={onBack} aria-label="닫기">✕</button></header>
       <AnimatePresence mode="wait" custom={dir}>
         <motion.section key={page.id} className="book-page"
-          onTouchStart={(e) => { const t = e.touches[0]; touch.current = { x: t.clientX, y: t.clientY, at: Date.now() }; }}
-          onTouchEnd={(e) => { const s0 = touch.current; if (!s0) return; touch.current = null; const t = e.changedTouches[0]; const dx = t.clientX - s0.x, dy = t.clientY - s0.y; if (Date.now() - s0.at < 700 && Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.6) { if (dx < 0) go(idx + 1); else go(idx - 1); } }}
           initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.22, ease: 'easeOut' }}>
           <div className={`page-head ${page.cover ? 'cover' : ''}`} style={page.color ? { '--c': page.color } : undefined}>{!page.cover && <span className="pnum">{page.num}</span>}<h2>{page.title}</h2></div>
           <div className="page-body">{page.body}</div>
