@@ -1,92 +1,35 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { CosmosScene } from './three/CosmosScene.js';
+﻿import { useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { calculate } from './saju/calc.js';
 import Landing from './components/Landing.jsx';
 import Result from './components/Result.jsx';
+import Passage from './components/Passage.jsx';
 
 export default function App() {
-  const canvasRef = useRef(null);
-  const sceneRef = useRef(null);
-  const [phase, setPhase] = useState('intro'); // intro | warping | result
+  const reduced = useReducedMotion();
+  const [phase, setPhase] = useState('opening');
   const [result, setResult] = useState(null);
+  const [input, setInput] = useState(null);
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    const scene = new CosmosScene(canvasRef.current);
-    scene.init();
-    sceneRef.current = scene;
-    return () => scene.dispose();
-  }, []);
-
-  const handleSubmit = useCallback(async (input) => {
-    let r;
+  const submit = (value) => {
     try {
-      r = calculate(input);
-    } catch (e) {
-      console.error(e);
-      setError('사주를 계산할 수 없는 날짜입니다. 입력값을 다시 확인해 주세요.');
-      return;
+      const data = calculate(value);
+      setInput(value); setResult(data); setError(''); setPhase('calculating');
+      window.scrollTo({ top: 0 });
+    } catch {
+      setError('날짜를 다시 확인해 주세요. 음력이라면 해당 월의 날짜와 윤달 여부도 확인해 주세요.');
     }
-    setError('');
-    setPhase('warping');
-    await sceneRef.current.warp();
-    setResult(r);
-    setPhase('result');
-    window.scrollTo({ top: 0 });
-  }, []);
-
-  const reset = useCallback(() => {
-    setPhase('intro');
-    setResult(null);
-    sceneRef.current?.setMode('intro');
-    window.scrollTo({ top: 0 });
-  }, []);
-
-  return (
-    <>
-      <canvas ref={canvasRef} className={`cosmos ${phase}`} />
-      <div className="vignette" />
-
-      <AnimatePresence mode="wait">
-        {phase !== 'result' && (
-          <motion.main
-            key="landing"
-            className="landing"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: phase === 'warping' ? 0 : 1, scale: phase === 'warping' ? 1.08 : 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.7, ease: 'easeInOut' }}
-          >
-            <Landing onSubmit={handleSubmit} error={error} busy={phase === 'warping'} />
-          </motion.main>
-        )}
-        {phase === 'result' && result && (
-          <motion.main
-            key="result"
-            className="result"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Result data={result} onReset={reset} />
-          </motion.main>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {phase === 'warping' && (
-          <motion.div
-            key="flash"
-            className="flash"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 0, 1] }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, times: [0, 0.75, 1], ease: 'easeIn' }}
-          />
-        )}
-      </AnimatePresence>
-    </>
-  );
+  };
+  return <AnimatePresence mode="wait">
+    {phase === 'opening' ? <motion.div key="opening" className="opening" exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : .35 }}>
+      <motion.div className="opening-mark" initial={{ opacity: 0, scale: .86, filter: 'blur(16px)' }} animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }} transition={{ duration: reduced ? 0 : 1.5 }} onAnimationComplete={() => setPhase('input')} aria-label="천기록 시작">
+        <span>命</span><p>천 기 록</p>
+      </motion.div>
+      <button className="skip-intro" onClick={() => setPhase('input')}>건너뛰기 →</button>
+    </motion.div> : phase === 'calculating' ? <Passage key="calculating" data={result} onDone={() => setPhase('result')} /> : phase === 'result' ? <motion.main key="result" className="result" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <Result data={result} onReset={() => { setPhase('input'); window.scrollTo({ top: 0 }); }} />
+    </motion.main> : <motion.main key="input" className="landing" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: reduced ? 0 : .6 }}>
+      <Landing onSubmit={submit} error={error} initialInput={input} />
+    </motion.main>}
+  </AnimatePresence>;
 }

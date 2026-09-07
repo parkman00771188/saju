@@ -1,45 +1,17 @@
-import Tile from './Tile.jsx';
-import { HIDDEN_STEMS, STEM_KO, STEM_ELEMENT, ELEMENT_COLOR, TEN_GOD_DESC } from '../saju/tables.js';
+﻿import Tile from './Tile.jsx';
+import { HIDDEN_STEMS, STEM_KO } from '../saju/tables.js';
 
-function Col({ label, d, delay, dim = false }) {
-  if (!d) {
-    return (
-      <div className="pcol">
-        <div className="phead">{label}</div>
-        <div className="pcell god">—</div>
-        <Tile ghost size="md" delay={delay} /><Tile ghost size="md" delay={delay + 0.08} />
-        <div className="pcell god">—</div><div className="pcell">—</div><div className="pcell">—</div><div className="pcell hid">—</div>
-      </div>
-    );
-  }
-  const hidden = HIDDEN_STEMS[d.branch];
-  return (
-    <div className={`pcol ${dim ? 'dim' : ''} ${d.pos === 'day' ? 'me' : ''}`}>
-      <div className="phead">{label}</div>
-      <div className="pcell god" title={TEN_GOD_DESC[d.stemGod]}>{d.stemGod}</div>
-      <Tile ch={d.stem} ko={d.stemKo} el={d.stemEl} size="md" delay={delay} />
-      <Tile ch={d.branch} ko={d.branchKo} el={d.branchEl} size="md" delay={delay + 0.08} />
-      <div className="pcell god" title={TEN_GOD_DESC[d.branchGod]}>{d.branchGod}</div>
-      <div className="pcell">{d.stage}</div>
-      <div className="pcell">{d.sal ?? d.salYear}</div>
-      <div className="pcell hid">
-        {hidden.map((h) => <b key={h} style={{ color: ELEMENT_COLOR[STEM_ELEMENT[h]].bg }}>{STEM_KO[h]}</b>)}
-      </div>
-    </div>
-  );
-}
-
-/** 원국 보드: [현재세운 현재대운 | 시 일 월 년] 6열 (참고 시안과 동일 구성) */
 export default function PillarBoard({ data }) {
-  const { detail, order, current } = data;
-  return (
-    <div className="board">
-      <Col label="현재세운" d={{ ...current.year, pos: 'seun' }} delay={0.05} dim />
-      <Col label="현재대운" d={{ ...current.daeun, pos: 'daeun' }} delay={0.1} dim />
-      <div className="pdiv" />
-      {order.map((k, i) => (
-        <Col key={k} label={{ time: '시', day: '일', month: '월', year: '년' }[k]} d={detail[k]} delay={0.15 + i * 0.1} />
-      ))}
-    </div>
-  );
+  const keys = ['time','day','month','year'];
+  const names = {time:['시주','태어난 시간'],day:['일주','나를 나타내는 날'],month:['월주','태어난 달'],year:['연주','태어난 해']};
+  const rows = [
+    ['십성', p => p.stemGod],
+    ['천간', p => <Tile ch={p.stem} ko={p.stemKo} el={p.stemEl} size="md" flip={false}/>],
+    ['지지', p => <Tile ch={p.branch} ko={p.branchKo} el={p.branchEl} size="md" flip={false}/>],
+    ['십성', p => p.branchGod],
+    ['지장간', p => HIDDEN_STEMS[p.branch].map(h => STEM_KO[h]).join(' · ')],
+    ['12운성', p => p.stage],
+    ['12신살', p => p.sal ?? p.salYear],
+  ];
+  return <div className="pillar-table-wrap"><table className="pillar-table"><caption className="sr-only">생년월일시로 계산한 사주팔자와 십성, 지장간, 십이운성, 십이신살</caption><thead><tr><th scope="col">사주</th>{keys.map(k=><th scope="col" key={k} className={k==='day'?'day-column':''}>{names[k][0]}<small>{names[k][1]}</small></th>)}</tr></thead><tbody>{rows.map(([label,render],i)=><tr key={i} className={i===1||i===2?'glyph-row':''}><th scope="row">{label}</th>{keys.map(k=><td key={k} className={k==='day'?'day-column':''}>{data.detail[k]?render(data.detail[k]):<span className="unknown-cell">{i===1?'시간':i===2?'모름':'—'}</span>}</td>)}</tr>)}</tbody></table></div>;
 }

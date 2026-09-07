@@ -1,10 +1,11 @@
 import { useMemo, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Tile from './Tile.jsx';
 
 function Card({ g, top, sub, active, onClick, delay = 0, badge, small }) {
+  const Component = onClick ? motion.button : motion.div;
   return (
-    <motion.button type="button" className={`fcard ${active ? 'active' : ''} ${small ? 'small' : ''}`} onClick={onClick}
+    <Component type={onClick ? 'button' : undefined} aria-pressed={onClick ? active : undefined} className={`fcard ${active ? 'active' : ''} ${small ? 'small' : ''}`} onClick={onClick}
       initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay, duration: 0.4 }}>
       <div className="ftop">{top}</div>
       {sub && <div className="fsub">{sub}</div>}
@@ -15,21 +16,17 @@ function Card({ g, top, sub, active, onClick, delay = 0, badge, small }) {
       <div className="fgod">{g.branchGod}</div>
       <div className="fmeta">{g.stage}</div>
       <div className="fmeta">{g.sal}</div>
-    </motion.button>
+    </Component>
   );
 }
 
-function Block({ title, sub, children, defaultOpen = true }) {
-  const [open, setOpen] = useState(defaultOpen);
+function Block({ title, sub, children }) {
   return (
     <div className="fblock">
-      <button type="button" className="fbhead" onClick={() => setOpen((v) => !v)}>
+      <div className="fbhead">
         <h3>{title} <small>{sub}</small></h3>
-        <i className={`chev ${open ? 'up' : ''}`} />
-      </button>
-      <AnimatePresence initial={false}>
-        {open && <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.35 }} style={{ overflow: 'hidden' }}>{children}</motion.div>}
-      </AnimatePresence>
+      </div>
+      {children}
     </div>
   );
 }

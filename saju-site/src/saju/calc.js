@@ -57,13 +57,21 @@ export function calculate(input) {
   let hour = unknownTime ? 12 : Number(input.hour);
   let minute = unknownTime ? 0 : Number(input.minute || 0);
 
+  if (![year, month, day, hour, minute].every(Number.isInteger) || year < 1900 || year > 2100 || month < 1 || month > 12 || day < 1 || day > 31 || hour < 0 || hour > 23 || minute < 0 || minute > 59 || !['solar', 'lunar', 'leap'].includes(calendar)) {
+    throw new Error('Invalid birth input');
+  }
+  if (calendar === 'solar' && day > new Date(Date.UTC(year, month, 0)).getUTCDate()) throw new Error('Invalid calendar date');
+
   // 1) 입력을 양력으로 정규화
   let solarBirth;
   if (calendar === 'solar') {
     solarBirth = Solar.fromYmdHms(year, month, day, hour, minute, 0);
   } else {
     const m = calendar === 'leap' ? -month : month;
-    solarBirth = Lunar.fromYmdHms(year, m, day, hour, minute, 0).getSolar();
+    const lunarInput = Lunar.fromYmdHms(year, m, day, hour, minute, 0);
+    solarBirth = lunarInput.getSolar();
+    const roundTrip = solarBirth.getLunar();
+    if (roundTrip.getYear() !== year || roundTrip.getMonth() !== m || roundTrip.getDay() !== day) throw new Error('Invalid lunar date');
   }
 
   // 2) 한국시 보정(경도차: 4분/도) → 진태양시 근사
@@ -255,7 +263,7 @@ export function calculate(input) {
   const nowYearGZ = nowLunar.getYearInGanZhi();
   const nowMonthGZ = nowLunar.getMonthInGanZhi();
   const nowYear = now.getFullYear();
-  const currentDaeun = daeun.find((d) => nowYear >= d.startYear && nowYear <= d.endYear) || daeun[0];
+  const currentDaeun = daeun.find((d) => nowYear >= d.startYear && nowYear <= d.endYear);
   const currentSeun = currentDaeun?.seun.find((s) => s.year === nowYear);
   const curG = (s) => {
     const g = gz(s);

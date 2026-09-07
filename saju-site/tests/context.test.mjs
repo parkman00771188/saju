@@ -1,0 +1,50 @@
+﻿import assert from 'node:assert/strict';
+import {calculate} from '../src/saju/calc.js';
+import {contextualReading,interactions,monthsForYear,yearFlow,flowValue} from '../src/saju/context.js';
+import * as T from '../src/saju/tables.js';
+const input={year:1995,month:12,day:15,hour:14,minute:0,gender:'남'};
+const make=(text,id,pos=id)=>({text,id,pos,label:id,stem:text[0],branch:text[1],stemEl:T.STEM_ELEMENT[text[0]],branchEl:T.BRANCH_ELEMENT[text[1]]});
+const cold=calculate(input);
+const reading=contextualReading(cold,2026);
+assert.equal(reading.climate.need,'火');
+assert.ok(reading.annual.bringsNeed);
+assert.ok(reading.annual.rels.some(r=>r.kind==='충'&&r.members.some(m=>m.pos==='month')));
+assert.ok(reading.annual.mixed);
+const parts=[make('甲寅','year'),make('丙午','month')];
+assert.equal(interactions(parts).filter(r=>r.kind==='삼합').length,0);
+assert.equal(interactions([...parts,make('戊戌','annual')],['annual']).filter(r=>r.kind==='삼합').length,1);
+assert.equal(interactions([...parts,make('甲寅','annual')],['annual']).filter(r=>r.kind==='삼합').length,0);
+const hap=interactions([make('甲子','year'),make('己丑','annual')],['annual']);
+assert.ok(hap.some(r=>r.kind==='천간합'&&r.el==='土'));
+assert.throws(()=>calculate({...input,year:2025,month:2,day:30}));
+assert.throws(()=>calculate({...input,month:13}));
+assert.throws(()=>calculate({...input,hour:24}));
+assert.doesNotThrow(()=>calculate({...input,year:2000,month:2,day:29}));
+const unknown=contextualReading(calculate({...input,unknownTime:true}),2027);
+assert.ok(unknown.unknownTime);
+assert.ok(unknown.natal.every(r=>r.members.every(m=>m.pos!=='time')));
+const january=monthsForYear(2026)[0];
+assert.equal(january.yearPillar.text,'乙巳');
+assert.equal(monthsForYear(2026)[1].yearPillar.text,'丙午');
+assert.equal(monthsForYear(2026)[8].text,'丁酉');
+assert.equal(monthsForYear(2026)[11].end.slice(0,4),'2027');
+for(const year of [2026,2027,2035])for(const cat of ['직장','금전','연애','학업','생활']){
+  const r=contextualReading(cold,year,cat);
+  assert.equal(r.months.length,12);
+  assert.ok(r.months.every(m=>Number.isFinite(m.priority)&&m.start<m.end&&!m.role.includes('undefined')));
+}
+const baby=calculate({...input,year:2026,month:1,day:1});
+if(baby.daeun[0].startYear>baby.current.nowYear)assert.equal(baby.current.daeun,undefined);
+const timeline=yearFlow(cold,'직장');
+assert.equal(timeline.length,10);
+assert.equal(timeline[0].year,cold.current.nowYear);
+assert.equal(timeline[9].year,cold.current.nowYear+9);
+for(const point of timeline){
+  const annual=contextualReading(cold,point.year,'직장').annual;
+  assert.equal(point.value,flowValue(annual.priority));
+  assert.equal(point.title,annual.title);
+  assert.ok(point.value>=1&&point.value<=5);
+}
+assert.equal(flowValue(-100),1);
+assert.equal(flowValue(100),5);
+console.log('Context regressions passed: winter + fire + work clash, complete triads, January boundaries, 15 year/category combinations, unknown time, date validation.');

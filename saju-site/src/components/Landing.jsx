@@ -1,129 +1,40 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+﻿import { useState } from 'react';
 import { CITIES } from '../saju/calc.js';
 
-const fade = (delay = 0) => ({
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] },
-});
-
-function Seg({ value, onChange, options }) {
-  return (
-    <div className="seg">
-      {options.map((o) => (
-        <button type="button" key={o.value} className={o.value === value ? 'on' : ''} onClick={() => onChange(o.value)}>{o.label}</button>
-      ))}
-    </div>
-  );
+function Seg({ label, value, onChange, options }) {
+  return <div className="seg" role="group" aria-label={label}>{options.map(([v, text]) => <button type="button" key={v} aria-pressed={value === v} className={value === v ? 'on' : ''} onClick={() => onChange(v)}>{text}</button>)}</div>;
 }
-
-function Num({ value, onChange, min, max, unit, disabled, label }) {
-  return (
-    <label className={`num ${disabled ? 'off' : ''}`}>
-      <input
-        inputMode="numeric" value={value} disabled={disabled} aria-label={label}
-        onChange={(e) => onChange(e.target.value.replace(/[^\d]/g, '').slice(0, 4))}
-        onBlur={() => { if (value === '') return; const n = Math.min(max, Math.max(min, Number(value))); onChange(String(n)); }}
-      />
-      <span>{unit}</span>
-    </label>
-  );
-}
-
-export default function Landing({ onSubmit, error, busy }) {
-  const [f, setF] = useState({
-    name: '', gender: '남', calendar: 'solar',
-    year: '', month: '', day: '', hour: '', minute: '',
-    unknownTime: false, city: '서울', koreaTime: true, yajasi: true, jeolgi: 'ipchun',
-  });
-  const set = (k) => (v) => setF((s) => ({ ...s, [k]: v }));
-  const valid = f.year.length === 4 && f.month && f.day && (f.unknownTime || (f.hour !== '' && f.minute !== ''));
-
-  const submit = (e) => {
+export default function Landing({ onSubmit, error, initialInput }) {
+  const [f, setF] = useState(() => ({ name: '', gender: '남', calendar: 'solar', year: '', month: '', day: '', hour: '', minute: '0', unknownTime: false, city: '서울', koreaTime: true, yajasi: true, jeolgi: 'ipchun', ...initialInput }));
+  const set = (k, v) => setF(s => ({ ...s, [k]: v }));
+  const numeric = (key, label, placeholder, min, max) => <label className="birth-field with-unit"><span>{label}</span><input type="number" inputMode="numeric" aria-label={label} placeholder={placeholder} min={min} max={max} required disabled={['hour','minute'].includes(key) && f.unknownTime} value={f[key]} onChange={e => set(key, e.target.value)} /><i className="birth-unit" aria-hidden="true">{ {year:'년',month:'월',day:'일',hour:'시',minute:'분'}[key]}</i></label>;
+  const submit = e => {
     e.preventDefault();
-    if (!valid || busy) return;
-    const city = CITIES.find((c) => c.name === f.city) || CITIES[0];
-    onSubmit({
-      name: f.name.trim(), gender: f.gender, calendar: f.calendar,
-      year: +f.year, month: +f.month, day: +f.day,
-      hour: f.unknownTime ? 12 : +f.hour, minute: f.unknownTime ? 0 : +f.minute,
-      unknownTime: f.unknownTime, koreaTime: f.koreaTime, lon: city.lon, yajasi: f.yajasi, jeolgi: f.jeolgi,
-    });
+    onSubmit({ ...f, year: +f.year, month: +f.month, day: +f.day, hour: f.unknownTime ? 12 : +f.hour, minute: f.unknownTime ? 0 : +f.minute, lon: (CITIES.find(c => c.name === f.city) || CITIES[0]).lon });
   };
-
-  return (
-    <div className="landing-inner">
-      <motion.header className="hero" {...fade(0.1)}>
-        <p className="eyebrow">天機錄 · 별이 새긴 나의 사주</p>
-        <h1><span className="hanja">命</span>태어난 순간의 하늘을<br />다시 그립니다</h1>
-        <p className="sub">생년월일시를 입력하면 그 시각 하늘의 천간과 지지가 여덟 글자로 내려앉습니다.<br className="pc" />만세력 · 대운 · 세운 · 월운 · 오행 · 신살을 한 장의 성반에 담았습니다.</p>
-      </motion.header>
-
-      <motion.div className="features" {...fade(0.25)}>
-        {[['命', '사주팔자', '천간·지지 여덟 글자'], ['運', '대운·세운·월운', '10년·1년·1달의 흐름'], ['五', '오행도', '다섯 기운의 균형'], ['解', '사주 해석', '강의 1,700편 종합']].map(([h, t, d]) => (
-          <div className="feat" key={t}><span className="hanja">{h}</span><b>{t}</b><small>{d}</small></div>
-        ))}
-      </motion.div>
-
-      <motion.form className="card form" onSubmit={submit} {...fade(0.35)}>
-        <div className="fhead"><h3>생년월일시 입력</h3><p>태어난 날과 시각, 출생지를 넣어 주세요. 시간을 모르면 시주 없이 봅니다.</p></div>
-        <svg className="fdeco" viewBox="0 0 400 400" aria-hidden="true">
-          <circle cx="200" cy="200" r="190" fill="none" stroke="currentColor" strokeWidth="0.8" />
-          <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" strokeWidth="0.6" strokeDasharray="2 6" />
-          {'子丑寅卯辰巳午未申酉戌亥'.split('').map((ch, i) => { const a = (i / 12) * Math.PI * 2 - Math.PI / 2; return <text key={ch} x={200 + Math.cos(a) * 172} y={200 + Math.sin(a) * 172 + 7} textAnchor="middle" fontSize="20" fill="currentColor">{ch}</text>; })}
-        </svg>
-        <div className="frow segs">
-          <Seg value={f.gender} onChange={set('gender')} options={[{ value: '남', label: '♂ 남자' }, { value: '여', label: '♀ 여자' }]} />
-          <Seg value={f.calendar} onChange={set('calendar')} options={[{ value: 'solar', label: '양력' }, { value: 'lunar', label: '음력' }, { value: 'leap', label: '윤달' }]} />
-        </div>
-        <div className="frow">
-          <input className="text" placeholder="이름 (선택)" value={f.name} onChange={(e) => set('name')(e.target.value)} maxLength={12} />
-        </div>
-        <div className="frow date3">
-          <Num value={f.year} onChange={set('year')} min={1900} max={2100} unit="년" label="년" />
-          <Num value={f.month} onChange={set('month')} min={1} max={12} unit="월" label="월" />
-          <Num value={f.day} onChange={set('day')} min={1} max={31} unit="일" label="일" />
-        </div>
-        <div className="frow time">
-          <Num value={f.hour} onChange={set('hour')} min={0} max={23} unit="시" label="시" disabled={f.unknownTime} />
-          <Num value={f.minute} onChange={set('minute')} min={0} max={59} unit="분" label="분" disabled={f.unknownTime} />
-          <label className="check">
-            <input type="checkbox" checked={f.unknownTime} onChange={(e) => set('unknownTime')(e.target.checked)} />
-            <span>시간 모름</span>
-          </label>
-        </div>
-        <div className="frow">
-          <label className="select full">
-            <span>출생지</span>
-            <select value={f.city} onChange={(e) => set('city')(e.target.value)}>
-              {CITIES.map((c) => <option key={c.name} value={c.name}>{c.name} (동경 {c.lon}°)</option>)}
-            </select>
-          </label>
-        </div>
-        <div className="frow opts">
-          <label className="check" title="한국 표준시(동경 135°)와 출생지 경도 차이를 보정해 진태양시로 계산합니다.">
-            <input type="checkbox" checked={f.koreaTime} onChange={(e) => set('koreaTime')(e.target.checked)} /><span>한국시 적용</span>
-          </label>
-          <label className="check" title="밤 11시 이후 출생 시 일주는 당일, 시주는 다음날 子시로 계산합니다.">
-            <input type="checkbox" checked={f.yajasi} onChange={(e) => set('yajasi')(e.target.checked)} /><span>야자시 / 조자시</span>
-          </label>
-          <div className="radio">
-            <span>절기</span>
-            <button type="button" className={f.jeolgi === 'ipchun' ? 'on' : ''} onClick={() => set('jeolgi')('ipchun')}>입춘</button>
-            <button type="button" className={f.jeolgi === 'dongji' ? 'on' : ''} onClick={() => set('jeolgi')('dongji')}>동지</button>
-          </div>
-        </div>
-
-        {error && <p className="error">{error}</p>}
-
-        <div className="frow actions">
-          <button type="submit" className={`primary ${valid && !busy ? '' : 'disabled'}`} disabled={!valid || busy}>
-            {busy ? '하늘을 여는 중…' : '천기 열어보기'}<i />
-          </button>
-        </div>
-      </motion.form>
-
+  return <div className="entry-shell">
+    <header className="entry-brand"><a href="#" aria-label="천기록 홈">天機錄 <span>천기록</span></a><span>나를 이해하는 또 하나의 시선</span></header>
+    <div className="entry-layout">
+      <section className="entry-story"><div className="entry-orbit" aria-hidden="true"><i/><i/><span>命</span><b>나의 결을 읽다</b></div><p className="eyebrow">YOUR OWN SEASON</p><h1>나에게도,<br/>나의 계절이 있다.</h1><p className="entry-copy">타고난 나의 모습부터 앞으로의 흐름까지.<br/>어려운 사주를, 내 일상의 언어로 만나보세요.</p><span className="entry-index">01 — 태어난 순간에서 시작합니다</span></section>
+      <form className="birth-form" onSubmit={submit}>
+        <div className="birth-heading"><span className="eyebrow">나의 사주 시작하기</span><h2>언제 태어나셨나요?</h2><p>태어난 날짜와 시간을 알려주세요.</p></div>
+        <div className="birth-line"><label className="birth-field"><span>이름 <small>선택</small></span><input aria-label="이름" placeholder="어떻게 불러드릴까요?" maxLength={12} value={f.name} onChange={e => set('name',e.target.value)} /></label><div className="birth-field"><span>성별</span><Seg label="성별" value={f.gender} onChange={v=>set('gender',v)} options={ [['남','남성'],['여','여성']] }/></div></div>
+        <div className="birth-label"><span>생년월일</span><Seg label="달력 종류" value={f.calendar} onChange={v=>set('calendar',v)} options={ [['solar','양력'],['lunar','음력'],['leap','음력 윤달']] }/></div>
+        <div className="birth-date">{numeric('year','태어난 연도','1995',1900,new Date().getFullYear())}{numeric('month','월','월',1,12)}{numeric('day','일','일',1,31)}</div>
+        <div className="birth-label"><span>태어난 시간 <small>24시간 기준</small></span><label className="check"><input type="checkbox" checked={f.unknownTime} onChange={e=>set('unknownTime',e.target.checked)}/><span>시간을 몰라요</span></label></div>
+        <div className="birth-time">{numeric('hour','시','14',0,23)}{numeric('minute','분','00',0,59)}</div>
+        {f.unknownTime && <p className="field-help">시간을 제외한 여섯 글자로 풀이해요.</p>}
+        <details className="birth-options"><summary>출생지·계산 설정 <span>{f.city}</span></summary>
+          <label className="birth-field"><span>출생지</span><select aria-label="출생지" value={f.city} onChange={e=>set('city',e.target.value)}>{CITIES.map(c=><option key={c.name}>{c.name}</option>)}</select></label>
+          <label className="check"><input type="checkbox" checked={f.koreaTime} onChange={e=>set('koreaTime',e.target.checked)}/><span>출생지에 맞춰 시간 보정</span></label>
+          <label className="check"><input type="checkbox" checked={f.yajasi} onChange={e=>set('yajasi',e.target.checked)}/><span>밤 11시 이후도 당일로 계산</span></label>
+          <label className="birth-field"><span>해가 바뀌는 기준</span><select value={f.jeolgi} onChange={e=>set('jeolgi',e.target.value)}><option value="ipchun">입춘 (기본)</option><option value="dongji">동지</option></select></label>
+        </details>
+        {error && <p className="error" role="alert">{error}</p>}
+        <button type="submit" className="birth-submit">나의 사주 풀어보기 <span>↗</span></button>
+        <p className="entry-privacy">입력한 정보는 이 브라우저 안에서만 계산해요.</p>
+      </form>
     </div>
-  );
+    <footer className="entry-footer"><span>天機錄 · 나의 계절을 읽는 시간</span><span>정해진 답보다, 나를 이해하는 힌트.</span></footer>
+  </div>;
 }

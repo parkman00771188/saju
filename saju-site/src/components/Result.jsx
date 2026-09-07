@@ -1,86 +1,47 @@
-import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+﻿import { useEffect, useRef, useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import PillarBoard from './PillarBoard.jsx';
 import Ohaeng from './Ohaeng.jsx';
 import Fortune from './Fortune.jsx';
 import Relations from './Relations.jsx';
-import ReadingOverlay from './ReadingOverlay.jsx';
-import { ELEMENT_COLOR, ELEMENT_KO, STEM_KO, ELEMENTS } from '../saju/tables.js';
-
-const TABS = [
-  { id: '운', hanja: '運', label: '대운·세운' },
-  { id: '오행', hanja: '五', label: '오행도' },
-  { id: '신살', hanja: '殺', label: '신살·합충' },
-];
+import Reading from './Reading.jsx';
+import Passage from './Passage.jsx';
+import { ELEMENT_KO } from '../saju/tables.js';
 
 export default function Result({ data, onReset }) {
-  const { meta, pillars, dayStem, relations } = data;
-  const dayEl = pillars.day.stemEl;
-  const c = ELEMENT_COLOR[dayEl];
-  const [tab, setTab] = useState('운');
-  const [reading, setReading] = useState(false);
-  const pick = (id) => setTab(id);
-
-  const LAB = { 천간충: '충', 천간합: '합', 육합: '합', 삼합: '삼합', 방합: '방합', 충: '충', 삼형: '삼형', 형: '형', 상형: '형', 자형: '자형', 파: '파', 해: '해' };
-  const pairText = (list) => list.map((r) => r.chars.map((x) => x.ch).join('') + (LAB[r.label] || r.label)).join(' · ');
-  const stemChange = pairText([...relations.stemHap, ...relations.stemChung]) || '없음';
-  const branchChange = pairText([...relations.chung, ...relations.yukhap, ...relations.samhap.filter((r) => r.full), ...relations.banghap.filter((r) => r.full), ...relations.hyeong, ...relations.pa, ...relations.hae]) || '없음';
-
-  return (
-    <div className="result-inner">
-      <motion.header className="rhead" initial={{ opacity: 0, y: -14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-        <button type="button" className="back" onClick={onReset}>‹ 다시 입력</button>
-        <div className="who">
-          <div className="me-tile" style={{ background: c.bg, color: c.fg }}>
-            <span className="hanja">{dayStem}</span>
-            <span className="ko">{STEM_KO[dayStem]}·{ELEMENT_KO[dayEl]}</span>
-          </div>
-          <div className="who-text">
-            <h2>{meta.name || '이름 없음'} <small>({meta.gender}) {meta.koreanAge}세 (만 {meta.manAge}세) · {meta.zodiac}띠</small></h2>
-            <p className="dates"><b className="or">양력</b> {meta.solar} {meta.time} <span className="sep">/</span> <b className="bl">음력</b> {meta.lunarText}</p>
-            <p className="opts">{meta.options.join(', ')}{meta.correctedTime ? `, 보정시 ${meta.correctedTime} (${meta.correctionMin > 0 ? '+' : ''}${meta.correctionMin}분)` : ''}</p>
-          </div>
-        </div>
-      </motion.header>
-
-      <motion.section className="card board-card" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
-        <PillarBoard data={data} />
-      </motion.section>
-
-      <motion.section className="card summary" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
-        <div className="srow"><span className="sl">사주 오행</span><span className="sv els">{ELEMENTS.map((e) => <b key={e} style={{ color: ELEMENT_COLOR[e].bg }}>{e} <i>{data.elements[e]}</i></b>)}</span></div>
-        <div className="srow"><span className="sl">천간 변화</span><span className="sv">{stemChange}</span></div>
-        <div className="srow"><span className="sl">지지 변화</span><span className="sv">{branchChange}</span></div>
-        <div className="srow"><span className="sl">공망/태월</span><span className="sv">{meta.gongmang.join('')} / {meta.taewon.text}</span></div>
-      </motion.section>
-
-      <motion.nav className="itabs" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
-        {TABS.map((t) => (
-          <button type="button" key={t.id} className={`itab ${tab === t.id ? 'on' : ''}`} onClick={() => pick(t.id)}>
-            <span className="icirc"><span className="hanja">{t.hanja}</span></span>
-            <span className="ilab">{t.label}</span>
-          </button>
-        ))}
-      </motion.nav>
-
-      <AnimatePresence mode="wait">
-        <motion.section key={tab} className="card panelcard" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.4 }}>
-          {tab === '운' && <Fortune data={data} />}
-          {tab === '오행' && <Ohaeng data={data} />}
-          {tab === '신살' && <Relations data={data} />}
-        </motion.section>
-      </AnimatePresence>
-
-      <footer className="rfoot">
-        <motion.button type="button" className="primary big" onClick={() => setReading(true)} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-          <span className="hanja">解</span> 사주 해석 보기 <i />
-        </motion.button>
-        <p>천기록 天機錄 · 만세력 엔진 lunar-javascript · 본 결과는 명리 이론에 따른 참고 자료입니다.</p>
-      </footer>
-
-      <AnimatePresence>
-        {reading && <ReadingOverlay key="reading" data={data} onClose={() => setReading(false)} />}
-      </AnimatePresence>
+  const [view, setView] = useState('chart');
+  const [opening, setOpening] = useState(false);
+  const lastScroll = useRef(0);
+  const chartTitle = useRef(null);
+  useEffect(() => { chartTitle.current?.focus({preventScroll:true}); }, []);
+  useEffect(() => {
+    if (!opening) return;
+    const prior = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prior; };
+  }, [opening]);
+  const openReading = () => { lastScroll.current = window.scrollY; setOpening(true); };
+  const backToChart = () => { setView('chart'); requestAnimationFrame(() => { window.scrollTo({top:lastScroll.current}); chartTitle.current?.focus({preventScroll:true}); }); };
+  const rel = data.relations;
+  const connections = [...rel.stemHap,...rel.yukhap,...rel.samhap.filter(r=>r.full),...rel.banghap.filter(r=>r.full)];
+  const changes = [...rel.stemChung,...rel.chung];
+  const relLabel = rows => rows.length ? rows.map(r => r.chars.map(c=>c.ch).join('')+ ' ' + r.label).join(' · ') : '해당 없음';
+  return <>
+    <div className="manse-page" hidden={view !== 'chart'}>
+      <header className="report-top"><span className="report-brand">天機錄 <small>천기록</small></span><button className="text-button" onClick={onReset}>← 생년월일 수정</button></header>
+      <div className="manse-heading"><div><p className="kicker">나의 사주 기록</p><h1 ref={chartTitle} tabIndex={-1}>{data.meta.name ? `${data.meta.name} 님의` : '나의'} 만세력</h1><p>양력 {data.meta.solar} · {data.meta.time} · {data.meta.gender === '남' ? '남성' : '여성'}<br/><span>음력 {data.meta.lunarText} · {data.meta.zodiac}띠</span></p></div><div className="personal-seal"><span>{data.dayStem}</span><small>{ELEMENT_KO[data.pillars.day.stemEl]}의 기운</small></div></div>
+      <nav className="section-links" aria-label="만세력 빠른 이동"><a href="#natal">사주팔자</a><a href="#fortune">대운·세운·월운</a><a href="#elements">오행</a><a href="#relations">합충·신살</a><button onClick={openReading}>사주 해석 보기 ↗</button></nav>
+      <section id="natal" className="manse-section"><div className="section-heading"><div><span>01</span><h2>사주팔자</h2></div><p>태어난 순간을 담은 {data.pillars.time?'여덟':'여섯'} 글자</p></div>
+        <div className="paper natal-paper"><PillarBoard data={data}/><div className="current-pillars"><div><span>현재 대운</span><b>{data.current.daeun?.text || '시작 전 / 범위 밖'}</b><small>{data.current.daeun ? `${data.current.daeun.startYear}~${data.current.daeun.endYear}` : '아래 대운표에서 확인'}</small></div><div><span>올해 세운</span><b>{data.current.year.text}</b><small>{data.current.nowYear}년</small></div><div><span>이번 달</span><b>{data.current.month.text}</b><small>{data.current.nowMonth}월</small></div></div><p className="calculation-note">{data.meta.options.join(' · ')}{data.meta.correctedTime ? ` · 보정 시각 ${data.meta.correctedTime}` : ''}{!data.pillars.time?' · 시간 미입력: 시주를 제외했어요.':''}</p></div>
+        <div className="reading-invitation"><div><span className="invitation-mark" aria-hidden="true">解</span><div><h3>이 글자들이 나에게 어떤 뜻일까요?</h3><p>타고난 성향부터 올해와 월별 흐름까지, 쉽게 풀어드려요.</p></div></div><button className="gold-button" onClick={openReading}>사주 해석 보기 <span>↗</span></button></div>
+      </section>
+      <section id="fortune" className="manse-section"><div className="section-heading"><div><span>02</span><h2>시간에 따라 바뀌는 운</h2></div><p>대운·연도를 누르면 아래 표가 함께 바뀌어요</p></div><div className="paper fortune-paper"><Fortune data={data}/></div></section>
+      <section id="elements" className="manse-section"><div className="section-heading"><div><span>03</span><h2>다섯 기운의 균형</h2></div><p>목 · 화 · 토 · 금 · 수</p></div><div className="paper"><Ohaeng data={data}/></div></section>
+      <section id="relations" className="manse-section"><div className="section-heading"><div><span>04</span><h2>글자의 관계와 신살</h2></div><p>이어지는 기운과 부딪히는 기운</p></div><div className="relation-summary"><p><b>합 · 연결</b>{relLabel(connections)}</p><p><b>충 · 변화</b>{relLabel(changes)}</p></div><div className="paper"><Relations data={data}/></div></section>
+      <div className="closing-invitation"><p>만세력의 글자들을 일상의 언어로.</p><button className="gold-button" onClick={openReading}>나의 사주 해석 보기 ↗</button></div>
+      <footer className="report-footer"><span>天機錄</span><p>나를 이해하는 힌트, 천기록</p></footer>
     </div>
-  );
+    {view === 'reading' && <Reading data={data} onBack={backToChart}/>}
+    <AnimatePresence>{opening && <Passage key="reading-passage" kind="reading" data={data} onDone={() => { setOpening(false); setView('reading'); window.scrollTo({top:0}); }}/>}</AnimatePresence>
+  </>;
 }
