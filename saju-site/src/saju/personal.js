@@ -65,6 +65,7 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
 
   /** 자리의 합·충·형·파·해를 쉬운 말로 */
   const meetings = (pos, area, none) => {
+    if (!pillars[pos]) return [];
     const br = pillars[pos].branch;
     const bad = relsAt(pos, BAD), good = relsAt(pos, GOOD);
     const s = [];
@@ -82,9 +83,9 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     if (!where.length) return null;
     return `${where.map((k) => `${POS_KO[k]}주 ${gz(k)}`).join('·')}는 위아래 글자가 같은 기운인 간여지동이에요. 쉽게 말해 "내 뜻이 분명하고 잘 꺾이지 않는 기둥"이라, ${area}에서는 주도권을 쥐려는 힘이 세요. 역할과 권한이 분명한 자리에서는 강점이지만, 맞춰 주기만 해야 하는 자리에서는 답답함이 커요.`;
   };
-  const stageEasy = (pos, label) => `${label} 자리인 ${POS_KO[pos]}지 ${pillars[pos].branch}의 기운 단계(12운성)는 '${detail[pos].stage}'예요. ${STAGE_EASY[detail[pos].stage] || ''}.`;
-  const salEasy = (pos, area) => { const names = salAt(pos).filter((n) => K.SINSAL[n] && n !== '간여지동'); return names.length ? `${POS_KO[pos]}주에는 ${names.slice(0, 3).map((n) => K.SINSAL[n].title).join('·')}이라는 별이 붙어 있어요. ${area}에서는 ${names.slice(0, 2).map((n) => first(K.SINSAL[n].text)).join(' ')}` : null; };
-  const gongEasy = (pos, area) => (gongmangSet?.has(pillars[pos].branch) ? `${POS_KO[pos]}주 ${gz(pos)}는 공망, 곧 '비어 있는 자리'예요. ${area}에서 기대만큼 손에 잡히지 않는 허전함이 있을 수 있는데, 그 빈자리는 물질보다 배움·의미 같은 정신적인 가치로 채워질 때 편해져요.` : null);
+  const stageEasy = (pos, label) => !pillars[pos] ? null : `${label} 자리인 ${POS_KO[pos]}지 ${pillars[pos].branch}의 기운 단계(12운성)는 '${detail[pos].stage}'예요. ${STAGE_EASY[detail[pos].stage] || ''}.`;
+  const salEasy = (pos, area) => { if (!pillars[pos]) return null; const names = salAt(pos).filter((n) => K.SINSAL[n] && n !== '간여지동'); return names.length ? `${POS_KO[pos]}주에는 ${names.slice(0, 3).map((n) => K.SINSAL[n].title).join('·')}이라는 별이 붙어 있어요. ${area}에서는 ${names.slice(0, 2).map((n) => first(K.SINSAL[n].text)).join(' ')}` : null; };
+  const gongEasy = (pos, area) => (pillars[pos] && gongmangSet?.has(pillars[pos].branch) ? `${POS_KO[pos]}주 ${gz(pos)}는 공망, 곧 '비어 있는 자리'예요. ${area}에서 기대만큼 손에 잡히지 않는 허전함이 있을 수 있는데, 그 빈자리는 물질보다 배움·의미 같은 정신적인 가치로 채워질 때 편해져요.` : null);
   const yongEasy = (group, area) => yong.group === group ? `${group}(${GOD_EASY[group]})은 이 사주에 가장 필요한 기운(용신)이에요. 그래서 ${area}에 힘을 쓰는 것이 곧 나를 살리는 방향이에요.` : yong.groups?.gi === group ? `${group}(${GOD_EASY[group]})은 이 사주의 균형을 깨는 기운(기신)이에요. ${area}에 너무 매달리면 소모가 커지니 결과가 따라오게 가볍게 두세요.` : yong.groups?.hee === group ? `${group}(${GOD_EASY[group]})은 용신을 돕는 기운(희신)이라 ${area}에서 힘을 받을 수 있어요.` : null;
   const kbEasy = (cat) => {
     const rows = (evidenceByCat?.[cat] || []).slice(0, 4);
@@ -153,8 +154,8 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     out.직장 = {
       headline: !gw.length ? `회사 글자(관성)가 없어 직함보다 실력으로 평가받는 길이 맞아요.` : `회사·직함 글자(관성)가 ${gw.length}자리${gw.some((x) => x.pos === 'month') ? ', 그중 사회 무대인 월주에도' : ''} 있어 ${jeong && pyeon ? '두 갈래 길이 함께 열리는' : pyeon ? '압박 속에서 빨리 크는' : '차근차근 올라가는'} 직장운이에요.`,
       sections: [
-        { title: '내 사주에서 회사·직함을 뜻하는 글자', paras: [...s1, ...helpers] },
         { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('직장') },
+        { title: '내 사주에서 회사·직함을 뜻하는 글자', paras: [...s1, ...helpers] },
         { title: '글자들이 만나는 모습 — 직장 자리의 합·충·형·파·해', paras: s2 },
               ],
     };
@@ -188,8 +189,8 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     out.금전 = {
       headline: !jae.length ? '돈 글자(재성)가 드러나 있지 않아 운에서 들어올 때 크게 움직이는 재물운이에요.' : `돈 글자(재성)가 ${jae.length}자리 있고 ${pyeon && !jeong ? '큰 단위로 움직이는' : jeong && pyeon ? '고정·유동 수입이 함께 열린' : '꾸준히 쌓는'} 재물운이에요.`,
       sections: [
-        { title: '내 사주에서 돈을 뜻하는 글자', paras: [...s1, ...flags] },
         { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('금전') },
+        { title: '내 사주에서 돈을 뜻하는 글자', paras: [...s1, ...flags] },
         { title: '글자들이 만나는 모습 — 돈이 드나드는 자리', paras: s2 },
               ],
     };
@@ -217,8 +218,8 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     out.연애 = {
       headline: !sp.length ? '연인 글자가 드러나 있지 않아 시기를 잘 타는 것이 곧 연애운이에요.' : `연인 글자가 ${sp.length}자리 있고 ${kinds.length > 1 ? '인연이 겹치기 쉬운' : sp.some((x) => x.pos === 'day') ? '결혼 인연이 뚜렷한' : '깊고 오래 가는'} 연애운이에요.`,
       sections: [
-        { title: '내 사주에서 연인·배우자를 뜻하는 글자', paras: s1 },
         { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('연애') },
+        { title: '내 사주에서 연인·배우자를 뜻하는 글자', paras: s1 },
         { title: '배우자 자리에서 만나는 글자들 — 합·충·형·원진', paras: s2 },
               ],
     };
@@ -267,8 +268,8 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     out.학업 = {
       headline: !ins.length ? '배움 글자(인성)가 드러나 있지 않아 실전에서 익히는 공부가 맞아요.' : `배움 글자(인성)가 ${ins.length}자리 있는 ${ins.some((x) => x.god === '편인') ? '직관·몰입형' : '체계·정통형'} 학업운이에요.`,
       sections: [
-        { title: '내 사주에서 배움·자격을 뜻하는 글자', paras: [...s1, ...helpers] },
         { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('학업') },
+        { title: '내 사주에서 배움·자격을 뜻하는 글자', paras: [...s1, ...helpers] },
         { title: '글자들이 만나는 모습 — 공부 자리', paras: s2 },
               ],
     };
