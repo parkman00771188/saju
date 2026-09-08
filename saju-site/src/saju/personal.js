@@ -88,7 +88,7 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     if (!rows.length) return null;
     const from = uniq(rows.flatMap((r) => r.from)).slice(0, 3).join(', ');
     const pos = rows.filter((r) => r.pol > 0), neg = rows.filter((r) => r.pol < 0), neu = rows.filter((r) => r.pol === 0);
-    const tell = (r) => `'${r.label}'(${r.docs}편)`;
+    const tell = (r) => `'${r.label}'(${r.n || r.docs}회)`;
     return [
       `이 사주에 들어 있는 ${from} 같은 조합을 사주 전문가들이 다룰 때, ${cat}과 관련해 가장 자주 나오는 이야기는 ${rows.slice(0, 3).map(tell).join(', ')}이에요.`,
       pos.length ? `좋게 보는 쪽은 ${pos.map((r) => r.label).join('·')}예요. ${first(P.CLAIM_TEXT[pos[0].label] || '')}` : null,

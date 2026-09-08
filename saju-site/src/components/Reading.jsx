@@ -321,7 +321,7 @@ function buildPages(R, data) {
   pages.push({ id: 'evidence', title: '사주 전문가들이 말하는 나', terms: ['십성(십신)', '격국', '십이신살'], body: (
     <>
       <Callout>{name}의 글자와 조합에 대해 사주 전문가들이 <b>실제로 반복해서 말하는 이야기</b>를 좋은 것·조심할 것 가리지 않고 모았어요.</Callout>
-      <div className="evsum"><div className="col p"><h5>吉 · 좋게 보는 점</h5>{R.evidenceSummary.pos.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div><div className="col n"><h5>凶 · 조심하라는 점</h5>{R.evidenceSummary.neg.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div></div>
+      <div className="evsum"><div className="col p"><h5>吉 · 좋게 보는 점</h5>{R.evidenceSummary.pos.map((r) => <span key={r.label}>{r.label} <small>{r.n || r.docs}회</small></span>)}</div><div className="col n"><h5>凶 · 조심하라는 점</h5>{R.evidenceSummary.neg.map((r) => <span key={r.label}>{r.label} <small>{r.n || r.docs}회</small></span>)}</div></div>
       <Evidence rows={evAll} />
       {R.keywords.length > 0 && <><Sub>함께 자주 나오는 말</Sub><div className="kws">{R.keywords.map((k) => <i key={k}>#{k}</i>)}</div></>}
       <More title={`이 사주의 조합 ${R.patterns.length}개 (吉/凶·전문가들의 어조)`}><div className="plist">{R.patterns.map((p, i) => <PatternCard key={p.key} p={p} i={i} claimMeta={R.meta.claims || {}} />)}</div></More>

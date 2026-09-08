@@ -218,8 +218,8 @@ export function interpret(data) {
   const evidenceByCat = {};
   for (const e of evidence) for (const c of e.claims) {
     const bucket = (evidenceByCat[c.cat] ||= {});
-    const row = (bucket[c.label] ||= { label: c.label, pol: c.pol, weight: 0, docs: 0, from: [] });
-    row.weight += c.docs * (e.key === pillars.day.text || e.key === dayStem ? 1.5 : 1); row.docs += c.docs;
+    const row = (bucket[c.label] ||= { label: c.label, pol: c.pol, weight: 0, docs: 0, n: 0, from: [] });
+    row.weight += c.docs * (e.key === pillars.day.text || e.key === dayStem ? 1.5 : 1); row.docs += c.docs; row.n += c.n || 0;
     if (!row.from.includes(e.title)) row.from.push(e.title);
   }
   for (const cat of Object.keys(evidenceByCat)) evidenceByCat[cat] = Object.values(evidenceByCat[cat]).sort((a, b) => b.weight - a.weight).slice(0, 8).map((r) => ({ ...r, text: P.CLAIM_TEXT[r.label] || '' }));

@@ -46,7 +46,7 @@ export function Meter({ stats }) {
   const top = Object.entries(stats.categories || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v > 0).slice(0, 2);
   return (
     <span className="meter" title={`긍정어 ${stats.pos} · 부정어 ${stats.neg}`}>
-      <span>전문가 {stats.docs}편 · {stats.mentions}회 언급</span>
+      <span>전문가 언급 {stats.mentions}회</span>
       <span className="bar2"><i style={{ left: `${pct}%` }} /></span>
       <span>{stats.polarity > 0.15 ? '긍정 우세' : stats.polarity < -0.15 ? '부정 우세' : '중립'}</span>
       {top.length > 0 && <span className="ctx">{top.map(([c]) => <b key={c}>{c}</b>)}</span>}
@@ -82,7 +82,7 @@ export function Evidence({ rows, title, note }) {
         <motion.div className="evrow" key={r.label} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
           <i className={polClass(r.pol)}>{polMark(r.pol)}</i>
           <div><b>{r.label}</b><p>{r.text}</p><small>전문가들이 짚은 글자: {r.from.slice(0, 4).join(' · ')}</small></div>
-          <span className="evn">{r.docs}편</span>
+          <span className="evn">{r.n || r.docs}회</span>
         </motion.div>
       ))}
     </div>
@@ -99,7 +99,7 @@ export function PatternCard({ p, i, claimMeta }) {
       {claims.length > 0 && (
         <div className="pclaims">
           <span style={{ background: 'transparent', color: 'var(--ink-faint)', padding: '2px 0' }}>전문가들이 함께 말하는 것:</span>
-          {claims.map(([label, , docs]) => <span key={label} className={polClass(claimMeta[label]?.[1] ?? 0)}>{label} {docs}편</span>)}
+          {claims.map(([label, n]) => <span key={label} className={polClass(claimMeta[label]?.[1] ?? 0)}>{label} {n}회</span>)}
         </div>
       )}
       {p.stats?.keywords?.length > 0 && <div className="kws">{cleanKw(p.stats.keywords).slice(0, 6).map((k) => <i key={k}>#{k}</i>)}</div>}
