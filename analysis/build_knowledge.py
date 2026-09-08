@@ -18,6 +18,7 @@ ROOT = os.path.dirname(HERE)
 KDIR = os.path.join(HERE, "knowledge")
 OUT_APP = os.path.join(ROOT, "saju-site", "public", "kb_claims.json")
 OUT_MD = os.path.join(HERE, "knowledge_digest.md")
+EASY = os.path.join(HERE, "easy_outs.json")   # easy_outs.py 가 만든 {전문 문장: 쉬운 문장}
 MAX_ITEMS = int(os.environ.get("KB_MAX_ITEMS", "10"))       # 키당 앱에 싣는 결과 라벨 수(단일 키)
 PAIR_ITEMS = int(os.environ.get("KB_PAIR_ITEMS", "6"))       # 짝 키 항목 수
 PAIR_MIN_DOCS = int(os.environ.get("KB_PAIR_MIN_DOCS", "4"))  # 짝 키 최소 영상 수(연도 짝 키는 3)
@@ -353,8 +354,16 @@ def main():
         if p["items"]:
             app["by_key"][k] = p
     os.makedirs(os.path.dirname(OUT_APP), exist_ok=True)
-    # 앱 JSON: 출처(제목·채널)는 화면에 쓰지 않으므로 비워 용량을 줄인다
-    app_out = {"meta": app["meta"], "by_key": {k: {"docs": p["docs"], "items": [dict(it, quote=[it["quote"][0], "", ""]) if it.get("quote") else it for it in p["items"]]} for k, p in app["by_key"].items()}}
+    # 앱 JSON: 출처(제목·채널)는 비우고, 결과 문장·조언은 쉬운 문장 매핑(easy_outs.json)이 있으면 그것으로 바꾼다
+    easy = json.load(io.open(EASY, encoding="utf-8")) if os.path.exists(EASY) else {}
+    ez = lambda s: easy.get(s, s)
+    def app_item(it):
+        o = dict(it, outs=[ez(x) for x in it["outs"]])
+        if it.get("advice"): o["advice"] = ez(it["advice"])
+        if it.get("quote"): o["quote"] = [it["quote"][0], "", ""]
+        return o
+    app_out = {"meta": dict(app["meta"], easy=len(easy)), "by_key": {k: {"docs": p["docs"], "items": [app_item(it) for it in p["items"]]} for k, p in app["by_key"].items()}}
+    print("쉬운 문장 매핑 %d개 적용" % len(easy))
     io.open(OUT_APP, "w", encoding="utf-8").write(json.dumps(app_out, ensure_ascii=False, separators=(",", ":")))
     print("앱 색인: 키 %d개(짝 키 %d) → %s (%.0f KB)" % (len(app["by_key"]), sum(1 for k in app["by_key"] if "&" in k), OUT_APP, os.path.getsize(OUT_APP) / 1024))
 
