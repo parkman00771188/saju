@@ -36,6 +36,7 @@ SINSAL = [  # (정규식, 앱 키)
     (r"원진", "원진살"), (r"공망", "공망"), (r"고란", "고란살"), (r"현침", "현침살"), (r"간여지동", "간여지동"), (r"삼재", "삼재"), (r"금여", "금여록"), (r"평두", "평두살"),
     (r"겁살", "겁살"), (r"재살", "재살"), (r"천살", "천살"), (r"지살", "지살"), (r"월살", "월살"), (r"망신", "망신"), (r"장성", "장성"), (r"반안", "반안"), (r"육해", "육해"),
     (r"년살|연살", "도화"), (r"격각", "격각살"), (r"과숙", "과숙살"), (r"천라지망", "천라지망"), (r"음양차착|음착|양착", "음양차착살"), (r"암록", "암록"), (r"천문", "천문성"), (r"천의", "천의성"), (r"홍란", "홍란살"), (r"천희", "천희"),
+    (r"천주", "천주귀인"), (r"황은", "황은대사"), (r"정록", "정록"), (r"고신", "고신살"), (r"문곡", "문곡귀인"), (r"천관", "천관귀인"), (r"천복", "천복귀인"), (r"국인", "국인귀인"), (r"관귀학관|학관", "관귀학관"), (r"천록", "천록"),
 ]
 STAGE = {"장생": "장생", "목욕": "목욕", "관대": "관대", "건록": "건록", "제왕": "제왕", "쇠": "쇠지", "병": "병지", "사": "사지", "묘": "묘지", "절": "절지", "태": "태지", "양": "양지"}
 STRUCT = ["식신제살", "상관견관", "관살혼잡", "재다신약", "인다신약", "군겁쟁재", "재생관", "관인상생", "살인상생", "상관패인", "식신생재", "상관생재", "식상생재", "간여지동", "재관쌍미", "신왕재왕", "종격", "종재", "종살", "종강"]
@@ -104,9 +105,14 @@ def normalize(ctype, value):
     """(조건 type, value) → 앱 키 목록. 정규화 못 하면 [] (원문 값은 다이제스트에만 쓴다)"""
     v = value.strip()
     keys = []
+    ge = re.search(r"(비겁|식상|재성|관성|인성|비견|겁재|식신|상관|편재|정재|편관|정관|편인|정인)\s*(?:이|가|은|는|의)?\s*(목|화|토|금|수)(?!\S*(일간|년|월))|(목|화|토|금|수)\s*(비겁|식상|재성|관성|인성|비견|겁재|식신|상관|편재|정재|편관|정관|편인|정인)", v)
+    if ge and ctype in ("구조·조합", "십성", "오행 구성", "기타", "십성 과다"):
+        g = ge.group(1) or ge.group(5); e = ge.group(2) or ge.group(4)
+        keys.append(f"{GROUP[g]}={EL[e]}")   # 예: '화 재성' → 재성=火 (일간이 임·계인 사람)
     if ctype in ("일간", "천간"):
         s = stem_of(v)
         if s: keys.append(s)
+        elif re.fullmatch(r"(목|화|토|금|수)(\s?일간)?", v): keys.append(f"일간오행={EL[v[:1]]}")
     elif ctype == "일주" or ctype in ("년주", "월주", "시주"):
         gz = ko_gz(v)
         if gz: keys.append(gz if ctype == "일주" else f"{ctype}={gz}")
@@ -126,7 +132,9 @@ def normalize(ctype, value):
         elif v in GROUP: keys.append(GROUP[v])
     elif ctype == "십성 위치":
         m = re.search(r"([년월일시])(?:지|주|간)?\s*(비견|겁재|식신|상관|편재|정재|편관|정관|편인|정인)", v)
+        mg = re.search(r"([년월일시])(?:지|주|간)?\s*(비겁|식상|재성|관성|인성|관살)", v)
         if m: keys.append(f"{m.group(1)}지+{m.group(2)}")
+        elif mg: keys.append(f"{mg.group(1)}지+{GROUP[mg.group(2)]}")
         else:
             g = god_of(v)
             if g: keys.append(g)
@@ -146,6 +154,10 @@ def normalize(ctype, value):
     elif ctype == "오행 부족":
         e = next((EL[k] for k in EL if k in v), None)
         if e: keys.append(f"{e}결핍")
+    elif ctype == "오행 구성" and not keys:
+        v0 = re.sub(r"\s|\(.*?\)", "", v)
+        if re.fullmatch(r"(목|화|토|금|수|나무|불|흙|쇠|물)(과다|많음|강함)?", v0):   # '화' 하나만 적힌 구성 = 그 오행이 많은 사주
+            keys.append(f"{EL[next(k for k in EL if v0.startswith(k))]}과다")
     elif ctype == "격국":
         m = re.search(r"(정관|편관|정재|편재|식신|상관|정인|편인|건록|양인|월겁)격", v)
         if m: keys.append(m.group(0))
@@ -159,8 +171,11 @@ def normalize(ctype, value):
             if s in v0:
                 keys.append(s); break
         if not keys and re.search(r"재다", v0): keys.append("재다신약")
-    elif ctype == "합충형파해":
+    elif ctype in ("합충형파해", "구조·조합") and not keys:
         k = rel_key(v)
+        if not k and ctype == "구조·조합":
+            han = "".join(BRANCH.get(c, "") for c in re.sub(r"\s", "", v))
+            if len(han) == 3 and len(re.sub(r"\s", "", v)) <= 5: k = han   # '사유축' 같은 삼합 세 글자
         if k: keys.append(k)
     elif ctype == "12운성":
         for k, kk in STAGE.items():
@@ -311,6 +326,8 @@ def main():
             continue
         ym = re.search(r"Y(20\d\d)", k)
         if ym and int(ym.group(1)) < APP_MIN_YEAR:
+            continue
+        if re.search(r"(^|&)M\d+(&|$)", k):   # 월만 있는 키(M8)는 앱에서 쓰지 않음
             continue
         p = pack(k, 1 if pair else 2)
         if p["items"]:

@@ -129,10 +129,10 @@ export function expertStory(cat, rows, facts, evidence) {
   const clip = (s, n) => (s.length > n ? s.slice(0, n).replace(/[,.\s]+$/, '') + '…' : s);
   // 실제로 뽑아 둔 결과 문장·원문 인용 → "전문가들은 이렇게 말해요"
   const said = (r) => {
-    const base = first(P.CLAIM_TEXT[r.label] || '');
-    const o = (r.outs || []).filter((x) => x && !base.includes(x.slice(0, 6))).slice(0, 2);
-    const q = r.quotes?.[0];
-    return `${o.length ? ` 전문가들은 이 조합을 두고 ${o.map((x) => `「${x}」`).join(', ')} 같은 이야기를 해요.` : ''}${q ? ` 한 강의(${q[2]} · ${clip(q[1], 22)})에서는 「${clip(q[0], 90)}」라고 했어요.` : ''}${r.advice ? ` 그 강의의 조언은 "${clip(r.advice, 60)}"예요.` : ''}`;
+    const base = first(P.CLAIM_TEXT[r.label] || r.text || '');
+    const o = (r.outs || []).filter((x) => x && !base.includes(x.slice(0, 8))).slice(0, 2);
+    // 출처(채널·영상 제목)나 '누가 말했다'는 언급은 하지 않는다 — 결과 문장과 조언만
+    return `${o.length ? ` 전문가들은 이 조합을 두고 ${o.map((x) => `「${x}」`).join(', ')} 같은 이야기를 해요.` : ''}${r.advice ? ` 함께 나오는 조언은 "${clip(r.advice, 60)}"예요.` : ''}`;
   };
   const paras = [];
   // 1) 전체 그림

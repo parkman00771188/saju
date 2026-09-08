@@ -65,6 +65,9 @@ const CAT_GOD_BOOST = {
   학업: { 인성: 1, 식상: 0.3, 관성: 0.3, 재성: -0.5 },
 };
 
+const GEN_NEXT = { 木: '火', 火: '土', 土: '金', 金: '水', 水: '木' };
+const GROUP_EL_OF = (dayEl, g) => (g === '비겁' ? dayEl : g === '식상' ? GEN_NEXT[dayEl] : g === '재성' ? GEN_NEXT[GEN_NEXT[dayEl]] : g === '관성' ? GEN_NEXT[GEN_NEXT[GEN_NEXT[dayEl]]] : GEN_NEXT[GEN_NEXT[GEN_NEXT[GEN_NEXT[dayEl]]]]);
+
 export function interpret(data) {
   const { pillars, detail, order, dayStem, elements, missing, strongest, relations, sinsal, current, meta, daeun } = data;
   const st = strength(data);
@@ -231,6 +234,9 @@ export function interpret(data) {
     ...['비겁', '식상', '재성', '관성', '인성'].flatMap((g) => (lv(g) === '강' ? [[`${g}과다`, `${g} 과다`]] : lv(g) === '무' ? [[{ 비겁: '무비겁', 식상: '무식상', 재성: '무재', 관성: '무관', 인성: '무인성' }[g], `${g} 없음`]] : [])),
     current.daeun ? [`대운=${current.daeun.text}`, `${current.daeun.text} 대운`] : null,
     [`나이=${decade}`, decade], gender ? [`성별=${gender}`, gender === '남' ? '남성' : '여성'] : null, [`계절=${season}`, `${season} 태생`],
+    [`일간오행=${dayEl}`, `${ELEMENT_KO[dayEl]} 일간`],
+    ...['비겁', '식상', '재성', '관성', '인성'].map((g) => { const el = GROUP_EL_OF(dayEl, g); return [`${g}=${el}`, `${g}이 ${ELEMENT_KO[el]}인 사주`]; }),
+    ...['year', 'month', 'day', 'time'].filter((k) => detail[k]).map((k) => [`${{ year: '년', month: '월', day: '일', time: '시' }[k]}지+${K.TEN_GOD_GROUP[detail[k].branchGod]}`, `${{ year: '년', month: '월', day: '일', time: '시' }[k]}지 ${K.TEN_GOD_GROUP[detail[k].branchGod]}`]),
   ].filter(Boolean);
   // 키 특이도: 일주(60분의 1) 2.0 · 일간 1.5 · 격국/월지·일지 십성 1.2 · 오행 과다·결핍/구조 1.0 · 신살·신강신약·자리 십성·대운 0.7
   const keySpec = (key) => key === pillars.day.text ? 2.0 : key === dayStem ? 1.5 : (key === gyeok.key || key === monthGod || key === detail.day.branchGod || key.includes('+')) ? 1.2 : (/(과다|결핍)$/.test(key) || (P.STRUCT && P.STRUCT[key]) || /^(월지|일지)=/.test(key) || /^무(재|관|인성|식상|비겁)$/.test(key)) ? 1.0 : /^띠=/.test(key) ? 0.9 : /^시지=/.test(key) ? 0.8 : /^(나이|계절)=/.test(key) ? 0.6 : /^성별=/.test(key) ? 0.5 : 0.7;
