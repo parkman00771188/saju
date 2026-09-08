@@ -1,0 +1,108 @@
+{
+ "source": "data/FORCETELLERKR/shorts/089_워너원 분쏘단 지지고 볶는 노부부 궁합.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "2NuIXHIIcYA",
+ "title": "워너원 분쏘단 지지고 볶는 노부부 궁합",
+ "url": "https://www.youtube.com/watch?v=2NuIXHIIcYA",
+ "upload": "20260529",
+ "duration_sec": "41",
+ "views": "9371",
+ "chars": 434,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:30",
+ "summary": "무토 일간과 신금 일간의 만남은 무토의 포용력 덕분에 신금이 편안함을 느끼는 조합입니다. 궁합에서 합(合)만 있으면 서로를 너무 쉽게 알아 오히려 관계가 오래가지 못하지만, 원진살(怨嗔煞)이 있으면 다투고 부딪히면서도 끝까지 끈끈하게 붙어 있게 됩니다. 월주에서 갑기합과 사술원진이 함께 얽히면 서로 시비를 걸고 지지고 볶으면서도 계속 인연을 이어가는 노부부 같은 궁합이 됩니다.",
+ "topics": [
+  "궁합·인간관계",
+  "명리 이론"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    },
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "신금이 무토의 포용력으로 편안함을 느낌",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "무토가 신금의 예리함을 포용력 있게 좀 잘 받아 줘서 신금들이 좀 편안해하는 거 같아요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "합충형파해",
+     "value": "합"
+    }
+   ],
+   "outcome": "관계가 끈끈하지 못해 오래가지 못함",
+   "tag": "궁합 나쁨",
+   "category": "궁합·인간관계",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "제가 누누이 말했지만 합만 있는 궁합은 오래 못 가요. 끈끈하게 지내지 않아도 '너를 알겠어' 이런 느낌이라 합은"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "원진"
+    }
+   ],
+   "outcome": "다투면서도 끝까지 붙어 인연이 지속됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "원진들이 좀 지지고 볶고 하면서 욕하고 막 이러면서 잘 붙어 있습니다, 끝까지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "합충형파해",
+     "value": "갑기합"
+    },
+    {
+     "type": "신살",
+     "value": "사술원진"
+    }
+   ],
+   "outcome": "부딪히면서도 계속 붙어 있게 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "서로 부딪히긴 하지만 그게 하고 싶어 가지고 계속 붙어 있게 되는 조합이라고 할 수 있어."
+  }
+ ],
+ "insights": [
+  "합(合)만으로 구성된 궁합은 애착과 긴장감이 부족해 장기적으로 이어지기 어렵고, 원진(怨嗔)이 섞여 있어야 애증으로 끈끈하게 관계가 유지된다."
+ ],
+ "keywords": [
+  "궁합",
+  "무토",
+  "신금",
+  "갑기합",
+  "사술원진",
+  "원진살",
+  "월주"
+ ]
+}

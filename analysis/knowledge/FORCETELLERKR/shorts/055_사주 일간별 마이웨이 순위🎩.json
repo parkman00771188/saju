@@ -1,0 +1,197 @@
+{
+ "source": "data/FORCETELLERKR/shorts/055_사주 일간별 마이웨이 순위🎩.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "tDVlr8G3vHY",
+ "title": "사주 일간별 마이웨이 순위🎩",
+ "url": "https://www.youtube.com/watch?v=tDVlr8G3vHY",
+ "upload": "20260701",
+ "duration_sec": "54",
+ "views": "71879",
+ "chars": 519,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:29",
+ "summary": "십간(일간)별로 자신만의 방식대로 살아가는 '마이웨이' 성향 순위를 10위부터 1위까지 정리한 내용입니다. 타인을 배려하고 상황에 순응하는 을목(10위), 정화(9위), 병화(8위), 계수(7위)는 마이웨이 성향이 상대적으로 낮습니다. 반면 자기 세계가 확고하거나 독단적 기질이 있는 신금(6위), 기토(5위), 임수(4위), 경금(3위), 무토(2위)를 거쳐 본투비 마이웨이 성향인 갑목이 1위로 나타납니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    }
+   ],
+   "outcome": "모두를 포용하며 마이웨이 성향이 가장 낮다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "10위는 을목. 이기는 팀 우리 팀, 모두를 포용하지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    }
+   ],
+   "outcome": "상대방을 배려하는 해맑은 스타일이다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "9위 정화. 네가 좋으면 나도 좋아, 해맑은 스타일."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "트렌드와 유행을 앞장서서 따라간다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "8위는 병화. 유행을 따라가기 위해 챌린지 연습은 필수."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    }
+   ],
+   "outcome": "상황의 흐름에 몸을 맡기며 순응한다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "7위 계수. 흘러가는 대로 살아가지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "자기 세계가 확고하나 합리적이면 받아들인다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6위 신금. 자기 세계는 확고하지만 합리적이면 넘어가 줘."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    }
+   ],
+   "outcome": "업무적인 면에서 철저하게 계산적이다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "5위는 기토. 일할 때 한정 계산 마이웨이."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "타인의 시선에 상관없이 자기 흥대로 행동한다",
+   "tag": "자유·독립 성향",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4위 임수. 남이 뭐라 하든 난 파라파라나 춰야겠다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    }
+   ],
+   "outcome": "자기식 정의를 독단적으로 밀어붙인다",
+   "tag": "주도적·보스 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "3위는 경금. 경금의 정의는 독재로 실현된다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "겉으로는 수용하는 척하나 속마음은 딴생각이다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2위는 바로 무토. 겉으로는 다 받아주는 것 같지만 속으로는 다르게 생각할걸."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "숨 쉬듯 당연하게 자기 고집과 길을 간다",
+   "tag": "자유·독립 성향",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "대망의 1위는 두구두구 갑목. 뭐, 마이웨이라고? 나는 그냥 숨 쉬는 중인데 들숨에 마이, 날숨에 웨이, 인간 마이웨이야."
+  }
+ ],
+ "insights": [
+  "일간의 음양과 오행 특성에 따라 타인 중심형(을목·정화 등)과 자아 중심형(갑목·무토·경금 등)의 마이웨이 양상이 명확히 구분된다.",
+  "겉으로 드러나는 행동(순응, 포용)과 내면의 실제 주관(속마음, 계산, 합리주의) 사이의 괴리는 오행 특성(무토, 기토, 신금 등)에 따라 다르게 나타난다."
+ ],
+ "keywords": [
+  "일간",
+  "마이웨이",
+  "갑목",
+  "무토",
+  "경금",
+  "임수",
+  "을목",
+  "사주성격"
+ ]
+}

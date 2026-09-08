@@ -40,6 +40,7 @@ python build_kb.py     # data/ 의 자막 원문 전체를 분석
   식신제살·상관견관·관살혼잡·재다신약·군겁쟁재 등 구조, 일간×십성) 약 300개를 원문에서 찾아
   **언급 빈도 · 극성(긍정어/부정어 비율) · 운세 카테고리 비중(직장/금전/연애/건강/학업/가족) · 대표 키워드**를 계산해
   `saju-site/src/data/kb_stats.json` 으로 내보냅니다. 새 채널을 크롤링한 뒤 다시 실행하면 자동 갱신됩니다.
+- **자막 원문 교정**: `python analysis/rewrite_transcripts.py` — Gemini(`gemini-3.8-flash`)로 `data/` 자막의 ASR 오탈자를 문맥 교정해 제자리에 덮어씁니다(루트 `.env`에 `GEMINI_API_KEY=...` 필요, `.env`는 git 제외). `--limit N --out <폴더>`로 미리보기, `--status`로 진행 확인, 중단 후 재실행하면 `analysis/rewrite_manifest.json` 기준으로 이어서 처리. 새 채널을 크롤링하면 이 스크립트 → `build_kb.py` 순서로 돌립니다.
 - `analysis/excerpts/` 는 집필 참고용 문맥 조각(사이트·git 미포함), `analysis/report.md` 는 요약 리포트입니다.
 - 해석 문장은 `saju-site/src/data/knowledge.js`(일간·십성·운·신살·오행)와 `patterns.js`(조후·형국·60일주·구조·충합 조합, 吉/凶 병기)에 있고,
   `saju-site/src/saju/interpret.js` 가 사주에 해당하는 항목만 골라 **종합(형국+레이더) · 형국·조합(조후, 필요한 기운이 들어오는 대운/세운 시점, 조합 카드+원문 극성)
@@ -65,13 +66,3 @@ npm run build    # dist/ 정적 빌드
 - 한국식 규칙(한국시 경도 보정, 야자시/조자시, 입춘/동지 기준, 십성·십이운성·십이신살·신살·육친·합충형파해·원진·귀문·공망·태월)은 `src/saju/tables.js`, `src/saju/calc.js` 에 구현
 - 인트로 3D 성반: `src/three/CosmosScene.js`
 - 배포: GitHub `main` 푸시 → Cloudflare Pages(`saju-palja.pages.dev`) 자동 빌드 (root `saju-site`, `npm run build`, 출력 `dist`)
-
-## ?? ??? ?? ??
-
-?? ? ? ?? ? ???(??????????????????????) ? ?? ?? ? ? ?? ? ?? ????10?/?? ??? ?? ??. ???? ? ???? ????, ???? ???? ?? ??? ?????.
-
-- ??: `saju-site/src/components/Result.jsx`, `Reading.jsx`, `Passage.jsx`
-- ?? ?? ??: `src/saju/context.js` (?? `interpret.js` ?? ??)
-- ???: `src/theme.css` (????????? ??)
-- ??: `cd saju-site && npm test && npm run build`
-- ??? ??: [?? ??](saju-site/REVIEW.md)

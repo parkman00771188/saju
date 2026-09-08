@@ -1,0 +1,71 @@
+{
+ "source": "data/FORCETELLERKR/shorts/1030_3개월 내로 일어날 일을 봐드릴게요! B는 채널에 있어요! #타로 #포스텔러.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "YAmMbAXcHd8",
+ "title": "3개월 내로 일어날 일을 봐드릴게요! B는 채널에 있어요! #타로 #포스텔러",
+ "url": "https://www.youtube.com/watch?v=YAmMbAXcHd8",
+ "upload": "20220706",
+ "duration_sec": "34",
+ "views": "2113",
+ "chars": 206,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "선택지 A를 고른 경우 향후 3개월 내에 투잡(부업)의 기회를 맞이하게 됩니다. 초반에는 고생이 두 배로 늘어나고 성과가 즉각적이지 않아 불확실한 미래로 인한 실망을 겪을 수 있습니다. 그러나 일과 삶의 균형을 유지하며 묵묵히 버텨내면 노력한 만큼 큰 성과와 큰돈을 얻게 됩니다.",
+ "topics": [
+  "직장",
+  "금전",
+  "운세 흐름",
+  "개운·조언"
+ ],
+ "scope": "특정 대운·시기",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "A 선택"
+    }
+   ],
+   "outcome": "투잡의 기회를 잡게 된다",
+   "tag": "두 가지 일·부업",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "3개월 내",
+   "advice": "일과 삶의 균형을 잘 맞춰야 한다",
+   "quote": "당신은 투잡의 기회를 잡게 될 것입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "A 선택"
+    }
+   ],
+   "outcome": "노력한 만큼 더 큰 성과와 큰돈을 번다",
+   "tag": "큰돈·대박",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "조건부",
+   "time": "3개월 내",
+   "advice": "불확실한 미래를 묵묵하게 견뎌야 한다",
+   "quote": "불확실한 미래를 묵묵하게 견뎌야 하는 운을 맞게 되지만, 노력한 만큼 더 큰 성과와 큰돈을 벌게 된다."
+  }
+ ],
+ "insights": [
+  "단기적인 고생과 불확실성을 인내하고 워라밸을 관리해야 큰 재물과 성과라는 결실로 연결된다."
+ ],
+ "keywords": [
+  "타로",
+  "포스텔러",
+  "3개월운세",
+  "투잡",
+  "부업",
+  "워라밸",
+  "금전운",
+  "재물운"
+ ]
+}

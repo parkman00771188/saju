@@ -1,0 +1,50 @@
+{
+ "source": "data/FORCETELLERKR/shorts/041_관상만 봐도 전생이 보이는 점술가🔮.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "0Jap33NEkl0",
+ "title": "관상만 봐도 전생이 보이는 점술가🔮",
+ "url": "https://www.youtube.com/watch?v=0Jap33NEkl0",
+ "upload": "20260710",
+ "duration_sec": "54",
+ "views": "31350",
+ "chars": 405,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:28",
+ "summary": "생년월일(사주)이 아닌 얼굴 관상과 직관을 통해 내담자의 전생 코드와 기운을 읽어내는 영상입니다. 점술가는 상대방의 얼굴에서 백제계 일본인 전생을 포착하며 일본이나 오키나와를 혼자서도 자주 방문하는 이유를 전생의 고국 인연으로 설명합니다. 또한 전생의 연고로 인해 일본 현지인들로부터 자연스러운 친밀감과 환대, 대우를 받는 특징이 나타난다고 풀이합니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "백제계 일본인 관상"
+    }
+   ],
+   "outcome": "일본 여행을 즐기며 현지에서 환대받음",
+   "tag": "해외·먼 곳",
+   "category": "기타",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "일본 좋아하시죠? 백제계 일본인이세요? ... 고국이니까 혼자서 갈 수 있는 거야 ... 가면 대우가 좋죠."
+  }
+ ],
+ "insights": [
+  "사주(생년월일) 정보 없이도 얼굴의 관상과 직관적 코드를 통해 개인의 전생 인연 및 특정 국가에 대한 친화도를 파악할 수 있다."
+ ],
+ "keywords": [
+  "관상",
+  "전생",
+  "백제계 일본인",
+  "오키나와",
+  "점술",
+  "해외 인연"
+ ]
+}

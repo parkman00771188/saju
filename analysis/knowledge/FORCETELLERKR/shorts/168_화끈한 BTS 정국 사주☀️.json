@@ -1,0 +1,88 @@
+{
+ "source": "data/FORCETELLERKR/shorts/168_화끈한 BTS 정국 사주☀️.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "6EQJpQs6bTM",
+ "title": "화끈한 BTS 정국 사주☀️",
+ "url": "https://www.youtube.com/watch?v=6EQJpQs6bTM",
+ "upload": "20260321",
+ "duration_sec": "45",
+ "views": "9369",
+ "chars": 448,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:33",
+ "summary": "BTS 정국의 사주를 바탕으로 병화 일간과 오화의 성향을 설명하는 영상입니다. 병화 일간은 아낌없이 주는 태양과 같아 곤경에 처한 사람을 그냥 지나치지 못하고 통 크게 돕는 기질이 있습니다. 또한 오화의 강한 기운으로 인해 남에게 베풀고도 절대 생색내지 않고 쿨하게 넘어가며, 큰 금액을 기부할 정도로 통이 큰 면모를 보여줍니다.",
+ "topics": [
+  "성격·기질",
+  "금전"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "불쌍한 사람을 지나치지 못하고 통 크게 돕는다",
+   "tag": "희생·봉사 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화 일간이잖아요. 그래서 불쌍한 사람들을 그냥 못 지나치고 그런 사람들한테는 좀 통 크게 도와주는 면이 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    },
+    {
+     "type": "지지",
+     "value": "오"
+    }
+   ],
+   "outcome": "남을 돕고도 생색내지 않고 멋진 태도를 유지한다",
+   "tag": "화려함·멋",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "근데 중요한 거는 오화, 간지 간살이잖아요. 도와줘 놓고 막 생색내는 거 절대 안 해요... 생색을 내는 거 자체가 너무 멋없다고 생각을 하기 때문에"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "병오"
+    }
+   ],
+   "outcome": "기부나 지출 등 돈을 쓰는 씀씀이와 통이 매우 크다",
+   "tag": "희생·봉사 기질",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그냥 쏘고 그냥 넘어가는 넘어가 역시 통 큰 남자. 정국 씨가 그때 기부를 한 10억 정도를 하신 걸로 제가 알고 있는데... 진짜 확실히 통은 확실히 크신 거 같아요."
+  }
+ ],
+ "insights": [
+  "병화 일간에 오화가 결합하면 아낌없이 베푸는 태양의 속성과 당당한 기질이 합쳐져, 남을 통 크게 돕고도 생색내는 것을 멋없다고 여겨 드러내지 않는다."
+ ],
+ "keywords": [
+  "정국",
+  "BTS",
+  "병화",
+  "오화",
+  "병오일주",
+  "기부",
+  "간여지동"
+ ]
+}

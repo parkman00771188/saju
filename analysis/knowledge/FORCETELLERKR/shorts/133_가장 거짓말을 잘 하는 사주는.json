@@ -1,0 +1,182 @@
+{
+ "source": "data/FORCETELLERKR/shorts/133_가장 거짓말을 잘 하는 사주는.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "tnlrjsXHHdo",
+ "title": "가장 거짓말을 잘 하는 사주는?",
+ "url": "https://www.youtube.com/watch?v=tnlrjsXHHdo",
+ "upload": "20260423",
+ "duration_sec": "56",
+ "views": "60439",
+ "chars": 482,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:32",
+ "summary": "사주 십천간 일간별 거짓말 성향과 순위를 설명한 영상이다. 갑목, 무토, 신금은 명분이 없거나 틀린 말 자체를 꺼려 거짓말을 거의 하지 않으며, 병화와 정화는 선의의 하얀 거짓말 정도를 한다. 반면 임수와 계수는 내숭형 거짓말을 보이고, 기토는 개인 이익과 요령을 위한 거짓말을 서슴지 않는다. 1위로 꼽힌 을목은 연기력과 꼼수가 뛰어나 거짓말에 가장 능하다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "허세 때문에 명분 없는 거짓말은 하지 않는다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "꼴등은 갑목. 허세가 몸을 지배해서 명분 없는 거짓말은 하지 않아."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "거짓말을 해야 하는 이유 자체를 모른다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "8위 무토, 거짓말을 해야 하는 이유 자체를 몰라."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "틀린 말이나 거짓말을 극도로 꺼린다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "7위는 신금, 틀린 말 하면 죽는 병 걸림."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "선의로 하는 하얀 거짓말 정도는 할 수 있다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6위는 병화, 5위 정화, 선의로 하얀 거짓말 정도는 할 수 있어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    }
+   ],
+   "outcome": "선의로 하는 하얀 거짓말 정도는 할 수 있다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6위는 병화, 5위 정화, 선의로 하얀 거짓말 정도는 할 수 있어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    }
+   ],
+   "outcome": "공부 안 했다며 만점 받는 식의 얄미운 거짓말을 한다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4위 계수, 3위 임수. 공부 안 했다고 하면서 100점 받는 얄미운 친구들이야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "공부 안 했다며 만점 받는 식의 얄미운 거짓말을 한다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4위 계수, 3위 임수. 공부 안 했다고 하면서 100점 받는 얄미운 친구들이야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    }
+   ],
+   "outcome": "요령을 피우거나 사익을 위한 거짓말을 서슴지 않는다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "2위는 기토, 거짓말로 요령을 피우거나 자신의 이익을 위한 거짓말은 서슴지 않아."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    }
+   ],
+   "outcome": "연기력과 꼼수로 눈 하나 깜빡 않고 거짓말을 가장 잘한다",
+   "tag": "표현·언변",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "을목을 적으로 두지 않도록 조심할 것",
+   "quote": "대망의 1위는 바로 을목. 엄청난 연기력까지 합쳐져서 꼼수로는 아무도 이길 사람이 없어. 을목을 적으로 두지 않게 조심해."
+  }
+ ],
+ "insights": [
+  "일간의 오행적 성향에 따라 거짓말을 하는 동기(명분, 배려, 이익, 꼼수)와 빈도가 다르게 나타난다."
+ ],
+ "keywords": [
+  "일간",
+  "거짓말",
+  "을목",
+  "기토",
+  "임수",
+  "계수",
+  "갑목",
+  "무토",
+  "신금"
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "source": "data/FORCETELLERKR/shorts/216_사주VS신점⚡️세기의 대결 시작합니다🫣.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "pswbEihm7j4",
+ "title": "사주VS신점⚡️세기의 대결 시작합니다🫣",
+ "url": "https://www.youtube.com/watch?v=pswbEihm7j4",
+ "upload": "20260206",
+ "duration_sec": "27",
+ "views": "19837",
+ "chars": 207,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:34",
+ "summary": "임수 일간에 토 오행이 과다한 사주 구조에 대한 성격 분석입니다. 댐처럼 토가 물을 막아서 스스로를 통제하려 하고 가만히 두지 못하며 끊임없이 노력하는 성향이 나타납니다. 동시에 강한 카리스마와 '안 되면 되게 하라'는 근성이 있으며, 의리가 있고 타인에게 높은 신뢰감을 주는 특징이 있습니다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "오행 과다",
+     "value": "토"
+    }
+   ],
+   "outcome": "통제 성향이 강하고 스스로를 가만히 두지 못함",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수인데 주변에 토 댐으로 자꾸 막으려고 하고 토가 너무 많아 통제 성향이 살짝 있으실 것 같은 느낌이에요. 본인을 가만히 눕히지 못하시는 점이 좀 있으신 것 같아요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "오행 과다",
+     "value": "토"
+    }
+   ],
+   "outcome": "카리스마가 넘치며 끈기 있게 노력함",
+   "tag": "리더십·카리스마",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "엄청 카리스마 있으시고요. 안 되면 되게 해 이러면서 약간 노력으로"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "오행 과다",
+     "value": "토"
+    }
+   ],
+   "outcome": "의리가 있고 타인에게 깊은 신뢰감을 줌",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "되게 의리 있으시고 사람이 딱 봤을 때 신뢰감이 있으시고요."
+  }
+ ],
+ "insights": [
+  "임수(흐르는 큰 물) 일간 주변에 토(댐/관성)가 과다하면 물길을 억누르는 형상이 되어, 자신을 통제하고 가만히 쉬지 못한 채 목표를 향해 몰아붙이는 성향이 형성된다."
+ ],
+ "keywords": [
+  "임수",
+  "토 과다",
+  "관성",
+  "통제 성향",
+  "카리스마",
+  "신뢰감",
+  "의리"
+ ]
+}

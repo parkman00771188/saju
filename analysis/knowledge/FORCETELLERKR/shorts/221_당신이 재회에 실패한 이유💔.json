@@ -1,0 +1,84 @@
+{
+ "source": "data/FORCETELLERKR/shorts/221_당신이 재회에 실패한 이유💔.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "armjDmHpE7A",
+ "title": "당신이 재회에 실패한 이유💔",
+ "url": "https://www.youtube.com/watch?v=armjDmHpE7A",
+ "upload": "20260204",
+ "duration_sec": "22",
+ "views": "13457",
+ "chars": 189,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:34",
+ "summary": "상대방과의 재회 여부를 영적 형상(화경)을 통해 판별하는 기준을 설명하는 내용입니다. 상대방이 완전히 돌아선 모습으로 보이면 인연이 이미 끊어진 것이며, 살짝 돌아보는 모습이라면 아직 미련과 여지가 남아있음을 나타냅니다. 서로 마주 보며 웃고 있는 형상이 보일 때는 재회의 가능성이 열려 있음을 의미합니다.",
+ "topics": [
+  "연애·결혼",
+  "기타"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "상대방이 아예 돌아선 모습으로 영적으로 보임"
+    }
+   ],
+   "outcome": "인연이 완전히 끊어져 재회가 되지 않음",
+   "tag": "이별·이혼",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "아예 돌아선 모습, 그러면 끊어진 거야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "상대방이 살짝 돌아보고 있는 모습으로 보임"
+    }
+   ],
+   "outcome": "완전히 끝난 게 아니고 미련과 여지가 남아있음",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "이렇게 있다가 살짝 이렇게 있는 모습. 그러면 이건 완전히 끝난 게 아니고 그래도 미련이 살짝 여지가 있는 거고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "마주 보면서 웃고 있는 모습으로 보임"
+    }
+   ],
+   "outcome": "상대와 긍정적으로 소통되며 재회 가능성이 높음",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그리고 마주 보면서 웃고 있는 모습 이런 것들이야."
+  }
+ ],
+ "insights": [
+  "무속 점사나 직관적 상담에서는 상대방이 취하고 있는 영적 형상(등 돌린 형태, 미련 남은 시선, 마주 보는 웃음)을 통해 인연의 지속 여부와 재회 가능성을 판단한다."
+ ],
+ "keywords": [
+  "재회",
+  "재회실패",
+  "미련",
+  "인연",
+  "화경",
+  "무속점사",
+  "연애운"
+ ]
+}

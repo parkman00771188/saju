@@ -1,0 +1,102 @@
+{
+ "source": "data/FORCETELLERKR/shorts/207_바람 피울 걱정 없는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "TZlJINyj4mU",
+ "title": "바람 피울 걱정 없는 사주",
+ "url": "https://www.youtube.com/watch?v=TZlJINyj4mU",
+ "upload": "20260213",
+ "duration_sec": "42",
+ "views": "44927",
+ "chars": 296,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:34",
+ "summary": "정사 간지는 정화의 개인적이고 집중적인 애정을 사화의 실용적 태도로 구현하는 성향을 띱니다. 연인이나 내 사람에게 최선을 다해 실용적인 선물을 주며 오직 한 사람에게만 집중합니다. 스스로 바람을 피우지 않지만 상대방의 배신에는 가차 없이 단호하게 대응합니다. 양다리를 걸치는 일은 결코 없으며 관계의 변화는 환승 이별의 형태로만 나타납니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "정사"
+    }
+   ],
+   "outcome": "연인에게 실용적인 선물을 많이 준다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "정화는 훨씬 더 개인적인 애정이죠... 사화로 최선을 다해서 실용적으로 할 것이다. 그래서 얘랑 사귀면 실용품 선물 되게 많이 받을 수 있다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "정사"
+    }
+   ],
+   "outcome": "바람을 피우지 않는다",
+   "tag": "바람·삼각관계",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "굉장히 실용적으로 나한테만 잘해 주는 애다. 바람을 피우지 않지만"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "정사"
+    }
+   ],
+   "outcome": "상대가 외도하면 단호히 끝낸다",
+   "tag": "이별·이혼",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "절대 한 사람만 바라봐야 한다.",
+   "quote": "내가 바람을 피우면 얄짤없다. 절대 절대 한 사람만 바라봐야 된다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "정사"
+    }
+   ],
+   "outcome": "양다리 없이 환승 이별만 한다",
+   "tag": "바람·삼각관계",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "얘는 바람 피우는 게 없고 환승만 있어요, 최소한."
+  }
+ ],
+ "insights": [
+  "정화의 개인적이고 좁고 깊은 애정은 사화의 실용적이고 확실한 행동력을 통해 발현된다.",
+  "한 사람에게 온전히 몰입하는 간지 구조는 배신에 엄격하며 삼각관계 대신 환승의 형태로 관계를 종결한다."
+ ],
+ "keywords": [
+  "정사",
+  "정사일주",
+  "정화",
+  "사화",
+  "바람기",
+  "환승이별",
+  "실용주의",
+  "내사람"
+ ]
+}

@@ -122,18 +122,22 @@ export function expertStory(cat, rows, facts, evidence) {
   const pos = top.filter((r) => r.pol > 0), neg = top.filter((r) => r.pol < 0), neu = top.filter((r) => r.pol === 0);
   const from = uniq(top.flatMap((r) => r.from)).slice(0, 4);
   const cnt = (r) => `${r.n || r.docs}회`;
+  const fmtLift = (l) => (l >= 5 ? '5배 이상' : `${l.toFixed(1)}배`);
+  const standout = top.filter((r) => r.lift >= 1.5).sort((a, b) => b.lift - a.lift).slice(0, 2);
+  const srcOf = (r) => (r.fromN || r.from.map((t) => [t, 0])).slice(0, 2).map(([t, n]) => (n ? `${t}(${n}회)` : t)).join('·');
+  const xLift = (r) => (standout.includes(r) ? '' : r.lift >= 2 ? ` 다른 사주보다 ${fmtLift(r.lift)} 자주 나오는 이야기예요.` : '');
   const paras = [];
   // 1) 전체 그림
-  paras.push(`${from.join(', ')} — 이 사주를 이루는 이런 조합을 다룬 전문가 강의에서 ${cat}에 관해 반복해서 나오는 이야기를 모았어요.${pos.length && neg.length ? ` 크게 보면 좋게 보는 흐름(${pos.map((r) => r.label).join('·')})과 조심하라는 흐름(${neg.map((r) => r.label).join('·')})이 함께 언급돼요.` : pos.length ? ` 대체로 좋게 보는 이야기(${pos.map((r) => r.label).join('·')})가 많아요.` : neg.length ? ` 조심하라는 이야기(${neg.map((r) => r.label).join('·')})가 두드러져요.` : ''}${neu.length ? ` 그 밖에 ${neu.map((r) => r.label).join('·')} 같은 주제도 자주 등장해요.` : ''}`);
+  paras.push(`${from.join(', ')} — 이 사주를 이루는 이런 조합을 다룬 전문가 강의에서 ${cat}에 관해 반복해서 나오는 이야기를 모았어요.${pos.length && neg.length ? ` 크게 보면 좋게 보는 흐름(${pos.map((r) => r.label).join('·')})과 조심하라는 흐름(${neg.map((r) => r.label).join('·')})이 함께 언급돼요.` : pos.length ? ` 대체로 좋게 보는 이야기(${pos.map((r) => r.label).join('·')})가 많아요.` : neg.length ? ` 조심하라는 이야기(${neg.map((r) => r.label).join('·')})가 두드러져요.` : ''}${neu.length ? ` 그 밖에 ${neu.map((r) => r.label).join('·')} 같은 주제도 자주 등장해요.` : ''}${standout.length ? ` 특히 ${standout.map((r) => `'${r.label}'(다른 사주보다 ${fmtLift(r.lift)}, 주로 ${srcOf(r)} 강의)`).join('과 ')}은 이 조합에서 유독 자주 나오는 이야기라 눈여겨볼 만해요.` : ''}`);
   // 2) 좋은 흐름
   for (const r of pos.slice(0, 2)) {
     const link = (LINKS[r.label] || []).find(([k]) => facts[k]);
-    paras.push(`좋게 보는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'${IRANEUN(link[1])} 근거가 있어 이 이야기가 더 힘을 얻어요.` : ` 주로 ${r.from.slice(0, 2).join('·')} 조합에서 나오는 이야기예요.`}${ADVICE_POS[r.label] ? ` ${ADVICE_POS[r.label]}` : ''}`);
+    paras.push(`좋게 보는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'${IRANEUN(link[1])} 근거가 있어 이 이야기가 더 힘을 얻어요.` : ` 주로 ${srcOf(r)} 강의에서 나오는 이야기예요.`}${xLift(r)}${ADVICE_POS[r.label] ? ` ${ADVICE_POS[r.label]}` : ''}`);
   }
   // 3) 조심할 흐름
   for (const r of neg.slice(0, 2)) {
     const link = (LINKS[r.label] || []).find(([k]) => facts[k]);
-    paras.push(`조심하라는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'${IRANEUN(link[1])} 근거가 있어 실제로 그렇게 흐르기 쉬워요.` : ` 주로 ${r.from.slice(0, 2).join('·')} 조합에서 나오는 경고예요.`}${ADVICE_NEG[r.label] ? ` ${ADVICE_NEG[r.label]}` : ''}`);
+    paras.push(`조심하라는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'${IRANEUN(link[1])} 근거가 있어 실제로 그렇게 흐르기 쉬워요.` : ` 주로 ${srcOf(r)} 강의에서 나오는 경고예요.`}${xLift(r)}${ADVICE_NEG[r.label] ? ` ${ADVICE_NEG[r.label]}` : ''}`);
   }
   // 4) 중립 주제 한 줄
   if (neu.length && paras.length < 4) paras.push(`함께 나오는 주제 — ${neu.slice(0, 2).map((r) => `${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}`).join(' ')}`);

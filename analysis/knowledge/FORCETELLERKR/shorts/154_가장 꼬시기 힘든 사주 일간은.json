@@ -1,0 +1,198 @@
+{
+ "source": "data/FORCETELLERKR/shorts/154_가장 꼬시기 힘든 사주 일간은.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "LqRqzCsccHY",
+ "title": "가장 꼬시기 힘든 사주 일간은",
+ "url": "https://www.youtube.com/watch?v=LqRqzCsccHY",
+ "upload": "20260402",
+ "duration_sec": "62",
+ "views": "153142",
+ "chars": 529,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:33",
+ "summary": "십간(일간)별로 연애에서 마음을 얻기 가장 어려운 순위를 1위부터 10위까지 소개한다. 가장 공략하기 쉬운 일간은 솔직함과 호응에 약한 병화, 무토, 갑목인 반면, 깐깐한 기준을 가진 경금과 완벽주의적 성향의 신금이 가장 꼬시기 힘든 상위권을 차지한다. 각 일간의 기질에 맞는 접근 방식과 연애 심리적 특징을 명확히 제시한다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "가장 마음을 쉽게 열고 쉽게 넘어감",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "꼴등은 바로 병화. 병화는 이미 당신에게 넘어가 있다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "솔직하게 고백하면 바로 넘어감",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "솔직하게 표현할 것",
+   "quote": "9위는 무토, 솔직하게 말하면 바로 넘어감."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "추앙해 주면 쉽게 마음을 내어줌",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "상대방을 추앙하고 띄워줄 것",
+   "quote": "8위 갑목, 추앙해 주면 쉽게 마음을 내줘."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    }
+   ],
+   "outcome": "디테일한 센스를 보여줘야 마음을 염",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "세심하고 디테일한 센스를 발휘할 것",
+   "quote": "7위 을목, 꼬시려면 디테일한 센스가 필요할 거야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    }
+   ],
+   "outcome": "꾸준한 애정 표현이 있어야 마음을 엶",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "한결같이 꾸준한 애정을 표현할 것",
+   "quote": "6위는 정화, 꾸준한 애정 표현이 필요해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    }
+   ],
+   "outcome": "경청을 원하며 과도한 행동은 꺼림",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "상대방의 말을 경청하고 과하게 오버하지 말 것",
+   "quote": "5위 기토, 경청이 필요하고 오버하면 탈락."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "묵묵히 리드해야 하며 귀찮게 하면 피함",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "묵묵하게 이끌어가되 귀찮게 굴지 말 것",
+   "quote": "4위 임수, 묵묵하게 끌어야 하는데 귀찮게 하면 도망갈 수 있어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    }
+   ],
+   "outcome": "본인의 마음을 스스로도 잘 모름",
+   "tag": "소심·우유부단",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "3위는 계수, 자기도 자기 마음을 모른다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    }
+   ],
+   "outcome": "기준이 매우 깐깐해 연애 상대를 두지 않음",
+   "tag": "완벽주의·깔끔",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2위는 경금, 체크리스트가 500개일 정도로 깐깐하고 애초에 사람이 필요가 없어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "외모·재력·성격의 완벽함을 따져 눈이 늚",
+   "tag": "완벽주의·깔끔",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "대망의 1위는 바로 신금. 외모, 재력, 성격 등 모든 면에서 완벽한 사람을 찾기 때문에 신금의 눈에 차기는 쉽지 않을 거야."
+  }
+ ],
+ "insights": [
+  "금(경금·신금) 일간은 기준과 체크리스트가 매우 까다로워 사람에 대한 진입 장벽이 가장 높다.",
+  "양간(병화·무토·갑목)은 솔직함과 인정, 칭찬을 통해 비교적 빠르게 마음을 여는 경향이 있다."
+ ],
+ "keywords": [
+  "일간",
+  "연애",
+  "신금",
+  "경금",
+  "계수",
+  "병화",
+  "갑목",
+  "무토"
+ ]
+}

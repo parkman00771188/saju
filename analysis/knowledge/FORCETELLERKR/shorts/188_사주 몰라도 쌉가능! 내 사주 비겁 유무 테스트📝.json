@@ -1,0 +1,117 @@
+{
+ "source": "data/FORCETELLERKR/shorts/188_사주 몰라도 쌉가능! 내 사주 비겁 유무 테스트📝.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "CpTwfGpPUdA",
+ "title": "사주 몰라도 쌉가능! 내 사주 비겁 유무 테스트📝",
+ "url": "https://www.youtube.com/watch?v=CpTwfGpPUdA",
+ "upload": "20260305",
+ "duration_sec": "40",
+ "views": "29466",
+ "chars": 197,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:34",
+ "summary": "사주에 비견이나 겁재(비겁)가 있는 사람의 성향을 자가 진단하는 테스트 내용이다. 비겁이 있는 사람은 친구가 많고 사람을 좋아하며, 모임에서 중심 역할을 맡고 협동을 선호하는 경향이 있다. 또한 사람들과의 모임에서 배제되면 서운해하지만, 자신만의 줏대와 주관이 뚜렷하다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "비겁"
+    }
+   ],
+   "outcome": "친구가 많고 사람을 좋아한다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "나는 친구가 많다... 나는 사람이 좋다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "비겁"
+    }
+   ],
+   "outcome": "모임에서 중심 역할을 자주 맡는다",
+   "tag": "리더십·카리스마",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "모임에서 중심 역할을 자주 맡는다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "비겁"
+    }
+   ],
+   "outcome": "모임에 부르지 않으면 서운해한다",
+   "tag": "예민·섬세",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "누가 안 부르면 서운하다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "비겁"
+    }
+   ],
+   "outcome": "다수와의 만남과 협동을 선호한다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "일대일 만남보다 다수와의 만남이 즐겁다. 절대 혼자 하는 것보다 협동하는 게 편하다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "비겁"
+    }
+   ],
+   "outcome": "자기 주관과 줏대가 뚜렷하다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "나는 줏대좌다."
+  }
+ ],
+ "insights": [
+  "사주에서 비견과 겁재는 대인관계 지향성, 집단 내 존재감, 그리고 강한 자아와 주체성을 나타낸다."
+ ],
+ "keywords": [
+  "비겁",
+  "비견",
+  "겁재",
+  "무비겁",
+  "줏대",
+  "인간관계",
+  "협동",
+  "모임"
+ ]
+}

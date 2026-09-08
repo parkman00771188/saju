@@ -82,7 +82,7 @@ export function Evidence({ rows, title, note }) {
         <motion.div className="evrow" key={r.label} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
           <i className={polClass(r.pol)}>{polMark(r.pol)}</i>
           <div><b>{r.label}</b><p>{r.text}</p><small>전문가들이 짚은 글자: {r.from.slice(0, 4).join(' · ')}</small></div>
-          <span className="evn">{r.n || r.docs}회</span>
+          <span className="evn">{r.n || r.docs}회{r.lift >= 1.3 && <em className="evlift">다른 사주보다 {r.lift >= 5 ? '5배 이상' : `${r.lift.toFixed(1)}배`}</em>}</span>
         </motion.div>
       ))}
     </div>

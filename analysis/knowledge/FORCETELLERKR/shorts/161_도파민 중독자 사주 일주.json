@@ -1,0 +1,118 @@
+{
+ "source": "data/FORCETELLERKR/shorts/161_도파민 중독자 사주 일주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "myQi3hcLdXw",
+ "title": "도파민 중독자 사주 일주",
+ "url": "https://www.youtube.com/watch?v=myQi3hcLdXw",
+ "upload": "20260325",
+ "duration_sec": "41",
+ "views": "18172",
+ "chars": 370,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:33",
+ "summary": "경진일주는 올바른 세상을 추구하는 경금과 재미를 추구하는 진토가 만나 같은 일도 남들보다 재밌게 풀어내려는 특성이 있습니다. 게임이나 가챠 요소처럼 도파민을 유발하는 창의적인 아이디어를 잘 접목하여 마케팅이나 기획 분야 커리어에서 두각을 나타냅니다. 반면 재미없는 일에는 쉽게 실증을 내는 단점이 있으므로, 지루한 일도 본인만의 아이디어로 방식을 재밌게 바꾸어 진행하는 것이 좋습니다.",
+ "topics": [
+  "성격·기질",
+  "직장",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "천간",
+     "value": "경"
+    }
+   ],
+   "outcome": "올바른 세상을 만드는 것을 목표로 삼는다",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "경금은 올바른 세상을 만드는 것을 목표로 삼고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "진"
+    }
+   ],
+   "outcome": "재밌는 일을 추구한다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "진토는 재밌는 일을 추구해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "경진"
+    }
+   ],
+   "outcome": "같은 일도 남들보다 재밌게 하려고 노력한다",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "경진은 같은 일이라도 남들보다 재밌게 하려고 노력해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "경진"
+    }
+   ],
+   "outcome": "마케팅·기획 분야 커리어에서 역량을 발휘한다",
+   "tag": "전문직·기술",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "추측",
+   "time": "항상",
+   "advice": "",
+   "quote": "이런 창의력은 마케팅, 기획 분야에서 빛을 발하기 때문에 커리어에도 도움이 되겠지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "경진"
+    }
+   ],
+   "outcome": "재미가 없는 일에는 금방 실증을 낸다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "해야만 하는 일이 지루하다면 톡톡 튀는 아이디어로 방식을 재밌게 바꿔본다.",
+   "quote": "하지만 재미가 없는 일에는 금방 실증을 내는 경향이 있어. 해야만 하는 일이 지루해서 못 하겠다면, 경진의 톡톡 튀는 아이디어로 방식을 좀 더 재밌게 바꿔 보면 어떨까?"
+  }
+ ],
+ "insights": [
+  "경진일주는 경금의 대의명분과 진토의 유희적 속성이 결합되어, 지루한 의무 활동조차 유희적인 방식으로 전환해내는 독창성을 보인다."
+ ],
+ "keywords": [
+  "경진일주",
+  "경금",
+  "진토",
+  "도파민",
+  "마케팅",
+  "기획",
+  "창의력",
+  "실증"
+ ]
+}

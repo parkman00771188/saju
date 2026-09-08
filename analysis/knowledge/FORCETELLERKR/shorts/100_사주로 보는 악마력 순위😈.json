@@ -1,0 +1,67 @@
+{
+ "source": "data/FORCETELLERKR/shorts/100_사주로 보는 악마력 순위😈.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "4DN5Wl0GHBI",
+ "title": "사주로 보는 악마력 순위😈",
+ "url": "https://www.youtube.com/watch?v=4DN5Wl0GHBI",
+ "upload": "20260520",
+ "duration_sec": "62",
+ "views": "130290",
+ "chars": 320,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "사주 일간별 악마 같은 기질과 성향 순위를 소개하는 내용입니다. 경금과 신금 일간은 치사하게 뒤통수를 치지 않고 앞에서 화끈하게 부딪치는 기질이 있어 악마력 순위권 외로 분류되었습니다. 영상은 일간 확인을 위한 만세력 이용을 유도하며 각 순위별 단편적 특징을 언급합니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    }
+   ],
+   "outcome": "치사하게 뒤통수치지 않고 정면에서 화끈하게 들이받음",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "순위권 외는 경금과 신금. 치사하게 뒤통수치지 않아. 화끈하게 앞에서 들이받는 스타일이라 순위권 외야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "치사하게 뒤통수치지 않고 정면에서 화끈하게 들이받음",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "순위권 외는 경금과 신금. 치사하게 뒤통수치지 않아. 화끈하게 앞에서 들이받는 스타일이라 순위권 외야."
+  }
+ ],
+ "insights": [
+  "금(金) 기운에 해당하는 경금과 신금 일간은 음흉하게 뒤에서 배신하기보다 정면으로 대립하고 표출하는 직선적인 성향을 보인다."
+ ],
+ "keywords": [
+  "일간",
+  "경금",
+  "신금",
+  "악마력",
+  "성격",
+  "사주",
+  "만세력"
+ ]
+}

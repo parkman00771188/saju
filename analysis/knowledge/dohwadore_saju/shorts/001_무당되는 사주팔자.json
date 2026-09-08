@@ -1,0 +1,157 @@
+{
+ "source": "data/dohwadore_saju/shorts/001_무당되는 사주팔자.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "FvbUvMl8Lx0",
+ "title": "무당되는 사주팔자",
+ "url": "https://www.youtube.com/watch?v=FvbUvMl8Lx0",
+ "upload": "20260906",
+ "duration_sec": "49",
+ "views": "115844",
+ "chars": 415,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:26",
+ "summary": "귀문관살은 단순히 귀신과 관련된 살이라기보다 신경이 예리하고 민감하며 섬세한 기질을 의미합니다. 무당(무속인)이 되는 사주는 화(불)나 수(물)가 지나치게 많거나, 사주가 매우 조열하고 토·화로 이루어져 있거나, 지지에 사화·오화의 불바다를 이루거나 신금이 과하게 많은 특징이 있습니다. 사주팔자 구조에 따라 개인에게 적합한 종교적 성향이 결정되기도 합니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "예리하고 민감하며 예민하다",
+   "tag": "예민·섬세",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그만큼 예리하고 민감하며, 좀 예민하다는 의미에서 귀문관살을 보통 사주에서 이야기합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "화"
+    }
+   ],
+   "outcome": "무당이 되거나 신을 잘 모신다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주팔자에 불이 엄청 많거나... 잘 불립니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "무당이 되거나 신을 잘 모신다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "물이 엄청 많거나... 잘 불립니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "조열"
+    }
+   ],
+   "outcome": "무당이 되거나 신을 잘 모신다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주팔자가 되게 조열하거나... 잘 불립니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "토화"
+    }
+   ],
+   "outcome": "무당이 되거나 신을 잘 모신다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주팔자가 토·화로 이루어져 있거나... 잘 불립니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "사"
+    },
+    {
+     "type": "지지",
+     "value": "오"
+    }
+   ],
+   "outcome": "무당이 되거나 신을 잘 모신다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "지로 봤을 때 사화·오화 같은 불바다가 있거나... 잘 불립니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "신금 과다"
+    }
+   ],
+   "outcome": "무당이 되거나 신을 잘 모신다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "또는 신금이 과하게 많은 분들이 잘 불립니다."
+  }
+ ],
+ "insights": [
+  "귀문관살은 귀신이 드나든다는 문자 그대로의 부정적 의미보다는 감각이 극도로 예리하고 민감한 심리적 기질을 가리킨다.",
+  "사주팔자의 오행 편중(극단적인 화·수 과다, 조열함 등)에 따라 개인에게 맞는 종교나 영적인 성향이 갈린다."
+ ],
+ "keywords": [
+  "귀문관살",
+  "무당 사주",
+  "신끼",
+  "화 과다",
+  "수 과다",
+  "조열",
+  "사화",
+  "오화",
+  "신금",
+  "종교"
+ ]
+}

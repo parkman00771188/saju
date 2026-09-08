@@ -1,0 +1,30 @@
+{
+ "source": "data/FORCETELLERKR/shorts/181_무슨 일주세요 역사 공부 많이 될 거야.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "19Hfih17w6g",
+ "title": "무슨 일주세요? 역사 공부 많이 될 거야",
+ "url": "https://www.youtube.com/watch?v=19Hfih17w6g",
+ "upload": "20260312",
+ "duration_sec": "40",
+ "views": "32513",
+ "chars": 89,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:33",
+ "summary": "영상은 사람들에게 각자의 일주를 묻고 갑자일주, 을사일주, 정인일주, 임진일주 등으로 답변하는 상황을 담은 짧은 영상입니다. 구체적인 명리학적 조건이나 운세에 대한 해석 및 결과는 다루지 않고 있습니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "일주",
+  "갑자일주",
+  "을사일주",
+  "정인일주",
+  "임진일주"
+ ]
+}

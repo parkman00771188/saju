@@ -7,5 +7,4 @@ URL: https://www.youtube.com/watch?v=Fl6_J20Cvcw
 자막: ko (automatic_captions)
 ------------------------------------------------------------
 
-[음악]
-감사합니다
+감사합니다.

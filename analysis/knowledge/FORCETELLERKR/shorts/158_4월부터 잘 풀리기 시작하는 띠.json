@@ -1,0 +1,137 @@
+{
+ "source": "data/FORCETELLERKR/shorts/158_4월부터 잘 풀리기 시작하는 띠.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "UuqExjHjQTA",
+ "title": "4월부터 잘 풀리기 시작하는 띠",
+ "url": "https://www.youtube.com/watch?v=UuqExjHjQTA",
+ "upload": "20260330",
+ "duration_sec": "40",
+ "views": "13234",
+ "chars": 351,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:33",
+ "summary": "원숭이띠, 쥐띠, 용띠는 4월에 화개살의 기운을 맞아 침체기를 벗어나 운이 잘 풀리기 시작합니다. 그동안 남들의 눈에 띄지 않게 묵묵히 쌓아온 노력들이 세상에 알려지며 큰 성과로 이어지게 됩니다. 특히 금전운과 학업운에서 뚜렷한 발전이 있어, 준비하던 사업이나 부업에서 갑작스러운 수입이 생기고 멈춰 있던 성적이 오르게 됩니다.",
+ "topics": [
+  "운세 흐름",
+  "금전",
+  "학업·시험",
+  "직장"
+ ],
+ "scope": "특정 월 운세",
+ "years": [
+  2026
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "신"
+    },
+    {
+     "type": "띠",
+     "value": "자"
+    },
+    {
+     "type": "띠",
+     "value": "진"
+    },
+    {
+     "type": "월운",
+     "value": "4월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "해온 노력이 눈에 띄어 큰 성과를 낸다",
+   "tag": "발복·성공",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2026년 4월",
+   "advice": "",
+   "quote": "하지만 4월엔 지금까지 해온 것들이 사람들의 눈에 띄어서 큰 성과를 낼 수 있다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "신"
+    },
+    {
+     "type": "띠",
+     "value": "자"
+    },
+    {
+     "type": "띠",
+     "value": "진"
+    },
+    {
+     "type": "월운",
+     "value": "4월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "준비하던 사업이나 부업에서 수입이 생긴다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2026년 4월",
+   "advice": "",
+   "quote": "준비하던 사업이나 부업에서 갑자기 수입이 생기거나"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "신"
+    },
+    {
+     "type": "띠",
+     "value": "자"
+    },
+    {
+     "type": "띠",
+     "value": "진"
+    },
+    {
+     "type": "월운",
+     "value": "4월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "멈춰 있던 학업 성적이 조금씩 오른다",
+   "tag": "공부가 잘 됨",
+   "category": "학업·시험",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2026년 4월",
+   "advice": "",
+   "quote": "멈춰 있던 성적이 조금씩 올라간다고 하니 기대하라고."
+  }
+ ],
+ "insights": [
+  "신자진 삼합의 띠(원숭이·쥐·용)에게 진(辰)월(4월)은 화개살이 작용하여 가려져 있던 재능과 노력이 밖으로 드러나는 시기가 된다."
+ ],
+ "keywords": [
+  "원숭이띠",
+  "쥐띠",
+  "용띠",
+  "4월 운세",
+  "화개살",
+  "금전운",
+  "학업운",
+  "부업 수입"
+ ]
+}

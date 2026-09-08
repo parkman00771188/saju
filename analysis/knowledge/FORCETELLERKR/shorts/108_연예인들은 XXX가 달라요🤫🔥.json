@@ -1,0 +1,70 @@
+{
+ "source": "data/FORCETELLERKR/shorts/108_연예인들은 XXX가 달라요🤫🔥.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "wORyWYAtcBc",
+ "title": "연예인들은 XXX가 달라요🤫🔥",
+ "url": "https://www.youtube.com/watch?v=wORyWYAtcBc",
+ "upload": "20260511",
+ "duration_sec": "47",
+ "views": "15409",
+ "chars": 365,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "화자는 귀신을 보는 대신 상대방의 느낌을 보여주는 아우라의 빛과 색깔을 본다고 밝힙니다. 대중적인 인기는 특정 따뜻한 색상이 아닌 아우라의 선명도와 밝기(오패시티)에 의해 결정된다고 설명합니다. 특히 연예인들은 일반인과 확연히 다른 아우라를 지니고 있으며, 전지현은 하늘색, 이효리는 오렌지색 아우라가 인상 깊었다고 회상합니다.",
+ "topics": [
+  "성격·기질",
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "아우라가 선명하고 밝게 비춤"
+    }
+   ],
+   "outcome": "사람들에게 인기가 많다",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "아우라가 선명하게 밝게 잘 비추신 분들은 다 인기가 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "연예인"
+    }
+   ],
+   "outcome": "일반인과 아우라가 확연히 다르다",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "연예인들은 아우라가 확실히 뭔가 달라요."
+  }
+ ],
+ "insights": [
+  "인기는 핑크색 등 특정 색상의 영향보다는 아우라의 선명도와 밝기(투명도)에 달려 있다.",
+  "사람마다 고유한 아우라 색채를 띠며, 개성과 영향력이 뚜렷한 연예인은 색상이 매우 명확하다."
+ ],
+ "keywords": [
+  "아우라",
+  "아우라색",
+  "인기",
+  "연예인",
+  "전지현",
+  "이효리",
+  "오패시티",
+  "빛"
+ ]
+}

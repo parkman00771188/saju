@@ -1,0 +1,200 @@
+{
+ "source": "data/FORCETELLERKR/shorts/026_사주 일간별 금사빠 순위😻.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "nYwmRIznMEU",
+ "title": "사주 일간별 금사빠 순위😻",
+ "url": "https://www.youtube.com/watch?v=nYwmRIznMEU",
+ "upload": "20260729",
+ "duration_sec": "59",
+ "views": "30953",
+ "chars": 479,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:28",
+ "summary": "사주 십천간 일간별로 사랑에 빠지는 속도(금사빠 순위)와 연애 특성을 정리한 영상이다. 1위 병화와 2위 갑목은 상대에게 꽂히면 즉시 직진하거나 미래를 상상할 정도로 사랑에 빠르게 빠진다. 반면 기토와 무토 같은 토 일간은 기준이 까다롭거나 확고한 바운더리를 지녀 사랑에 쉽게 빠지지 않는 것으로 나타났다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    }
+   ],
+   "outcome": "눈에 들기 까다롭고 쉽게 사랑에 빠지지 않는다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "10위는 기토, 기토의 눈에 들기 위해서는 준비해야 할 것이 산더미야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "포용력 있어 보이나 개인적 경계가 확고하다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "9위 무토, 잘 받아주는 것 같지만 자신만의 바운더리가 확고해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    }
+   ],
+   "outcome": "상대방에게 천천히 스며들며 마음을 연다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "8위는 계수, 천천히 스며드는 편."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "자신의 기준에 부합해야만 곁을 내어준다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "7위 신금, 기준에만 부합하면 곁을 내줘."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    }
+   ],
+   "outcome": "확실한 이상형을 만나면 곧바로 직진한다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6위 경금, 천년의 이상형이면 곧바로 직진."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "다가오는 사람을 막지 않고 유연하게 받는다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "5위는 임수, 오는 사람 안 막습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    }
+   ],
+   "outcome": "온기와 정을 필요로 하여 마음에 품는다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4위 정화, 정화는 온기가 필요해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    }
+   ],
+   "outcome": "곁에 사람이 필요해 쉽게 정을 붙인다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "3위는 을목, 을목은 사람이 필요해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "꽂히면 물불 안 가리고 직진한다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2위는 바로 갑목, 꽂히면 물불 안 가리고 무조건 직진하는 불도저야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "가장 빠르게 반해 결혼까지 상상한다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "대망의 1위는 두구두구두구두구두구두구 병화. 병화는 이미 그 사람과의 결혼식을 상상 중이래."
+  }
+ ],
+ "insights": [
+  "목(木)과 화(火) 일간은 온기나 직진성을 지녀 상대에게 빠르고 적극적으로 반응하는 경향을 보인다.",
+  "토(土) 일간은 자기 영역이나 기준이 확고하여 상대방을 받아들이는 데 신중함과 절차가 필요하다."
+ ],
+ "keywords": [
+  "일간",
+  "금사빠",
+  "연애스타일",
+  "병화",
+  "갑목",
+  "을목",
+  "정화",
+  "기토",
+  "무토",
+  "신금"
+ ]
+}

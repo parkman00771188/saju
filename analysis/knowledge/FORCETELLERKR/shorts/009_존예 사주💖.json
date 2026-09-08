@@ -1,0 +1,67 @@
+{
+ "source": "data/FORCETELLERKR/shorts/009_존예 사주💖.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "SNHS7y-kiNM",
+ "title": "존예 사주💖",
+ "url": "https://www.youtube.com/watch?v=SNHS7y-kiNM",
+ "upload": "20260824",
+ "duration_sec": "42",
+ "views": "35331",
+ "chars": 331,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:27",
+ "summary": "신사(辛巳)는 자신만의 독특한 매력을 잘 살리고 자기표현 능력이 뛰어납니다. 옷이나 메이크업에서 유행을 따르기보다는 본인의 개성과 장점을 확실하게 부각하여 매력적인 외모를 드러냅니다. 다만 자신의 취향과 의사가 확고하여 타인이 보기에 예민한 인상을 줄 수 있습니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "신사"
+    }
+   ],
+   "outcome": "자신만의 독특한 개성과 매력을 극대화함",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "전형적인 미인상은 아닌데 약간 자신만의 독특한 매력을 진짜 잘 살려요. 옷 같은 거 살 때도 절대 유행하는 거 그대로 안 삽니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "신사"
+    }
+   ],
+   "outcome": "자기주관과 취향이 확고해 예민하게 보임",
+   "tag": "예민·섬세",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 취향, 내 의사가 확고해서 무난하게 보이는 사람은 아니에요. 그래서 남들이 볼 때도 예민한 사람으로 보입니다."
+  }
+ ],
+ "insights": [
+  "신사는 장점을 드러내는 자기표현력과 확고한 스타일링 감각을 통해 본인만의 독보적인 분위기를 형성한다."
+ ],
+ "keywords": [
+  "신사",
+  "신사일주",
+  "존예",
+  "개성",
+  "스타일",
+  "예민함",
+  "매력"
+ ]
+}

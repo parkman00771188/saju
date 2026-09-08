@@ -1,0 +1,85 @@
+{
+ "source": "data/FORCETELLERKR/shorts/189_건들면 큰일 나는 기존쎄 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "5zpRMTBzmTI",
+ "title": "건들면 큰일 나는 기존쎄 사주",
+ "url": "https://www.youtube.com/watch?v=5zpRMTBzmTI",
+ "upload": "20260305",
+ "duration_sec": "43",
+ "views": "19455",
+ "chars": 390,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:34",
+ "summary": "괴강살은 북두칠성의 으뜸별을 뜻하는 신살로, 압도적인 추진력과 강한 존재감을 지닌 '기 센 사주'의 대표격입니다. 과거에는 기피되기도 했으나 현대에는 자신만의 독보적인 스타일을 무기 삼아 크게 성공할 수 있는 사주로 평가받습니다. 다만 고집이 세고 독단적으로 일을 주도하려는 성향이 강하므로 타인을 부드럽게 포용하는 태도를 기르는 것이 중요합니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "괴강살"
+    }
+   ],
+   "outcome": "압도적인 추진력과 강한 존재감을 보인다",
+   "tag": "리더십·카리스마",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "괴강살이 있는 사람들은 압도적인 추진력과 강한 존재감이 있어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "괴강살"
+    }
+   ],
+   "outcome": "나만의 개성과 스타일로 크게 성공한다",
+   "tag": "발복·성공",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "개성이 실력인 요즘엔 나만의 스타일로 성공할 수 있는 초대박 사주라고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "괴강살"
+    }
+   ],
+   "outcome": "고집이 세고 독단적으로 일을 이끈다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "부드럽게 사람들을 아우르는 능력을 갖출 것",
+   "quote": "고집이 세고 독단적으로 일을 이끌어가는 경향이 있어 부드럽게 사람들을 아우르는 능력만 갖춘다면 어디서든 잘해낼 수 있을 테니까"
+  }
+ ],
+ "insights": [
+  "과거에는 기가 세다고 기피되던 괴강살도 개성이 중시되는 현대 사회에서는 강력한 성공의 동력으로 재평가된다."
+ ],
+ "keywords": [
+  "괴강살",
+  "기존쎄",
+  "추진력",
+  "존재감",
+  "독단성",
+  "신살",
+  "카리스마"
+ ]
+}

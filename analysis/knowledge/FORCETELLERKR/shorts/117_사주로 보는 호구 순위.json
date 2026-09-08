@@ -1,0 +1,203 @@
+{
+ "source": "data/FORCETELLERKR/shorts/117_사주로 보는 호구 순위.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "6BwDVQFeHbA",
+ "title": "사주로 보는 호구 순위",
+ "url": "https://www.youtube.com/watch?v=6BwDVQFeHbA",
+ "upload": "20260505",
+ "duration_sec": "58",
+ "views": "151375",
+ "chars": 460,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "사주 10개 일간별 호구 성향과 인간관계 대처 방식을 순위로 정리한 내용이다. 신금, 기토, 임수, 계수는 계산과 계략이 있거나 선을 그어 호구 잡히지 않는 반면, 을목·정화·무토·경금·갑목은 각기 다른 이유로 호구 기질을 보인다. 특히 1위인 병화는 남에게 모든 것을 다 퍼주는 성향으로 사기를 당하기 쉬우므로 각별히 주위를 경계해야 한다고 강조한다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "불쌍한 호구들을 구제해 주는 구원자 역할을 한다",
+   "tag": "희생·봉사 기질",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "꼴등은 신금. 불쌍한 호구들을 구해주는 구원자야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    }
+   ],
+   "outcome": "언제나 머릿속으로 계산기를 두드리며 실속을 챙긴다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "9위 기토. 언제나 머릿속으로 계산기를 두드리고 있지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "잘 받아주지만 선을 넘으면 조용히 손절한다",
+   "tag": "기타",
+   "category": "궁합·인간관계",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "8위는 임수. 잘 받아주지만 선 넘으면 조용히 손절해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    }
+   ],
+   "outcome": "호구 같아 보여도 그 배후에 치밀한 계략이 있다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "7위 계수. 계수가 호구 같아 보인다면 그것 또한 계수의 계략이야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    }
+   ],
+   "outcome": "야무진 성향이지만 귀가 얇아 당하기 쉽다",
+   "tag": "소심·우유부단",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "공동 5위 을목, 정화. 을목은 야무지지만 귀가 얇고,"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    }
+   ],
+   "outcome": "자신이 꽂힌 사람에게만 한정하여 호구가 된다",
+   "tag": "기타",
+   "category": "궁합·인간관계",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정화는 자기가 꽂힌 사람 한정 호구야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "자신이 당했다는 사실을 한참 뒤에야 깨닫는다",
+   "tag": "배신·뒤통수",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4위 무토. 자기가 당했다는 걸 한참 뒤에 깨달아."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    }
+   ],
+   "outcome": "겉보기와 달리 실제로는 헛똑똑이 성향을 보인다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "3위는 경금. 안 그래 보여도 헛똑똑이라고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "잘난 척하지만 알고 보면 순수한 바보 기질이 있다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2위는 갑목. 잘난 척하지만 알고 보면 순수한 바보야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "모든 것을 퍼주다 사기를 당하기 쉽다",
+   "tag": "사기·법적 문제",
+   "category": "금전",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "사기당하지 않도록 항상 주위를 경계해야 해.",
+   "quote": "대망의 1위는 바로 병화. 모든 걸 퍼주는 호구의 아이콘이야. 사기당하지 않도록 항상 주위를 경계해야 해."
+  }
+ ],
+ "insights": [
+  "일간의 오행적 성정에 따라 남에게 베풀다 손해를 보는 유형과 계산·경계를 통해 실속을 차리는 유형으로 나뉜다.",
+  "겉으로 드러나는 똑똑함이나 당당함과 실제 대인관계에서의 순진함 및 호구력은 다를 수 있다."
+ ],
+ "keywords": [
+  "일간",
+  "호구",
+  "병화",
+  "갑목",
+  "경금",
+  "무토",
+  "을목",
+  "정화",
+  "계수",
+  "임수",
+  "기토",
+  "신금"
+ ]
+}

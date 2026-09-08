@@ -1,0 +1,51 @@
+{
+ "source": "data/FORCETELLERKR/shorts/1037_Quality of free TAROT readings at link in profile #tarot #tarotreading.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "ZOjA8X-mE2k",
+ "title": "Quality of free TAROT readings at link in profile #tarot #tarotreading #tarotreader #tarotcards",
+ "url": "https://www.youtube.com/watch?v=ZOjA8X-mE2k",
+ "upload": "20220622",
+ "duration_sec": "44",
+ "views": "1536",
+ "chars": 261,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "타로 카드 B를 선택한 사람을 위한 리딩으로, 취미나 덕질을 바탕으로 기술을 훈련해 전문화할 때 성공과 수익이 찾아온다고 설명합니다. 계약을 맺는 습관이 성공의 핵심 열쇠가 되며, 초기에 수입이 일정하지 않더라도 꾸준히 견뎌내는 것이 중요하다고 조언합니다.",
+ "topics": [
+  "직장",
+  "금전",
+  "개운·조언"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "타로 카드 B 선택"
+    }
+   ],
+   "outcome": "취미와 덕질을 기술로 발전시켜 성공한다",
+   "tag": "발복·성공",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "좋아하는 것이 돈이 되도록 기술을 훈련하고 계약을 맺는 습관을 들여라.",
+   "quote": "당신의 성공은 취미에서 온다. 소위 덕질이라는 것을 하고 있는지 생각해 보라. 반드시 기술을 익혀라. 좋아하는 것이 돈이 되려면 기술의 훈련이 필요하다."
+  }
+ ],
+ "insights": [],
+ "keywords": [
+  "타로",
+  "취미",
+  "덕질",
+  "기술훈련",
+  "계약",
+  "성공",
+  "수익"
+ ]
+}

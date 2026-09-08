@@ -1,0 +1,53 @@
+{
+ "source": "data/FORCETELLERKR/shorts/1038_Quality of free TAROT readings at link in profile #tarot #tarotreading.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "KJCGh_-JVGw",
+ "title": "Quality of free TAROT readings at link in profile #tarot #tarotreading #tarotreader #tarotcards",
+ "url": "https://www.youtube.com/watch?v=KJCGh_-JVGw",
+ "upload": "20220622",
+ "duration_sec": "44",
+ "views": "946",
+ "chars": 264,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "본 영상은 타로 리딩 기반의 운세 메시지로, 사주·명리학적 분석 요소는 포함되어 있지 않습니다. 영상을 선택한 사람에게 현명하고 온화하며 물질적으로 도움을 줄 귀인이 찾아올 것임을 예고합니다. 귀인을 통해 새로운 기회와 위대한 성공을 얻을 수 있으므로 먼저 다가가고 올바른 행실을 유지하라고 조언합니다.",
+ "topics": [
+  "운세 흐름",
+  "궁합·인간관계",
+  "개운·조언"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "타로 리딩 선택"
+    }
+   ],
+   "outcome": "귀인의 물질적 도움으로 새 기회와 성공을 얻음",
+   "tag": "발복·성공",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "주변 사람들을 잘 관찰하여 먼저 다가가고 평소 행실을 바르게 유지해야 한다.",
+   "quote": "이 사람은 분명하게 물질적으로 행운을 해줄 예정이니 행실을 바르게 해야 한다. 귀인의 도움으로 새로운 기회가 열리고 위대한 성공을 갖게 된다."
+  }
+ ],
+ "insights": [
+  "본 영상은 사주팔자(간지·십성·신살 등)의 명리학적 조건에 기반한 풀이가 아닌 타로 선택 리딩 콘텐츠입니다."
+ ],
+ "keywords": [
+  "타로",
+  "귀인",
+  "물질적 행운",
+  "성공",
+  "기회",
+  "인간관계",
+  "행실"
+ ]
+}

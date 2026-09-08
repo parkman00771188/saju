@@ -1,0 +1,53 @@
+{
+ "source": "data/FORCETELLERKR/shorts/227_왕이 도와줘서 잘 사는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "b7XQxtP6cmU",
+ "title": "왕이 도와줘서 잘 사는 사주",
+ "url": "https://www.youtube.com/watch?v=b7XQxtP6cmU",
+ "upload": "20260202",
+ "duration_sec": "46",
+ "views": "22354",
+ "chars": 411,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:35",
+ "summary": "황은대사(皇恩大赦)는 임금의 은혜로 큰 용서를 받는다는 의미를 지닌 길성입니다. 사주에 황은대사가 있으면 곤란하거나 어려운 상황에 처했을 때 임금처럼 강력한 귀인이 나타나 도움을 줍니다. 아이유나 유재석처럼 유년기나 초반의 경제적·상황적 어려움 속에서도 선배나 귀인의 전폭적인 지지를 얻어 성공으로 나아갈 수 있습니다.",
+ "topics": [
+  "궁합·인간관계",
+  "운세 흐름",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "황은대사"
+    }
+   ],
+   "outcome": "곤란한 상황에서 위대한 귀인이 나타나 도움을 준다",
+   "tag": "어머니·윗사람 덕",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "이 기운이 있으면 곤란한 상황에 처했을 때 임금님처럼 위대한 귀인이 나타나서 도와줄 수 있다고."
+  }
+ ],
+ "insights": [
+  "황은대사(皇恩大赦)는 곤란한 처지에 봉착했을 때 강력한 귀인이나 윗사람의 조력을 받아 위기를 모면하고 성공의 발판을 마련하게 돕는 길성이다."
+ ],
+ "keywords": [
+  "황은대사",
+  "신살",
+  "길성",
+  "귀인",
+  "아이유",
+  "유재석",
+  "조력자"
+ ]
+}

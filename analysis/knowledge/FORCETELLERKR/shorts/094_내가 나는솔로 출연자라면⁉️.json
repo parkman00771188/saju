@@ -1,0 +1,184 @@
+{
+ "source": "data/FORCETELLERKR/shorts/094_내가 나는솔로 출연자라면⁉️.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "wJ4xkOD4IZ8",
+ "title": "내가 나는솔로 출연자라면⁉️",
+ "url": "https://www.youtube.com/watch?v=wJ4xkOD4IZ8",
+ "upload": "20260527",
+ "duration_sec": "42",
+ "views": "12918",
+ "chars": 380,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:30",
+ "summary": "연애 리얼리티 프로그램에 출연했을 때 일주별로 나타나는 대표적인 특징과 역할을 분석한 내용이다. 임진과 갑인은 기행으로 시청률을 견인하는 역할을 하고, 정해와 임인은 어장을 치며 을유는 그 어장에 쉽게 걸려드는 포지션이다. 한편 무진과 갑진은 순수한 미소로 첫인상 몰표를 받는 반면, 경진과 병진은 연애 자체보다 인지도와 인플루언서 활동을 목적으로 삼는 특징을 보인다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임진"
+    }
+   ],
+   "outcome": "기행으로 시청률을 책임지며 주목받음",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임진, 갑인. 시청률을 책임지는 기행으로 제작진을 행복하게 해 준다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "갑인"
+    }
+   ],
+   "outcome": "기행으로 시청률을 책임지며 주목받음",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임진, 갑인. 시청률을 책임지는 기행으로 제작진을 행복하게 해 준다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "정해"
+    }
+   ],
+   "outcome": "이성 관계에서 어장을 침",
+   "tag": "바람·삼각관계",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정해, 이민과 을유. 정해, 이민이 치는 어장에 속절없이 걸려드는 물고기 을유야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임인"
+    }
+   ],
+   "outcome": "이성 관계에서 어장을 침",
+   "tag": "바람·삼각관계",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정해, 이민과 을유. 정해, 이민이 치는 어장에 속절없이 걸려드는 물고기 을유야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "을유"
+    }
+   ],
+   "outcome": "상대방의 어장에 속절없이 걸려듦",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정해, 이민과 을유. 정해, 이민이 치는 어장에 속절없이 걸려드는 물고기 을유야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "무진"
+    }
+   ],
+   "outcome": "순수한 미소로 첫인상 몰표를 받음",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "무진, 갑진. 때묻지 않은 순수한 미소로 첫인상 선택에서 몰표를 받을 수 있다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "갑진"
+    }
+   ],
+   "outcome": "순수한 미소로 첫인상 몰표를 받음",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "무진, 갑진. 때묻지 않은 순수한 미소로 첫인상 선택에서 몰표를 받을 수 있다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "경진"
+    }
+   ],
+   "outcome": "연애보다 인지도와 인플루언서를 노림",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "경진, 병진. 연애는 사실 관심 없고 인지도를 얻어 인플루언서가 되는 걸 노리고 나왔어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "병진"
+    }
+   ],
+   "outcome": "연애보다 인지도와 인플루언서를 노림",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "경진, 병진. 연애는 사실 관심 없고 인지도를 얻어 인플루언서가 되는 걸 노리고 나왔어."
+  }
+ ],
+ "insights": [
+  "일주의 고유한 기질에 따라 연애 리얼리티 프로그램 등 이성 교제 환경에서 취하는 태도와 목적이 크게 달라진다."
+ ],
+ "keywords": [
+  "나는솔로",
+  "일주",
+  "임진일주",
+  "갑인일주",
+  "정해일주",
+  "임인일주",
+  "을유일주",
+  "무진일주",
+  "갑진일주",
+  "경진일주",
+  "병진일주"
+ ]
+}

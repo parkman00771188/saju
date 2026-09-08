@@ -166,7 +166,7 @@ CLAIMS = {
     "재물 기복": ("금전", -1, [r"기복이", r"들락날락", r"들어왔다 나가", r"불안정한 수입", r"수입이 불규칙"]),
     # 연애
     "인기·매력": ("연애", 1, [r"인기", r"매력", r"끌리", r"호감", r"이성이 (많|따르|붙)", r"이성에게"]),
-    "연애·만남": ("연애", 1, [r"연애(운|가|를)", r"새로운 (사람|인연)", r"만남", r"인연이 (들어|생기|오)", r"짝"]),
+    "연애·만남": ("연애", 1, [r"연애(운|가|를)", r"새로운 (사람|인연)", r"만남", r"인연이 (들어|생기|오)", r"짝(이|을|사랑)"]),
     "결혼·배우자 인연": ("연애", 1, [r"결혼(운|을|이|하)", r"배우자(를|가|와|복)", r"혼인", r"신혼"]),
     "이별·이혼": ("연애", -1, [r"이별", r"이혼", r"헤어지", r"헤어질", r"파경", r"별거"]),
     "바람·삼각관계": ("연애", -1, [r"바람", r"외도", r"삼각", r"양다리", r"불륜", r"애인이 (둘|여러)"]),
@@ -174,7 +174,7 @@ CLAIMS = {
     "결혼이 늦음": ("연애", -1, [r"결혼이 늦", r"늦게 결혼", r"만혼", r"결혼을 늦"]),
     "이성 문제·구설": ("연애", -1, [r"이성 문제", r"여자 문제", r"남자 문제", r"이성으로 인한", r"염문"]),
     # 건강
-    "수술·큰 병": ("건강", -1, [r"수술", r"큰 병", r"입원", r"암", r"중병"]),
+    "수술·큰 병": ("건강", -1, [r"수술", r"큰 병", r"입원", r"암(에|이|을|은|으로|도| 진단| 수술)", r"중병"]),
     "사고·부상": ("건강", -1, [r"사고", r"다치", r"부상", r"골절", r"교통"]),
     "스트레스·신경": ("건강", -1, [r"스트레스", r"신경이 (예민|날카|쓰)", r"신경성", r"신경쇠약", r"강박"]),
     "우울·불안": ("건강", -1, [r"우울", r"불안(?!정)", r"공황", r"무기력", r"의욕이 없"]),
@@ -182,9 +182,9 @@ CLAIMS = {
     "과로·피로": ("건강", -1, [r"과로", r"피로", r"지치", r"번아웃", r"체력이 (떨어|달리|약)"]),
     "소화기·위장": ("건강", -1, [r"위장", r"소화", r"위가", r"장이 (약|안)", r"비위"]),
     "간·담·눈": ("건강", -1, [r"간(이|에) (안 좋|나쁘|약|무리)", r"간 기능", r"간 건강", r"간장", r"담낭", r"눈이 (안 좋|나빠|약)", r"시력"]),
-    "심장·혈압": ("건강", -1, [r"심장", r"혈압", r"심혈관", r"뇌졸중", r"뇌"]),
+    "심장·혈압": ("건강", -1, [r"심장", r"혈압", r"심혈관", r"뇌졸중", r"뇌(에|가|를|출혈|경색|질환| 쪽)"]),
     "신장·방광·생식": ("건강", -1, [r"신장", r"방광", r"생식", r"자궁", r"비뇨", r"호르몬"]),
-    "폐·기관지·피부": ("건강", -1, [r"폐", r"기관지", r"호흡기", r"피부", r"비염", r"천식"]),
+    "폐·기관지·피부": ("건강", -1, [r"폐(가|에|를|장|암|렴|기능| 기능| 건강|랑|와|나)", r"기관지", r"호흡기", r"피부", r"비염", r"천식"]),
     "뼈·관절·근육": ("건강", -1, [r"뼈(가|에|를)", r"관절", r"허리", r"디스크", r"근육", r"목이 (아프|안 좋)"]),
     "건강 회복": ("건강", 1, [r"건강이 (좋아|회복|나아)", r"기력이 (살아|돌아|회복)", r"몸이 (좋아|가벼)"]),
     # 학업
@@ -195,7 +195,7 @@ CLAIMS = {
     "학업 중단·방황": ("학업", -1, [r"공부가 (안|잘 안)", r"학업(이|을) (중단|포기|그만)", r"방황", r"집중이 (안|잘 안)"]),
     # 가족·관계
     "부모와 갈등·인연": ("가족", -1, [r"부모(와|랑|님과) (갈등|사이|인연이 약|떨어져)", r"아버지(와|랑|하고) (갈등|사이가|인연)", r"어머니(와|랑|하고) (갈등|사이가|인연)"]),
-    "어머니·윗사람 덕": ("가족", 1, [r"어머니(의|가) (덕|도움|복)", r"윗사람(의|이) (도움|덕|끌어)", r"귀인", r"도움을 받"]),
+    "어머니·윗사람 덕": ("가족", 1, [r"어머니(의|가) (덕|도움|복)", r"윗사람(의|이) (도움|덕|끌어)", r"(?<!천을)(?<!천덕)(?<!월덕)(?<!태극)(?<!문창)(?<!학당)(?<!복성)(?<!천주)(?<!천의)(?<!천관)(?<!천복)(?<!국인)귀인(?!살)", r"도움을 받"]),
     "자식 인연·출산": ("가족", 0, [r"자식(이|을|과|복|운|에)", r"자녀", r"출산", r"임신", r"아이를 (낳|갖)"]),
     "형제·동료와 갈등": ("가족", -1, [r"형제(와|랑|간) (갈등|다툼|사이)", r"동료(와|랑) (갈등|다툼|경쟁)", r"친구(와|랑|한테) (배신|갈등|돈)"]),
     "배신·뒤통수": ("가족", -1, [r"배신", r"뒤통수", r"사기를 당", r"이용당", r"믿었던"]),
@@ -255,7 +255,7 @@ CLAIMS = {
     # 학업 (추가)
     "고시·전문 자격": ("학업", 0, [r"고시", r"전문 자격", r"국가 자격", r"공인", r"전문직 시험"]),
     "재수·시험 반복": ("학업", -1, [r"재수", r"삼수", r"시험에 (떨어|미끄)", r"불합격", r"낙방"]),
-    "예체능·실기": ("학업", 0, [r"예체능", r"실기", r"미술", r"음악", r"체육"]),
+    "예체능·실기": ("학업", 0, [r"예체능", r"실기", r"미술(을|에|계|적|학|이|은|과| 전공| 쪽)", r"음악(을|에|계|적|이|은|과| 전공| 쪽| 하는)", r"체육(을|에|계|과|이|은| 전공| 쪽)", r"예술 (계열|쪽|전공)"]),
     "대기만성·늦공부": ("학업", 0, [r"늦게 (공부|배우)", r"늦공부", r"대기만성", r"뒤늦게"]),
     # 가족 (추가)
     "아버지 덕·인연 약함": ("가족", -1, [r"아버지(와|가|의) (인연|덕이 약|덕이 없|일찍)", r"부친(과|의) (인연|덕)", r"아버지가 (없|일찍)"]),
@@ -297,6 +297,7 @@ def load_docs():
                     continue
                 raw = io.open(p, encoding="utf-8").read()
                 body = raw.split("-" * 60, 1)[-1]
+                body = re.sub(r"\[[^\]\n]{1,10}\]", " ", body)  # [음악]·[박수]·[웃음] 같은 자막 태그 제거
                 text = asr_normalize(re.sub(r"\s+", " ", body).strip(), ASR_COUNTER)
                 docs.append({"id": r["video_id"], "title": r.get("title", ""), "channel": ch, "text": text, "chars": len(text)})
     return docs
@@ -377,7 +378,7 @@ def analyze(key, rx, pats, docs, cats, pos_rx, neg_rx, global_tf, total_tokens, 
     # 주장: 2편 이상에서 등장한 것만, 문서 수 기준 정렬
     claims = [[label, c, len(claim_docs[label])] for label, c in claim_counter.items() if len(claim_docs[label]) >= 2]
     claims.sort(key=lambda x: (-x[2], -x[1]))
-    return {"mentions": total, "docs": len(per_doc), "polarity": polarity, "pos": pos, "neg": neg, "categories": categories, "keywords": keywords, "claims": claims[:14]}
+    return {"mentions": total, "docs": len(per_doc), "polarity": polarity, "pos": pos, "neg": neg, "categories": categories, "keywords": keywords, "claims": claims}
 
 
 YEAR_RX = re.compile(r"(?:20)?(2[3-7])\s?년|신년")
@@ -525,6 +526,24 @@ def main():
                 print("  %s %d/%d" % (name, i, len(rxs)))
     # 데이터 없는 패턴은 제외해 용량 절약
     out["patterns"] = {k: v for k, v in out["patterns"].items() if v["mentions"] > 0}
+    # 라벨별 기준율(base rate): 모든 개념에서 그 라벨이 함께 나온 문서 비율. 개념별 리프트 = (라벨 문서/개념 문서) ÷ 기준율
+    #  → 어떤 사주에나 나오는 흔한 이야기('연애·만남' 같은)는 리프트가 1 근처, 그 글자에서만 유독 자주 나오는 이야기는 리프트가 커진다
+    base_tot = sum(v["docs"] for v in out["concepts"].values()) or 1
+    base_agg = collections.Counter()
+    for v in out["concepts"].values():
+        for l, n, d in v["claims"]:
+            base_agg[l] += d
+    claim_base = {l: base_agg[l] / base_tot for l in CLAIMS if base_agg[l]}
+    for name in ("concepts", "patterns"):
+        for k, v in out[name].items():
+            cl = []
+            for l, n, d in v["claims"]:
+                b = claim_base.get(l)
+                rate = (d + (b or 0) * 30) / (max(1, v["docs"]) + 30)   # 수축: 표본이 작으면 기준율 쪽으로 당겨 과장 방지
+                lift = rate / b if b else 1.0
+                cl.append([l, n, d, round(min(lift, 9.99), 2)])
+            cl.sort(key=lambda x: -(x[2] * min(x[3], 4.0)))   # 문서 수 × 리프트(상한 4)
+            v["claims"] = cl[:16]
     years = analyze_years(docs, claim_rx, cats, pos_rx, neg_rx)
     print("연도 키 %d개: %s" % (len(years), ", ".join(sorted(years)[:12])))
     # ASR 교정 리포트
@@ -536,6 +555,7 @@ def main():
     meta = {"docs": len(docs), "chars": sum(d["chars"] for d in docs), "channels": sorted({(d["channel"], CHANNEL_NAME.get(d["channel"], d["channel"])) for d in docs}),
             "patterns_total": len(PATTERNS), "patterns_found": len(out["patterns"])}
     meta["claims"] = {label: [v[0], v[1]] for label, v in CLAIMS.items()}  # label -> [카테고리, 극성]
+    meta["claim_base"] = {l: round(b, 4) for l, b in claim_base.items()}  # label -> 개념 공출현 기준율
     out["meta"] = meta
     out["years"] = years
     with io.open(OUT_JSON, "w", encoding="utf-8") as f:

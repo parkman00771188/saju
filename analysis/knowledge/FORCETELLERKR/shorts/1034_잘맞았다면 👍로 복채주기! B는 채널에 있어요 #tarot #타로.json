@@ -1,0 +1,50 @@
+{
+ "source": "data/FORCETELLERKR/shorts/1034_잘맞았다면 👍로 복채주기! B는 채널에 있어요 #tarot #타로.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "zY7XHKUPXg8",
+ "title": "잘맞았다면 👍로 복채주기! B는 채널에 있어요 #tarot #타로",
+ "url": "https://www.youtube.com/watch?v=zY7XHKUPXg8",
+ "upload": "20220629",
+ "duration_sec": "34",
+ "views": "606",
+ "chars": 225,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:31",
+ "summary": "3개월 내의 운세를 다루는 타로 리딩 영상으로, A를 선택한 사람의 성공 키워드는 도전과 새로운 시도라고 제시합니다. 욕심이나 비현실적인 목표를 경계하고 멘토의 조언과 도움을 받아야 함을 강조합니다. 이러한 도전을 거쳐 새로운 분야의 전문가로 성공할 것이라고 전망합니다.",
+ "topics": [
+  "직장",
+  "운세 흐름",
+  "개운·조언"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "타로 선택지 A"
+    }
+   ],
+   "outcome": "새로운 분야의 전문가가 되어 성공한다",
+   "tag": "발복·성공",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "3개월 내",
+   "advice": "욕심이나 비현실적인 목표를 피하고 멘토의 조언과 도움을 적극적으로 구해야 한다.",
+   "quote": "도전의 결과로 새로운 분야의 전문가가 되어 결국 성공할 것이다."
+  }
+ ],
+ "insights": [],
+ "keywords": [
+  "타로",
+  "도전",
+  "새로운 시도",
+  "멘토",
+  "전문가",
+  "성공"
+ ]
+}

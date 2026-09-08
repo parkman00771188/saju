@@ -204,7 +204,7 @@ export function interpret(data) {
 
   // ---------- 원문 주장 층 ----------
   const CLAIM_META = kb.meta.claims || {};
-  const claimsOf = (key) => { const src = kb.concepts[key] || kb.patterns[key]; return (src?.claims || []).map(([label, n, docs]) => ({ label, n, docs, cat: CLAIM_META[label]?.[0] || '운', pol: CLAIM_META[label]?.[1] ?? 0 })); };
+  const claimsOf = (key) => { const src = kb.concepts[key] || kb.patterns[key]; return (src?.claims || []).map(([label, n, docs, lift = 1]) => ({ label, n, docs, lift, cat: CLAIM_META[label]?.[0] || '운', pol: CLAIM_META[label]?.[1] ?? 0 })); };
   const evidenceKeys = [
     [dayStem, `${S.title.split(' ')[0]} 일간`], [pillars.day.text, `${pillars.day.text} 일주`], [monthGod, `월지 ${monthGod}`], [detail.day.branchGod, `일지 ${detail.day.branchGod}`],
     ...sinsalNames.map((n) => [n, K.SINSAL[n]?.title || n]),
@@ -215,17 +215,25 @@ export function interpret(data) {
     ...['year', 'month', 'day', 'time'].filter((k) => detail[k]).map((k) => [`${{ year: '년', month: '월', day: '일', time: '시' }[k]}지+${detail[k].branchGod}`, `${{ year: '년', month: '월', day: '일', time: '시' }[k]}지 ${detail[k].branchGod}`]),
     current.daeun ? [`${current.daeun.branchGod}운`, `${current.daeun.branchGod} 대운`] : null,
   ].filter(Boolean);
+  // 키 특이도: 일주(60분의 1) 2.0 · 일간 1.5 · 격국/월지·일지 십성 1.2 · 오행 과다·결핍/구조 1.0 · 신살·신강신약·자리 십성·대운 0.7
+  const keySpec = (key) => key === pillars.day.text ? 2.0 : key === dayStem ? 1.5 : (key === gyeok.key || key === monthGod || key === detail.day.branchGod || key.includes('+')) ? 1.2 : (/(과다|결핍)$/.test(key) || (P.STRUCT && P.STRUCT[key])) ? 1.0 : 0.7;
   const evidence = [];
   for (const [key, title] of evidenceKeys) { if (evidence.some((e) => e.key === key)) continue; const claims = claimsOf(key); if (claims.length) evidence.push({ key, title, claims, stats: kb.concepts[key] || kb.patterns[key] }); }
   const evidenceByCat = {};
   for (const e of evidence) for (const c of e.claims) {
     const bucket = (evidenceByCat[c.cat] ||= {});
-    const row = (bucket[c.label] ||= { label: c.label, pol: c.pol, weight: 0, docs: 0, n: 0, from: [] });
-    row.weight += c.docs * (e.key === pillars.day.text || e.key === dayStem ? 1.5 : 1); row.docs += c.docs; row.n += c.n || 0;
+    const row = (bucket[c.label] ||= { label: c.label, pol: c.pol, weight: 0, docs: 0, n: 0, from: [], liftSum: 0, fromW: {} });
+    // 리프트(그 글자에서 유독 자주 나오는 정도)로 가중: 어떤 사주에나 나오는 흔한 이야기는 내려가고, 이 조합에서 두드러진 이야기가 올라온다
+    const w = c.docs * keySpec(e.key) * Math.min(Math.max(c.lift || 1, 0.5), 4); row.weight += w; row.docs += c.docs; row.n += c.n || 0; row.liftSum += (c.lift || 1) * c.docs; row.fromW[e.title] = (row.fromW[e.title] || 0) + w; (row.fromN ||= {})[e.title] = (row.fromN[e.title] || 0) + c.docs;
     if (!row.from.includes(e.title)) row.from.push(e.title);
   }
-  for (const cat of Object.keys(evidenceByCat)) evidenceByCat[cat] = Object.values(evidenceByCat[cat]).sort((a, b) => b.weight - a.weight).slice(0, 8).map((r) => ({ ...r, text: P.CLAIM_TEXT[r.label] || '' }));
-  const evidenceSummary = (() => { const all = Object.values(evidenceByCat).flat().sort((a, b) => b.weight - a.weight); return { pos: all.filter((r) => r.pol > 0).slice(0, 6), neg: all.filter((r) => r.pol < 0).slice(0, 6), total: evidence.reduce((a, e) => a + (e.stats?.docs || 0), 0) }; })();
+  for (const cat of Object.keys(evidenceByCat)) {
+    const rows = Object.values(evidenceByCat[cat]).map((r) => { const from = Object.keys(r.fromW).sort((a, b) => r.fromW[b] - r.fromW[a]); return { ...r, from, fromN: from.map((t) => [t, r.fromN?.[t] || 0]), lift: r.docs ? Math.round((r.liftSum / r.docs) * 10) / 10 : 1 }; }).sort((a, b) => b.weight - a.weight);
+    const distinct = rows.filter((r) => r.lift >= 0.9);   // 평균보다 덜 나오는(흔하기만 한) 이야기는 뒤로
+    evidenceByCat[cat] = (distinct.length >= 3 ? distinct : rows).slice(0, 8).map((r) => ({ ...r, text: P.CLAIM_TEXT[r.label] || '' }));
+  }
+  const spread = (rows, n, perCat = 2) => { const cnt = {}; const out = []; for (const r of rows) { const c = CLAIM_META[r.label]?.[0] || '운'; if ((cnt[c] || 0) >= perCat) continue; cnt[c] = (cnt[c] || 0) + 1; out.push(r); if (out.length >= n) break; } return out; };
+  const evidenceSummary = (() => { const all = Object.values(evidenceByCat).flat().sort((a, b) => b.weight - a.weight); return { pos: spread(all.filter((r) => r.pol > 0), 6), neg: spread(all.filter((r) => r.pol < 0), 6), total: evidence.reduce((a, e) => a + (e.stats?.docs || 0), 0), all: spread(all, 8, 2) }; })();
   const kwKeys = [dayStem, pillars.day.text, monthGod, detail.day.branchGod, ...sinsalNames.slice(0, 3), ...structs.slice(0, 2), st.label === '중화' ? null : st.label].filter(Boolean);
   const keywords = [];
   for (const k of kwKeys) for (const w of (kb.concepts[k] || kb.patterns[k])?.keywords || []) if (!KW_JUNK.test(w) && !keywords.includes(w) && keywords.length < 14) keywords.push(w);

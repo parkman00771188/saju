@@ -1,0 +1,199 @@
+{
+ "source": "data/FORCETELLERKR/shorts/064_재미로 보는 사주 유형별 죽는 이유👻.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "L23fU0UdtfE",
+ "title": "재미로 보는 사주 유형별 죽는 이유👻",
+ "url": "https://www.youtube.com/watch?v=L23fU0UdtfE",
+ "upload": "20260623",
+ "duration_sec": "41",
+ "views": "20776",
+ "chars": 338,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:29",
+ "summary": "십천간 일간별로 목숨보다 소중하게 생각하는 핵심 가치와 기질적 특징을 유머러스하게 정리한 영상입니다. 갑목은 명예, 병화는 사랑, 정화는 헌신, 무토는 고집, 기토는 가족, 경금은 정의, 신금은 완벽을 위해 살아가며, 을목은 강인한 생명력으로 절대 죽지 않고, 임수와 계수는 귀찮음을 대표적인 성향으로 꼽았습니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "명예를 목숨보다 소중히 여긴다",
+   "tag": "명예·인정",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목 명예를 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    }
+   ],
+   "outcome": "질긴 생명력으로 절대 죽지 않는다",
+   "tag": "장수",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목 절대 죽지 않음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    }
+   ],
+   "outcome": "사랑을 목숨보다 소중히 여긴다",
+   "tag": "연애·만남",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화 사랑을 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    }
+   ],
+   "outcome": "헌신을 목숨보다 소중히 여긴다",
+   "tag": "희생·봉사 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정화 헌신을 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "자신의 고집을 끝까지 지킨다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "무토 고집을 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    }
+   ],
+   "outcome": "가족을 목숨보다 소중히 여긴다",
+   "tag": "가족 부양·책임",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "기토 가족을 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    }
+   ],
+   "outcome": "정의를 목숨보다 소중히 여긴다",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "경금 정의를 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    }
+   ],
+   "outcome": "완벽함을 목숨보다 소중히 여긴다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "신금 완벽을 위해 죽음."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "만사를 귀찮아하는 성향이 강하다",
+   "tag": "게으름·나태",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수, 계수 귀찮아 죽겠다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    }
+   ],
+   "outcome": "만사를 귀찮아하는 성향이 강하다",
+   "tag": "게으름·나태",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수, 계수 귀찮아 죽겠다."
+  }
+ ],
+ "insights": [
+  "일간은 사주명식에서 개인의 본질과 핵심 가치관을 대변하는 기준이 된다."
+ ],
+ "keywords": [
+  "일간",
+  "갑목",
+  "을목",
+  "병화",
+  "정화",
+  "무토",
+  "기토",
+  "경금",
+  "신금",
+  "임수",
+  "계수"
+ ]
+}

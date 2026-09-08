@@ -1,0 +1,68 @@
+{
+ "source": "data/FORCETELLERKR/shorts/219_길치인 이유 사주에 있음🫢.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "b--QOYRIhOA",
+ "title": "길치인 이유 사주에 있음🫢",
+ "url": "https://www.youtube.com/watch?v=b--QOYRIhOA",
+ "upload": "20260205",
+ "duration_sec": "23",
+ "views": "28680",
+ "chars": 241,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:34",
+ "summary": "사주에 재성이 없는 사람은 공간 감각이나 방향 감각이 부족하여 지도 없이는 길을 찾기 어려운 모태 길치가 되기 쉽습니다. 반대로 사주에 재성이 많은 사람은 길을 잘 찾아 일행의 앞에서 무리를 이끄는 인간 내비게이션 역할을 담당합니다. 사주의 재성 유무가 일상 속 길찾기 능력과 연관되어 있음을 설명합니다.",
+ "topics": [
+  "성격·기질",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성 없음",
+     "value": "재성"
+    }
+   ],
+   "outcome": "지도 없이는 길을 못 찾는 길치가 되기 쉽다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "저는 사주에 재성이 없는데요, 아직도 점심 먹으러 갈 때 지도 없으면 못 갑니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 과다",
+     "value": "재성"
+    }
+   ],
+   "outcome": "길을 잘 찾아 일행의 앞장을 서서 안내한다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "항상 재성 많은 사람들이 앞장섭니다."
+  }
+ ],
+ "insights": [
+  "사주에서 재성의 유무와 다과는 공간 지각력 및 현실 환경 파악 능력(길찾기)과 연관 지어 해석할 수 있다."
+ ],
+ "keywords": [
+  "재성",
+  "무재사주",
+  "재다사주",
+  "길치",
+  "방향감각",
+  "공간지각",
+  "내비게이션"
+ ]
+}

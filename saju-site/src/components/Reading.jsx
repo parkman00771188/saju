@@ -96,7 +96,7 @@ function buildPages(R, data, digest) {
   const seun = R.years.find((yy) => yy.year === data.current.nowYear);
   const monthsNow = R.monthsOf(data.current.nowYear);
   const monthNow = monthsNow.find((m) => m.monthNo === data.current.nowMonth);
-  const evAll = Object.values(R.evidenceByCat).flat().sort((a, b) => b.weight - a.weight).slice(0, 7);
+  const evAll = R.evidenceSummary.all || Object.values(R.evidenceByCat).flat().sort((a, b) => b.weight - a.weight).slice(0, 7);
 
   const pages = [];
   pages.push({ id: 'cover', title: `${name}의 사주풀이`, cover: true, terms: ['사주팔자', '일간', '형국'], body: (
