@@ -459,7 +459,7 @@ function CategoryPage({ R, data, cat, digest }) {
       <Callout><b>{cat}운 {c.score}/5</b>. {c.headline || first(c.sections[0].paras[0])}</Callout>
       {c.gauge && <Gauge2 pct={c.gauge.value} left={c.gauge.left} right={c.gauge.right} color={m.color} />}
       <Sub>{c.sections[0].title}</Sub>{c.sections[0].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
-      {(c.personal || []).map((sec, si) => <Fragment key={si}><Divider /><Sub>{sec.title}</Sub>{sec.paras.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}{/사주 전문가들이 자주 짚는/.test(sec.title) && <Digest digest={digest} keys={[data.pillars.day.text, data.dayStem, `${data.dayStem}+Y${data.current.nowYear}`, ...(R.evidence || []).map((e) => e.key)]} cat={cat} n={6} title={`전문가들이 내 사주의 ${cat}을 실제로 이렇게 말해요`} />}</Fragment>)}
+      {(c.personal || []).map((sec, si) => <Fragment key={si}><Divider /><Sub>{sec.title}</Sub>{sec.paras.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}{/사주 전문가들이 자주 짚는/.test(sec.title) && <Digest digest={digest} keys={[data.pillars.day.text, data.dayStem, `${data.dayStem}+Y${data.current.nowYear}`, ...(R.evidence || []).map((e) => e.key)]} cat={cat} n={6} title={`전문가들이 내 사주의 ${cat}${cat === '연애' ? '을' : '을'} 실제로 이렇게 말해요`.replace('연애을', '연애를')} />}</Fragment>)}
       <Divider /><Sub>{c.sections[1].title}</Sub>{c.sections[1].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>앞으로 10년 {cat}운</Sub>
       <p className="chart-hint">👆 그래프의 <b>연도를 누르면</b> 그 해 열두 달 {cat}운이 아래에 열려요 · 지금 <b>{year}년</b></p>
