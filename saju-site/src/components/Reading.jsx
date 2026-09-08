@@ -378,7 +378,11 @@ function buildPages(R, data, digest) {
     </>
   ) });
 
-  return pages.map((p, i) => ({ ...p, num: p.cover ? 0 : i }));
+  // 페이지 순서: 나를 설명하는 장(일간~용신) → 전문가들이 말하는 나 → 구조·대운·각 운·올해·10년 → 세부 장(약한 고리, 네 기둥, 합충, 신살) → 조언·FAQ
+  const ORDER = ['cover', 'ilgan', 'climate', 'ilju', 'elements', 'gyeok', 'yong', 'evidence', 'structure', 'daeun', ...CATS.map((c) => `cat-${c}`), 'thisyear', 'years', 'issues', 'pillars', 'relations', 'sinsal', 'advice', 'faq'];
+  const rank = (id) => { const i = ORDER.indexOf(id); return i < 0 ? ORDER.length : i; };
+  const ordered = pages.slice().sort((x, y) => rank(x.id) - rank(y.id) || pages.indexOf(x) - pages.indexOf(y));
+  return ordered.map((p, i) => ({ ...p, num: p.cover ? 0 : i }));
 }
 
 function FaqList({ items, data }) {
