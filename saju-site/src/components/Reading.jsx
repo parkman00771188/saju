@@ -142,7 +142,7 @@ function buildPages(R, data) {
       <P words={['배우자']}>{`배우자상은 "${D.SPOUSE[data.pillars.day.branch]}"`}</P>
       <P>일지의 십이운성이 {data.detail.day.stage}이라 결혼 생활은 {D.STAGE_LIFE[data.detail.day.stage]}.</P>
       <Divider /><Sub>대인관계</Sub><P>{require_(data)}</P>
-      <More><P>지장간 {data.detail.day.hidden.map((h) => `${h.ko}(${h.god})`).join('·')}이 숨어 있어 배우자와 가정 안에 이 기운들이 함께 작용해요.</P>{iljuPat?.stats && <P>강의 원문에서 {data.pillars.day.text} 일주는 {iljuPat.stats.docs}편에서 다뤄졌고, 어조는 {iljuPat.stats.polarity > 0.15 ? '긍정 쪽' : iljuPat.stats.polarity < -0.15 ? '부정 쪽' : '중립'}이에요.</P>}</More>
+      <More><P>지장간 {data.detail.day.hidden.map((h) => `${h.ko}(${h.god})`).join('·')}이 숨어 있어 배우자와 가정 안에 이 기운들이 함께 작용해요.</P>{iljuPat?.stats && <P>사주 전문가들의 강의 {iljuPat.stats.docs}편에서 {data.pillars.day.text} 일주가 다뤄졌고, 어조는 {iljuPat.stats.polarity > 0.15 ? '긍정 쪽' : iljuPat.stats.polarity < -0.15 ? '부정 쪽' : '중립'}이에요.</P>}</More>
     </>
   ) });
 
