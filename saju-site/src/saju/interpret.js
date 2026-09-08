@@ -6,6 +6,7 @@ import { pickYong, GROUP_EL } from './yongshin.js';
 import { buildPersonal } from './personal.js';
 import { natalIssues, unEffect, dynLine } from './dynamics.js';
 import { strengthProfile } from './strengthProfile.js';
+import { yearExpert, yearExpertParas } from './yearExpert.js';
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
@@ -301,6 +302,9 @@ export function interpret(data) {
     return { head: K.LUCK[g.branchGod].head, summary, scores, texts, flags, overall, hasNeed, hasYong, hasGi, isGong };
   }
 
+  // ---------- 전문가 신년운세(일간·띠·일주·전체) ----------
+  const yeNow = yearExpert({ year: nowY, dayStem, yearBranch: pillars.year.branch, dayText: pillars.day.text });
+  const yeNext = yearExpert({ year: nowY + 1, dayStem, yearBranch: pillars.year.branch, dayText: pillars.day.text });
   // ---------- 원국의 약한 고리와 운의 보완/악화 ----------
   const issues = natalIssues({ data, prof, yong, climate, st, gongmangSet, groupEl });
   const withDyn = (g) => ({ ...g, dyn: unEffect(issues, g) });
@@ -384,7 +388,7 @@ export function interpret(data) {
   // ---------- 카테고리 ----------
   const nowItems = (cat) => [
     dLuck && dNow && { label: `현재 대운 ${dNow.text} (${dNow.age}세~)`, text: `${dLuck.texts[cat]} ${dynLine(unEffect(issues, dNow), '이 대운')}`.trim(), score: dLuck.scores[cat] },
-    sLuck && sNow && { label: `${sNow.year}년 세운 ${sNow.text}`, text: `${sLuck.texts[cat]} ${dynLine(unEffect(issues, sNow), '올해')}`.trim(), score: sLuck.scores[cat] },
+    sLuck && sNow && { label: `${sNow.year}년 세운 ${sNow.text}`, text: `${sLuck.texts[cat]} ${dynLine(unEffect(issues, sNow), '올해')} ${yearExpertParas(yeNow, cat, 2).slice(0, 2).join(' ')}`.trim(), score: sLuck.scores[cat] },
     mLuck && mNow && { label: `${current.nowMonth}월 월운 ${mNow.text}`, text: `${mLuck.texts[cat]} ${dynLine(unEffect(issues, mNow), '이달')}`.trim(), score: mLuck.scores[cat] },
   ].filter(Boolean);
   const patSection = (cat) => { const ps = patFor(cat); return ps.length ? { title: '이 사주의 조합에서', paras: ps.map((p) => `【${p.title}】 ${p.pos} 반대로 ${p.neg}`) } : null; };
@@ -559,7 +563,7 @@ export function interpret(data) {
   ];
 
   return {
-    strength: st, strengthProfile: sp, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues,
+    strength: st, strengthProfile: sp, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues, yearExpert: { now: yeNow, next: yeNext },
     evidence, evidenceByCat, evidenceSummary, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
     gyeok, yong, positions, roots, summary, meta: kb.meta,
   };

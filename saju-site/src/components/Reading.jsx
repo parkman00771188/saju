@@ -4,6 +4,7 @@ import { interpret } from '../saju/interpret.js';
 import { buildFaq } from '../saju/faq.js';
 import { buildGaeun } from '../saju/gaeun.js';
 import { eventFor, makeEventCtx } from '../saju/events.js';
+import { yearExpertOverview } from '../saju/yearExpert.js';
 import { monthRange } from '../saju/faq.js';
 import { READING_SOURCES } from '../saju/context.js';
 import { CATS, CAT_META, STEMS as KSTEMS, ELEMENTS as KEL, SINSAL as KSINSAL, TEN_GOD_GROUP } from '../data/knowledge.js';
@@ -306,6 +307,14 @@ function buildPages(R, data) {
         <Sub>올해의 다섯 가지 운</Sub>
         <div className="catrows">{CATS.map((k) => <div key={k} className="catrow"><b style={{ color: CAT_META[k].color }}>{k}</b><Score n={seun.luck.scores[k]} color={CAT_META[k].color} /><p>{first(seun.luck.texts[k])}</p></div>)}</div>
       </>}
+      {R.yearExpert?.now && (() => { const ov = yearExpertOverview(R.yearExpert.now); return (
+        <>
+          <Divider /><Sub>사주 전문가들이 말하는 {data.current.nowYear}년 — {R.yearExpert.now.personalSources.join('·') || '전체'}</Sub>
+          {ov.paras.map((p, i) => <P key={i} words={['좋게 보는 쪽', '조심하라는 쪽']}>{p}</P>)}
+          {ov.months.length > 0 && <div className="ymonths">{ov.months.map((m) => <div key={m.mk} className={`ym ${m.polarity > 0.15 ? 'good' : m.polarity < -0.15 ? 'bad' : ''}`}><b>{m.mk}</b><span>{m.labels.map((l) => l.label).join(' · ') || '언급만 있음'}</span></div>)}</div>}
+          <p className="faq-note">전문가들이 그 해를 말하면서 짚은 달과 주제예요. 아래 열두 달 그래프(내 사주 계산)와 함께 보면 시기를 고르기 쉬워요.</p>
+        </>
+      ); })()}
       <Divider /><Sub>{data.current.nowYear}년 열두 달 흐름</Sub>
       <MonthBars months={monthsNow} nowMonth={data.current.nowMonth} />
       {monthNow && <><Callout tone="orange">이달({data.current.nowMonth}월 {monthNow.text}) — <b>{monthNow.luck.head}</b></Callout>{monthNow.luck.summary.map((s, i) => <P key={i}>{s}</P>)}<div className="catrows">{CATS.map((k) => <div key={k} className="catrow"><b style={{ color: CAT_META[k].color }}>{k}</b><Score n={monthNow.luck.scores[k]} color={CAT_META[k].color} /><p>{monthNow.luck.texts[k]}</p></div>)}</div></>}

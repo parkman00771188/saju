@@ -15,7 +15,10 @@
   }
 사용법:  python build_kb.py
 """
-import io, json, os, re, math, collections
+import io, json, os, re, math, collections, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from asr_fixes import normalize as asr_normalize
+ASR_COUNTER = {}
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -58,11 +61,11 @@ CONCEPTS = {
     "겁살": ["겁살"], "재살": ["재살", "수옥살"], "천살": ["천살"], "지살": ["지살"], "월살": ["월살"], "망신": ["망신살"],
     "장성": ["장성살"], "반안": ["반안"], "육해": ["육해"],
     "충": ["충이", "충을", "충은", "상충", "충 있", "충이 있", "충 맞"],
-    "木과다": [r"목\s?(이|기운이|이 너무|이 많|기운)?\s?(많|과다|강)", "목다"], "木결핍": [r"목\s?(이|기운이)?\s?(없|부족|약)", "무목"],
-    "火과다": [r"화\s?(가|기운이|기운)?\s?(많|과다|강)", "화다"], "火결핍": [r"화\s?(가|기운이)?\s?(없|부족|약)", "무화"],
-    "土과다": [r"토\s?(가|기운이|기운)?\s?(많|과다|강)", "토다"], "土결핍": [r"토\s?(가|기운이)?\s?(없|부족|약)"],
-    "金과다": [r"금\s?(이|기운이|기운)?\s?(많|과다|강)", "금다"], "金결핍": [r"금\s?(이|기운이)?\s?(없|부족|약)", "무금"],
-    "水과다": [r"수\s?(가|기운이|기운)?\s?(많|과다|강)", "수다"], "水결핍": [r"수\s?(가|기운이)?\s?(없|부족|약)", "무수"],
+    "木과다": [r"목\s?(이|기운이|이 너무|이 많|기운)?\s?(많|과다|강)", "목다", r"나무\s?(가|기운이)?\s?(엄청|너무|되게|굉장히|많이)?\s?(많|과다|강|넘)"], "木결핍": [r"목\s?(이|기운이)?\s?(없|부족|약)", "무목", r"나무\s?(가|기운이)?\s?(하나도|전혀|아예)?\s?(없|부족)"],
+    "火과다": [r"화\s?(가|기운이|기운)?\s?(많|과다|강)", "화다", r"불\s?(이|기운이)?\s?(엄청|너무|되게|굉장히|많이)?\s?(많|과다|강|넘|바다)", r"불바다"], "火결핍": [r"화\s?(가|기운이)?\s?(없|부족|약)", "무화", r"불\s?(이|기운이)?\s?(하나도|전혀|아예)?\s?(없|부족)"],
+    "土과다": [r"토\s?(가|기운이|기운)?\s?(많|과다|강)", "토다", r"(흙|땅)\s?(이|기운이)?\s?(엄청|너무|되게|굉장히|많이)?\s?(많|과다|강|넘)"], "土결핍": [r"토\s?(가|기운이)?\s?(없|부족|약)", r"(흙|땅)\s?(이|기운이)?\s?(하나도|전혀|아예)?\s?(없|부족)"],
+    "金과다": [r"금\s?(이|기운이|기운)?\s?(많|과다|강)", "금다", r"(쇠|금속)\s?(가|이|기운이)?\s?(엄청|너무|되게|굉장히|많이)?\s?(많|과다|강|넘)"], "金결핍": [r"금\s?(이|기운이)?\s?(없|부족|약)", "무금", r"(쇠|금속)\s?(가|이|기운이)?\s?(하나도|전혀|아예)?\s?(없|부족)"],
+    "水과다": [r"수\s?(가|기운이|기운)?\s?(많|과다|강)", "수다", r"물\s?(이|기운이)?\s?(엄청|너무|되게|굉장히|많이)?\s?(많|과다|강|넘)"], "水결핍": [r"수\s?(가|기운이)?\s?(없|부족|약)", "무수", r"물\s?(이|기운이)?\s?(하나도|전혀|아예)?\s?(없|부족)"],
     "대운": ["대운"], "세운": ["세운", "신년운", "올해 운"], "월운": ["월운"],
     "신강": ["신강"], "신약": ["신약"], "용신": ["용신"], "격국": ["격국"],
     # 격국
@@ -174,7 +177,7 @@ CLAIMS = {
     "수술·큰 병": ("건강", -1, [r"수술", r"큰 병", r"입원", r"암", r"중병"]),
     "사고·부상": ("건강", -1, [r"사고", r"다치", r"부상", r"골절", r"교통"]),
     "스트레스·신경": ("건강", -1, [r"스트레스", r"신경이 (예민|날카|쓰)", r"신경성", r"신경쇠약", r"강박"]),
-    "우울·불안": ("건강", -1, [r"우울", r"불안", r"공황", r"무기력", r"의욕이 없"]),
+    "우울·불안": ("건강", -1, [r"우울", r"불안(?!정)", r"공황", r"무기력", r"의욕이 없"]),
     "불면·수면": ("건강", -1, [r"불면", r"잠을 (못|잘 못)", r"수면"]),
     "과로·피로": ("건강", -1, [r"과로", r"피로", r"지치", r"번아웃", r"체력이 (떨어|달리|약)"]),
     "소화기·위장": ("건강", -1, [r"위장", r"소화", r"위가", r"장이 (약|안)", r"비위"]),
@@ -213,7 +216,7 @@ CLAIMS = {
     "소심·우유부단": ("성격", -1, [r"소심", r"우유부단", r"결정을 못", r"눈치를 (많이 )?보"]),
     "자유·독립 성향": ("성격", 0, [r"자유로", r"자유를", r"독립적", r"구속(을|받|당)", r"얽매이", r"내 마음대로"]),
     "화려함·멋": ("성격", 0, [r"화려", r"멋을", r"꾸미", r"패션", r"외모"]),
-    "종교·철학 성향": ("성격", 0, [r"종교", r"철학", r"영성", r"신앙", r"무속", r"절에 다", r"교회", r"수행"]),
+    "종교·철학 성향": ("성격", 0, [r"종교", r"철학", r"영성", r"신앙", r"무속", r"무당", r"신끼", r"신기가", r"절에 다", r"교회", r"수행", r"점을 보", r"역술"]),
     "말로 인한 화": ("성격", -1, [r"말(로|때문에) (화|구설|손해|적)", r"말실수", r"독설", r"말이 (거칠|세|앞서)"]),
     # 운의 흐름
     "변화·이동·이사": ("운", 0, [r"변화가 (많|크|생|오|일어)", r"변동", r"이사를", r"이사(가|를) (하|가)", r"이동(이|수|을)", r"옮기", r"터닝"]),
@@ -294,7 +297,7 @@ def load_docs():
                     continue
                 raw = io.open(p, encoding="utf-8").read()
                 body = raw.split("-" * 60, 1)[-1]
-                text = re.sub(r"\s+", " ", body).strip()
+                text = asr_normalize(re.sub(r"\s+", " ", body).strip(), ASR_COUNTER)
                 docs.append({"id": r["video_id"], "title": r.get("title", ""), "channel": ch, "text": text, "chars": len(text)})
     return docs
 
@@ -377,6 +380,88 @@ def analyze(key, rx, pats, docs, cats, pos_rx, neg_rx, global_tf, total_tokens, 
     return {"mentions": total, "docs": len(per_doc), "polarity": polarity, "pos": pos, "neg": neg, "categories": categories, "keywords": keywords, "claims": claims[:14]}
 
 
+YEAR_RX = re.compile(r"(?:20)?(2[3-7])\s?년|신년")
+TTI = {"쥐": "子", "소": "丑", "호랑이": "寅", "범": "寅", "토끼": "卯", "용": "辰", "뱀": "巳", "말": "午", "양": "未", "원숭이": "申", "닭": "酉", "개": "戌", "돼지": "亥"}
+STEM_TITLE = {STEM_KO[s] + e: s for s in STEMS for e in ("목", "화", "토", "금", "수") if e == {"甲": "목", "乙": "목", "丙": "화", "丁": "화", "戊": "토", "己": "토", "庚": "금", "辛": "금", "壬": "수", "癸": "수"}[s]}
+MONTH_RX = re.compile(r"(?<![0-9])(1[0-2]|[1-9])\s?월(?![0-9])|상반기|하반기|연초|연말|초반|중반|후반")
+SENT_SPLIT = re.compile(r"(?<=[.?!])\s+|(?<=요)\s+(?=[가-힣])")
+
+
+def year_of(title, upload=""):
+    m = YEAR_RX.search(title)
+    if m and m.group(1):
+        return 2000 + int(m.group(1))
+    if "신년" in title and upload[:4].isdigit():
+        return int(upload[:4]) + (1 if upload[4:6] >= "10" else 0)
+    return None
+
+
+def analyze_years(docs, claim_rx, cats, pos_rx, neg_rx):
+    """제목에 연도·신년이 있는 문서를 일간/띠/일주/전체 키로 묶어 주장·월별 타임라인을 뽑는다."""
+    groups = collections.defaultdict(list)
+    for d in docs:
+        y = year_of(d["title"], d.get("upload", ""))
+        if not y:
+            continue
+        t = d["title"]
+        keys = ["Y%d" % y]
+        for ko, st in STEM_TITLE.items():
+            if ko in t or (STEM_KO[st] + " 일간") in t or (STEM_KO[st] + "일간") in t:
+                keys.append("%s+Y%d" % (st, y))
+        for ko, br in TTI.items():
+            if (ko + "띠") in t:
+                keys.append("%s+Y%d" % (br, y))
+        for i in range(60):
+            st, br = STEMS[i % 10], BRANCHES[i % 12]
+            if (STEM_KO[st] + BRANCH_KO[br] + "일주") in t.replace(" ", ""):
+                keys.append("%s%s+Y%d" % (st, br, y))
+        for k in keys:
+            groups[k].append(d)
+    out = {}
+    for key, ds in groups.items():
+        if len(ds) < 2 and not key.startswith("Y"):
+            continue
+        claim_counter, claim_docs = collections.Counter(), collections.defaultdict(set)
+        cat_counter = collections.Counter()
+        timeline = collections.defaultdict(lambda: {"n": 0, "pos": 0, "neg": 0, "labels": collections.Counter()})
+        pos = neg = 0
+        for d in ds:
+            text = d["text"]
+            for label, rx in claim_rx.items():
+                n = len(rx.findall(text))
+                if n:
+                    claim_counter[label] += n
+                    claim_docs[label].add(d["id"])
+            for c, crx in cats.items():
+                cat_counter[c] += len(crx.findall(text))
+            pos += len(pos_rx.findall(text)); neg += len(neg_rx.findall(text))
+            sents = SENT_SPLIT.split(text)
+            for i, sent in enumerate(sents):
+                for m in MONTH_RX.finditer(sent):
+                    mk = (m.group(1) + "월") if m.group(1) else m.group(0)
+                    ctx = sent + " " + (sents[i + 1] if i + 1 < len(sents) else "")
+                    tl = timeline[mk]
+                    tl["n"] += 1
+                    tl["pos"] += len(pos_rx.findall(ctx)); tl["neg"] += len(neg_rx.findall(ctx))
+                    for label, rx in claim_rx.items():
+                        if rx.search(ctx):
+                            tl["labels"][label] += 1
+        cat_total = sum(cat_counter.values()) or 1
+        claims = [[l, c, len(claim_docs[l])] for l, c in claim_counter.items() if len(claim_docs[l]) >= (2 if len(ds) >= 4 else 1)]
+        claims.sort(key=lambda x: (-x[2], -x[1]))
+        tl_out = {}
+        for mk, v in timeline.items():
+            if v["n"] < 1:
+                continue
+            tl_out[mk] = {"n": v["n"], "polarity": round((v["pos"] - v["neg"]) / (v["pos"] + v["neg"]), 2) if (v["pos"] + v["neg"]) else 0.0,
+                          "labels": [[l, c] for l, c in v["labels"].most_common(6)]}
+        out[key] = {"docs": len(ds), "titles": [d["title"][:40] for d in ds[:6]], "channels": sorted({d["channel"] for d in ds}),
+                    "polarity": round((pos - neg) / (pos + neg), 3) if (pos + neg) else 0.0,
+                    "categories": {c: round(cat_counter[c] / cat_total, 3) for c in CATEGORIES},
+                    "claims": claims[:16], "timeline": tl_out}
+    return out
+
+
 def main():
     docs = load_docs()
     print("문서 %d개, 총 %s자" % (len(docs), format(sum(d["chars"] for d in docs), ",")))
@@ -400,10 +485,19 @@ def main():
                 print("  %s %d/%d" % (name, i, len(rxs)))
     # 데이터 없는 패턴은 제외해 용량 절약
     out["patterns"] = {k: v for k, v in out["patterns"].items() if v["mentions"] > 0}
+    years = analyze_years(docs, claim_rx, cats, pos_rx, neg_rx)
+    print("연도 키 %d개: %s" % (len(years), ", ".join(sorted(years)[:12])))
+    # ASR 교정 리포트
+    with io.open(os.path.join(ROOT, "analysis", "asr_report.txt"), "w", encoding="utf-8") as f:
+        f.write("# ASR 교정 적용 횟수 (패턴 → 횟수)\n")
+        for pat, n in sorted(ASR_COUNTER.items(), key=lambda x: -x[1]):
+            f.write("%6d  %s\n" % (n, pat))
+    print("ASR 교정 총 %d회 (%d 패턴)" % (sum(ASR_COUNTER.values()), len(ASR_COUNTER)))
     meta = {"docs": len(docs), "chars": sum(d["chars"] for d in docs), "channels": sorted({(d["channel"], CHANNEL_NAME.get(d["channel"], d["channel"])) for d in docs}),
             "patterns_total": len(PATTERNS), "patterns_found": len(out["patterns"])}
     meta["claims"] = {label: [v[0], v[1]] for label, v in CLAIMS.items()}  # label -> [카테고리, 극성]
     out["meta"] = meta
+    out["years"] = years
     with io.open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
 

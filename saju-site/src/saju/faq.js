@@ -3,6 +3,7 @@ import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
 import { ELEMENT_KO, STEMS, STEM_ELEMENT, STEM_KO, BRANCH_ANIMAL, BRANCH_YUKHAP, BRANCH_SAMHAP, BRANCH_CHUNG, BRANCH_WONJIN } from './tables.js';
 import { eventFor, makeEventCtx } from './events.js';
+import { yearExpertOverview } from './yearExpert.js';
 import { monthsForYear } from './context.js';
 
 // 절입 기준 월운 기간 → "6월 6일~7월 6일"
@@ -141,6 +142,8 @@ export function buildFaq(R, data) {
         ...l.summary.slice(0, 3),
         months.length ? `${remaining.length && remaining.length < 12 ? '남은 달로 보면' : '달로 보면'} ${mList(bestOverallM)}에 흐름이 가장 좋고, ${mList(lowOverallM)}에는 속도를 늦추고 지키는 쪽이 좋아요. 지금 ${nowM}월은 ${months[nowM - 1]?.luck.head || ''} 흐름이에요.` : null,
         `가장 좋은 영역은 ${bestCat}운, 신경 쓸 영역은 ${worstCat}운이에요. ${first(l.texts[bestCat])}`,
+        ...(R.yearExpert?.now ? yearExpertOverview(R.yearExpert.now).paras.slice(0, 2) : []),
+        R.yearExpert?.now?.months?.length ? `전문가들이 ${nowY}년에 짚은 달: ${R.yearExpert.now.months.slice(0, 6).map((m) => `${m.mk}(${m.labels.map((x) => x.label).join('·') || '언급'})`).join(', ')}.` : null,
       ].filter(Boolean),
     });
   }
