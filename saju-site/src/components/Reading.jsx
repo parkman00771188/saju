@@ -345,7 +345,7 @@ function FaqList({ items, data }) {
                   <div className="faq-years">
                     {it.timeline.map((yc) => (
                       <div key={yc.year} className="fy">
-                        <div className="fy-head"><b>{yc.year}년 {yc.text}</b><span className="fy-age">{yc.age}세</span><Score n={yc.score} color={color} /></div>
+                        <div className="fy-head"><b>{yc.year}년 {yc.text}</b><span className="fy-age">{yc.age}세</span><Score n={yc.score} color={color} />{yc.far && <span className="fy-far">가까운 3년 밖</span>}{yc.note && <span className="fy-note">{yc.note}</span>}</div>
                         <p className="fy-why">{yc.why}</p>
                         {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
                         {yc.avoid.length ? <p className="fy-avoid">피할 달: {yc.avoid.join(', ')}</p> : null}

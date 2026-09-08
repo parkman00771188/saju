@@ -28,6 +28,9 @@ export function buildFaq(R, data) {
   const years = R.years.filter((yy) => yy.year >= nowY);
   const thisYear = R.years.find((yy) => yy.year === nowY) || years[0];
   const months = R.monthsOf(nowY) || [];
+  const remaining = months.filter((m) => m.monthNo >= nowM);
+  const monthsNow = remaining.length ? remaining : months; // 올해 추천은 남은 달 기준
+  const NEAR_END = nowY + 2; // 올해·내년·내후년 우선
   const S = K.STEMS[dayStem] || {};
   const gy = R.gyeok, y = R.yong, prof = R.profile, needEl = R.needEl;
   const dayBranch = pillars.day.branch, yearBranch = pillars.year.branch;
@@ -36,10 +39,10 @@ export function buildFaq(R, data) {
   const hasFlag = (g, type, pos) => (g.luck?.flags || []).some((f) => f.type === type && (!pos || f.pos === pos));
   const byNo = (a, b) => a.monthNo - b.monthNo;
   const sortM = (arr, val, desc = true) => [...arr].sort((a, b) => (desc ? val(b) - val(a) : val(a) - val(b)) || byNo(a, b));
-  const topM = (cat, n = 3) => sortM(months, (m) => m.luck.scores[cat]).slice(0, n).sort(byNo);
-  const lowM = (cat, n = 2) => sortM(months, (m) => m.luck.scores[cat], false).slice(0, n).sort(byNo);
-  const bestOverallM = sortM(months, (m) => m.luck.overall).slice(0, 3).sort(byNo);
-  const lowOverallM = sortM(months, (m) => m.luck.overall, false).slice(0, 2).sort(byNo);
+  const topM = (cat, n = 3) => sortM(monthsNow, (m) => m.luck.scores[cat]).slice(0, n).sort(byNo);
+  const lowM = (cat, n = 2) => sortM(monthsNow, (m) => m.luck.scores[cat], false).slice(0, n).sort(byNo);
+  const bestOverallM = sortM(monthsNow, (m) => m.luck.overall).slice(0, 3).sort(byNo);
+  const lowOverallM = sortM(monthsNow, (m) => m.luck.overall, false).slice(0, 2).sort(byNo);
   const stemsOf = (el) => STEMS.filter((s) => STEM_ELEMENT[s] === el).map((s) => `${s}(${STEM_KO[s]})`).join('·');
 
   const dAll = R.daeunAll || [];
@@ -75,7 +78,7 @@ export function buildFaq(R, data) {
   const cautionWeight = (g) => (g.samjae ? 0.9 : 0) + (hasFlag(g, '충', 'day') ? 0.7 : 0) + (hasFlag(g, '원진') ? 0.5 : 0) + (g.luck.hasGi ? 0.5 : 0) + (g.luck.isGong ? 0.3 : 0);
   const scoreOf = (g, key) => (key ? g.luck.scores[key] : g.luck.overall);
   const yearCard = (yy, cat, key) => {
-    const ms = R.monthsOf(yy.year) || [];
+    const ms = (R.monthsOf(yy.year) || []).filter((m) => yy.year !== nowY || m.monthNo >= nowM);
     const val = (m) => scoreOf(m, key) + reasonsFor(m, cat).length * 0.6 - cautionWeight(m);
     const top = sortM(ms, val).filter((m) => reasonsFor(m, cat).length || scoreOf(m, key) >= 4).slice(0, 3).sort(byNo);
     const avoid = ms.filter((m) => cautionsFor(m).length && scoreOf(m, key) <= 2).slice(0, 2);
@@ -86,14 +89,30 @@ export function buildFaq(R, data) {
       months: top.map((m) => ({ no: m.monthNo, text: m.text, score: scoreOf(m, key), why: reasonsFor(m, cat).join(', ') || '흐름이 높은 달' })),
       avoid: avoid.map((m) => `${m.monthNo}월(${cautionsFor(m).join('·')})`),
       cautions: cautionsFor(yy),
+      note: yy.year === nowY ? '남은 달 기준' : null,
     };
   };
-  const pickYears = (cat, key, n = 3) => [...years]
-    .map((yy) => ({ yy, s: scoreOf(yy, key) + reasonsFor(yy, cat).length * 0.7 - cautionWeight(yy) }))
-    .sort((a, b) => b.s - a.s || a.yy.year - b.yy.year).slice(0, n).map((x) => x.yy).sort((a, b) => a.year - b.year);
-  const timelineOf = (cat, key, n = 3) => pickYears(cat, key, n).map((yy) => yearCard(yy, cat, key));
+  // 올해·내년·내후년에서 먼저 고르고, 좋은 해가 부족할 때만 그 뒤 연도로 넓힌다
+  const rankOf = (yy, cat, key) => scoreOf(yy, key) + reasonsFor(yy, cat).length * 0.7 - cautionWeight(yy);
+  const qualifies = (yy, cat, key) => scoreOf(yy, key) >= 3 && (reasonsFor(yy, cat).length > 0 || scoreOf(yy, key) >= 4) && cautionWeight(yy) < 1.2;
+  const pickYears = (cat, key, n = 3) => {
+    const near = years.filter((yy) => yy.year <= NEAR_END), far = years.filter((yy) => yy.year > NEAR_END);
+    const rank = (arr) => [...arr].sort((a, b) => rankOf(b, cat, key) - rankOf(a, cat, key) || a.year - b.year);
+    const picked = rank(near).filter((yy) => qualifies(yy, cat, key)).slice(0, n).map((yy) => ({ yy, far: false }));
+    if (picked.length < 2) for (const yy of rank(far)) { if (picked.length >= Math.min(n, picked.length + 2) || !qualifies(yy, cat, key)) break; picked.push({ yy, far: true }); }
+    if (!picked.length) picked.push({ yy: rank(near)[0], far: false }); // 냉정하게: 가까운 해 중 가장 나은 해라도 보여 준다
+    return picked.sort((a, b) => a.yy.year - b.yy.year);
+  };
+  const timelineOf = (cat, key, n = 3) => pickYears(cat, key, n).map(({ yy, far }) => ({ ...yearCard(yy, cat, key), far }));
   const bestOf = (tl) => [...tl].sort((a, b) => b.score - a.score || a.year - b.year)[0];
-  const leadOf = (tl, label) => { const b = bestOf(tl); return b ? `가까운 해 중 ${b.year}년(${b.text})이 ${label} ${b.score}/5로 가장 강하고, ${tl.filter((c) => c !== b).map((c) => `${c.year}년`).join('·')}도 좋은 해예요. 각 해의 좋은 달과 이유는 아래에 정리했어요.` : `${label} 흐름을 계산할 해가 없어요.`; };
+  const leadOf = (tl, label) => {
+    const b = bestOf(tl); if (!b) return `${label} 흐름을 계산할 해가 없어요.`;
+    const near = tl.filter((c) => !c.far), farOnes = tl.filter((c) => c.far);
+    const others = tl.filter((c) => c !== b).map((c) => `${c.year}년`).join('·');
+    if (!b.far && b.score >= 4) return `올해부터 내후년 사이에서는 ${b.year}년(${b.text})이 ${label} ${b.score}/5로 가장 강하고${others ? `, ${others}도 살펴볼 해예요` : ''}. 각 해의 좋은 달과 이유는 아래에 정리했어요.`;
+    if (!b.far) return `올해부터 내후년 사이에는 아주 강한 해는 없고, ${b.year}년(${b.text})이 ${label} ${b.score}/5로 가장 나아요${others ? ` (${others}도 참고)` : ''}. 냉정하게 보면 이 시기는 준비하며 기회를 고르는 때예요.`;
+    return `올해부터 내후년 사이에는 ${label}이 뚜렷하게 열리는 해가 ${near.length ? '부족해' : '없어'} ${farOnes.map((c) => `${c.year}년`).join('·')}까지 넓혀 봤어요 — ${b.year}년(${b.text})이 ${b.score}/5로 가장 강해요. 가까운 시기는 준비 기간으로 쓰세요.`;
+  };
   const chipsOf = (tl) => tl.map((c) => ({ label: `${c.year}년 ${c.text} ${c.score}/5`, tone: scoreTone(c.score) }));
 
   const items = [];
@@ -109,7 +128,7 @@ export function buildFaq(R, data) {
       chips: catScoreChips(l),
       paras: [
         ...l.summary.slice(0, 3),
-        months.length ? `달로 보면 ${mList(bestOverallM)}에 흐름이 가장 좋고, ${mList(lowOverallM)}에는 속도를 늦추고 지키는 쪽이 좋아요. 지금 ${nowM}월은 ${months[nowM - 1]?.luck.head || ''} 흐름이에요.` : null,
+        months.length ? `${remaining.length && remaining.length < 12 ? '남은 달로 보면' : '달로 보면'} ${mList(bestOverallM)}에 흐름이 가장 좋고, ${mList(lowOverallM)}에는 속도를 늦추고 지키는 쪽이 좋아요. 지금 ${nowM}월은 ${months[nowM - 1]?.luck.head || ''} 흐름이에요.` : null,
         `가장 좋은 영역은 ${bestCat}운, 신경 쓸 영역은 ${worstCat}운이에요. ${first(l.texts[bestCat])}`,
       ].filter(Boolean),
     });
@@ -206,7 +225,7 @@ export function buildFaq(R, data) {
       m.luck.isGong ? '공망(기대만큼 손에 잡히지 않음)' : null,
       m.luck.scores.건강 <= 2 ? '건강 점수 낮음' : null,
     ]);
-    const risky = sortM(months, (m) => m.luck.overall, false).filter((m) => reasons(m).length || m.luck.overall <= 2).slice(0, 3).sort(byNo);
+    const risky = sortM(monthsNow, (m) => m.luck.overall, false).filter((m) => reasons(m).length || m.luck.overall <= 2).slice(0, 3).sort(byNo);
     items.push({
       id: 'caution', icon: '⚠️', q: '올해 조심해야 할 시기는?',
       lead: risky.length ? `${nowY}년에는 ${mList(risky)}을 특히 조심하세요.${thisYear.samjae ? ' 올해는 삼재에 해당해 무리한 확장을 피하는 해예요.' : ''}` : `${nowY}년은 크게 조심할 달이 두드러지지 않아요.${thisYear.samjae ? ' 다만 삼재에 해당해 무리한 확장은 피하세요.' : ''}`,
@@ -265,9 +284,9 @@ export function buildFaq(R, data) {
       ['편인', '편재'].includes(thisYear.branchGod) ? `${thisYear.branchGod} 운(변동·확장)` : null,
     ]);
     const stay = hasFlag(thisYear, '합', 'day') || thisYear.branchGod === '정인' || thisYear.branchGod === '정관';
-    const cand = months.filter((m) => ['역마', '지살'].includes(m.sal) || hasFlag(m, '충', 'day') || hasFlag(m, '충', 'year') || ['편인', '편재'].includes(m.branchGod));
+    const cand = monthsNow.filter((m) => ['역마', '지살'].includes(m.sal) || hasFlag(m, '충', 'day') || hasFlag(m, '충', 'year') || ['편인', '편재'].includes(m.branchGod));
     const good = cand.filter((m) => m.luck.overall >= 3 && !hasFlag(m, '원진') && !m.luck.isGong).slice(0, 4);
-    const avoid = months.filter((m) => m.luck.overall <= 2 || hasFlag(m, '원진')).slice(0, 3);
+    const avoid = monthsNow.filter((m) => m.luck.overall <= 2 || hasFlag(m, '원진')).slice(0, 3);
     const level = moveSig.length >= 2 ? '강' : moveSig.length === 1 || good.length >= 3 ? '중' : '약';
     items.push({
       id: 'move', icon: '🏠', q: '올해 이사운은 어떨까?',

@@ -94,3 +94,25 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
   .fortune-paper .fcard .tile.sm .hanja { font-size:16px; }
   .fortune-paper .fcard .tile.sm .ko { font-size:8px; }
 }
+
+/* 운 카드: 원국과의 합충 태그 + 관계 패널 */
+.fortune-paper .ftags { display:flex; gap:3px; flex-wrap:wrap; justify-content:center; min-height:14px; margin-top:1px; }
+.fortune-paper .ft { font-style:normal; font-size:9px; line-height:1; padding:2px 4px; border-radius:4px; background:#efe9e0; color:#6a5a48; white-space:nowrap; }
+.fortune-paper .ft.good { background:#e5f1da; color:#3e7a18; } .fortune-paper .ft.bad { background:#fbe3dc; color:#a53c22; } .fortune-paper .ft.none { background:transparent; color:#cfc6ba; }
+.fortune-paper .relpanel { margin:8px 2px 0; padding:10px 12px; border:1px solid #eee8e1; border-radius:10px; background:#fcfaf7; font-size:12.5px; text-align:left; }
+.fortune-paper .rp-head { display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:6px; flex-wrap:wrap; } .fortune-paper .rp-head b { font-size:13.5px; font-family:var(--sans); } .fortune-paper .rp-head span { color:#8d7f77; font-size:11px; }
+.fortune-paper .rp-row { display:flex; gap:8px; align-items:flex-start; padding:3px 0; } .fortune-paper .rp-k { flex:0 0 44px; color:#8d7f77; font-size:11px; padding-top:4px; }
+.fortune-paper .rp-list { display:flex; flex-wrap:wrap; gap:4px; } .fortune-paper .rp-tag { padding:3px 7px; border-radius:6px; background:#efe9e0; color:#4a4038; font-size:11.5px; line-height:1.4; }
+.fortune-paper .rp-tag.good { background:#e5f1da; color:#3e7a18; } .fortune-paper .rp-tag.bad { background:#fbe3dc; color:#a53c22; } .fortune-paper .rp-tag.mid { background:#f3ead7; color:#7a5a1e; } .fortune-paper .rp-none { color:#b5aa9e; font-size:11.5px; padding:4px 0; }
+.fortune-paper .rp-note { margin:6px 0 0; color:#5a4d46; line-height:1.6; font-size:12px; }
+@media(max-width:760px) { .fortune-paper .ft { font-size:8.5px; padding:2px 3px; } .fortune-paper .rp-k { flex-basis:38px; } }
+
+.fortune-paper details.relpanel { padding:0; }
+.fortune-paper .relpanel > summary { list-style:none; cursor:pointer; padding:9px 12px; display:flex; flex-direction:column; gap:5px; }
+.fortune-paper .relpanel > summary::-webkit-details-marker { display:none; }
+.fortune-paper .rp-title { display:flex; justify-content:space-between; align-items:baseline; gap:8px; flex-wrap:wrap; } .fortune-paper .rp-title b { font-size:13.5px; font-family:var(--sans); } .fortune-paper .rp-sub { color:#8d7f77; font-size:11px; }
+.fortune-paper .rp-tags { display:flex; flex-wrap:wrap; gap:4px; align-items:center; } .fortune-paper .rp-tags .ft { font-size:10.5px; padding:3px 6px; }
+.fortune-paper .rp-more { font-style:normal; margin-left:auto; font-size:11px; color:#9a7540; border:1px solid #e5d9c4; border-radius:999px; padding:2px 8px; }
+.fortune-paper .relpanel[open] .rp-more::after { content:' 접기'; } .fortune-paper .relpanel:not([open]) .rp-more::after { content:' 보기'; }
+.fortune-paper .rp-body { padding:2px 12px 10px; border-top:1px dashed #eee8e1; }
+.fortune-paper summary .rp-note { margin:0; }
