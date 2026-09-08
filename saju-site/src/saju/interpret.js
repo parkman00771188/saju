@@ -3,6 +3,7 @@
 import kb from '../data/kb_stats.json';
 import { determineGyeok } from './gyeokguk.js';
 import { pickYong, GROUP_EL } from './yongshin.js';
+import { buildPersonal } from './personal.js';
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
@@ -207,6 +208,9 @@ export function interpret(data) {
     ...patterns.filter((p) => p.kind !== '일주' && p.kind !== '일간×십성').map((p) => [p.key, p.title]),
     ...missing.map((m) => [`${m}결핍`, `${m}(${ELEMENT_KO[m]}) 없음`]), [`${strongest}과다`, `${strongest}(${ELEMENT_KO[strongest]}) 과다`],
     st.label !== '중화' ? [st.label, st.label] : null,
+    [gyeok.key, gyeok.key],
+    ...['year', 'month', 'day', 'time'].filter((k) => detail[k]).map((k) => [`${{ year: '년', month: '월', day: '일', time: '시' }[k]}지+${detail[k].branchGod}`, `${{ year: '년', month: '월', day: '일', time: '시' }[k]}지 ${detail[k].branchGod}`]),
+    current.daeun ? [`${current.daeun.branchGod}운`, `${current.daeun.branchGod} 대운`] : null,
   ].filter(Boolean);
   const evidence = [];
   for (const [key, title] of evidenceKeys) { if (evidence.some((e) => e.key === key)) continue; const claims = claimsOf(key); if (claims.length) evidence.push({ key, title, claims, stats: kb.concepts[key] || kb.patterns[key] }); }
@@ -519,6 +523,9 @@ export function interpret(data) {
     c.best = b ? { year: b.year, text: b.text, score: b.luck.scores[cat] } : null;
     c.worst = w ? { year: w.year, text: w.text, score: w.luck.scores[cat] } : null;
   }
+  // ---------- 이 사주만의 포인트 (글자·자리·개수·관계 기반) ----------
+  const personal = buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, daeunAll, spouseGroup, st, gongmangSet, currentDaeun: current.daeun });
+  for (const cat of K.CATS) cats[cat].personal = personal[cat] || [];
 
   // ---------- 조언 ----------
   const advice = [

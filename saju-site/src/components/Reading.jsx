@@ -18,6 +18,7 @@ const STEM_KEYS = { 甲: ['추진력', '책임감', '정직함'], 乙: ['적응�
 const EL_HEX = { 木: '#5f9a2c', 火: '#c8442f', 土: '#d69a2c', 金: '#8c8c8c', 水: '#3b3f47' };
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const first = (s) => (s?.match(/^[^.!?]*[.!?]/) || [s])[0];
+const GLYPHS = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸', '子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥', '비견', '겁재', '식신', '상관', '편재', '정재', '편관', '정관', '편인', '정인', '관성', '재성', '인성', '식상', '비겁', '용신', '기신', '희신', '무관', '무재', '무인성', '관살혼잡', '재다신약', '군겁쟁재', '식상생재', '관인상생', '재생관', '상관견관', '식신제살', '재고', '공망', '충', '원진', '합'];
 
 /** 핵심 단어 강조 */
 function Hl({ text, words = [] }) {
@@ -386,6 +387,7 @@ function CategoryPage({ R, data, cat }) {
       </div>
       <Callout><b>{cat}운 {c.score}/5</b>. {first(c.sections[0].paras[0])}</Callout>
       {c.gauge && <Gauge2 pct={c.gauge.value} left={c.gauge.left} right={c.gauge.right} color={m.color} />}
+      {c.personal?.length > 0 && <><Sub>이 사주만의 {cat}운 포인트</Sub><div className="personal">{c.personal.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}</div><Divider /></>}
       <Sub>{c.sections[0].title}</Sub>{c.sections[0].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>{c.sections[1].title}</Sub>{c.sections[1].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>앞으로 10년 {cat}운</Sub>

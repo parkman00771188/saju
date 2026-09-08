@@ -152,6 +152,7 @@ export function buildFaq(R, data) {
       id: 'love', icon: '❤️', q: '내 연애운은 언제 강해질까?', cat: '연애',
       lead: leadOf(tl, '연애운'), chips: chipsOf(tl), timeline: tl,
       paras: [
+        R.cats.연애?.personal?.[0],
         first(S.love || ''),
         `${spouseWord}이 운으로 들어오거나 일지(배우자 자리)와 합이 되는 해·달에 인연이 구체적으로 나타나요. 올해는 ${months.length ? `${mList(topM('연애', 3))}이 연애운이 높아요` : '월 흐름을 계산할 수 없어요'}.`,
         bestD ? `긴 흐름으로는 ${dSpan(bestD)}이 연애·결혼 인연에 가장 유리한 10년이에요.` : null,
@@ -188,6 +189,7 @@ export function buildFaq(R, data) {
       lead: `${gy.key} — "${gy.tag}". ${jobs.slice(0, 3).join(', ')} 쪽이 격에 맞아요.`,
       chips: jobs.map((j) => ({ label: j, tone: 'good' })),
       paras: [
+        R.cats.직장?.personal?.[0],
         `${first(gy.desc)} ${gy.strength}`,
         prof.dominant ? `십성으로는 ${prof.dominant}이 가장 두드러져 ${first(K.GROUP_DESC[prof.dominant] || '')} ${style ? `일하는 방식은 ${style}(${gauge.value}%)이에요.` : ''}` : null,
         `용신 ${y.el}(${ko[y.el]})의 직업군 — ${D.YONG[y.el].job} — 은 일하면서 스스로 균형을 잡게 해 주는 분야예요.`,
@@ -205,6 +207,7 @@ export function buildFaq(R, data) {
       id: 'money', icon: '💰', q: '재물운이 강해지는 시기는 언제일까?', cat: '금전',
       lead: leadOf(tl, '재물운'), chips: chipsOf(tl), timeline: tl,
       paras: [
+        R.cats.금전?.personal?.[0],
         moneySec ? first(moneySec) : null,
         `재성(재물의 별)이 들어오는 해·달에 수입·계약·투자가 구체화되고, 식상 운은 만든 것이 돈으로 바뀌는 흐름이에요. 올해는 ${months.length ? `${mList(topM('금전', 3))}에 돈이 움직이기 쉽고 ${mList(lowM('금전', 2))}은 지출·손재를 조심할 달이에요` : '월 흐름을 계산할 수 없어요'}.`,
         bestD ? `크게 보면 ${dSpan(bestD)}이 재물 흐름이 가장 좋은 10년이에요.` : null,

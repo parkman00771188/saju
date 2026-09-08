@@ -138,3 +138,6 @@ html.book-open body { overflow-x: clip; }
 .fy-event.block { margin: 6px 0; } .fy-event.block b { color: var(--or); }
 .evlist { margin-top: 10px; } .evtitle { display: block; font-size: 13.5px; margin: 6px 0 2px; color: #333; }
 .chart-hint { font-size: clamp(12.5px, 3.4vw, 13.5px); color: #7a5a1e; background: #fdf6e7; border-radius: 8px; padding: 8px 12px; margin: 0 0 8px; line-height: 1.6; } .chart-hint b { color: var(--or); }
+
+.personal { background: #fbf8f3; border-left: 3px solid #d69a2c; border-radius: 0 12px 12px 0; padding: 10px 14px 4px; margin: 4px 0 8px; }
+.personal .bp { font-size: clamp(13.5px, 3.6vw, 14.5px); }
