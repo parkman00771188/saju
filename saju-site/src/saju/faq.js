@@ -224,7 +224,7 @@ export function buildFaq(R, data) {
       id: 'traits', icon: '🧠', q: '내가 타고난 장점과 약점은?',
       lead: `${S.title || dayStem} 일간의 ${R.strength.label} 사주 — 장점은 "${first(S.strengths || '')}"`,
       chips: keywords.map((k) => ({ label: k, tone: 'gray' })),
-      paras: [`장점 — ${S.strengths || ''} ${gy.strength || ''}`, `약점 — ${S.cautions || ''} ${gy.weakness || ''}`, first(R.overview?.[1] || ''), missTxt].filter(Boolean),
+      paras: [`장점 — ${S.strengths || ''} ${gy.strength || ''}`, `약점 — ${S.cautions || ''} ${gy.weakness || ''}`, `${R.strengthProfile.headline}. ${R.strengthProfile.traits}`, `${R.strengthProfile.personal}`, missTxt].filter(Boolean),
     });
   }
 

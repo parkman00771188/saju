@@ -5,6 +5,7 @@ import { determineGyeok } from './gyeokguk.js';
 import { pickYong, GROUP_EL } from './yongshin.js';
 import { buildPersonal } from './personal.js';
 import { natalIssues, unEffect, dynLine } from './dynamics.js';
+import { strengthProfile } from './strengthProfile.js';
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
@@ -331,10 +332,13 @@ export function interpret(data) {
     return { pos: p.pos, label: p.period, text: `${p.period}은 ${p.ko}(${p.gz.text})가 보여 줍니다. ${p.texts[0]} ${ds.length ? `이 시기를 지나는 대운은 ${ds.map((d) => `${d.text}(${d.stemGod}·${d.branchGod})`).join(', ')}로, ${ds.map((d) => K.LUCK[d.branchGod].head).join('과 ')}이 흐릅니다.` : ''}` };
   });
 
+  // ---------- 신강·신약 프로필 ----------
+  const sp = strengthProfile({ st, yong, prof, data });
+
   // ---------- 총평 / 성격 ----------
   const overview = [
     `${name}의 일간은 ${S.title}, ${S.sub}입니다. ${S.nature}`,
-    K.STRENGTH[st.label].text + ` (일간을 돕는 기운의 비중 약 ${st.pct}%)`,
+    `${K.STRENGTH[st.label].text} ${sp.personal}`,
     `월지 ${pillars.month.branch}(${monthGod})가 삶의 무대를, 일지 ${dayBranch}(${detail.day.branchGod})가 나의 몸과 배우자 자리를 나타냅니다. ${K.TEN_GODS[monthGod]?.month || ''}`,
     prof.dominant ? K.GROUP_DESC[prof.dominant] : '',
   ].filter(Boolean);
@@ -530,6 +534,7 @@ export function interpret(data) {
   // ---------- 이 사주만의 포인트 (글자·자리·개수·관계 기반) ----------
   const personal = buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, daeunAll, spouseGroup, st, gongmangSet, currentDaeun: current.daeun });
   for (const cat of K.CATS) { cats[cat].personal = personal[cat]?.sections || []; cats[cat].headline = personal[cat]?.headline || null; }
+  for (const cat of ['직장', '금전', '연애', '건강']) { const sec = cats[cat].personal[0]; if (sec && sp.life[cat]) sec.paras.push(`${st.label} 사주의 ${cat} 특징 — ${sp.life[cat]}`); }
 
   // ---------- 조언 ----------
   const advice = [
@@ -544,7 +549,7 @@ export function interpret(data) {
   const summary = [
     { icon: '形', title: '형국과 조후', sub: `${season}에 태어난 ${ELEMENT_KO[dayEl]} 일간 · 필요한 기운 ${needEl}`, paras: climate.paras },
     { icon: '命', title: '일간과 격국', sub: `${S.title} · ${gyeok.key}`, paras: [overview[0], `${gyeok.how.reason} 격국은 ${gyeok.key}(${gyeok.hanja}) — "${gyeok.tag}"입니다. ${gyeok.how.altNote} ${gyeok.desc}`, gyeok.strength, gyeok.weakness] },
-    { icon: '衡', title: '신강·신약과 용신', sub: `${st.label} · 용신 ${yongEl} · 희신 ${heeEl} · 기신 ${giEl}`, paras: [overview[1], yong.text, roots.text] },
+    { icon: '衡', title: '신강·신약과 용신', sub: `${st.label} · 용신 ${yongEl} · 희신 ${heeEl} · 기신 ${giEl}`, paras: [`${sp.headline}. ${sp.traits}`, sp.personal, `강점은 ${sp.strengths} 조심할 점은 ${sp.cautions}`, yong.text, roots.text] },
     { icon: '構', title: '오행과 십성의 구조', sub: `${strongest} 강 · ${missing.length ? missing.join('·') + ' 없음' : '오행 구비'} · ${prof.dominant} 중심`, paras: [...elementParas, ...structureParas] },
     { icon: '宮', title: '네 기둥, 인생의 네 시기', sub: '년주=초년·조상 / 월주=청년·사회 / 일주=중년·배우자 / 시주=말년·자식', paras: [], positions },
     { icon: '合', title: '글자들의 관계와 신살', sub: `합충형파해 ${relations.chung.length + relations.stemChung.length + relations.yukhap.length + relations.stemHap.length}건 · 신살 ${sinsalNames.length}개`, paras: [...relParas, ...sinsalParas] },
@@ -554,7 +559,7 @@ export function interpret(data) {
   ];
 
   return {
-    strength: st, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues,
+    strength: st, strengthProfile: sp, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues,
     evidence, evidenceByCat, evidenceSummary, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
     gyeok, yong, positions, roots, summary, meta: kb.meta,
   };

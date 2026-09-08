@@ -186,7 +186,16 @@ function buildPages(R, data) {
       <Gauge2 pct={R.strength.pct} left="신약 (나를 채워야 함)" right="신강 (밖으로 써야 함)" color="#d69a2c" />
       <Callout>{name}은 <b>{R.strength.label}</b> 사주예요. 힘이 되는 기운은 <b>{y.el}({ko[y.el]})</b>과 {y.hee}({ko[y.hee]}), 조심할 기운은 <b>{y.gi}({ko[y.gi]})</b>이에요.</Callout>
       <Chips items={[{ label: `용신 ${y.el} ${ko[y.el]}`, tone: 'good' }, { label: `희신 ${y.hee} ${ko[y.hee]}`, tone: 'good' }, { label: `기신 ${y.gi} ${ko[y.gi]}`, tone: 'bad' }, { label: `구신 ${y.gu} ${ko[y.gu]}`, tone: 'gray' }, { label: `한신 ${y.han} ${ko[y.han]}`, tone: 'gray' }, { label: `조후 ${R.needEl} ${ko[R.needEl]}`, tone: 'good' }]} />
-      <Sub>나의 힘</Sub><P words={['신강', '신약', '중화']}>{R.overview[1]}</P>
+      <Sub>나의 힘 — {R.strengthProfile.label} 사주는 보통 이래요</Sub>
+      <Callout tone="orange"><b>{R.strengthProfile.headline}</b></Callout>
+      <P words={['신강', '신약', '중화', '비겁', '인성', '관성', '재성', '식상']}>{R.strengthProfile.traits}</P>
+      <P words={GLYPHS}>{R.strengthProfile.personal}</P>
+      <div className="catrows">
+        <div className="catrow"><b style={{ color: '#2f8a4b' }}>강점</b><p>{R.strengthProfile.strengths}</p></div>
+        <div className="catrow"><b style={{ color: '#d6453d' }}>조심</b><p>{R.strengthProfile.cautions}</p></div>
+        {CATS.filter((c) => R.strengthProfile.life[c]).map((c) => <div className="catrow" key={c}><b style={{ color: CAT_META[c].color }}>{c}</b><p>{R.strengthProfile.life[c]}</p></div>)}
+      </div>
+      <P>{R.strengthProfile.tips}</P>
       <Divider /><Sub>용신이란 — 내게 가장 필요한 기운</Sub><P words={elWords}>{y.text}</P>
       <More title="용신·희신·기신은 어떻게 정했나요?">
         <div className="pairlist">{[['용신', y.el, y.group, y.why], ['희신', y.hee, y.groups.hee, y.how.hee], ['기신', y.gi, y.groups.gi, y.how.gi], ['구신', y.gu, y.groups.gu, y.how.gu], ['한신', y.han, y.groups.han, y.how.han]].map(([r, e, g, d]) => <div key={r} className={`pairrow wrap ${r === '용신' ? 'pick' : ''}`}><span className="pk">{r}</span><b>{e}({ko[e]})</b><span>{g}</span><span className="pt">{d}</span></div>)}</div>
