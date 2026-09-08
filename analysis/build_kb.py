@@ -225,7 +225,7 @@ CLAIMS = {
     "발복·성공": ("운", 1, [r"발복", r"성공", r"잘 풀", r"풀리", r"승승장구", r"상승"]),
     "시련·고비": ("운", -1, [r"시련", r"고비", r"고생", r"힘든 시기", r"바닥"]),
     "구설·관재·소송": ("운", -1, [r"구설", r"관재", r"소송", r"법적", r"송사", r"벌금"]),
-    "새 시작": ("운", 1, [r"새로 시작", r"새롭게", r"출발", r"시작하는"]),
+    "새 시작": ("운", 1, [r"새로 시작", r"새 출발", r"새로운 시작", r"출발선", r"시작하기 좋", r"시작하는 해", r"시작하는 달", r"시작하는 시기"]),
     "정리·마무리": ("운", 0, [r"마무리", r"청산", r"끝맺", r"정리하는 (시기|해|때)", r"정리가 되"]),
     "준비·기다림": ("운", 0, [r"준비하는 (시기|해|때)", r"기다리는 (시기|해|때)", r"때를 (기다|봐야)", r"인내"]),
     # 직장 (추가)
@@ -396,66 +396,106 @@ def year_of(title, upload=""):
     return None
 
 
+STEM_HEAD_RX = re.compile(r"(갑목|을목|병화|정화|무토|기토|경금|신금|임수|계수)\s?(?:일간|일주)?\s?(?:분들|이신 분|은|는|의 경우|이|가)")
+TTI_HEAD_RX = re.compile(r"(쥐|소|호랑이|범|토끼|용|뱀|말|양|원숭이|닭|개|돼지)띠\s?(?:분들|는|은|의 경우|이신 분|들)?")
+ROUNDUP_RX = re.compile(r"일간\s?별|띠\s?별|모든 일간|일지\s?별|유형별|계수\s?~\s?갑목|갑목\s?~\s?계수|총정리|완전판")
+TITLE_MONTH_RX = re.compile(r"(?<![0-9])(1[0-2]|[1-9])\s?월(?![0-9])")
+
+
+def segment_by(text, head_rx, key_of, min_len=120):
+    """소제목(일간/띠 이름) 위치를 기준으로 본문을 잘라 {키: 텍스트} 로 나눈다. 같은 키의 조각은 이어 붙인다."""
+    heads = [(m.start(), key_of(m.group(1))) for m in head_rx.finditer(text)]
+    if len({k for _, k in heads}) < 2:
+        return {}
+    segs = collections.defaultdict(str)
+    for idx, (pos, key) in enumerate(heads):
+        end = heads[idx + 1][0] if idx + 1 < len(heads) else len(text)
+        if end - pos < 40:  # 나열("갑목, 을목, 병화…")은 소제목이 아님
+            continue
+        segs[key] += text[pos:end] + " "
+    return {k: v for k, v in segs.items() if len(v) >= min_len}
+
+
 def analyze_years(docs, claim_rx, cats, pos_rx, neg_rx):
-    """제목에 연도·신년이 있는 문서를 일간/띠/일주/전체 키로 묶어 주장·월별 타임라인을 뽑는다."""
-    groups = collections.defaultdict(list)
+    """연도·신년 영상을 일간/띠/일주/전체 키로 묶는다. 총정리 영상은 소제목 단위로 분절해 배분하고, 제목의 달은 타임라인에 직접 반영."""
+    entries = collections.defaultdict(list)  # key -> [(text, title_month, weight, title)]
     for d in docs:
         y = year_of(d["title"], d.get("upload", ""))
         if not y:
             continue
-        t = d["title"]
-        keys = ["Y%d" % y]
-        for ko, st in STEM_TITLE.items():
-            if ko in t or (STEM_KO[st] + " 일간") in t or (STEM_KO[st] + "일간") in t:
-                keys.append("%s+Y%d" % (st, y))
-        for ko, br in TTI.items():
-            if (ko + "띠") in t:
-                keys.append("%s+Y%d" % (br, y))
-        for i in range(60):
-            st, br = STEMS[i % 10], BRANCHES[i % 12]
+        t, text = d["title"], d["text"]
+        tm = TITLE_MONTH_RX.search(t)
+        title_month = int(tm.group(1)) if tm else None
+        entries["Y%d" % y].append((text, title_month, 1.0, t))
+        stems_t = [st for ko, st in STEM_TITLE.items() if ko in t or (STEM_KO[st] + " 일간") in t or (STEM_KO[st] + "일간") in t]
+        ttis_t = [br for ko, br in TTI.items() if (ko + "띠") in t]
+        roundup = bool(ROUNDUP_RX.search(t)) or len(stems_t) >= 3 or len(ttis_t) >= 3
+        if roundup:
+            segs = segment_by(text, STEM_HEAD_RX, lambda ko: STEM_TITLE.get(ko))
+            for st, seg in segs.items():
+                if st: entries["%s+Y%d" % (st, y)].append((seg, title_month, 1.0, t))
+            tsegs = segment_by(text, TTI_HEAD_RX, lambda ko: TTI.get(ko))
+            for br, seg in tsegs.items():
+                if br: entries["%s+Y%d" % (br, y)].append((seg, title_month, 1.0, t))
+            if not segs and not tsegs:
+                for st in stems_t: entries["%s+Y%d" % (st, y)].append((text, title_month, 0.6, t))
+                for br in ttis_t: entries["%s+Y%d" % (br, y)].append((text, title_month, 0.6, t))
+        else:
+            w = 1.0 if len(stems_t) <= 1 else 0.8
+            for st in stems_t: entries["%s+Y%d" % (st, y)].append((text, title_month, w, t))
+            for br in ttis_t: entries["%s+Y%d" % (br, y)].append((text, title_month, 1.0, t))
+        for k in range(60):
+            st, br = STEMS[k % 10], BRANCHES[k % 12]
             if (STEM_KO[st] + BRANCH_KO[br] + "일주") in t.replace(" ", ""):
-                keys.append("%s%s+Y%d" % (st, br, y))
-        for k in keys:
-            groups[k].append(d)
+                entries["%s%s+Y%d" % (st, br, y)].append((text, title_month, 1.0, t))
     out = {}
-    for key, ds in groups.items():
-        if len(ds) < 2 and not key.startswith("Y"):
+    for key, ents in entries.items():
+        if len(ents) < 2 and not key.startswith("Y"):
             continue
-        claim_counter, claim_docs = collections.Counter(), collections.defaultdict(set)
+        claim_counter, claim_docs = collections.Counter(), collections.Counter()
         cat_counter = collections.Counter()
-        timeline = collections.defaultdict(lambda: {"n": 0, "pos": 0, "neg": 0, "labels": collections.Counter()})
+        timeline = collections.defaultdict(lambda: {"n": 0.0, "pos": 0, "neg": 0, "labels": collections.Counter()})
         pos = neg = 0
-        for d in ds:
-            text = d["text"]
+        titles = []
+        for text, title_month, w, title in ents:
+            if title not in titles: titles.append(title)
+            doc_labels = {}
             for label, rx in claim_rx.items():
                 n = len(rx.findall(text))
                 if n:
-                    claim_counter[label] += n
-                    claim_docs[label].add(d["id"])
+                    claim_counter[label] += n * w
+                    claim_docs[label] += w
+                    doc_labels[label] = n
             for c, crx in cats.items():
                 cat_counter[c] += len(crx.findall(text))
-            pos += len(pos_rx.findall(text)); neg += len(neg_rx.findall(text))
+            p_, n_ = len(pos_rx.findall(text)), len(neg_rx.findall(text))
+            pos += p_; neg += n_
+            if title_month:
+                tl = timeline["%d월" % title_month]
+                tl["n"] += 3 * w; tl["pos"] += p_; tl["neg"] += n_
+                for label, n in doc_labels.items(): tl["labels"][label] += n * w
             sents = SENT_SPLIT.split(text)
-            for i, sent in enumerate(sents):
+            for i2, sent in enumerate(sents):
                 for m in MONTH_RX.finditer(sent):
                     mk = (m.group(1) + "월") if m.group(1) else m.group(0)
-                    ctx = sent + " " + (sents[i + 1] if i + 1 < len(sents) else "")
+                    ctx = sent + " " + (sents[i2 + 1] if i2 + 1 < len(sents) else "")
                     tl = timeline[mk]
-                    tl["n"] += 1
+                    tl["n"] += w
                     tl["pos"] += len(pos_rx.findall(ctx)); tl["neg"] += len(neg_rx.findall(ctx))
                     for label, rx in claim_rx.items():
                         if rx.search(ctx):
-                            tl["labels"][label] += 1
+                            tl["labels"][label] += w
         cat_total = sum(cat_counter.values()) or 1
-        claims = [[l, c, len(claim_docs[l])] for l, c in claim_counter.items() if len(claim_docs[l]) >= (2 if len(ds) >= 4 else 1)]
+        min_docs = 2 if len(ents) >= 4 else 1
+        claims = [[l, round(c, 1), round(claim_docs[l], 1)] for l, c in claim_counter.items() if claim_docs[l] >= min_docs]
         claims.sort(key=lambda x: (-x[2], -x[1]))
         tl_out = {}
         for mk, v in timeline.items():
             if v["n"] < 1:
                 continue
-            tl_out[mk] = {"n": v["n"], "polarity": round((v["pos"] - v["neg"]) / (v["pos"] + v["neg"]), 2) if (v["pos"] + v["neg"]) else 0.0,
-                          "labels": [[l, c] for l, c in v["labels"].most_common(6)]}
-        out[key] = {"docs": len(ds), "titles": [d["title"][:40] for d in ds[:6]], "channels": sorted({d["channel"] for d in ds}),
+            tl_out[mk] = {"n": round(v["n"], 1), "polarity": round((v["pos"] - v["neg"]) / (v["pos"] + v["neg"]), 2) if (v["pos"] + v["neg"]) else 0.0,
+                          "labels": [[l, round(c, 1)] for l, c in v["labels"].most_common(6)]}
+        out[key] = {"docs": len(ents), "titles": [x[:40] for x in titles[:6]],
                     "polarity": round((pos - neg) / (pos + neg), 3) if (pos + neg) else 0.0,
                     "categories": {c: round(cat_counter[c] / cat_total, 3) for c in CATEGORIES},
                     "claims": claims[:16], "timeline": tl_out}
