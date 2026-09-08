@@ -6,6 +6,8 @@ import * as P from '../data/patterns.js';
  */
 const first = (s) => (s?.match(/^[^.!?]*[.!?]/) || [s || ''])[0];
 const uniq = (a) => [...new Set(a.filter(Boolean))];
+const hasBatchim = (w) => { const c = w.charCodeAt(w.length - 1); return c >= 0xac00 && c <= 0xd7a3 ? (c - 0xac00) % 28 !== 0 : true; };
+const IRANEUN = (w) => (hasBatchim(w) ? '이라는' : '라는');
 const KW_JUNK = /(일주|일간|사주|인데|태어|이라|라고|분들|같은|이런|그런|이제|그냥|정도|경우|들여$|있거$|거$|여$|^감목$|^계수$|^해중$|^인중$|^자중$|^오중$|^묘중$|^유중$|^진중$|^술중$|^축중$|^미중$|^사중$|^신중$)/;
 
 // 조심할 흐름에 대한 실천 조언
@@ -126,12 +128,12 @@ export function expertStory(cat, rows, facts, evidence) {
   // 2) 좋은 흐름
   for (const r of pos.slice(0, 2)) {
     const link = (LINKS[r.label] || []).find(([k]) => facts[k]);
-    paras.push(`좋게 보는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'이라는 근거가 있어 이 이야기가 더 힘을 얻어요.` : ` 주로 ${r.from.slice(0, 2).join('·')} 조합에서 나오는 이야기예요.`}${ADVICE_POS[r.label] ? ` ${ADVICE_POS[r.label]}` : ''}`);
+    paras.push(`좋게 보는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'${IRANEUN(link[1])} 근거가 있어 이 이야기가 더 힘을 얻어요.` : ` 주로 ${r.from.slice(0, 2).join('·')} 조합에서 나오는 이야기예요.`}${ADVICE_POS[r.label] ? ` ${ADVICE_POS[r.label]}` : ''}`);
   }
   // 3) 조심할 흐름
   for (const r of neg.slice(0, 2)) {
     const link = (LINKS[r.label] || []).find(([k]) => facts[k]);
-    paras.push(`조심하라는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'이라는 근거가 있어 실제로 그렇게 흐르기 쉬워요.` : ` 주로 ${r.from.slice(0, 2).join('·')} 조합에서 나오는 경고예요.`}${ADVICE_NEG[r.label] ? ` ${ADVICE_NEG[r.label]}` : ''}`);
+    paras.push(`조심하라는 쪽 — ${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}${link ? ` 이 사주에는 '${link[1]}'${IRANEUN(link[1])} 근거가 있어 실제로 그렇게 흐르기 쉬워요.` : ` 주로 ${r.from.slice(0, 2).join('·')} 조합에서 나오는 경고예요.`}${ADVICE_NEG[r.label] ? ` ${ADVICE_NEG[r.label]}` : ''}`);
   }
   // 4) 중립 주제 한 줄
   if (neu.length && paras.length < 4) paras.push(`함께 나오는 주제 — ${neu.slice(0, 2).map((r) => `${r.label}: ${first(P.CLAIM_TEXT[r.label] || '')}`).join(' ')}`);
