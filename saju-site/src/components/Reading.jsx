@@ -312,7 +312,7 @@ function buildPages(R, data) {
           <Divider /><Sub>사주 전문가들이 말하는 {data.current.nowYear}년 — {R.yearExpert.now.personalSources.join('·') || '전체'}</Sub>
           {ov.paras.map((p, i) => <P key={i} words={['좋게 보는 쪽', '조심하라는 쪽']}>{p}</P>)}
           {ov.months.length > 0 && <div className="ymonths">{ov.months.map((m) => <div key={m.mk} className={`ym ${m.polarity > 0.15 ? 'good' : m.polarity < -0.15 ? 'bad' : ''}`}><b>{m.mk}</b><span>{m.labels.map((l) => l.label).join(' · ') || '언급만 있음'}</span></div>)}</div>}
-          <p className="faq-note">전문가들이 그 해를 말하면서 짚은 달과 주제예요. 아래 열두 달 그래프(내 사주 계산)와 함께 보면 시기를 고르기 쉬워요.</p>
+          <p className="faq-note">{R.yearExpert.now.monthsScope === 'personal' ? `${R.yearExpert.now.personalSources.join('·')} 신년운세에서 짚은 달과 주제예요.` : '그해 전체 신년운세에서 짚은 달과 주제예요(내 일간·띠 콘텐츠에는 달 언급이 적어요).'} 아래 열두 달 그래프(내 사주 계산)와 함께 보면 시기를 고르기 쉬워요.</p>
         </>
       ); })()}
       <Divider /><Sub>{data.current.nowYear}년 열두 달 흐름</Sub>

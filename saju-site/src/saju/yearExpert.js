@@ -29,8 +29,8 @@ export function yearExpert({ year, dayStem, yearBranch, dayText }) {
     docs += s.data.docs; if (s.w >= 2) personalDocs += s.data.docs; else generalDocs += s.data.docs;
     for (const [label, n, d] of s.data.claims || []) {
       const cat = CLAIM_META[label]?.[0] || '운', pol = CLAIM_META[label]?.[1] ?? 0;
-      const row = (claims[label] ||= { label, cat, pol, n: 0, docs: 0, from: [], score: 0 });
-      row.n += n; row.docs += d; row.score += d * s.w; if (!row.from.includes(s.label)) row.from.push(s.label);
+      const row = (claims[label] ||= { label, cat, pol, n: 0, docs: 0, from: [], score: 0, personal: false });
+      row.n += n; row.docs += d; row.score += d * s.w; if (s.w >= 2) row.personal = true; if (!row.from.includes(s.label)) row.from.push(s.label);
     }
     for (const [mk, t] of Object.entries(s.data.timeline || {})) {
       for (const bucket of s.w >= 2 ? [months, monthsPersonal] : [months]) {
@@ -40,17 +40,20 @@ export function yearExpert({ year, dayStem, yearBranch, dayText }) {
       }
     }
   }
-  const rows = Object.values(claims).sort((a, b) => b.score - a.score);
+  const all = Object.values(claims).sort((a, b) => b.score - a.score);
+  const rowsP = all.filter((r) => r.personal);
+  const rows = rowsP.length >= 4 ? rowsP : [...rowsP, ...all.filter((r) => !r.personal)];
   const byCat = {};
   for (const r of rows) (byCat[r.cat] ||= []).push(r);
-  const useMonths = Object.keys(monthsPersonal).length >= 3 ? monthsPersonal : months;
+  const monthsScope = Object.keys(monthsPersonal).filter((mk) => monthsPersonal[mk].n >= 2).length >= 2 ? 'personal' : 'general';
+  const useMonths = monthsScope === 'personal' ? monthsPersonal : months;
   const monthList = MONTH_ORDER.filter((mk) => useMonths[mk] && useMonths[mk].n >= 2).map((mk) => {
     const m = useMonths[mk];
     const labels = Object.entries(m.labels).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([label]) => ({ label, pol: CLAIM_META[label]?.[1] ?? 0, cat: CLAIM_META[label]?.[0] || '운' }));
     return { mk, n: m.n, polarity: m.n ? m.pos / m.n : 0, labels };
   });
   const only = srcs.filter((s) => s.w >= 2).map((s) => s.label);
-  return { year, docs, personalDocs, generalDocs, sources: srcs.map((s) => s.label), personalSources: only, rows, byCat, months: monthList };
+  return { year, docs, personalDocs, generalDocs, sources: srcs.map((s) => s.label), personalSources: only, rows, byCat, months: monthList, monthsScope, claimsScope: rowsP.length >= 4 ? 'personal' : 'mixed' };
 }
 
 /** 영역별 문단 */
