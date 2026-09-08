@@ -2,6 +2,7 @@ import * as K from '../data/knowledge.js';
 import * as D from '../data/deep.js';
 import * as P from '../data/patterns.js';
 import { ELEMENT_KO, STEM_KO, BRANCH_KO, STEM_ELEMENT } from './tables.js';
+import { expertStory } from './expert.js';
 
 /**
  * 영역별 "개인 맞춤" 섹션 — 실제 글자·자리·개수·관계에서 계산하되, 명리 용어는 처음 나올 때 쉬운 말로 풀어 쓴다.
@@ -19,6 +20,8 @@ const READ = { ...STEM_KO, ...BRANCH_KO };
 const hasBatchim = (ch) => { const r = READ[ch] || ch; const c = r.charCodeAt(r.length - 1); return c >= 0xac00 && c <= 0xd7a3 ? (c - 0xac00) % 28 !== 0 : false; };
 const GA = (ch) => (hasBatchim(ch) ? '이' : '가');
 const WA = (ch) => (hasBatchim(ch) ? '과' : '와');
+const EUL = (w) => (hasBatchim(w.slice(-1)) ? '을' : '를');
+const IRA = (w) => (hasBatchim(w.slice(-1)) ? '이라' : '라');
 const REL_KO = { chung: '충', wonjin: '원진', hyeong: '형', pa: '파', hae: '해', gwimun: '귀문', yukhap: '합', samhap: '삼합', banghap: '방합', stemHap: '천간합' };
 // 쉬운 말 풀이
 const REL_EASY = { 충: '서로 부딪혀 움직이는 힘(변화·이동)', 원진: '이유 없는 미움과 오해가 쌓이는 관계', 형: '서로 조정하느라 생기는 마찰(다툼·수술·법 문제 주의)', 파: '약속이나 틀이 깨지기 쉬운 관계', 해: '은근한 방해가 끼는 관계', 귀문: '예민한 직관과 날카로운 신경', 합: '서로 끌어당겨 묶이는 인연', 삼합: '여러 글자가 한 팀으로 뭉치는 큰 힘', 방합: '같은 계절 글자가 뭉쳐 그 기운이 세지는 힘', 천간합: '겉으로 드러난 마음이 한쪽으로 묶이는 힘' };
@@ -32,7 +35,7 @@ const STAGE_EASY = {
 };
 const GOD_EASY = { 관성: '회사·직함·책임을 뜻하는 글자', 인성: '배움·자격·문서를 뜻하는 글자', 재성: '돈과 현실 감각을 뜻하는 글자', 식상: '표현·재능·만드는 힘을 뜻하는 글자', 비겁: '나와 같은 편(동료·형제·경쟁자)을 뜻하는 글자' };
 
-export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, daeunAll, spouseGroup, st, gongmangSet }) {
+export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, evidence, daeunAll, spouseGroup, st, gongmangSet }) {
   const { pillars, detail, order, dayStem, relations = {}, sinsal = {}, elements = {}, missing = [], strongest } = data;
   const ko = ELEMENT_KO;
   const present = order.filter((k) => pillars[k]);
@@ -67,10 +70,10 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     const s = [];
     for (const b of bad) {
       if (!b.other) continue;
-      s.push(`${POS_KO[pos]}지 ${br}${WA(br)} ${POS_KO[b.other.pos]}지 ${b.other.ch}${GA(b.other.ch)} 만나 ${b.kind}을 이뤄요. ${b.kind}은 ${REL_EASY[b.kind]}이라, ${area}과(와) ${POS_ROLE[b.other.pos]} 사이에서 ${b.kind === '충' ? '변화와 이동이 잦고 한자리에 오래 머물기 어려워요' : b.kind === '원진' ? '이유 없이 서운해지는 일이 생겨요 — 감정보다 사실로 대화하세요' : b.kind === '형' ? '조정하느라 마찰이 생기니 서류·건강·법적인 것을 미리 챙기세요' : b.kind === '귀문' ? '감이 예민하게 작동해요 — 잠과 운동으로 신경을 풀어 주세요' : '약속이 틀어지거나 은근한 방해가 끼기 쉬우니 기대를 조금 낮추고 문서로 남기세요'}.`);
+      s.push(`${POS_KO[pos]}지 ${br}${WA(br)} ${POS_KO[b.other.pos]}지 ${b.other.ch}${GA(b.other.ch)} 만나 ${b.kind}${EUL(b.kind)} 이뤄요. ${b.kind}${hasBatchim(b.kind.slice(-1)) ? '은' : '는'} ${REL_EASY[b.kind]}${IRA(REL_EASY[b.kind])}, ${area}${WA(area.slice(-1))} ${POS_ROLE[b.other.pos]} 사이에서 ${b.kind === '충' ? '변화와 이동이 잦고 한자리에 오래 머물기 어려워요' : b.kind === '원진' ? '이유 없이 서운해지는 일이 생겨요 — 감정보다 사실로 대화하세요' : b.kind === '형' ? '조정하느라 마찰이 생기니 서류·건강·법적인 것을 미리 챙기세요' : b.kind === '귀문' ? '감이 예민하게 작동해요 — 잠과 운동으로 신경을 풀어 주세요' : '약속이 틀어지거나 은근한 방해가 끼기 쉬우니 기대를 조금 낮추고 문서로 남기세요'}.`);
     }
     const goodByOther = uniq(good.filter((g) => g.other).map((g) => `${POS_KO[g.other.pos]}지 ${g.other.ch}`));
-    if (goodByOther.length) s.push(`반대로 ${POS_KO[pos]}지 ${br}${GA(br)} ${goodByOther.join('·')}${WA(goodByOther[goodByOther.length - 1].slice(-1))} ${uniq(good.map((g) => g.kind)).join('·')}으로 묶여 있어요. ${REL_EASY[good[0].kind]}이라 ${area}에서 사람과 인연이 자연스럽게 따라붙고, 혼자보다 함께할 때 일이 풀려요.`);
+    if (goodByOther.length) s.push(`반대로 ${POS_KO[pos]}지 ${br}${GA(br)} ${goodByOther.join('·')}${WA(goodByOther[goodByOther.length - 1].slice(-1))} ${uniq(good.map((g) => g.kind)).join('·')}으로 묶여 있어요. ${REL_EASY[good[0].kind]}${IRA(REL_EASY[good[0].kind])} ${area}에서 사람과 인연이 자연스럽게 따라붙고, 혼자보다 함께할 때 일이 풀려요.`);
     if (!s.length) s.push(none);
     return s;
   };
@@ -97,6 +100,24 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     ].filter(Boolean);
   };
   const placeEasy = (list, pos, texts) => (list.some((x) => x.pos === pos) ? texts[pos] : null);
+  // 이 사주의 구조 사실들 — 전문가 이야기와 연결하는 근거
+  const sp = seats(spouseGroup);
+  const facts = {
+    mixedGwan: hasGod('정관') && hasGod('편관'), sanggwanGyeon: hasGod('상관') && hasGod('정관'),
+    gwanIn: seats('관성').length > 0 && seats('인성').length > 0, jaeSaengGwan: seats('재성').length > 0 && seats('관성').length > 0, siksangJae: seats('식상').length > 0 && seats('재성').length > 0,
+    jaengjae: lv('비겁') === '강' && lv('재성') !== '무', jaedaSinyak: st.label === '신약' && lv('재성') === '강', sinyak: st.label === '신약',
+    dayChung: relsAt('day', ['chung']).length > 0, monthChung: relsAt('month', ['chung']).length > 0, dayWonjin: relsAt('day', ['wonjin']).length > 0, dayHap: relsAt('day', GOOD).length > 0,
+    hasYeokma: hasSal('역마'), hasDohwa: hasSal('도화'), hasHongyeom: hasSal('홍염'), hasBaekho: hasSal('백호대살'), hasYangin: hasSal('양인'), hasGwimun: hasSal('귀문관살'), hasGoegang: hasSal('괴강'), hasHyeonchim: hasSal('현침살'), hasGoran: hasSal('고란살'), hasHwagae: hasSal('화개'), hasMunchang: hasSal('문창귀인') || hasSal('학당귀인'), hasTaegeuk: hasSal('태극귀인'), hasGuiin: ['천을귀인', '천덕귀인', '월덕귀인', '복성귀인'].some(hasSal), ganyeo: hasSal('간여지동'),
+    hasJeonggwan: hasGod('정관'), hasPyeongwan: hasGod('편관'), hasPyeonjae: hasGod('편재'), hasPyeonin: hasGod('편인'), hasSanggwan: hasGod('상관'),
+    noGwan: lv('관성') === '무', noJae: lv('재성') === '무', noIn: lv('인성') === '무',
+    strongIn: lv('인성') === '강', strongGwan: lv('관성') === '강', strongJae: lv('재성') === '강', strongSik: lv('식상') === '강', strongBi: lv('비겁') === '강',
+    gwanMonth: seats('관성').some((x) => x.pos === 'month'), jaeMonth: seats('재성').some((x) => x.pos === 'month'), jaeDay: seats('재성').some((x) => x.pos === 'day'),
+    jewangMonth: ['제왕', '건록'].includes(detail.month.stage), gyeokGwan: ['정관격', '정인격'].includes(gyeok.key),
+    jaego: !!JAEGO[GEN[GEN[dayEl]]] && present.some((k) => pillars[k].branch === JAEGO[GEN[GEN[dayEl]]]),
+    noSpouse: sp.length === 0, spouseMany: sp.length >= 3, spouseDay: sp.some((x) => x.pos === 'day'), spouseTime: sp.some((x) => x.pos === 'time'), spouseMixed: uniq(sp.map((x) => x.god)).length > 1,
+    gongDay: !!gongmangSet?.has(pillars.day.branch), strongSu: (elements['水'] || 0) >= 3, strongHwa: (elements['火'] || 0) >= 3,
+  };
+  const expert = (cat) => expertStory(cat, evidenceByCat?.[cat] || [], facts, evidence) || kbEasy(cat) || ['이 조합에 대한 전문가 언급이 아직 충분히 모이지 않았어요.'];
 
   const out = {};
 
@@ -133,9 +154,9 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
       headline: !gw.length ? `회사 글자(관성)가 없어 직함보다 실력으로 평가받는 길이 맞아요.` : `회사·직함 글자(관성)가 ${gw.length}자리${gw.some((x) => x.pos === 'month') ? ', 그중 사회 무대인 월주에도' : ''} 있어 ${jeong && pyeon ? '두 갈래 길이 함께 열리는' : pyeon ? '압박 속에서 빨리 크는' : '차근차근 올라가는'} 직장운이에요.`,
       sections: [
         { title: '내 사주에서 회사·직함을 뜻하는 글자', paras: [...s1, ...helpers] },
+        { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('직장') },
         { title: '글자들이 만나는 모습 — 직장 자리의 합·충·형·파·해', paras: s2 },
-        { title: '사주 전문가들이 자주 짚는 이야기', paras: kbEasy('직장') || ['이 조합에 대한 전문가 언급이 아직 충분히 모이지 않았어요.'] },
-      ],
+              ],
     };
   }
 
@@ -168,9 +189,9 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
       headline: !jae.length ? '돈 글자(재성)가 드러나 있지 않아 운에서 들어올 때 크게 움직이는 재물운이에요.' : `돈 글자(재성)가 ${jae.length}자리 있고 ${pyeon && !jeong ? '큰 단위로 움직이는' : jeong && pyeon ? '고정·유동 수입이 함께 열린' : '꾸준히 쌓는'} 재물운이에요.`,
       sections: [
         { title: '내 사주에서 돈을 뜻하는 글자', paras: [...s1, ...flags] },
+        { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('금전') },
         { title: '글자들이 만나는 모습 — 돈이 드나드는 자리', paras: s2 },
-        { title: '사주 전문가들이 자주 짚는 이야기', paras: kbEasy('금전') || ['이 조합에 대한 전문가 언급이 아직 충분히 모이지 않았어요.'] },
-      ],
+              ],
     };
   }
 
@@ -197,9 +218,9 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
       headline: !sp.length ? '연인 글자가 드러나 있지 않아 시기를 잘 타는 것이 곧 연애운이에요.' : `연인 글자가 ${sp.length}자리 있고 ${kinds.length > 1 ? '인연이 겹치기 쉬운' : sp.some((x) => x.pos === 'day') ? '결혼 인연이 뚜렷한' : '깊고 오래 가는'} 연애운이에요.`,
       sections: [
         { title: '내 사주에서 연인·배우자를 뜻하는 글자', paras: s1 },
+        { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('연애') },
         { title: '배우자 자리에서 만나는 글자들 — 합·충·형·원진', paras: s2 },
-        { title: '사주 전문가들이 자주 짚는 이야기', paras: kbEasy('연애') || ['이 조합에 대한 전문가 언급이 아직 충분히 모이지 않았어요.'] },
-      ],
+              ],
     };
   }
 
@@ -216,8 +237,8 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
     out.건강 = {
       headline: `${st.label} 사주로 ${first(P.HEALTH_TYPE[st.label] || '')}`,
       sections: [
+        { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('건강') },
         { title: '몸을 뜻하는 자리에서 만나는 글자들', paras: s1 },
-        { title: '사주 전문가들이 자주 짚는 이야기', paras: kbEasy('건강') || ['이 조합에 대한 전문가 언급이 아직 충분히 모이지 않았어요.'] },
       ],
     };
   }
@@ -247,9 +268,9 @@ export function buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, 
       headline: !ins.length ? '배움 글자(인성)가 드러나 있지 않아 실전에서 익히는 공부가 맞아요.' : `배움 글자(인성)가 ${ins.length}자리 있는 ${ins.some((x) => x.god === '편인') ? '직관·몰입형' : '체계·정통형'} 학업운이에요.`,
       sections: [
         { title: '내 사주에서 배움·자격을 뜻하는 글자', paras: [...s1, ...helpers] },
+        { title: '사주 전문가들이 자주 짚는 이야기', paras: expert('학업') },
         { title: '글자들이 만나는 모습 — 공부 자리', paras: s2 },
-        { title: '사주 전문가들이 자주 짚는 이야기', paras: kbEasy('학업') || ['이 조합에 대한 전문가 언급이 아직 충분히 모이지 않았어요.'] },
-      ],
+              ],
     };
   }
 

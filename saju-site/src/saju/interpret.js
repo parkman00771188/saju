@@ -532,7 +532,7 @@ export function interpret(data) {
     c.worst = w ? { year: w.year, text: w.text, score: w.luck.scores[cat] } : null;
   }
   // ---------- 이 사주만의 포인트 (글자·자리·개수·관계 기반) ----------
-  const personal = buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, daeunAll, spouseGroup, st, gongmangSet, currentDaeun: current.daeun });
+  const personal = buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, evidence, daeunAll, spouseGroup, st, gongmangSet, currentDaeun: current.daeun });
   for (const cat of K.CATS) { cats[cat].personal = personal[cat]?.sections || []; cats[cat].headline = personal[cat]?.headline || null; }
   for (const cat of ['직장', '금전', '연애', '건강']) { const sec = cats[cat].personal[0]; if (sec && sp.life[cat]) sec.paras.push(`${st.label} 사주의 ${cat} 특징 — ${sp.life[cat]}`); }
 

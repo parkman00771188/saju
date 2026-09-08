@@ -22,7 +22,7 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 OUT_JSON = os.path.join(ROOT, "saju-site", "src", "data", "kb_stats.json")
 EXC_DIR = os.path.join(HERE, "excerpts")
-CHANNEL_NAME = {"dohwadore_saju": "도화도르", "stan4pillars": "스탠사주", "ohsaju": "오사주"}
+CHANNEL_NAME = {"dohwadore_saju": "도화도르", "stan4pillars": "스탠사주", "ohsaju": "오사주", "FORCETELLERKR": "포스텔러"}
 
 STEM_KO = dict(zip("甲乙丙丁戊己庚辛壬癸", "갑을병정무기경신임계"))
 BRANCH_KO = dict(zip("子丑寅卯辰巳午未申酉戌亥", "자축인묘진사오미신유술해"))
