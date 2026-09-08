@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { interpret } from '../saju/interpret.js';
 import { buildFaq } from '../saju/faq.js';
 import { buildGaeun } from '../saju/gaeun.js';
+import { eventFor, makeEventCtx } from '../saju/events.js';
+import { monthRange } from '../saju/faq.js';
 import { READING_SOURCES } from '../saju/context.js';
 import { CATS, CAT_META, STEMS as KSTEMS, ELEMENTS as KEL, SINSAL as KSINSAL, TEN_GOD_GROUP } from '../data/knowledge.js';
 import { GLOSSARY } from '../data/glossary.js';
@@ -326,12 +328,12 @@ function buildPages(R, data) {
 }
 
 function FaqList({ items, data }) {
-  const [open, setOpen] = useState(() => new Set([items[0]?.id]));
-  const toggle = (id) => setOpen((prev) => { const n = new Set(prev); if (n.has(id)) n.delete(id); else n.add(id); return n; });
+  const [open, setOpen] = useState(null); // 기본은 모두 접힘, 한 번에 하나만
+  const toggle = (id) => setOpen((prev) => (prev === id ? null : id));
   return (
     <div className="faq">
       {items.map((it) => {
-        const on = open.has(it.id);
+        const on = open === it.id;
         const color = (it.cat && CAT_META[it.cat]?.color) || '#c9962e';
         return (
           <div key={it.id} className={`faq-item ${on ? 'open' : ''}`}>
@@ -347,7 +349,8 @@ function FaqList({ items, data }) {
                       <div key={yc.year} className="fy">
                         <div className="fy-head"><b>{yc.year}년 {yc.text}</b><span className="fy-age">{yc.age}세</span><Score n={yc.score} color={color} />{yc.far && <span className="fy-far">가까운 3년 밖</span>}{yc.note && <span className="fy-note">{yc.note}</span>}</div>
                         <p className="fy-why">{yc.why}</p>
-                        {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
+                        {yc.story && <p className="fy-story">{yc.story}</p>}
+                        {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}{m.event && <span className="fy-event">{m.event}</span>}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
                         {yc.avoid.length ? <p className="fy-avoid">피할 달: {yc.avoid.join(', ')}</p> : null}
                         {yc.cautions.length ? <p className="fy-avoid">이 해 주의: {yc.cautions.join(' · ')}</p> : null}
                       </div>
@@ -371,6 +374,8 @@ function CategoryPage({ R, data, cat }) {
   const [year, setYear] = useState(data.current.nowYear);
   const yy = R.years.find((y) => y.year === year);
   const months = useMemo(() => R.monthsOf(year), [R, year]);
+  const ectx = useMemo(() => makeEventCtx(R, data), [R, data]);
+  const topMs = useMemo(() => [...months].filter((mm) => year !== data.current.nowYear || mm.monthNo >= data.current.nowMonth).sort((a, b) => b.luck.scores[cat] - a.luck.scores[cat] || a.monthNo - b.monthNo).slice(0, 2).sort((a, b) => a.monthNo - b.monthNo), [months, cat, year, data]);
   const key = cat === '직장' ? ['격국', '관성', '명예', '승진', '독립'] : cat === '금전' ? ['재성', '재물', '식상', '용신'] : cat === '연애' ? ['배우자', '인연', '일지', '합', '충'] : cat === '건강' ? ['체질', '오행', '검진', '수면'] : ['인성', '자격', '시험', '배움'];
   return (
     <>
@@ -384,8 +389,10 @@ function CategoryPage({ R, data, cat }) {
       <Sub>{c.sections[0].title}</Sub>{c.sections[0].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>{c.sections[1].title}</Sub>{c.sections[1].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>앞으로 10년 {cat}운</Sub>
+      <p className="chart-hint">👆 그래프의 <b>연도를 누르면</b> 그 해 열두 달 {cat}운이 아래에 열려요 · 지금 <b>{year}년</b></p>
       <div className="flow-chart-scroll"><Trend points={c.series} color={m.color} height={160} selected={year} onPick={(p) => setYear(p.key)} /></div>
-      {yy && <div className="yearnote"><b>{year}년 {yy.text}</b><Score n={yy.luck.scores[cat]} color={m.color} /><p>{yy.luck.texts[cat]}</p><MonthBars months={months} color={m.color} nowMonth={year === data.current.nowYear ? data.current.nowMonth : null} getValue={(mm) => mm.luck.scores[cat]} /><small>{year}년 열두 달 {cat}운 — 막대가 높을수록 그 달에 유리해요.</small></div>}
+      {yy && <div className="yearnote"><b>{year}년 {yy.text}</b><Score n={yy.luck.scores[cat]} color={m.color} /><p>{yy.luck.texts[cat]}</p><MonthBars months={months} color={m.color} nowMonth={year === data.current.nowYear ? data.current.nowMonth : null} getValue={(mm) => mm.luck.scores[cat]} /><small>{year}년 열두 달 {cat}운 — 막대가 높을수록 그 달에 유리해요.</small>
+        <div className="evlist"><b className="evtitle">사건의 형태로 보면</b>{topMs.map((mm) => <p key={mm.monthNo} className="fy-event block"><b>{mm.monthNo}월 {mm.text}</b> — {eventFor({ g: mm, cat, ctx: ectx, range: monthRange(year, mm.monthNo) })}</p>)}</div></div>}
       <Divider /><Sub>기운이 들어오는 때</Sub>{(c.sections.find((s) => /때/.test(s.title))?.paras || []).slice(0, 3).map((p, i) => <P key={i} words={[R.needEl, `${R.needEl}(${ELEMENT_KO[R.needEl]})`]}>{p}</P>)}
       <Divider /><Sub>지금 흐르는 운</Sub><div className="nowlist">{c.now.map((n, i) => <div className="nowitem" key={i}><div className="nowlabel"><span>{n.label}</span><Score n={n.score} color={m.color} /></div><p>{n.text}</p></div>)}</div>
       <More title="더 자세히 보기 (전체 설명 · 조합 · 원문)">

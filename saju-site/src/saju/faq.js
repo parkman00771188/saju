@@ -2,6 +2,15 @@ import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
 import { ELEMENT_KO, STEMS, STEM_ELEMENT, STEM_KO, BRANCH_ANIMAL, BRANCH_YUKHAP, BRANCH_SAMHAP, BRANCH_CHUNG, BRANCH_WONJIN } from './tables.js';
+import { eventFor, makeEventCtx } from './events.js';
+import { monthsForYear } from './context.js';
+
+// 절입 기준 월운 기간 → "6월 6일~7월 6일"
+const fmtDay = (x) => { const d = new Date(String(x).replace(' ', 'T')); return `${d.getMonth() + 1}월 ${d.getDate()}일`; };
+const rangeCache = {};
+export const monthRange = (year, monthNo) => {
+  try { rangeCache[year] ||= monthsForYear(year); const t = rangeCache[year][monthNo - 1]; return t ? `${fmtDay(t.start)}~${fmtDay(t.end)}` : `${monthNo}월`; } catch { return `${monthNo}월`; }
+};
 
 /** 해석 결과(R)와 원국(data)에서 자주 묻는 질문 14개의 답을 만든다. 시기 질문은 연도 카드(그 해에 좋은 달과 이유)로 답한다. */
 const first = (s) => (s?.match(/^[^.!?]*[.!?]/) || [s || ''])[0];
@@ -31,6 +40,7 @@ export function buildFaq(R, data) {
   const remaining = months.filter((m) => m.monthNo >= nowM);
   const monthsNow = remaining.length ? remaining : months; // 올해 추천은 남은 달 기준
   const NEAR_END = nowY + 2; // 올해·내년·내후년 우선
+  const ectx = makeEventCtx(R, data);
   const S = K.STEMS[dayStem] || {};
   const gy = R.gyeok, y = R.yong, prof = R.profile, needEl = R.needEl;
   const dayBranch = pillars.day.branch, yearBranch = pillars.year.branch;
@@ -80,38 +90,38 @@ export function buildFaq(R, data) {
   const yearCard = (yy, cat, key) => {
     const ms = (R.monthsOf(yy.year) || []).filter((m) => yy.year !== nowY || m.monthNo >= nowM);
     const val = (m) => scoreOf(m, key) + reasonsFor(m, cat).length * 0.6 - cautionWeight(m);
-    const top = sortM(ms, val).filter((m) => reasonsFor(m, cat).length || scoreOf(m, key) >= 4).slice(0, 3).sort(byNo);
+    const strongM = sortM(ms, val).filter((m) => reasonsFor(m, cat).length || scoreOf(m, key) >= 4).slice(0, 3);
+    const top = (strongM.length ? strongM : sortM(ms, val).slice(0, 2)).sort(byNo);
     const avoid = ms.filter((m) => cautionsFor(m).length && scoreOf(m, key) <= 2).slice(0, 2);
     const why = reasonsFor(yy, cat);
     return {
       year: yy.year, text: yy.text, age: yy.age, score: scoreOf(yy, key),
       why: (why.length ? `${why.join(', ')}. ` : '') + first(yy.luck.texts[key || '직장']),
-      months: top.map((m) => ({ no: m.monthNo, text: m.text, score: scoreOf(m, key), why: reasonsFor(m, cat).join(', ') || '흐름이 높은 달' })),
+      months: top.map((m) => ({ no: m.monthNo, text: m.text, score: scoreOf(m, key), why: reasonsFor(m, cat).join(', ') || (strongM.length ? '흐름이 높은 달' : '이 해 안에서는 상대적으로 나은 달'), event: eventFor({ g: m, cat: cat || '종합', ctx: ectx, range: monthRange(yy.year, m.monthNo) }) })),
+      story: eventFor({ g: yy, cat: cat || '종합', ctx: ectx, span: '년' }),
+      weak: scoreOf(yy, key) < 3,
       avoid: avoid.map((m) => `${m.monthNo}월(${cautionsFor(m).join('·')})`),
       cautions: cautionsFor(yy),
       note: yy.year === nowY ? '남은 달 기준' : null,
     };
   };
-  // 올해·내년·내후년에서 먼저 고르고, 좋은 해가 부족할 때만 그 뒤 연도로 넓힌다
+  // 올해·내년·내후년 세 해는 항상 보여 주고(각 해의 좋은 달), 세 해 모두 약하면 뒤 연도 하나를 참고로 덧붙인다
   const rankOf = (yy, cat, key) => scoreOf(yy, key) + reasonsFor(yy, cat).length * 0.7 - cautionWeight(yy);
-  const qualifies = (yy, cat, key) => scoreOf(yy, key) >= 3 && (reasonsFor(yy, cat).length > 0 || scoreOf(yy, key) >= 4) && cautionWeight(yy) < 1.2;
-  const pickYears = (cat, key, n = 3) => {
-    const near = years.filter((yy) => yy.year <= NEAR_END), far = years.filter((yy) => yy.year > NEAR_END);
-    const rank = (arr) => [...arr].sort((a, b) => rankOf(b, cat, key) - rankOf(a, cat, key) || a.year - b.year);
-    const picked = rank(near).filter((yy) => qualifies(yy, cat, key)).slice(0, n).map((yy) => ({ yy, far: false }));
-    if (picked.length < 2) for (const yy of rank(far)) { if (picked.length >= Math.min(n, picked.length + 2) || !qualifies(yy, cat, key)) break; picked.push({ yy, far: true }); }
-    if (!picked.length) picked.push({ yy: rank(near)[0], far: false }); // 냉정하게: 가까운 해 중 가장 나은 해라도 보여 준다
-    return picked.sort((a, b) => a.yy.year - b.yy.year);
+  const pickYears = (cat, key) => {
+    const near = years.filter((yy) => yy.year <= NEAR_END).map((yy) => ({ yy, far: false }));
+    const strong = near.some(({ yy }) => scoreOf(yy, key) >= 4 && cautionWeight(yy) < 1.2);
+    if (!strong) { const far = years.filter((yy) => yy.year > NEAR_END).sort((a, b) => rankOf(b, cat, key) - rankOf(a, cat, key) || a.year - b.year)[0]; if (far) near.push({ yy: far, far: true }); }
+    return near;
   };
-  const timelineOf = (cat, key, n = 3) => pickYears(cat, key, n).map(({ yy, far }) => ({ ...yearCard(yy, cat, key), far }));
-  const bestOf = (tl) => [...tl].sort((a, b) => b.score - a.score || a.year - b.year)[0];
+  const timelineOf = (cat, key) => pickYears(cat, key).map(({ yy, far }) => ({ ...yearCard(yy, cat, key), far }));
+  const bestOf = (tl) => [...tl].sort((a, b) => (b.score - cautionWeight(years.find((yy) => yy.year === b.year) || { luck: {} })) - (a.score - cautionWeight(years.find((yy) => yy.year === a.year) || { luck: {} })) || a.year - b.year)[0];
   const leadOf = (tl, label) => {
-    const b = bestOf(tl); if (!b) return `${label} 흐름을 계산할 해가 없어요.`;
     const near = tl.filter((c) => !c.far), farOnes = tl.filter((c) => c.far);
-    const others = tl.filter((c) => c !== b).map((c) => `${c.year}년`).join('·');
-    if (!b.far && b.score >= 4) return `올해부터 내후년 사이에서는 ${b.year}년(${b.text})이 ${label} ${b.score}/5로 가장 강하고${others ? `, ${others}도 살펴볼 해예요` : ''}. 각 해의 좋은 달과 이유는 아래에 정리했어요.`;
-    if (!b.far) return `올해부터 내후년 사이에는 아주 강한 해는 없고, ${b.year}년(${b.text})이 ${label} ${b.score}/5로 가장 나아요${others ? ` (${others}도 참고)` : ''}. 냉정하게 보면 이 시기는 준비하며 기회를 고르는 때예요.`;
-    return `올해부터 내후년 사이에는 ${label}이 뚜렷하게 열리는 해가 ${near.length ? '부족해' : '없어'} ${farOnes.map((c) => `${c.year}년`).join('·')}까지 넓혀 봤어요 — ${b.year}년(${b.text})이 ${b.score}/5로 가장 강해요. 가까운 시기는 준비 기간으로 쓰세요.`;
+    const b = bestOf(near); if (!b) return `${label} 흐름을 계산할 해가 없어요.`;
+    const list = near.map((c) => `${c.year}년 ${c.score}/5`).join(' · ');
+    if (b.score >= 4) return `올해·내년·내후년(${list}) 중에서는 ${b.year}년(${b.text})에 ${label}이 가장 강해요. 세 해 각각 어떤 달이 좋은지 아래에 정리했어요.`;
+    if (farOnes.length) return `올해·내년·내후년(${list})에는 ${label}이 뚜렷하게 열리는 해가 없어요. 냉정하게 보면 이 3년은 준비 기간이고, 그중에서는 ${b.year}년(${b.text})이 상대적으로 나아요. 참고로 ${farOnes.map((c) => `${c.year}년(${c.score}/5)`).join('·')}에 흐름이 크게 열려요.`;
+    return `올해·내년·내후년(${list})에는 아주 강한 해는 없고 ${b.year}년(${b.text})이 상대적으로 나아요. 각 해의 좋은 달을 골라 움직이세요.`;
   };
   const chipsOf = (tl) => tl.map((c) => ({ label: `${c.year}년 ${c.text} ${c.score}/5`, tone: scoreTone(c.score) }));
 

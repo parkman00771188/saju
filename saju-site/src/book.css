@@ -132,3 +132,9 @@ html.book-open body { overflow-x: clip; }
 .fy-avoid { margin: 6px 0 0; font-size: 12.5px; color: #a34a2a; }
 
 .fy-far { font-size: 11px; color: #a34a2a; background: #fbe3dc; border-radius: 6px; padding: 1px 7px; } .fy-note { font-size: 11px; color: #7a5a1e; background: #f3ead7; border-radius: 6px; padding: 1px 7px; }
+
+.fy-story { margin: 2px 0 6px; font-size: clamp(12.5px, 3.4vw, 13.5px); color: #6a4a2a; line-height: 1.7; word-break: keep-all; }
+.fy-event { display: block; margin: 4px 0 8px; font-size: clamp(12.5px, 3.4vw, 13.5px); line-height: 1.7; color: #4a4a4a; background: #fff; border-left: 2px solid #f4c9b3; padding: 6px 10px; border-radius: 0 8px 8px 0; word-break: keep-all; font-weight: 400; }
+.fy-event.block { margin: 6px 0; } .fy-event.block b { color: var(--or); }
+.evlist { margin-top: 10px; } .evtitle { display: block; font-size: 13.5px; margin: 6px 0 2px; color: #333; }
+.chart-hint { font-size: clamp(12.5px, 3.4vw, 13.5px); color: #7a5a1e; background: #fdf6e7; border-radius: 8px; padding: 8px 12px; margin: 0 0 8px; line-height: 1.6; } .chart-hint b { color: var(--or); }
