@@ -40,7 +40,15 @@ export function yearExpert({ year, dayStem, yearBranch, dayText }) {
       }
     }
   }
-  const all = Object.values(claims).sort((a, b) => b.score - a.score);
+  // 전체 운세 대비 두드러짐(lift): 모든 사주에 공통인 주제보다 이 일간·띠에 특유한 주제를 앞세운다
+  const gen = Y[`Y${year}`];
+  const genShare = {}; if (gen) for (const [label, , d] of gen.claims || []) genShare[label] = d / Math.max(1, gen.docs);
+  for (const r of Object.values(claims)) {
+    const pShare = personalDocs ? r.docs / personalDocs : 0;
+    r.lift = r.personal && genShare[r.label] ? pShare / genShare[r.label] : 1;
+    r.rank = r.score * Math.min(2.5, Math.max(0.6, r.lift));
+  }
+  const all = Object.values(claims).sort((a, b) => b.rank - a.rank);
   const rowsP = all.filter((r) => r.personal);
   const rows = rowsP.length >= 4 ? rowsP : [...rowsP, ...all.filter((r) => !r.personal)];
   const byCat = {};
