@@ -18,6 +18,9 @@ const STEM_KEYS = { 甲: ['추진력', '책임감', '정직함'], 乙: ['적응�
 const EL_HEX = { 木: '#5f9a2c', 火: '#c8442f', 土: '#d69a2c', 金: '#8c8c8c', 水: '#3b3f47' };
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const first = (s) => (s?.match(/^[^.!?]*[.!?]/) || [s])[0];
+const PAIR_MEAN = { 충: '서로 부딪혀 움직이는 힘 — 변화·이동·갈등이 생겨요', 육합: '서로 끌어당겨 묶이는 인연 — 협력이 잘돼요', 합: '서로 끌어당겨 묶이는 인연 — 협력이 잘돼요', 삼합: '여러 글자가 한 팀으로 뭉치는 큰 힘 — 그 방향으로 크게 움직여요', 방합: '같은 계절 글자가 뭉쳐 기운이 세져요', 천간합: '겉으로 드러난 마음이 한쪽으로 묶여요', 천간충: '생각과 태도가 흔들리기 쉬워요', 형: '서로 조정하느라 마찰이 생겨요 — 다툼·수술·법 문제 주의', 파: '약속이나 틀이 깨지기 쉬워요', 해: '은근한 방해가 끼기 쉬워요', 원진: '이유 없는 미움·오해가 쌓여요 — 감정보다 사실로', 귀문: '예민한 직관, 날카로운 신경 — 잠과 운동으로 풀어요' };
+const PAIR_ROLE = { 년: '집안·초년·윗사람', 월: '직장·사회', 일: '나·배우자·몸', 시: '자식·말년·계획' };
+const pairMeaning = (r) => { const k = Object.keys(PAIR_MEAN).sort((a, b) => b.length - a.length).find((x) => r.kind.includes(x)); const roles = [...new Set(r.chars.map((c) => PAIR_ROLE[c.posKo]).filter(Boolean))]; return `${k ? PAIR_MEAN[k] : ''}${roles.length > 1 ? ` · ${roles.join('과 ')} 영역 사이에서` : roles.length === 1 ? ` · ${roles[0]} 영역에서` : ''}`; };
 const GLYPHS = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸', '子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥', '비견', '겁재', '식신', '상관', '편재', '정재', '편관', '정관', '편인', '정인', '관성', '재성', '인성', '식상', '비겁', '용신', '기신', '희신', '무관', '무재', '무인성', '관살혼잡', '재다신약', '군겁쟁재', '식상생재', '관인상생', '재생관', '상관견관', '식신제살', '재고', '공망', '원진'];
 
 /** 핵심 단어 강조 */
@@ -196,6 +199,31 @@ function buildPages(R, data) {
     </>
   ) });
 
+  pages.push({ id: 'issues', title: '타고난 약한 고리와 그것을 채워 주는 운', terms: ['조후', '신강·신약', '용신', '합', '충', '공망'], body: (
+    <>
+      <Callout>{name}의 사주에는 <b>{R.issues.length}가지 약한 고리</b>가 있어요. 약점은 고정된 것이 아니라, 운이 들어올 때마다 <b>채워지거나 더 도드라져요</b>. 어떤 운이 무엇을 채워 주는지 아래에 정리했어요.</Callout>
+      <div className="issuelist">
+        {R.issues.map((it) => {
+          const helpsD = R.daeunAll.filter((d) => !d.past && d.dyn.helps.some((h) => h.id === it.id));
+          const hurtsD = R.daeunAll.filter((d) => !d.past && d.dyn.hurts.some((h) => h.id === it.id));
+          const helpsY = R.years.filter((y) => y.year >= data.current.nowYear && y.dyn.helps.some((h) => h.id === it.id)).slice(0, 4);
+          const hurtsY = R.years.filter((y) => y.year >= data.current.nowYear && y.dyn.hurts.some((h) => h.id === it.id)).slice(0, 3);
+          return (
+            <div key={it.id} className={`issue sev${it.severity}`}>
+              <div className="issue-head"><span className="ik">{it.kind}</span><b>{it.title}</b></div>
+              <P words={GLYPHS}>{it.easy}</P>
+              <div className="issue-when">
+                <div className="iw good"><span>채워 주는 때</span>{helpsD.length || helpsY.length ? <p>{[...helpsD.map((d) => `${d.age}~${d.age + 9}세 ${d.stem}${d.branch} 대운(${d.startYear}~)`), ...helpsY.map((y) => `${y.year}년 ${y.text}`)].join(' · ')}</p> : <p>가까운 대운·해에는 뚜렷하게 채워 주는 운이 없어요 — 생활 속 개운법으로 보완하세요.</p>}</div>
+                {it.worseText && <div className="iw bad"><span>더 도드라지는 때</span>{hurtsD.length || hurtsY.length ? <p>{[...hurtsD.map((d) => `${d.age}~${d.age + 9}세 ${d.stem}${d.branch} 대운(${d.startYear}~)`), ...hurtsY.map((y) => `${y.year}년 ${y.text}`)].join(' · ')}</p> : <p>가까운 대운·해에는 크게 건드리는 운이 없어요.</p>}</div>}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <P>읽는 법: 사주는 여덟 글자와 운이 서로 밀고 당기며 움직여요. 예를 들어 원국에 부족한 기운이 운으로 들어오면 그동안 안 풀리던 일이 풀리고, 두 글자가 부딪히는 자리(충)에 합이 되는 글자가 오면 그 부딪힘이 잦아들어요. 각 운 페이지의 "지금 흐르는 운"과 질문 답의 연도 카드에도 이 관계를 함께 적어 두었어요.</P>
+    </>
+  ) });
+
   pages.push({ id: 'structure', title: '십성으로 본 나의 구조', terms: ['십성(십신)', '비견', '식신', '편재', '편관', '정인'], body: (
     <>
       <BarChart rows={gRows} />
@@ -227,7 +255,8 @@ function buildPages(R, data) {
   pages.push({ id: 'relations', title: '글자들의 만남 (합·충)', terms: ['합', '충', '형·파·해', '원진', '귀문관살', '공망'], body: (
     <>
       <Callout>여덟 글자 사이에 <b>{pairs.length}개</b>의 특별한 만남이 있어요. 합은 묶임·인연, 충은 변화·움직임이에요.</Callout>
-      <div className="pairlist">{pairs.length ? pairs.map((r, i) => <div key={i} className={`pairrow ${/충|원진|형|파|해|귀문/.test(r.kind) ? 'bad' : 'good'}`}><span className="pk">{r.kind}</span><b>{r.chars.map((c) => `${c.posKo}주 ${c.ch}`).join(' + ')}</b></div>) : <p className="bp">뚜렷한 합·충이 없어요.</p>}</div>
+      <div className="pairlist">{pairs.length ? pairs.map((r, i) => <div key={i} className={`pairrow wrap ${/충|원진|형|파|해|귀문/.test(r.kind) ? 'bad' : 'good'}`}><span className="pk">{r.kind}</span><b>{r.chars.map((c) => `${c.posKo}주 ${c.ch}`).join(' + ')}</b><span className="pt">{pairMeaning(r)}</span></div>) : <p className="bp">뚜렷한 합·충이 없어요.</p>}</div>
+      {pairs.length > 0 && <P>합과 충은 좋고 나쁨이 아니라 "묶이는 힘"과 "움직이는 힘"이에요. 위 자리들 사이에서 그 힘이 어떻게 나타나는지는 직장·금전·연애·건강 페이지의 "글자들이 만나는 모습"에서 영역별로 풀어 드려요.</P>}
       {(sumGroup('글자들의 관계와 신살')?.paras || []).filter((p) => !/있어 /.test(p) || /충|합|원진|귀문|형|해/.test(p)).slice(0, pairs.length ? pairs.length + 1 : 1).map((p, i) => <P key={i} words={['충(沖)', '합', '원진(怨嗔)', '귀문관살', '해(害)', '형(刑)']}>{p}</P>)}
     </>
   ) });
@@ -351,6 +380,7 @@ function FaqList({ items, data }) {
                         <div className="fy-head"><b>{yc.year}년 {yc.text}</b><span className="fy-age">{yc.age}세</span><Score n={yc.score} color={color} />{yc.far && <span className="fy-far">가까운 3년 밖</span>}{yc.note && <span className="fy-note">{yc.note}</span>}</div>
                         <p className="fy-why">{yc.why}</p>
                         {yc.story && <p className="fy-story">{yc.story}</p>}
+                        {yc.dyn && (yc.dyn.helps.length || yc.dyn.hurts.length) ? <p className="fy-dyn">{yc.dyn.helps.length ? <span className="good">채워 줘요: {yc.dyn.helps.join(' / ')}</span> : null}{yc.dyn.hurts.length ? <span className="bad">도드라져요: {yc.dyn.hurts.join(' / ')}</span> : null}</p> : null}
                         {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}{m.event && <span className="fy-event">{m.event}</span>}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
                         {yc.avoid.length ? <p className="fy-avoid">피할 달: {yc.avoid.join(', ')}</p> : null}
                         {yc.cautions.length ? <p className="fy-avoid">이 해 주의: {yc.cautions.join(' · ')}</p> : null}
@@ -385,10 +415,10 @@ function CategoryPage({ R, data, cat }) {
         <div><small>가장 좋은 해</small><b style={{ color: '#2f8a4b' }}>{c.best?.year}</b><span>{c.best?.text}</span></div>
         <div><small>조심할 해</small><b style={{ color: '#d6453d' }}>{c.worst?.year}</b><span>{c.worst?.text}</span></div>
       </div>
-      <Callout><b>{cat}운 {c.score}/5</b>. {first(c.sections[0].paras[0])}</Callout>
+      <Callout><b>{cat}운 {c.score}/5</b>. {c.headline || first(c.sections[0].paras[0])}</Callout>
       {c.gauge && <Gauge2 pct={c.gauge.value} left={c.gauge.left} right={c.gauge.right} color={m.color} />}
-      {c.personal?.length > 0 && <><Sub>이 사주만의 {cat}운 포인트</Sub><div className="personal">{c.personal.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}</div><Divider /></>}
       <Sub>{c.sections[0].title}</Sub>{c.sections[0].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
+      {(c.personal || []).map((sec, si) => <Fragment key={si}><Divider /><Sub>{sec.title}</Sub>{sec.paras.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}</Fragment>)}
       <Divider /><Sub>{c.sections[1].title}</Sub>{c.sections[1].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>앞으로 10년 {cat}운</Sub>
       <p className="chart-hint">👆 그래프의 <b>연도를 누르면</b> 그 해 열두 달 {cat}운이 아래에 열려요 · 지금 <b>{year}년</b></p>

@@ -4,6 +4,7 @@ import kb from '../data/kb_stats.json';
 import { determineGyeok } from './gyeokguk.js';
 import { pickYong, GROUP_EL } from './yongshin.js';
 import { buildPersonal } from './personal.js';
+import { natalIssues, unEffect, dynLine } from './dynamics.js';
 import * as K from '../data/knowledge.js';
 import * as P from '../data/patterns.js';
 import * as D from '../data/deep.js';
@@ -299,12 +300,15 @@ export function interpret(data) {
     return { head: K.LUCK[g.branchGod].head, summary, scores, texts, flags, overall, hasNeed, hasYong, hasGi, isGong };
   }
 
+  // ---------- 원국의 약한 고리와 운의 보완/악화 ----------
+  const issues = natalIssues({ data, prof, yong, climate, st, gongmangSet, groupEl });
+  const withDyn = (g) => ({ ...g, dyn: unEffect(issues, g) });
   const dNow = current.daeun, sNow = current.seun, mNow = current.month;
   const dLuck = dNow ? luckOf(dNow) : null;
   const sLuck = sNow ? luckOf(sNow, { samjae: sNow.samjae }) : null;
   const mLuck = mNow ? luckOf(mNow, { short: true }) : null;
-  const years = allSeun.filter((s) => s.year >= nowY - 1 && s.year < nowY + 9).map((s) => ({ ...s, luck: luckOf(s, { samjae: s.samjae }) }));
-  const monthsOf = (year) => { const s = allSeun.find((x) => x.year === year); return s ? s.wolun.map((m) => ({ ...m, luck: luckOf(m, { short: true }) })) : []; };
+  const years = allSeun.filter((s) => s.year >= nowY - 1 && s.year < nowY + 9).map((s) => withDyn({ ...s, luck: luckOf(s, { samjae: s.samjae }) }));
+  const monthsOf = (year) => { const s = allSeun.find((x) => x.year === year); return s ? s.wolun.map((m) => withDyn({ ...m, luck: luckOf(m, { short: true }) })) : []; };
   const seriesFor = (cat) => years.map((y) => ({ key: y.year, label: String(y.year).slice(2), value: y.luck.scores[cat], now: y.year === nowY, mark: y.luck.hasNeed ? needEl : y.samjae ? '삼재' : null }));
   const bestYears = (cat, n = 3) => [...years].filter((y) => y.year >= nowY).sort((a, b) => b.luck.scores[cat] - a.luck.scores[cat]).slice(0, n);
   const worstYears = (cat, n = 2) => [...years].filter((y) => y.year >= nowY).sort((a, b) => a.luck.scores[cat] - b.luck.scores[cat]).slice(0, n);
@@ -319,7 +323,7 @@ export function interpret(data) {
     const text = `${d.age}~${d.age + 9}세 ${D.DAEUN_AGE(d.age)}(${d.startYear}~${d.endYear}) ${d.text} 대운 — 천간 ${d.stemGod}·지지 ${d.branchGod}, ${K.STAGE_TONE[d.stage]?.t || ''} 시기. ${K.LUCK[d.branchGod].head}이 10년의 주제가 되어 ${first(K.LUCK[d.branchGod].직장)} ${first(K.LUCK[d.branchGod].금전)}` +
       (l.hasNeed ? ` 필요한 ${needEl}이 들어와 웅크렸던 힘이 밖으로 드러나는 대운입니다.` : '') + (l.hasYong && !l.hasNeed ? ` 용신 ${yongEl}이 들어와 균형이 잡히는 대운입니다.` : '') + (l.hasGi ? ` 기신 ${giEl}이 함께 있어 좋은 흐름 속에서도 판단을 흐리는 요소가 있습니다.` : '') +
       (dayClash ? ' 대운 지지가 일지와 충하여 거처·배우자·건강 영역에 큰 변화가 있는 10년입니다.' : '') + (monthClash ? ' 대운 지지가 월지와 충하여 직장·부모·사회 환경이 바뀌는 10년입니다.' : '') + (l.isGong ? ' 공망 자리의 대운이라 겉으로 화려한 성과보다 내면·배움이 쌓이는 10년입니다.' : '');
-    return { ...d, luck: l, isNow, past, text };
+    return withDyn({ ...d, luck: l, isNow, past, text });
   });
   const lifeStages = positions.map((p) => {
     const ages = { year: [0, 20], month: [20, 40], day: [40, 60], time: [60, 100] }[p.pos];
@@ -375,9 +379,9 @@ export function interpret(data) {
 
   // ---------- 카테고리 ----------
   const nowItems = (cat) => [
-    dLuck && dNow && { label: `현재 대운 ${dNow.text} (${dNow.age}세~)`, text: dLuck.texts[cat], score: dLuck.scores[cat] },
-    sLuck && sNow && { label: `${sNow.year}년 세운 ${sNow.text}`, text: sLuck.texts[cat], score: sLuck.scores[cat] },
-    mLuck && mNow && { label: `${current.nowMonth}월 월운 ${mNow.text}`, text: mLuck.texts[cat], score: mLuck.scores[cat] },
+    dLuck && dNow && { label: `현재 대운 ${dNow.text} (${dNow.age}세~)`, text: `${dLuck.texts[cat]} ${dynLine(unEffect(issues, dNow), '이 대운')}`.trim(), score: dLuck.scores[cat] },
+    sLuck && sNow && { label: `${sNow.year}년 세운 ${sNow.text}`, text: `${sLuck.texts[cat]} ${dynLine(unEffect(issues, sNow), '올해')}`.trim(), score: sLuck.scores[cat] },
+    mLuck && mNow && { label: `${current.nowMonth}월 월운 ${mNow.text}`, text: `${mLuck.texts[cat]} ${dynLine(unEffect(issues, mNow), '이달')}`.trim(), score: mLuck.scores[cat] },
   ].filter(Boolean);
   const patSection = (cat) => { const ps = patFor(cat); return ps.length ? { title: '이 사주의 조합에서', paras: ps.map((p) => `【${p.title}】 ${p.pos} 반대로 ${p.neg}`) } : null; };
   const sinsalFor = (cat) => { const list = sinsalNames.filter((n) => K.SINSAL[n]?.cats[cat]); return list.length ? [list.map((n) => `${sinsalWhere(n)}의 ${K.SINSAL[n].title}은 ${cat}운에 ${K.SINSAL[n].cats[cat] > 0 ? '힘이 되는' : '조심할'} 별입니다 — ${first(K.SINSAL[n].text)}`).join(' ')] : []; };
@@ -525,7 +529,7 @@ export function interpret(data) {
   }
   // ---------- 이 사주만의 포인트 (글자·자리·개수·관계 기반) ----------
   const personal = buildPersonal({ data, prof, gyeok, yong, needEl, evidenceByCat, daeunAll, spouseGroup, st, gongmangSet, currentDaeun: current.daeun });
-  for (const cat of K.CATS) cats[cat].personal = personal[cat] || [];
+  for (const cat of K.CATS) { cats[cat].personal = personal[cat]?.sections || []; cats[cat].headline = personal[cat]?.headline || null; }
 
   // ---------- 조언 ----------
   const advice = [
@@ -550,7 +554,7 @@ export function interpret(data) {
   ];
 
   return {
-    strength: st, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl,
+    strength: st, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues,
     evidence, evidenceByCat, evidenceSummary, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
     gyeok, yong, positions, roots, summary, meta: kb.meta,
   };

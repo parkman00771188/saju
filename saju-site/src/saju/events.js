@@ -80,5 +80,7 @@ export function eventFor({ g, cat, ctx, range, span = '월' }) {
   if (g.luck?.hasNeed) extras.push(OVERLAY.need(ctx.needEl));
   else if (g.luck?.hasYong) extras.push(OVERLAY.yong(ctx.yongEl));
   if (g.luck?.hasGi) extras.push(OVERLAY.gi(ctx.giEl));
-  return (first + why + (extras.length ? ' ' + extras.slice(0, 3).join(' ') : '')).replace(/\.\./g, '.').replace(/ +/g, ' ').trim();
+  if (g.dyn?.helps?.length) extras.push(`타고난 약한 고리인 "${g.dyn.helps[0].title}"를 이때 채워 줘요 — ${g.dyn.helps[0].text}`);
+  else if (g.dyn?.hurts?.length) extras.push(`반대로 "${g.dyn.hurts[0].title}"는 이때 더 도드라져요 — ${g.dyn.hurts[0].text}`);
+  return (first + why + (extras.length ? ' ' + extras.slice(0, 4).join(' ') : '')).replace(/\.\./g, '.').replace(/ +/g, ' ').trim();
 }
