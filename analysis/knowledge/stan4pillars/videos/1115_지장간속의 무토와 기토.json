@@ -1,0 +1,132 @@
+{
+ "source": "data/stan4pillars/videos/1115_지장간속의 무토와 기토.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "EQk9GOBAZeM",
+ "title": "지장간속의 무토와 기토",
+ "url": "https://www.youtube.com/watch?v=EQk9GOBAZeM",
+ "upload": "20220104",
+ "duration_sec": "258",
+ "views": "2582",
+ "chars": 1315,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:08",
+ "summary": "무토와 기토는 지지의 온도 영향에 따라 세력의 강약이 결정됩니다. 따뜻한 기운을 품은 지지(인목, 사화, 오화) 속의 무토와 기토는 실질적인 힘이 있어 사주의 뿌리 역할을 할 수 있습니다. 반면 차가운 기운을 띤 지지(신금, 해수, 축토) 속의 무토와 기토는 힘이 매우 약하여 통근이나 활용성이 떨어집니다.",
+ "topics": [
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "인"
+    }
+   ],
+   "outcome": "인목 지장간 속 무토는 힘이 있어 뿌리가 됨",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "인목은 따뜻한 기운의 시작이에요. 그렇기 때문에 인목 안에 있는 무토는 힘이 있습니다, 실제로."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "사"
+    }
+   ],
+   "outcome": "사화 지장간 속 무토는 강한 양기로 힘이 있음",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "사화는 정말 양 기운이죠. 그렇기 때문에 사 중의 무토도 힘이 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "신"
+    }
+   ],
+   "outcome": "신금 지장간 속 무토는 차가워 힘이 없음",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "반면에 신금하고 해수에서는 차가운 기운이란 말이에요. 그러다 보니까 이 녀석들은 사실은 힘이 많이 없습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "해"
+    }
+   ],
+   "outcome": "해수 지장간 속 무토는 힘이 매우 약함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "특히 해 중의 무토는 힘이 정말 많이 없다라고 판단하셔도 되세요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "오"
+    }
+   ],
+   "outcome": "오화 지장간 속 기토는 따뜻하여 힘이 있음",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "오화는 따뜻하겠죠. 오 중의 기토는 힘이 있다라는 겁니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "축"
+    }
+   ],
+   "outcome": "축토 지장간 속 기토는 차가워 힘이 약함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "축토는 차가운 기운이죠. 계, 신, 기가 있습니다. 그럼 축 중의 기토는 다소 힘이 약하다"
+  }
+ ],
+ "insights": [
+  "무토와 기토의 실질적인 세력은 글자가 속한 지지의 한난(온도)에 절대적인 영향을 받는다.",
+  "사주 원국에서 천간 무토·기토의 뿌리(통근) 강약을 가늠할 때 지장간의 온도가 따뜻한지 차가운지를 살펴야 한다."
+ ],
+ "keywords": [
+  "지장간",
+  "무토",
+  "기토",
+  "인사신해",
+  "온도",
+  "뿌리",
+  "통근"
+ ]
+}

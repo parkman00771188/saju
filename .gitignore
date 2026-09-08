@@ -13,3 +13,6 @@ analysis/excerpts/
 # secrets (API 키는 절대 커밋하지 않음)
 .env
 *.key
+# 실행 로그
+analysis/*_log.txt
+analysis/*_stdout.txt

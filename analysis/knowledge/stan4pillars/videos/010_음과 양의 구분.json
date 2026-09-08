@@ -1,0 +1,371 @@
+{
+ "source": "data/stan4pillars/videos/010_음과 양의 구분.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "Hkvia6f3xFk",
+ "title": "음과 양의 구분",
+ "url": "https://www.youtube.com/watch?v=Hkvia6f3xFk",
+ "upload": "20260831",
+ "duration_sec": "1150",
+ "views": "2542",
+ "chars": 7665,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:05",
+ "summary": "명리학에서 사용되는 음과 양의 개념을 근본 의미, 오행과 계절, 남성과 여성의 에너지, 천간 글자, 12지지의 다섯 가지 층위로 나누어 명확히 정립한 강의입니다. 음양은 선악이나 우열의 개념이 아니며 상호 대칭되는 역관계가 아니므로, 단순 반대로 치환하여 해석해서는 안 됩니다. 특히 지지의 음양은 지장간 본기를 기준으로 분류하지만 복합적인 성분을 내포하므로 단편적으로 보지 말아야 합니다.",
+ "topics": [
+  "명리 이론",
+  "성격·기질",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "수"
+    },
+    {
+     "type": "오행 구성",
+     "value": "목"
+    }
+   ],
+   "outcome": "보호하고 양육하며 가르치는 자애로운 기질",
+   "tag": "교육·가르침",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "여성은 수하고 목입니다. 왜냐하면 우리가 수생목이라 그러잖아요. 수생목이 있으면 누군가를 보호하고 양육하고 가르치고 이런 에너지입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "화"
+    },
+    {
+     "type": "오행 구성",
+     "value": "금"
+    }
+   ],
+   "outcome": "도구를 만들고 제련하며 창작하는 기질",
+   "tag": "전문직·기술",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "남성 같은 경우에는 화하고 금입니다. 화극금이 뭡니까? 금속을 불기운으로 제련하는 거잖아요. 무언가를 만드는 에너지예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "화"
+    }
+   ],
+   "outcome": "행동력이 뛰어나고 동적이며 생명력이 강함",
+   "tag": "자유·독립 성향",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "양이라는 거는 생명력을 뜻해요. 양이라는 거는 행동하는 걸 뜻합니다. 동적이라는 거죠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "수"
+    }
+   ],
+   "outcome": "깊이 생각하는 힘이 있고 정적인 특성",
+   "tag": "학자·연구 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "음이라는 거는 생각을 뜻합니다. 음이 없으면 생각이 짧다 이런 얘기가 될 수도 있는 거예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "천간",
+     "value": "무"
+    }
+   ],
+   "outcome": "대단히 뜨거운 양적인 성향을 띰",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "무토는 대단히 뜨겁습니다. 뜨겁다라는 건 뭐라 그랬죠? 양이라 그랬죠. 그래서 양으로 분류를 하면 됩니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "천간",
+     "value": "기"
+    }
+   ],
+   "outcome": "축축하고 습한 음적인 성향을 띰",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "기토라는 거는 축축합니다. 습하다라는 건 뭐라 그랬죠? 음을 뜻하는 겁니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "천간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "목 오행 내에서 양간으로 부피와 면적이 큼",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "목이라는 거는 양기운인데, 그 안에서 갑목은 또 양이고 을목은 음이 된다라는 거죠. 양간은 부피는 좀 크거든요, 면적도 조금 더 넓고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "천간",
+     "value": "을"
+    }
+   ],
+   "outcome": "목 오행 내에서 음간으로 단단하고 면적이 작음",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목은 음이 된다라는 거죠. 근데 음은 단단하고요, 그 면적은 좀 작습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "인"
+    }
+   ],
+   "outcome": "지장간 본기가 양간 갑목이므로 양으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "인목은 지장간 제일 밑에 갑목이 있고, 인목은 양간, 지장간 밑에 갑목이니까."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "묘"
+    }
+   ],
+   "outcome": "지장간 본기가 음간 을목이므로 음으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "묘목은 을목, 묘목은 음"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "진"
+    }
+   ],
+   "outcome": "지장간 본기가 양간 무토이므로 양으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "진토는 무토, 진토는 양간"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "사"
+    }
+   ],
+   "outcome": "지장간 본기가 양간 병화이므로 양으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "사화는 병화, 사화는 지장간 제일 밑에 병화가 있으니까 양"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "오"
+    }
+   ],
+   "outcome": "지장간 본기가 음간 정화이므로 음으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "",
+   "quote": "오화는 정화, 오화는 음"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "미"
+    }
+   ],
+   "outcome": "지장간 본기가 음간 기토이므로 음으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "미토는 기토, 미토는 음"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "신"
+    }
+   ],
+   "outcome": "지장간 본기가 양간 경금이므로 양으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "신금은 경금, 신금은 양"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "유"
+    }
+   ],
+   "outcome": "지장간 본기가 음간 신금이므로 음으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "유금은 지장간 밑에 신금, 유금은 음"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "술"
+    }
+   ],
+   "outcome": "지장간 본기가 양간 무토이므로 양으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "술토는 지장간 제일 밑에 무토, 술토는 양"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "해"
+    }
+   ],
+   "outcome": "지장간 본기가 양간 임수이므로 양으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "",
+   "quote": "해수는 임수, 해수는 임수니까 또 양"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "자"
+    }
+   ],
+   "outcome": "지장간 본기가 음간 계수이므로 음으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "",
+   "quote": "자수는 계수, 자수는 지장간 제일 밑에 계수가 있으니까 음"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "축"
+    }
+   ],
+   "outcome": "지장간 본기가 음간 기토이므로 음으로 분류",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "축토는 기토, 축토는 기토가 있으니까 음"
+  }
+ ],
+ "insights": [
+  "동양철학에서 음과 양은 좋고 나쁨이나 우열이 없으며, 어떻게 쓰이느냐에 따라 가치가 결정된다.",
+  "음과 양은 동시에 존재하는 하나의 덩어리로서 발생 순서를 따지는 것은 무의미하다.",
+  "양의 반대편이 음이라고 해서 정확히 대칭을 이루는 역관계가 아니므로, 양의 성질을 뒤집어서 음을 해석하면 오차가 발생한다.",
+  "지지의 음양 구분은 지장간 본기를 기준으로 한 소통상의 편의적 분류일 뿐이며, 내부 지장간의 혼합 성분을 함께 살펴야 한다."
+ ],
+ "keywords": [
+  "음양",
+  "수생목",
+  "화극금",
+  "양간",
+  "음간",
+  "지장간",
+  "무토",
+  "기토",
+  "12운성",
+  "십이지지"
+ ]
+}

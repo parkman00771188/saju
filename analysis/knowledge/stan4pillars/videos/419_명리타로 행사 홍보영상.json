@@ -1,0 +1,35 @@
+{
+ "source": "data/stan4pillars/videos/419_명리타로 행사 홍보영상.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "n4rNCS4hfXY",
+ "title": "명리타로 행사 홍보영상",
+ "url": "https://www.youtube.com/watch?v=n4rNCS4hfXY",
+ "upload": "20240301",
+ "duration_sec": "644",
+ "views": "836",
+ "chars": 4106,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:15",
+ "summary": "본 영상은 불우 아동 지원을 위한 기부금 모금 오프라인 명리·타로 상담 행사 개최를 안내하는 홍보 영상입니다. 2024년 4월 6일 인천 꿈베이커리와 4월 21일 부산에서 행사가 진행되며, 도사주, 초코명리, 레나타로 등 다수의 상담사가 참여합니다. 참가비 5만 원으로 여러 상담사에게 상담을 받을 수 있으며, 현장에서 상담을 받지 못한 경우 사후 무료 유선 상담을 제공하는 등 생색내지 않고 아이들을 돕기 위한 취지의 행사 참여를 독려합니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [
+  2024
+ ],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "명리타로 행사",
+  "기부 상담",
+  "자선 행사",
+  "인천 꿈베이커리",
+  "부산 상담",
+  "도사주",
+  "초코명리",
+  "레나타로"
+ ]
+}

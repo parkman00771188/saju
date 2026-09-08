@@ -1,0 +1,136 @@
+{
+ "source": "data/dohwadore_saju/shorts/199_내 자식은 어떤 타입 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "Ne7t7dw_0n8",
+ "title": "내 자식은 어떤 타입? #shorts",
+ "url": "https://www.youtube.com/watch?v=Ne7t7dw_0n8",
+ "upload": "20230523",
+ "duration_sec": "53",
+ "views": "35949",
+ "chars": 497,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:52",
+ "summary": "사주팔자에서 자녀를 의미하는 글자는 본인의 성별에 따라 다르게 작용합니다. 여성 사주에서는 식신이 딸, 상관이 아들을 상징하며, 남성 사주에서는 정관과 편관이 자녀를 상징합니다. 이는 자녀의 실제 생물학적 성별뿐만 아니라 장성했을 때 아들 같은 역할이나 딸 같은 역할을 하는 성향을 판단하는 기준이 됩니다. 여성 사주에서 상관 기운이 강한 경우 아들이나 아들 역할을 하는 자녀와 인연이 깊어집니다.",
+ "topics": [
+  "가족·자식",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    },
+    {
+     "type": "십성",
+     "value": "식신"
+    }
+   ],
+   "outcome": "딸을 낳거나 딸 같은 역할을 하는 자식과 인연",
+   "tag": "자식 인연·출산",
+   "category": "가족·자식",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "여성의 사주팔자는 식신 혹은 상관이 자녀를 뜻하는 글자인데, 식신은 딸"
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    },
+    {
+     "type": "십성",
+     "value": "상관"
+    }
+   ],
+   "outcome": "아들을 낳거나 아들 같은 역할을 하는 자식과 인연",
+   "tag": "자식 인연·출산",
+   "category": "가족·자식",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "상관은 아들이라 볼 수 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남성"
+    },
+    {
+     "type": "십성",
+     "value": "정관"
+    }
+   ],
+   "outcome": "자녀를 의미하는 십성으로 작용한다",
+   "tag": "자식 인연·출산",
+   "category": "가족·자식",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "남성분들 사주팔자에서 자녀를 의미하는 글자는 편관 혹은 정관이고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남성"
+    },
+    {
+     "type": "십성",
+     "value": "편관"
+    }
+   ],
+   "outcome": "자녀를 의미하는 십성으로 작용한다",
+   "tag": "자식 인연·출산",
+   "category": "가족·자식",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "남성분들 사주팔자에서 자녀를 의미하는 글자는 편관 혹은 정관이고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    },
+    {
+     "type": "십성 과다",
+     "value": "상관"
+    }
+   ],
+   "outcome": "아들 또는 아들 같은 역할을 하는 자식과 인연",
+   "tag": "자식 인연·출산",
+   "category": "가족·자식",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "상관이 강하기 때문에 아들에 조금 더 눈이 닿아 있다고 볼 수도 있습니다."
+  }
+ ],
+ "insights": [
+  "사주에서 자녀의 성별을 나타내는 십성은 실제 생물학적 성별뿐만 아니라 장성 후 아들 같은 역할 혹은 딸 같은 역할을 하는 기질과 포지션을 의미하기도 한다."
+ ],
+ "keywords": [
+  "자녀 성별",
+  "식신",
+  "상관",
+  "정관",
+  "편관",
+  "아들 딸 구분",
+  "자식운"
+ ]
+}

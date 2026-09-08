@@ -1,0 +1,101 @@
+{
+ "source": "data/ohsaju/shorts/291_1분만에 방합 이해하기! 방합에 대한 이해 #알맞은인생데이터연구소 #갑진년 #방합 #삼합 #사주강의.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "fTWmTa4YPm8",
+ "title": "1분만에 방합 이해하기! 방합에 대한 이해  #알맞은인생데이터연구소 #갑진년 #방합 #삼합 #사주강의",
+ "url": "https://www.youtube.com/watch?v=fTWmTa4YPm8",
+ "upload": "20240803",
+ "duration_sec": "41",
+ "views": "15864",
+ "chars": 277,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:00",
+ "summary": "사주 명리학에서 방합의 개념과 원리를 계절 및 월의 흐름을 바탕으로 설명하는 강의입니다. 봄(인묘진)은 목 방합, 여름(사오미)은 화 방합(화국), 가을은 금 기운, 겨울은 수 기운처럼 계절적으로 같은 기운과 겉모습으로 묶인 합을 방합이라고 정의합니다. 또한 방합 외에도 사주에 삼합이 존재함을 짚어줍니다.",
+ "topics": [
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "인묘진"
+    }
+   ],
+   "outcome": "목 기운의 목 방합을 이룸",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "2, 3, 4월은 목 기운이 강하죠. 봄은 목이구나. 인묘진 목끼리 모인 걸 목 방합"
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "사오미"
+    }
+   ],
+   "outcome": "화 기운의 화국(화 방합)을 이룸",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "사오미, 5, 6, 7월은 화 기운이 강하죠. 여름은 화 기운, 화끼리 모인 걸 화국, 이렇게 말을 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "계절·절기",
+     "value": "가을"
+    }
+   ],
+   "outcome": "금 기운이 강하게 작용함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "가을은 금 기운"
+  },
+  {
+   "conditions": [
+    {
+     "type": "계절·절기",
+     "value": "겨울"
+    }
+   ],
+   "outcome": "수 기운이 강하게 작용함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "겨울은 수 기운"
+  }
+ ],
+ "insights": [
+  "방합은 월(달)과 계절을 기준으로 겉에서 보여지는 같은 오행 기운끼리 묶인 합이다.",
+  "사주 지지의 합에는 계절적 결속인 방합 외에 삼합 구조도 존재한다."
+ ],
+ "keywords": [
+  "방합",
+  "인묘진",
+  "사오미",
+  "목방합",
+  "화국",
+  "계절",
+  "삼합",
+  "명리이론"
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "source": "data/ohsaju/shorts/012_사주에 ‘수’ 오행이 부족할 때 개운법 🌊.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "u8DacZBrhS4",
+ "title": "사주에 ‘수’ 오행이 부족할 때 개운법 🌊",
+ "url": "https://www.youtube.com/watch?v=u8DacZBrhS4",
+ "upload": "20260820",
+ "duration_sec": "12",
+ "views": "2899",
+ "chars": 91,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:58",
+ "summary": "사주에서 수(水) 기운은 쉬는 것, 수면, 멍하니 있는 휴식을 상징합니다. 사주에 수기운이 부족한 사람은 충분한 잠을 자는 것만으로도 긍정적인 개운 효과를 얻을 수 있습니다. 무리하게 활동하기보다 수면과 휴식을 통해 에너지를 보충하는 것이 권장됩니다.",
+ "topics": [
+  "개운·조언",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 부족",
+     "value": "수"
+    }
+   ],
+   "outcome": "충분한 수면과 휴식만으로도 개운에 도움이 된다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "멍하니 쉬는 시간을 가지거나 충분히 잠을 자며 휴식을 취할 것",
+   "quote": "수기운이 없는 사람들은 아예 그냥 잠만 자도 좀 괜찮은 거 같아요."
+  }
+ ],
+ "insights": [
+  "수(水) 기운의 본질은 자는 것, 멍하니 있는 것, 휴식하는 정적인 상태를 의미한다."
+ ],
+ "keywords": [
+  "수기운",
+  "오행 부족",
+  "수 부족",
+  "개운법",
+  "휴식",
+  "수면"
+ ]
+}

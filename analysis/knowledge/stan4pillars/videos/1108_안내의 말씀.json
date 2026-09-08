@@ -1,0 +1,30 @@
+{
+ "source": "data/stan4pillars/videos/1108_안내의 말씀.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "kO4qzk6x07Q",
+ "title": "안내의 말씀",
+ "url": "https://www.youtube.com/watch?v=kO4qzk6x07Q",
+ "upload": "20220108",
+ "duration_sec": "343",
+ "views": "422",
+ "chars": 2433,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:08",
+ "summary": "해당 영상은 사주 명리 강의나 운세 풀이가 아닌 유료 사주 상담 일정에 관한 안내 공지입니다. 평일(월~토)에는 사전 예약된 일반 사주 상담을 진행하느라 일정이 꽉 차 있어 즉각적인 응대가 어렵다고 밝혔습니다. 경제적 어려움이 있는 분들을 위해 개설한 네이버 엑스퍼트 상담은 일요일에만 확인하고 진행하므로 이용에 양해를 구했습니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "유료상담",
+  "네이버엑스퍼트",
+  "상담안내",
+  "일정공지",
+  "산책처럼사주"
+ ]
+}

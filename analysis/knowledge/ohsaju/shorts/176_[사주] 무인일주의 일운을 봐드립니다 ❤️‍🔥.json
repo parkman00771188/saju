@@ -1,0 +1,52 @@
+{
+ "source": "data/ohsaju/shorts/176_[사주] 무인일주의 일운을 봐드립니다 ❤️‍🔥.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "QQeQiJPVlW4",
+ "title": "[사주] 무인일주의 일운을 봐드립니다 ❤️‍🔥",
+ "url": "https://www.youtube.com/watch?v=QQeQiJPVlW4",
+ "upload": "20250526",
+ "duration_sec": "21",
+ "views": "605",
+ "chars": 176,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:59",
+ "summary": "무인일주인 사람의 일운(무인일)에 대해 설명하는 영상이다. 무인일주가 무인일을 맞이하는 날에는 해야 할 일거리들이 평소보다 눈에 많이 띈다. 또한 기존의 일이나 상황을 고치거나 바꾸어야겠다는 생각을 많이 하게 된다.",
+ "topics": [
+  "운세 흐름",
+  "기타"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "무인"
+    },
+    {
+     "type": "기타",
+     "value": "일운 무인일"
+    }
+   ],
+   "outcome": "할 일거리와 고치고 바꿀 대상이 눈에 많이 띔",
+   "tag": "기타",
+   "category": "운세 흐름",
+   "polarity": 0,
+   "certainty": "추측",
+   "time": "무인일",
+   "advice": "",
+   "quote": "무인일주 같은 경우 무인일주의 일이면 그래도 우리 밍밍 님 같은 경우에도 오늘 뭔가 해야 할 일거리들이 많이 눈에 보이지 않았을까 싶어요."
+  }
+ ],
+ "insights": [],
+ "keywords": [
+  "무인일주",
+  "일운",
+  "일진",
+  "무인일",
+  "사주풀이"
+ ]
+}

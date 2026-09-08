@@ -1,0 +1,101 @@
+{
+ "source": "data/ohsaju/shorts/293_1분만에 삼합에 대해 이해하기 #사주강의 #사주왕초보 #갑진년 #알맞은인생데이터연구소 #오사주.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "zCf5du1whDI",
+ "title": "1분만에 삼합에 대해 이해하기 #사주강의 #사주왕초보 #갑진년 #알맞은인생데이터연구소 #오사주",
+ "url": "https://www.youtube.com/watch?v=zCf5du1whDI",
+ "upload": "20240731",
+ "duration_sec": "42",
+ "views": "10277",
+ "chars": 295,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:00",
+ "summary": "삼합은 겉으로 드러나는 모습이 아닌 내면에 품은 꿈과 소망, 역할이 같은 지지들이 결합하는 명리학의 합 개념입니다. 해묘미는 목(木), 인오술은 화(火)의 정신과 힘을 발휘합니다. 사유축은 금(金)기운을, 신자진은 수(水)기운을 형성하여 각 오행의 고유한 작용을 나타냅니다.",
+ "topics": [
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "해묘미"
+    }
+   ],
+   "outcome": "목의 힘을 발휘함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "해묘미가 모이면 목의 힘을 발휘한다고 말을 하고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "인오술"
+    }
+   ],
+   "outcome": "화의 역할과 정신적 힘을 나타냄",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "인오술이 모이면 화의 이런 역할, 화의 힘, 화의 정신적인 무언가를 나타낸다고 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "사유축"
+    }
+   ],
+   "outcome": "금기운을 형성함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "사유축은 금기운"
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "신자진"
+    }
+   ],
+   "outcome": "수기운을 형성함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "신자진은 수기운입니다."
+  }
+ ],
+ "insights": [
+  "삼합은 외적으로 보이는 모습과 달리 내면에 품은 꿈, 소망, 역할이 같은 지지들끼리 모여 특정 오행의 기운을 발휘하는 작용이다."
+ ],
+ "keywords": [
+  "삼합",
+  "해묘미",
+  "인오술",
+  "사유축",
+  "신자진",
+  "목국",
+  "화국",
+  "금국",
+  "수국"
+ ]
+}

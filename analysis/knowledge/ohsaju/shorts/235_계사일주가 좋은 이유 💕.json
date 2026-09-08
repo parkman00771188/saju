@@ -1,0 +1,91 @@
+{
+ "source": "data/ohsaju/shorts/235_계사일주가 좋은 이유 💕.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "pfzcIdtEwMY",
+ "title": "계사일주가 좋은 이유 💕",
+ "url": "https://www.youtube.com/watch?v=pfzcIdtEwMY",
+ "upload": "20250205",
+ "duration_sec": "17",
+ "views": "33927",
+ "chars": 150,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:59",
+ "summary": "계사일주는 일주 자체적으로 조후를 해결할 수 있는 우수한 일주입니다. 사주나 환경이 조열할 때는 천간 계수가 습을 공급해주고, 반대로 지나치게 습할 때는 지지 사화가 균형을 맞춰줍니다. 이러한 수화의 자체 조절 능력 덕분에 다양한 환경 변화에서도 안정을 유지하기 좋습니다.",
+ "topics": [
+  "명리 이론",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "계사"
+    }
+   ],
+   "outcome": "자체적으로 조후를 해결함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "왜 계사일주가 좋냐면 계사일주가 자체적으로 조후를 해결해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "계사"
+    },
+    {
+     "type": "구조·조합",
+     "value": "조한 환경"
+    }
+   ],
+   "outcome": "계수가 있어 습해지며 균형을 맞춤",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "뭔가 조한 곳에서는 계수 때문에 습해지고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "계사"
+    },
+    {
+     "type": "구조·조합",
+     "value": "습한 환경"
+    }
+   ],
+   "outcome": "사화가 있어 안정을 찾음",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "그리고 뭔가 습한 곳에서는 사화 때문에 또 괜찮고"
+  }
+ ],
+ "insights": [
+  "계사일주는 천간의 수(계수)와 지지의 화(사화)가 공존하여 사주 원국이나 운의 조습에 구애받지 않고 스스로 조후 균형을 맞추는 장점이 있다."
+ ],
+ "keywords": [
+  "계사일주",
+  "조후",
+  "계수",
+  "사화",
+  "일주론",
+  "수화기제"
+ ]
+}

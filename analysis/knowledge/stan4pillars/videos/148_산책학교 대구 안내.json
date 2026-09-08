@@ -1,0 +1,31 @@
+{
+ "source": "data/stan4pillars/videos/148_산책학교 대구 안내.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "8FHqOh_taDQ",
+ "title": "산책학교 대구 안내",
+ "url": "https://www.youtube.com/watch?v=8FHqOh_taDQ",
+ "upload": "20260424",
+ "duration_sec": "330",
+ "views": "454",
+ "chars": 1880,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:11",
+ "summary": "대구에 새롭게 오픈한 명리 상담 및 스터디 공간인 '산책학교 대구(길 위의 길)' 매장을 소개하는 안내 영상입니다. 해당 매장에서는 명리 상담뿐만 아니라 수강생 스터디, 오프라인 과외 및 강의가 진행됩니다. 강사는 매월 넷째 주 월요일마다 대구 매장을 직접 방문하여 대면 상담을 진행할 계획을 밝혔습니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "산책학교 대구",
+  "길 위의 길",
+  "명리 상담",
+  "명리 스터디",
+  "명리 과외",
+  "대면 상담"
+ ]
+}

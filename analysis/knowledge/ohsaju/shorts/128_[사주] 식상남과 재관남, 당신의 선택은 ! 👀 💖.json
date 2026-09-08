@@ -1,0 +1,79 @@
+{
+ "source": "data/ohsaju/shorts/128_[사주] 식상남과 재관남, 당신의 선택은 ! 👀 💖.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "TRIWq2dqNTE",
+ "title": "[사주] 식상남과 재관남, 당신의 선택은?! 👀 💖",
+ "url": "https://www.youtube.com/watch?v=TRIWq2dqNTE",
+ "upload": "20250917",
+ "duration_sec": "31",
+ "views": "1886",
+ "chars": 250,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:59",
+ "summary": "영상은 남성의 사주 유형을 식상남과 재관남으로 나누어 각각의 특성을 설명합니다. 식상이 발달한 남성은 자신의 기운을 밖으로 펼치고 말을 잘하는 성향을 띱니다. 반면 재성과 관성이 발달한 재관형 남성은 꾸준히 노력하여 결과를 만들고 그 결과에 책임을 지는 성향을 가집니다.",
+ "topics": [
+  "성격·기질",
+  "연애·결혼",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남"
+    },
+    {
+     "type": "구조·조합",
+     "value": "식상 발달"
+    }
+   ],
+   "outcome": "적극적으로 펼치고 말을 잘한다",
+   "tag": "표현·언변",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "식상남은 내가 막 뭔가 펼치고 말하고 이런 남자예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남"
+    },
+    {
+     "type": "구조·조합",
+     "value": "재관 발달"
+    }
+   ],
+   "outcome": "꾸준히 결과를 내고 책임진다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내가 꾸준히 뭔가를 해서 어떤 결과를 보고 그 결과에 책임지는 남자가 재관형의 남자예요."
+  }
+ ],
+ "insights": [
+  "목일간 기준 화 기운이 발달하면 식상의 성향이 되고, 금과 토 기운이 발달하면 재관형의 성향이 된다."
+ ],
+ "keywords": [
+  "식상남",
+  "재관남",
+  "식상",
+  "재관",
+  "목일간",
+  "화기운",
+  "금토기운",
+  "책임감",
+  "표현력"
+ ]
+}

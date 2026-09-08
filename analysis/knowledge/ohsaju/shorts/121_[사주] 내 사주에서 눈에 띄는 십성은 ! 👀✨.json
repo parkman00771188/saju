@@ -1,0 +1,134 @@
+{
+ "source": "data/ohsaju/shorts/121_[사주] 내 사주에서 눈에 띄는 십성은 ! 👀✨.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "WDbx9LKNavM",
+ "title": "[사주] 내 사주에서 눈에 띄는 십성은?!  👀✨",
+ "url": "https://www.youtube.com/watch?v=WDbx9LKNavM",
+ "upload": "20251008",
+ "duration_sec": "43",
+ "views": "1638",
+ "chars": 419,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:59",
+ "summary": "사주에서 눈에 띄는 십성에 따른 성향과 특징을 설명하는 내용입니다. 인성이 있으면 생각하는 힘이 강하고, 식상이 있으면 표현하는 힘이 발달합니다. 재성이 있으면 결과를 예측하는 능력이 뛰어나지만 그로 인해 신경 쓸 일이 많아질 수 있으며, 관성이 많으면 책임을 잘 지는 대신 모든 것을 다 짊어지려 해 힘들어질 수 있습니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "인성"
+    }
+   ],
+   "outcome": "생각하는 힘이 강하다",
+   "tag": "학자·연구 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 사주에 인성이 있다, 그럼 나는 생각하는 힘이 강하네."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "식상"
+    }
+   ],
+   "outcome": "자신을 표현하는 힘이 강하다",
+   "tag": "표현·언변",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 사주에 식상이 있다, 나는 표현하는 힘이 강하네."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "재성"
+    }
+   ],
+   "outcome": "결과를 잘 예측하는 능력이 뛰어나다",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 사주에 재성이 있다, 나는 어떤 결과를 잘 예측할 수 있네."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "재성"
+    }
+   ],
+   "outcome": "결과 예측으로 신경 쓸 일이 많아진다",
+   "tag": "스트레스·신경",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그런 결과를 예측하는 것 때문에 되게 신경 쓰이는 게 많겠네, 이렇게도 생각할 수 있고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "관성"
+    }
+   ],
+   "outcome": "책임감이 강하고 책임을 잘 진다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 사주에 관성이 있다, 나는 책임을 잘 지는구나, 이렇게 보면 좋아요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 과다",
+     "value": "관성"
+    }
+   ],
+   "outcome": "책임감으로 다 짊어지려 해 힘들 수 있다",
+   "tag": "과로·피로",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주를 보면 아마 여기가 다 이렇게 관성이라고 돼 있을 거예요... 항상 책임감 때문에 이걸 다 짊어지려고 해서 힘들겠다"
+  }
+ ],
+ "insights": [
+  "사주에서 두드러지는 십성은 해당 십성이 상징하는 고유한 역량(생각, 표현, 결과 예측, 책임감)으로 직결된다.",
+  "십성의 장점적 역량은 발달 정도에 따라 과도한 스트레스나 심리적 부담으로 이어질 수 있다."
+ ],
+ "keywords": [
+  "십성",
+  "인성",
+  "식상",
+  "재성",
+  "관성",
+  "책임감",
+  "표현력",
+  "결과 예측"
+ ]
+}

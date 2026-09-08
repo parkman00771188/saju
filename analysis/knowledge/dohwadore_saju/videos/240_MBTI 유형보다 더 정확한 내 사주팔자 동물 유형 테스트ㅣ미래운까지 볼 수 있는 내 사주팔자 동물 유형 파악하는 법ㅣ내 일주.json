@@ -1,0 +1,239 @@
+{
+ "source": "data/dohwadore_saju/videos/240_MBTI 유형보다 더 정확한 내 사주팔자 동물 유형 테스트ㅣ미래운까지 볼 수 있는 내 사주팔자 동물 유형 파악하는 법ㅣ내 일주.txt",
+ "channel": "dohwadore_saju",
+ "tab": "videos",
+ "video_id": "wrS7B_Za56Y",
+ "title": "MBTI 유형보다 더 정확한 내 사주팔자 동물 유형 테스트ㅣ미래운까지 볼 수 있는 내 사주팔자 동물 유형 파악하는 법ㅣ내 일주 일지 파악하기",
+ "url": "https://www.youtube.com/watch?v=wrS7B_Za56Y",
+ "upload": "20200815",
+ "duration_sec": "332",
+ "views": "199912",
+ "chars": 2729,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:58",
+ "summary": "사주에서 나를 나타내는 핵심 기둥인 일주와 60갑자를 활용해 개인의 사주 동물 유형을 파악하는 방법을 소개한다. 천간 10간의 오행에 따라 목은 초록, 화는 빨강, 토는 노랑, 금은 흰색, 수는 검정의 5가지 색상이 주어지며, 지지 12간지 동물이 결합되어 총 60가지의 동물 유형이 형성된다. 일간의 오행과 일지 동물의 조합뿐만 아니라, 일지에 놓인 십성(비겁·식상·재성·관성·인성)과 지장간, 12운성, 신살 등을 함께 살펴보면 개인의 성향과 사주 구조를 입체적으로 분석할 수 있다.",
+ "topics": [
+  "명리 이론",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [
+  2020,
+  2022
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "목"
+    },
+    {
+     "type": "천간",
+     "value": "갑"
+    }
+   ],
+   "outcome": "동물 유형 색상에서 초록색에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 일간이 초록색이다 그러면 목 기운"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "화"
+    }
+   ],
+   "outcome": "동물 유형 색상에서 빨간색에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 일간이 화다 그러면은 빨강"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "토"
+    }
+   ],
+   "outcome": "동물 유형 색상에서 노란색에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 일간이 토다 그러면은 노란색"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "금"
+    }
+   ],
+   "outcome": "동물 유형 색상에서 흰색에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 기운이 일간 자리가 금이다 하면은 흰색"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "수"
+    }
+   ],
+   "outcome": "동물 유형 색상에서 까만색에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "마지막으로 일간 자리가 수다 하면은 까만색이에요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2020년 경자년"
+    },
+    {
+     "type": "천간",
+     "value": "경"
+    },
+    {
+     "type": "지지",
+     "value": "자"
+    }
+   ],
+   "outcome": "흰색 쥐의 해에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2020년",
+   "advice": "",
+   "quote": "올해가 2020년 경자년, 흰색 쥐의 해란 말이에요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2022년 임인년"
+    },
+    {
+     "type": "천간",
+     "value": "임"
+    },
+    {
+     "type": "지지",
+     "value": "인"
+    }
+   ],
+   "outcome": "까만색 호랑이의 해에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2022년",
+   "advice": "",
+   "quote": "2022년은 임인년이에요. 임인년, 임수는 수, 인목 호랑이죠. 호랑이인데 무슨 색 호랑이? 수니까 까만색 호랑이"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임신"
+    }
+   ],
+   "outcome": "검은 원숭이 유형에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "저는 임신일주예요... '제가 검은 원숭이인데요'라고 말하는 순간"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임자"
+    }
+   ],
+   "outcome": "일지에 비겁을 둔 구조가 됨",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수의 입장에서 임자는 내가 지지에도 비겁을 깔고 있죠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임인"
+    }
+   ],
+   "outcome": "일지에 식상을 둔 구조가 됨",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "그러면은 임인으로 봤을 때는 내가 밑에 식상을 깔고 있죠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임오"
+    }
+   ],
+   "outcome": "수극화 작용으로 일지에 재성을 둔 구조가 됨",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "임오를 봤을 때는 내가 수의 입장에서 봤을 때 수극화, 재성을 깔고 있죠."
+  }
+ ],
+ "insights": [
+  "일간은 개인의 본질과 사주 타입을 관통하는 핵심 기준이며, 60갑자는 10천간과 12지지의 음양 결합으로 총 60가지 고유 유형을 만든다.",
+  "일간의 오행(색상)과 일지(동물)의 결합 외에도 일지에 깔린 십성, 지장간의 합, 12운성, 신살, 공망을 종합하여 사주의 구조를 분석해야 한다."
+ ],
+ "keywords": [
+  "일주",
+  "일간",
+  "일지",
+  "60갑자",
+  "12간지",
+  "오행 색상",
+  "임신일주",
+  "경자년",
+  "임인년",
+  "십성"
+ ]
+}

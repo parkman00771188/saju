@@ -1,0 +1,70 @@
+{
+ "source": "data/ohsaju/shorts/042_신강, 신약은 ‘이것’ 먼저 봐요 👀.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "tMDhYIO1RJ8",
+ "title": "신강, 신약은 ‘이것’ 먼저 봐요 👀",
+ "url": "https://www.youtube.com/watch?v=tMDhYIO1RJ8",
+ "upload": "20260324",
+ "duration_sec": "19",
+ "views": "4038",
+ "chars": 123,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:58",
+ "summary": "무신일주는 겉으로 보기에 신강해 보일 수 있으나 단독으로 보면 신약에 가깝다고 판단할 수 있습니다. 하지만 사주 전체 구성에서 다른 기둥에 계미 등의 글자가 결합되면 신강한 사주로 판단할 수 있습니다. 일주 글자 하나에 얽매이지 않고 사주 전체 글자의 조합을 보고 신강·신약을 판단해야 합니다.",
+ "topics": [
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "무신"
+    }
+   ],
+   "outcome": "겉보기와 달리 신약에 가까움",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "딱 무신이라는 글자만 봤을 때는 신강해 보이지만, 정확히는 신약이라고 좀 봐야 되지 않나 하는 게 제 생각이에요"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "무신"
+    },
+    {
+     "type": "구조·조합",
+     "value": "계미"
+    }
+   ],
+   "outcome": "신강한 사주로 판단됨",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "근데 이 사람은 되게 신강해 보여요. 계미, 그러면 저는 이분을 신강하다고 생각해요."
+  }
+ ],
+ "insights": [
+  "일주 하나의 글자만 보고 신강·신약을 속단하기보다, 계미 등 다른 기둥의 글자 조합을 종합적으로 살펴야 실제 신강·신약 여부를 가릴 수 있다."
+ ],
+ "keywords": [
+  "신강",
+  "신약",
+  "무신일주",
+  "계미",
+  "일주론",
+  "신강신약"
+ ]
+}

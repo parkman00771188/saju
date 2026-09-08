@@ -18,8 +18,9 @@ ROOT = os.path.dirname(HERE)
 KDIR = os.path.join(HERE, "knowledge")
 OUT_APP = os.path.join(ROOT, "saju-site", "public", "kb_claims.json")
 OUT_MD = os.path.join(HERE, "knowledge_digest.md")
-MAX_ITEMS = int(os.environ.get("KB_MAX_ITEMS", "10"))       # 키당 앱에 싣는 결과 라벨 수
-PAIR_MIN_DOCS = int(os.environ.get("KB_PAIR_MIN_DOCS", "3"))  # 짝 키 최소 영상 수
+MAX_ITEMS = int(os.environ.get("KB_MAX_ITEMS", "10"))       # 키당 앱에 싣는 결과 라벨 수(단일 키)
+PAIR_ITEMS = int(os.environ.get("KB_PAIR_ITEMS", "6"))       # 짝 키 항목 수
+PAIR_MIN_DOCS = int(os.environ.get("KB_PAIR_MIN_DOCS", "4"))  # 짝 키 최소 영상 수(연도 짝 키는 3)
 APP_MIN_YEAR = int(time.strftime("%Y"))                      # 앱 색인에는 올해 이후 연도 키만 (지난 신년운세는 다이제스트에만)
 
 STEM = {"갑": "甲", "을": "乙", "병": "丙", "정": "丁", "무": "戊", "기": "己", "경": "庚", "신": "辛", "임": "壬", "계": "癸"}
@@ -171,6 +172,12 @@ def normalize(ctype, value):
             if s in v0:
                 keys.append(s); break
         if not keys and re.search(r"재다", v0): keys.append("재다신약")
+        if not keys:
+            k = rel_key(v)
+            if not k:
+                han = "".join(BRANCH.get(c, "") for c in re.sub(r"\s", "", v))
+                if len(han) == 3 and len(re.sub(r"\s", "", v)) <= 5: k = han   # '신자진' 같은 삼합 세 글자
+            if k: keys.append(k)
     elif ctype in ("합충형파해", "구조·조합") and not keys:
         k = rel_key(v)
         if not k and ctype == "구조·조합":
@@ -186,6 +193,9 @@ def normalize(ctype, value):
     elif ctype == "대운":
         g = god_of(v); gz = ko_gz(v)
         if g: keys.append(f"{g}운")
+        elif re.search(r"(비겁|식상|재성|관성|인성|관살)", v): keys.append(f"{GROUP[re.search(r'(비겁|식상|재성|관성|인성|관살)', v).group(1)]}운")
+        me = re.search(r"(목|화|토|금|수)\s?(대운|운)", v)
+        if me and not gz: keys.append(f"대운오행={EL[me.group(1)]}")
         if gz: keys.append(f"대운={gz}")
         m = re.search(r"(\d0)\s?대", v)
         if m and not (g or gz): keys.append(f"나이={m.group(1)}대")
@@ -195,6 +205,9 @@ def normalize(ctype, value):
         y = int(m.group(1)) if m else (year_of_gz(gz) if gz else None)
         if y: keys.append(f"Y{y}")
         if gz: keys.append(f"세운={gz}")
+        elif not y:
+            b = branch_of(re.sub(r"년|해", "", v))
+            if b: keys.append(f"세운지={b}")
     elif ctype == "월운":
         gz = ko_gz(v)
         if gz: keys.append(f"월운={gz}")
@@ -298,6 +311,7 @@ def main():
 
     def pack(k, min_docs):
         kd = len(key_docs[k]); items = []
+        pair, ypair = "&" in k, ("&" in k and "Y20" in k)
         for t, e in idx[k].items():
             if len(e["docs"]) < min_docs or t == "기타":
                 continue
@@ -311,18 +325,24 @@ def main():
                           "outs": outs, "quote": e["quotes"][0] if e["quotes"] else None, "advice": (e["advice"].most_common(1)[0][0][:90] if e["advice"] else ""),
                           "time": e["times"].most_common(1)[0][0] if e["times"] else "항상", "times": [t0 for t0, _ in e["times"].most_common(3) if t0 != "항상"]})
         items.sort(key=lambda x: -(x["docs"] * min(x["lift"], 4.0)))
-        items = items[:MAX_ITEMS]
-        for i, it in enumerate(items):   # 용량: 하위 항목은 인용·조언을 줄인다
-            if it["quote"]:
-                it["quote"] = [it["quote"][0][:110], it["quote"][1][:30], it["quote"][2]]
-            if i >= 6:
-                it["quote"] = None; it["advice"] = ""; it["outs"] = it["outs"][:2]
-        return {"docs": kd, "items": items}
+        items = items[:PAIR_ITEMS if pair else MAX_ITEMS]
+        out_items = []
+        for i, it in enumerate(items):   # 용량: 빈 값은 생략, 하위 항목·짝 키는 인용을 줄인다 (앱은 필드가 없으면 기본값으로 처리)
+            keep_quote = it["quote"] and (i < 6 if not pair else (ypair and i < 3))
+            o = {"tag": it["tag"], "docs": it["docs"], "lift": it["lift"], "cat": it["cat"], "outs": it["outs"][:3 if i < 4 else 2]}
+            if it["n"] != it["docs"]: o["n"] = it["n"]
+            if it["pol"]: o["pol"] = it["pol"]
+            if keep_quote: o["quote"] = [it["quote"][0][:100], it["quote"][1][:30], it["quote"][2]]   # 출처는 다이제스트용, 앱 JSON 에서는 비운다
+            if it["advice"] and i < 6 and not pair: o["advice"] = it["advice"][:80]
+            if it["time"] != "항상": o["time"] = it["time"]
+            if it["times"]: o["times"] = it["times"][:2]
+            out_items.append(o)
+        return {"docs": kd, "items": out_items}
 
     app = {"meta": {"docs": len(docs), "claims": n_claims, "built": time.strftime("%Y-%m-%d %H:%M"), "base": {t: round(b, 4) for t, b in base.items()}}, "by_key": {}}
     for k in idx:
         pair = "&" in k
-        if len(key_docs[k]) < (PAIR_MIN_DOCS if pair else 2):
+        if len(key_docs[k]) < ((3 if "Y20" in k else PAIR_MIN_DOCS) if pair else 2):
             continue
         ym = re.search(r"Y(20\d\d)", k)
         if ym and int(ym.group(1)) < APP_MIN_YEAR:
@@ -333,7 +353,9 @@ def main():
         if p["items"]:
             app["by_key"][k] = p
     os.makedirs(os.path.dirname(OUT_APP), exist_ok=True)
-    io.open(OUT_APP, "w", encoding="utf-8").write(json.dumps(app, ensure_ascii=False, separators=(",", ":")))
+    # 앱 JSON: 출처(제목·채널)는 화면에 쓰지 않으므로 비워 용량을 줄인다
+    app_out = {"meta": app["meta"], "by_key": {k: {"docs": p["docs"], "items": [dict(it, quote=[it["quote"][0], "", ""]) if it.get("quote") else it for it in p["items"]]} for k, p in app["by_key"].items()}}
+    io.open(OUT_APP, "w", encoding="utf-8").write(json.dumps(app_out, ensure_ascii=False, separators=(",", ":")))
     print("앱 색인: 키 %d개(짝 키 %d) → %s (%.0f KB)" % (len(app["by_key"]), sum(1 for k in app["by_key"] if "&" in k), OUT_APP, os.path.getsize(OUT_APP) / 1024))
 
     # ---------- 사람이 읽는 다이제스트 ----------
@@ -348,10 +370,10 @@ def main():
         for k, p in sorted(rows, key=lambda kv: -kv[1]["docs"]):
             L.append("### %s (영상 %d편)" % (k, p["docs"]))
             for it in p["items"][:top]:
-                q = it["quote"]
-                L.append("- **%s** (%d편, ×%.1f%s) — %s%s" % (it["tag"], it["docs"], it["lift"], "" if it["time"] == "항상" else ", " + it["time"], " / ".join(it["outs"][:2]),
+                q = it.get("quote")
+                L.append("- **%s** (%d편, ×%.1f%s) — %s%s" % (it["tag"], it["docs"], it["lift"], "" if it.get("time", "항상") == "항상" else ", " + it["time"], " / ".join(it["outs"][:2]),
                                                           (" 「%s」 (%s · %s)" % (q[0][:90], q[2], q[1][:24])) if q else ""))
-                if it["advice"]:
+                if it.get("advice"):
                     L.append("  - 조언: %s" % it["advice"][:100])
             L.append("")
 

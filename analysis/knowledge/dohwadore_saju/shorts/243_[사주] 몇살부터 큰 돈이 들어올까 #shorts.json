@@ -1,0 +1,69 @@
+{
+ "source": "data/dohwadore_saju/shorts/243_[사주] 몇살부터 큰 돈이 들어올까 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "lH6wZf_2yFM",
+ "title": "[사주] 몇살부터 큰 돈이 들어올까? #shorts",
+ "url": "https://www.youtube.com/watch?v=lH6wZf_2yFM",
+ "upload": "20220304",
+ "duration_sec": "37",
+ "views": "34408",
+ "chars": 353,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:52",
+ "summary": "만세력을 통해 인생에서 몇 살 때 큰돈을 벌 수 있는지 확인하는 방법을 설명합니다. 만세력에 표기된 10년 단위의 대운수에서 정재나 편재가 들어오는 시기를 확인하면 됩니다. 예컨대 25세와 35세 사이에 편재가 들어오는 경우, 해당 나이대에 큰돈을 벌 확률이 있습니다.",
+ "topics": [
+  "금전",
+  "운세 흐름"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "대운",
+     "value": "편재 대운"
+    }
+   ],
+   "outcome": "해당 나이대에 큰돈을 벌 확률이 있다",
+   "tag": "재물 대운 시기",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "해당 대운 시기",
+   "advice": "",
+   "quote": "이를테면 25와 35 사이에 편재가 들어오면, 이 사람은 25세와 35세 이 사이에 큰돈을 벌 수 있는 확률이 있다는 것을 알 수 있다는 거예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "대운",
+     "value": "정재 대운"
+    }
+   ],
+   "outcome": "해당 나이대에 큰돈을 벌 기회가 생긴다",
+   "tag": "재물 대운 시기",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "해당 대운 시기",
+   "advice": "",
+   "quote": "여기에서 여러분들이 봤을 때 편재와 정재에 해당하는 숫자가 있을 겁니다. 숫자는 여러분들께 아주 중요하거든요."
+  }
+ ],
+ "insights": [
+  "만세력에서 10년 단위로 바뀌는 대운 숫자(대운수)에 정재나 편재가 언제 들어오는지를 보고 큰 재물이 들어오는 시기를 파악할 수 있다."
+ ],
+ "keywords": [
+  "대운",
+  "편재",
+  "정재",
+  "대운수",
+  "큰돈",
+  "금전운",
+  "만세력",
+  "재성"
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "source": "data/ohsaju/shorts/052_[사주] 연주의 오행으로 보는 나의 첫인상🪞.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "Ct0rhhQMjt4",
+ "title": "[사주] 연주의 오행으로 보는 나의 첫인상🪞",
+ "url": "https://www.youtube.com/watch?v=Ct0rhhQMjt4",
+ "upload": "20260301",
+ "duration_sec": "40",
+ "views": "5222",
+ "chars": 304,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:58",
+ "summary": "사주에서 연주(년주)에 위치한 오행의 기운에 따라 타인에게 비치는 개인의 첫인상이 결정됩니다. 연주에 목 기운이 많으면 귀엽고 발랄하며, 화 기운은 화사하고 따뜻한 인상을 줍니다. 또한 토 기운은 둥글둥글하고 귀여운 느낌, 금 기운은 날카롭고 까칠한 인상, 수 기운은 말하지 않아도 풍기는 은은한 매력의 첫인상을 형성합니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "년주",
+     "value": "목"
+    }
+   ],
+   "outcome": "첫인상이 귀엽고 발랄하다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "만약에 연에 이렇게 목기운이 가득하다 그러면 좀 귀여운 느낌이죠, 발랄한 느낌."
+  },
+  {
+   "conditions": [
+    {
+     "type": "년주",
+     "value": "수"
+    }
+   ],
+   "outcome": "말하지 않아도 은은한 매력이 풍긴다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "근데 이쪽에 만약에 수기운이 있다 그러면 말하지 않아도 풍기는 은은한 매력."
+  },
+  {
+   "conditions": [
+    {
+     "type": "년주",
+     "value": "금"
+    }
+   ],
+   "outcome": "첫인상이 날카롭고 까칠해 보인다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그리고 만약에 연에 금기운이 많다 그러면 조금 날카로운 느낌이 있죠, 까칠한 느낌이 좀 있고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "년주",
+     "value": "화"
+    }
+   ],
+   "outcome": "첫인상이 따뜻하고 화사하다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그리고 화기운이 돼 있다 그러면 좀 화사하죠, 따뜻하고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "년주",
+     "value": "토"
+    }
+   ],
+   "outcome": "첫인상이 둥글둥글하고 귀엽다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "토기운이 돼 있으면 좀 귀여운 거 같아요. 이거랑 좀 느낌이 다른 귀여운 건데 약간 둥글둥글한 느낌"
+  }
+ ],
+ "insights": [
+  "사주 구조에서 연주(년주)에 위치한 지배적인 오행 기운은 타인이 처음 바라보는 외적 분위기와 첫인상을 결정짓는 핵심 지표가 된다."
+ ],
+ "keywords": [
+  "첫인상",
+  "연주",
+  "년주",
+  "목기운",
+  "화기운",
+  "토기운",
+  "금기운",
+  "수기운",
+  "오행"
+ ]
+}

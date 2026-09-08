@@ -1,0 +1,70 @@
+{
+ "source": "data/ohsaju/shorts/090_숨겨진 돈과 능력을 가진 기축일주✨.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "-TieJwZrjuc",
+ "title": "숨겨진 돈과 능력을 가진 기축일주✨",
+ "url": "https://www.youtube.com/watch?v=-TieJwZrjuc",
+ "upload": "20251218",
+ "duration_sec": "33",
+ "views": "1612",
+ "chars": 293,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:59",
+ "summary": "기축일주는 일반적으로 사주가 좋지 않다는 오해를 받지만 실제로는 매우 좋은 일주입니다. 축토의 지장간에 계수(재물)와 신금(특별한 능력), 기토를 품고 있어 숨겨진 돈복과 스페셜한 재능을 지니고 있습니다. 따라서 기축일주는 안 좋게 볼 이유가 전혀 없는 잠재력이 뛰어난 사주입니다.",
+ "topics": [
+  "금전",
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "기축"
+    }
+   ],
+   "outcome": "지장간에 돈(계수)을 품어 재물복이 있다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "왜냐면 어쨌든 이 안에는 계·신·기라는 이런 지장간이 있잖아요. 이게 돈이에요, 돈."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "기축"
+    }
+   ],
+   "outcome": "지장간의 신금으로 특별한 능력을 지닌다",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "이건 내 특별한 능력이고요. 스페셜한 능력."
+  }
+ ],
+ "insights": [
+  "기축일주는 축토(丑) 지장간의 계수(재물)와 신금(능력/식신)을 내포하고 있어 잠재적 가치와 복이 풍부한 일주이다."
+ ],
+ "keywords": [
+  "기축일주",
+  "축토",
+  "지장간",
+  "계수",
+  "신금",
+  "기토",
+  "재물복",
+  "특별한 능력"
+ ]
+}

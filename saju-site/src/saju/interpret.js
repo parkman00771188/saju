@@ -223,7 +223,7 @@ export function interpret(data) {
     [dayStem, `${S.title.split(' ')[0]} 일간`], [pillars.day.text, `${pillars.day.text} 일주`], [monthGod, `월지 ${monthGod}`], [detail.day.branchGod, `일지 ${detail.day.branchGod}`],
     ...sinsalNames.map((n) => [n, K.SINSAL[n]?.title || n]),
     ...patterns.filter((p) => p.kind !== '일주' && p.kind !== '일간×십성').map((p) => [p.key, p.title]),
-    ...missing.map((m) => [`${m}결핍`, `${m}(${ELEMENT_KO[m]}) 없음`]), [`${strongest}과다`, `${strongest}(${ELEMENT_KO[strongest]}) 과다`],
+    ...missing.map((m) => [`${m}결핍`, `${m}(${ELEMENT_KO[m]}) 없음`]), (elements[strongest] || 0) >= 3 ? [`${strongest}과다`, `${strongest}(${ELEMENT_KO[strongest]}) 과다`] : null,
     st.label !== '중화' ? [st.label, st.label] : null,
     [gyeok.key, gyeok.key],
     ...['year', 'month', 'day', 'time'].filter((k) => detail[k]).map((k) => [`${{ year: '년', month: '월', day: '일', time: '시' }[k]}지+${detail[k].branchGod}`, `${{ year: '년', month: '월', day: '일', time: '시' }[k]}지 ${detail[k].branchGod}`]),
@@ -235,6 +235,8 @@ export function interpret(data) {
     current.daeun ? [`대운=${current.daeun.text}`, `${current.daeun.text} 대운`] : null,
     [`나이=${decade}`, decade], gender ? [`성별=${gender}`, gender === '남' ? '남성' : '여성'] : null, [`계절=${season}`, `${season} 태생`],
     [`일간오행=${dayEl}`, `${ELEMENT_KO[dayEl]} 일간`],
+    ...(current.daeun ? [[`${K.TEN_GOD_GROUP[current.daeun.branchGod]}운`, `${K.TEN_GOD_GROUP[current.daeun.branchGod]} 대운`], [`대운오행=${BRANCH_ELEMENT[current.daeun.text[1]]}`, `${ELEMENT_KO[BRANCH_ELEMENT[current.daeun.text[1]]]} 대운`]] : []),
+    current.year?.text ? [`세운지=${current.year.text[1]}`, `${current.year.text[1]}년(세운)`] : null,
     ...['비겁', '식상', '재성', '관성', '인성'].map((g) => { const el = GROUP_EL_OF(dayEl, g); return [`${g}=${el}`, `${g}이 ${ELEMENT_KO[el]}인 사주`]; }),
     ...['year', 'month', 'day', 'time'].filter((k) => detail[k]).map((k) => [`${{ year: '년', month: '월', day: '일', time: '시' }[k]}지+${K.TEN_GOD_GROUP[detail[k].branchGod]}`, `${{ year: '년', month: '월', day: '일', time: '시' }[k]}지 ${K.TEN_GOD_GROUP[detail[k].branchGod]}`]),
   ].filter(Boolean);
@@ -253,8 +255,10 @@ export function interpret(data) {
       evidence.push({ key, title: `${titleOf[singles[i]]}+${titleOf[singles[k]]}`, pair: true, claims: items.map(mapItem), stats: null });
     }
   }
+  const SKIP_LABEL = new Set(['개운법', '궁합 좋음', '궁합 나쁨', '기타']);
   const evidenceByCat = {};
   for (const e of evidence) for (const c of e.claims) {
+    if (SKIP_LABEL.has(c.label)) continue;
     const bucket = (evidenceByCat[c.cat] ||= {});
     const row = (bucket[c.label] ||= { label: c.label, cat: c.cat, pol: c.pol, weight: 0, docs: 0, n: 0, from: [], liftSum: 0, fromW: {}, outs: {}, quotes: [], advice: '', times: {} });
     // 리프트(그 글자에서 유독 자주 나오는 정도)로 가중: 어떤 사주에나 나오는 흔한 이야기는 내려가고, 이 조합에서 두드러진 이야기가 올라온다
@@ -282,6 +286,7 @@ export function interpret(data) {
     const add = (items, title, w0) => {
       for (const it of items) {
         const c = mapItem(it);
+        if (SKIP_LABEL.has(c.label)) continue;
         const r = (acc[c.label] ||= { label: c.label, cat: c.cat, pol: c.pol, weight: 0, docs: 0, n: 0, from: [], outs: {}, quotes: [], advice: '', times: {}, liftSum: 0 });
         const w = c.docs * w0 * Math.min(Math.max(c.lift || 1, 0.5), 4); r.weight += w; r.docs += c.docs; r.n += c.n || 0; r.liftSum += (c.lift || 1) * c.docs;
         if (!r.from.includes(title)) r.from.push(title);

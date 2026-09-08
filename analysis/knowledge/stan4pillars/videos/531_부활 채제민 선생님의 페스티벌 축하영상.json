@@ -1,0 +1,31 @@
+{
+ "source": "data/stan4pillars/videos/531_부활 채제민 선생님의 페스티벌 축하영상.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "KtLHWrtym3I",
+ "title": "부활 채제민 선생님의 페스티벌 축하영상",
+ "url": "https://www.youtube.com/watch?v=KtLHWrtym3I",
+ "upload": "20230901",
+ "duration_sec": "69",
+ "views": "682",
+ "chars": 493,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:17",
+ "summary": "본 영상은 밴드 부활의 드러머 채제민이 특정 행사 및 페스티벌에 전하는 축하 인터뷰 영상입니다. 행사에 직접 참석하지 못한 아쉬움을 전하며 꿈베이커리 후원 등 좋은 뜻에 동참한 것에 대한 응원과 덕담을 나눕니다. 사주나 명리학과 관련된 운세 풀이 및 이론적 내용은 포함되어 있지 않습니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "부활",
+  "채제민",
+  "축하영상",
+  "페스티벌",
+  "꿈베이커리",
+  "인터뷰"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "source": "data/ohsaju/shorts/187_사주를 보면 나의 주변 환경이 어떨지 알 수 있다 ! 🫢.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "UGLJIVcPje4",
+ "title": "사주를 보면 나의 주변 환경이 어떨지 알 수 있다?! 🫢",
+ "url": "https://www.youtube.com/watch?v=UGLJIVcPje4",
+ "upload": "20250511",
+ "duration_sec": "20",
+ "views": "3069",
+ "chars": 175,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:59",
+ "summary": "사주에서 월지는 자신이 처한 주변 환경을 나타냅니다. 사연자가 지금까지 살아온 집이나 이사 갈 집 근처에 항상 강이나 하천이 있었던 이유는 일주 때문이라기보다 월지에 자수(수 오행)를 두고 있기 때문입니다. 이처럼 월지의 글자와 오행을 통해 개인이 거주하거나 머무는 주변 환경의 특징을 유추할 수 있습니다.",
+ "topics": [
+  "명리 이론",
+  "기타"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "월지",
+     "value": "자"
+    }
+   ],
+   "outcome": "집 근처에 강이나 하천 등 물이 있는 환경에 거주한다",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임자일주라서 그렇다기보다도 내 환경이 이 자수라는 거예요. 왜냐면 월지가 자수니까, 수니까."
+  }
+ ],
+ "insights": [
+  "사주에서 월지는 개인이 살아가는 주변 배경과 거주 환경의 오행적 특성을 반영한다."
+ ],
+ "keywords": [
+  "월지",
+  "자수",
+  "수오행",
+  "주변환경",
+  "임자일주",
+  "거주환경",
+  "하천"
+ ]
+}

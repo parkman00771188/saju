@@ -1,0 +1,72 @@
+{
+ "source": "data/dohwadore_saju/shorts/205_MBTI vs 사주 궁합볼 때 차이점 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "PxL0Sh0J6uI",
+ "title": "MBTI vs 사주 궁합볼 때 차이점 #shorts",
+ "url": "https://www.youtube.com/watch?v=PxL0Sh0J6uI",
+ "upload": "20230418",
+ "duration_sec": "58",
+ "views": "5802",
+ "chars": 601,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:52",
+ "summary": "영상은 MBTI와 사주팔자의 궁합을 비교하는 방식의 차이점을 설명합니다. 사주에서는 천간의 오행 색상과 지지의 십이지 동물을 조합하여(예: 갑자는 초록색 쥐, 병인은 붉은 호랑이, 계묘는 검은 토끼) 상징 동물 간의 상성을 바탕으로 궁합을 분석합니다. 이를 통해 까만색 원숭이와 붉은색 뱀은 잘 맞고, 까만색 원숭이와 붉은색 호랑이는 잘 맞지 않는 것과 같은 궁합 관계를 파악할 수 있다고 설명합니다.",
+ "topics": [
+  "궁합·인간관계",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [
+  2023
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "까만색 원숭이와 붉은색 뱀"
+    }
+   ],
+   "outcome": "서로 궁합이 잘 맞는다",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "예를 들면 까만색 원숭이랑 붉은색 뱀은 잘 맞다"
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "까만색 원숭이와 붉은색 호랑이"
+    }
+   ],
+   "outcome": "서로 궁합이 잘 맞지 않는다",
+   "tag": "궁합 나쁨",
+   "category": "궁합·인간관계",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "까만색 원숭이와 붉은색 호랑이는 안 맞다, 이런 게 나오거든요."
+  }
+ ],
+ "insights": [
+  "사주팔자에서는 천간 오행의 고유 색상(목=초록, 화=빨강, 수=검정 등)과 지지 십이지 동물을 결합해 각 간지를 상징 동물(예: 갑자=초록색 쥐, 병인=붉은 호랑이)로 형상화한다.",
+  "성격 유형 지표인 MBTI와 달리 사주 궁합은 간지의 상징 동물들 간의 조합과 상성(합·충 등)을 비교하여 길흉을 판단한다."
+ ],
+ "keywords": [
+  "사주 궁합",
+  "MBTI 궁합",
+  "오행 색상",
+  "십이지 동물",
+  "갑자",
+  "병인",
+  "계묘",
+  "동물 궁합"
+ ]
+}

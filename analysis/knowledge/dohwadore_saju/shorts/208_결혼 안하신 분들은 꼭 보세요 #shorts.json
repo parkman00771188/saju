@@ -1,0 +1,254 @@
+{
+ "source": "data/dohwadore_saju/shorts/208_결혼 안하신 분들은 꼭 보세요 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "-RV7Jmyym4o",
+ "title": "결혼 안하신 분들은 꼭 보세요 #shorts",
+ "url": "https://www.youtube.com/watch?v=-RV7Jmyym4o",
+ "upload": "20230410",
+ "duration_sec": "59",
+ "views": "478977",
+ "chars": 633,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:52",
+ "summary": "사주팔자에 황금마차를 뜻하는 신살인 금여(金輿)가 있으면 남녀를 불문하고 결혼 후 좋은 배우자를 만날 수 있다고 설명한다. 금여는 만세력에서 자신의 일간을 확인한 후 사주 지지에 특정 글자가 있는지로 판단한다. 일간 갑목은 진토, 을목은 사화, 병화·무토는 미토, 정화·기토는 신금, 경금은 술토, 신금은 해수, 임수는 축토, 계수는 묘목이 지지에 있을 때 금여가 성립한다.",
+ "topics": [
+  "연애·결혼",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "금여"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "남녀 모두 할 거 없이 사주팔자에 금여라는 게 있으면은 결혼하고 나서 좋은 배우자를 만난다라고 볼 수도 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    },
+    {
+     "type": "지지",
+     "value": "진"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목이라는 글자가 있는 분들은 밑에 진토라는 글자가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    },
+    {
+     "type": "지지",
+     "value": "사"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목일간인 분들은 밑에 사화가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    },
+    {
+     "type": "지지",
+     "value": "미"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화일간이신 분들은 밑에 미토가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "지지",
+     "value": "신"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정화일간이신 분들은 밑에 신금이 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    },
+    {
+     "type": "지지",
+     "value": "미"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "무토일간이신 분들은 밑에 미토가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    },
+    {
+     "type": "지지",
+     "value": "신"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "기토일간이신 분들은 밑에 신금이 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    },
+    {
+     "type": "지지",
+     "value": "술"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "경금일간 분들은 밑에 술토가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    },
+    {
+     "type": "지지",
+     "value": "해"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "신금일간 분들은 밑에 해수가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "지지",
+     "value": "축"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수일간 분들은 밑에 축토가 있는 분들"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    },
+    {
+     "type": "지지",
+     "value": "묘"
+    }
+   ],
+   "outcome": "결혼 후 좋은 배우자를 만남",
+   "tag": "배우자 덕·능력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "마지막으로 계수일간 분들은 밑에 묘목이 있는 분들."
+  }
+ ],
+ "insights": [
+  "사주팔자에서 금여(金輿)는 황금마차를 뜻하며 남녀 불문하고 결혼 후 좋은 배우자를 만나는 복으로 해석된다.",
+  "금여는 일간의 건록지 기준 두 자리 앞의 지지가 사주 내에 위치할 때 성립한다."
+ ],
+ "keywords": [
+  "금여",
+  "금여록",
+  "배우자복",
+  "결혼운",
+  "일간",
+  "지지",
+  "황금마차",
+  "신살"
+ ]
+}

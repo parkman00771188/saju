@@ -1,0 +1,72 @@
+{
+ "source": "data/ohsaju/shorts/082_사주에 ’이것‘이 많으면 꿈과 직감이 잘 맞는다‼️.txt",
+ "channel": "ohsaju",
+ "tab": "shorts",
+ "video_id": "Cc5uHmOeLs4",
+ "title": "사주에 ’이것‘이 많으면 꿈과 직감이 잘 맞는다‼️",
+ "url": "https://www.youtube.com/watch?v=Cc5uHmOeLs4",
+ "upload": "20260106",
+ "duration_sec": "25",
+ "views": "4000",
+ "chars": 170,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:58",
+ "summary": "꿈이나 직감이 잘 맞는지 여부를 판단할 때는 사주의 음양 구성을 살펴보아야 합니다. 일반적으로 음의 기운에 해당하는 여성이 남성보다 꿈이 잘 맞을 확률이 훨씬 높습니다. 남성이라 하더라도 사주 구성이 음적으로 치우쳐 있을수록 꿈이나 직감이 잘 맞는 특징을 보입니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    }
+   ],
+   "outcome": "꿈이나 직감이 잘 맞을 확률이 높다",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "음과 양인데 여자분들이 꾸는 꿈들이 잘 맞을 확률이 굉장히 높죠, 남자보다는."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남성"
+    },
+    {
+     "type": "구조·조합",
+     "value": "음적 사주"
+    }
+   ],
+   "outcome": "꿈이나 직감이 잘 맞는다",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "근데 만약에 남자가 사주가 좀 음적으로 갈수록 이런 꿈 같은 게 좀 잘 맞긴 하죠."
+  }
+ ],
+ "insights": [
+  "꿈과 직감의 발달 여부를 살필 때는 특정 글자나 십성보다 사주 전반의 음과 양(음기·양기) 균형을 우선적으로 보아야 한다."
+ ],
+ "keywords": [
+  "음양",
+  "음기",
+  "직감",
+  "촉",
+  "꿈",
+  "예지몽",
+  "성별"
+ ]
+}

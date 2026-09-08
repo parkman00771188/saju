@@ -1,0 +1,95 @@
+{
+ "source": "data/dohwadore_saju/shorts/242_성욕이 강한 남자 관상 공통점 3가지 #shorts #관상 #관상보는법.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "01pOepbBfGA",
+ "title": "성욕이 강한 남자 관상 공통점 3가지 #shorts #관상 #관상보는법",
+ "url": "https://www.youtube.com/watch?v=01pOepbBfGA",
+ "upload": "20220311",
+ "duration_sec": "31",
+ "views": "498015",
+ "chars": 324,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:52",
+ "summary": "남성의 관상에서 성욕이 강한 세 가지 신체 부위별 특징을 설명합니다. 눈과 눈썹 사이(전택궁)가 넓거나 도톰한 경우, 눈이 작고 쌍꺼풀이 없는 경우 성욕이 강한 편에 속합니다. 또한 입술에 세로줄이 많고 두께가 도톰할수록 성욕이 강하다고 해석합니다.",
+ "topics": [
+  "성격·기질",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남성"
+    },
+    {
+     "type": "기타",
+     "value": "전택궁(눈과 눈썹 사이)이 넓거나 도톰함"
+    }
+   ],
+   "outcome": "성욕이 강하다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "눈썹과 눈 사이를 전택궁이라고 하는데, 이 사이가 넓거나 도톰하신 분들은 성욕이 강하다고 볼 수 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남성"
+    },
+    {
+     "type": "기타",
+     "value": "눈이 작고 쌍꺼풀이 없음"
+    }
+   ],
+   "outcome": "성욕이 상대적으로 더 강하다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "눈이 크면서 쌍꺼풀이 있는 사람보다 눈이 작으면서 쌍꺼풀이 없는 눈이 성욕이 조금 더 강하다고 볼 수 있고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남성"
+    },
+    {
+     "type": "기타",
+     "value": "입술 세로줄이 많고 두껍고 도톰함"
+    }
+   ],
+   "outcome": "성욕이 강하다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "입술의 라인, 세로줄이 많을수록 조금 더 성욕이 강하다고 볼 수 있고, 입술 자체가 얇은 것보다는 조금 두껍고 도톰해야 성욕이 강하다고 볼 수 있습니다."
+  }
+ ],
+ "insights": [
+  "관상학에서 눈썹과 눈 사이인 전택궁, 눈의 크기 및 쌍꺼풀 유무, 입술의 두께와 주름은 본능적 욕구와 성적 에너지를 판별하는 기준으로 쓰인다."
+ ],
+ "keywords": [
+  "관상",
+  "남자 관상",
+  "성욕",
+  "전택궁",
+  "눈 관상",
+  "입술 관상"
+ ]
+}

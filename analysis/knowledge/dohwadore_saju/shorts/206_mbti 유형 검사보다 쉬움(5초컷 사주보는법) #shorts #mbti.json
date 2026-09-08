@@ -1,0 +1,229 @@
+{
+ "source": "data/dohwadore_saju/shorts/206_mbti 유형 검사보다 쉬움(5초컷 사주보는법) #shorts #mbti.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "1kjQupFHrJA",
+ "title": "mbti 유형 검사보다 쉬움(5초컷 사주보는법) #shorts #mbti",
+ "url": "https://www.youtube.com/watch?v=1kjQupFHrJA",
+ "upload": "20230417",
+ "duration_sec": "58",
+ "views": "6369",
+ "chars": 444,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:52",
+ "summary": "사주 만세력을 통해 타고난 동물(일지)을 확인하는 기본적인 방법을 설명합니다. 만세력에서 왼쪽 두 번째 아래에 위치한 일지 글자를 통해 개인이 타고난 동물을 파악할 수 있습니다. 12지지에 해당하는 자(쥐), 축(소), 인(호랑이), 묘(토끼), 진(용), 사(뱀), 오(말), 미(양), 신(원숭이), 유(닭), 술(개), 해(돼지) 각각의 동물 대응 관계를 소개합니다.",
+ "topics": [
+  "명리 이론",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "자"
+    }
+   ],
+   "outcome": "타고난 동물이 쥐에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "왼쪽에서 두 번째 밑에 글자를 일지라고 하는데, 요게 내가 타고난 동물을 볼 수 있어요. 자는 쥐라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "축"
+    }
+   ],
+   "outcome": "타고난 동물이 소에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "축은 소라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "인"
+    }
+   ],
+   "outcome": "타고난 동물이 호랑이에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "인은 호랑이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "묘"
+    }
+   ],
+   "outcome": "타고난 동물이 토끼에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "묘는 토끼라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "진"
+    }
+   ],
+   "outcome": "타고난 동물이 용에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "진은 용이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "사"
+    }
+   ],
+   "outcome": "타고난 동물이 뱀에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "사는 뱀이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "오"
+    }
+   ],
+   "outcome": "타고난 동물이 말에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "오는 말이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "미"
+    }
+   ],
+   "outcome": "타고난 동물이 양에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "미는 양이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "신"
+    }
+   ],
+   "outcome": "타고난 동물이 원숭이에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "신은 원숭이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "유"
+    }
+   ],
+   "outcome": "타고난 동물이 닭에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "유는 닭이라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "술"
+    }
+   ],
+   "outcome": "타고난 동물이 개에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "술은 개라는 글자"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "해"
+    }
+   ],
+   "outcome": "타고난 동물이 돼지에 해당함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "해는 돼지라는 글자를 의미합니다."
+  }
+ ],
+ "insights": [
+  "사주팔자 만세력에서 본인이 타고난 동물은 왼쪽에서 두 번째 아래 글자인 '일지'를 통해 확인할 수 있다.",
+  "MBTI가 16가지 유형으로 나뉘는 것과 달리 사주는 60가지 동물(60갑자) 체계로 구성된다."
+ ],
+ "keywords": [
+  "일지",
+  "12지지",
+  "만세력",
+  "사주팔자",
+  "타고난 동물",
+  "MBTI",
+  "자축인묘진사오미신유술해"
+ ]
+}

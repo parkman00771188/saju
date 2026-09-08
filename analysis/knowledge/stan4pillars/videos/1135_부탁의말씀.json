@@ -1,0 +1,32 @@
+{
+ "source": "data/stan4pillars/videos/1135_부탁의말씀.txt",
+ "channel": "stan4pillars",
+ "tab": "videos",
+ "video_id": "0Ecz-CQ0cHQ",
+ "title": "부탁의말씀",
+ "url": "https://www.youtube.com/watch?v=0Ecz-CQ0cHQ",
+ "upload": "20211227",
+ "duration_sec": "474",
+ "views": "472",
+ "chars": 3503,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 17:08",
+ "summary": "본 영상은 사주 해석 강의가 아닌 채널 운영 및 강의 개설 안내 영상으로, 클래스101에 개설 준비 중인 초보자용 사주 강의의 수요조사 응원을 시청자들에게 부탁하고 있습니다. 더불어 기존에 무료로 진행하던 사주 상담을 종료하고, 1월부터 정식 유료 상담 및 네이버 엑스퍼트를 통한 최소 비용 상담을 운영할 계획임을 밝혔습니다. 향후 개설될 강좌에서는 사주 기초 이론뿐만 아니라 자녀의 적성·진로, 부동산 등 세부 주제별 강의를 제공할 예정이라고 설명합니다.",
+ "topics": [
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "사주 강의",
+  "클래스101",
+  "사주 상담",
+  "네이버 엑스퍼트",
+  "사주 기초",
+  "자녀 적성",
+  "부동산 사주"
+ ]
+}
