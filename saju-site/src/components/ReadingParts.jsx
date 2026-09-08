@@ -41,12 +41,12 @@ export function Gauge({ g, color }) {
   );
 }
 export function Meter({ stats }) {
-  if (!stats) return <span className="meter"><small>원문 데이터 없음</small></span>;
+  if (!stats) return <span className="meter"><small>전문가 의견 데이터 없음</small></span>;
   const pct = ((stats.polarity + 1) / 2) * 100;
   const top = Object.entries(stats.categories || {}).sort((a, b) => b[1] - a[1]).filter(([, v]) => v > 0).slice(0, 2);
   return (
     <span className="meter" title={`긍정어 ${stats.pos} · 부정어 ${stats.neg}`}>
-      <span>강의 {stats.docs}편·{stats.mentions}회</span>
+      <span>전문가 {stats.docs}편 · {stats.mentions}회 언급</span>
       <span className="bar2"><i style={{ left: `${pct}%` }} /></span>
       <span>{stats.polarity > 0.15 ? '긍정 우세' : stats.polarity < -0.15 ? '부정 우세' : '중립'}</span>
       {top.length > 0 && <span className="ctx">{top.map(([c]) => <b key={c}>{c}</b>)}</span>}
@@ -81,7 +81,7 @@ export function Evidence({ rows, title, note }) {
       {rows.map((r, i) => (
         <motion.div className="evrow" key={r.label} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
           <i className={polClass(r.pol)}>{polMark(r.pol)}</i>
-          <div><b>{r.label}</b><p>{r.text}</p><small>근거: {r.from.slice(0, 4).join(' · ')}</small></div>
+          <div><b>{r.label}</b><p>{r.text}</p><small>전문가들이 짚은 글자: {r.from.slice(0, 4).join(' · ')}</small></div>
           <span className="evn">{r.docs}편</span>
         </motion.div>
       ))}
@@ -98,7 +98,7 @@ export function PatternCard({ p, i, claimMeta }) {
       <div className="neg"><i>凶</i><p>{p.neg}</p></div>
       {claims.length > 0 && (
         <div className="pclaims">
-          <span style={{ background: 'transparent', color: 'var(--ink-faint)', padding: '2px 0' }}>강의에서 함께 말하는 것:</span>
+          <span style={{ background: 'transparent', color: 'var(--ink-faint)', padding: '2px 0' }}>전문가들이 함께 말하는 것:</span>
           {claims.map(([label, , docs]) => <span key={label} className={polClass(claimMeta[label]?.[1] ?? 0)}>{label} {docs}편</span>)}
         </div>
       )}

@@ -100,7 +100,7 @@ function buildPages(R, data) {
       <Callout><b>"{R.climate.image}"</b><br />{R.climate.season}에 태어난 {ko[dayEl]} 일간 · {gy.key} · {R.strength.label}</Callout>
       <Chips items={[`일간 ${data.dayStem} ${ko[dayEl]}`, gy.key, `용신 ${y.el}(${ko[y.el]})`, `필요한 기운 ${R.needEl}(${ko[R.needEl]})`]} />
       <P>아래 화살표나 좌우 스와이프로 한 장씩 넘겨 보세요. 각 장은 <b className="hl">쉬운 한 줄 요약</b>과 핵심 설명, 그리고 "더 자세히 보기"로 이루어져 있어요. 모르는 말이 나오면 아래 <b className="hl">용어해석</b>을 누르세요.</P>
-      <P>이 풀이는 만세력 계산 + 명리 규칙(격국·용신·자리·신살·대운) + 사주 강의 {R.meta.docs.toLocaleString()}편의 원문 통계를 합쳐 만든 참고 자료예요. 점수와 그래프는 비교를 돕는 지수이고, 정해진 답이 아니라 나를 이해하는 힌트로 읽어 주세요.</P>
+      <P>이 풀이는 만세력 계산 + 명리 규칙(격국·용신·자리·신살·대운) + 사주 전문가 강의 {R.meta.docs.toLocaleString()}편에서 정리한 의견 통계를 합쳐 만든 참고 자료예요. 점수와 그래프는 비교를 돕는 지수이고, 정해진 답이 아니라 나를 이해하는 힌트로 읽어 주세요.</P>
     </>
   ) });
 
@@ -288,13 +288,13 @@ function buildPages(R, data) {
     </>
   ) });
 
-  pages.push({ id: 'evidence', title: '강의 원문이 말하는 나', terms: ['십성(십신)', '격국', '십이신살'], body: (
+  pages.push({ id: 'evidence', title: '사주 전문가들이 말하는 나', terms: ['십성(십신)', '격국', '십이신살'], body: (
     <>
-      <Callout>{name}의 글자·조합을 다룬 사주 강의 원문에서 <b>실제로 반복된 이야기</b>를 좋은 것·조심할 것 가리지 않고 모았어요.</Callout>
+      <Callout>{name}의 글자와 조합에 대해 사주 전문가들이 <b>실제로 반복해서 말하는 이야기</b>를 좋은 것·조심할 것 가리지 않고 모았어요.</Callout>
       <div className="evsum"><div className="col p"><h5>吉 · 좋게 보는 점</h5>{R.evidenceSummary.pos.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div><div className="col n"><h5>凶 · 조심하라는 점</h5>{R.evidenceSummary.neg.map((r) => <span key={r.label}>{r.label} <small>{r.docs}편</small></span>)}</div></div>
       <Evidence rows={evAll} />
       {R.keywords.length > 0 && <><Sub>함께 자주 나오는 말</Sub><div className="kws">{R.keywords.map((k) => <i key={k}>#{k}</i>)}</div></>}
-      <More title={`이 사주의 조합 ${R.patterns.length}개 (吉/凶·원문 어조)`}><div className="plist">{R.patterns.map((p, i) => <PatternCard key={p.key} p={p} i={i} claimMeta={R.meta.claims || {}} />)}</div></More>
+      <More title={`이 사주의 조합 ${R.patterns.length}개 (吉/凶·전문가들의 어조)`}><div className="plist">{R.patterns.map((p, i) => <PatternCard key={p.key} p={p} i={i} claimMeta={R.meta.claims || {}} />)}</div></More>
     </>
   ) });
 
@@ -395,9 +395,9 @@ function CategoryPage({ R, data, cat }) {
         <div className="evlist"><b className="evtitle">사건의 형태로 보면</b>{topMs.map((mm) => <p key={mm.monthNo} className="fy-event block"><b>{mm.monthNo}월 {mm.text}</b> — {eventFor({ g: mm, cat, ctx: ectx, range: monthRange(year, mm.monthNo) })}</p>)}</div></div>}
       <Divider /><Sub>기운이 들어오는 때</Sub>{(c.sections.find((s) => /때/.test(s.title))?.paras || []).slice(0, 3).map((p, i) => <P key={i} words={[R.needEl, `${R.needEl}(${ELEMENT_KO[R.needEl]})`]}>{p}</P>)}
       <Divider /><Sub>지금 흐르는 운</Sub><div className="nowlist">{c.now.map((n, i) => <div className="nowitem" key={i}><div className="nowlabel"><span>{n.label}</span><Score n={n.score} color={m.color} /></div><p>{n.text}</p></div>)}</div>
-      <More title="더 자세히 보기 (전체 설명 · 조합 · 원문)">
+      <More title="더 자세히 보기 (전체 설명 · 조합 · 전문가 의견)">
         {c.sections.slice(2).map((s, i) => <div key={i}><Sub>{s.title}</Sub>{s.paras.map((p, j) => <P key={j}>{p}</P>)}</div>)}
-        {c.evidence?.length > 0 && <><Sub>강의 원문이 말하는 이 사주의 {cat}</Sub><Evidence rows={c.evidence} /></>}
+        {c.evidence?.length > 0 && <><Sub>사주 전문가들이 말하는 이 사주의 {cat}</Sub><Evidence rows={c.evidence} /></>}
       </More>
     </>
   );

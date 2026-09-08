@@ -538,7 +538,7 @@ export function interpret(data) {
     { icon: '宮', title: '네 기둥, 인생의 네 시기', sub: '년주=초년·조상 / 월주=청년·사회 / 일주=중년·배우자 / 시주=말년·자식', paras: [], positions },
     { icon: '合', title: '글자들의 관계와 신살', sub: `합충형파해 ${relations.chung.length + relations.stemChung.length + relations.yukhap.length + relations.stemHap.length}건 · 신살 ${sinsalNames.length}개`, paras: [...relParas, ...sinsalParas] },
     { icon: '運', title: '인생의 흐름 — 대운', sub: `${meta.forward ? '순행' : '역행'} · 첫 대운 ${meta.daeunStart}`, paras: lifeStages.map((l) => l.text), daeunAll },
-    { icon: '言', title: '강의 원문이 이 사주에 대해 말하는 것', sub: `관련 강의 ${evidenceSummary.total.toLocaleString()}편의 반복된 결과 · 吉/凶 모두`, paras: [], evidenceSummary, keywords },
+    { icon: '言', title: '사주 전문가들이 이 사주에 대해 말하는 것', sub: `전문가 강의 ${evidenceSummary.total.toLocaleString()}편에서 반복된 의견 · 吉/凶 모두`, paras: [], evidenceSummary, keywords },
     { icon: '助', title: '개운법과 조언', sub: `용신 ${yongEl}(${ELEMENT_KO[yongEl]}) 중심`, paras: advice },
   ];
 
