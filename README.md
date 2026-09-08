@@ -5,7 +5,9 @@ dohwador/
 ├── crawler/            유튜브 채널 자막 크롤러
 │   └── crawl.py
 ├── data/               크롤링 결과 (채널별 폴더)
-│   └── dohwadore_saju/
+│   ├── dohwadore_saju/   도화도르 (videos 181 · shorts 246)
+│   ├── stan4pillars/     스탠사주 (videos 1,283)
+│   └── ohsaju/           오사주 (videos 246 · shorts 252)
 │       ├── videos/           롱폼 자막 txt
 │       ├── shorts/           쇼츠 자막 txt
 │       ├── videos_index.json 전체 메타데이터
