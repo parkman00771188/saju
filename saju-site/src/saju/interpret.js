@@ -66,6 +66,19 @@ const CAT_GOD_BOOST = {
 };
 
 const GEN_NEXT = { 木: '火', 火: '土', 土: '金', 金: '水', 水: '木' };
+/** 결과 문장 목록 정리: 끝 마침표 제거, 2글자 조각이 60% 이상 겹치는 문장은 하나만 남긴다 */
+const tidyOuts = (list) => {
+  const grams = (t) => { const s = t.replace(/[\s.,·'"「」()]/g, ''); const g = new Set(); for (let i = 0; i < s.length - 1; i++) g.add(s.slice(i, i + 2)); return g; };
+  const out = [], seen = [];
+  for (const raw of list || []) {
+    const t = String(raw || '').trim().replace(/[.。]+$/, '');
+    if (!t) continue;
+    const g = grams(t);
+    if (seen.some((h) => { let inter = 0; for (const x of g) if (h.has(x)) inter++; return inter / Math.max(1, Math.min(g.size, h.size)) > 0.6; })) continue;
+    out.push(t); seen.push(g);
+  }
+  return out;
+};
 const GROUP_EL_OF = (dayEl, g) => (g === '비겁' ? dayEl : g === '식상' ? GEN_NEXT[dayEl] : g === '재성' ? GEN_NEXT[GEN_NEXT[dayEl]] : g === '관성' ? GEN_NEXT[GEN_NEXT[GEN_NEXT[dayEl]]] : GEN_NEXT[GEN_NEXT[GEN_NEXT[GEN_NEXT[dayEl]]]]);
 
 export function interpret(data) {
@@ -210,7 +223,7 @@ export function interpret(data) {
   // ---------- 원문 주장 층 ----------
   const CLAIM_META = kb.meta.claims || {};
   // LLM 지식 색인(kb_claims.json: 영상마다 뽑은 조건→결과 주장)이 있으면 우선, 없으면 정규식 통계(kb_stats)로 대체
-  const mapItem = (it) => ({ label: it.tag, n: it.n, docs: it.docs, lift: it.lift, cat: it.cat || CLAIM_META[it.tag]?.[0] || '운', pol: it.pol > 0.34 ? 1 : it.pol < -0.34 ? -1 : (CLAIM_META[it.tag]?.[1] ?? 0), outs: it.outs || [], quote: it.quote || null, advice: it.advice || '', time: it.time || '항상', times: it.times || [], src: 'llm' });
+  const mapItem = (it) => ({ label: it.tag, n: it.n, docs: it.docs, lift: it.lift, cat: it.cat || CLAIM_META[it.tag]?.[0] || '운', pol: it.pol > 0.34 ? 1 : it.pol < -0.34 ? -1 : (CLAIM_META[it.tag]?.[1] ?? 0), outs: tidyOuts(it.outs), quote: it.quote || null, advice: (it.advice || '').replace(/[.。]+$/, ''), time: it.time || '항상', times: it.times || [], src: 'llm' });
   const claimsOf = (key) => {
     const items = claimItems(key);
     if (items.length) return items.map(mapItem);
@@ -273,16 +286,17 @@ export function interpret(data) {
   for (const cat of Object.keys(evidenceByCat)) {
     const rows = Object.values(evidenceByCat[cat]).map((r) => {
       const from = Object.keys(r.fromW).sort((a, b) => r.fromW[b] - r.fromW[a]);
-      const outs = Object.keys(r.outs).sort((a, b) => r.outs[b] - r.outs[a]).slice(0, 3);
+      const outs = tidyOuts(Object.keys(r.outs).sort((a, b) => r.outs[b] - r.outs[a])).slice(0, 4);
       return { ...r, from, fromN: from.map((t) => [t, r.fromN?.[t] || 0]), outs, lift: r.docs ? Math.round((r.liftSum / r.docs) * 10) / 10 : 1, text: P.CLAIM_TEXT[r.label] || (outs[0] ? `${outs[0]}.` : '') };
     }).sort((a, b) => b.weight - a.weight);
     const distinct = rows.filter((r) => r.lift >= 0.9);   // 평균보다 덜 나오는(흔하기만 한) 이야기는 뒤로
     evidenceByCat[cat] = (distinct.length >= 3 ? distinct : rows).slice(0, 8);
   }
   // 올해(세운)에 한정된 전문가 이야기: 'Y2026 & 내 글자' 짝 키(월별 시기 포함) + 연도 전체 이야기(낮은 가중)
-  const yearClaims = (() => {
+  // 시기(연도·연도-월) 키에 걸린 전문가 이야기: 'Y2026 & 내 글자' 짝 키 우선, 그 시기 전체 이야기는 낮은 가중
+  const timedClaims = (Y, generalW = 0.35, limit = 8) => {
     if (!getClaims()) return [];
-    const Y = `Y${nowY}`, acc = {};
+    const acc = {};
     const add = (items, title, w0) => {
       for (const it of items) {
         const c = mapItem(it);
@@ -298,13 +312,27 @@ export function interpret(data) {
       }
     };
     for (const [k, title] of evidenceKeys) add(pairItems(Y, k), title, 1.8 * keySpec(k));
-    add(claimItems(Y), `${nowY}년 전체 흐름`, 0.35);
+    add(claimItems(Y), `${Y.replace(/^Y(\d{4})(?:-(\d+))?$/, (_, y, m) => (m ? `${y}년 ${m}월` : `${y}년`))} 전체 흐름`, generalW);
     return Object.values(acc).map((r) => {
-      const outs = Object.keys(r.outs).sort((a, b) => r.outs[b] - r.outs[a]).slice(0, 3);
+      const outs = tidyOuts(Object.keys(r.outs).sort((a, b) => r.outs[b] - r.outs[a])).slice(0, 4);
       const times = Object.keys(r.times).sort((a, b) => r.times[b] - r.times[a]).slice(0, 2);
       return { ...r, outs, times, lift: r.docs ? Math.round((r.liftSum / r.docs) * 10) / 10 : 1, text: P.CLAIM_TEXT[r.label] || (outs[0] ? `${outs[0]}.` : '') };
-    }).sort((a, b) => b.weight - a.weight).slice(0, 8);
-  })();
+    }).sort((a, b) => b.weight - a.weight).slice(0, limit);
+  };
+  const yearClaims = timedClaims(`Y${nowY}`);
+  const yearClaimsFor = (y) => timedClaims(`Y${y}`);
+  const monthExpert = (y, m) => timedClaims(`Y${y}-${m}`, 0.5, 4);
+  // 글자별 핵심 정리: 내 글자(키)마다 전문가들이 가장 자주·유독 말하는 결과 문장 (인용 대신 정리된 문장만)
+  const glyphNotes = evidence
+    .filter((e) => e.claims.some((c) => c.src === 'llm'))
+    .map((e) => ({
+      key: e.key, title: e.title, pair: !!e.pair, spec: e.pair ? 1.8 : keySpec(e.key),
+      docs: e.claims.reduce((a, c) => a + c.docs, 0),
+      items: e.claims.filter((c) => !SKIP_LABEL.has(c.label) && (c.outs || []).length).sort((a, b) => b.docs * Math.min(b.lift || 1, 4) - a.docs * Math.min(a.lift || 1, 4)).slice(0, 4)
+        .map((c) => ({ label: c.label, out: c.outs[0], out2: c.outs[1] || '', pol: c.pol, lift: c.lift, docs: c.docs, time: c.time && c.time !== '항상' ? c.time : '', advice: c.advice || '' })),
+    }))
+    .filter((n) => n.items.length)
+    .sort((a, b) => (b.spec * Math.log(1 + b.docs)) - (a.spec * Math.log(1 + a.docs)));
   const spread = (rows, n, perCat = 2) => { const cnt = {}; const out = []; for (const r of rows) { const c = r.cat || CLAIM_META[r.label]?.[0] || '운'; if ((cnt[c] || 0) >= perCat) continue; cnt[c] = (cnt[c] || 0) + 1; out.push(r); if (out.length >= n) break; } return out; };
   const evidenceSummary = (() => { const all = Object.values(evidenceByCat).flat().sort((a, b) => b.weight - a.weight); return { pos: spread(all.filter((r) => r.pol > 0), 6), neg: spread(all.filter((r) => r.pol < 0), 6), total: evidence.reduce((a, e) => a + (e.stats?.docs || 0), 0), all: spread(all, 8, 2) }; })();
   const kwKeys = [dayStem, pillars.day.text, monthGod, detail.day.branchGod, ...sinsalNames.slice(0, 3), ...structs.slice(0, 2), st.label === '중화' ? null : st.label].filter(Boolean);
@@ -645,7 +673,7 @@ export function interpret(data) {
 
   return {
     strength: st, strengthProfile: sp, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues, yearExpert: { now: yeNow, next: yeNext },
-    evidence, evidenceByCat, evidenceSummary, yearClaims, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
+    evidence, evidenceByCat, evidenceSummary, yearClaims, yearClaimsFor, monthExpert, glyphNotes, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
     gyeok, yong, positions, roots, summary, meta: { ...kb.meta, claims_docs: getClaims()?.meta?.docs || 0, claims_n: getClaims()?.meta?.claims || 0 },
   };
 }

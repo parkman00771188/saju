@@ -14,7 +14,7 @@ import * as D from '../data/deep.js';
 import { ELEMENT_COLOR, ELEMENT_KO, STEM_KO, BRANCH_KO, ELEMENTS, HIDDEN_STEMS, STEM_ELEMENT } from '../saju/tables.js';
 import { Trend, MonthBars } from './Charts.jsx';
 import Tile from './Tile.jsx';
-import { Score, GZ, Evidence, PatternCard, polClass, cleanKw } from './ReadingParts.jsx';
+import { Score, GZ, Evidence, PatternCard, GlyphNotes, polClass, cleanKw } from './ReadingParts.jsx';
 
 const STEM_KEYS = { 甲: ['추진력', '책임감', '정직함'], 乙: ['적응력', '사교성', '실속'], 丙: ['열정', '솔직함', '표현력'], 丁: ['집중력', '헌신', '직관'], 戊: ['신뢰', '포용', '안정'], 己: ['실속', '꼼꼼함', '돌봄'], 庚: ['결단', '의리', '실행'], 辛: ['섬세함', '분석력', '심미안'], 壬: ['지혜', '포용', '기획력'], 癸: ['감성', '통찰', '인내'] };
 const EL_HEX = { 木: '#5f9a2c', 火: '#c8442f', 土: '#d69a2c', 金: '#8c8c8c', 水: '#3b3f47' };
@@ -345,6 +345,8 @@ function buildPages(R, data, digest) {
       <Callout>{name}의 글자와 조합에 대해 사주 전문가들이 <b>실제로 반복해서 말하는 이야기</b>를 좋은 것·조심할 것 가리지 않고 모았어요.</Callout>
       <div className="evsum"><div className="col p"><h5>吉 · 좋게 보는 점</h5>{R.evidenceSummary.pos.map((r) => <span key={r.label}>{r.label} <small>{r.n || r.docs}회</small></span>)}</div><div className="col n"><h5>凶 · 조심하라는 점</h5>{R.evidenceSummary.neg.map((r) => <span key={r.label}>{r.label} <small>{r.n || r.docs}회</small></span>)}</div></div>
       <Evidence rows={evAll} />
+      {R.glyphNotes?.some((n) => !n.pair) && <><Divider /><Sub>글자별로 정리한 전문가 이야기</Sub><P>내 사주의 글자·조합 하나하나에 대해 전문가들이 가장 자주, 그리고 다른 사주보다 유독 많이 말하는 내용을 정리한 문장이에요.</P><GlyphNotes notes={R.glyphNotes} /></>}
+      {R.glyphNotes?.some((n) => n.pair) && <><Sub>두 조건이 겹칠 때만 나오는 이야기</Sub><P>한 글자만 보면 안 나오고, 내 사주처럼 두 조건이 함께 있을 때 전문가들이 따로 짚는 이야기예요.</P><GlyphNotes notes={R.glyphNotes} pair limit={8} /></>}
       {R.keywords.length > 0 && <><Sub>함께 자주 나오는 말</Sub><div className="kws">{R.keywords.map((k) => <i key={k}>#{k}</i>)}</div></>}
       <More title={`이 사주의 조합 ${R.patterns.length}개 (吉/凶·전문가들의 어조)`}><div className="plist">{R.patterns.map((p, i) => <PatternCard key={p.key} p={p} i={i} claimMeta={R.meta.claims || {}} />)}</div></More>
     </>
@@ -403,7 +405,8 @@ function FaqList({ items, data }) {
                         <p className="fy-why">{yc.why}</p>
                         {yc.story && <p className="fy-story">{yc.story}</p>}
                         {yc.dyn && (yc.dyn.helps.length || yc.dyn.hurts.length) ? <p className="fy-dyn">{yc.dyn.helps.length ? <span className="good">채워 줘요: {yc.dyn.helps.join(' / ')}</span> : null}{yc.dyn.hurts.length ? <span className="bad">도드라져요: {yc.dyn.hurts.join(' / ')}</span> : null}</p> : null}
-                        {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}{m.event && <span className="fy-event">{m.event}</span>}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
+                        {yc.expert?.length ? <p className="fy-expert">전문가들이 이 해에 짚는 것: {yc.expert.map((x) => `${x.out}${x.time ? `(${x.time})` : ''}`).join(' / ')}</p> : null}
+                        {yc.months.length ? <ul className="fy-months">{yc.months.map((m) => <li key={m.no}><b>{m.no}월 {m.text}</b> <em>{m.score}/5</em> — {m.why}{m.event && <span className="fy-event">{m.event}</span>}{m.expert?.length ? <span className="fy-expert">전문가: {m.expert.join(' / ')}</span> : null}</li>)}</ul> : <p className="fy-why">특별히 두드러진 달은 없어 해 전체 흐름을 보세요.</p>}
                         {yc.avoid.length ? <p className="fy-avoid">피할 달: {yc.avoid.join(', ')}</p> : null}
                         {yc.cautions.length ? <p className="fy-avoid">이 해 주의: {yc.cautions.join(' · ')}</p> : null}
                       </div>

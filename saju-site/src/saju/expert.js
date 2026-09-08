@@ -130,9 +130,10 @@ export function expertStory(cat, rows, facts, evidence) {
   // 실제로 뽑아 둔 결과 문장·원문 인용 → "전문가들은 이렇게 말해요"
   const said = (r) => {
     const base = first(P.CLAIM_TEXT[r.label] || r.text || '');
-    const o = (r.outs || []).filter((x) => x && !base.includes(x.slice(0, 8))).slice(0, 2);
-    // 출처(채널·영상 제목)나 '누가 말했다'는 언급은 하지 않는다 — 결과 문장과 조언만
-    return `${o.length ? ` 전문가들은 이 조합을 두고 ${o.map((x) => `「${x}」`).join(', ')} 같은 이야기를 해요.` : ''}${r.advice ? ` 함께 나오는 조언은 "${clip(r.advice, 60)}"예요.` : ''}`;
+    const o = (r.outs || []).filter((x) => x && !base.includes(x.slice(0, 8))).slice(0, 3);
+    const when = (r.times || []).length ? ` 시기로는 ${r.times.slice(0, 2).join('·')}이 자주 언급돼요.` : '';
+    // 출처(채널·영상 제목)나 '누가 말했다'는 언급은 하지 않는다 — 정리된 결과 문장·시기·조언만
+    return `${o.length ? ` 구체적으로는 ${o.map((x) => `「${x}」`).join(', ')}${o.length > 1 ? ' 같은 이야기들이에요' : '는 이야기예요'}.` : ''}${when}${r.advice ? ` 함께 나오는 조언은 "${clip(r.advice, 70)}"예요.` : ''}`;
   };
   const paras = [];
   // 1) 전체 그림
@@ -149,6 +150,10 @@ export function expertStory(cat, rows, facts, evidence) {
   }
   // 4) 중립 주제 한 줄
   if (neu.length && paras.length < 4) paras.push(`함께 나오는 주제 — ${neu.slice(0, 2).map((r) => `${r.label}: ${first(P.CLAIM_TEXT[r.label] || r.text || '')}${(r.outs || []).length ? ` (${r.outs.slice(0, 2).map((x) => `'${x}'`).join(', ')})` : ''}`).join(' ')}`);
+  // 4-2) 위에서 다루지 않은 나머지 라벨도 한 줄씩 — 전문가가 말한 핵심을 빼놓지 않기 위해
+  const covered = new Set([...pos.slice(0, 2), ...neg.slice(0, 2), ...(neu.length && paras.length < 5 ? neu.slice(0, 2) : [])].map((r) => r.label));
+  const rest = rows.filter((r) => !covered.has(r.label) && (r.outs || []).length).slice(0, 4);
+  if (rest.length) paras.push(`그 밖에 자주 나오는 이야기 — ${rest.map((r) => `${r.label}${r.pol > 0 ? '(吉)' : r.pol < 0 ? '(凶)' : ''}: ${r.outs[0]}`).join(' / ')}.`);
   // 5) 함께 쓰는 말 + 규모
   const kws = uniq((evidence || []).flatMap((e) => e.stats?.keywords || [])).filter((w) => !KW_JUNK.test(w)).slice(0, 8);
   const docs = (evidence || []).reduce((a, e) => a + (e.stats?.docs || 0), 0);
