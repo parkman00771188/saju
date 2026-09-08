@@ -116,3 +116,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .fortune-paper .relpanel[open] .rp-more::after { content:' 접기'; } .fortune-paper .relpanel:not([open]) .rp-more::after { content:' 보기'; }
 .fortune-paper .rp-body { padding:2px 12px 10px; border-top:1px dashed #eee8e1; }
 .fortune-paper summary .rp-note { margin:0; }
+
+/* 브랜드(천기록) 클릭 → 처음 화면 */
+.brand-home { border:0; background:transparent; padding:0; margin:0; font:inherit; color:inherit; cursor:pointer; letter-spacing:inherit; text-align:inherit; }
+.brand-home:hover { opacity:.75; }
+.report-footer .brand-home { font-size:inherit; }

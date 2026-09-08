@@ -8,7 +8,7 @@ import Reading from './Reading.jsx';
 import Passage from './Passage.jsx';
 import { ELEMENT_KO } from '../saju/tables.js';
 
-export default function Result({ data, onReset }) {
+export default function Result({ data, onReset, onHome }) {
   const [view, setView] = useState('chart');
   const [opening, setOpening] = useState(false);
   const lastScroll = useRef(0);
@@ -28,7 +28,7 @@ export default function Result({ data, onReset }) {
   const relLabel = rows => rows.length ? rows.map(r => r.chars.map(c=>c.ch).join('')+ ' ' + r.label).join(' · ') : '해당 없음';
   return <>
     <div className="manse-page" hidden={view !== 'chart'}>
-      <header className="report-top"><span className="report-brand">天機錄 <small>천기록</small></span><button className="text-button" onClick={onReset}>← 생년월일 수정</button></header>
+      <header className="report-top"><button type="button" className="report-brand brand-home" onClick={onHome || onReset} aria-label="처음 화면으로" title="처음 화면으로">天機錄 <small>천기록</small></button><button className="text-button" onClick={onReset}>← 생년월일 수정</button></header>
       <div className="manse-heading"><div><p className="kicker">나의 사주 기록</p><h1 ref={chartTitle} tabIndex={-1}>{data.meta.name ? `${data.meta.name} 님의` : '나의'} 만세력</h1><p>양력 {data.meta.solar} · {data.meta.time} · {data.meta.gender === '남' ? '남성' : '여성'}<br/><span>음력 {data.meta.lunarText} · {data.meta.zodiac}띠</span></p></div><div className="personal-seal"><span>{data.dayStem}</span><small>{ELEMENT_KO[data.pillars.day.stemEl]}의 기운</small></div></div>
       <nav className="section-links" aria-label="만세력 빠른 이동"><a href="#natal">사주팔자</a><a href="#fortune">대운·세운·월운</a><a href="#elements">오행</a><a href="#relations">합충·신살</a><button onClick={openReading}>사주 해석 보기 ↗</button></nav>
       <section id="natal" className="manse-section"><div className="section-heading"><div><span>01</span><h2>사주팔자</h2></div><p>태어난 순간을 담은 {data.pillars.time?'여덟':'여섯'} 글자</p></div>
@@ -39,7 +39,7 @@ export default function Result({ data, onReset }) {
       <section id="elements" className="manse-section"><div className="section-heading"><div><span>03</span><h2>다섯 기운의 균형</h2></div><p>목 · 화 · 토 · 금 · 수</p></div><div className="paper"><Ohaeng data={data}/></div></section>
       <section id="relations" className="manse-section"><div className="section-heading"><div><span>04</span><h2>글자의 관계와 신살</h2></div><p>이어지는 기운과 부딪히는 기운</p></div><div className="relation-summary"><p><b>합 · 연결</b>{relLabel(connections)}</p><p><b>충 · 변화</b>{relLabel(changes)}</p></div><div className="paper"><Relations data={data}/></div></section>
       <div className="closing-invitation"><p>만세력의 글자들을 일상의 언어로.</p><button className="gold-button" onClick={openReading}>나의 사주 해석 보기 ↗</button></div>
-      <footer className="report-footer"><span>天機錄</span><p>나를 이해하는 힌트, 천기록</p></footer>
+      <footer className="report-footer"><button type="button" className="brand-home" onClick={onHome || onReset} aria-label="처음 화면으로">天機錄</button><p>나를 이해하는 힌트, 천기록</p></footer>
     </div>
     {view === 'reading' && <Reading data={data} onBack={backToChart}/>}
     <AnimatePresence>{opening && <Passage key="reading-passage" kind="reading" data={data} onDone={() => { setOpening(false); setView('reading'); window.scrollTo({top:0, behavior:'instant'}); }}/>}</AnimatePresence>
