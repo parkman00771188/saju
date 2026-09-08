@@ -5,7 +5,6 @@ import { buildFaq } from '../saju/faq.js';
 import { buildGaeun } from '../saju/gaeun.js';
 import { eventFor, makeEventCtx } from '../saju/events.js';
 import { yearExpertOverview } from '../saju/yearExpert.js';
-import { loadDigest, pickDigest } from '../saju/digest.js';
 import { monthRange } from '../saju/faq.js';
 import { READING_SOURCES } from '../saju/context.js';
 import { CATS, CAT_META, STEMS as KSTEMS, ELEMENTS as KEL, SINSAL as KSINSAL, TEN_GOD_GROUP } from '../data/knowledge.js';
@@ -76,20 +75,6 @@ function Gauge2({ pct, left, right, color }) {
 }
 
 /* ---------------- 페이지 구성 ---------------- */
-/** 전문가들이 실제로 말한 문장(정제·요약) */
-function Digest({ digest, keys, cat = null, n = 5, title = '전문가들이 실제로 이렇게 말해요', note }) {
-  if (digest === null) return <p className="dg-loading">전문가 발언을 불러오는 중…</p>;
-  const items = pickDigest(digest, keys, cat, n);
-  if (!items.length) return null;
-  return (
-    <div className="digest">
-      <b className="dg-title">{title}</b>
-      <ul>{items.map((it, i) => <li key={i}><span className="dg-from">{it.from}</span><span className="dg-t">{it.t}</span></li>)}</ul>
-      <small>{note || '강의에서 반복된 말을 짧게 정리한 문장이에요. 내 사주의 글자·조합에 해당하는 것만 골랐어요.'}</small>
-    </div>
-  );
-}
-
 function buildPages(R, data, digest) {
   const S = KSTEMS[data.dayStem];
   const dayEl = data.pillars.day.stemEl;
@@ -128,7 +113,6 @@ function buildPages(R, data, digest) {
   const evKeys = (R.evidence || []).map((e) => e.key);
   pages.push({ id: 'ilgan', title: '나를 나타내는 글자 (일간)', terms: ['일간', '천간·지지', '오행'], body: (
     <>
-      <Digest digest={digest} keys={[data.dayStem]} cat={null} n={5} title={`전문가들이 ${STEM_KO[data.dayStem]} 일간을 이렇게 말해요`} />
       <div className="hero-tile"><Tile ch={data.dayStem} ko={STEM_KO[data.dayStem]} el={dayEl} size="lg" flip={false} /><div><b>{S.title}</b><span>{S.sub}</span></div></div>
       <Callout>{S.sub}. <b>{first(S.nature)}</b></Callout>
       <Chips items={STEM_KEYS[data.dayStem]} />
@@ -154,7 +138,6 @@ function buildPages(R, data, digest) {
   const iljuPat = R.patterns.find((p) => p.kind === '일주');
   pages.push({ id: 'ilju', title: '나의 일주 이야기', terms: ['일주', '십이운성', '지장간'], body: (
     <>
-      <Digest digest={digest} keys={[dayText]} cat={null} n={6} title={`전문가들이 ${dayText} 일주를 이렇게 말해요`} />
       <div className="hero-ilju"><span className="hj" style={{ color: EL_HEX[dayEl] }}>{data.pillars.day.text}</span><b>{STEM_KO[data.dayStem]}{BRANCH_KO[data.pillars.day.branch]}일주</b></div>
       {iljuPat && <div className="hero-quote small"><span>“</span>{iljuPat.img}<span>”</span></div>}
       <Callout>{iljuPat ? first(iljuPat.pos) : first(D.POS_BRANCH.day[data.detail.day.branchGod])}</Callout>
@@ -184,7 +167,6 @@ function buildPages(R, data, digest) {
 
   pages.push({ id: 'gyeok', title: '관계 속에서의 내 스타일 (격국으로 보는 나)', terms: ['격국', '십성(십신)'], body: (
     <>
-      <Digest digest={digest} keys={[R.gyeok.key, `월지+${data.detail.month.branchGod}`, data.detail.month.branchGod]} cat={null} n={4} title={`전문가들이 ${R.gyeok.key}·월지 ${data.detail.month.branchGod}을 이렇게 말해요`} />
       <PillarsRow data={data} labels={{ month: gy.key, day: '일간(나)' }} />
       <Callout><b>{gy.tag}</b>. {first(gy.desc)}</Callout>
       <Chips items={gy.career} />
@@ -207,7 +189,6 @@ function buildPages(R, data, digest) {
       <Gauge2 pct={R.strength.pct} left="신약 (나를 채워야 함)" right="신강 (밖으로 써야 함)" color="#d69a2c" />
       <Callout>{name}은 <b>{R.strength.label}</b> 사주예요. 힘이 되는 기운은 <b>{y.el}({ko[y.el]})</b>과 {y.hee}({ko[y.hee]}), 조심할 기운은 <b>{y.gi}({ko[y.gi]})</b>이에요.</Callout>
       <Chips items={[{ label: `용신 ${y.el} ${ko[y.el]}`, tone: 'good' }, { label: `희신 ${y.hee} ${ko[y.hee]}`, tone: 'good' }, { label: `기신 ${y.gi} ${ko[y.gi]}`, tone: 'bad' }, { label: `구신 ${y.gu} ${ko[y.gu]}`, tone: 'gray' }, { label: `한신 ${y.han} ${ko[y.han]}`, tone: 'gray' }, { label: `조후 ${R.needEl} ${ko[R.needEl]}`, tone: 'good' }]} />
-      <Digest digest={digest} keys={[R.strength.label, R.yong.el + '과다', ...data.missing.map((m) => m + '결핍')]} cat={null} n={4} title={`전문가들이 ${R.strength.label}·오행 구성을 이렇게 말해요`} />
       <Sub>나의 힘 — {R.strengthProfile.label} 사주는 보통 이래요</Sub>
       <Callout tone="orange"><b>{R.strengthProfile.headline}</b></Callout>
       <P words={['신강', '신약', '중화', '비겁', '인성', '관성', '재성', '식상']}>{R.strengthProfile.traits}</P>
@@ -296,7 +277,6 @@ function buildPages(R, data, digest) {
   pages.push({ id: 'sinsal', title: '나를 따르는 별 (신살)', terms: ['십이신살', '도화살', '역마살', '화개살', '천을귀인', '백호대살·괴강', '양인·홍염'], body: (
     <>
       <Callout>{sinsalList.length ? <>{name}에게는 <b>{sinsalList.slice(0, 4).join('·')}</b>{sinsalList.length > 4 ? ` 등 ${sinsalList.length}개` : ''}의 별이 있어요.</> : '두드러지는 신살이 없어 오행과 십성의 구조가 삶을 이끌어요.'}</Callout>
-      <Digest digest={digest} keys={sinsalList} cat={null} n={6} title="전문가들이 내 신살을 이렇게 말해요" />
       <div className="sinsalgrid">
         {sinsalList.map((n) => { const s = KSINSAL[n]; const where = present.filter((k) => (data.sinsal[k] || []).some((x) => x.name === n)).map((k) => ({ year: '년주', month: '월주', day: '일주', time: '시주' }[k])).join('·'); return s ? <article key={n} className="sinsalcard"><header><b>{s.title}</b><small>{where}</small></header><p>{s.text}</p></article> : null; })}
       </div>
@@ -334,7 +314,6 @@ function buildPages(R, data, digest) {
           <Divider /><Sub>사주 전문가들이 말하는 {data.current.nowYear}년 — {R.yearExpert.now.personalSources.join('·') || '전체'}</Sub>
           {ov.paras.map((p, i) => <P key={i} words={['좋게 보는 쪽', '조심하라는 쪽']}>{p}</P>)}
           {ov.months.length > 0 && <div className="ymonths">{ov.months.map((m) => <div key={m.mk} className={`ym ${m.polarity > 0.15 ? 'good' : m.polarity < -0.15 ? 'bad' : ''}`}><b>{m.mk}</b><span>{m.labels.map((l) => l.label).join(' · ') || '언급만 있음'}</span></div>)}</div>}
-          <Digest digest={digest} keys={[`${data.dayStem}+Y${nowYr}`, `${dayText}+Y${nowYr}`, `${yearBr}+Y${nowYr}`, `Y${nowYr}`]} cat={null} n={6} title={`전문가들이 ${nowYr}년을 이렇게 말해요`} note="신년운세 강의에서 내 일간·띠에 해당하는 대목을 정리한 문장이에요." />
           <p className="faq-note">{R.yearExpert.now.monthsScope === 'personal' ? `${R.yearExpert.now.personalSources.join('·')} 신년운세에서 짚은 달과 주제예요.` : '그해 전체 신년운세에서 짚은 달과 주제예요(내 일간·띠 콘텐츠에는 달 언급이 적어요).'} 아래 열두 달 그래프(내 사주 계산)와 함께 보면 시기를 고르기 쉬워요.</p>
         </>
       ); })()}
@@ -459,7 +438,7 @@ function CategoryPage({ R, data, cat, digest }) {
       <Callout><b>{cat}운 {c.score}/5</b>. {c.headline || first(c.sections[0].paras[0])}</Callout>
       {c.gauge && <Gauge2 pct={c.gauge.value} left={c.gauge.left} right={c.gauge.right} color={m.color} />}
       <Sub>{c.sections[0].title}</Sub>{c.sections[0].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
-      {(c.personal || []).map((sec, si) => <Fragment key={si}><Divider /><Sub>{sec.title}</Sub>{sec.paras.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}{/사주 전문가들이 자주 짚는/.test(sec.title) && <Digest digest={digest} keys={[data.pillars.day.text, data.dayStem, `${data.dayStem}+Y${data.current.nowYear}`, ...(R.evidence || []).map((e) => e.key)]} cat={cat} n={6} title={`전문가들이 내 사주의 ${cat}${cat === '연애' ? '을' : '을'} 실제로 이렇게 말해요`.replace('연애을', '연애를')} />}</Fragment>)}
+      {(c.personal || []).map((sec, si) => <Fragment key={si}><Divider /><Sub>{sec.title}</Sub>{sec.paras.map((p, i) => <P key={i} words={GLYPHS}>{p}</P>)}</Fragment>)}
       <Divider /><Sub>{c.sections[1].title}</Sub>{c.sections[1].paras.slice(0, 2).map((p, i) => <P key={i} words={key}>{p}</P>)}
       <Divider /><Sub>앞으로 10년 {cat}운</Sub>
       <p className="chart-hint">👆 그래프의 <b>연도를 누르면</b> 그 해 열두 달 {cat}운이 아래에 열려요 · 지금 <b>{year}년</b></p>
@@ -479,8 +458,7 @@ function CategoryPage({ R, data, cat, digest }) {
 /* ---------------- 책 뷰어 ---------------- */
 export default function Reading({ data, onBack }) {
   const R = useMemo(() => interpret(data), [data]);
-  const [digest, setDigest] = useState(null);
-  useEffect(() => { let alive = true; loadDigest().then((d) => { if (alive) setDigest(d || {}); }); return () => { alive = false; }; }, []);
+  const digest = null; // 전문가 발언 인용 블록은 표시하지 않음(데이터는 analysis/build_digest.py로 생성 가능)
   const pages = useMemo(() => buildPages(R, data, digest), [R, data, digest]);
   const [idx, setIdx] = useState(0);
   const [dir, setDir] = useState(1);
