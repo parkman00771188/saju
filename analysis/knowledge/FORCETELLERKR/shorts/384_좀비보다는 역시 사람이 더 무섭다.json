@@ -1,0 +1,85 @@
+{
+ "source": "data/FORCETELLERKR/shorts/384_좀비보다는 역시 사람이 더 무섭다.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "zzn1hLrIvbM",
+ "title": "좀비보다는 역시 사람이 더 무섭다",
+ "url": "https://www.youtube.com/watch?v=zzn1hLrIvbM",
+ "upload": "20250825",
+ "duration_sec": "60",
+ "views": "14445",
+ "chars": 482,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:39",
+ "summary": "재난이나 위기 상황이 장기화되면 사람 간의 갈등과 원한이 수면 위로 드러나면서 사람이 가장 위험한 존재가 됩니다. 특히 평소에 감정을 억누르고 참고 사는 을유일주, 을미일주, 계미일주는 '참고 사는 3인방'으로 지목됩니다. 이들은 평소에는 내색하지 않다가 난세나 위기 상황을 기회로 삼아 숨겨왔던 개인적 원한을 갚거나 복수의 표적이 될 수 있습니다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "을유"
+    }
+   ],
+   "outcome": "평소 억누르고 참다가 난세에 복수를 감행하기 쉽다",
+   "tag": "배신·뒤통수",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "약간 적이 많든지 혹은 참고 사는 일이 많아서 내가 이제 그 시기를 틈타 가지고 좀 쓱싹할 사람이 있다. 이제 여기 누가 들어오냐? 을유"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "을미"
+    }
+   ],
+   "outcome": "평소 억누르고 참다가 난세에 복수를 감행하기 쉽다",
+   "tag": "배신·뒤통수",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "을유, 을미 또 빠질 수 없지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "계미"
+    }
+   ],
+   "outcome": "평소 드러내지 않고 참다 난세에 복수를 꾀할 수 있다",
+   "tag": "배신·뒤통수",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "약간 참고 살아서 평소에 전혀 드러나지 않는 계미가 있습니다. 여기 이제 약간 참고 사는 3인방이에요."
+  }
+ ],
+ "insights": [
+  "평소 억압과 인내가 많은 일주일수록 위기 상황이나 극한의 환경에서 억눌린 원한을 표출하거나 복수를 감행할 가능성이 커진다."
+ ],
+ "keywords": [
+  "을유일주",
+  "을미일주",
+  "계미일주",
+  "복수",
+  "인내",
+  "난세",
+  "원한",
+  "인간관계"
+ ]
+}

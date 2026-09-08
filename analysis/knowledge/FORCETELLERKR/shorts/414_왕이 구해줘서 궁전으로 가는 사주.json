@@ -1,0 +1,70 @@
+{
+ "source": "data/FORCETELLERKR/shorts/414_왕이 구해줘서 궁전으로 가는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "VKWHeAHF28U",
+ "title": "왕이 구해줘서 궁전으로 가는 사주",
+ "url": "https://www.youtube.com/watch?v=VKWHeAHF28U",
+ "upload": "20250722",
+ "duration_sec": "46",
+ "views": "15590",
+ "chars": 397,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:40",
+ "summary": "황은대사는 임금의 은혜로 큰 용서를 받는다는 의미를 지닌 대표적인 길신입니다. 사주에 황은대사가 있으면 어려운 역경이나 위기에 처했을 때 임금과 같은 강력한 귀인이 나타나 도움을 줍니다. 아이유, 유재석, 박보검 등 유명인들도 지닌 신살로, 힘든 시기를 딛고 폭발적인 인기와 성공을 이루도록 돕는 역할을 합니다.",
+ "topics": [
+  "운세 흐름",
+  "궁합·인간관계",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "황은대사"
+    }
+   ],
+   "outcome": "위기 상황에 강력한 귀인이 나타나 도움을 준다",
+   "tag": "어머니·윗사람 덕",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "힘든 상황이 찾아왔을 때 임금님처럼 위대한 귀인이 나타나서 도와주는 길신이라고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "황은대사"
+    }
+   ],
+   "outcome": "고난을 극복하고 폭발적으로 성공한다",
+   "tag": "폭발적 성장·도약",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "힘든 시절을 보냈다고 해. 하지만 지금은 폭발적인 열풍의 주인공으로 거듭났으니 황은대사 성능 확실하지?"
+  }
+ ],
+ "insights": [
+  "황은대사(皇恩大赦)는 극심한 고난이나 곤경 속에서도 군왕급 귀인의 조력을 입어 구제받고 반전을 만들어내는 길신으로 해석된다."
+ ],
+ "keywords": [
+  "황은대사",
+  "길신",
+  "귀인",
+  "위기 극복",
+  "아이유",
+  "유재석",
+  "박보검",
+  "포스텔러"
+ ]
+}

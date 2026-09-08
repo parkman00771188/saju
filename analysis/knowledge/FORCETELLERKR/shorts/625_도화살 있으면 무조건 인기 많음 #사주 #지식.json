@@ -1,0 +1,77 @@
+{
+ "source": "data/FORCETELLERKR/shorts/625_도화살 있으면 무조건 인기 많음 #사주 #지식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "9vwObJRC88c",
+ "title": "도화살 있으면 무조건 인기 많음? #사주 #지식",
+ "url": "https://www.youtube.com/watch?v=9vwObJRC88c",
+ "upload": "20240520",
+ "duration_sec": "32",
+ "views": "3077",
+ "chars": 246,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:43",
+ "summary": "도화살이 사주에 있다고 해서 무조건 인기가 많은 것은 아닙니다. 도화살의 매력이 겉으로 드러나려면 발산하는 성분인 식신이나 상관, 특히 상관이 발달해 있어야 인기를 많이 얻을 수 있습니다. 따라서 사주에 식상이 발달하고 도화살이 많은 구성은 연예계에 종사할 때 가장 빛을 발합니다.",
+ "topics": [
+  "성격·기질",
+  "직장",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "도화살"
+    },
+    {
+     "type": "십성",
+     "value": "상관"
+    }
+   ],
+   "outcome": "매력이 겉으로 발산되어 큰 인기를 얻는다",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주에서 식상이 발달된 분, 특히 이제 상관이 발달돼 있으면서 도화가 많으면 인기가 많을 수 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "도화살"
+    },
+    {
+     "type": "십성",
+     "value": "식상"
+    }
+   ],
+   "outcome": "연예계 활동 및 방송 분야에서 크게 활약한다",
+   "tag": "유명세·연예 기질",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "식신이나 상관이 있으면서 도화가 많으면 인기를 많이 얻을 수 있고, 그래서 연예계에 종사하는 분들이라면 가장 좋겠습니다."
+  }
+ ],
+ "insights": [
+  "도화살의 매력은 겉으로 표출하는 기운(식상)이 동반되어야 대중적 인기로 실현된다."
+ ],
+ "keywords": [
+  "도화살",
+  "식상",
+  "상관",
+  "식신",
+  "인기",
+  "매력",
+  "연예인"
+ ]
+}

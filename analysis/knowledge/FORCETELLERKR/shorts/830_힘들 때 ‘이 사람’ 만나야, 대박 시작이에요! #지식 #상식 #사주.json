@@ -1,0 +1,437 @@
+{
+ "source": "data/FORCETELLERKR/shorts/830_힘들 때 ‘이 사람’ 만나야, 대박 시작이에요! #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "IZ6mADL8Sl8",
+ "title": "힘들 때 ‘이 사람’ 만나야, 대박 시작이에요! #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=IZ6mADL8Sl8",
+ "upload": "20230801",
+ "duration_sec": "41",
+ "views": "3920",
+ "chars": 294,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "본인의 일간을 기준으로 살면서 큰 도움을 주고 복이 되는 상대방의 띠(천을귀인)를 확인하는 방법을 소개한다. 갑목·무토·경금 일간은 소띠와 양띠, 을목·기토 일간은 원숭이띠와 쥐띠, 병화·정화 일간은 돼지띠와 닭띠가 귀인에 해당한다. 신금 일간은 말띠와 호랑이띠, 임수·계수 일간은 뱀띠와 토끼띠를 만나면 인생에서 큰 도움을 받고 대박의 기회가 시작된다.",
+ "topics": [
+  "궁합·인간관계",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    },
+    {
+     "type": "띠",
+     "value": "축"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목·무토·경금 일간은 소띠, 양띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    },
+    {
+     "type": "띠",
+     "value": "미"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목·무토·경금 일간은 소띠, 양띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    },
+    {
+     "type": "띠",
+     "value": "축"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목·무토·경금 일간은 소띠, 양띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    },
+    {
+     "type": "띠",
+     "value": "미"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목·무토·경금 일간은 소띠, 양띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    },
+    {
+     "type": "띠",
+     "value": "축"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목·무토·경금 일간은 소띠, 양띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    },
+    {
+     "type": "띠",
+     "value": "미"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "갑목·무토·경금 일간은 소띠, 양띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    },
+    {
+     "type": "띠",
+     "value": "신"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목·기토 일간은 원숭이띠, 쥐띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    },
+    {
+     "type": "띠",
+     "value": "자"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목·기토 일간은 원숭이띠, 쥐띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    },
+    {
+     "type": "띠",
+     "value": "신"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목·기토 일간은 원숭이띠, 쥐띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    },
+    {
+     "type": "띠",
+     "value": "자"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "을목·기토 일간은 원숭이띠, 쥐띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    },
+    {
+     "type": "띠",
+     "value": "해"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화·정화 일간은 돼지띠, 닭띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    },
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화·정화 일간은 돼지띠, 닭띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "띠",
+     "value": "해"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화·정화 일간은 돼지띠, 닭띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "병화·정화 일간은 돼지띠, 닭띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    },
+    {
+     "type": "띠",
+     "value": "오"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "신금 일간은 말띠, 호랑이띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    },
+    {
+     "type": "띠",
+     "value": "인"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "신금 일간은 말띠, 호랑이띠."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "띠",
+     "value": "사"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수·계수 일간은 뱀띠, 토끼띠입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "띠",
+     "value": "묘"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수·계수 일간은 뱀띠, 토끼띠입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    },
+    {
+     "type": "띠",
+     "value": "사"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수·계수 일간은 뱀띠, 토끼띠입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    },
+    {
+     "type": "띠",
+     "value": "묘"
+    }
+   ],
+   "outcome": "살면서 큰 도움을 주는 귀인이 됨",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "임수·계수 일간은 뱀띠, 토끼띠입니다."
+  }
+ ],
+ "insights": [
+  "사주 명리학의 천을귀인(天乙貴人) 배정을 바탕으로 본인의 일간에 길한 작용을 하는 상대방의 띠(지지)를 파악할 수 있다.",
+  "인생의 힘든 시기에 본인 일간에 귀인이 되는 띠의 인연을 만나면 큰 도움을 얻고 도약의 발판을 마련할 수 있다."
+ ],
+ "keywords": [
+  "천을귀인",
+  "귀인",
+  "일간",
+  "띠별궁합",
+  "궁합",
+  "복이되는띠",
+  "만세력"
+ ]
+}

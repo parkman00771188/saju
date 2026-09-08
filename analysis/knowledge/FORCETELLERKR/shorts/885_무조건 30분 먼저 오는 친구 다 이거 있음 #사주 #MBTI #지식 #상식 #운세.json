@@ -1,0 +1,84 @@
+{
+ "source": "data/FORCETELLERKR/shorts/885_무조건 30분 먼저 오는 친구 다 이거 있음 #사주 #MBTI #지식 #상식 #운세.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "aPERmfg_7Zk",
+ "title": "무조건 30분 먼저 오는 친구 다 이거 있음 #사주 #MBTI #지식 #상식 #운세",
+ "url": "https://www.youtube.com/watch?v=aPERmfg_7Zk",
+ "upload": "20230519",
+ "duration_sec": "45",
+ "views": "988",
+ "chars": 157,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "사주에 정관(正官)을 보유한 사람은 규칙과 규율을 잘 준수하며 약속을 철저히 지키는 유형입니다. 이들은 타인의 통제나 외부 규범에 대해 거부감이 별로 없다는 특징을 지닙니다. 따라서 약속 시간에 촉박하게 쫓기거나 늦지 않고 시간 엄수율이 매우 높습니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "정관"
+    }
+   ],
+   "outcome": "규칙과 규율을 어기지 않고 약속을 잘 지킨다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "약속을 잘 지킬 유형은 정관입니다. 규칙이나 룰을 어기지 않아요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "정관"
+    }
+   ],
+   "outcome": "남의 통제에 거부감이 별로 없다",
+   "tag": "직장인 기질",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "그래서 남의 통제에 거부감이 별로 없어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "정관"
+    }
+   ],
+   "outcome": "시간에 쫓기거나 늦지 않고 약속을 엄수한다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "엄청 촉박하거나 늦지 않고, 기문의 시를 비롯한 정관 보유자들은 약속 시간 엄수율이 높았는데요."
+  }
+ ],
+ "insights": [
+  "정관은 법과 질서, 사회적 규범을 상징하므로 정관이 있는 사주는 약속 시간을 어기는 것에 큰 부담을 느낀다.",
+  "정관 보유자는 외부의 룰이나 타인의 통제를 스트레스로 받아들이기보다 자연스러운 질서로 수용하는 경향이 있다."
+ ],
+ "keywords": [
+  "정관",
+  "십성",
+  "약속 엄수",
+  "규칙 준수",
+  "시간 약속",
+  "통제",
+  "성실성"
+ ]
+}

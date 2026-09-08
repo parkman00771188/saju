@@ -1,0 +1,50 @@
+{
+ "source": "data/FORCETELLERKR/shorts/861_말띠한테 기 쎄다고 하지 마세요 #운세 #띠별운세 #말띠 #백말띠 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "BFJD5XjnSCM",
+ "title": "말띠한테 기 쎄다고 하지 마세요 #운세 #띠별운세 #말띠 #백말띠 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=BFJD5XjnSCM",
+ "upload": "20230630",
+ "duration_sec": "18",
+ "views": "23036",
+ "chars": 132,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "말띠는 단순히 기가 세다기보다는 '영험하다'는 표현이 어울리는 기질을 지니고 있습니다. 남들이 전혀 예상하지 못하는 일을 미리 예상하고, 보지 못하는 장면을 꿰뚫어 보는 뛰어난 직관과 예측력을 가지고 있습니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "오"
+    }
+   ],
+   "outcome": "남들이 못 보는 일을 예측하는 영험한 촉이 있다",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "기가 세다는 표현보다는 저는 영험하다라는 얘기를 하고 싶어요. 남들이 전혀 예상하지 못하는 일도 예상할 수 있고, 남들이 보지 못하는 장면도 예측할 수 있는 그런 기질이 좀 있겠죠."
+  }
+ ],
+ "insights": [
+  "말띠의 강한 기운은 단순한 기 셈이라기보다는 남들이 보지 못하는 것을 감지하고 예측하는 영험함과 직관력의 형태로 나타난다."
+ ],
+ "keywords": [
+  "말띠",
+  "오화",
+  "영험함",
+  "예측력",
+  "직관력",
+  "촉"
+ ]
+}

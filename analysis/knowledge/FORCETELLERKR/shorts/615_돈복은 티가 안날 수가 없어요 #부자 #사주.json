@@ -1,0 +1,69 @@
+{
+ "source": "data/FORCETELLERKR/shorts/615_돈복은 티가 안날 수가 없어요 #부자 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "0aVwNgv-vIE",
+ "title": "돈복은 티가 안날 수가 없어요 #부자 #사주",
+ "url": "https://www.youtube.com/watch?v=0aVwNgv-vIE",
+ "upload": "20240609",
+ "duration_sec": "35",
+ "views": "10942",
+ "chars": 254,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:43",
+ "summary": "돈복을 타고난 사주를 가진 사람은 재물이 넉넉하여 마음에 여유가 있고 베푸는 씀씀이가 너그러운 경향이 있습니다. 이러한 사람 곁에 함께 있으면 식사 대접이나 재물적인 도움을 직간접적으로 받을 수 있는 기회가 생깁니다. 나아가 부유하고 여유로운 사람의 긍정적인 사고방식과 태도에 영향을 받아 자신의 마음까지도 덩달아 풍요로워지고 너그러워질 수 있습니다.",
+ "topics": [
+  "금전",
+  "성격·기질",
+  "궁합·인간관계"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "돈복을 타고난 사주"
+    }
+   ],
+   "outcome": "마음이 너그럽고 여유 있게 베푼다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "재물이 넉넉한 분은 아무래도 좀 마음이 너그러울 수가 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "돈복 있는 사람의 곁에 있음"
+    }
+   ],
+   "outcome": "재물 도움을 받거나 마음이 풍요로워짐",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "재물로 도움을 받을 수도 있고 마음이 좀 너그러워질 수가 있습니다."
+  }
+ ],
+ "insights": [
+  "재물이 넉넉하고 돈복이 있는 사람 곁에 머물면 실질적인 재물 혜택뿐 아니라 긍정적인 심리적 풍요와 여유를 전염받게 된다."
+ ],
+ "keywords": [
+  "돈복",
+  "부자",
+  "사주",
+  "재물운",
+  "마음의 여유",
+  "풍요",
+  "인간관계"
+ ]
+}

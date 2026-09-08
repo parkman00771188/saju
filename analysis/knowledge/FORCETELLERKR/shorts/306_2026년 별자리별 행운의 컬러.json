@@ -1,0 +1,278 @@
+{
+ "source": "data/FORCETELLERKR/shorts/306_2026년 별자리별 행운의 컬러.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "TMkvCkMGj_s",
+ "title": "2026년 별자리별 행운의 컬러",
+ "url": "https://www.youtube.com/watch?v=TMkvCkMGj_s",
+ "upload": "20251127",
+ "duration_sec": "43",
+ "views": "10522",
+ "chars": 361,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:37",
+ "summary": "2026년 한 해 동안 좋은 기운을 불러오기 위한 12개 서양 별자리별 행운의 색상을 소개합니다. 양자리부터 물고기자리까지 각 별자리에 맞는 고유한 행운의 컬러 조합을 제시합니다. 해당 색상들을 새 옷이나 인테리어 소품 등에 활용함으로써 2026년의 긍정적인 운기를 높일 수 있습니다.",
+ "topics": [
+  "개운·조언",
+  "운세 흐름"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2026
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "양자리"
+    }
+   ],
+   "outcome": "파란색과 황토색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 파란색과 황토색을 참고한다.",
+   "quote": "양자리 파란색, 황토색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "황소자리"
+    }
+   ],
+   "outcome": "회색과 흰색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 회색과 흰색을 참고한다.",
+   "quote": "황소자리 회색, 흰색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "쌍둥이자리"
+    }
+   ],
+   "outcome": "짙은 분홍색과 담록색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 짙은 분홍색과 담록색을 참고한다.",
+   "quote": "쌍둥이자리 짙은 분홍색, 담록색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "게자리"
+    }
+   ],
+   "outcome": "연보라색과 회색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 연보라색과 회색을 참고한다.",
+   "quote": "게자리 연보라색, 회색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "사자자리"
+    }
+   ],
+   "outcome": "복숭아색과 황갈색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 복숭아색과 황갈색을 참고한다.",
+   "quote": "사자자리 복숭아색, 황갈색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "처녀자리"
+    }
+   ],
+   "outcome": "라임색과 옥색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 라임색과 옥색을 참고한다.",
+   "quote": "처녀자리 라임색, 옥색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "천칭자리"
+    }
+   ],
+   "outcome": "자주색과 다홍색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 자주색과 다홍색을 참고한다.",
+   "quote": "천칭자리 자주색, 다홍색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "전갈자리"
+    }
+   ],
+   "outcome": "보라색과 녹색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 보라색과 녹색을 참고한다.",
+   "quote": "전갈자리 보라색, 녹색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "사수자리"
+    }
+   ],
+   "outcome": "군청색과 금색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 군청색과 금색을 참고한다.",
+   "quote": "사수자리 군청색, 금색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "염소자리"
+    }
+   ],
+   "outcome": "검은색과 회색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 검은색과 회색을 참고한다.",
+   "quote": "염소자리 검은색, 회색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "물병자리"
+    }
+   ],
+   "outcome": "초록색과 노란색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 초록색과 노란색을 참고한다.",
+   "quote": "물병자리 초록색, 노란색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "물고기자리"
+    }
+   ],
+   "outcome": "황갈색과 분홍색이 행운을 가져다준다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새 옷이나 인테리어에 황갈색과 분홍색을 참고한다.",
+   "quote": "물고기자리 황갈색, 분홍색."
+  }
+ ],
+ "insights": [
+  "2026년의 좋은 기운을 끌어오기 위해 자신의 별자리에 배정된 고유 행운의 색상을 옷이나 생활 공간 인테리어에 적극적으로 활용할 수 있다."
+ ],
+ "keywords": [
+  "2026년",
+  "별자리",
+  "행운의 컬러",
+  "개운법",
+  "인테리어",
+  "신년 운세",
+  "행운색"
+ ]
+}

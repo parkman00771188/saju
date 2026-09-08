@@ -1,0 +1,70 @@
+{
+ "source": "data/dohwadore_saju/shorts/159_비견 겁재는 위치별 해석방법 #shorts #사주.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "68t37UcRGSg",
+ "title": "비견 겁재는 위치별 해석방법 #shorts #사주",
+ "url": "https://www.youtube.com/watch?v=68t37UcRGSg",
+ "upload": "20240328",
+ "duration_sec": "43",
+ "views": "238959",
+ "chars": 359,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "사주팔자는 오른쪽에서 왼쪽으로 읽으며, 맨 오른쪽의 연주는 유년기를, 왼쪽으로 갈수록 말년기를 나타냅니다. 사주의 연주에 비견이나 겁재가 위치한 사람은 대중적인 인지도를 얻어 각 분야에서 매우 유명해질 가능성이 높습니다. 100만 유튜버, 국민 배우, 정치인 등 널리 알려진 유명인들에게서 흔히 발견되는 구조입니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론",
+  "직장"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "년주 비견"
+    }
+   ],
+   "outcome": "각 분야에서 대단히 유명해지기 쉽다",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "비견, 겁재라는 글자가 연주에 있는 분들은 가장 큰 특징은 내가 엄청 유명한 사람인 경우가 많습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "년주 겁재"
+    }
+   ],
+   "outcome": "각 분야에서 대단히 유명해지기 쉽다",
+   "tag": "유명세·연예 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "비견, 겁재라는 글자가 연주에 있는 분들은 가장 큰 특징은 내가 엄청 유명한 사람인 경우가 많습니다."
+  }
+ ],
+ "insights": [
+  "사주팔자는 오른쪽에서 왼쪽으로 읽으며 오른쪽(연주)은 유년기, 왼쪽은 말년기를 상징한다."
+ ],
+ "keywords": [
+  "비견",
+  "겁재",
+  "연주",
+  "년주",
+  "유명세",
+  "유튜버",
+  "배우",
+  "정치인"
+ ]
+}

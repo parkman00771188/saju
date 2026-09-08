@@ -1,0 +1,69 @@
+{
+ "source": "data/dohwadore_saju/shorts/143_사주 오행 중 성공할 확률이 높은 오행 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "3G1Eg1t5Q1M",
+ "title": "사주 오행 중 성공할 확률이 높은 오행? #shorts",
+ "url": "https://www.youtube.com/watch?v=3G1Eg1t5Q1M",
+ "upload": "20240602",
+ "duration_sec": "58",
+ "views": "600131",
+ "chars": 582,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "사주에 금(金) 오행이 과다한 사람의 성향과 특징을 상담 사례를 통해 설명하는 영상입니다. 금 기운이 많은 사주는 모호한 것보다 명확하고 각이 딱 맞아떨어지는 정돈된 상태를 선호하는 경향이 있습니다. 또한 한번 마음을 먹으면 끝을 보는 집념과 완벽주의적 기질이 강하게 나타납니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "한번 마음먹으면 끝을 본다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "금이 너무 많은 거예요, 이분 사주에. 한번 마음먹으면 진짜 끝을 보시는 분들이 많거든요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "명확하고 각 맞춘 정돈을 선호한다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "각을 이렇게 좀 맞춰 갖고 놓는 걸 좋아하는데 사주도 되게 각이 맞춰서 딱딱 이렇게 나눠져 있더라고요. 명확한 것을 좀 선호하실 것 같다"
+  }
+ ],
+ "insights": [
+  "사주에 금(金) 기운이 과다하면 결단력과 집념이 강해 목표한 일의 끝을 보는 기질이 두드러진다.",
+  "금 오행의 특성은 각이 잡히고 질서 정연하며 명확한 것을 추구하는 성향으로 일상에서 표출된다."
+ ],
+ "keywords": [
+  "금오행",
+  "금다자",
+  "오행과다",
+  "완벽주의",
+  "성격기질",
+  "사주리딩",
+  "결단력"
+ ]
+}

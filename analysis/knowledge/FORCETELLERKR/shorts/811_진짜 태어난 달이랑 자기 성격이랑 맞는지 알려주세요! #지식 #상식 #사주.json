@@ -1,0 +1,229 @@
+{
+ "source": "data/FORCETELLERKR/shorts/811_진짜 태어난 달이랑 자기 성격이랑 맞는지 알려주세요! #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "2x-V4gAcvDs",
+ "title": "진짜 태어난 달이랑 자기 성격이랑 맞는지 알려주세요! #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=2x-V4gAcvDs",
+ "upload": "20230823",
+ "duration_sec": "55",
+ "views": "4719",
+ "chars": 394,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "사주를 바탕으로 태어난 달에 따라 나타나는 고유한 성격적 특징을 1월부터 12월까지 정리한 영상입니다. 1월의 뚝심, 2월의 리더십, 3월의 장인 정신, 4월의 활동력, 5월의 처세술, 6월의 추진력 등 상반기 출생자의 기질을 소개합니다. 이어 7월의 온화한 부지런함, 8월의 재주, 9월의 예리한 판단력, 10월의 의리, 11월의 승부욕, 12월의 낙천성 등 하반기 출생자의 성향을 짚어줍니다. 각자의 태어난 달을 통해 자신과 주변 사람들의 타고난 성격과 매력을 비교해 볼 수 있습니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "1월생"
+    }
+   ],
+   "outcome": "묵묵함과 강한 뚝심을 지닌다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "1월, 묵묵함과 뚝심의 결정체."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "2월생"
+    }
+   ],
+   "outcome": "타고난 리더 기질을 발휘한다",
+   "tag": "리더십·카리스마",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2월, 타고난 리더감."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "3월생"
+    }
+   ],
+   "outcome": "한 분야만 깊게 파고드는 장인 성향이다",
+   "tag": "전문직·기술",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "3월, 한 분야만 파고드는 장인형 인간."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "4월생"
+    }
+   ],
+   "outcome": "활동력이 뛰어나 사람들과 잘 어울린다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4월, 태생부터 타고난 활동력으로 다져진 인싸."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "5월생"
+    }
+   ],
+   "outcome": "어떤 상황에서도 뛰어난 처세술을 발휘한다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "5월, 어떤 상황에서도 빛을 발하는 처세술."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "6월생"
+    }
+   ],
+   "outcome": "강한 열정과 뛰어난 추진력을 보인다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6월, 열정과 추진력 빼면 시체."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "7월생"
+    }
+   ],
+   "outcome": "포근하고 온화하며 부지런하게 살아간다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "7월, 포근하고 온화한 이미지를 지닌 갓생러."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "8월생"
+    }
+   ],
+   "outcome": "다방면에 재능이 많은 재주꾼 성향이다",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "8월, 못하는 것을 찾는 게 빠른 재주꾼."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "9월생"
+    }
+   ],
+   "outcome": "예리한 판단력과 츤데레 매력을 보인다",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "9월, 예리한 판단력을 지닌 츤데레."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "10월생"
+    }
+   ],
+   "outcome": "남다른 의리와 신뢰를 중요하게 여긴다",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "10월, 의리와 신뢰를 빼면 시체."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "11월생"
+    }
+   ],
+   "outcome": "겉은 느긋해 보이나 강한 승부욕을 지닌다",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "11월, 느긋함 뒤에 숨겨진 승부욕."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "12월생"
+    }
+   ],
+   "outcome": "낙천적이고 긍정적인 매력을 보인다",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "12월, 낙천과 긍정의 매력."
+  }
+ ],
+ "insights": [
+  "사주명리학에서 개인이 태어난 달은 사회적 환경 적응 방식과 핵심 성격 기질을 파악하는 주요한 기준이 된다.",
+  "각 월마다 뚝심, 처세, 추진력, 승부욕 등 고유한 행동 특성이 다르게 발현된다."
+ ],
+ "keywords": [
+  "태어난 달",
+  "월별 성격",
+  "사주 성격",
+  "처세술",
+  "리더십",
+  "장인정신",
+  "승부욕",
+  "추진력"
+ ]
+}

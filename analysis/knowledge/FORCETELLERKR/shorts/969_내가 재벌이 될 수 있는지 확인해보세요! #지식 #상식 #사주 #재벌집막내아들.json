@@ -1,0 +1,89 @@
+{
+ "source": "data/FORCETELLERKR/shorts/969_내가 재벌이 될 수 있는지 확인해보세요! #지식 #상식 #사주 #재벌집막내아들.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "m-eIgh0ISw0",
+ "title": "내가 재벌이 될 수 있는지 확인해보세요! #지식 #상식 #사주 #재벌집막내아들",
+ "url": "https://www.youtube.com/watch?v=m-eIgh0ISw0",
+ "upload": "20221230",
+ "duration_sec": "50",
+ "views": "10099",
+ "chars": 436,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "사주에서 재물운을 담당하는 십성은 재성으로, 정재와 편재로 나뉩니다. 사주 여덟 글자 중 정재와 편재가 많이 있을수록 재물운이 강하게 들어오는 구조가 됩니다. 정재는 대기업이나 공무원처럼 안정적이고 꾸준한 부를 축적하는 성향을 보이고, 편재는 사업이나 투자처럼 리스크를 동반하여 단번에 부를 형성하는 운을 의미합니다.",
+ "topics": [
+  "금전",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "정재"
+    },
+    {
+     "type": "십성",
+     "value": "편재"
+    }
+   ],
+   "outcome": "돈이 강하게 들어온다",
+   "tag": "큰 재물·부자",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "여덟 개 단어 중에 이 두 가지가 많이 있을수록 돈이 강하게 들어온다고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "정재"
+    }
+   ],
+   "outcome": "꾸준히 안정적인 부를 쌓는다",
+   "tag": "월급형·고정 수입",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정재는 주로 대기업이나 공무원처럼 꾸준히 안정적인 부를 쌓는 운이고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "편재"
+    }
+   ],
+   "outcome": "사업이나 투자로 단번에 부를 쌓는다",
+   "tag": "사업 수입·큰 흐름",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편재는 주로 사업이나 투자처럼 단번에 리스크가 있는 부를 쌓는 운입니다."
+  }
+ ],
+ "insights": [
+  "사주에 재성(정재·편재)이 많을수록 재물운이 강해지지만 지나치게 많으면 과유불급이 될 수 있다."
+ ],
+ "keywords": [
+  "재성",
+  "정재",
+  "편재",
+  "재물운",
+  "재벌 사주",
+  "부자 사주",
+  "사업운",
+  "투자운"
+ ]
+}

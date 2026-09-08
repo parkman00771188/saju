@@ -1,0 +1,279 @@
+{
+ "source": "data/FORCETELLERKR/shorts/261_2026년 별자리별 행동지침.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "yg820R7SpgI",
+ "title": "2026년 별자리별 행동지침",
+ "url": "https://www.youtube.com/watch?v=yg820R7SpgI",
+ "upload": "20260101",
+ "duration_sec": "52",
+ "views": "13005",
+ "chars": 436,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:36",
+ "summary": "2026년을 맞아 12개 별자리별로 꼭 지켜야 하는 핵심 행동 수칙을 소개합니다. 양자리부터 물고기자리까지 각 별자리가 주의해야 할 태도와 집중해야 할 방향을 간략하게 제시합니다. 자신의 별자리에 맞는 조언을 숙지하여 한 해의 흐름을 능동적으로 관리할 것을 당부합니다.",
+ "topics": [
+  "운세 흐름",
+  "개운·조언"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2026
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "양자리"
+    }
+   ],
+   "outcome": "여름철에 집중력이 흐트러지지 않게 주의 필요",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "여름철에 집중력이 흐트러지지 않게 하기",
+   "quote": "양자리, 여름철에 집중력이 흐트러지지 않게 하기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "황소자리"
+    }
+   ],
+   "outcome": "변화를 수용하고 건강 관리에 힘써야 함",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "변화를 거부하지 말고 건강 관리에 신경 쓰기",
+   "quote": "황소자리, 변화를 거부하지 말고 건강 관리에 신경 쓰기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "쌍둥이자리"
+    }
+   ],
+   "outcome": "우선순위를 정해 차례대로 일 처리 필요",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "우선순위를 정해 한 가지씩 해 나가기",
+   "quote": "쌍둥이자리, 우선순위를 정해 한 가지씩 해 나가기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "게자리"
+    }
+   ],
+   "outcome": "감정 기복을 다스려 안정 유지 필요",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "감정 기복을 다스리기",
+   "quote": "게자리, 감정 기복을 다스리기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "사자자리"
+    }
+   ],
+   "outcome": "책임감을 갖고 행동해야 함",
+   "tag": "성실·책임감",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "책임감을 갖고 행동하기",
+   "quote": "사자자리, 책임감을 갖고 행동하기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "처녀자리"
+    }
+   ],
+   "outcome": "완벽주의를 내려놓고 작은 성과에 만족 필요",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "완벽주의를 내려놓고 작은 성과에 만족하기",
+   "quote": "처녀자리, 완벽주의를 내려놓고 작은 성과에 만족하기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "천칭자리"
+    }
+   ],
+   "outcome": "갈등 중재를 통해 신뢰를 얻어야 함",
+   "tag": "인간관계 원만",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "갈등을 중재하고 신뢰를 얻기",
+   "quote": "천칭자리, 갈등을 중재하고 신뢰를 얻기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "전갈자리"
+    }
+   ],
+   "outcome": "주변 사람들과의 관계를 돈독히 해야 함",
+   "tag": "인간관계 원만",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "주변 사람들과의 관계를 돈독히 하기",
+   "quote": "전갈자리, 주변 사람들과의 관계를 돈독히 하기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "사수자리"
+    }
+   ],
+   "outcome": "새로운 분야나 일에 도전하는 것이 유리함",
+   "tag": "새 시작",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "새로운 것에 도전해 보기",
+   "quote": "사수자리, 새로운 것에 도전해 보기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "염소자리"
+    }
+   ],
+   "outcome": "꾸준히 노력을 멈추지 않아야 함",
+   "tag": "성실·책임감",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "노력을 멈추지 말기",
+   "quote": "염소자리, 노력을 멈추지 말기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "물병자리"
+    }
+   ],
+   "outcome": "남들과 다른 독자적인 길을 개척해야 함",
+   "tag": "자유·독립 성향",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "남들과 다른 길을 가기",
+   "quote": "물병자리, 남들과 다른 길을 가기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년"
+    },
+    {
+     "type": "기타",
+     "value": "물고기자리"
+    }
+   ],
+   "outcome": "현실과 이상의 균형을 맞춰야 함",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "현실과 이상의 균형 맞추기",
+   "quote": "물고기자리, 현실과 이상의 균형 맞추기."
+  }
+ ],
+ "insights": [
+  "2026년 한 해 동안 각 별자리가 지닌 고유의 성향적 취약점을 보완하거나 강점을 살릴 수 있는 단순 명료한 행동 지침을 제시한다."
+ ],
+ "keywords": [
+  "2026년",
+  "별자리운세",
+  "행동지침",
+  "양자리",
+  "황소자리",
+  "처녀자리",
+  "물병자리",
+  "개운법"
+ ]
+}

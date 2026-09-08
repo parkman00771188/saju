@@ -1,0 +1,85 @@
+{
+ "source": "data/FORCETELLERKR/shorts/889_MBTI F vs T = 사주 목 vs 금인듯, 진짜 뿌앵하고 움 #fyp #추천 #운세 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "a0MfokUD3HI",
+ "title": "MBTI F vs T = 사주 목 vs 금인듯, 진짜 뿌앵하고 움  #fyp #추천 #운세 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=a0MfokUD3HI",
+ "upload": "20230517",
+ "duration_sec": "39",
+ "views": "1172",
+ "chars": 160,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "사주 오행의 목(木)과 금(金)을 통해 사람의 기질적 성향을 설명합니다. 목 기운은 인간미가 풍부하고 감정 반응 속도가 빠른 반면, 금 기운은 냉철하고 합리적이며 칼 같은 면모를 지닙니다. 따라서 사주에 금 기운이 과다한 사람은 감정에 쉽게 흔들려 눈물을 흘리기보다 이성적이고 단호한 태도를 보입니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "목"
+    }
+   ],
+   "outcome": "인간미가 많고 반응 속도가 빠르다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "목 자체가 인간미가 많고 반응 속도가 빠르니까요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 구성",
+     "value": "금"
+    }
+   ],
+   "outcome": "냉철하고 합리적이며 칼 같은 성향을 띰",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주에서 오행 금은 냉철하고 합리적이고 칼과 같은 성향을 잘 드러냅니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "감정적으로 쉽게 울지 않는다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "추측",
+   "time": "항상",
+   "advice": "",
+   "quote": "울지 않으셨을 것 같아요. 사주가 금도 너무 많고요."
+  }
+ ],
+ "insights": [
+  "사주의 오행 중 목(木)은 정서적 공감과 인간미(MBTI의 F 성향), 금(金)은 냉철함과 합리성(MBTI의 T 성향)과 강하게 결부된다."
+ ],
+ "keywords": [
+  "오행 목",
+  "오행 금",
+  "금 과다",
+  "기질",
+  "인간미",
+  "냉철함",
+  "합리적",
+  "MBTI"
+ ]
+}

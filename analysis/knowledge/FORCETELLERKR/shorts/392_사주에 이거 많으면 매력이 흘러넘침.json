@@ -1,0 +1,69 @@
+{
+ "source": "data/FORCETELLERKR/shorts/392_사주에 이거 많으면 매력이 흘러넘침.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "kOZCZEqsIIU",
+ "title": "사주에 이거 많으면 매력이 흘러넘침",
+ "url": "https://www.youtube.com/watch?v=kOZCZEqsIIU",
+ "upload": "20250813",
+ "duration_sec": "49",
+ "views": "29633",
+ "chars": 415,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:40",
+ "summary": "사주에 수(물) 오행이 과다한 사람은 똑똑하고 청순한 모습과 귀엽고 편안한 매력을 동시에 지니고 있습니다. 또한 깊은 바닷속처럼 신비로운 매력이 있어 이성의 마음을 쉽게 사로잡고 강한 흡입력을 발휘합니다. 아이돌 에스파 윈터와 트와이스 사나가 대표적인 수과다 사주의 예시로 소개됩니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "똑똑하고 청순·귀여운 매력으로 이성을 쉽게 홀림",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주에 물이 많으면 똑똑하고 청순한 모습과 동시에 귀엽고 편안한 매력까지 갖고 있어서 이성들의 마음을 쉽게 홀릴 수 있지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "신비로운 매력으로 한번 빠지면 헤어나오기 힘듦",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "더불어 깊은 바닷속처럼 신비로운 매력이 있어서 이 사람들에게 한번 빠지면 헤어나오기 힘들다고."
+  }
+ ],
+ "insights": [
+  "수(물) 기운이 과다한 사주는 지적이고 편안한 면모와 함께 깊고 신비로운 매력을 복합적으로 풍겨 이성적 유인력이 매우 강하다."
+ ],
+ "keywords": [
+  "수과다",
+  "오행 수",
+  "물 많은 사주",
+  "매력",
+  "이성 매력",
+  "신비로움",
+  "윈터 사주",
+  "사나 사주"
+ ]
+}

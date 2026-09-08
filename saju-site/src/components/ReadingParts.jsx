@@ -81,8 +81,8 @@ export function Evidence({ rows, title, note }) {
       {rows.map((r, i) => (
         <motion.div className="evrow" key={r.label} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
           <i className={polClass(r.pol)}>{polMark(r.pol)}</i>
-          <div><b>{r.label}</b><p>{r.text}</p><small>전문가들이 짚은 글자: {r.from.slice(0, 4).join(' · ')}</small></div>
-          <span className="evn">{r.n || r.docs}회{r.lift >= 1.3 && <em className="evlift">다른 사주보다 {r.lift >= 5 ? '5배 이상' : `${r.lift.toFixed(1)}배`}</em>}</span>
+          <div><b>{r.label}</b><p>{r.text}</p>{r.outs?.length > 0 && <ul className="evouts">{r.outs.slice(0, 3).map((o) => <li key={o}>{o}</li>)}</ul>}{r.quotes?.[0] && <q className="evq">{r.quotes[0][0].length > 110 ? r.quotes[0][0].slice(0, 110) + '…' : r.quotes[0][0]}<span> — {r.quotes[0][2]} · {r.quotes[0][1]}</span></q>}<small>전문가들이 짚은 글자: {r.from.slice(0, 4).join(' · ')}</small></div>
+          <span className="evn">{r.n || r.docs}회{r.times?.length > 0 && <em className="evtime">{r.times.join(" · ")}</em>}{r.lift >= 1.3 && <em className="evlift">다른 사주보다 {r.lift >= 5 ? '5배 이상' : `${r.lift.toFixed(1)}배`}</em>}</span>
         </motion.div>
       ))}
     </div>

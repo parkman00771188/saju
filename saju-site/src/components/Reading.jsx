@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, Fragment } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { interpret } from '../saju/interpret.js';
+import { loadClaims, onClaims, claimsVersion } from '../saju/claims.js';
 import { buildFaq } from '../saju/faq.js';
 import { buildGaeun } from '../saju/gaeun.js';
 import { eventFor, makeEventCtx } from '../saju/events.js';
@@ -314,6 +315,7 @@ function buildPages(R, data, digest) {
           <Divider /><Sub>사주 전문가들이 말하는 {data.current.nowYear}년 — {R.yearExpert.now.personalSources.join('·') || '전체'}</Sub>
           {ov.paras.map((p, i) => <P key={i} words={['좋게 보는 쪽', '조심하라는 쪽']}>{p}</P>)}
           {ov.months.length > 0 && <div className="ymonths">{ov.months.map((m) => <div key={m.mk} className={`ym ${m.polarity > 0.15 ? 'good' : m.polarity < -0.15 ? 'bad' : ''}`}><b>{m.mk}</b><span>{m.labels.map((l) => l.label).join(' · ') || '언급만 있음'}</span></div>)}</div>}
+          {R.yearClaims?.length > 0 && <><Sub>전문가들이 말하는 {nowYr}년의 나</Sub><P>신년운세 강의에서 내 일간·띠·일주·자리 글자에 대해 {nowYr}년에 한정해 말한 대목이에요. 시기가 적힌 것은 그 달에 특히 해당해요.</P><Evidence rows={R.yearClaims} /></>}
           <p className="faq-note">{R.yearExpert.now.monthsScope === 'personal' ? `${R.yearExpert.now.personalSources.join('·')} 신년운세에서 짚은 달과 주제예요.` : '그해 전체 신년운세에서 짚은 달과 주제예요(내 일간·띠 콘텐츠에는 달 언급이 적어요).'} 아래 열두 달 그래프(내 사주 계산)와 함께 보면 시기를 고르기 쉬워요.</p>
         </>
       ); })()}
@@ -457,7 +459,10 @@ function CategoryPage({ R, data, cat, digest }) {
 
 /* ---------------- 책 뷰어 ---------------- */
 export default function Reading({ data, onBack }) {
-  const R = useMemo(() => interpret(data), [data]);
+  const [cv, setCv] = useState(claimsVersion());
+  useEffect(() => { loadClaims(); return onClaims(setCv); }, []);
+  const R = useMemo(() => interpret(data), [data, cv]);
+  if (import.meta.env.DEV) window.__R = R; // 개발 모드 디버그용
   const digest = null; // 전문가 발언 인용 블록은 표시하지 않음(데이터는 analysis/build_digest.py로 생성 가능)
   const pages = useMemo(() => buildPages(R, data, digest), [R, data, digest]);
   const [idx, setIdx] = useState(0);

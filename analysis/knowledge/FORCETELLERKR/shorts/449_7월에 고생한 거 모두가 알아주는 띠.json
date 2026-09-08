@@ -1,0 +1,258 @@
+{
+ "source": "data/FORCETELLERKR/shorts/449_7월에 고생한 거 모두가 알아주는 띠.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "R9-E--y5YBc",
+ "title": "7월에 고생한 거 모두가 알아주는 띠",
+ "url": "https://www.youtube.com/watch?v=R9-E--y5YBc",
+ "upload": "20250616",
+ "duration_sec": "44",
+ "views": "13043",
+ "chars": 396,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "돼지띠, 토끼띠, 양띠(해묘미 삼합)는 7월에 화개살이 들어오는 시기를 맞이합니다. 그동안 혼자 고생하며 들인 노력이 비로소 사람들의 눈에 띄어 큰 성과로 이어지게 됩니다. 특히 금전운과 학업운이 크게 열려 준비하던 사업이나 부업에서 갑작스러운 수익이 발생하거나 멈춰 있던 성적이 상승하는 운의 흐름을 보입니다.",
+ "topics": [
+  "운세 흐름",
+  "금전",
+  "학업·시험",
+  "직장"
+ ],
+ "scope": "특정 월 운세",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "해"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "고생한 노력을 인정받아 큰 성과를 낸다",
+   "tag": "명예·인정",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "7월",
+   "advice": "",
+   "quote": "7월엔 내가 지금까지 해온 것들이 드디어 사람들의 눈에 띄어서 큰 성과를 낼 수 있다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "해"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "준비하던 사업이나 부업에서 수익이 생긴다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "7월",
+   "advice": "",
+   "quote": "준비하던 사업이나 부업에서 갑자기 수익이 생기거나"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "해"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "정체되어 있던 시험 및 학업 성적이 오른다",
+   "tag": "공부가 잘 됨",
+   "category": "학업·시험",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "7월",
+   "advice": "",
+   "quote": "멈춰 있던 성적이 조금씩 올라간다고 하니 기대해도 좋겠지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "묘"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "고생한 노력을 인정받아 큰 성과를 낸다",
+   "tag": "명예·인정",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "7월",
+   "advice": "",
+   "quote": "7월엔 내가 지금까지 해온 것들이 드디어 사람들의 눈에 띄어서 큰 성과를 낼 수 있다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "묘"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "준비하던 사업이나 부업에서 수익이 생긴다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "7월",
+   "advice": "",
+   "quote": "준비하던 사업이나 부업에서 갑자기 수익이 생기거나"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "묘"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "정체되어 있던 시험 및 학업 성적이 오른다",
+   "tag": "공부가 잘 됨",
+   "category": "학업·시험",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "7월",
+   "advice": "",
+   "quote": "멈춰 있던 성적이 조금씩 올라간다고 하니 기대해도 좋겠지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "미"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "고생한 노력을 인정받아 큰 성과를 낸다",
+   "tag": "명예·인정",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "7월",
+   "advice": "",
+   "quote": "7월엔 내가 지금까지 해온 것들이 드디어 사람들의 눈에 띄어서 큰 성과를 낼 수 있다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "미"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "준비하던 사업이나 부업에서 수익이 생긴다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "7월",
+   "advice": "",
+   "quote": "준비하던 사업이나 부업에서 갑자기 수익이 생기거나"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "미"
+    },
+    {
+     "type": "월운",
+     "value": "7월"
+    },
+    {
+     "type": "신살",
+     "value": "화개살"
+    }
+   ],
+   "outcome": "정체되어 있던 시험 및 학업 성적이 오른다",
+   "tag": "공부가 잘 됨",
+   "category": "학업·시험",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "7월",
+   "advice": "",
+   "quote": "멈춰 있던 성적이 조금씩 올라간다고 하니 기대해도 좋겠지."
+  }
+ ],
+ "insights": [
+  "해묘미(돼지띠·토끼띠·양띠) 삼합은 미월(양력 7월경)에 화개살이 성립한다.",
+  "화개살(花蓋殺)은 그동안 감추어 두었던 재능과 노력이 비로소 꽃을 피우며 사람들에게 드러나 인정받는 시기이다."
+ ],
+ "keywords": [
+  "돼지띠",
+  "토끼띠",
+  "양띠",
+  "해묘미",
+  "화개살",
+  "7월 운세",
+  "금전운",
+  "학업운",
+  "부업 수익",
+  "성과 인정"
+ ]
+}

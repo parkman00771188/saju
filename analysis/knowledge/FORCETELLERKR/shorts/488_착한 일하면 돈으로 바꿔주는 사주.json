@@ -1,0 +1,54 @@
+{
+ "source": "data/FORCETELLERKR/shorts/488_착한 일하면 돈으로 바꿔주는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "eveqV09CBug",
+ "title": "착한 일하면 돈으로 바꿔주는 사주",
+ "url": "https://www.youtube.com/watch?v=eveqV09CBug",
+ "upload": "20250506",
+ "duration_sec": "51",
+ "views": "36157",
+ "chars": 473,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "사주에 정록이 있는 사람은 반듯하고 바른 복을 타고난 사주입니다. 매사에 성실하게 임하고 바른 길을 걸으며 착하게 살면 건강운, 재물운, 명예운이 계속해서 들어오게 됩니다. BTS RM, 이도현, 안성재 등이 대표적이며, 선한 영향력을 펼치고 바르게 살려고 노력할수록 재물이 저절로 따르게 됩니다.",
+ "topics": [
+  "금전",
+  "명리 이론",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "정록"
+    }
+   ],
+   "outcome": "건강·재물·명예운이 풍족해진다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "매사에 성실하게 임하고 바른 길을 걸으며 착하게 살기",
+   "quote": "매사에 성실하게 임하고 바른 길을 걷기만 하면 건강운, 재물운, 명예운이 쉴 틈 없이 들어와 평생 풍족한 삶을 살 수 있다고."
+  }
+ ],
+ "insights": [
+  "정록(건록)은 반듯하고 바른 복을 의미하며, 성실하고 도덕적인 태도로 살아갈 때 재물과 명예가 자연스럽게 발복하는 특성이 있다."
+ ],
+ "keywords": [
+  "정록",
+  "건록",
+  "신살",
+  "길성",
+  "재물운",
+  "명예운",
+  "선한영향력",
+  "개운법"
+ ]
+}

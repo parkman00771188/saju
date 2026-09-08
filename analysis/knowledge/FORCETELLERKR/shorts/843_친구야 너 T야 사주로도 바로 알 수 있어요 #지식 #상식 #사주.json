@@ -1,0 +1,84 @@
+{
+ "source": "data/FORCETELLERKR/shorts/843_친구야 너 T야 사주로도 바로 알 수 있어요 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "fIYo0vjsS8k",
+ "title": "친구야 너 T야? 사주로도 바로 알 수 있어요 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=fIYo0vjsS8k",
+ "upload": "20230718",
+ "duration_sec": "42",
+ "views": "1067",
+ "chars": 356,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "사주에 금 기운이 많은 사람은 MBTI의 사고형(T) 기질을 타고납니다. 절제와 결단력을 주무기로 삼아 남들이 보지 못하는 예리한 부분을 포착하는 장점이 있습니다. 그러나 주위 사람들에게 본의 아니게 날카로운 말로 팩폭이나 독설을 날리기 쉽습니다.",
+ "topics": [
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "MBTI의 T(사고형) 기질을 타고난다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "T로 타고나는 사주가 따로 있다는데요. 바로 금 기운이 많은 사주인데요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "절제와 결단력이 있고 예리하게 짚어낸다",
+   "tag": "예민·섬세",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "금 기운이 많은 사주는 절제와 결단력을 주무기로 활용해요. 남들이 보지 못하는 예리한 부분들까지 쏙쏙 짚어낼 줄 알지만"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "주변 사람에게 날카로운 말과 팩폭을 날린다",
+   "tag": "말로 인한 화",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "주위 사람에게 날카로운 말들로 본의 아니게 팩폭을 날리기도 해요."
+  }
+ ],
+ "insights": [
+  "사주에서 금 기운이 과다한 사람은 이성적이고 비판적인 MBTI의 T 성향과 유사한 기질적 특징을 보인다."
+ ],
+ "keywords": [
+  "금 기운",
+  "오행 과다",
+  "MBTI",
+  "T 유형",
+  "팩폭",
+  "독설",
+  "결단력",
+  "절제"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "source": "data/FORCETELLERKR/shorts/801_여러분 생일에 연봉 얼마까지 벌 수 있을지 알 수 있대요 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "ufTPz_JcGCk",
+ "title": "여러분 생일에 연봉 얼마까지 벌 수 있을지 알 수 있대요 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=ufTPz_JcGCk",
+ "upload": "20230906",
+ "duration_sec": "42",
+ "views": "1467",
+ "chars": 335,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "사주에서 타고난 재물운과 연봉 규모를 파악할 때 오행 중 토(土) 기운의 비중을 살펴볼 수 있습니다. 사주 팔자에서 토 기운이 가장 많은 사람은 자신의 분야에서 정상을 차지하고 유명세와 함께 막대한 수익을 벌어들이는 운명을 가집니다. 대표적인 인물로는 유재석, 김태리, 엑소 세훈 등이 토 기운이 많은 사주에 해당합니다.",
+ "topics": [
+  "금전",
+  "직장"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "토"
+    }
+   ],
+   "outcome": "분야 최정상에 올라 큰돈을 번다",
+   "tag": "큰 재물·부자",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "만약 토 기운이 제일 많다면 축하드려요. 자신의 분야에서 최정상을 찍고 유명세와 함께 막대한 수익을 벌어들일 운명이에요."
+  }
+ ],
+ "insights": [
+  "사주 구조에서 토(土) 기운이 가장 지배적인 경우 사회적 성취와 큰 재물운을 끌어오는 동력으로 작용한다."
+ ],
+ "keywords": [
+  "토 기운",
+  "오행 과다",
+  "재물운",
+  "연봉",
+  "부자 사주",
+  "성공운",
+  "유명세"
+ ]
+}

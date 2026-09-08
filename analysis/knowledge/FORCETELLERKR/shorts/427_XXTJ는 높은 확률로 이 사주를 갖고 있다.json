@@ -1,0 +1,84 @@
+{
+ "source": "data/FORCETELLERKR/shorts/427_XXTJ는 높은 확률로 이 사주를 갖고 있다.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "iLpnCncP4kI",
+ "title": "XXTJ는 높은 확률로 이 사주를 갖고 있다",
+ "url": "https://www.youtube.com/watch?v=iLpnCncP4kI",
+ "upload": "20250708",
+ "duration_sec": "45",
+ "views": "25162",
+ "chars": 428,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:40",
+ "summary": "사주에 금(金) 기운이 많은 사람은 MBTI의 XXTJ 성향을 띨 확률이 높습니다. 날카로운 쇠의 기운을 지녀 옳고 그름을 단호하게 판단하고 이성과 논리를 중시하므로 냉정해 보일 수 있습니다. 반면 내 편이라고 여기는 사람에게는 매우 헌신적이며, 감정적 위로보다는 현실적인 도움을 주는 특징이 있습니다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "MBTI의 XXTJ 성향을 띨 확률이 높다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "XXTJ는 높은 확률로 이 사주를 갖고 있다. 그건 바로 금(金)이 많은 사주야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "논리적이고 단호하여 냉정하게 비칠 수 있다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "옳고 그름을 단호하게 판단하고 논리와 이성을 중시하기 때문에 무자비하고 냉정한 사람이라고 비춰질 수 있어."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "내 사람에게 헌신하며 현실적 도움을 준다",
+   "tag": "의리·정의감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "내 편이라고 생각하는 사람 한정으로 헌신적인 모습을 보여주기도 해. 말뿐인 위로보다는 현실적인 방법으로 도움을 준다고"
+  }
+ ],
+ "insights": [
+  "금(金)은 쇠의 기운으로 시비 판단, 논리, 이성을 주관하여 MBTI의 사고형(T)과 판단형(J)의 기질적 특징과 유사하다."
+ ],
+ "keywords": [
+  "금기운",
+  "금사주",
+  "오행과다",
+  "XXTJ",
+  "MBTI사주",
+  "냉정함",
+  "현실적도움"
+ ]
+}

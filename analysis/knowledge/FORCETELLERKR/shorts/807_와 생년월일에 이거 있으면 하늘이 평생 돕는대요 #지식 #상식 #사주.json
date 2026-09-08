@@ -1,0 +1,86 @@
+{
+ "source": "data/FORCETELLERKR/shorts/807_와 생년월일에 이거 있으면 하늘이 평생 돕는대요 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "9GUoHbS7g9U",
+ "title": "와 생년월일에 이거 있으면 하늘이 평생 돕는대요 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=9GUoHbS7g9U",
+ "upload": "20230829",
+ "duration_sec": "54",
+ "views": "2162",
+ "chars": 459,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "사주에 최고의 길신으로 불리는 천을귀인이 있으면 흉한 일이 생겨도 귀인을 만나 화를 피할 수 있습니다. 명리학 고전 삼명통회에 따르면 천을귀인은 공평함과 덕을 주관하여 흉한 기운을 물리치는 역할을 합니다. 천을귀인을 지닌 사람은 심성이 착하고 품성이 훌륭하여 주변 사람들의 도움으로 위기를 수월하게 극복합니다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계",
+  "운세 흐름",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천을귀인"
+    }
+   ],
+   "outcome": "흉한 일이 생겨도 귀인을 만나 피해 간다",
+   "tag": "어머니·윗사람 덕",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "아무리 흉한 일이 생겨도 귀인을 만나 피해 가는 최고의 길신이라고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천을귀인"
+    }
+   ],
+   "outcome": "마음씨가 착하고 좋은 품성을 가진다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "천을귀인을 가진 사람들은 마음씨가 착하고 좋은 품성을 가졌다는 공통점이 있어서"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천을귀인"
+    }
+   ],
+   "outcome": "주변 사람들의 도움으로 위기를 금방 극복한다",
+   "tag": "인간관계 원만",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "주변 사람들이 금방 도와줘서 위기를 금방 극복한다고 합니다."
+  }
+ ],
+ "insights": [
+  "명리학 고전 삼명통회에 따르면 천을귀인은 공평함과 덕을 담당하는 신으로, 흉한 기운이 스스로 피해 가는 강력한 길신으로 작용한다."
+ ],
+ "keywords": [
+  "천을귀인",
+  "삼명통회",
+  "길신",
+  "위기극복",
+  "길성",
+  "인덕",
+  "귀인"
+ ]
+}

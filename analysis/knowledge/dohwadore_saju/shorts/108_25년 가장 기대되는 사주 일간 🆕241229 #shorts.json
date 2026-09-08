@@ -1,0 +1,81 @@
+{
+ "source": "data/dohwadore_saju/shorts/108_25년 가장 기대되는 사주 일간 🆕241229 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "UQbVT7BSlGc",
+ "title": "25년 가장 기대되는 사주 일간? 🆕241229 #shorts",
+ "url": "https://www.youtube.com/watch?v=UQbVT7BSlGc",
+ "upload": "20241228",
+ "duration_sec": "33",
+ "views": "88749",
+ "chars": 247,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:50",
+ "summary": "2025년 을사년(푸른 뱀의 해)에 특정 일간에게 찾아오는 운세와 개운법을 설명합니다. 해당 일간은 올해 돈과 명예를 얻기 유리한 시기로, 실적을 통해 직위나 명예 상승을 도모할 수 있습니다. 또한 꾸준한 운동을 지속하는 것만으로도 좋은 운을 잘 활용할 수 있습니다.",
+ "topics": [
+  "직장",
+  "금전",
+  "운세 흐름",
+  "개운·조언"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2025
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2025년 을사년"
+    },
+    {
+     "type": "일간",
+     "value": "미상"
+    }
+   ],
+   "outcome": "돈과 명예를 얻고 직위가 상승함",
+   "tag": "승진·직책",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2025년",
+   "advice": "실적으로 성과를 도모할 것",
+   "quote": "올해 돈과 명예라는 키워드를 가져가기 좋은 시기예요. 그래서 명예나 직위 상승의 계기다, 실적으로 성과를 도모하는 시기다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2025년 을사년"
+    },
+    {
+     "type": "일간",
+     "value": "미상"
+    }
+   ],
+   "outcome": "꾸준한 운동으로 좋은 운을 활용함",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2025년",
+   "advice": "운동을 꾸준히 할 것",
+   "quote": "그리고 두 번째로는 운동만 꾸준히 해도 굉장히 좋은 시기다."
+  }
+ ],
+ "insights": [
+  "운이 좋은 시기에는 실적 도모와 꾸준한 신체 활동(운동)이 개운 및 성과 달성에 긍정적으로 작용한다."
+ ],
+ "keywords": [
+  "2025년",
+  "을사년",
+  "신년운세",
+  "일간",
+  "명예",
+  "직위 상승",
+  "실적",
+  "운동"
+ ]
+}

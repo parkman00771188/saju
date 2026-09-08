@@ -1,0 +1,279 @@
+{
+ "source": "data/FORCETELLERKR/shorts/333_2026년 띠별 신년운세 총정리.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "4tggcLCCluQ",
+ "title": "2026년 띠별 신년운세 총정리",
+ "url": "https://www.youtube.com/watch?v=4tggcLCCluQ",
+ "upload": "20251028",
+ "duration_sec": "60",
+ "views": "16501",
+ "chars": 474,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:38",
+ "summary": "2026년 신년운세를 12가지 띠별로 간략하게 요약 정리한 영상입니다. 소띠, 말띠, 닭띠 등은 승승장구하거나 기쁜 일이 연달아 생기는 긍정적인 운의 흐름을 맞이합니다. 반면 뱀띠나 원숭이띠는 방심이나 컨디션 난조로 인한 실수를 주의해야 하며, 호랑이띠·용띠·양띠·개띠·돼지띠 등은 조화로운 태도와 마인드 컨트롤이 주요 조언으로 제시됩니다.",
+ "topics": [
+  "운세 흐름",
+  "개운·조언"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2026
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "자"
+    }
+   ],
+   "outcome": "능력을 인정받게 된다",
+   "tag": "명예·인정",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "하고 싶지 않은 일도 열심히 할 것",
+   "quote": "쥐띠. 하고 싶지 않은 일도 열심히 하면 능력을 인정받게 돼."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "축"
+    }
+   ],
+   "outcome": "승승장구하는 시기를 맞이한다",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "자신감을 가질 것",
+   "quote": "소띠. 승승장구하는 시기니 자신감을 가져."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "인"
+    }
+   ],
+   "outcome": "일과 휴식의 균형이 중요하다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "일과 휴식의 균형을 맞출 것",
+   "quote": "호랑이띠. 일과 휴식의 균형을 맞추는 게 중요해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "묘"
+    }
+   ],
+   "outcome": "새로운 일에 흥미가 생긴다",
+   "tag": "새 시작",
+   "category": "운세 흐름",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "욕심을 줄여볼 것",
+   "quote": "토끼띠. 새로운 일에 흥미가 생기지만 욕심은 줄여보자."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "진"
+    }
+   ],
+   "outcome": "타인의 조언 청취가 필요하다",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "다른 사람의 조언에 귀를 기울일 것",
+   "quote": "용띠. 다른 사람의 조언에 귀를 기울여야 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "사"
+    }
+   ],
+   "outcome": "방심하면 큰코다칠 수 있다",
+   "tag": "조심할 시기",
+   "category": "운세 흐름",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "2026년",
+   "advice": "방심하지 말고 조심할 것",
+   "quote": "뱀띠. 방심하다가 큰코다칠 수 있으니 조심해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "오"
+    }
+   ],
+   "outcome": "기쁘고 행복한 일이 연달아 생긴다",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "",
+   "quote": "말띠. 기쁘고 행복한 일이 연달아 생길 거야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "미"
+    }
+   ],
+   "outcome": "솔직하게 행동하면 도움을 받는다",
+   "tag": "인간관계 원만",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "솔직하게 행동할 것",
+   "quote": "양띠. 솔직하게 행동하면 도움을 받게 될 거야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "신"
+    }
+   ],
+   "outcome": "실수를 다시 반복할 위험이 있다",
+   "tag": "조심할 시기",
+   "category": "운세 흐름",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "2026년",
+   "advice": "실수를 반복하지 않도록 컨디션 조절에 힘쓸 것",
+   "quote": "원숭이띠. 실수를 다시 반복하지 않도록 컨디션 조절에 힘써야 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "근심이 사라지고 기쁜 일이 생긴다",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "",
+   "quote": "닭띠. 근심이 사라지고 기쁜 일만 생길 거야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "술"
+    }
+   ],
+   "outcome": "넓은 마음으로 대해야 일이 풀린다",
+   "tag": "인간관계 원만",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "조건부",
+   "time": "2026년",
+   "advice": "넓은 마음으로 사람들을 대할 것",
+   "quote": "개띠. 넓은 마음으로 사람들을 대해야 일이 풀려."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2026년 병오년"
+    },
+    {
+     "type": "띠",
+     "value": "해"
+    }
+   ],
+   "outcome": "자신의 뜻을 당당히 펼친다",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "다른 사람을 의식하지 말고 뜻을 펼칠 것",
+   "quote": "돼지띠. 다른 사람을 의식하지 말고 너의 뜻을 펼쳐봐."
+  }
+ ],
+ "insights": [
+  "2026년 신년운세는 각 띠별로 요구되는 행동 지침(균형, 조언 수용, 솔직함, 아량 등)을 지킬 때 긍정적인 결과를 얻을 수 있다."
+ ],
+ "keywords": [
+  "2026년 운세",
+  "신년운세",
+  "띠별운세",
+  "병오년",
+  "승승장구",
+  "능력인정",
+  "컨디션 조절",
+  "개운법"
+ ]
+}

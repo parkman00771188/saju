@@ -1,0 +1,174 @@
+{
+ "source": "data/FORCETELLERKR/shorts/812_와.. 귀신 잘들리는 사람 생일로 알 수 있대요! #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "46Tee50JxAg",
+ "title": "와.. 귀신 잘들리는 사람 생일로 알 수 있대요! #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=46Tee50JxAg",
+ "upload": "20230822",
+ "duration_sec": "59",
+ "views": "1216",
+ "chars": 454,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "사주 지지에 귀문관살이 있는 사람은 귀신과 통하는 문을 지녀 남들이 보지 못하는 것을 감지하는 신기를 가질 수 있습니다. 귀문관살은 지지의 글자 조합에 따라 총 6가지 유형으로 나뉩니다. 각 조합(자유, 축오, 인미, 묘신, 진해, 사술)에 따라 아기, 나그네, 노인, 장군, 처녀, 도사 귀신 등 잘 맞는 귀신의 종류가 달라집니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "남이 보지 못하는 것을 감지하는 신기가 있다",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "귀문관살을 가진 사람은 귀신과 통하는 문을 가졌다고 해 다른 사람이 보지 못하는 것을 알아차리는 신기가 있다고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "자유귀문"
+    }
+   ],
+   "outcome": "아기 귀신과 친하고 잘 맞는다",
+   "tag": "무속·신끼",
+   "category": "기타",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "자자유귀문 아기 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "축오귀문"
+    }
+   ],
+   "outcome": "나그네 귀신과 친하고 잘 맞는다",
+   "tag": "무속·신끼",
+   "category": "기타",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "축오귀문 나그네 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "인미귀문"
+    }
+   ],
+   "outcome": "노인 귀신과 친하고 잘 맞는다",
+   "tag": "무속·신끼",
+   "category": "기타",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "인미귀문 노인 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "묘신귀문"
+    }
+   ],
+   "outcome": "장군 귀신과 친하고 잘 맞는다",
+   "tag": "무속·신끼",
+   "category": "기타",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "묘신귀문 장군 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "진해귀문"
+    }
+   ],
+   "outcome": "처녀귀신과 친하고 잘 맞는다",
+   "tag": "무속·신끼",
+   "category": "기타",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "진해귀문 처녀귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "사술귀문"
+    }
+   ],
+   "outcome": "도사 귀신과 친하고 잘 맞는다",
+   "tag": "무속·신끼",
+   "category": "기타",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사술귀문 도사 귀신"
+  }
+ ],
+ "insights": [
+  "귀문관살은 사주 네 지지 글자 중 특정 두 글자의 짝(자유, 축오, 인미, 묘신, 진해, 사술)이 모여 성립한다."
+ ],
+ "keywords": [
+  "귀문관살",
+  "신기",
+  "자유귀문",
+  "축오귀문",
+  "인미귀문",
+  "묘신귀문",
+  "진해귀문",
+  "사술귀문"
+ ]
+}

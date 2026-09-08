@@ -1,0 +1,98 @@
+{
+ "source": "data/FORCETELLERKR/shorts/992_무심코 이 남자들을 만난다면 꼭 지나치지마세요! #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "KIways600zs",
+ "title": "무심코 이 남자들을 만난다면 꼭 지나치지마세요! #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=KIways600zs",
+ "upload": "20221115",
+ "duration_sec": "58",
+ "views": "3824",
+ "chars": 476,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "여성들이 선호하는 남성 MBTI TOP 3와 각 유형의 연애 및 성격적 특징을 소개한다. 3위인 ESFP 남성은 사교적이고 유머와 배려가 넘쳐 인기가 많으며, 2위인 ENFJ 남성은 헌신적으로 주변과 상대를 챙긴다. 1위인 ESFJ 남성은 뛰어난 공감 능력과 표현력을 갖추고 사소한 부분도 잘 기억하여 상대에게 감동을 준다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질",
+  "궁합·인간관계",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남"
+    },
+    {
+     "type": "기타",
+     "value": "ESFP"
+    }
+   ],
+   "outcome": "어울림을 좋아하고 배려와 유머로 인기가 많다",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사람들과 어울려 노는 걸 좋아하고 말할 때 배려가 넘쳐서 여성들에게도 인기가 많아요. 유머러스한 성격이라 말도 먼저 잘 건다고 하니"
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남"
+    },
+    {
+     "type": "기타",
+     "value": "ENFJ"
+    }
+   ],
+   "outcome": "주변을 헌신적으로 챙기며 타인 위로에 열성적이다",
+   "tag": "희생·봉사 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "주변 사람들을 잘 챙기는 성격을 갖고 있어 마치 인간 리트리버라고도 불리는데요. 다른 사람을 위로하기 위해 잠까지 줄여가면서 있어 줄 정도"
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "남"
+    },
+    {
+     "type": "기타",
+     "value": "ESFJ"
+    }
+   ],
+   "outcome": "공감과 표현력이 좋고 작은 일도 잘 기억해 감동을 준다",
+   "tag": "인간관계 원만",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사람을 상대할 때 공감 능력과 표현력이 뛰어나 대화할 때 심심할 틈이 없다고 하는데요. 작은 일도 기억을 잘하기 때문에 썸이나 연인에게 감동을 준다고 합니다."
+  }
+ ],
+ "insights": [
+  "여성에게 매력적으로 다가가는 남성의 성향은 주로 유머·배려(ESFP), 이타적 헌신(ENFJ), 공감·세심한 기억력(ESFJ)과 같은 대인관계적 소통 능력에 기반한다."
+ ],
+ "keywords": [
+  "MBTI",
+  "ESFP",
+  "ENFJ",
+  "ESFJ",
+  "연애",
+  "인기남",
+  "남성성격"
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "source": "data/FORCETELLERKR/shorts/467_고생이 성공으로 100% 돌아오는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "gUAyoWKQXYI",
+ "title": "고생이 성공으로 100% 돌아오는 사주",
+ "url": "https://www.youtube.com/watch?v=gUAyoWKQXYI",
+ "upload": "20250528",
+ "duration_sec": "53",
+ "views": "37700",
+ "chars": 450,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "사주에 황은대사(皇恩大赦)라는 길성이 있으면 힘든 상황이 찾아왔을 때 임금의 은혜처럼 위대한 귀인이 나타나 도움을 주어 고생이 성공으로 돌아오게 됩니다. 아이유, 유재석, 박보검처럼 유년 시절이나 과거에 극심한 고난을 겪더라도 윗사람이나 선배 등의 전폭적인 지지를 받아 크게 발복하고 성공하게 됩니다.",
+ "topics": [
+  "운세 흐름",
+  "궁합·인간관계",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "황은대사"
+    }
+   ],
+   "outcome": "힘든 상황에 위대한 귀인의 도움으로 성공",
+   "tag": "발복·성공",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "힘든 상황이 찾아왔을 때 임금님처럼 위대한 귀인이 나타나서 도와준다는 뜻이라고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "황은대사"
+    }
+   ],
+   "outcome": "선배·윗사람의 전폭적인 지지를 받음",
+   "tag": "어머니·윗사람 덕",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "열심히 갈고닦은 노래 실력으로 하동균, 거미 등 선배들의 전폭적인 지지를 받으며 데뷔에 성공했지."
+  }
+ ],
+ "insights": [
+  "황은대사는 임금의 은혜로 큰 용서를 받는다는 뜻으로, 인생의 큰 위기나 고난에서 결정적인 귀인의 원조를 받아 극복하게 만드는 길성이다."
+ ],
+ "keywords": [
+  "황은대사",
+  "길성",
+  "신살",
+  "귀인",
+  "고생 끝에 성공",
+  "아이유 사주",
+  "발복"
+ ]
+}

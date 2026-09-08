@@ -1,6 +1,8 @@
 ﻿import { useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { calculate } from './saju/calc.js';
+import { loadClaims } from './saju/claims.js';
+loadClaims(); // 전문가 지식 색인은 용량이 커서 번들 밖(public/kb_claims.json)에 두고 앱 시작 때 내려받는다
 import Landing from './components/Landing.jsx';
 import Result from './components/Result.jsx';
 import Passage from './components/Passage.jsx';

@@ -1,0 +1,199 @@
+{
+ "source": "data/FORCETELLERKR/shorts/671_신기 있는 사람 3초만에 확인하는 방법 #사주 #상식 #지식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "_uUQtHZyq_I",
+ "title": "신기 있는 사람 3초만에 확인하는 방법 #사주 #상식 #지식",
+ "url": "https://www.youtube.com/watch?v=_uUQtHZyq_I",
+ "upload": "20240131",
+ "duration_sec": "55",
+ "views": "5583",
+ "chars": 430,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:44",
+ "summary": "사주 지지에 귀문관살이 있으면 귀신과 통하는 문이 열려 남들이 보지 못하는 것을 잘 알아차리는 신기가 있다고 봅니다. 지지 네 글자 중 귀문을 구성하는 글자 조합에 따라 연결되는 귀신의 성격이 달라집니다. 자유는 아기 귀신, 축오는 나그네 귀신, 인미는 노인 귀신, 묘신은 장군 귀신, 진해는 처녀 귀신, 사술은 도사 귀신과 상통합니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "남이 보지 못하는 것을 잘 알아차림",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "귀문관살을 가진 사람은 귀신과 통하는 문을 가졌다고 해, 다른 사람이 보지 못하는 것들도 잘 알아차린다고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "자"
+    },
+    {
+     "type": "지지",
+     "value": "유"
+    },
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "아기 귀신과 친하고 신기가 있음",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "자유귀문 아기 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "축"
+    },
+    {
+     "type": "지지",
+     "value": "오"
+    },
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "나그네 귀신과 친하고 신기가 있음",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "축오귀문 나그네 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "인"
+    },
+    {
+     "type": "지지",
+     "value": "미"
+    },
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "노인 귀신과 친하고 신기가 있음",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "인미귀문 노인 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "묘"
+    },
+    {
+     "type": "지지",
+     "value": "신"
+    },
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "장군 귀신과 친하고 신기가 있음",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "묘신귀문 장군 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "진"
+    },
+    {
+     "type": "지지",
+     "value": "해"
+    },
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "처녀 귀신과 친하고 신기가 있음",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "진해귀문 처녀 귀신"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "사"
+    },
+    {
+     "type": "지지",
+     "value": "술"
+    },
+    {
+     "type": "신살",
+     "value": "귀문관살"
+    }
+   ],
+   "outcome": "도사 귀신과 친하고 신기가 있음",
+   "tag": "무속·신끼",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사술귀문 도사 귀신"
+  }
+ ],
+ "insights": [
+  "사주 지지 네 글자 중 특정 두 글자의 조합(자유, 축오, 인미, 묘신, 진해, 사술)을 통해 귀문관살이 성립한다.",
+  "귀문관살은 글자의 조합에 따라 감응하거나 연결되는 귀신의 상(象)이 달라진다."
+ ],
+ "keywords": [
+  "귀문관살",
+  "신기",
+  "무속",
+  "자유귀문",
+  "축오귀문",
+  "인미귀문",
+  "묘신귀문",
+  "진해귀문",
+  "사술귀문"
+ ]
+}

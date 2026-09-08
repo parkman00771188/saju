@@ -1,0 +1,151 @@
+{
+ "source": "data/FORCETELLERKR/shorts/447_이 사주 있으면 당장 펜 잡아야 함.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "kgIpFU8jqxE",
+ "title": "이 사주 있으면 당장 펜 잡아야 함",
+ "url": "https://www.youtube.com/watch?v=kgIpFU8jqxE",
+ "upload": "20250617",
+ "duration_sec": "51",
+ "views": "20196",
+ "chars": 455,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:40",
+ "summary": "사주에 문창귀인이 있으면 남다른 습득력과 표현력을 바탕으로 글로써 크게 성공할 수 있습니다. 글쓰기뿐만 아니라 뛰어난 일머리와 학구열 덕분에 직장에서 상사의 총애를 받고 승진하는 데에도 큰 도움이 됩니다. 특히 정유, 무신, 기유, 임인, 계묘 일주는 문창귀인의 기운이 더욱 강력하게 작용합니다.",
+ "topics": [
+  "직장",
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "문창귀인"
+    }
+   ],
+   "outcome": "글로 성공하며 습득력과 표현력이 월등하다",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "문창귀인은 한자로 글월 문, 번성할 창을 써서 글로써 크게 성공할 수 있는 사주를 뜻해. 이 귀인이 있는 사람은 습득력과 표현력이 남들에 비해 월등히 좋다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "문창귀인"
+    }
+   ],
+   "outcome": "일머리가 좋고 상사 총애로 승진에 유리하다",
+   "tag": "승진·직책",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "문창귀인이 있으면 일머리도 좋고 항상 배우고자 하는 자세가 있어서, 상사의 총애를 받아 승진하는 데도 도움이 된다고."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "정유"
+    }
+   ],
+   "outcome": "문창귀인의 기운이 더 크게 작용한다",
+   "tag": "발복·성공",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "일주가 정유, 무신, 기유, 임인, 계묘라면 기운이 더 크게 작용한다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "무신"
+    }
+   ],
+   "outcome": "문창귀인의 기운이 더 크게 작용한다",
+   "tag": "발복·성공",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "일주가 정유, 무신, 기유, 임인, 계묘라면 기운이 더 크게 작용한다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "기유"
+    }
+   ],
+   "outcome": "문창귀인의 기운이 더 크게 작용한다",
+   "tag": "발복·성공",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "일주가 정유, 무신, 기유, 임인, 계묘라면 기운이 더 크게 작용한다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "임인"
+    }
+   ],
+   "outcome": "문창귀인의 기운이 더 크게 작용한다",
+   "tag": "발복·성공",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "일주가 정유, 무신, 기유, 임인, 계묘라면 기운이 더 크게 작용한다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일주",
+     "value": "계묘"
+    }
+   ],
+   "outcome": "문창귀인의 기운이 더 크게 작용한다",
+   "tag": "발복·성공",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "일주가 정유, 무신, 기유, 임인, 계묘라면 기운이 더 크게 작용한다고 해."
+  }
+ ],
+ "insights": [
+  "문창귀인은 글이나 창작 분야 외에도 일머리와 배움의 자세를 주관하므로 일반 직장 생활 및 승진에도 긍정적으로 작용한다.",
+  "정유, 무신, 기유, 임인, 계묘와 같이 일지에 문창귀인을 스스로 놓은 일주는 해당 귀인의 특성이 더욱 뚜렷하게 발현된다."
+ ],
+ "keywords": [
+  "문창귀인",
+  "정유일주",
+  "무신일주",
+  "기유일주",
+  "임인일주",
+  "계묘일주",
+  "일머리",
+  "승진운"
+ ]
+}

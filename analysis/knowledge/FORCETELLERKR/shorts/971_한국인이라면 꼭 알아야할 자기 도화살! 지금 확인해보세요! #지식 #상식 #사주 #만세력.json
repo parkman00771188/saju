@@ -1,0 +1,68 @@
+{
+ "source": "data/FORCETELLERKR/shorts/971_한국인이라면 꼭 알아야할 자기 도화살! 지금 확인해보세요! #지식 #상식 #사주 #만세력.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "ZF0tZCsqolw",
+ "title": "한국인이라면 꼭 알아야할 자기 도화살! 지금 확인해보세요! #지식 #상식 #사주 #만세력",
+ "url": "https://www.youtube.com/watch?v=ZF0tZCsqolw",
+ "upload": "20221227",
+ "duration_sec": "25",
+ "views": "5596",
+ "chars": 206,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "만세력을 통해 사주에 있는 신살인 도화살과 현침살의 특징을 살펴보는 내용입니다. 도화살이 있으면 사람을 끌어당기는 매력을 지니게 된다고 설명합니다. 반면 현침살이 있는 경우에는 날카로운 시각과 말솜씨를 나타내게 됩니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "도화살"
+    }
+   ],
+   "outcome": "사람을 끌어당기는 매력이 있다",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "도화살 사람을 끌어당기는 매력이 있네요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "현침살"
+    }
+   ],
+   "outcome": "날카로운 시각과 말솜씨를 지닌다",
+   "tag": "표현·언변",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "저희 둘은 현침살이 있고 ... 날카로운 시각과 말솜씨를 지녔군요."
+  }
+ ],
+ "insights": [
+  "도화살은 사람의 마음과 이목을 끄는 흡인력으로 작용하며, 현침살은 뾰족하고 예리하게 파고드는 관찰력과 언어적 표현력으로 발현된다."
+ ],
+ "keywords": [
+  "도화살",
+  "현침살",
+  "신살",
+  "매력",
+  "말솜씨",
+  "만세력",
+  "사주팔자"
+ ]
+}

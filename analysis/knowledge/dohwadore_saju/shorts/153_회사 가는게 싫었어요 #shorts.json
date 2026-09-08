@@ -1,0 +1,36 @@
+{
+ "source": "data/dohwadore_saju/shorts/153_회사 가는게 싫었어요 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "pGQBKLqnTvs",
+ "title": "회사 가는게 싫었어요 #shorts",
+ "url": "https://www.youtube.com/watch?v=pGQBKLqnTvs",
+ "upload": "20240425",
+ "duration_sec": "50",
+ "views": "13427",
+ "chars": 529,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "기획자이자 마케터로 일하지만 조직 생활에 적응하기 어려워하고 지난 4~5년간 운의 기복으로 힘든 시기를 보냈던 구독자의 사연 인터뷰입니다. 2022년 전체 운세 영상을 통해 채널을 접하고 결정을 내리는 데 도움을 받았으며, 월간 운세 칼럼인 '도화지'를 추천하는 내용이 담겨 있습니다.",
+ "topics": [
+  "직장",
+  "운세 흐름",
+  "기타"
+ ],
+ "scope": "사례·상담",
+ "years": [
+  2022
+ ],
+ "claims": [],
+ "insights": [],
+ "keywords": [
+  "기획자",
+  "마케터",
+  "조직적응",
+  "운세 흐름",
+  "직업운",
+  "도화지",
+  "월간 운세"
+ ]
+}

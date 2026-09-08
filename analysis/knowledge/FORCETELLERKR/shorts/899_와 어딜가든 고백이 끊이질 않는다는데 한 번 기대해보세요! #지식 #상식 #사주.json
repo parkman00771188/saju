@@ -1,0 +1,86 @@
+{
+ "source": "data/FORCETELLERKR/shorts/899_와 어딜가든 고백이 끊이질 않는다는데 한 번 기대해보세요! #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "Qey-QFiAvPs",
+ "title": "와 어딜가든 고백이 끊이질 않는다는데 한 번 기대해보세요! #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=Qey-QFiAvPs",
+ "upload": "20230505",
+ "duration_sec": "56",
+ "views": "847",
+ "chars": 469,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "홍염살은 붉고 고운 운명을 뜻하는 신살로, 과거에는 이성이 많이 꼬여 불길하게 보았으나 현대에는 설레는 외모와 매력을 가진 연예인 사주로 풀이됩니다. 사주에 홍염살이 있는 사람은 어딜 가든 고백이 끊이지 않아 평생 외롭지 않을 수 있습니다. 다만 본인의 의도와 무관하게 주변의 짝사랑을 유발하여 일상에서 다소 피곤함을 겪을 수 있습니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "홍염살"
+    }
+   ],
+   "outcome": "어딜 가든 고백이 끊이지 않고 평생 외롭지 않다",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "어딜 가든 고백이 끊이지 않아 행복한 고민을 할 운명이실 수 있거든요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "홍염살"
+    }
+   ],
+   "outcome": "설레는 외모와 매력으로 연예인 기질을 보인다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "요즘에는 설레는 외모와 매력을 가진 최고의 연예인으로 해석되고 있답니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "홍염살"
+    }
+   ],
+   "outcome": "의도치 않게 짝사랑을 유발해 피곤할 수 있다",
+   "tag": "이성 문제·구설",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "하지만 의도치 않게 짝사랑을 유발할 수 있으니 조금 피곤할 수 있겠어요."
+  }
+ ],
+ "insights": [
+  "과거에는 이성이 많이 꼬여 흉하게 해석되던 신살이라도 현대적 관점에서는 매력과 스타성을 나타내는 긍정적 기운으로 재해석된다."
+ ],
+ "keywords": [
+  "홍염살",
+  "고백",
+  "외모",
+  "매력",
+  "연예인",
+  "짝사랑",
+  "길성",
+  "인기"
+ ]
+}

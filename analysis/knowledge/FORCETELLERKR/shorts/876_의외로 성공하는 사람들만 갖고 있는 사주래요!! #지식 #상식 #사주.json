@@ -1,0 +1,102 @@
+{
+ "source": "data/FORCETELLERKR/shorts/876_의외로 성공하는 사람들만 갖고 있는 사주래요!! #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "NlPsGhEWHos",
+ "title": "의외로 성공하는 사람들만 갖고 있는 사주래요!! #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=NlPsGhEWHos",
+ "upload": "20230602",
+ "duration_sec": "55",
+ "views": "3655",
+ "chars": 487,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "사주팔자에 십성 중 겁재가 있는 사람은 성공과 명예에 대한 욕구가 강해 부자가 될 운명이라고 설명합니다. 겁재가 많은 사주는 승부근성이 뛰어나 먼저 솔선수범하여 기회를 포착하므로 성공할 확률이 높습니다. 다만 과도한 승부근성으로 인해 가진 것을 모두 잃을 위험도 공존하지만, 반대로 큰돈을 거머쥘 수 있는 강력한 원동력이 됩니다.",
+ "topics": [
+  "금전",
+  "성격·기질",
+  "직장"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "겁재"
+    }
+   ],
+   "outcome": "부자가 될 운명이며 성공 확률이 높다",
+   "tag": "큰 재물·부자",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "자신의 사주팔자에 겁재라는 글자가 있다면 부자가 될 운명이라고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 과다",
+     "value": "겁재"
+    }
+   ],
+   "outcome": "먼저 솔선수범하여 좋은 기회를 포착한다",
+   "tag": "주도적·보스 기질",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주에 이런 겁재가 많이 있다면 우리 팀을 승리로 이끌고 싶은 마음이 강해 항상 먼저 나서서 적과 싸우며, 더 좋은 기회를 찾아다닌다고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 과다",
+     "value": "겁재"
+    }
+   ],
+   "outcome": "과한 승부근성으로 가진 것을 모두 잃을 수 있다",
+   "tag": "돈이 샘·손재",
+   "category": "금전",
+   "polarity": -1,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "",
+   "quote": "특유의 승부근성이 너무 과해져 가진 것들을 모두 잃을 때도 있지만"
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "겁재"
+    }
+   ],
+   "outcome": "큰돈을 벌 수 있는 강력한 힘을 발휘한다",
+   "tag": "큰돈·대박",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "반대로 큰돈을 벌 수도 있는 힘이라고 하니 겁재 참 대단하네요."
+  }
+ ],
+ "insights": [
+  "겁재는 경쟁심과 명예욕을 상징하여 큰 재물을 모으는 추진력이 되지만, 지나치면 손재수가 발생할 수 있는 양면성을 지닌다."
+ ],
+ "keywords": [
+  "겁재",
+  "십성",
+  "부자 사주",
+  "승부근성",
+  "성공운",
+  "명예욕",
+  "손재",
+  "큰돈"
+ ]
+}

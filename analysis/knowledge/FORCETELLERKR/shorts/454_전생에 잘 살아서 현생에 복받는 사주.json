@@ -1,0 +1,94 @@
+{
+ "source": "data/FORCETELLERKR/shorts/454_전생에 잘 살아서 현생에 복받는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "xrIOCmISSI8",
+ "title": "전생에 잘 살아서 현생에 복받는 사주",
+ "url": "https://www.youtube.com/watch?v=xrIOCmISSI8",
+ "upload": "20250610",
+ "duration_sec": "56",
+ "views": "21149",
+ "chars": 501,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "천덕귀인은 하늘의 덕을 입어 위기가 닥칠 때마다 보이지 않는 도움을 받게 되는 길신입니다. 사주 월지를 기준으로 지지나 천간에 특정 글자가 배치될 때 성립하며, 예컨대 묘월생에게 지지 신금이 있는 경우가 해당합니다. 특히 천덕귀인이 사주의 생일(일주)이나 생시(시주)에 위치하면 배우자 복이 매우 좋습니다.",
+ "topics": [
+  "연애·결혼",
+  "명리 이론",
+  "운세 흐름"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천덕귀인"
+    }
+   ],
+   "outcome": "어려울 때 보이지 않게 돕는 기운이 작용함",
+   "tag": "기타",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "이 귀인이 있으면 어려움이 닥칠 때마다 보이지 않는 곳에서 나를 도와주는 기운이 작용한다고 해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "월지",
+     "value": "묘"
+    },
+    {
+     "type": "지지",
+     "value": "신"
+    }
+   ],
+   "outcome": "천덕귀인이 성립함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "예를 들어 내 월지가 묘목이라면 내 지지 중에 신금이 있으면 천덕귀인이 있는 거야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천덕귀인"
+    },
+    {
+     "type": "구조·조합",
+     "value": "생일 또는 생시에 위치"
+    }
+   ],
+   "outcome": "배우자 복이 좋다",
+   "tag": "배우자 덕",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "특히 생일이나 생시에 있으면 배우자 복도 좋다고 하니 체크해 봐."
+  }
+ ],
+ "insights": [
+  "천덕귀인은 월지를 기준으로 다른 지지나 천간 글자의 조합을 살펴 성립 여부를 판단한다.",
+  "천덕귀인이 일주나 시주에 자리하면 길신의 작용력이 배우자 복으로 연결된다."
+ ],
+ "keywords": [
+  "천덕귀인",
+  "신살",
+  "월지",
+  "묘목",
+  "신금",
+  "배우자복",
+  "수호천사"
+ ]
+}

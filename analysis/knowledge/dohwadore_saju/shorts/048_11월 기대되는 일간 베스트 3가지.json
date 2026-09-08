@@ -1,0 +1,99 @@
+{
+ "source": "data/dohwadore_saju/shorts/048_11월 기대되는 일간 베스트 3가지.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "cs9sP9fifi0",
+ "title": "11월 기대되는 일간 베스트 3가지",
+ "url": "https://www.youtube.com/watch?v=cs9sP9fifi0",
+ "upload": "20251102",
+ "duration_sec": "39",
+ "views": "91072",
+ "chars": 382,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:49",
+ "summary": "11월에 가장 운이 좋을 것으로 기대되는 일간 베스트 3을 소개하는 내용이다. 3위 임수 일간은 지난달 골치 아팠던 문제가 해결되며 힘을 더 얻게 된다. 2위 경금 일간은 어렵게 생각했던 문제들이 의외로 쉽게 해결되는 운을 맞이한다. 1위 정화 일간은 사회적 성취와 더불어 이직 및 취업 등에서 좋은 인연과 기회를 얻는다.",
+ "topics": [
+  "운세 흐름",
+  "직장"
+ ],
+ "scope": "특정 월 운세",
+ "years": [
+  2025
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "월운",
+     "value": "11월"
+    }
+   ],
+   "outcome": "골치 아팠던 문제가 해결되고 힘을 더 얻는다",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "11월",
+   "advice": "",
+   "quote": "3순위 임수 일간, 지난달 골치 아팠던 문제가 해결되며 힘을 더 얻는다고 하고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    },
+    {
+     "type": "월운",
+     "value": "11월"
+    }
+   ],
+   "outcome": "어렵던 문제들이 의외로 쉽게 해결된다",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "11월",
+   "advice": "",
+   "quote": "2순위 경금 일간, 어렵게 생각됐던 문제들이 의외로 쉽게 해결될 수 있다고 하며"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "월운",
+     "value": "11월"
+    }
+   ],
+   "outcome": "사회적 성취와 이직·취업운이 강하게 따른다",
+   "tag": "취업·합격",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "11월",
+   "advice": "",
+   "quote": "1순위 정화 일간은 사회적 성취와 이직, 취업 등과 연이 깊다고 요약해 줬다."
+  }
+ ],
+ "insights": [
+  "11월에는 임수와 경금 일간의 문제 해결 운이 강하게 작용하며, 정화 일간은 직업적·사회적 성취 기회가 열린다."
+ ],
+ "keywords": [
+  "11월 운세",
+  "일간 운세",
+  "임수 일간",
+  "경금 일간",
+  "정화 일간",
+  "사회적 성취",
+  "취업운",
+  "이직운"
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "source": "data/FORCETELLERKR/shorts/595_닭띠 첫인상 솔직히 다들 공감하잖아요 👁️👁️ #사주 #운세.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "QbIGb19k7tc",
+ "title": "닭띠 첫인상 솔직히 다들 공감하잖아요 👁️👁️ #사주 #운세",
+ "url": "https://www.youtube.com/watch?v=QbIGb19k7tc",
+ "upload": "20240719",
+ "duration_sec": "39",
+ "views": "14635",
+ "chars": 338,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:43",
+ "summary": "닭띠는 마음씨가 따뜻하고 깔끔하며 일도 잘하는 등 다양한 장점을 지니고 있습니다. 그러나 본인의 의도나 생각과 무관하게 눈빛과 첫인상이 다소 무섭고 다가가기 어려운 편입니다. 이 때문에 좋은 사람임에도 불구하고 그 진가를 알아주는 사람이 적으므로, 평소 인상을 부드럽게 유지하는 것이 좋습니다.",
+ "topics": [
+  "성격·기질",
+  "궁합·인간관계",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "성격이 깔끔하고 따뜻하며 일도 잘한다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "성격도 좋고요, 깔끔하고요, 마음씨도 따뜻해요. 진짜 일도 잘하고 닭띠 최고예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "눈빛과 첫인상이 매서워 다가가기 어렵다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "눈을 착하게 떠라.",
+   "quote": "첫인상이 나빠요. 약간 눈빛이라 그래야 되나, 그게 좀 무섭고 다가가기 어려운 점이 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "진가를 알아주는 사람이 적다",
+   "tag": "인간관계 원만",
+   "category": "궁합·인간관계",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "눈을 착하게 떠라.",
+   "quote": "그래서 이게 참 좋은 사람인데, 진가를 아는 사람이 적다는 게 단점입니다."
+  }
+ ],
+ "insights": [
+  "닭띠는 아무런 생각을 하지 않는 무표정 상태에서도 날카로운 눈빛 때문에 타인에게 오해나 위압감을 줄 수 있다."
+ ],
+ "keywords": [
+  "닭띠",
+  "유금",
+  "첫인상",
+  "눈빛",
+  "성격",
+  "인간관계",
+  "개운법"
+ ]
+}

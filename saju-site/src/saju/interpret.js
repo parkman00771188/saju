@@ -1,6 +1,8 @@
 // 사주 결과(calc.js) → 심층 해석 데이터
 //  overview(총평 그룹) · character · cats[5] · years · monthsOf · patterns · evidence · deep(격국/용신/자리/뿌리/대운 전 생애/배우자/개운)
 import kb from '../data/kb_stats.json';
+import { getClaims, claimItems, pairItems } from './claims.js';
+import { BRANCH_ANIMAL as ANIMAL_OF } from './tables.js';
 import { determineGyeok } from './gyeokguk.js';
 import { pickYong, GROUP_EL } from './yongshin.js';
 import { buildPersonal } from './personal.js';
@@ -204,7 +206,16 @@ export function interpret(data) {
 
   // ---------- 원문 주장 층 ----------
   const CLAIM_META = kb.meta.claims || {};
-  const claimsOf = (key) => { const src = kb.concepts[key] || kb.patterns[key]; return (src?.claims || []).map(([label, n, docs, lift = 1]) => ({ label, n, docs, lift, cat: CLAIM_META[label]?.[0] || '운', pol: CLAIM_META[label]?.[1] ?? 0 })); };
+  // LLM 지식 색인(kb_claims.json: 영상마다 뽑은 조건→결과 주장)이 있으면 우선, 없으면 정규식 통계(kb_stats)로 대체
+  const mapItem = (it) => ({ label: it.tag, n: it.n, docs: it.docs, lift: it.lift, cat: it.cat || CLAIM_META[it.tag]?.[0] || '운', pol: it.pol > 0.34 ? 1 : it.pol < -0.34 ? -1 : (CLAIM_META[it.tag]?.[1] ?? 0), outs: it.outs || [], quote: it.quote || null, advice: it.advice || '', time: it.time || '항상', times: it.times || [], src: 'llm' });
+  const claimsOf = (key) => {
+    const items = claimItems(key);
+    if (items.length) return items.map(mapItem);
+    const src = kb.concepts[key] || kb.patterns[key];
+    // 정규식 공출현 문서 수는 명시적 주장 수보다 크게 잡히므로 0.3배로 맞춘다(두 출처가 섞여도 한쪽이 휩쓸지 않게)
+    return (src?.claims || []).map(([label, n, docs, lift = 1]) => ({ label, n: Math.round(n * 0.3), docs: Math.max(1, Math.round(docs * 0.3)), lift, cat: CLAIM_META[label]?.[0] || '운', pol: CLAIM_META[label]?.[1] ?? 0, outs: [], quote: null, advice: '', time: '항상', src: 'rx' }));
+  };
+  const decade = `${Math.floor((meta.manAge || 0) / 10) * 10}대`;
   const evidenceKeys = [
     [dayStem, `${S.title.split(' ')[0]} 일간`], [pillars.day.text, `${pillars.day.text} 일주`], [monthGod, `월지 ${monthGod}`], [detail.day.branchGod, `일지 ${detail.day.branchGod}`],
     ...sinsalNames.map((n) => [n, K.SINSAL[n]?.title || n]),
@@ -214,25 +225,76 @@ export function interpret(data) {
     [gyeok.key, gyeok.key],
     ...['year', 'month', 'day', 'time'].filter((k) => detail[k]).map((k) => [`${{ year: '년', month: '월', day: '일', time: '시' }[k]}지+${detail[k].branchGod}`, `${{ year: '년', month: '월', day: '일', time: '시' }[k]}지 ${detail[k].branchGod}`]),
     current.daeun ? [`${current.daeun.branchGod}운`, `${current.daeun.branchGod} 대운`] : null,
+    // ↓ LLM 지식 색인에만 있는 키(정규식 통계에는 없음): 띠, 자리 지지, 십성 그룹 과다/없음, 대운 간지, 나이대, 성별, 태어난 계절
+    [`띠=${pillars.year.branch}`, `${ANIMAL_OF[pillars.year.branch]}띠`],
+    [`월지=${pillars.month.branch}`, `월지 ${pillars.month.branch}`], [`일지=${dayBranch}`, `일지 ${dayBranch}`], pillars.time ? [`시지=${pillars.time.branch}`, `시지 ${pillars.time.branch}`] : null,
+    ...['비겁', '식상', '재성', '관성', '인성'].flatMap((g) => (lv(g) === '강' ? [[`${g}과다`, `${g} 과다`]] : lv(g) === '무' ? [[{ 비겁: '무비겁', 식상: '무식상', 재성: '무재', 관성: '무관', 인성: '무인성' }[g], `${g} 없음`]] : [])),
+    current.daeun ? [`대운=${current.daeun.text}`, `${current.daeun.text} 대운`] : null,
+    [`나이=${decade}`, decade], gender ? [`성별=${gender}`, gender === '남' ? '남성' : '여성'] : null, [`계절=${season}`, `${season} 태생`],
   ].filter(Boolean);
   // 키 특이도: 일주(60분의 1) 2.0 · 일간 1.5 · 격국/월지·일지 십성 1.2 · 오행 과다·결핍/구조 1.0 · 신살·신강신약·자리 십성·대운 0.7
-  const keySpec = (key) => key === pillars.day.text ? 2.0 : key === dayStem ? 1.5 : (key === gyeok.key || key === monthGod || key === detail.day.branchGod || key.includes('+')) ? 1.2 : (/(과다|결핍)$/.test(key) || (P.STRUCT && P.STRUCT[key])) ? 1.0 : 0.7;
+  const keySpec = (key) => key === pillars.day.text ? 2.0 : key === dayStem ? 1.5 : (key === gyeok.key || key === monthGod || key === detail.day.branchGod || key.includes('+')) ? 1.2 : (/(과다|결핍)$/.test(key) || (P.STRUCT && P.STRUCT[key]) || /^(월지|일지)=/.test(key) || /^무(재|관|인성|식상|비겁)$/.test(key)) ? 1.0 : /^띠=/.test(key) ? 0.9 : /^시지=/.test(key) ? 0.8 : /^(나이|계절)=/.test(key) ? 0.6 : /^성별=/.test(key) ? 0.5 : 0.7;
   const evidence = [];
-  for (const [key, title] of evidenceKeys) { if (evidence.some((e) => e.key === key)) continue; const claims = claimsOf(key); if (claims.length) evidence.push({ key, title, claims, stats: kb.concepts[key] || kb.patterns[key] }); }
+  // 나이대·성별·계절은 누구에게나 걸리는 넓은 조건이라 단독으로는 쓰지 않고, 다른 글자와 짝을 이룰 때(예: 여성+정관 혼잡)만 근거로 삼는다
+  const pairOnly = (key) => /^(나이|성별|계절)=/.test(key);
+  for (const [key, title] of evidenceKeys) { if (pairOnly(key) || evidence.some((e) => e.key === key)) continue; const claims = claimsOf(key); if (claims.length) evidence.push({ key, title, claims, stats: kb.concepts[key] || kb.patterns[key] }); }
+  // 두 조건이 함께 걸린 주장(짝 키): '월지 정관 + 정관 대운 → 직장 변동' 처럼 조합에만 해당하는 이야기라 더 무겁게 본다
+  if (getClaims()) {
+    const singles = evidenceKeys.map(([k]) => k), titleOf = Object.fromEntries(evidenceKeys);
+    for (let i = 0; i < singles.length; i++) for (let k = i + 1; k < singles.length; k++) {
+      const items = pairItems(singles[i], singles[k]); if (!items.length) continue;
+      const key = items[0].pair; if (evidence.some((e) => e.key === key)) continue;
+      evidence.push({ key, title: `${titleOf[singles[i]]}+${titleOf[singles[k]]}`, pair: true, claims: items.map(mapItem), stats: null });
+    }
+  }
   const evidenceByCat = {};
   for (const e of evidence) for (const c of e.claims) {
     const bucket = (evidenceByCat[c.cat] ||= {});
-    const row = (bucket[c.label] ||= { label: c.label, pol: c.pol, weight: 0, docs: 0, n: 0, from: [], liftSum: 0, fromW: {} });
+    const row = (bucket[c.label] ||= { label: c.label, cat: c.cat, pol: c.pol, weight: 0, docs: 0, n: 0, from: [], liftSum: 0, fromW: {}, outs: {}, quotes: [], advice: '', times: {} });
     // 리프트(그 글자에서 유독 자주 나오는 정도)로 가중: 어떤 사주에나 나오는 흔한 이야기는 내려가고, 이 조합에서 두드러진 이야기가 올라온다
-    const w = c.docs * keySpec(e.key) * Math.min(Math.max(c.lift || 1, 0.5), 4); row.weight += w; row.docs += c.docs; row.n += c.n || 0; row.liftSum += (c.lift || 1) * c.docs; row.fromW[e.title] = (row.fromW[e.title] || 0) + w; (row.fromN ||= {})[e.title] = (row.fromN[e.title] || 0) + c.docs;
+    const w = c.docs * (e.pair ? 1.8 : keySpec(e.key)) * Math.min(Math.max(c.lift || 1, 0.5), 4); row.weight += w; row.docs += c.docs; row.n += c.n || 0; row.liftSum += (c.lift || 1) * c.docs; row.fromW[e.title] = (row.fromW[e.title] || 0) + w; (row.fromN ||= {})[e.title] = (row.fromN[e.title] || 0) + c.docs;
     if (!row.from.includes(e.title)) row.from.push(e.title);
+    for (const o of c.outs || []) row.outs[o] = (row.outs[o] || 0) + c.docs;
+    if (c.quote && row.quotes.length < 3 && !row.quotes.some((q) => q[0] === c.quote[0])) row.quotes.push([...c.quote, e.title]);
+    if (c.advice && !row.advice) row.advice = c.advice;
+    if (c.time && c.time !== '항상') row.times[c.time] = (row.times[c.time] || 0) + 1;
+    if (c.pol && !row.pol) row.pol = c.pol;
   }
   for (const cat of Object.keys(evidenceByCat)) {
-    const rows = Object.values(evidenceByCat[cat]).map((r) => { const from = Object.keys(r.fromW).sort((a, b) => r.fromW[b] - r.fromW[a]); return { ...r, from, fromN: from.map((t) => [t, r.fromN?.[t] || 0]), lift: r.docs ? Math.round((r.liftSum / r.docs) * 10) / 10 : 1 }; }).sort((a, b) => b.weight - a.weight);
+    const rows = Object.values(evidenceByCat[cat]).map((r) => {
+      const from = Object.keys(r.fromW).sort((a, b) => r.fromW[b] - r.fromW[a]);
+      const outs = Object.keys(r.outs).sort((a, b) => r.outs[b] - r.outs[a]).slice(0, 3);
+      return { ...r, from, fromN: from.map((t) => [t, r.fromN?.[t] || 0]), outs, lift: r.docs ? Math.round((r.liftSum / r.docs) * 10) / 10 : 1, text: P.CLAIM_TEXT[r.label] || (outs[0] ? `${outs[0]}.` : '') };
+    }).sort((a, b) => b.weight - a.weight);
     const distinct = rows.filter((r) => r.lift >= 0.9);   // 평균보다 덜 나오는(흔하기만 한) 이야기는 뒤로
-    evidenceByCat[cat] = (distinct.length >= 3 ? distinct : rows).slice(0, 8).map((r) => ({ ...r, text: P.CLAIM_TEXT[r.label] || '' }));
+    evidenceByCat[cat] = (distinct.length >= 3 ? distinct : rows).slice(0, 8);
   }
-  const spread = (rows, n, perCat = 2) => { const cnt = {}; const out = []; for (const r of rows) { const c = CLAIM_META[r.label]?.[0] || '운'; if ((cnt[c] || 0) >= perCat) continue; cnt[c] = (cnt[c] || 0) + 1; out.push(r); if (out.length >= n) break; } return out; };
+  // 올해(세운)에 한정된 전문가 이야기: 'Y2026 & 내 글자' 짝 키(월별 시기 포함) + 연도 전체 이야기(낮은 가중)
+  const yearClaims = (() => {
+    if (!getClaims()) return [];
+    const Y = `Y${nowY}`, acc = {};
+    const add = (items, title, w0) => {
+      for (const it of items) {
+        const c = mapItem(it);
+        const r = (acc[c.label] ||= { label: c.label, cat: c.cat, pol: c.pol, weight: 0, docs: 0, n: 0, from: [], outs: {}, quotes: [], advice: '', times: {}, liftSum: 0 });
+        const w = c.docs * w0 * Math.min(Math.max(c.lift || 1, 0.5), 4); r.weight += w; r.docs += c.docs; r.n += c.n || 0; r.liftSum += (c.lift || 1) * c.docs;
+        if (!r.from.includes(title)) r.from.push(title);
+        for (const o of c.outs) r.outs[o] = (r.outs[o] || 0) + c.docs;
+        if (c.quote && r.quotes.length < 2) r.quotes.push([...c.quote, title]);
+        if (c.advice && !r.advice) r.advice = c.advice;
+        for (const t of (c.times.length ? c.times : [c.time])) if (t && t !== '항상') r.times[t] = (r.times[t] || 0) + 1;
+        if (c.pol && !r.pol) r.pol = c.pol;
+      }
+    };
+    for (const [k, title] of evidenceKeys) add(pairItems(Y, k), title, 1.8 * keySpec(k));
+    add(claimItems(Y), `${nowY}년 전체 흐름`, 0.35);
+    return Object.values(acc).map((r) => {
+      const outs = Object.keys(r.outs).sort((a, b) => r.outs[b] - r.outs[a]).slice(0, 3);
+      const times = Object.keys(r.times).sort((a, b) => r.times[b] - r.times[a]).slice(0, 2);
+      return { ...r, outs, times, lift: r.docs ? Math.round((r.liftSum / r.docs) * 10) / 10 : 1, text: P.CLAIM_TEXT[r.label] || (outs[0] ? `${outs[0]}.` : '') };
+    }).sort((a, b) => b.weight - a.weight).slice(0, 8);
+  })();
+  const spread = (rows, n, perCat = 2) => { const cnt = {}; const out = []; for (const r of rows) { const c = r.cat || CLAIM_META[r.label]?.[0] || '운'; if ((cnt[c] || 0) >= perCat) continue; cnt[c] = (cnt[c] || 0) + 1; out.push(r); if (out.length >= n) break; } return out; };
   const evidenceSummary = (() => { const all = Object.values(evidenceByCat).flat().sort((a, b) => b.weight - a.weight); return { pos: spread(all.filter((r) => r.pol > 0), 6), neg: spread(all.filter((r) => r.pol < 0), 6), total: evidence.reduce((a, e) => a + (e.stats?.docs || 0), 0), all: spread(all, 8, 2) }; })();
   const kwKeys = [dayStem, pillars.day.text, monthGod, detail.day.branchGod, ...sinsalNames.slice(0, 3), ...structs.slice(0, 2), st.label === '중화' ? null : st.label].filter(Boolean);
   const keywords = [];
@@ -572,7 +634,7 @@ export function interpret(data) {
 
   return {
     strength: st, strengthProfile: sp, profile: prof, keywords, climate, patterns, overview, character, cats, years, monthsOf, advice, needEl, issues, yearExpert: { now: yeNow, next: yeNext },
-    evidence, evidenceByCat, evidenceSummary, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
-    gyeok, yong, positions, roots, summary, meta: kb.meta,
+    evidence, evidenceByCat, evidenceSummary, yearClaims, daeunFlow: daeunAll.filter((d) => d.endYear >= nowY).slice(0, 3), daeunAll, lifeStages,
+    gyeok, yong, positions, roots, summary, meta: { ...kb.meta, claims_docs: getClaims()?.meta?.docs || 0, claims_n: getClaims()?.meta?.claims || 0 },
   };
 }

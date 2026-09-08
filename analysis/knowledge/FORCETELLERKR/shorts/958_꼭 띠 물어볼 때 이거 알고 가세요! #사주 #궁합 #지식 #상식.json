@@ -1,0 +1,225 @@
+{
+ "source": "data/FORCETELLERKR/shorts/958_꼭 띠 물어볼 때 이거 알고 가세요! #사주 #궁합 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "k7ZgKhpZtig",
+ "title": "꼭 띠 물어볼 때 이거 알고 가세요! #사주 #궁합 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=k7ZgKhpZtig",
+ "upload": "20230125",
+ "duration_sec": "47",
+ "views": "3792",
+ "chars": 430,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "12지지에서 서로 마주 보며 음양의 조화를 이루는 육합 관계의 띠는 서로의 단점을 보완하고 시너지를 내어 궁합이 좋습니다. 자축육합은 도전적인 쥐와 우직한 소가 만나 시너지를 내며, 인해육합은 포부는 크지만 생활력이 약한 호랑이와 생활력이 강한 돼지가 서로를 보완합니다. 묘술육합은 고집이 세고 전문직에 능하나 외로움을 타는 토끼와 붙임성이 좋은 개가 만나 찰떡궁합을 이룹니다.",
+ "topics": [
+  "궁합·인간관계",
+  "명리 이론",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "합충형파해",
+     "value": "육합"
+    }
+   ],
+   "outcome": "음양의 조화를 이루어 궁합이 잘 맞는다",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "육합은 원을 따라 12지지를 나열했을 때 서로 마주 보는 지지를 뜻하는데, 함께할 때 음양의 조화를 이뤄서 궁합이 잘 맞는다고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "자"
+    },
+    {
+     "type": "띠",
+     "value": "축"
+    },
+    {
+     "type": "합충형파해",
+     "value": "자축합"
+    }
+   ],
+   "outcome": "서로 다르지만 함께하면 시너지가 난다",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "도전정신이 있고 똑똑한 쥐와 우직하게 목표를 향해 나아가는 소의 조합으로, 서로 달라 보이지만 함께하면 시너지가 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "자"
+    }
+   ],
+   "outcome": "도전정신이 있고 똑똑하다",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "도전정신이 있고 똑똑한 쥐"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "축"
+    }
+   ],
+   "outcome": "우직하게 목표를 향해 나아간다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "우직하게 목표를 향해 나아가는 소"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "인"
+    },
+    {
+     "type": "띠",
+     "value": "해"
+    },
+    {
+     "type": "합충형파해",
+     "value": "인해합"
+    }
+   ],
+   "outcome": "서로의 부족한 점을 채워주며 잘 맞는다",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "호랑이는 포부에 비해 생활력이 떨어지지만 돼지는 기회를 잘 포착하고 생활력이 강하기 때문에, 상대의 부족한 점을 채워줄 수 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "인"
+    }
+   ],
+   "outcome": "포부에 비해 생활력이 떨어진다",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "호랑이는 포부에 비해 생활력이 떨어지지만"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "해"
+    }
+   ],
+   "outcome": "기회를 잘 포착하고 생활력이 강하다",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "돼지는 기회를 잘 포착하고 생활력이 강하기 때문에"
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "묘"
+    },
+    {
+     "type": "띠",
+     "value": "술"
+    },
+    {
+     "type": "합충형파해",
+     "value": "묘술합"
+    }
+   ],
+   "outcome": "외로움을 달래주고 찰떡궁합을 이룬다",
+   "tag": "궁합 좋음",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "그런 토끼 옆에 붙임성이 좋고 함께하는 것을 좋아하는 개가 있어 준다면 찰떡궁합입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "묘"
+    }
+   ],
+   "outcome": "고집 세고 전문직에 능하나 외로울 수 있다",
+   "tag": "전문직·기술",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "토끼는 고집이 세고 한 우물을 파고들어서 전문직에서 활약하기 좋지만 외로울 수 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "띠",
+     "value": "술"
+    }
+   ],
+   "outcome": "붙임성이 좋고 함께하는 것을 좋아한다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "붙임성이 좋고 함께하는 것을 좋아하는 개"
+  }
+ ],
+ "insights": [
+  "육합은 12지지를 원형으로 배치했을 때 마주 보는 지지끼리의 결합으로, 음양의 조화와 성향 보완을 통해 긍정적인 시너지를 낸다."
+ ],
+ "keywords": [
+  "육합",
+  "띠궁합",
+  "자축합",
+  "인해합",
+  "묘술합",
+  "쥐띠",
+  "소띠",
+  "호랑이띠",
+  "돼지띠",
+  "토끼띠",
+  "개띠"
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "source": "data/FORCETELLERKR/shorts/638_재벌집 사주의 진짜 정체 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "QMeHeVkOvPI",
+ "title": "재벌집 사주의 진짜 정체 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=QMeHeVkOvPI",
+ "upload": "20240407",
+ "duration_sec": "31",
+ "views": "2789",
+ "chars": 209,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:43",
+ "summary": "드라마 '재벌집 막내아들'에서 언급된 '재고귀인'에 대해 명리학적 사실 여부를 확인한 영상입니다. 대중적으로는 재고귀인이 있으면 하늘에서 재물 창고가 내려 복을 타고난 사주로 알려져 있습니다. 그러나 실제 명리학 고전 문헌에서는 재고귀인이라는 개념을 찾을 수 없어 신빙성이 부족하다고 설명합니다.",
+ "topics": [
+  "명리 이론",
+  "금전"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "재고귀인"
+    }
+   ],
+   "outcome": "하늘에서 재물 창고가 내려 큰 복을 타고남",
+   "tag": "큰 재물·부자",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "추측",
+   "time": "항상",
+   "advice": "",
+   "quote": "하늘에서 재물 창고가 내린다는, 그래 사주에 재고귀인 있으면 복을 타고났다 이렇게 나와 있기도 하더라고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "재고귀인"
+    }
+   ],
+   "outcome": "고전 문헌상 근거가 없어 신빙성이 떨어짐",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "문헌상에서는 찾을 수가 없었습니다. 신빙성이 조금 없는, 문헌에 없어서 좀 더 생각을 해봐야 되겠습니다."
+  }
+ ],
+ "insights": [
+  "드라마 등 대중매체에서 다뤄지는 '재고귀인' 같은 신살은 정통 명리 문헌에 명확한 근거가 없으므로 맹신하기보다 신중히 검토해야 한다."
+ ],
+ "keywords": [
+  "재고귀인",
+  "재물창고",
+  "재벌집 사주",
+  "신살",
+  "명리 문헌",
+  "사주 지식"
+ ]
+}

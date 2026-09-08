@@ -1,0 +1,278 @@
+{
+ "source": "data/FORCETELLERKR/shorts/675_2024년 별자리별 행운의 컬러 #지식 #상식 #별자리.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "mLHcvC_5iMw",
+ "title": "2024년 별자리별 행운의 컬러 #지식 #상식 #별자리",
+ "url": "https://www.youtube.com/watch?v=mLHcvC_5iMw",
+ "upload": "20240126",
+ "duration_sec": "54",
+ "views": "1075",
+ "chars": 381,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:44",
+ "summary": "2024년에 별자리별로 행운을 불러올 수 있는 맞춤 컬러를 소개하는 영상입니다. 각 별자리에 맞는 행운의 색상 물건을 소지하거나 코디에 활용하는 개운법을 추천합니다. 양자리부터 물고기자리까지 12개 별자리 각각에 대응하는 행운의 색상을 정리하여 안내합니다.",
+ "topics": [
+  "개운·조언",
+  "운세 흐름"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2024
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "양자리"
+    }
+   ],
+   "outcome": "검은색과 흰색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "검은색이나 흰색 물건을 지니거나 코디에 활용한다.",
+   "quote": "2024년에 행운을 불러오고 싶다면 이 색의 물건을 지니고 다니거나 행운의 색으로 코디를 하면 좋다고 하는데요... 양자리 검은색, 흰색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "황소자리"
+    }
+   ],
+   "outcome": "베이지와 오렌지색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "베이지나 오렌지색 물건을 지니거나 코디에 활용한다.",
+   "quote": "황소자리 베이지, 오렌지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "쌍둥이자리"
+    }
+   ],
+   "outcome": "흰색과 아이보리색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "흰색이나 아이보리색 물건을 지니거나 코디에 활용한다.",
+   "quote": "쌍둥이자리 흰색, 아이보리."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "게자리"
+    }
+   ],
+   "outcome": "자주색과 검은색 계열이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "자주색이나 검은색 계열 물건을 지니거나 코디에 활용한다.",
+   "quote": "게자리 자주색, 검은색 계열."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "사자자리"
+    }
+   ],
+   "outcome": "노란색과 하늘색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "노란색이나 하늘색 물건을 지니거나 코디에 활용한다.",
+   "quote": "사자자리 노란색, 하늘색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "처녀자리"
+    }
+   ],
+   "outcome": "흰색과 분홍색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "흰색이나 분홍색 물건을 지니거나 코디에 활용한다.",
+   "quote": "처녀자리 흰색, 분홍색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "천칭자리"
+    }
+   ],
+   "outcome": "파스텔톤과 녹색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "파스텔톤이나 녹색 물건을 지니거나 코디에 활용한다.",
+   "quote": "천칭자리 파스텔톤, 녹색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "전갈자리"
+    }
+   ],
+   "outcome": "바다색과 야광색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "바다색이나 야광색 물건을 지니거나 코디에 활용한다.",
+   "quote": "전갈자리 바다색, 야광색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "사수자리"
+    }
+   ],
+   "outcome": "초록 계열과 노란색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "초록 계열이나 노란색 물건을 지니거나 코디에 활용한다.",
+   "quote": "사수자리 초록 계열, 노란색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "염소자리"
+    }
+   ],
+   "outcome": "연두색과 자홍색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "연두색이나 자홍색 물건을 지니거나 코디에 활용한다.",
+   "quote": "염소자리 연두색, 자홍색."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "물병자리"
+    }
+   ],
+   "outcome": "아이보리와 오렌지색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "아이보리나 오렌지색 물건을 지니거나 코디에 활용한다.",
+   "quote": "물병자리 아이보리, 오렌지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년"
+    },
+    {
+     "type": "기타",
+     "value": "물고기자리"
+    }
+   ],
+   "outcome": "파란색과 초록색이 행운을 부름",
+   "tag": "개운법",
+   "category": "개운·조언",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "파란색이나 초록색 물건을 지니거나 코디에 활용한다.",
+   "quote": "물고기자리 파란색, 초록색."
+  }
+ ],
+ "insights": [
+  "자신에게 맞는 행운의 색상을 지니거나 의상 코디에 적용하는 방식으로 긍정적인 운을 불러올 수 있다."
+ ],
+ "keywords": [
+  "2024년",
+  "별자리",
+  "행운의 컬러",
+  "개운법",
+  "코디",
+  "양자리",
+  "물고기자리"
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "source": "data/FORCETELLERKR/shorts/721_말년에 운이 좋아지는 사주 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "af9RaRjeXGM",
+ "title": "말년에 운이 좋아지는 사주 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=af9RaRjeXGM",
+ "upload": "20231207",
+ "duration_sec": "44",
+ "views": "1523",
+ "chars": 365,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:45",
+ "summary": "사주에서 태어난 시간을 의미하는 시주는 말년 운을 보여주는 자리입니다. 시주에 긍정적인 길신인 반안살이나 장성살이 있으면 말년에 대박 운을 맞이하게 됩니다. 시주에 반안살이 위치하면 말년에 자식의 덕을 보고, 장성살이 위치하면 일적으로 크게 성공합니다.",
+ "topics": [
+  "운세 흐름",
+  "직장",
+  "가족·자식"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "반안살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "시주"
+    }
+   ],
+   "outcome": "말년에 자식의 덕을 본다",
+   "tag": "자식 인연·출산",
+   "category": "가족·자식",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "말년",
+   "advice": "",
+   "quote": "반안살이 시주에 있으면 자식의 덕을 보며"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "장성살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "시주"
+    }
+   ],
+   "outcome": "말년에 일로서 크게 성공한다",
+   "tag": "발복·성공",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "말년",
+   "advice": "",
+   "quote": "장성살이 있는 경우에는 일로서 크게 성공한다고 해요."
+  }
+ ],
+ "insights": [
+  "사주에서 태어난 시간을 뜻하는 시주는 말년의 운을 주관한다.",
+  "신살 중 장성살과 반안살은 다른 흉살들과 달리 긍정적인 작용을 하는 대표적인 길신살이다."
+ ],
+ "keywords": [
+  "시주",
+  "말년운",
+  "반안살",
+  "장성살",
+  "자식덕",
+  "성공운",
+  "신살"
+ ]
+}

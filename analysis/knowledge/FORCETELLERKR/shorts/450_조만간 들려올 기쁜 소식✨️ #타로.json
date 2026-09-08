@@ -1,0 +1,68 @@
+{
+ "source": "data/FORCETELLERKR/shorts/450_조만간 들려올 기쁜 소식✨️ #타로.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "Xe7UdO-0c6c",
+ "title": "조만간 들려올 기쁜 소식✨️ #타로",
+ "url": "https://www.youtube.com/watch?v=Xe7UdO-0c6c",
+ "upload": "20250615",
+ "duration_sec": "59",
+ "views": "24783",
+ "chars": 405,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "두 장의 카드 중 하나를 선택하여 조만간 찾아올 기쁜 소식을 점치는 타로 리딩 영상이다. 첫 번째 카드를 고른 사람은 벗어나고 싶었던 관계나 부정적 감정의 굴레에서 벗어나 자신감과 열정을 되찾는 해방을 맞이하게 된다. 두 번째 카드를 고른 사람은 오랜 시간 견뎌왔던 혼란을 벗어나 운명의 수레바퀴와 함께 내면의 깊은 휴식과 평온을 얻게 된다.",
+ "topics": [
+  "운세 흐름",
+  "기타"
+ ],
+ "scope": "기타",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "첫 번째 타로 카드 선택"
+    }
+   ],
+   "outcome": "원치 않던 관계·상황에서 벗어나 자신감을 되찾음",
+   "tag": "새 시작",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "조만간",
+   "advice": "",
+   "quote": "그동안 빠져나오고 싶었던 관계나 상황, 감정에서 드디어 벗어날 수 있게 된대요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "두 번째 타로 카드 선택"
+    }
+   ],
+   "outcome": "혼란스러웠던 상황을 벗어나 내면의 깊은 쉼을 얻음",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "조만간",
+   "advice": "",
+   "quote": "이제는 혼란스러웠던 상황을 벗어나서 내면의 깊은 쉼과 평온함이 여러분을 찾아올 거예요."
+  }
+ ],
+ "insights": [
+  "사주명리학적 분석 대신 타로 카드를 선택하여 가까운 시일 내의 운세 변화(해방, 휴식)를 리딩하는 콘텐츠이다."
+ ],
+ "keywords": [
+  "타로",
+  "기쁜 소식",
+  "해방",
+  "휴식",
+  "자신감",
+  "운명의 수레바퀴",
+  "내면의 평온"
+ ]
+}

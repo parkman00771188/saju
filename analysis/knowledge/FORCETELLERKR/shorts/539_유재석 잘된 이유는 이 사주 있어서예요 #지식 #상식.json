@@ -1,0 +1,52 @@
+{
+ "source": "data/FORCETELLERKR/shorts/539_유재석 잘된 이유는 이 사주 있어서예요 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "vphbA4l3MTQ",
+ "title": "유재석 잘된 이유는 이 사주 있어서예요 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=vphbA4l3MTQ",
+ "upload": "20250226",
+ "duration_sec": "49",
+ "views": "10400",
+ "chars": 406,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:42",
+ "summary": "방송인 유재석의 오랜 무명 생활 극복과 대성공의 비결로 사주에 있는 길신인 '황은대사'를 소개합니다. 황은대사는 고생과 성공을 등가 교환하는 특성을 가진 신살로, 깊은 시련을 겪은 만큼 커다란 결실을 얻게 됩니다. 유재석처럼 겸손한 마음가짐으로 주변 사람들을 챙기며 인내하면 큰 성공으로 보답받을 수 있다고 조언합니다.",
+ "topics": [
+  "운세 흐름",
+  "명리 이론",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "황은대사"
+    }
+   ],
+   "outcome": "고생을 겪은 뒤 큰 성공으로 보답받는다",
+   "tag": "늦은 성공·대기만성",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "겸손한 마음으로 주변 사람들을 잘 챙겨야 한다.",
+   "quote": "황은대사는 한마디로 고생과 성공을 등가 교환하는 사주야."
+  }
+ ],
+ "insights": [
+  "황은대사는 고난과 시련의 크기만큼 이후의 성공과 결실로 맞바꾸어 발복하게 만드는 길신의 작용을 한다."
+ ],
+ "keywords": [
+  "황은대사",
+  "신살",
+  "길신",
+  "유재석",
+  "대기만성",
+  "성공운"
+ ]
+}

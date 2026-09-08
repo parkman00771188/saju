@@ -1,0 +1,80 @@
+{
+ "source": "data/FORCETELLERKR/shorts/739_2024년 신년에 미친 듯이 인기가 폭발하는 띠는 인기가 폭발한닭!!!! #사주 #운세 #2024년 #2024년운세 #띠별운세.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "j7-A3_lgQLk",
+ "title": "2024년 신년에 미친 듯이 인기가 폭발하는 띠는? 인기가 폭발한닭!!!! #사주 #운세 #2024년 #2024년운세 #띠별운세 #닭띠",
+ "url": "https://www.youtube.com/watch?v=j7-A3_lgQLk",
+ "upload": "20231118",
+ "duration_sec": "18",
+ "views": "5958",
+ "chars": 90,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:45",
+ "summary": "2024년 신년에 이성에게 큰 인기를 얻는 띠로 닭띠가 지목되었습니다. 특히 연예나 엔터테인먼트 계통에 종사하는 닭띠 인물이 많은 대중적 인기를 얻고 주목받게 됩니다.",
+ "topics": [
+  "연애·결혼",
+  "운세 흐름"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2024
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년 갑진년"
+    },
+    {
+     "type": "띠",
+     "value": "유"
+    }
+   ],
+   "outcome": "이성에게 큰 인기를 얻음",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2024년",
+   "advice": "",
+   "quote": "이성에게 인기가 있는 띠는 닭띠입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2024년 갑진년"
+    },
+    {
+     "type": "띠",
+     "value": "유"
+    },
+    {
+     "type": "기타",
+     "value": "연예·엔터테인먼트 종사"
+    }
+   ],
+   "outcome": "대중적 인기를 크게 끔",
+   "tag": "유명세·연예 기질",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2024년",
+   "advice": "",
+   "quote": "연예, 엔터테인먼트에 종사하는 사람 중에서는 닭띠 연예인이 인기를 끌게 됩니다."
+  }
+ ],
+ "insights": [],
+ "keywords": [
+  "2024년",
+  "갑진년",
+  "닭띠",
+  "유금",
+  "인기운",
+  "연애운",
+  "엔터테인먼트"
+ ]
+}

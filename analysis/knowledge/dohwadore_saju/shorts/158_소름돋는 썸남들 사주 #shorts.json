@@ -1,0 +1,98 @@
+{
+ "source": "data/dohwadore_saju/shorts/158_소름돋는 썸남들 사주 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "XjCbcxYISyo",
+ "title": "소름돋는 썸남들 사주  #shorts",
+ "url": "https://www.youtube.com/watch?v=XjCbcxYISyo",
+ "upload": "20240417",
+ "duration_sec": "46",
+ "views": "30938",
+ "chars": 377,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "본인이 정화 일간일 때 호감을 표현하거나 플러팅을 해오는 남성들은 십중팔구 천간합을 이루는 임수 일간이거나 인성에 해당하는 목 일간인 경우가 많습니다. 특히 임수 일간 남성은 호감이 있을 때 눈빛부터 진하게 쳐다보는 특징이 있습니다. 이후 당일 저녁이나 며칠 내로 연락을 취해오며 적극적으로 다가오는 경향이 있습니다.",
+ "topics": [
+  "연애·결혼",
+  "궁합·인간관계"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "일간",
+     "value": "임"
+    }
+   ],
+   "outcome": "임수 일간에게 호감과 플러팅을 받기 쉽다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "정화 일간이면 아무래도 임수 일간, 십중팔구는 임수 일간이었고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "오행 구성",
+     "value": "목"
+    }
+   ],
+   "outcome": "목 일간 이성에게 호감을 받는다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "십중팔구는 임수 일간이었고 이제 나머지는 목 일간."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "성별",
+     "value": "남"
+    }
+   ],
+   "outcome": "진한 눈빛으로 응시하며 며칠 내로 연락한다",
+   "tag": "연애·만남",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "눈빛부터가 살짝 달라요. 왜 자꾸 나를 진하게 쳐다보지 싶으면 며칠 후나 아니면 그날 저녁에 연락 오고"
+  }
+ ],
+ "insights": [
+  "자신에게 유독 호감을 표시하고 플러팅을 하는 이성들의 일간을 살펴보면 천간합이나 생조 관계 등 특정 일간에 집중되는 경향이 있다.",
+  "정화 일간에게는 천간합을 이루는 정관인 임수 일간 남성이 강한 이성적 끌림을 느끼고 먼저 다가오는 경우가 많다."
+ ],
+ "keywords": [
+  "정화일간",
+  "임수일간",
+  "목일간",
+  "정임합",
+  "플러팅",
+  "썸남",
+  "일간궁합",
+  "이성운"
+ ]
+}

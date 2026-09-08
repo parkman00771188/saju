@@ -1,0 +1,68 @@
+{
+ "source": "data/FORCETELLERKR/shorts/314_매력이 콸콸 넘치는 사주 오행은.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "HGLO5BAIndk",
+ "title": "매력이 콸콸 넘치는 사주 오행은",
+ "url": "https://www.youtube.com/watch?v=HGLO5BAIndk",
+ "upload": "20251118",
+ "duration_sec": "44",
+ "views": "22920",
+ "chars": 407,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:37",
+ "summary": "사주에 물(수) 오행이 과다한 사람은 똑똑하고 청순하면서도 귀엽고 편안한 복합적인 매력을 갖추고 있습니다. 깊은 바닷속 같은 신비로운 분위기를 풍겨 이성의 마음을 쉽게 사로잡으며, 한 번 빠지면 헤어나오기 힘든 강한 매력을 지닙니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "똑똑함과 청순함, 귀여운 매력을 지닌다",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "이렇게 사주에 물이 많으면 똑똑하고 청순한 모습과 동시에 귀엽고 편안한 매력까지 갖고 있어서"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "이성을 쉽게 홀리며 강하게 빠져들게 한다",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "이성들의 마음을 쉽게 홀릴 수 있어. 더불어 깊은 바닷속처럼 신비로운 매력이 있어서 이 사람들에게 한번 빠지면 헤어나오기 힘들다고."
+  }
+ ],
+ "insights": [
+  "사주에 수(水) 오행이 과다하면 지적이고 신비로운 바다의 기운이 발현되어 이성을 끌어당기는 독특한 매력으로 작용한다."
+ ],
+ "keywords": [
+  "수 오행",
+  "오행 과다",
+  "물 사주",
+  "매력",
+  "인기",
+  "신비로운 매력",
+  "이성운"
+ ]
+}

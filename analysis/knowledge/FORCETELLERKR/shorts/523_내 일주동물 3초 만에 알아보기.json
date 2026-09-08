@@ -1,0 +1,85 @@
+{
+ "source": "data/FORCETELLERKR/shorts/523_내 일주동물 3초 만에 알아보기.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "eBqh4SFViv8",
+ "title": "내 일주동물 3초 만에 알아보기",
+ "url": "https://www.youtube.com/watch?v=eBqh4SFViv8",
+ "upload": "20250326",
+ "duration_sec": "45",
+ "views": "13698",
+ "chars": 437,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "일반적인 띠는 태어난 해를 기준으로 하지만, 일주 동물은 태어난 날의 간지를 기준으로 정해집니다. 일주는 사주에서 개인의 주된 행동 양식을 파악하는 데 핵심적인 역할을 합니다. 특히 천간인 일간은 타고난 고유 성질을 나타내며, 지지인 일지는 타인에게 비치는 자신의 모습을 보여줍니다.",
+ "topics": [
+  "명리 이론",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "일주"
+    }
+   ],
+   "outcome": "개인의 행동 양식을 나타냄",
+   "tag": "성실·책임감",
+   "category": "명리 이론",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "일주 동물은 내가 태어난 일에 해당하는 동물이야. 그래서 일주 동물은 사주에서 나의 행동 양식을 알려주는 매우 중요한 역할을 하지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "일간"
+    }
+   ],
+   "outcome": "타고난 고유한 성질을 나타냄",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "일간은 내가 태어나면서 부여받은 고유한 성질을 뜻하고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일지",
+     "value": "일지"
+    }
+   ],
+   "outcome": "남들에게 보이는 모습을 나타냄",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "일지는 다른 사람에게 내가 어떻게 보이는지를 알려줘."
+  }
+ ],
+ "insights": [
+  "태어난 해를 기준으로 보는 띠와 달리 일주 동물은 태어난 날을 기준으로 하며 실제 행동 양식 파악에 더 중요하다.",
+  "일간은 내면의 고유한 본성을 대변하고 일지는 타인의 시선에 비치는 외적 태도나 모습을 대변한다."
+ ],
+ "keywords": [
+  "일주",
+  "일주동물",
+  "일간",
+  "일지",
+  "행동양식",
+  "사주팔자",
+  "띠"
+ ]
+}

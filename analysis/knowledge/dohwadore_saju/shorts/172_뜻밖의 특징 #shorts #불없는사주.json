@@ -1,0 +1,68 @@
+{
+ "source": "data/dohwadore_saju/shorts/172_뜻밖의 특징 #shorts #불없는사주.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "7Ggj0lmdYg4",
+ "title": "뜻밖의 특징 #shorts #불없는사주",
+ "url": "https://www.youtube.com/watch?v=7Ggj0lmdYg4",
+ "upload": "20231017",
+ "duration_sec": "38",
+ "views": "219868",
+ "chars": 354,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "사주에 화(火) 오행이 없으면 세상이나 타인의 기준 및 기대치에 얽매이지 않는 독자적인 성향을 보입니다. 화는 세상의 기준이자 암묵적인 룰, 눈치와 센스를 의미하기 때문에 화가 결핍되면 타인에게 잘 보이려 애쓰지 않습니다. 남들의 눈높이에 맞추기보다는 자신의 인생 흐름대로 살아가는 것을 편안하고 자연스럽게 여깁니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 부족",
+     "value": "화"
+    }
+   ],
+   "outcome": "타인이나 집단에 잘 보이려는 의식이 적다",
+   "tag": "자유·독립 성향",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주팔자에 화가 없으면 어떤 특징, 어떤 현상이 일어나느냐... 세상, 집단 혹은 타인에게 내가 잘 보여야 한다는 의식이 별로 없다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 부족",
+     "value": "화"
+    }
+   ],
+   "outcome": "남의 눈높이보다 내 흐름대로 살아간다",
+   "tag": "자유·독립 성향",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "내가 굳이 뭐 남들한테 잘 보일 필요가 있나, 혹은 내가 굳이 남들의 눈높이에 맞출 필요 있나, 내 인생의 흐름대로 살아가는 게 최고다라고 느끼시는 분들이 많습니다."
+  }
+ ],
+ "insights": [
+  "사주에서 화(火) 오행은 세상과 타인의 기준, 사회적 기대치, 눈치나 센스 같은 암묵적 룰을 상징한다."
+ ],
+ "keywords": [
+  "화 없는 사주",
+  "오행 부족",
+  "화 오행",
+  "세상의 기준",
+  "눈치",
+  "자유독립성향",
+  "마이웨이"
+ ]
+}

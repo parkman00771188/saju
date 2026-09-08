@@ -300,3 +300,990 @@
 16:35:41    -- 진행 280/3059 경과 8.1분 | 토큰 in 202,961 out 244,380 think 819,710 | 누적 약 $4.14
 16:35:42 [281/3059] ok data/FORCETELLERKR/shorts/243_손종원이 김풍에게 감긴 이유❤️.txt claims 2 17s
 16:35:46 [282/3059] ok data/FORCETELLERKR/shorts/251_제일 힘든 시기에 돈복 찾아오는 사주.txt claims 1 8s
+16:35:50 [283/3059] ok data/FORCETELLERKR/shorts/254_☠️하고 싶은 거 못하면 죽음 뿐☠️.txt claims 2 8s
+16:35:50 [284/3059] ok data/FORCETELLERKR/shorts/250_같은 듯 다른 우롱즈 궁합😱.txt claims 2 12s
+16:35:51 [285/3059] ok data/FORCETELLERKR/shorts/249_어디서든 만났을 천생연분 상리오즈 궁합💜.txt claims 4 15s
+16:35:52 [286/3059] ok data/FORCETELLERKR/shorts/248_현실주의자와 낭만주의자 사주의 만남😍.txt claims 4 19s
+16:35:53 [287/3059] ok data/FORCETELLERKR/shorts/252_오 타 쿠 사 주 ㅎ_ㅎ.txt claims 3 13s
+16:35:57 [288/3059] ok data/FORCETELLERKR/shorts/257_도화살보다 이성 잘 꼬시는 사주.txt claims 3 7s
+16:35:57 [289/3059] ok data/FORCETELLERKR/shorts/256_2026년에 재물운 들어오는 띠.txt claims 3 8s
+16:36:00 [290/3059] ok data/FORCETELLERKR/shorts/253_2월에 몸조심하면 돈 왕창 버는 띠.txt claims 6 18s
+16:36:01 [291/3059] ok data/FORCETELLERKR/shorts/258_알몸에 무기만 4개 사주 ㄷㄷ.txt claims 3 9s
+16:36:03 [292/3059] ok data/FORCETELLERKR/shorts/255_2026년에 삼재인 띠.txt claims 5 16s
+16:36:08 [293/3059] ok data/FORCETELLERKR/shorts/262_사주에 화가 많은 사람 특징.txt claims 6 11s
+16:36:11 [294/3059] ok data/FORCETELLERKR/shorts/261_2026년 별자리별 행동지침.txt claims 12 14s
+16:36:14 [295/3059] ok data/FORCETELLERKR/shorts/259_2월에 안 나가면 거지 되는 띠.txt claims 6 22s
+16:36:15 [296/3059] ok data/FORCETELLERKR/shorts/242_시가 처가 없는 결혼해야 하는 사주 👀.txt claims 10 50s
+16:36:17 [297/3059] ok data/FORCETELLERKR/shorts/267_안정형 연애 하는 사주 오행.txt claims 2 7s
+16:36:18 [298/3059] ok data/FORCETELLERKR/shorts/264_🔥불타오르네 사주🔥.txt claims 3 17s
+16:36:19 [299/3059] ok data/FORCETELLERKR/shorts/260_너만 보인단 말이야~ 사주🥵.txt claims 6 25s
+16:36:20 [300/3059] ok data/FORCETELLERKR/shorts/265_1월에 고생하면 두배로 보상받는 띠.txt claims 6 17s
+16:36:20    -- 진행 300/3059 경과 8.8분 | 토큰 in 217,955 out 266,933 think 885,745 | 누적 약 $4.49
+16:36:20 [301/3059] ok data/FORCETELLERKR/shorts/263_회피형 인간 사주 특징.txt claims 3 21s
+16:36:21 [302/3059] ok data/FORCETELLERKR/shorts/266_개인 공간 절.대.건.드.리.지.마.txt claims 3 13s
+16:36:24 [303/3059] ok data/FORCETELLERKR/shorts/273_연하남이 봐주는 운세 이건 못 참지😋.txt claims 0 5s
+16:36:24 [304/3059] ok data/FORCETELLERKR/shorts/274_운세 회사에서 만든 부적 키링 언박싱🔥.txt claims 0 4s
+16:36:27 [305/3059] ok data/FORCETELLERKR/shorts/275_이 사주 너무 부러운데요ㄷㄷㄷ.txt claims 2 7s
+16:36:28 [306/3059] ok data/FORCETELLERKR/shorts/269_2026년 띠별 행동 지침.txt claims 12 15s
+16:36:33 [307/3059] ok FORCETELLERKR/shorts/272_1월에 반안살 들어와서 대박 나는 띠.txt claims 4 16s
+16:36:34 [308/3059] ok data/FORCETELLERKR/shorts/276_2026년에 이성 꼬이는 별자리.txt claims 3 13s
+16:36:36 [309/3059] ok data/FORCETELLERKR/shorts/270_2026년에 드디어 고생 끝나는 사주.txt claims 5 21s
+16:36:39 [310/3059] ok data/FORCETELLERKR/shorts/277_공감 능력 낮은 사람 사주 특징.txt claims 5 15s
+16:36:41 [311/3059] ok data/FORCETELLERKR/shorts/279_얼른 독립하라고 하신다~.txt claims 4 13s
+16:36:41 [312/3059] ok data/FORCETELLERKR/shorts/281_갓 신내림 받은 무당에게 직접 들은 레전드 소름 썰ㄷㄷ.txt claims 0 7s
+16:36:44 [313/3059] ok data/FORCETELLERKR/shorts/283_사주에 화가 없으면 힘든 이유.txt claims 4 8s
+16:36:44 [314/3059] ok data/FORCETELLERKR/shorts/278_2026년에 대박 나는 사주.txt claims 3 20s
+16:36:46 [315/3059] ok data/FORCETELLERKR/shorts/284_소름 돋는 점사썰ㄷㄷ.txt claims 0 7s
+16:36:47 [316/3059] ok data/FORCETELLERKR/shorts/282_2026년 폭풍 레벨업 드가자.txt claims 3 13s
+16:36:49 [317/3059] ok data/FORCETELLERKR/shorts/271_MZ역술인의 K-사주풀이👀.txt claims 9 32s
+16:36:52 [318/3059] ok data/FORCETELLERKR/shorts/287_올데프 애니x우찬 티격태격 케미💕 #애니 #우찬 #올데이프로젝트.txt claims 3 8s
+16:36:53 [319/3059] ok data/FORCETELLERKR/shorts/286_2026년 드디어 빛을 보는 사주.txt claims 1 12s
+16:36:55 [320/3059] ok data/FORCETELLERKR/shorts/290_능이백숙 사주.txt claims 2 7s
+16:36:55    -- 진행 320/3059 경과 9.4분 | 토큰 in 232,388 out 284,327 think 932,027 | 누적 약 $4.74
+16:36:55 [321/3059] ok data/FORCETELLERKR/shorts/285_유독 세상에게 억까 당하는 사주.txt claims 4 14s
+16:36:59 [322/3059] ok data/FORCETELLERKR/shorts/289_올데프 애니가 독기 가득한 이유😱 #애니 #올데이프로젝트 #사주.txt claims 1 13s
+16:36:59 [323/3059] ok RCETELLERKR/shorts/288_운세 회사 3년이면 안 보고도 궁합 잘 봄🤪 #궁합 #나는솔로 #올데이프로젝트.txt claims 3 15s
+16:37:05 [324/3059] ok data/FORCETELLERKR/shorts/292_인성 다자 특 = 말 잘 들음 (ft.사주는 과학).txt claims 2 12s
+16:37:05 [325/3059] ok data/FORCETELLERKR/shorts/294_사주에 토가 없으면 거지 되는 이유.txt claims 4 11s
+16:37:06 [326/3059] ok data/FORCETELLERKR/shorts/293_호달달... 불안형 사주🫨.txt claims 3 13s
+16:37:06 [327/3059] ok data/FORCETELLERKR/shorts/291_2026년 1월에 마지막 고생하는 띠.txt claims 6 17s
+16:37:06 [328/3059] ok data/FORCETELLERKR/shorts/280_2026년 1월에 드디어 인생 피는 띠.txt claims 9 38s
+16:37:10 [329/3059] ok data/FORCETELLERKR/shorts/295_한쪽만 영원히 킹받는 궁합😆 #마크 #해찬 #엔시티드림.txt claims 7 15s
+16:37:12 [330/3059] ok shorts/300_하나만 있어도 대박! 천주 천을 천덕귀인 차이점.txt claims 3 6s
+16:37:12 [331/3059] ok data/FORCETELLERKR/shorts/297_라이즈 01즈 동갑내미 케미🧡 #성찬 #은석 #라이즈.txt claims 6 13s
+16:37:17 [332/3059] ok ta/FORCETELLERKR/shorts/296_같이 있으면 만렙이 되는 재민x제노 궁합💚 #엔시티드림 #재민 #제노.txt claims 7 18s
+16:37:18 [333/3059] ok data/FORCETELLERKR/shorts/301_본투비 실무자 사주.txt claims 3 12s
+16:37:19 [334/3059] ok data/FORCETELLERKR/shorts/298_아니 사주까지 멋있으면 어떡하라고...😍 #라이즈 #원빈.txt claims 4 14s
+16:37:19 [335/3059] ok data/FORCETELLERKR/shorts/303_운세 회사 직원이 절규한 이유...🤯.txt claims 0 9s
+16:37:20 [336/3059] ok a/FORCETELLERKR/shorts/302_2025년 12월 인생 역전 가능한 띠.txt claims 4 14s
+16:37:25 [337/3059] ok data/FORCETELLERKR/shorts/307_사주에 수가 없으면 이렇게 됨.txt claims 2 7s
+16:37:28 [338/3059] ok data/FORCETELLERKR/shorts/305_다가갈까 말까 갈까 말까.txt claims 3 16s
+16:37:28 [339/3059] ok data/FORCETELLERKR/shorts/306_2026년 별자리별 행운의 컬러.txt claims 12 11s
+16:37:31 [340/3059] ok data/FORCETELLERKR/shorts/308_2026년에 귀인 찾아오는 띠 3가지.txt claims 3 12s
+16:37:31    -- 진행 340/3059 경과 10.0분 | 토큰 in 248,137 out 305,957 think 992,897 | 누적 약 $5.06
+16:37:34 [341/3059] ok data/FORCETELLERKR/shorts/309_왕자 vs 야반 도주.txt claims 5 15s
+16:37:35 [342/3059] ok data/FORCETELLERKR/shorts/299_찐 부자만 갖고 있는 희귀 사주.txt claims 6 30s
+16:37:35 [343/3059] ok data/FORCETELLERKR/shorts/311_카리나 칼 맞을 사주.txt claims 2 10s
+16:37:37 [344/3059] ok data/FORCETELLERKR/shorts/312_2026년에 이성 다 꼬실 수 있는 띠.txt claims 3 9s
+16:37:39 [345/3059] ok ata/FORCETELLERKR/shorts/314_매력이 콸콸 넘치는 사주 오행은.txt claims 2 8s
+16:37:40 [346/3059] ok data/FORCETELLERKR/shorts/313_도화살 VS 홍염살 누가 더 예쁠까.txt claims 4 11s
+16:37:42 [347/3059] ok /FORCETELLERKR/shorts/310_새해 오기 전에 이것 조심해야 하는 띠.txt claims 6 22s
+16:37:45 [348/3059] ok data/FORCETELLERKR/shorts/315_난 로맨스고 뭐고 혁명 드간다.txt claims 2 11s
+16:37:48 [349/3059] ok ta/FORCETELLERKR/shorts/304_신점 보는 듯한 별자리 운세 추천‼️ 포스텔러는 점성술 맛집입니다🔮✨.txt claims 1 36s
+16:37:48 [350/3059] ok data/FORCETELLERKR/shorts/316_꺅 올데프 사주 궁합 커밍 쑨,,👀❤️‍🔥.txt claims 3 14s
+16:37:51 [351/3059] ok a/FORCETELLERKR/shorts/321_자기 힘으로 성공하는 개 강한 사주.txt claims 3 9s
+16:37:53 [352/3059] ok data/FORCETELLERKR/shorts/317_12월에 도화살 매력 폭발하는 띠.txt claims 6 18s
+16:37:53 [353/3059] ok TELLERKR/shorts/320_이 연도에 태어난 사람은 2026년에 대박남.txt claims 3 13s
+16:37:53 [354/3059] ok data/FORCETELLERKR/shorts/318_집착광공 사주 👀.txt claims 4 16s
+16:37:55 [355/3059] ok data/FORCETELLERKR/shorts/322_조류상 사주🐔.txt claims 3 10s
+16:37:56 [356/3059] ok data/FORCETELLERKR/shorts/324_최고의 망신살 개운법.txt claims 2 8s
+16:37:58 [357/3059] ok data/FORCETELLERKR/shorts/319_2026년 별자리 신년운세 총정리.txt claims 12 18s
+16:37:58 [358/3059] ok data/FORCETELLERKR/shorts/325_2026년 대박 나는 별자리 TOP3.txt claims 3 7s
+16:38:03 [359/3059] ok data/FORCETELLERKR/shorts/328_계획만 하고 끝나는 사주🥲.txt claims 2 10s
+16:38:04 [360/3059] ok /FORCETELLERKR/shorts/327_이성이 자꾸 꼬이는 도화살 사주 특징.txt claims 4 11s
+16:38:04    -- 진행 360/3059 경과 10.5분 | 토큰 in 263,626 out 325,296 think 1,055,542 | 누적 약 $5.38
+16:38:05 [361/3059] ok data/FORCETELLERKR/shorts/323_12월에 감옥 가거나 부자 되는 띠.txt claims 6 16s
+16:38:05 [362/3059] ok data/FORCETELLERKR/shorts/326_2026년에 부자되는 별자리.txt claims 5 12s
+16:38:07 [363/3059] ok a/FORCETELLERKR/shorts/331_2026년에 운명의 짝 만나는 별자리.txt claims 3 10s
+16:38:08 [364/3059] ok data/FORCETELLERKR/shorts/332_달의 도움으로 뭐든 잘되는 사주.txt claims 1 10s
+16:38:17 [365/3059] ok data/FORCETELLERKR/shorts/337_임금 빽으로 잘 사는 사주.txt claims 1 9s
+16:38:19 [366/3059] ok ata/FORCETELLERKR/shorts/338_2026년에 연애운 들어오는 띠 TOP3.txt claims 3 11s
+16:38:20 [367/3059] ok data/FORCETELLERKR/shorts/333_2026년 띠별 신년운세 총정리.txt claims 12 17s
+16:38:21 [368/3059] ok data/FORCETELLERKR/shorts/330_집착광공 사주 👀.txt claims 9 25s
+16:38:21 [369/3059] ok data/FORCETELLERKR/shorts/336_최강 줏대좌 사주ㄷㄷ.txt claims 4 16s
+16:38:23 [370/3059] ok data/FORCETELLERKR/shorts/329_11월에 안 나가면 거지 되는 띠.txt claims 9 28s
+16:38:24 [371/3059] ok data/FORCETELLERKR/shorts/334_눈치 없는 사주... ㄷㄷ.txt claims 5 21s
+16:38:27 [372/3059] ok data/FORCETELLERKR/shorts/339_2026년에 대박나는 띠 TOP3.txt claims 3 11s
+16:38:29 [373/3059] ok data/FORCETELLERKR/shorts/342_너무 완벽해서 미안해...사주.txt claims 2 8s
+16:38:30 [374/3059] ok ORCETELLERKR/shorts/344_가장 힘든 시기에 돈복 찾아오는 사주.txt claims 1 7s
+16:38:31 [375/3059] ok data/FORCETELLERKR/shorts/340_최고 여우 사주🦊.txt claims 3 11s
+16:38:32 [376/3059] ok ata/FORCETELLERKR/shorts/343_호랑이, 용, 말띠 여자를 조심해라.txt claims 6 11s
+16:38:35 [377/3059] ok data/FORCETELLERKR/shorts/345_토끼띠를 무시하면 안 되는 이유.txt claims 5 10s
+16:38:39 [378/3059] ok ata/FORCETELLERKR/shorts/335_11월에 망신살 들어오는 3가지 띠.txt claims 9 35s
+16:38:40 [379/3059] ok FORCETELLERKR/shorts/349_바람둥이 사주 관살혼잡 제대로 알기.txt claims 2 9s
+16:38:40 [380/3059] ok data/FORCETELLERKR/shorts/348_뀨 귀여운 얼굴을 가진 사주.txt claims 2 10s
+16:38:40    -- 진행 380/3059 경과 11.1분 | 토큰 in 278,600 out 348,521 think 1,117,228 | 누적 약 $5.71
+16:38:43 [381/3059] ok data/FORCETELLERKR/shorts/341_11월에 밖에 나가야 대박 나는 띠.txt claims 5 22s
+16:38:44 [382/3059] ok data/FORCETELLERKR/shorts/346_생각이 많아 용기를 잃는 사주🫠.txt claims 4 17s
+16:38:46 [383/3059] ok data/FORCETELLERKR/shorts/351_착하게 살아야 부자 되는 사주.txt claims 2 11s
+16:38:50 [384/3059] ok /FORCETELLERKR/shorts/350_사주에 이것 있는 사람은 믿어도 됨.txt claims 4 18s
+16:38:50 [385/3059] ok data/FORCETELLERKR/shorts/352_사주의 '이것' 때문에 퇴사한다 ㄷㄷ.txt claims 4 11s
+16:38:52 [386/3059] ok data/FORCETELLERKR/shorts/354_콩깍지 씌이기 좋은 시기가 따로 있다 ㄷㄷ.txt claims 2 12s
+16:38:53 [387/3059] ok TELLERKR/shorts/356_미남 미녀만 갖고 있는 사람 홀리는 사주.txt claims 5 9s
+16:38:56 [388/3059] ok data/FORCETELLERKR/shorts/355_사주로 보는 미래 배우자.txt claims 10 13s
+16:38:56 [389/3059] ok data/FORCETELLERKR/shorts/357_돈을 제일 많이 버는 일주는.txt claims 3 11s
+16:38:58 [390/3059] ok RCETELLERKR/shorts/347_11월에 사고 조심하면 돈 왕창 버는 띠.txt claims 7 30s
+16:38:59 [391/3059] ok data/FORCETELLERKR/shorts/358_어그로살 레전드인 사주ㄷㄷ.txt claims 3 9s
+16:39:01 [392/3059] ok RCETELLERKR/shorts/361_가만히 있어도 하늘이 복 던져주는 사주.txt claims 2 8s
+16:39:03 [393/3059] ok data/FORCETELLERKR/shorts/353_10월에 진짜 최종 고생하는 띠.txt claims 6 23s
+16:39:03 [394/3059] ok data/FORCETELLERKR/shorts/360_능력을 감추는 화개살 사주... !👀.txt claims 2 11s
+16:39:07 [395/3059] ok data/FORCETELLERKR/shorts/364_착각을 부르는 유죄 홍염살🥵.txt claims 4 9s
+16:39:08 [396/3059] ok data/FORCETELLERKR/shorts/365_오래가기 햄든 궁합... 🥲.txt claims 3 9s
+16:39:10 [397/3059] ok ORCETELLERKR/shorts/359_10월만 고생하면 돈으로 보상받는 띠.txt claims 6 20s
+16:39:11 [398/3059] ok data/FORCETELLERKR/shorts/367_사주 지지별 외모 특징.txt claims 3 9s
+16:39:11 [399/3059] ok data/FORCETELLERKR/shorts/363_사주에 화가 많으면 생기는 일.txt claims 4 15s
+16:39:12 [400/3059] ok data/FORCETELLERKR/shorts/368_결혼 안 해도 잘 사는 사주.txt claims 3 8s
+16:39:12    -- 진행 400/3059 경과 11.6분 | 토큰 in 293,849 out 369,541 think 1,175,965 | 누적 약 $6.02
+16:39:32 대상 2835개 (전체 3231, 이미 추출 396, 교정 대기 0) model=gemini-3.8-flash thinking=high workers=14
+16:39:34 [1/2835] skip(짧음) e is in the air❤️ #Shorts #horoscope #astrology #love #tarot #타로카드.txt
+16:39:34 [2/2835] skip(짧음) smart are you 🧐 나는 똑똑한가 #Shorts #smart #palmlines #포스텔러 #horoscope.txt
+16:39:34 [3/2835] skip(짧음) s/1047_What is your palm line 당신의 손금은 ❤️ #Shorts #타로카드 #운세 #사랑 #손금.txt
+16:39:34 [4/2835] skip(짧음) e is coming❤️ #Shorts #horoscope #astrology #love #tarot #타로카드 #운세.txt
+16:39:34 [5/2835] skip(짧음)  I ever get married 🤵🏻‍♂👰🏼‍♀결혼 잘 할 수 있을까 #Shorts #marriage #horosc.txt
+16:39:34 [6/2835] skip(짧음)  I ever get married 🤵🏻‍♂👰🏼‍♀결혼 잘 할 수 있을까 #Shorts #marriage #horosc.txt
+16:39:34 [7/2835] skip(짧음)  type of lover are you 👩‍❤‍👨나의 연애유형은 #Shorts #palmlines #horoscope.txt
+16:39:42 [8/2835] ok data/FORCETELLERKR/shorts/369_간지에 죽고 간지에 삽니다 예예.txt claims 2 8s
+16:39:43 [9/2835] ok ata/FORCETELLERKR/shorts/371_무던한 사람 특 사주에 토가 많음.txt claims 2 9s
+16:39:43 [10/2835] ok RCETELLERKR/shorts/373_포기하지만 않으면 하늘이 도와주는 사주.txt claims 2 9s
+16:39:45 [11/2835] ok data/FORCETELLERKR/shorts/366_사주에 목 많은 사람 특징.txt claims 4 11s
+16:39:45 [12/2835] ok data/FORCETELLERKR/shorts/370_P 시청 금지 J 기질 다분한 사주.txt claims 3 11s
+16:39:45 [13/2835] ok data/FORCETELLERKR/shorts/375_잘 놀라는 귀요미 사주,,ㅇωㅇ💛.txt claims 4 11s
+16:39:46 [14/2835] ok data/FORCETELLERKR/shorts/372_퇴사 자주 마려운 사람.txt claims 3 12s
+16:39:47 [15/2835] ok data/FORCETELLERKR/shorts/376_사주에 목이 없으면 불편한 점.txt claims 5 12s
+16:39:47 [16/2835] ok data/FORCETELLERKR/shorts/362_사주로 보는 헤어진 진짜 이유.txt claims 3 13s
+16:39:48 [17/2835] ok data/FORCETELLERKR/shorts/378_한국에서 살기 힘든 사주 TOP2.txt claims 4 14s
+16:39:50 [18/2835] ok data/FORCETELLERKR/shorts/379_사이코패스 사주...ㄷㄷ (아님).txt claims 3 16s
+16:39:52 [19/2835] ok data/FORCETELLERKR/shorts/383_사주에 화가 없으면 벌어지는 일.txt claims 4 8s
+16:39:52 [20/2835] ok /FORCETELLERKR/shorts/386_예민한 사람만 있는 초민감자 사주.txt claims 2 6s
+16:39:52    -- 진행 20/2835 경과 0.3분 | 토큰 in 10,126 out 10,842 think 28,076 | 누적 약 $0.15
+16:39:53 [21/2835] ok data/FORCETELLERKR/shorts/385_걸어다니는 쎄함 감지기 사주.txt claims 3 7s
+16:39:53 [22/2835] ok data/FORCETELLERKR/shorts/389_출근이 그저 숙명이다~ 라고 하신다.txt claims 1 6s
+16:39:55 [23/2835] ok data/FORCETELLERKR/shorts/393_위즈니가 할 말 있다고 하거든 댓글 예쁘게 써줘💢.txt claims 0 3s
+16:39:56 [24/2835] ok ETELLERKR/shorts/381_인생이 잘 안풀릴 때 사주의 이것 확인.txt claims 2 13s
+16:39:56 [25/2835] ok data/FORCETELLERKR/shorts/374_눈치 만렙인데 말은.. 못하는 사주🥲.txt claims 3 22s
+16:39:57 [26/2835] ok data/FORCETELLERKR/shorts/384_좀비보다는 역시 사람이 더 무섭다.txt claims 3 12s
+16:39:58 [27/2835] ok data/FORCETELLERKR/shorts/380_마케팅과 영업의 귀재 사주🗣️.txt claims 6 23s
+16:39:58 [28/2835] ok ata/FORCETELLERKR/shorts/388_사주에 이것 없으면 돈이 새어나감.txt claims 4 12s
+16:40:00 [29/2835] ok data/FORCETELLERKR/shorts/392_사주에 이거 많으면 매력이 흘러넘침.txt claims 2 8s
+16:40:01 [30/2835] ok /FORCETELLERKR/shorts/387_전생의 덕으로 현생에서 누리는 사주.txt claims 3 15s
+16:40:01 [31/2835] ok data/FORCETELLERKR/shorts/398_사주별 여름 휴가 여행지 추천.txt claims 0 5s
+16:40:01 [32/2835] ok ta/FORCETELLERKR/shorts/382_이 사주가 있는데 왜 글을 안쓰시죠.txt claims 8 18s
+16:40:02 [33/2835] ok data/FORCETELLERKR/shorts/391_사주로 보는 환상의 궁합.txt claims 4 12s
+16:40:03 [34/2835] ok data/FORCETELLERKR/shorts/390_존버 끝에 낙은 온다.txt claims 3 15s
+16:40:04 [35/2835] ok data/FORCETELLERKR/shorts/395_어이쿠야 제일 먼저 꿱...😵.txt claims 6 11s
+16:40:05 [36/2835] ok data/FORCETELLERKR/shorts/399_사주에 수가 없으면 생기는 일.txt claims 3 8s
+16:40:06 [37/2835] ok data/FORCETELLERKR/shorts/394_요즘 뜨고 있는 쌉인싸 사주.txt claims 4 13s
+16:40:06 [38/2835] ok data/FORCETELLERKR/shorts/400_성공을 쟁취해내는 개 강한 사주.txt claims 3 9s
+16:40:10 [39/2835] ok data/FORCETELLERKR/shorts/405_양띠들의 이것을 조심하세요.txt claims 3 8s
+16:40:11 [40/2835] ok data/FORCETELLERKR/shorts/401_(최초공개) 불닭볶음면 사주🥵.txt claims 3 13s
+16:40:11    -- 진행 40/2835 경과 0.6분 | 토큰 in 25,984 out 28,552 think 82,083 | 누적 약 $0.43
+16:40:11 [41/2835] ok data/FORCETELLERKR/shorts/397_쉿! 이재용 회장급 사주😘.txt claims 2 15s
+16:40:11 [42/2835] ok data/FORCETELLERKR/shorts/408_사랑꾼 사주 놓치지 마세요🥵❤️‍🔥.txt claims 4 7s
+16:40:11 [43/2835] ok data/FORCETELLERKR/shorts/404_억까 당하는 사주 ㅠ_ㅠ.txt claims 3 10s
+16:40:12 [44/2835] ok data/FORCETELLERKR/shorts/406_달이 지켜줘서 뭐든 잘 되는 사주.txt claims 1 9s
+16:40:12 [45/2835] ok data/FORCETELLERKR/shorts/403_🔮연락 온다vs안 온다🔮 #타로.txt claims 2 11s
+16:40:13 [46/2835] ok data/FORCETELLERKR/shorts/402_9월에 도화살 들어와서 모두 꼬시는 띠.txt claims 7 13s
+16:40:16 [47/2835] ok data/FORCETELLERKR/shorts/411_사랑 앞에선 원칙 따위 없는 사주🥵.txt claims 3 9s
+16:40:16 [48/2835] ok data/FORCETELLERKR/shorts/407_이 사주 있으면 무당 or 아이돌.txt claims 3 13s
+16:40:17 [49/2835] ok data/FORCETELLERKR/shorts/412_말띠가 12띠 중 가장 뛰어난 이것.txt claims 3 7s
+16:40:17 [50/2835] ok data/FORCETELLERKR/shorts/410_그 사람의 진짜 속마음은...👀 #타로.txt claims 2 12s
+16:40:19 [51/2835] ok data/FORCETELLERKR/shorts/414_왕이 구해줘서 궁전으로 가는 사주.txt claims 2 7s
+16:40:19 [52/2835] ok data/FORCETELLERKR/shorts/396_9월에 감옥가거나 돈벼락 맞는 띠.txt claims 7 23s
+16:40:19 [53/2835] ok data/FORCETELLERKR/shorts/417_조만간 주어질 선물 같은 보상✨️ #타로.txt claims 2 8s
+16:40:21 [54/2835] ok data/FORCETELLERKR/shorts/419_착한 일 할 수록 부자 되는 사주.txt claims 2 8s
+16:40:24 [55/2835] ok data/FORCETELLERKR/shorts/415_하얗고 귀여운 얼굴의 사주.txt claims 3 12s
+16:40:25 [56/2835] ok data/FORCETELLERKR/shorts/425_인생의 밑바닥에서 재물복 찾는 사주.txt claims 1 6s
+16:40:25 [57/2835] ok data/FORCETELLERKR/shorts/413_사주에 금이 없으면 재물복이 없다.txt claims 2 14s
+16:40:25 [58/2835] ok data/FORCETELLERKR/shorts/418_전남친 토스트 사주ㄷㄷ.txt claims 5 14s
+16:40:26 [59/2835] ok data/FORCETELLERKR/shorts/423_올 하반기 소름 예언 👀🔮 #타로.txt claims 2 9s
+16:40:28 [60/2835] ok TELLERKR/shorts/427_XXTJ는 높은 확률로 이 사주를 갖고 있다.txt claims 3 8s
+16:40:28    -- 진행 60/2835 경과 0.9분 | 토큰 in 39,952 out 43,714 think 121,808 | 누적 약 $0.65
+16:40:30 [61/2835] ok data/FORCETELLERKR/shorts/428_피지컬 좋은 사주 🥵.txt claims 2 9s
+16:40:31 [62/2835] ok data/FORCETELLERKR/shorts/424_구냥 귀엽게 태어난곤뎅~ 사주😛.txt claims 4 13s
+16:40:32 [63/2835] ok data/FORCETELLERKR/shorts/432_똑똑하지만 XX가 없다 뱀띠 사주 성격 특징.txt claims 3 7s
+16:40:33 [64/2835] ok data/FORCETELLERKR/shorts/426_일주천간으로 보는 나의 타고난 재능.txt claims 10 14s
+16:40:33 [65/2835] ok data/FORCETELLERKR/shorts/416_9월에 이것 조심하면 대박납니다.txt claims 6 22s
+16:40:34 [66/2835] ok data/FORCETELLERKR/shorts/430_곧 내 인생을 뒤바꿀 반전 사건👀 #타로.txt claims 2 9s
+16:40:35 [67/2835] ok data/FORCETELLERKR/shorts/421_이상한 사람 콜렉터 사주ㄷㄷ.txt claims 2 19s
+16:40:37 [68/2835] ok data/FORCETELLERKR/shorts/434_포기하기 직전에 하늘이 손 내미는 사주.txt claims 2 10s
+16:40:38 [69/2835] ok data/FORCETELLERKR/shorts/431_동안일 수밖에 없는 사주ㄷㄷ.txt claims 3 12s
+16:40:38 [70/2835] ok data/FORCETELLERKR/shorts/433_도화살 VS 홍염살 더 인기 많은 사주는.txt claims 4 12s
+16:40:39 [71/2835] ok data/FORCETELLERKR/shorts/437_이성에게 유독 어필되는 내 매력🥵 #타로 #연애운.txt claims 0 7s
+16:40:40 [72/2835] ok data/FORCETELLERKR/shorts/435_꼰대 주의 사주🫢.txt claims 3 10s
+16:40:42 [73/2835] ok data/FORCETELLERKR/shorts/409_9월에 초대박운 들어오는 3가지 띠.txt claims 7 37s
+16:40:44 [74/2835] ok data/FORCETELLERKR/shorts/439_용띠 특 XX 과다 용띠 사주 성격 특징.txt claims 3 11s
+16:40:46 [75/2835] ok data/FORCETELLERKR/shorts/422_8월에 가만히 있으면 거지 되는 띠.txt claims 9 29s
+16:40:46 [76/2835] ok data/FORCETELLERKR/shorts/429_사고만 피하면 돈 왕창 들어오는 띠.txt claims 5 23s
+16:40:48 [77/2835] ok data/FORCETELLERKR/shorts/438_대박나기 직전 징조 👀🍀.txt claims 3 15s
+16:40:48 [78/2835] ok data/FORCETELLERKR/shorts/444_다음 연애 상대 딱 알려드림 👀❤️‍🔥 #타로.txt claims 2 10s
+16:40:50 [79/2835] ok data/FORCETELLERKR/shorts/443_8월에 밖으로 나가야만 큰 돈을 벌 수 있는 띠.txt claims 5 12s
+16:40:50 [80/2835] ok data/FORCETELLERKR/shorts/440_귀신 들리는 사주 귀문관살 총정리.txt claims 7 16s
+16:40:50    -- 진행 80/2835 경과 1.3분 | 토큰 in 55,068 out 65,092 think 182,789 | 누적 약 $0.97
+16:40:51 [81/2835] ok data/FORCETELLERKR/shorts/442_알잘딱깔센 일 잘하는 사주🤓.txt claims 2 14s
+16:40:52 [82/2835] ok data/FORCETELLERKR/shorts/447_이 사주 있으면 당장 펜 잡아야 함.txt claims 7 10s
+16:40:52 [83/2835] ok data/FORCETELLERKR/shorts/436_8월에 망신살 들어오는 띠.txt claims 7 21s
+16:40:54 [84/2835] ok data/FORCETELLERKR/shorts/445_💘 취향 소나무인 이유 = 사주에 나와있음.txt claims 5 15s
+16:40:55 [85/2835] ok data/FORCETELLERKR/shorts/448_사주로 보는 찰스엔터 님 월간데이트 후보... !👀💘.txt claims 3 10s
+16:40:55 [86/2835] ok data/FORCETELLERKR/shorts/446_도화살도 급이 있다 도화살 종류별 특징.txt claims 5 15s
+16:40:56 [87/2835] ok data/FORCETELLERKR/shorts/377_이 사주 있으면 부자 확정.txt claims 10 81s
+16:40:56 [88/2835] ok data/FORCETELLERKR/shorts/455_교수한테 간택 당하기 딱좋은 사주 !ㄷㄷ.txt claims 2 6s
+16:40:58 [89/2835] ok data/FORCETELLERKR/shorts/457_최애의 찐 성격은... !👀💘 #타로.txt claims 0 6s
+16:40:59 [90/2835] ok data/FORCETELLERKR/shorts/451_같이 사는 사람을 피곤하게 하는 사주… 🤪.txt claims 2 11s
+16:40:59 [91/2835] ok data/FORCETELLERKR/shorts/453_도화살보다 효과 좋은 매력적인 사주 특징.txt claims 2 9s
+16:41:00 [92/2835] ok data/FORCETELLERKR/shorts/450_조만간 들려올 기쁜 소식✨️ #타로.txt claims 2 13s
+16:41:00 [93/2835] ok data/FORCETELLERKR/shorts/454_전생에 잘 살아서 현생에 복받는 사주.txt claims 3 10s
+16:41:01 [94/2835] ok data/FORCETELLERKR/shorts/452_나 쥐띠, XX가 없지 쥐띠 사주 성격 특징.txt claims 4 13s
+16:41:03 [95/2835] ok data/FORCETELLERKR/shorts/464_최애가 나를 실제로 본다면... !👀💜 #타로.txt claims 0 5s
+16:41:04 [96/2835] ok data/FORCETELLERKR/shorts/461_뭔 짓을 해도 망하지는 않는 사주.txt claims 1 8s
+16:41:05 [97/2835] ok a/FORCETELLERKR/shorts/449_7월에 고생한 거 모두가 알아주는 띠.txt claims 9 19s
+16:41:06 [98/2835] ok data/FORCETELLERKR/shorts/460_망신살 살풀이법 XX를 보여줘라 !.txt claims 4 10s
+16:41:06 [99/2835] ok data/FORCETELLERKR/shorts/463_7월만 고생하면 8월에 인생피는 띠.txt claims 4 8s
+16:41:07 [100/2835] ok data/FORCETELLERKR/shorts/462_절대 혼자서 못사는 사주.txt claims 2 10s
+16:41:07    -- 진행 100/2835 경과 1.5분 | 토큰 in 70,333 out 84,047 think 252,033 | 누적 약 $1.31
+16:41:08 [101/2835] ok data/FORCETELLERKR/shorts/456_7월에 마지막으로 고생하는 띠.txt claims 6 16s
+16:41:08 [102/2835] ok data/FORCETELLERKR/shorts/465_오류 투성이 챗지피티 사주 조심하세요😞.txt claims 0 9s
+16:41:08 [103/2835] ok data/FORCETELLERKR/shorts/459_소띠는 XX가 많음 소띠 사주 성격 특징.txt claims 4 14s
+16:41:09 [104/2835] ok data/FORCETELLERKR/shorts/468_호랑이띠 특 XX 겁나 쎔.txt claims 3 8s
+16:41:09 [105/2835] ok data/FORCETELLERKR/shorts/466_1% 천재들만 갖고 있다는 사주.txt claims 2 9s
+16:41:09 [106/2835] ok data/FORCETELLERKR/shorts/467_고생이 성공으로 100% 돌아오는 사주.txt claims 2 9s
+16:41:10 [107/2835] ok data/FORCETELLERKR/shorts/458_이유 없이 좋은 사람 사주 보면 답 나옴ㄷㄷ.txt claims 3 16s
+16:41:12 [108/2835] ok data/FORCETELLERKR/shorts/469_요즘은 진짜 이런 사주가 대세임.txt claims 3 9s
+16:41:15 [109/2835] ok data/FORCETELLERKR/shorts/471_지금 나를 좋아하고 있는 사람👀 #타로.txt claims 2 10s
+16:41:17 [110/2835] ok data/FORCETELLERKR/shorts/476_최신 인기남들 사주 공통점 ㄷㄷ.txt claims 2 9s
+16:41:18 [111/2835] ok data/FORCETELLERKR/shorts/478_그 사람... 정리할까vs말까 #타로.txt claims 2 9s
+16:41:19 [112/2835] ok data/FORCETELLERKR/shorts/475_가장 힘들 때 돈복이 찾아오는 사주.txt claims 1 11s
+16:41:20 [113/2835] ok data/FORCETELLERKR/shorts/472_존예 존잘 콜렉터들의 비밀ㄷㄷㄷ.txt claims 3 14s
+16:41:20 [114/2835] ok data/FORCETELLERKR/shorts/473_호랑이,용,말띠 여자는 팔자가 드세다.txt claims 3 14s
+16:41:20 [115/2835] ok data/FORCETELLERKR/shorts/479_연예인 사주풀이 핵소름ㄷㄷ.txt claims 5 11s
+16:41:21 [116/2835] ok data/FORCETELLERKR/shorts/474_토끼띠 특 XX부족함 토끼띠 사주 성격 궁합.txt claims 4 14s
+16:41:22 [117/2835] ok data/FORCETELLERKR/shorts/482_팔자에 남자가 없다 무관사주 특징.txt claims 3 10s
+16:41:23 [118/2835] ok data/FORCETELLERKR/shorts/481_사주별 행운의 컬러.txt claims 6 13s
+16:41:24 [119/2835] ok TELLERKR/shorts/470_7월에 반안살 들어와 신분 상승하는 띠.txt claims 4 20s
+16:41:25 [120/2835] ok data/FORCETELLERKR/shorts/488_착한 일하면 돈으로 바꿔주는 사주.txt claims 1 5s
+16:41:25    -- 진행 120/2835 경과 1.8분 | 토큰 in 85,389 out 100,669 think 291,813 | 누적 약 $1.54
+16:41:26 [121/2835] ok data/FORCETELLERKR/shorts/480_사람이 자꾸 꼬이는 도화살.txt claims 5 17s
+16:41:27 [122/2835] ok data/FORCETELLERKR/shorts/485_오래 보아야 매력있다... 너도 그렇다 #화개살 #사주.txt claims 3 8s
+16:41:28 [123/2835] ok data/FORCETELLERKR/shorts/483_이런 사주는... 혼자 살라고 하신다~.txt claims 2 13s
+16:41:28 [124/2835] ok data/FORCETELLERKR/shorts/489_사주만 봐도 스타일 좋은지 딱 나옴 #사주 #패션.txt claims 3 9s
+16:41:30 [125/2835] ok data/FORCETELLERKR/shorts/484_6월에 초대박운 들어오는 띠 3가지.txt claims 5 13s
+16:41:33 [126/2835] ok data/FORCETELLERKR/shorts/493_역술인도 못 건드리는 개 강한 사람 사주.txt claims 3 9s
+16:41:35 [127/2835] ok data/FORCETELLERKR/shorts/494_포기하고 싶을 때 하늘이 구해주는 사주.txt claims 2 10s
+16:41:35 [128/2835] ok data/FORCETELLERKR/shorts/487_운세 전문가가 알려주는 ㅇㅇ띠 꼬시는 방법.txt claims 12 16s
+16:41:36 [129/2835] ok data/FORCETELLERKR/shorts/491_같이 살면 피곤한 사주... 🥱.txt claims 5 14s
+16:41:36 [130/2835] ok horts/498_사람 홀리는건 도화살보다 200% 강력한 개사기 사주.txt claims 4 8s
+16:41:36 [131/2835] ok data/FORCETELLERKR/shorts/486_사주 보기 전에 꼭 알아야 하는 4가지.txt claims 4 17s
+16:41:36 [132/2835] ok data/FORCETELLERKR/shorts/495_내가 HSP인지 사주를 봐도 알 수 있다... !👀.txt claims 3 10s
+16:41:36 [133/2835] ok R/shorts/497_10년에 딱 한 번, 대운 정확하게 확인하는 법.txt claims 1 9s
+16:41:37 [134/2835] ok data/FORCETELLERKR/shorts/490_6월에 6 조심하면 대박 나는 띠.txt claims 6 16s
+16:41:37 [135/2835] ok data/FORCETELLERKR/shorts/492_사주 오행으로 보는 성격 팩폭.txt claims 5 14s
+16:41:37 [136/2835] ok KR/shorts/499_역술인도 말조심하는 하늘에서 보낸 사람 사주.txt claims 3 8s
+16:41:39 [137/2835] ok data/FORCETELLERKR/shorts/441_역술인도 부러워하는 타고난 부자 사주.txt claims 12 64s
+16:41:42 [138/2835] ok CETELLERKR/shorts/477_6월에 도화살 들어와서 이성 다 꼬시는 띠.txt claims 8 34s
+16:41:43 [139/2835] ok data/FORCETELLERKR/shorts/496_6월에 감옥 조심! 돈복 기다리는 띠.txt claims 6 17s
+16:41:45 [140/2835] ok data/FORCETELLERKR/shorts/501_최강 도화vs치명 홍염.txt claims 3 9s
+16:41:45    -- 진행 140/2835 경과 2.2분 | 토큰 in 101,288 out 123,286 think 364,729 | 누적 약 $1.91
+16:41:45 [141/2835] ok ORCETELLERKR/shorts/502_역술인들이 무조건 말리는 최악의 궁합 3가지.txt claims 5 9s
+16:41:45 [142/2835] ok ata/FORCETELLERKR/shorts/507_5월에 밖으로 나가야 큰돈 버는 띠.txt claims 5 9s
+16:41:46 [143/2835] ok data/FORCETELLERKR/shorts/510_안 맞는 사람이 있다 사주를 한번 열어봐요.txt claims 3 8s
+16:41:46 [144/2835] ok data/FORCETELLERKR/shorts/509_천생연분 일주궁합.txt claims 4 9s
+16:41:47 [145/2835] ok ta/FORCETELLERKR/shorts/505_진짜 역술인은 ㅅㅅ로 미래 확인함.txt claims 3 11s
+16:41:48 [146/2835] ok data/FORCETELLERKR/shorts/508_혐관연애의 비밀이 사주에 있었다니🥵.txt claims 2 11s
+16:41:49 [147/2835] ok data/FORCETELLERKR/shorts/503_음기 가득한 여자 사주... 👀.txt claims 3 13s
+16:41:53 [148/2835] ok TELLERKR/shorts/518_역술가들이 말하는 타고난 연애 고수 사주.txt claims 3 7s
+16:41:53 [149/2835] ok data/FORCETELLERKR/shorts/513_고진감래 is 진리.txt claims 4 10s
+16:41:53 [150/2835] ok data/FORCETELLERKR/shorts/504_사주에 이거 있으면 블로그라도! 월 1000 넘게 버는 사주.txt claims 8 17s
+16:41:54 [151/2835] ok data/FORCETELLERKR/shorts/517_이가 없으면 잇몸으로 살면 된다.txt claims 3 9s
+16:41:55 [152/2835] ok data/FORCETELLERKR/shorts/511_인생 나락 가기 싫으면 말조심.txt claims 5 16s
+16:41:56 [153/2835] ok ta/FORCETELLERKR/shorts/512_도화살의 200배 이성 다 홀리는 사주.txt claims 3 14s
+16:41:57 [154/2835] ok RKR/shorts/516_돈 안 내고 공짜로 사주 궁합 보는 미친 꿀팁.txt claims 2 12s
+16:41:57 [155/2835] ok data/FORCETELLERKR/shorts/515_고용주분들~ 사주로 인재 찾으세요👀.txt claims 4 12s
+16:41:57 [156/2835] ok ETELLERKR/shorts/500_5월에 가만히 있으면 망신만 당하는 띠.txt claims 6 24s
+16:41:58 [157/2835] ok data/FORCETELLERKR/shorts/520_사주에 음란함이 나온다 🥵.txt claims 3 10s
+16:41:58 [158/2835] ok data/FORCETELLERKR/shorts/506_꽉 잡아야 되는 사주❤️‍🔥.txt claims 6 22s
+16:41:59 [159/2835] ok data/FORCETELLERKR/shorts/523_내 일주동물 3초 만에 알아보기.txt claims 3 6s
+16:42:01 [160/2835] ok ta/FORCETELLERKR/shorts/519_의외로 온갖 나락 다 피해 가는 사주.txt claims 2 13s
+16:42:01    -- 진행 160/2835 경과 2.4분 | 토큰 in 117,296 out 144,028 think 414,626 | 누적 약 $2.18
+16:42:03 [161/2835] ok data/FORCETELLERKR/shorts/527_가만히 있어도 하늘이 도와주는 사주.txt claims 2 6s
+16:42:04 [162/2835] ok data/FORCETELLERKR/shorts/514_5월 재물운 ㅅㄱ 조심하면 초대박.txt claims 6 20s
+16:42:06 [163/2835] ok TELLERKR/shorts/521_5월에 가만히 있으면 재물운 다 떠나는 띠.txt claims 3 16s
+16:42:06 [164/2835] ok data/FORCETELLERKR/shorts/522_역술인들끼리만 알고 있는 기 쎈 사주.txt claims 3 13s
+16:42:06 [165/2835] ok data/FORCETELLERKR/shorts/528_귀신만큼 촉이 좋은 사람들만 있는 사주.txt claims 2 9s
+16:42:07 [166/2835] ok data/FORCETELLERKR/shorts/532_이 사주 있으면 결혼하지마세요 #지식 #상식.txt claims 3 9s
+16:42:08 [167/2835] ok data/FORCETELLERKR/shorts/525_꽉 잡아야 하는 인생 사주 특징.txt claims 4 14s
+16:42:08 [168/2835] ok data/FORCETELLERKR/shorts/531_4월에 원하던거 다 이룰 수 있는 띠.txt claims 3 10s
+16:42:09 [169/2835] ok data/FORCETELLERKR/shorts/530_어머 완전 럭키비키 사주잖아~ !🍀✨.txt claims 6 12s
+16:42:11 [170/2835] ok data/FORCETELLERKR/shorts/526_4월에 개고생하면 5월에 돈벼락 맞는 띠.txt claims 6 16s
+16:42:11 [171/2835] ok data/FORCETELLERKR/shorts/539_유재석 잘된 이유는 이 사주 있어서예요 #지식 #상식.txt claims 1 5s
+16:42:12 [172/2835] ok data/FORCETELLERKR/shorts/536_갖고 있으면 무조건 성공하는 사주 #지식 #상식.txt claims 3 7s
+16:42:13 [173/2835] ok data/FORCETELLERKR/shorts/533_태어나서 죽을 때까지 나를 지켜주는 사주 #지식 #상식.txt claims 1 13s
+16:42:15 [174/2835] ok data/FORCETELLERKR/shorts/542_60일주 중 매력 TOP1 일주는 !💖 #사주 #포스텔러.txt claims 3 6s
+16:42:15 [175/2835] ok data/FORCETELLERKR/shorts/534_내 머릿속의,,, 모자이크🥵.txt claims 2 15s
+16:42:19 [176/2835] ok data/FORCETELLERKR/shorts/537_결혼 늦게 할수록 훨씬 이득인 사주 👀 #연애 #결혼 #사주.txt claims 4 13s
+16:42:19 [177/2835] ok data/FORCETELLERKR/shorts/545_이 사주를 가지셨다면 축하드립니다🥰 #사주 #운세 #존잘.txt claims 5 8s
+16:42:20 [178/2835] ok data/FORCETELLERKR/shorts/546_사주에 같은 글자 나란히 있는 사람 !👀 #사주 #병존.txt claims 3 8s
+16:42:20 [179/2835] ok data/FORCETELLERKR/shorts/538_4월에 천살로 마지막 고생 겪는 띠 #지식 #상식.txt claims 5 15s
+16:42:21 [180/2835] ok data/FORCETELLERKR/shorts/547_본투비 웃수저 사주 특징🤭 #보넥도 #명재현 #사주.txt claims 4 8s
+16:42:21    -- 진행 180/2835 경과 2.8분 | 토큰 in 132,176 out 163,283 think 457,181 | 누적 약 $2.43
+16:42:24 [181/2835] ok data/FORCETELLERKR/shorts/541_도화살 덕분에 3월에 차은우 카리나 되는 띠 #지식 #상식.txt claims 9 16s
+16:42:24 [182/2835] ok data/FORCETELLERKR/shorts/543_이건 걍 나랑 결혼해줄래~ 궁합💍 #사주 #궁합.txt claims 2 15s
+16:42:26 [183/2835] ok data/FORCETELLERKR/shorts/540_이런 사주 대박 터지세요🥹💸 #운세 #사주 #대박.txt claims 6 19s
+16:42:27 [184/2835] ok data/FORCETELLERKR/shorts/548_리더가 천직인 사주😎 #투바투 #에스파 #투어스.txt claims 4 13s
+16:42:28 [185/2835] ok data/FORCETELLERKR/shorts/544_원빈아 너 몰래 우리 궁합 좀 봤다 #라이즈 #원빈 #사주.txt claims 3 17s
+16:42:28 [186/2835] ok data/FORCETELLERKR/shorts/552_고생 끝에 드디어 낙이 온다...🙏🍀 #사주 #운세 #지식.txt claims 4 9s
+16:42:31 [187/2835] ok data/FORCETELLERKR/shorts/553_점보러 가면 안 되는 사주가 있다고 👀 #운세 #지식.txt claims 1 11s
+16:42:32 [188/2835] ok data/FORCETELLERKR/shorts/551_2025년이 기대된다... 두근두근💗 #신년운세 #사주.txt claims 4 12s
+16:42:34 [189/2835] ok RCETELLERKR/shorts/549_친구 딱히 필요 없고 독립적인 성향이 사주 때문.. !👀 #사주 #지식 #운세.txt claims 2 18s
+16:42:34 [190/2835] ok data/FORCETELLERKR/shorts/550_여러분 사주엔... 과연... 👀✨ #운세 #사주 #존예.txt claims 3 15s
+16:42:34 [191/2835] ok /FORCETELLERKR/shorts/556_안 맞는 거 억지로 하지 말고 잘하는 걸 더 잘하자!!!🤓 #지식 #운세.txt claims 6 9s
+16:42:35 [192/2835] ok data/FORCETELLERKR/shorts/558_2025년 미리 축하드립니다 😉✨ #운세 #사주 #지식.txt claims 2 8s
+16:42:37 [193/2835] ok data/FORCETELLERKR/shorts/554_사주만 봐도 크게 될 사람인지 딱 나옴 #성공 #사주.txt claims 5 16s
+16:42:37 [194/2835] ok data/FORCETELLERKR/shorts/535_4월에 고생한만큼 대박나는 띠.txt claims 9 34s
+16:42:38 [195/2835] ok LERKR/shorts/557_헐 한 달 뒤면 벌써 2025년.. ! 미리 알고 대비합시다🙏✨ #신년운세 #사주 #운세.txt claims 4 12s
+16:42:39 [196/2835] ok data/FORCETELLERKR/shorts/559_어서 만나자 내 영혼의 짝꿍아 🥰✨ #신년운세 #사주.txt claims 1 11s
+16:42:39 [197/2835] ok data/FORCETELLERKR/shorts/565_내 사주는 과연 어떤 외모일까 👀🙏 #사주 #운세 #지식.txt claims 1 5s
+16:42:40 [198/2835] ok ORCETELLERKR/shorts/567_용한 초이에게 개인 사주 상담 받는 법 드디어 풉니다🥸 #사주 #운세 #지식.txt claims 0 3s
+16:42:41 [199/2835] ok data/FORCETELLERKR/shorts/561_고진감래는 그저 진리다 #대박 #운세 #사주.txt claims 3 9s
+16:42:42 [200/2835] ok data/FORCETELLERKR/shorts/563_지금부터 소개팅 부지런히 받자💖 #연애 #사주.txt claims 2 8s
+16:42:42    -- 진행 200/2835 경과 3.1분 | 토큰 in 147,159 out 182,570 think 511,816 | 누적 약 $2.71
+16:42:44 [201/2835] ok data/FORCETELLERKR/shorts/564_고생 끝에 낙이 온다는 것은 인생의 진리다 #삼재 #운세 #사주.txt claims 3 10s
+16:42:45 [202/2835] ok data/FORCETELLERKR/shorts/529_챗GPT로 정확하게 사주보는 방법.txt claims 0 48s
+16:42:47 [203/2835] ok data/FORCETELLERKR/shorts/570_쎄함은 사이언스다🧐 #사주 #지식 #상식.txt claims 2 8s
+16:42:49 [204/2835] ok data/FORCETELLERKR/shorts/568_뭐든지 과유불급이니라🙏 #사주 #지식 #상식.txt claims 3 12s
+16:42:49 [205/2835] ok data/FORCETELLERKR/shorts/569_사주로 보는 플러팅 꿀팁💖 #연애 #꿀팁 #사주.txt claims 2 12s
+16:42:50 [206/2835] ok data/FORCETELLERKR/shorts/573_오 내가 부지런할 수 있는 이유 오히려 좋아🤩 #사주 #운세.txt claims 3 9s
+16:42:51 [207/2835] ok data/FORCETELLERKR/shorts/571_사주에 외모가 나옵니다 진짜로ㄷㄷ #사주 #운세.txt claims 2 12s
+16:42:52 [208/2835] ok data/FORCETELLERKR/shorts/562_눈 깜빡하면 2025년ㅎ 미리 축하드립니다🥳 #운세 #사주 #대박.txt claims 6 20s
+16:42:54 [209/2835] ok data/FORCETELLERKR/shorts/560_얼굴에 빠진 게 죄는 아니잖아…!!!🥹❤️‍🔥 #사주 #연애.txt claims 6 25s
+16:42:54 [210/2835] ok data/FORCETELLERKR/shorts/575_역시 노력하는 자가 사랑을 쟁취한다😉 #연애 #사주 #플러팅.txt claims 3 11s
+16:42:55 [211/2835] ok data/FORCETELLERKR/shorts/576_우리가 지독하게 얽혀버린 이유..🤪 #연애 #사주 #궁합.txt claims 3 10s
+16:42:55 [212/2835] ok data/FORCETELLERKR/shorts/566_혼자서도 척척척 어른이들의 비밀 👀🔥 #사주 #지식 #운세.txt claims 6 20s
+16:42:58 [213/2835] ok ORCETELLERKR/shorts/578_사주가 MBTI보다 훨씬 더 잘 맞다며.. ! 👀✨ #사주 #MBTI #연애.txt claims 2 9s
+16:42:58 [214/2835] ok data/FORCETELLERKR/shorts/577_어이쿠 수다자들 민간인 사찰 당함 #사주 #연애 #플러팅.txt claims 3 12s
+16:43:00 [215/2835] ok ta/FORCETELLERKR/shorts/580_오늘도 열심히 세상에 나를 끼워맞춰 본다,,😇 #사주 #mz #직장인.txt claims 3 11s
+16:43:02 [216/2835] ok data/FORCETELLERKR/shorts/579_뱀이다~ 뱀이다~~ 몸에 좋고 맛도 좋은🐍 #뱀띠 #사주 #운세.txt claims 4 12s
+16:43:02 [217/2835] ok data/FORCETELLERKR/shorts/572_이왕 될 거 좋은 꼰대( )가 됩시다..😇 #사주 #운세.txt claims 5 22s
+16:43:03 [218/2835] ok data/FORCETELLERKR/shorts/582_🐲 용띠가 유독 건강운이 좋은 이유 #사주 #띠별운세 #용띠.txt claims 3 11s
+16:43:04 [219/2835] ok ata/FORCETELLERKR/shorts/584_이 정도면 걍 존재 자체가 플러팅 아니냐🤭🖤 #사주 #연애 #플러팅.txt claims 3 10s
+16:43:05 [220/2835] ok data/FORCETELLERKR/shorts/581_뭘 해도 다 받아줌 레전드 계수의 매력🖤 #사주 #플러팅 #연애.txt claims 4 14s
+16:43:05    -- 진행 220/2835 경과 3.5분 | 토큰 in 162,428 out 198,409 think 579,035 | 누적 약 $3.04
+16:43:05 [221/2835] ok ata/FORCETELLERKR/shorts/586_널 만나기 전의 내 모습 상상할 수 없어..🙀 #연애 #사주 #궁합.txt claims 3 10s
+16:43:06 [222/2835] ok data/FORCETELLERKR/shorts/587_원빈 성찬 그들이 따뜻할 수밖에 없는 이유🤦‍♀️ #라이즈 #사주.txt claims 3 8s
+16:43:07 [223/2835] ok data/FORCETELLERKR/shorts/589_요즘 MZ들은 사주 확인하고 플러팅함💖 #사주 #MZ #연애.txt claims 2 6s
+16:43:07 [224/2835] skip(짧음) data/FORCETELLERKR/shorts/597_내 사주에 귀신이.. 👀 #귀문관살 #샤먼 #무당.txt
+16:43:08 [225/2835] ok data/FORCETELLERKR/shorts/590_내가 S면 넌 나의 N이 되어줘라 🧲❤️‍🔥.txt claims 1 6s
+16:43:08 [226/2835] ok FORCETELLERKR/shorts/583_이가 없으면 잇몸으로 잘 살면 됨😎❤️‍🔥 #도화살 #연애 #사주 #플러팅.txt claims 3 15s
+16:43:10 [227/2835] ok data/FORCETELLERKR/shorts/591_사주만으로 외모 짐작 쌉가능..😚 #사주 #지식 #상식.txt claims 2 8s
+16:43:10 [228/2835] ok data/FORCETELLERKR/shorts/585_양띠의 진실...👀🐑 #띠별운세 #사주 #팩폭 #MBTI.txt claims 4 15s
+16:43:12 [229/2835] ok data/FORCETELLERKR/shorts/592_🕯️내가 유난히 촉이 좋았던 이유 #사주 #무당.txt claims 3 9s
+16:43:13 [230/2835] ok data/FORCETELLERKR/shorts/593_사주가 비슷하면 성격도 잘 맞을까 👀❤️‍🔥 #연애 #궁합.txt claims 2 8s
+16:43:13 [231/2835] ok data/FORCETELLERKR/shorts/524_역술인이 다 인정하는 재물운 끝판왕.txt claims 10 80s
+16:43:14 [232/2835] ok data/FORCETELLERKR/shorts/595_닭띠 첫인상 솔직히 다들 공감하잖아요 👁️👁️ #사주 #운세.txt claims 3 8s
+16:43:16 [233/2835] ok data/FORCETELLERKR/shorts/599_미친 사랑의 노래...❤️‍🔥 #연애 #궁합 #사주.txt claims 3 8s
+16:43:17 [234/2835] ok data/FORCETELLERKR/shorts/594_사주 음란지합의 진실...🥵 #사주 #운세.txt claims 3 12s
+16:43:17 [235/2835] ok data/FORCETELLERKR/shorts/601_아니 너무 부러운 사주잖아... ! 👀💖 #사주 #지식.txt claims 2 7s
+16:43:17 [236/2835] skip(짧음) data/FORCETELLERKR/shorts/609_포스텔러가 알려주는 파묘 팝업스토어 200% 즐기는 법!.txt
+16:43:17 [237/2835] ok data/FORCETELLERKR/shorts/588_애인은 최고의 베프☺️💕 #연애 #궁합 #사주.txt claims 6 19s
+16:43:17 [238/2835] ok data/FORCETELLERKR/shorts/596_사주 음력 논란 이걸로 종결🙏 #사주 #운세.txt claims 3 11s
+16:43:19 [239/2835] ok data/FORCETELLERKR/shorts/602_오랫동안 내 옆에 있어주라...🫶 #사주 #귀인.txt claims 2 9s
+16:43:23 [240/2835] ok data/FORCETELLERKR/shorts/607_여러분은 돈복을 타고나셨나요🤑 #부자 #사주.txt claims 2 7s
+16:43:23    -- 진행 240/2835 경과 3.8분 | 토큰 in 175,991 out 214,182 think 637,270 | 누적 약 $3.32
+16:43:23 [241/2835] ok data/FORCETELLERKR/shorts/604_얼빠들은 솔직히 찔릴 것이다🤭 #연애 #사주.txt claims 2 10s
+16:43:23 [242/2835] ok data/FORCETELLERKR/shorts/598_칭찬은 인성을 춤추게 한다...🥹❤️‍🔥 #연애 #사주.txt claims 2 16s
+16:43:24 [243/2835] ok ta/FORCETELLERKR/shorts/574_갓생 집착러들 지금 당장 사주를 확인해 보십시오 #갓생 #열정 #사주.txt claims 10 42s
+16:43:25 [244/2835] ok data/FORCETELLERKR/shorts/555_삼재는 횡재수다 꼭 기억합시다 여러분 🙏🍀 #운세 #사주 #지식.txt claims 11 61s
+16:43:25 [245/2835] ok data/FORCETELLERKR/shorts/606_얼마나 잘되려고 이렇게 힘든지😏 #성공 #사주.txt claims 3 11s
+16:43:26 [246/2835] ok data/FORCETELLERKR/shorts/612_사주에 '이것' 있으면 예쁜데 성격도 좋다 ! 🤭 #사주 #지식.txt claims 3 9s
+16:43:26 [247/2835] ok data/FORCETELLERKR/shorts/610_유독 이상한 사람이 꼬이는 사주🥲 #사주 #지식.txt claims 2 9s
+16:43:26 [248/2835] ok data/FORCETELLERKR/shorts/608_자수성가로 대박나는 사주 특징🤑 #부자 #사주.txt claims 3 9s
+16:43:27 [249/2835] ok data/FORCETELLERKR/shorts/611_스킨십 진도 가장 빨리 빼는 사주❤️‍🔥 #연애 #사주.txt claims 3 10s
+16:43:28 [250/2835] ok data/FORCETELLERKR/shorts/613_좋은 사주 나쁜 사주 그런 거 없어요🙅‍♀️ #사주 #지식 #상식.txt claims 1 8s
+16:43:28 [251/2835] ok data/FORCETELLERKR/shorts/605_어머 완전 럭키비키 사주잖아.. !🍀 #사주 #운세 #귀인.txt claims 5 15s
+16:43:30 [252/2835] ok data/FORCETELLERKR/shorts/622_동성커플에게도 도화살이 작용할까 #연애 #사주 #사랑.txt claims 1 4s
+16:43:30 [253/2835] ok data/FORCETELLERKR/shorts/620_화 많은 사주 플러팅 하는 법 #지식 #상식.txt claims 1 5s
+16:43:32 [254/2835] ok data/FORCETELLERKR/shorts/615_돈복은 티가 안날 수가 없어요 #부자 #사주.txt claims 2 9s
+16:43:35 [255/2835] ok data/FORCETELLERKR/shorts/624_토 많은 사주 플러팅 하는 법 #지식 #상식.txt claims 2 8s
+16:43:35 [256/2835] ok data/FORCETELLERKR/shorts/614_일과 사랑 두 마리 토끼 가능한 사주❤️‍🔥 #사주 #지식 #상식.txt claims 3 13s
+16:43:36 [257/2835] ok data/FORCETELLERKR/shorts/627_금 많은 사주 플러팅하는 법 #지식 #상식.txt claims 1 6s
+16:43:37 [258/2835] ok data/FORCETELLERKR/shorts/618_사업하면 망하는 사주 특 #지식 #사주.txt claims 2 12s
+16:43:37 [259/2835] ok data/FORCETELLERKR/shorts/623_도화살 이렇게 활용하세요 #사주 #지식.txt claims 3 10s
+16:43:37 [260/2835] ok data/FORCETELLERKR/shorts/603_표현 잘하는 사람 어서오세요...💖 #연애 #사주.txt claims 6 25s
+16:43:37    -- 진행 260/2835 경과 4.0분 | 토큰 in 189,627 out 230,960 think 697,915 | 누적 약 $3.63
+16:43:38 [261/2835] ok data/FORCETELLERKR/shorts/626_수 많은 사주 플러팅하는 법 #지식 #상식.txt claims 1 8s
+16:43:38 [262/2835] ok data/FORCETELLERKR/shorts/625_도화살 있으면 무조건 인기 많음 #사주 #지식.txt claims 2 10s
+16:43:38 [263/2835] ok data/FORCETELLERKR/shorts/616_건들면 X되는 기존쎄 사주 특 #사주 #지식.txt claims 2 15s
+16:43:42 [264/2835] ok data/FORCETELLERKR/shorts/621_내 사주엔 과연 물이 얼마나.. #사주 #상식.txt claims 4 16s
+16:43:42 [265/2835] ok data/FORCETELLERKR/shorts/617_그들의 정치질을 막으려면.. #사주 #지식 #상식.txt claims 4 18s
+16:43:44 [266/2835] ok data/FORCETELLERKR/shorts/629_사귈때 조건 보는 여자 사주 #사주 #지식 #상식.txt claims 4 9s
+16:43:44 [267/2835] ok data/FORCETELLERKR/shorts/631_토 많은 사람 연애 힘든 이유 #사주 #지식 #상식.txt claims 1 8s
+16:43:44 [268/2835] ok data/FORCETELLERKR/shorts/600_얼굴이 밥 안 먹여줌😎 #결혼 #연애 #사주.txt claims 3 36s
+16:43:45 [269/2835] ok data/FORCETELLERKR/shorts/619_최강 도화살 아이돌 6인 #사주 #상식.txt claims 9 20s
+16:43:45 [270/2835] ok data/FORCETELLERKR/shorts/632_수 많은 사람 연애가 힘든 이유 #지식 #상식 #사주.txt claims 2 8s
+16:43:45 [271/2835] ok data/FORCETELLERKR/shorts/635_화 많은 사주 연애하는 법 #지식 #상식.txt claims 1 7s
+16:43:45 [272/2835] ok data/FORCETELLERKR/shorts/633_금 많은 사람 연애가 힘든 이유 #지식 #상식 #사주.txt claims 1 8s
+16:43:47 [273/2835] ok data/FORCETELLERKR/shorts/634_목 많은 사주 연애하는 법 #지식 #상식.txt claims 2 10s
+16:43:47 [274/2835] ok data/FORCETELLERKR/shorts/636_평생 하늘이 도와준다는 사주 #사주 #지식 #상식.txt claims 5 10s
+16:43:48 [275/2835] ok data/FORCETELLERKR/shorts/638_재벌집 사주의 진짜 정체 #지식 #상식 #사주.txt claims 2 6s
+16:43:48 [276/2835] ok data/FORCETELLERKR/shorts/630_사주에 목 많은 사람 꼬시는 법 #사주 #지식 #상식.txt claims 2 13s
+16:43:50 [277/2835] ok data/FORCETELLERKR/shorts/637_하늘이 내려준 돈복 타고난 사주 #사주 #지식 #상식.txt claims 5 12s
+16:43:53 [278/2835] ok data/FORCETELLERKR/shorts/642_도화살 홍염살 뭐가 달라요 #사주 #지식 #상식.txt claims 2 8s
+16:43:54 [279/2835] ok data/FORCETELLERKR/shorts/628_눈치 없이 꼬리 치는 여자 사주 #지식 #상식.txt claims 3 22s
+16:43:55 [280/2835] ok /shorts/646_가만히 있어도 사람들에게 인기 많은 사주 특징! 완전 하하버스 사주네… #사주 #도화살 #포스텔러.txt claims 3 10s
+16:43:55    -- 진행 280/2835 경과 4.3분 | 토큰 in 202,518 out 246,751 think 754,342 | 누적 약 $3.91
+16:43:56 [281/2835] ok data/FORCETELLERKR/shorts/641_스님 팔자 된다고 결혼 못한다고 #지식 #상식 #사주.txt claims 3 12s
+16:43:58 [282/2835] ok data/FORCETELLERKR/shorts/645_가장 섹시한 도화살 폭발 사주는 #도화살 #사주.txt claims 4 13s
+16:43:58 [283/2835] ok _도화살 중 최고로 좋은 도화살은 BTS 정국 사주가 쩌는 이유가 있었어!! #도화살 #정국 #사주 #BTS #포스텔러.txt claims 2 10s
+16:43:58 [284/2835] ok data/FORCETELLERKR/shorts/643_파묘 결말 1분 요약 #파묘 #파묘해석 #사주 #음양오행.txt claims 1 13s
+16:43:58 [285/2835] ok data/FORCETELLERKR/shorts/647_사람을 끌어당기는 마성의 사주 #지식 #상식.txt claims 3 11s
+16:43:59 [286/2835] ok data/FORCETELLERKR/shorts/644_가난한 사주는 따로 있대요 #사주 #지식 #상식.txt claims 2 14s
+16:44:01 [287/2835] ok data/FORCETELLERKR/shorts/648_2024년 대박만 나는 띠 #지식 #상식 #사주.txt claims 10 14s
+16:44:01 [288/2835] ok data/FORCETELLERKR/shorts/652_2024년 용띠 신년운세 총정리 #사주 #지식 #상식.txt claims 4 9s
+16:44:01 [289/2835] ok data/FORCETELLERKR/shorts/649_3월에 죽을고비 넘기면 대박나는 띠 #사주 #지식 #상식.txt claims 6 14s
+16:44:05 [290/2835] ok data/FORCETELLERKR/shorts/651_고생 끝에 반드시 돈복 쏟아지는 사주 #지식 #상식 #사주.txt claims 2 15s
+16:44:06 [291/2835] ok data/FORCETELLERKR/shorts/660_2024년 원숭이띠 신년운세 총정리 #사주 #지식 #상식.txt claims 3 7s
+16:44:06 [292/2835] ok data/FORCETELLERKR/shorts/659_위험할 때 하늘이 반드시 구해주는 사주 #지식 #상식 #사주.txt claims 2 8s
+16:44:06 [293/2835] ok data/FORCETELLERKR/shorts/655_평생동안 이성에게 인기 많은 사주 #지식 #상식.txt claims 4 10s
+16:44:06 [294/2835] ok data/FORCETELLERKR/shorts/663_줏대좌의 일침이 필요한 사주 #사주 #개운법 #줏대좌.txt claims 2 5s
+16:44:09 [295/2835] ok /FORCETELLERKR/shorts/658_공포영화, 귀신, 오컬트 영화보면 큰일나는 사주팔자 #사주 #공포 #귀신.txt claims 1 11s
+16:44:09 [296/2835] ok ETELLERKR/shorts/640_도화살 있다고 인기 많은 거 아닙니다. 진짜 인기 많은 사주 특징 #도화살 #사주.txt claims 6 25s
+16:44:10 [297/2835] ok FORCETELLERKR/shorts/654_내 사주 속 도화살은 얼마나 강할까 3초 만에 확인보세요! #도화살 #사주.txt claims 3 15s
+16:44:13 [298/2835] ok data/FORCETELLERKR/shorts/667_운이 좋아지는 가장 확실하고 강력한 개운법!! #사주 #개운법.txt claims 1 7s
+16:44:14 [299/2835] ok data/FORCETELLERKR/shorts/664_2024년 양띠 신년운세 총정리 #지식 #상식 #사주.txt claims 5 9s
+16:44:15 [300/2835] ok data/FORCETELLERKR/shorts/665_버티면 마침내 돈복 쏟아지는 사주 #지식 #상식 #사주.txt claims 5 9s
+16:44:15    -- 진행 300/2835 경과 4.7분 | 토큰 in 216,894 out 265,015 think 798,158 | 누적 약 $4.15
+16:44:15 [301/2835] ok data/FORCETELLERKR/shorts/670_2024년 말띠 신년운세 총정리 #사주 #상식 #지식.txt claims 2 7s
+16:44:18 [302/2835] ok data/FORCETELLERKR/shorts/639_2024년 돈복 대박나는 사주 #지식 #상식 #사주.txt claims 10 36s
+16:44:19 [303/2835] ok data/FORCETELLERKR/shorts/661_2월 버텨내서 3월에 반드시 대박나는 띠 #지식 #사주 #상식.txt claims 5 18s
+16:44:19 [304/2835] ok data/FORCETELLERKR/shorts/668_2024년에 운명의 짝을 만나게 되는 꿈 #꿈해몽 #상식 #지식.txt claims 4 13s
+16:44:19 [305/2835] ok data/FORCETELLERKR/shorts/669_2024년에 여행 꼭 가야하는 손금 #손금 #상식 #지식.txt claims 3 11s
+16:44:19 [306/2835] ok data/FORCETELLERKR/shorts/666_2월에 반드시 몸조심해야하는 띠 3가지 #지식 #상식 #사주.txt claims 4 13s
+16:44:19 [307/2835] ok data/FORCETELLERKR/shorts/671_신기 있는 사람 3초만에 확인하는 방법 #사주 #상식 #지식.txt claims 7 10s
+16:44:20 [308/2835] ok data/FORCETELLERKR/shorts/656_2024 닭띠 신년운세 총정리 #지식 #상식 #사주.txt claims 4 22s
+16:44:23 [309/2835] ok data/FORCETELLERKR/shorts/653_3월에 돈과 인연이 쏟아지는 띠 #지식 #상식 #사주.txt claims 12 30s
+16:44:23 [310/2835] ok a/FORCETELLERKR/shorts/674_싸가지 없는 사주… 사주에 화 없는 분들 정말 이런가요 #사주 #개운법.txt claims 3 9s
+16:44:26 [311/2835] ok horts/682_2024년 대운이 올 때 나타나는 강력한 징조 3가지! #사주 #대운 #2024년운세 #2024년운세.txt claims 1 6s
+16:44:26 [312/2835] ok data/FORCETELLERKR/shorts/657_2월에 반드시 일복 돈복 들어오는 띠 #지식 #사주 #상식.txt claims 7 28s
+16:44:26 [313/2835] ok data/FORCETELLERKR/shorts/676_새해 귀인을 불러드리는 집안 풍수 #지식 #상식.txt claims 3 8s
+16:44:26 [314/2835] ok data/FORCETELLERKR/shorts/675_2024년 별자리별 행운의 컬러 #지식 #상식 #별자리.txt claims 12 11s
+16:44:26 [315/2835] ok ata/FORCETELLERKR/shorts/672_한국인 중 5분의 1은 띠를 잘못 알고 있어요 #사주 #상식 #지식.txt claims 2 13s
+16:44:28 [316/2835] ok data/FORCETELLERKR/shorts/681_2024년 남자 다 홀리고 다니는 사주 #지식 #상식 #사주.txt claims 2 9s
+16:44:28 [317/2835] ok data/FORCETELLERKR/shorts/662_2024년 띠별 신년운세 총정리 #지식 #상식 #사주.txt claims 12 27s
+16:44:30 [318/2835] ok RCETELLERKR/shorts/678_목 없는 사주가 재물운 대박나는 방법! 특별한 직업 개운법 #사주 #목없는사주.txt claims 3 11s
+16:44:31 [319/2835] ok data/FORCETELLERKR/shorts/679_2024년 뱀띠 신년운세 총정리 #지식 #상식 #사주.txt claims 4 11s
+16:44:31 [320/2835] ok data/FORCETELLERKR/shorts/684_신년맞이 복을 불러오는 현관 인테리어 #지식 #상식 #풍수.txt claims 3 7s
+16:44:31    -- 진행 320/2835 경과 4.9분 | 토큰 in 231,904 out 290,547 think 857,889 | 누적 약 $4.48
+16:44:31 [321/2835] ok 2024년에 통장에 돈이 마르지 않는 사주! 재물운, 직장운 다 대박 #2024년운세 #2024년신금 #재물운 #직장운.txt claims 2 5s
+16:44:32 [322/2835] ok data/FORCETELLERKR/shorts/685_팔자 센 사주 특징 #지식 #상식 #사주.txt claims 2 7s
+16:44:33 [323/2835] ok data/FORCETELLERKR/shorts/680_2024년 대박 아니면 쪽박 나는 사주 #지식 #상식 #사주.txt claims 2 13s
+16:44:34 [324/2835] ok data/FORCETELLERKR/shorts/683_새해 이 꿈 꾸면 돈복 터진대요 #지식 #상식 #꿈해몽.txt claims 3 10s
+16:44:35 [325/2835] ok data/FORCETELLERKR/shorts/673_2월에 돈은 확실히 버는 띠 3가지 #사주 #상식 #지식.txt claims 9 22s
+16:44:36 [326/2835] ok data/FORCETELLERKR/shorts/690_2024년 운명의 상대를 찾는 손금 #지식 #상식 #손금.txt claims 3 8s
+16:44:38 [327/2835] ok data/FORCETELLERKR/shorts/686_2024년 개띠 신년운세 총정리 #지식 #상식 #사주.txt claims 3 12s
+16:44:38 [328/2835] ok 88_12월 고생 끝내고 1월에 드디어 다 보상받는 띠 #지식 #상식 #사주.txt claims 4 11s
+16:44:38 [329/2835] ok data/FORCETELLERKR/shorts/696_불륜 사실도 맞힌 미친 적중률 운세ㄷㄷ😱 #2024년운세.txt claims 2 6s
+16:44:39 [330/2835] ok data/FORCETELLERKR/shorts/691_2024년에 사람 조심해야 하는 띠 #지식 #상식 #사주.txt claims 3 11s
+16:44:39 [331/2835] ok data/FORCETELLERKR/shorts/692_2024년에 달님의 가호를 받는 사주 #지식 #상식 #사주.txt claims 3 9s
+16:44:39 [332/2835] ok data/FORCETELLERKR/shorts/677_1월에 존버해야 2월에 대박나는 띠 3가지 #지식 #상식 #사주.txt claims 7 21s
+16:44:40 [333/2835] ok ETELLERKR/shorts/697_2024년 돈복 터지고 재물운 대박나는 사주 TOP4 호명합니다! #2024년운세.txt claims 4 7s
+16:44:43 [334/2835] ok data/FORCETELLERKR/shorts/693_2024년 돼지띠 신년운세 총정리 #지식 #상식 #사주.txt claims 3 12s
+16:44:44 [335/2835] ok RKR/shorts/694_2024년 새해 위기랑 기회가 함께 와버리는 띠 #지식 #상식 #사주.txt claims 4 13s
+16:44:47 [336/2835] ok data/FORCETELLERKR/shorts/705_2024년에 대박 터지는 별자리 #지식 #상식 #별자리.txt claims 3 7s
+16:44:47 [337/2835] ok data/FORCETELLERKR/shorts/703_12월 다 버티고 새해 1월 대박만 나는 띠 #지식 #상식 #사주.txt claims 4 8s
+16:44:47 [338/2835] ok 년 이 날짜에 당신은 사랑에 빠지게 됩니다! 생일로 보는 나의 연애운! #2024년운세 #2024년사주 #2024년임수.txt claims 4 8s
+16:44:47 [339/2835] ok CETELLERKR/shorts/700_2024년 토끼띠 신년운세 총정리 #지식 #상식 #사주.txt claims 3 11s
+16:44:48 [340/2835] ok data/FORCETELLERKR/shorts/698_사주로 보는 오행 개운 패션 #지식 #상식 #사주.txt claims 5 14s
+16:44:48    -- 진행 340/2835 경과 5.2분 | 토큰 in 246,899 out 311,406 think 900,533 | 누적 약 $4.73
+16:44:49 [341/2835] ok data/FORCETELLERKR/shorts/699_2024년에 절호의 기회가 찾아오는 띠 #지식 #상식 #사주.txt claims 3 13s
+16:44:50 [342/2835] ok data/FORCETELLERKR/shorts/687_2024년 재물운 확 열리는 띠 #지식 #상식 #사주.txt claims 7 24s
+16:44:50 [343/2835] ok data/FORCETELLERKR/shorts/706_2024년에 운명의 짝 만나는 띠 #지식 #상식 #사주.txt claims 3 11s
+16:44:52 [344/2835] ok data/FORCETELLERKR/shorts/707_2024년 호랑이띠 신년운세 총정리 #지식 #상식 #사주.txt claims 3 13s
+16:44:53 [345/2835] ok data/FORCETELLERKR/shorts/695_1월 부터 대박 터지는 띠 3가지 #지식 #상식 #사주.txt claims 3 21s
+16:44:54 [346/2835] ok data/FORCETELLERKR/shorts/701_2024년 절대 결혼 못하는 여자 띠 #지식 #상식 #사주.txt claims 4 16s
+16:44:55 [347/2835] ok ELLERKR/shorts/712_이 꿈 꾸면 2024년에 대박납니다 #지식 #상식 #꿈해몽.txt claims 3 8s
+16:44:56 [348/2835] ok data/FORCETELLERKR/shorts/709_평생 하늘이 도와주는 사주 3초만에 확인하기 #지식 #상식 #사주.txt claims 3 12s
+16:44:56 [349/2835] ok data/FORCETELLERKR/shorts/715_공부 잘하게 타고난 사주 3초만에 확인하기 #지식 #상식 #사주.txt claims 2 7s
+16:44:57 [350/2835] ok ata/FORCETELLERKR/shorts/708_2024년 무조건 착하게 살아야하는 띠 3가지 #지식 #상식 #사주.txt claims 6 14s
+16:44:57 [351/2835] ok /FORCETELLERKR/shorts/702_2023년 고생 끝나야 2024년 대박 터지는 사주 #지식 #상식 #사주.txt claims 6 20s
+16:44:58 [352/2835] ok 년 시험 합격운이 유독 좋은 사주는 수시, 정시, 취업 합격 소식 도착! #2024년운세 #사주 #운세 #2024년사주.txt claims 2 5s
+16:44:59 [353/2835] ok data/FORCETELLERKR/shorts/710_2024년 소띠 신년운세 총정리 #지식 #상식 #사주.txt claims 2 13s
+16:45:00 [354/2835] ok ETELLERKR/shorts/714_2024년 쥐띠 신년운세 총정리 #지식 #상식 #사주.txt claims 2 12s
+16:45:02 [355/2835] ok data/FORCETELLERKR/shorts/721_말년에 운이 좋아지는 사주 #지식 #상식 #사주.txt claims 2 7s
+16:45:02 [356/2835] ok data/FORCETELLERKR/shorts/718_2024년에 드디어 성공하는 손금 #지식 #상식 #손금.txt claims 5 10s
+16:45:02 [357/2835] ok ta/FORCETELLERKR/shorts/722_큰 소득이 끊이지 않는 사주, 3초만에 확인하기 #지식 #상식 #사주.txt claims 3 7s
+16:45:04 [358/2835] ok ts/711_2024년에 꿈에 그리던 이상형을 만나게 되는 띠! 연애운 폭발을 위한 개운법! #2024년운세 #띠별운세.txt claims 6 17s
+16:45:05 [359/2835] ok data/FORCETELLERKR/shorts/717_12월에 꼭 몸조심해야하는 띠 3가지 #지식 #상식 #사주.txt claims 5 14s
+16:45:05 [360/2835] ok data/FORCETELLERKR/shorts/727_2024년 돈복 터지는 별자리 TOP3 #지식 #상식 #별자리.txt claims 3 7s
+16:45:05    -- 진행 360/2835 경과 5.5분 | 토큰 in 261,953 out 332,589 think 952,917 | 누적 약 $5.02
+16:45:05 [361/2835] ok data/FORCETELLERKR/shorts/720_2024년에 드디어 귀인을 만나는 띠 #지식 #상식 #사주.txt claims 3 11s
+16:45:05 [362/2835] ok /shorts/713_2024년에 결혼하면 대박 나는 별자리 #지식 #상식 #별자리.txt claims 9 18s
+16:45:07 [363/2835] ok ts/716_2023년 위기 다 겪고 2024년 대박만 나는 띠 #지식 #상식 #사주.txt claims 6 17s
+16:45:10 [364/2835] ok /FORCETELLERKR/shorts/729_사람들 설레게하는 유죄인간 사주, 3초만에 확인하기 #지식 #상식 #사주.txt claims 4 10s
+16:45:11 [365/2835] ok data/FORCETELLERKR/shorts/725_2024년 안해놓으면 손해 크게 보는 것들 #지식 #상식 #풍수.txt claims 4 13s
+16:45:12 [366/2835] ok data/FORCETELLERKR/shorts/735_2024년 드디어 대박나는 별자리 #지식 #상식 #별자리.txt claims 3 7s
+16:45:14 [367/2835] ok RCETELLERKR/shorts/736_고생 끝 드디어 대박나는 사주 3초만에 확인하기 #지식 #상식 #사주 #별자리.txt claims 2 9s
+16:45:14 [368/2835] ok ata/FORCETELLERKR/shorts/734_버티기만 하면 2024년 크게 잘되는 별자리 #지식 #상식 #별자리.txt claims 4 9s
+16:45:15 [369/2835] ok ORCETELLERKR/shorts/730_2023년 견뎌내야, 2024년 재물운 확 열리는 사주 #지식 #상식 #사주.txt claims 4 13s
+16:45:15 [370/2835] ok 년 신년에 미친 듯이 인기가 폭발하는 띠는 인기가 폭발한닭!!!! #사주 #운세 #2024년 #2024년운세 #띠별운세.txt claims 2 5s
+16:45:16 [371/2835] ok data/FORCETELLERKR/shorts/728_2024년 갑진년 삼재를 맞는 띠는 #지식 #상식 #사주.txt claims 6 17s
+16:45:16 [372/2835] skip(짧음) ETELLERKR/shorts/746_대박 나는 결혼 날짜 잡는 법 #결혼 #결혼날짜 #2024년 #사주 #운세 #택일.txt
+16:45:17 [373/2835] ok ETELLERKR/shorts/723_2023년 삼재 끝내고, 2024년 귀인 들어오는 띠 3가지 #지식 #상식 #사주.txt claims 6 21s
+16:45:18 [374/2835] ok data/FORCETELLERKR/shorts/724_12월에 돈과 이성이 끊이지 않는 띠 3가지 #지식 #상식 #사주.txt claims 9 21s
+16:45:20 [375/2835] ok data/FORCETELLERKR/shorts/740_결혼하면 안되는 사주가 있다고 #지식 #상식 #사주.txt claims 5 10s
+16:45:21 [376/2835] ok data/FORCETELLERKR/shorts/733_2024년 연애운 대박나는 별자리 #지식 #상식 #별자리.txt claims 3 17s
+16:45:21 [377/2835] ok 년에 환승연애 찍게 되는 띠! 헤어졌던 이성을 다시 만나게 되는 띠는 #띠별운세 #원숭이띠 #쥐띠 #용띠 #지식 #상식.txt claims 12 18s
+16:45:23 [378/2835] ok data/FORCETELLERKR/shorts/748_4살 차이 궁합 정말 좋을까 #지식 #상식 #궁합.txt claims 1 6s
+16:45:26 [379/2835] ok ORCETELLERKR/shorts/741_하늘이 위기에 책임지고 살려주는 사주 3초만에 확인하기 #지식 #상식 #사주.txt claims 2 13s
+16:45:26 [380/2835] ok  2024년 띠별 신년운세!! 대박 나는 띠 TOP3 호명합니다~ 축하드려요! #2024 #2024년운세 #띠별운세 #.txt claims 3 11s
+16:45:26    -- 진행 380/2835 경과 5.9분 | 토큰 in 275,990 out 354,586 think 1,003,898 | 누적 약 $5.30
+16:45:26 [381/2835] ok ata/FORCETELLERKR/shorts/738_11월만 버티면 12월 드디어 대박나는 띠 #지식 #상식 #사주.txt claims 7 19s
+16:45:29 [382/2835] ok ata/FORCETELLERKR/shorts/747_2024년 재물운 대박 터지는 손금 #지식 #상식 #손금 #신년운세.txt claims 3 13s
+16:45:31 [383/2835] ok /FORCETELLERKR/shorts/737_2023년 겪은 고생, 2024년 다 보상 받는 띠 #지식 #상식 #사주.txt claims 5 26s
+16:45:33 [384/2835] ok data/FORCETELLERKR/shorts/749_하늘이 돈복은 무조건 책임져주는 사주 #지식 #상식 #사주.txt claims 5 15s
+16:45:34 [385/2835] ok CETELLERKR/shorts/753_이삿짐 센터에서 이 영상을 싫어합니다 #이사 #손없는날 #이사날짜 #운세 #사주.txt claims 1 11s
+16:45:34 [386/2835] ok data/FORCETELLERKR/shorts/750_미리보는 2024년 별자리 신년운세 #지식 #상식 #사주 #별자리.txt claims 12 14s
+16:45:35 [387/2835] ok /FORCETELLERKR/shorts/754_태어난 날짜로 보는 궁합 #지식 #상식 #사주.txt claims 6 10s
+16:45:36 [388/2835] ok CETELLERKR/shorts/743_2024년 내년에 절대 죽어라 일하면 안되는 띠 #지식 #상식 #사주 #신년운세.txt claims 7 22s
+16:45:37 [389/2835] ok KR/shorts/742_2023년 죽을고비 넘기고 2024년 대박나는 별자리 #지식 #상식 #사주 #별자리 #신년운세.txt claims 6 23s
+16:45:37 [390/2835] ok R/shorts/757_하늘이 작정하고 큰사람 만드는 사주 #지식 #상식 #사주.txt claims 2 8s
+16:45:37 [391/2835] ok data/FORCETELLERKR/shorts/744_11월에 일복돈복 미친듯이 터지는 띠 #지식 #상식 #사주.txt claims 5 22s
+16:45:38 [392/2835] ok ata/FORCETELLERKR/shorts/752_11월에 꼭 몸조심 돈조심 해야하는 띠 3가지 #지식 #상식 #사주.txt claims 7 18s
+16:45:41 [393/2835] ok LERKR/shorts/751_올해 고생 다 버티고 2024년엔 대박만 나는 띠 3가지 #지식 #상식 #사주 #신년운세.txt claims 6 21s
+16:45:42 [394/2835] ok a/FORCETELLERKR/shorts/755_이 손가락이 짧으면 100% 눈치 없는 사람이래요 #지식 #상식 #손금.txt claims 4 16s
+16:45:43 [395/2835] ok data/FORCETELLERKR/shorts/760_고양이 강아지가 꿈에 나온다면 #지식 #상식 #꿈해몽.txt claims 4 9s
+16:45:44 [396/2835] ok horts/765_와 이 띠는 말년에 더 대박이네… 말년에 포텐 떡상하는 띠는 #토끼 #토끼띠 #띠별운세 #운세 #사주.txt claims 3 7s
+16:45:45 [397/2835] ok data/FORCETELLERKR/shorts/766_현관에 두면 귀신을 부르는 물건들 #지식 #상식 #풍수.txt claims 4 8s
+16:45:46 [398/2835] ok 년 전에 절대 싸우면 안 되는 띠! 인간관계 주의하세요!!! #2024년운세 #뱀띠 #닭띠 #소띠 #운세 #띠별운세 #.txt claims 3 13s
+16:45:48 [399/2835] ok data/FORCETELLERKR/shorts/761_손금으로 보는 나의 연애스타일 #지식 #상식 #손금.txt claims 3 14s
+16:45:48 [400/2835] ok data/FORCETELLERKR/shorts/763_평생 남자가 끊이질 않는 여자 사주 #지식 #상식 #사주.txt claims 3 12s
+16:45:48    -- 진행 400/2835 경과 6.2분 | 토큰 in 291,302 out 377,715 think 1,071,980 | 누적 약 $5.65
+16:45:48 [401/2835] ok data/FORCETELLERKR/shorts/762_진짜 팔자 쎈 여자 띠 3가지 #지식 #상식 #사주.txt claims 3 13s
+16:45:48 [402/2835] ok ata/FORCETELLERKR/shorts/769_고생 끝에 마침내 재물운 터지는 사주, 난지 확인하기 #지식 #상식.txt claims 1 7s
+16:45:52 [403/2835] ok data/FORCETELLERKR/shorts/731_12월에 마지막으로 대박나는 띠 3가지 #지식 #상식 #사주.txt claims 3 50s
+16:45:52 [404/2835] ok data/FORCETELLERKR/shorts/767_손금으로 보는 내가 헤어지는 이유 #지식 #상식 #손금.txt claims 3 14s
+16:45:52 [405/2835] ok /FORCETELLERKR/shorts/764_올해 죽을고비 넘기고 2024년 대박나는 띠 3가지 #지식 #상식 #사주.txt claims 6 16s
+16:45:52 [406/2835] ok ts/771_용띠 모여라!! 태어날 때부터 리더 재질인 당신! 멋지다 용띠🐲 #용띠 #띠별특징 #띠별운세 #사주 #운세.txt claims 3 8s
+16:45:53 [407/2835] ok ETELLERKR/shorts/772_혹시 꿈에 BTS나 블랙핑크 나온 적 있는 사람 다 와봐유 #지식 #상식 #꿈해몽.txt claims 4 8s
+16:45:55 [408/2835] ok a/FORCETELLERKR/shorts/770_10월 고생 다 끝내고 11월 무조건 대박나는 띠 #지식 #상식 #사주.txt claims 4 13s
+16:45:56 [409/2835] ok data/FORCETELLERKR/shorts/756_사주로 내 운명의 상대 3초만에 확인하는 법 #지식 #상식 #사주.txt claims 6 30s
+16:45:56 [410/2835] ok RCETELLERKR/shorts/773_특별한 행운이 찾아오는 손금이 따로 있대요 어서 보세요! #지식 #상식 #손금.txt claims 2 10s
+16:45:58 [411/2835] ok ata/FORCETELLERKR/shorts/779_지금 손가락 길이 한 번 재보면서 비교해보세요 #지식 #상식 #손금.txt claims 2 6s
+16:45:58 [412/2835] ok data/FORCETELLERKR/shorts/768_2024년 무조건 대박나는 사주 #지식 #상식 #사주.txt claims 4 16s
+16:45:59 [413/2835] ok a/FORCETELLERKR/shorts/774_자수성가로 반드시 대박나는 사주 3초만에 확인하기 #지식 #상식 #사주.txt claims 3 11s
+16:46:00 [414/2835] ok data/FORCETELLERKR/shorts/778_이성운 강력하게 들어오는 사주 나도 있을까 #지식 #상식 #사주.txt claims 3 8s
+16:46:00 [415/2835] ok data/FORCETELLERKR/shorts/780_결혼을 못하는 사주는 따로 있대요 #지식 #상식 #사주.txt claims 2 8s
+16:46:01 [416/2835] ok data/FORCETELLERKR/shorts/775_2024년 갑진년 대박나는 사주 미리 보기 #지식 #상식 #사주.txt claims 2 13s
+16:46:01 [417/2835] ok s/777_가만히 있어도 인기가 폭발하는 사주 특징 #제니 #정국 #간여지동 #사주 #운세 #bts #blackpink.txt claims 2 13s
+16:46:02 [418/2835] ok FORCETELLERKR/shorts/783_12띠 중 가장 강철 멘탈인 띠는 #멘탈갑 #띠별특징 #쥐띠 #사주 #운세.txt claims 1 7s
+16:46:02 [419/2835] ok data/FORCETELLERKR/shorts/776_10월에 힘든 시기 다 끝나는 띠 3가지 #지식 #상식 #사주.txt claims 6 14s
+16:46:04 [420/2835] ok data/FORCETELLERKR/shorts/785_손모양으로 보는 나의 특별한 능력 #지식 #상식 #손금.txt claims 4 8s
+16:46:04    -- 진행 420/2835 경과 6.5분 | 토큰 in 305,865 out 394,316 think 1,132,869 | 누적 약 $5.96
+16:46:05 [421/2835] ok data/FORCETELLERKR/shorts/784_전소미 금금금 진짜 자기 사주 얘기임 #지식 #상식 #사주.txt claims 1 9s
+16:46:06 [422/2835] ok RCETELLERKR/shorts/789_내 사주에 금금금(gold gold gold)이 많다면 #사주 #금금금 #운세.txt claims 1 6s
+16:46:06 [423/2835] ok /FORCETELLERKR/shorts/787_와 하늘이 작정하고 도와주는 사주 3초만에 확인하기 #지식 #상식 #사주.txt claims 1 9s
+16:46:07 [424/2835] ok orts/758_11월에 하늘이 작정하고 도와주는 띠 3가지 #지식 #상식 #사주.txt claims 11 36s
+16:46:09 [425/2835] ok ata/FORCETELLERKR/shorts/791_여러분이나 여러분 아이의 태몽은 무엇이었나요 #지식 #상식 #꿈해몽.txt claims 4 8s
+16:46:10 [426/2835] ok shorts/794_와 이 띠는 태어날 때부터 능력치 대박!! 부러워요~ #호랑이띠 #띠별운세 #띠별특징 #지식 #상식.txt claims 3 8s
+16:46:12 [427/2835] ok ata/FORCETELLERKR/shorts/792_고생 끝 돈복 쏟아지는 사주 3초만에 확인하기 #지식 #상식 #사주.txt claims 3 11s
+16:46:12 [428/2835] ok a/FORCETELLERKR/shorts/786_비싼 사주 무턱대고 보지말고 좀! 돈 아끼자구요! #지식 #상식 #사주.txt claims 5 14s
+16:46:13 [429/2835] ok TELLERKR/shorts/781_미리보는 띠 별 2024년 신년운세! 확인해보세요! #지식 #상식 #사주 #토정비결.txt claims 12 21s
+16:46:13 [430/2835] skip(짧음) ELLERKR/shorts/804_사주에 오행 토가 많을 때 나타나는 특징! 특정 오행이 많으면~ #사주 #운세 #오행.txt
+16:46:13 [431/2835] ok ata/FORCETELLERKR/shorts/788_10월에 드디어 고생 다 보상 받는 띠 3가지 #지식 #상식 #사주.txt claims 5 14s
+16:46:14 [432/2835] ok data/FORCETELLERKR/shorts/793_이성을 다 끌어당기는 도화살 손금 #지식 #상식 #손금.txt claims 4 12s
+16:46:15 [433/2835] ok data/FORCETELLERKR/shorts/796_연애 잘하는 사주 TOP3 #지식 #상식 #사주.txt claims 5 9s
+16:46:15 [434/2835] ok data/FORCETELLERKR/shorts/797_누가 귀인인지 3초만에 확인하기 #지식 #상식 #사주.txt claims 1 8s
+16:46:15 [435/2835] ok data/FORCETELLERKR/shorts/798_인생 떡상하는 사람 손금 #지식 #상식 #손금.txt claims 3 8s
+16:46:16 [436/2835] ok _대운이 들어올 때 나타나는 징조! 좋은 운으로 바뀔 때 나타나는 신호들 #사주 #대운 #운세 #2023하반기 #개운법.txt claims 1 8s
+16:46:16 [437/2835] ok RCETELLERKR/shorts/801_여러분 생일에 연봉 얼마까지 벌 수 있을지 알 수 있대요 #지식 #상식 #사주.txt claims 1 6s
+16:46:19 [438/2835] ok data/FORCETELLERKR/shorts/802_연애 못하는 사주는 따로 있대요 혹시.. #지식 #상식 #사주.txt claims 3 7s
+16:46:22 [439/2835] ok 09_2024년 드디어 떡상하는 띠! 와… 이 띠는 폼 미쳤다ㄷㄷ #2024년운세 #2024년 #띠별운세 #운세 #사주.txt claims 1 7s
+16:46:23 [440/2835] ok data/FORCETELLERKR/shorts/808_결혼하면 대박나는 손금 #지식 #상식.txt claims 4 8s
+16:46:23    -- 진행 440/2835 경과 6.8분 | 토큰 in 319,528 out 410,485 think 1,179,001 | 누적 약 $6.20
+16:46:23 [441/2835] ok ata/FORCETELLERKR/shorts/803_연애하고 싶은 사람은 반지를 여기에 끼셔야해요 #지식 #상식 #손금.txt claims 4 11s
+16:46:24 [442/2835] ok data/FORCETELLERKR/shorts/790_9월에 돈과 이성이 끊이질 않는 띠 #지식 #상식 #사주.txt claims 9 24s
+16:46:24 [443/2835] ok ta/FORCETELLERKR/shorts/807_와 생년월일에 이거 있으면 하늘이 평생 돕는대요 #지식 #상식 #사주.txt claims 3 11s
+16:46:25 [444/2835] ok a/FORCETELLERKR/shorts/812_와.. 귀신 잘들리는 사람 생일로 알 수 있대요! #지식 #상식 #사주.txt claims 7 9s
+16:46:26 [445/2835] ok data/FORCETELLERKR/shorts/806_고생 다 끝나고 대운이 바뀌는 징조 5가지 #지식 #상식 #사주.txt claims 5 13s
+16:46:27 [446/2835] ok data/FORCETELLERKR/shorts/782_10월에 드디어 대박 터지는 띠 3가지 #지식 #상식 #사주.txt claims 9 34s
+16:46:28 [447/2835] ok data/FORCETELLERKR/shorts/800_9월에 죽을 고비 제대로 넘기는 띠 3가지 #지식 #상식 #사주.txt claims 4 19s
+16:46:28 [448/2835] ok data/FORCETELLERKR/shorts/810_8월부터 이성이 미친듯이 꼬이는 띠 3가지 #지식 #상식 #사주.txt claims 4 14s
+16:46:29 [449/2835] ok data/FORCETELLERKR/shorts/805_9월에 반드시 몸조심 해야하는 띠 3가지 #지식 #상식 #사주.txt claims 5 16s
+16:46:30 [450/2835] ok RCETELLERKR/shorts/814_사주에 화(火) 많은 사람들의 연애 스타일 #사주 #운세 #연애 #지식 #상식.txt claims 2 8s
+16:46:31 [451/2835] ok data/FORCETELLERKR/shorts/813_손금에 ‘이거’ 있으면 천재일수도 있대요 #지식 #상식 #손금.txt claims 3 12s
+16:46:32 [452/2835] ok KR/shorts/815_호감 있는 상대에게 점수 따는 법 (상대가 목이 많다면 ) #사주 #운세 #연애 #지식 #상식.txt claims 2 10s
+16:46:34 [453/2835] ok s호랑이띠 뜨거웠던 끝장토론 현장... 그래서 누가 제일 쎄요 #띠별운세 #운세 #용띠 #호랑이띠 #사주 #지식 #상식.txt claims 4 6s
+16:46:34 [454/2835] ok horts/820_사주에 이 글자 있으면 연애고수거나 모태솔로 #사주 #운세 #모태솔로 #연애 #신유일주 #지식 #상식.txt claims 2 8s
+16:46:34 [455/2835] ok FORCETELLERKR/shorts/811_진짜 태어난 달이랑 자기 성격이랑 맞는지 알려주세요! #지식 #상식 #사주.txt claims 12 19s
+16:46:36 [456/2835] ok /FORCETELLERKR/shorts/817_와 뉴진스 민지랑 하니가 잘되는덴 이유가 있었어.. #지식 #상식 #사주.txt claims 4 12s
+16:46:37 [457/2835] ok a/FORCETELLERKR/shorts/819_손금에 ‘이거’ 있으면 지금 병원 빨리 가보세요! #지식 #상식 #손금.txt claims 4 12s
+16:46:38 [458/2835] ok a/FORCETELLERKR/shorts/823_손바닥을 잠시 보고 자기 주식에 희망을 가져보아요 #지식 #상식 #손금.txt claims 4 9s
+16:46:38 [459/2835] ok FORCETELLERKR/shorts/818_과연 나를 지켜주는 귀인은 누굴까요 댓글로 알려주세요 #지식 #상식 #사주.txt claims 12 14s
+16:46:39 [460/2835] ok horts/827_[주목] 지금부터 대박터지고 싶으시면 이것만 기억하세요 #사주 #2023년하반기 #운세 #지식 #상식.txt claims 2 7s
+16:46:39    -- 진행 460/2835 경과 7.1분 | 토큰 in 333,993 out 433,790 think 1,236,789 | 누적 약 $6.52
+16:46:40 [461/2835] ok FORCETELLERKR/shorts/824_지갑에 이거 해놓으시면 들어오는 돈 단위가 바뀐대요! #지식 #상식 #사주.txt claims 6 11s
+16:46:41 [462/2835] ok data/FORCETELLERKR/shorts/829_임영웅 사주는 무조건 성공하는 사주였대요 #지식 #상식 #사주.txt claims 2 7s
+16:46:41 [463/2835] ok data/FORCETELLERKR/shorts/822_8월에 재물운 크게 들어오는 띠 3가지 #지식 #상식 #사주.txt claims 5 14s
+16:46:42 [464/2835] ok 6_2023년 여행가시면 최고의 복이 오는 띠는 #사주 #2023년하반기 #운세 #말띠 #개띠 #호랑이띠 #지식 #상식.txt claims 1 11s
+16:46:44 [465/2835] ok data/FORCETELLERKR/shorts/795_9월에 드디어 대박나는 띠 3가지 #지식 #상식 #사주.txt claims 6 39s
+16:46:44 [466/2835] ok data/FORCETELLERKR/shorts/825_꿈에 돼지가 나왔다면 잠깐 보고 가세요 #지식 #상식 #꿈해몽.txt claims 4 14s
+16:46:45 [467/2835] ok data/FORCETELLERKR/shorts/836_도화살이 연애잘한다고 누가 그래요 누가 #지식 #상식 #사주.txt claims 1 4s
+16:46:46 [468/2835] ok ELLERKR/shorts/831_한국인 99%가 모르고 지나가는 길몽, 알아채면 쏟아지는 대박 #지식 #상식 #꿈해몽.txt claims 5 10s
+16:46:46 [469/2835] ok data/FORCETELLERKR/shorts/816_8월만 버티면 드디어 대박나는 띠 3가지 #지식 #상식 #사주.txt claims 7 22s
+16:46:47 [470/2835] ok 년 하반기 예언! 20년 사주 전문가가 말해준다! 이것만 지켜도 대박날 수 있어요! #운세 #사주 #지식 #상식 #20.txt claims 1 9s
+16:46:48 [471/2835] ok  네 살 차이가 무조건 좋은 게 아니라고요 풀영상 보기는 프로필 링크에 #궁합 #띠별궁합 #사주 #운세 #찰떡궁합 #나.txt claims 1 6s
+16:46:49 [472/2835] ok ata/FORCETELLERKR/shorts/835_이 꿈들 꾸셨다면 무조건 로또 사러 가보세요 #지식 #상식 #꿈해몽.txt claims 5 10s
+16:46:51 [473/2835] ok data/FORCETELLERKR/shorts/837_한국인 1%한테만 있는 손금 #지식 #상식 #손금.txt claims 4 10s
+16:46:52 [474/2835] ok data/FORCETELLERKR/shorts/828_8월에 드디어 고생 다 끝나는 띠 3가지 #지식 #상식 #사주.txt claims 6 18s
+16:46:53 [475/2835] ok 너무 잘 맞는다면 이걸 의심하세요! 풀영상 보기는 프로필 링크에 #궁합 #띠별궁합 #사주 #운세 #망신살 #지식 #상식.txt claims 2 11s
+16:46:53 [476/2835] ok data/FORCETELLERKR/shorts/843_친구야 너 T야 사주로도 바로 알 수 있어요 #지식 #상식 #사주.txt claims 3 8s
+16:46:55 [477/2835] ok ata/FORCETELLERKR/shorts/840_20년 사주 전문가가 말하는 기쎈 사람의 진실 #지식 #상식 #사주.txt claims 2 11s
+16:46:55 [478/2835] ok a/FORCETELLERKR/shorts/842_다들 꿈에서 물속에서 가라앉아 본 적 있다 없다 #지식 #상식 #꿈해몽.txt claims 6 11s
+16:46:56 [479/2835] ok data/FORCETELLERKR/shorts/841_7월만 버티면 드디어 대박나는 띠 3가지 #사주 #지식 #상식.txt claims 6 12s
+16:46:56 [480/2835] ok data/FORCETELLERKR/shorts/834_7월에 드디어 고생 다 끝나는 띠 3가지 #사주 #지식 #상식.txt claims 4 18s
+16:46:56    -- 진행 480/2835 경과 7.4분 | 토큰 in 348,408 out 453,195 think 1,291,313 | 누적 약 $6.80
+16:46:57 [481/2835] ok ta/FORCETELLERKR/shorts/830_힘들 때 ‘이 사람’ 만나야, 대박 시작이에요! #지식 #상식 #사주.txt claims 20 23s
+16:46:58 [482/2835] ok orts/847_12띠 중 최강 기존쎄는 누구일까요 #지식 #상식 #띠별운세 #12띠 #용띠 #범띠 #기존쎄 #호랑이띠.txt claims 3 9s
+16:46:58 [483/2835] ok 은 띠끼리 사귄다면 이건 꼭 보세요!! 풀영상은 프로필 링크에! #같은띠 #궁합 #운세 #사주 #띠별운세 #지식 #상식.txt claims 1 11s
+16:46:58 [484/2835] ok a/FORCETELLERKR/shorts/844_아 왜 도대체 난 왜 이상한 사람만 꼬이지 싶다면 #지식 #상식 #손금.txt claims 3 13s
+16:47:00 [485/2835] ok 6_(소름) 닭띠들 사주 보러가서 정말 이러나요 풀영상은 프로필 링크에! #닭띠 #운세 #사주 #띠별운세 #지식 #상식.txt claims 1 12s
+16:47:00 [486/2835] ok _삼재는 횡재수 2024년 드디어 고생 끝나는 띠 분들 축하드려요! #삼재 #운세 #사주 #지식 #상식 #2023하반기.txt claims 4 22s
+16:47:04 [487/2835] ok RCETELLERKR/shorts/853_대박! 소띠가 성공하는 이유가 이래서… #띠별운세 #소띠 #운세 #지식 #상식.txt claims 1 8s
+16:47:04 [488/2835] ok /shorts/852_2023년 삼재인 원숭이띠들 제발 이것만은 지키세요!! #띠별운세 #원숭이띠 #운세 #지식 #상식.txt claims 3 9s
+16:47:04 [489/2835] ok data/FORCETELLERKR/shorts/851_손금 생명선 짧다고 속상해본 적 있는 사람 #지식 #상식 #손금.txt claims 3 11s
+16:47:05 [490/2835] ok data/FORCETELLERKR/shorts/849_꿈에서 불이 나오면 어떻게 될까요 #지식 #상식 #꿈해몽.txt claims 4 13s
+16:47:05 [491/2835] ok /FORCETELLERKR/shorts/854_역마살 있는 사람들이 대박나는 이유 #지식 #상식 #사주 #역마살 #대박.txt claims 2 10s
+16:47:06 [492/2835] ok CETELLERKR/shorts/861_말띠한테 기 쎄다고 하지 마세요 #운세 #띠별운세 #말띠 #백말띠 #지식 #상식.txt claims 1 5s
+16:47:07 [493/2835] ok /FORCETELLERKR/shorts/857_자기 사주에 이거 있으면 넘치게 먹고 살게 해준대요 #지식 #상식 #사주.txt claims 1 9s
+16:47:07 [494/2835] ok shorts/859_카리나 윈터는 어떻게 그렇게 예쁘고 잘추고 다 해.. #지식 #상식 #사주 #카리나 #윈터 #에스파.txt claims 4 8s
+16:47:08 [495/2835] ok FORCETELLERKR/shorts/856_선물 사갈 때 기립 박수 받는 선물 TOP3 #지식 #상식 #사주 #집들이.txt claims 3 11s
+16:47:09 [496/2835] ok data/FORCETELLERKR/shorts/862_연애 절대 못하는 손금은 따로 있대요 #지식 #상식 #손금.txt claims 3 5s
+16:47:09 [497/2835] ok data/FORCETELLERKR/shorts/860_도화살이랑 급이 다른 인기 사주의 진실 #지식 #상식 #사주.txt claims 2 10s
+16:47:11 [498/2835] ok /FORCETELLERKR/shorts/850_생년월일 다 더하면 연애 못하는 이유 알 수 있어요 #지식 #상식 #타로.txt claims 9 19s
+16:47:13 [499/2835] ok ta/FORCETELLERKR/shorts/858_한국인 중 3%도 안되는 사람만 갖고 있는 손금 #지식 #상식 #손금.txt claims 6 15s
+16:47:14 [500/2835] ok data/FORCETELLERKR/shorts/867_남자 손에 이거 있으면 ㅅㅁㅇ 알 수 있음 #지식 #상식 #손금.txt claims 3 8s
+16:47:14    -- 진행 500/2835 경과 7.7분 | 토큰 in 362,356 out 469,934 think 1,338,464 | 누적 약 $7.05
+16:47:15 [501/2835] ok data/FORCETELLERKR/shorts/865_생일로 알아보는 숨겨진 능력 찾는 법 #지식 #상식 #타로.txt claims 9 10s
+16:47:15 [502/2835] ok data/FORCETELLERKR/shorts/871_1% 연애고수만 갖고 있는 리트리버 손금 #지식 #상식 #손금.txt claims 3 6s
+16:47:15 [503/2835] ok data/FORCETELLERKR/shorts/855_7월에 드디어 고생 다 보상받는 띠 3가지 #사주 #지식 #상식.txt claims 5 19s
+16:47:16 [504/2835] ok data/FORCETELLERKR/shorts/863_7월에 죽을 고비 제대로 넘긴 띠 3가지 #사주 #지식 #상식.txt claims 4 12s
+16:47:16 [505/2835] ok FORCETELLERKR/shorts/869_꿈에 부모님께서 와주셨다면 반드시 ㅇㄱ 확인하세요! #지식 #상식 #꿈해몽.txt claims 5 10s
+16:47:17 [506/2835] ok ORCETELLERKR/shorts/870_힘들어도 버텨서 결국 대박나는 0.3% 부자들만의 손금 #지식 #상식 #사주.txt claims 5 9s
+16:47:18 [507/2835] ok data/FORCETELLERKR/shorts/864_6월에 미친듯이 몸 사려야하는 띠 3가지 #사주 #지식 #상식.txt claims 4 13s
+16:47:20 [508/2835] ok data/FORCETELLERKR/shorts/866_르세라핌의 반장 김채원의 사주 분석 #지식 #상식 #꿈해몽.txt claims 3 15s
+16:47:22 [509/2835] ok data/FORCETELLERKR/shorts/848_7월에 드디어 대박나는 띠 3가지 #사주 #지식 #상식.txt claims 10 31s
+16:47:23 [510/2835] ok R/shorts/873_아이브에서 유진이 괜히 특이한게 아니에요;; #아이브 #안유진 #지식 #상식 #사주 #지구오락실.txt claims 3 12s
+16:47:24 [511/2835] ok data/FORCETELLERKR/shorts/874_자기 도화살 3초만에 확인하는 법 #지식 #상식 #사주.txt claims 2 10s
+16:47:25 [512/2835] ok data/FORCETELLERKR/shorts/880_바람기 많은 여자 사주 특징 #지식 #상식 #사주.txt claims 3 9s
+16:47:26 [513/2835] ok ta/FORCETELLERKR/shorts/876_의외로 성공하는 사람들만 갖고 있는 사주래요!! #지식 #상식 #사주.txt claims 4 11s
+16:47:26 [514/2835] ok data/FORCETELLERKR/shorts/877_책상 위치만 잘잡아도 성적과 합격운이 빵빵! #지식 #상식 #사주.txt claims 6 11s
+16:47:30 [515/2835] ok data/FORCETELLERKR/shorts/878_6월에 드디어 떡상각인 띠 3가지는 #지식 #상식 #사주.txt claims 7 15s
+16:47:30 [516/2835] ok a/FORCETELLERKR/shorts/868_6월에 도화살 터져서 난리나는 세가지 띠 #사주 #지식 #상식 #도화살.txt claims 7 24s
+16:47:30 [517/2835] skip(짧음) data/FORCETELLERKR/shorts/891_어제 무슨 꿈 꾸셨어요 #꿈해몽 #해몽 #운세.txt
+16:47:31 [518/2835] ok orts/875_세븐틴 부석순 괜히 뭉친게 아니다 #세븐틴 #부석순 #지식 #상식 #사주 #손오공 #승관 #도겸 #호시.txt claims 7 17s
+16:47:31 [519/2835] ok data/FORCETELLERKR/shorts/881_이 손금 있으면 반드시 성공한대요 #지식 #상식 #사주.txt claims 3 15s
+16:47:31 [520/2835] ok data/FORCETELLERKR/shorts/883_여러분이 기존쎄인지 지금 알려드릴게요! #지식 #상식 #사주.txt claims 7 11s
+16:47:31    -- 진행 520/2835 경과 8.0분 | 토큰 in 377,085 out 492,960 think 1,395,818 | 누적 약 $7.37
+16:47:32 [521/2835] ok LLERKR/shorts/887_장사하면 무조건 대박나는 사람, 나인지 확인하기 #사주 #MBTI #지식 #상식 #운세.txt claims 2 7s
+16:47:34 [522/2835] ok TELLERKR/shorts/885_무조건 30분 먼저 오는 친구 다 이거 있음 #사주 #MBTI #지식 #상식 #운세.txt claims 3 11s
+16:47:36 [523/2835] ok data/FORCETELLERKR/shorts/888_5월에 돈 버는 만큼 고생길도 예약 확정! #지식 #상식 #사주.txt claims 6 10s
+16:47:36 [524/2835] ok data/FORCETELLERKR/shorts/886_자기 일주동물 확인해보세요 말부터 돼지까지! #지식 #상식 #사주.txt claims 6 12s
+16:47:36 [525/2835] ok data/FORCETELLERKR/shorts/879_화기운이 많다, 목기운이 많다, 뭔소리냐구요 #지식 #상식 #사주.txt claims 5 20s
+16:47:38 [526/2835] ok data/FORCETELLERKR/shorts/882_5월에 크게 대박나는 띠 3가지! #지식 #상식 #사주.txt claims 5 20s
+16:47:38 [527/2835] ok /FORCETELLERKR/shorts/894_지금 자기 손을 펼쳐봅니다. 눈물이 앞을 가립니다. #지식 #상식 #손금.txt claims 3 7s
+16:47:38 [528/2835] ok orts/889_MBTI F vs T = 사주 목 vs 금인듯, 진짜 뿌앵하고 움 #fyp #추천 #운세 #지식 #상식.txt claims 3 12s
+16:47:39 [529/2835] ok data/FORCETELLERKR/shorts/892_신기 있는 것 같은 분들 꼭 확인해보세요! #지식 #상식 #사주.txt claims 3 9s
+16:47:39 [530/2835] ok ata/FORCETELLERKR/shorts/890_띠가 아니라, 일주동물이에요! 쥐에서 뱀까지! #지식 #상식 #사주.txt claims 6 10s
+16:47:40 [531/2835] ok data/FORCETELLERKR/shorts/893_집에 있는 이 물건들 귀신을 불러들인다는데요 #지식 #상식 #풍수.txt claims 4 9s
+16:47:40 [532/2835] skip(짧음) data/FORCETELLERKR/shorts/908_이것만 알면 떡상할 수 있을지도 몰라요! #지식 #상식 #사주.txt
+16:47:42 [533/2835] ok FORCETELLERKR/shorts/897_와 사주로 깜짝카메라 실험했는데 맞혔음;; #사주 #mbti #지식 #상식.txt claims 1 8s
+16:47:42 [534/2835] ok ata/FORCETELLERKR/shorts/896_복권 1등 2등 3등 전부 사주로 다 맞춤 짱신기 #사주 #mbti.txt claims 2 10s
+16:47:43 [535/2835] ok data/FORCETELLERKR/shorts/904_손금으로 도화살 확인하는 방법 #지식 #상식 #손금.txt claims 3 5s
+16:47:45 [536/2835] ok ata/FORCETELLERKR/shorts/884_사주에서 바람기는 이렇게 잡아냅니다! 신기하죠 #지식 #상식 #사주.txt claims 4 23s
+16:47:46 [537/2835] ok data/FORCETELLERKR/shorts/900_지금 자기 별자리 한 번 확인해보세요 #지식 #상식 #별자리.txt claims 6 10s
+16:47:46 [538/2835] ok data/FORCETELLERKR/shorts/898_자기 별자리에 맞는 식물은 뭘까요 #지식 #상식 #사주.txt claims 6 11s
+16:47:47 [539/2835] ok data/FORCETELLERKR/shorts/903_교과서로만 공부했어요 정말로요 #지식 #상식 #사주.txt claims 4 9s
+16:47:47 [540/2835] ok CETELLERKR/shorts/899_와 어딜가든 고백이 끊이질 않는다는데 한 번 기대해보세요! #지식 #상식 #사주.txt claims 3 11s
+16:47:47    -- 진행 540/2835 경과 8.2분 | 토큰 in 390,860 out 510,841 think 1,435,579 | 누적 약 $7.59
+16:47:49 [541/2835] ok data/FORCETELLERKR/shorts/911_후후 깜짝놀라셨을걸요 😉 #지식 #상식 #사주.txt claims 3 7s
+16:47:51 [542/2835] ok data/FORCETELLERKR/shorts/914_한 번 자기 손을 쳐다봅시다 #지식 #상식 #손금.txt claims 4 6s
+16:47:52 [543/2835] ok KR/shorts/907_이거 나왔는데 금수저 아니시면 곧 될 예정이래요! #지식 #상식 #사주 #부자 #재물운 #대박.txt claims 5 12s
+16:47:54 [544/2835] ok FORCETELLERKR/shorts/917_이거 있으면 서울대 대놓고 들어간다는데 확인해보세요! #지식 #상식 #사주.txt claims 2 7s
+16:47:54 [545/2835] ok data/FORCETELLERKR/shorts/895_꼭 밖에 나가야 대박날 수 있어요! #지식 #상식 #사주.txt claims 7 23s
+16:47:56 [546/2835] ok data/FORCETELLERKR/shorts/912_한국인 중 0.2%만 있는 귀족 사주 #사주 #지식 #상식.txt claims 5 13s
+16:47:57 [547/2835] ok data/FORCETELLERKR/shorts/916_내 운명 속 숨겨진 재물운 확인해볼까요 😉 #지식 #상식 #사주.txt claims 6 11s
+16:47:58 [548/2835] ok data/FORCETELLERKR/shorts/909_손바닥에 점 어디있는지 지금 찾아봅시다 #지식 #상식 #손금.txt claims 13 17s
+16:47:58 [549/2835] skip(짧음) data/FORCETELLERKR/shorts/928_별자리에 따라 어울리는 행성이 있대요! #지식 #상식 #별자리.txt
+16:47:58 [550/2835] ok a/FORCETELLERKR/shorts/919_도대체 내 운명에 재물운이 얼마나 들어가있길래.. #지식 #상식 #사주.txt claims 6 11s
+16:48:02 [551/2835] ok data/FORCETELLERKR/shorts/921_가족 건강은 이걸로 지켜보자구요 😉 #지식 #상식 #사주.txt claims 6 11s
+16:48:03 [552/2835] ok data/FORCETELLERKR/shorts/922_이거 있으면 대놓고 하늘이 지켜주는 사주래요 #지식 #상식 #사주.txt claims 6 12s
+16:48:04 [553/2835] ok data/FORCETELLERKR/shorts/915_속지마세요 4월은 무조건 이기는 달이에요! #지식 #상식 #사주.txt claims 5 18s
+16:48:04 [554/2835] ok ta/FORCETELLERKR/shorts/926_내 별자리를 지켜주는 수호성은 어떤 별이었나요 #지식 #상식 #별자리.txt claims 4 8s
+16:48:05 [555/2835] ok data/FORCETELLERKR/shorts/924_이 손금 보면 그 사람에겐 잘 대해주세요 #지식 #상식 #손금.txt claims 4 10s
+16:48:07 [556/2835] ok data/FORCETELLERKR/shorts/925_제발 3월 마지막만 무사히 넘어갑시다 😢 #지식 #상식 #사주.txt claims 4 13s
+16:48:08 [557/2835] ok a/FORCETELLERKR/shorts/931_도화살보다 남자 여자 잘 꼬이는 살 모르시더라구요 #지식 #상식 #사주.txt claims 2 6s
+16:48:08 [558/2835] skip(짧음) ta/FORCETELLERKR/shorts/937_대박 직전일 때만 오는 신호들인데 여러분도 혹시 #지식 #상식 #운세.txt
+16:48:08 [559/2835] ok /FORCETELLERKR/shorts/927_사주에 ‘이거’ 있으면 평생 하늘이 도와준대요! 😉 #지식 #상식 #사주.txt claims 3 11s
+16:48:10 [560/2835] ok data/FORCETELLERKR/shorts/910_이 때 제대로 보내지 않으면 큰일나요! #지식 #상식 #사주.txt claims 9 28s
+16:48:10    -- 진행 560/2835 경과 8.6분 | 토큰 in 404,606 out 533,276 think 1,485,203 | 누적 약 $7.87
+16:48:10 [561/2835] ok data/FORCETELLERKR/shorts/929_내 별자리에 맞는 수호성은 뭘까 #지식 #상식 #별자리.txt claims 3 12s
+16:48:10 [562/2835] skip(짧음) data/FORCETELLERKR/shorts/941_재물운 대박나는 사주에는 이런게 있대요 #지식 #상식 #사주.txt
+16:48:10 [563/2835] ok data/FORCETELLERKR/shorts/935_화장실에 해두면 핵이득이라는 이거 #풍수 #지식 #상식.txt claims 4 6s
+16:48:11 [564/2835] ok data/FORCETELLERKR/shorts/901_5월에 이성이 미친듯이 꼬인대요 #지식 #상식 #사주.txt claims 7 33s
+16:48:11 [565/2835] skip(짧음) data/FORCETELLERKR/shorts/944_자기 사주 한 번 확인해보세요! #지식 #상식 #사주.txt
+16:48:12 [566/2835] ok ta/FORCETELLERKR/shorts/933_도대체 이런 손금 가지고 계신 분 누구 있어요 #지식 #상식 # 손금.txt claims 3 8s
+16:48:12 [567/2835] ok CETELLERKR/shorts/932_제대로 이번 생에 대박나는 사람인지 지금 확인해보세요! 😉 #지식 #상식 #사주.txt claims 3 8s
+16:48:12 [568/2835] skip(짧음) data/FORCETELLERKR/shorts/947_돈복 들어올려면 이거부터 하지마세요 #지식 #상식 #재물운.txt
+16:48:12 [569/2835] ok data/FORCETELLERKR/shorts/872_드디어 6월에 떡상시대 시작되는 띠는 ! #지식 #상식 #사주.txt claims 6 62s
+16:48:17 [570/2835] ok data/FORCETELLERKR/shorts/905_4월에 제대로 대박났다는데 느껴지시나요 #지식 #상식 #사주.txt claims 10 38s
+16:48:17 [571/2835] skip(짧음) data/FORCETELLERKR/shorts/950_내 생년월일에 물기운이 많은 사람 특징! #사주 #지식 #상식.txt
+16:48:17 [572/2835] ok data/FORCETELLERKR/shorts/943_이런 사람이랑은 그냥 말 섞지 마세요 #지식 #상식 #사주.txt claims 3 7s
+16:48:18 [573/2835] ok a/FORCETELLERKR/shorts/936_하늘이 제대로 작정하고 도와주는 사람은 #사주 #천을귀인 #지식 #상식.txt claims 3 11s
+16:48:18 [574/2835] ok data/FORCETELLERKR/shorts/948_손톱만 봐도 성격 다 알아맞추는 방법 #지식 #상식.txt claims 4 7s
+16:48:18 [575/2835] skip(짧음) data/FORCETELLERKR/shorts/954_2023년 계묘년 띠별 신년운세 2편 #지식 #상식 #사주.txt
+16:48:19 [576/2835] ok data/FORCETELLERKR/shorts/942_이 띠 만나면 진짜 도망가세요 어서요 #사주 #지식 #상식.txt claims 4 8s
+16:48:19 [577/2835] ok data/FORCETELLERKR/shorts/946_이렇게 자니까 가위 눌리시는거에요;; #지식 #상식 #가위.txt claims 3 8s
+16:48:19 [578/2835] skip(짧음) data/FORCETELLERKR/shorts/957_2023 계묘년 띠별 신년운세 보고 가세요! #지식 #상식 #사주.txt
+16:48:20 [579/2835] ok data/FORCETELLERKR/shorts/945_이 손금은 당장 연예계 데뷔해야한대요! #지식 #상식 #손금.txt claims 4 10s
+16:48:21 [580/2835] ok ta/FORCETELLERKR/shorts/949_물만 먹어도 이 사람들은 살이 찐다는데 진짠가요 #사주 #지식 #상식.txt claims 3 9s
+16:48:21    -- 진행 580/2835 경과 8.8분 | 토큰 in 415,365 out 548,346 think 1,545,135 | 누적 약 $8.16
+16:48:21 [581/2835] skip(짧음) data/FORCETELLERKR/shorts/960_똥꿈 해몽 제대로 하고 가자구요 #해몽 #똥꿈 #지식 #상식.txt
+16:48:22 [582/2835] ok /FORCETELLERKR/shorts/938_절대로 결혼하면 안되는 사람 손금 꼭 보고 가세요! #지식 #상식 #손금.txt claims 5 15s
+16:48:24 [583/2835] ok ata/FORCETELLERKR/shorts/951_내 진짜 MBTI 분석해주는 꿀사이트 알려드림 #지식 #상식 #사주.txt claims 0 7s
+16:48:25 [584/2835] ok FORCETELLERKR/shorts/940_부자가 되고 싶다면 당장 버려야겠죠 #지식 #상식 #풍수.txt claims 4 15s
+16:48:25 [585/2835] skip(짧음) RCETELLERKR/shorts/964_반지는 여기에 껴야 돈이 들어와요 #지식 #상식 #풍수 #손금 #재물운 #사주.txt
+16:48:26 [586/2835] ok data/FORCETELLERKR/shorts/955_존예 존멋들만 갖고 있는 손금이래요 #손금 #지식 #상식.txt claims 3 7s
+16:48:27 [587/2835] ok data/FORCETELLERKR/shorts/953_올해 무조건 연애하려면 보세요 #지식 #상식 #풍수 #사주.txt claims 3 9s
+16:48:27 [588/2835] skip(짧음) data/FORCETELLERKR/shorts/967_현관에 이 물건들이 있으면 새해에 대박난대요 #지식 #상식 #풍수.txt
+16:48:28 [589/2835] ok TELLERKR/shorts/956_밤에 잠 잘 못자는 분들! 풍수 때문일 수 있어요 꼭 보세요! #지식 #상식 #풍수.txt claims 4 9s
+16:48:29 [590/2835] ok data/FORCETELLERKR/shorts/952_와 꿈에서 죽으면 이렇게 된대요 #꿈해몽 #사주 #지식 #상식.txt claims 4 12s
+16:48:29 [591/2835] skip(짧음) ORCETELLERKR/shorts/970_이 친구들 말은 함부로 무시하지마세요! 맞는말이니까요! #지식 #상식 #사주.txt
+16:48:30 [592/2835] ok data/FORCETELLERKR/shorts/930_와 이 띠들과는 3월에 거리를 좀 둡시다.. #지식 #상식 #사주.txt claims 6 31s
+16:48:30 [593/2835] ok ERKR/shorts/961_와 이 세가지 띠는 올해 대박난데요 부러워라 🎉 #사주 #신년운세 #토끼띠 #양띠 #돼지띠.txt claims 3 10s
+16:48:30 [594/2835] ok LLERKR/shorts/959_2023년 이 별자리들은 무조건 대박납니다!✨ #신년운세 #별자리 #사주 #지식 #상식.txt claims 3 10s
+16:48:30 [595/2835] skip(짧음) data/FORCETELLERKR/shorts/974_세상 제일 깐깐한 사람들이에요 정말 #사주 #지식 #상식.txt
+16:48:31 [596/2835] ok data/FORCETELLERKR/shorts/962_대박 나고 싶다면 절대로 그냥 냅두지 마세요 #지식 #상식 #풍수.txt claims 3 8s
+16:48:34 [597/2835] ok a/FORCETELLERKR/shorts/975_한국인이라면 매년 확인해야 하는 것 #지식 #상식 #토정비결 #2023.txt claims 0 4s
+16:48:34 [598/2835] ok data/FORCETELLERKR/shorts/958_꼭 띠 물어볼 때 이거 알고 가세요! #사주 #궁합 #지식 #상식.txt claims 10 15s
+16:48:34 [599/2835] skip(짧음) data/FORCETELLERKR/shorts/978_올해 도화살 맞는 띠는 누굴까요 #지식 #상식 #사주.txt
+16:48:35 [600/2835] ok data/FORCETELLERKR/shorts/963_2023년 올해 대박나는 띠 TOP3 #지식 #상식 #사주.txt claims 1 11s
+16:48:35    -- 진행 600/2835 경과 9.0분 | 토큰 in 425,767 out 561,181 think 1,575,464 | 누적 약 $8.33
+16:48:35 [601/2835] ok data/FORCETELLERKR/shorts/966_여러분 손금도 확인해보세요! #지식 #상식 #손금.txt claims 4 9s
+16:48:35 [602/2835] ok LERKR/shorts/939_와.. 3월에 제대로 이성이 꼬이는 띠 부럽다 #사주 #지식 #상식 #썸 #애정운 #연애.txt claims 6 26s
+16:48:37 [603/2835] ok RCETELLERKR/shorts/969_내가 재벌이 될 수 있는지 확인해보세요! #지식 #상식 #사주 #재벌집막내아들.txt claims 3 9s
+16:48:38 [604/2835] ok LERKR/shorts/971_한국인이라면 꼭 알아야할 자기 도화살! 지금 확인해보세요! #지식 #상식 #사주 #만세력.txt claims 2 8s
+16:48:38 [605/2835] skip(짧음) a/FORCETELLERKR/shorts/986_점집가서 무심코 안물어보면 손해예요 #지식 #상식 #사주 #운세 #점집.txt
+16:48:39 [606/2835] ok 973_와 도대체 재고귀인이 있으면 얼마나 돈이 많아질까요.. #재고귀인 #재벌집막내아들 #지식 #상식 #사주 #만세력.txt claims 3 9s
+16:48:40 [607/2835] ok FORCETELLERKR/shorts/968_소개팅에 가서 이 음식들 먹으면 성공한대요! #지식 #상식 #풍수 #소개팅.txt claims 3 13s
+16:48:40 [608/2835] skip(짧음) data/FORCETELLERKR/shorts/990_너무나 신비로운 사람들 같으니라고..#지식 #상식.txt
+16:48:40 [609/2835] ok RCETELLERKR/shorts/965_와 이 손금 갖고 있으면 곧 좋은 사람 만난대요 #손금 #지식 #상식 #애정운.txt claims 3 15s
+16:48:42 [610/2835] ok data/FORCETELLERKR/shorts/981_와 진짜 이 꿈들 꿔보신 적 있으세요 진짜요 #지식 #상식 #로또.txt claims 4 7s
+16:48:42 [611/2835] ok data/FORCETELLERKR/shorts/979_한국인 중 이 손금을 가진 사람은 귀합니다 #지식#상식 #손금.txt claims 3 8s
+16:48:43 [612/2835] ok RCETELLERKR/shorts/982_도대체 왜 잠수 타는건지 궁금하셨죠 #지식 #상식 #회피형 #불안형 #애착유형.txt claims 2 8s
+16:48:44 [613/2835] ok ETELLERKR/shorts/976_이 생일이라면 대통령이나 재벌가의 운명이래요! (부럽다..) #지식 #상식 #생일.txt claims 3 13s
+16:48:44 [614/2835] ok ELLERKR/shorts/985_헐, 이 띠들은 내년에 이성이 엄청 꼬인데요! #지식 #상식 #운세 #띠별운세 #신년.txt claims 3 7s
+16:48:44 [615/2835] ok ata/FORCETELLERKR/shorts/920_4월에 드디어 오신 걸 축하드립니다 고생했어요 #지식 #상식 #사주.txt claims 13 55s
+16:48:45 [616/2835] ok RKR/shorts/984_오직 손흥민!! 우리 손흥민!! 대한민국 화이팅!!! #지식 #상식 #손흥민 #월드컵 #사주.txt claims 3 11s
+16:48:46 [617/2835] ok data/FORCETELLERKR/shorts/977_여러분은 어떤 애착유형인지 알아볼까요 #지식 #상식.txt claims 1 12s
+16:48:47 [618/2835] ok data/FORCETELLERKR/shorts/934_와 이 띠들은 3월에 뭘해도 대박난대요 #지식 #상식 #사주.txt claims 8 43s
+16:48:47 [619/2835] ok data/FORCETELLERKR/shorts/992_무심코 이 남자들을 만난다면 꼭 지나치지마세요! #지식 #상식.txt claims 3 7s
+16:48:48 [620/2835] ok /FORCETELLERKR/shorts/991_와 2023년 제일 조심해야할 띠는 과연 누구일까요 #삼재 #사주 #상식.txt claims 3 7s
+16:48:48    -- 진행 620/2835 경과 9.2분 | 토큰 in 439,151 out 579,094 think 1,637,695 | 누적 약 $8.64
+16:48:48 [621/2835] ok TELLERKR/shorts/987_과연 2023년에 돈벼락 맞는 띠는 누굴까요 #지식 #상식 #운세 #띠별운세 #신년.txt claims 3 10s
+16:48:49 [622/2835] ok data/FORCETELLERKR/shorts/994_이 친구들이랑 붙어 있으면 무조건 핵 이득이에요 #지식 #상식.txt claims 3 7s
+16:48:50 [623/2835] ok data/FORCETELLERKR/shorts/995_2023년 대한민국에서 제일 대박나는 사람 생일은 #지식 #상식.txt claims 1 6s
+16:48:52 [624/2835] ok LERKR/shorts/972_12년에 딱 한 번 도화살이 온대요! 2023년의 주인공은 #지식 #상식 #도화살 #사주.txt claims 6 22s
+16:48:53 [625/2835] ok data/FORCETELLERKR/shorts/999_도대체 이런 여자분들은 어디계시나요 🥲 #지식 #상식.txt claims 3 9s
+16:48:53 [626/2835] ok data/FORCETELLERKR/shorts/997_함부로 이 물건들을 중고로 사지마세요👻 #지식 #상식.txt claims 3 9s
+16:48:55 [627/2835] ok data/FORCETELLERKR/shorts/996_와.. 느낌이 쎄하면 꼭 바람끼 한 번 확인해보세요 #지식 #상식.txt claims 4 11s
+16:48:55 [628/2835] ok data/dohwadore_saju/shorts/004_큰 돈 들어올 때 조심해야하는 이유.txt claims 3 8s
+16:48:56 [629/2835] ok data/dohwadore_saju/shorts/002_밖에 나가면 알아봐요.txt claims 0 10s
+16:48:57 [630/2835] ok data/FORCETELLERKR/shorts/993_4살 차이 인연들을 만나면 제대로 붙잡으세요! #지식 #상식.txt claims 7 15s
+16:48:57 [631/2835] ok data/dohwadore_saju/shorts/006_사주에서 요즘 띠를 중요하게 보는 이유.txt claims 2 10s
+16:48:58 [632/2835] ok data/dohwadore_saju/shorts/007_상반기 힘들었다면 하반기는 괜찮아(풀영상 첨부).txt claims 5 10s
+16:48:58 [633/2835] ok data/FORCETELLERKR/shorts/989_반드시 썸이랑 카톡할 때 기억하세요! #지식 #상식.txt claims 2 19s
+16:48:59 [634/2835] ok ta/dohwadore_saju/shorts/009_[사주] 이사갈 때 내 사주에 맞는 집, 공간 보는법 🆕260820.txt claims 3 9s
+16:49:02 [635/2835] ok ata/dohwadore_saju/shorts/010_[사주] 27년까지 이어지는 26년 하반기운세 1탄 🆕260807.txt claims 2 10s
+16:49:02 [636/2835] ok dohwadore_saju/shorts/012_한국이 안 맞는 사주! 내 사주에 맞는 해외+외국어 보는법 🆕260721.txt claims 1 9s
+16:49:03 [637/2835] ok data/dohwadore_saju/shorts/008_헤어진 날짜로 사주 맞히기 가능.txt claims 4 15s
+16:49:09 [638/2835] ok ata/dohwadore_saju/shorts/021_[사주] 월별로 정리한 연애운 이성운 결혼운 이별운 🆕260421.txt claims 0 7s
+16:49:09 [639/2835] ok data/dohwadore_saju/shorts/003_소개팅이나 연애 초반 써먹기 좋은 사주 스킬.txt claims 6 23s
+16:49:09 [640/2835] ok ta/dohwadore_saju/shorts/011_8월운세가 7월보다 좋아(힘들었던 사람들 보세요🥲) 🆕️260801.txt claims 3 17s
+16:49:09    -- 진행 640/2835 경과 9.6분 | 토큰 in 453,808 out 596,252 think 1,684,610 | 누적 약 $8.89
+16:49:15 [641/2835] ok data/dohwadore_saju/shorts/014_[사주] 2027년 미리보는 내년 운세 🆕260618.txt claims 3 19s
+16:49:15 [642/2835] ok data/dohwadore_saju/shorts/017_사주보다 정확한 자미두수 궁합보는 법 🆕260524.txt claims 3 17s
+16:49:18 [643/2835] ok a/dohwadore_saju/shorts/013_[사주] 7월운세 - 이번 달부터 치고 나가는 사람들 🆕️260701.txt claims 16 23s
+16:49:18 [644/2835] ok data/dohwadore_saju/shorts/018_[좋은꿈] 26년간 봐온 대박 길몽 특징 🆕260509.txt claims 8 20s
+16:49:19 [645/2835] ok data/dohwadore_saju/shorts/016_[사주] 6월운세 - 좋고 나쁨이 극명함 🆕️260531.txt claims 4 22s
+16:49:19 [646/2835] ok data/dohwadore_saju/shorts/020_사주, 신점으로 떡상할 주식종목 볼 수 있을까 🆕260426.txt claims 2 20s
+16:49:20 [647/2835] ok data/dohwadore_saju/shorts/026_운명전쟁 49 출연한 이유.txt claims 0 10s
+16:49:20 [648/2835] ok data/dohwadore_saju/shorts/015_사주가 같으면 궁합 좋을까 🆕260609.txt claims 5 24s
+16:49:22 [649/2835] ok data/dohwadore_saju/shorts/024_[사주] 26년 시험 취업 이직운 몇월이 좋냐면요.txt claims 3 13s
+16:49:25 [650/2835] ok data/dohwadore_saju/shorts/033_[사주]이름 바꾸고 싶으셨던 분! (본문확인).txt claims 1 5s
+16:49:25 [651/2835] ok data/dohwadore_saju/shorts/022_26년 연애운 찰지게 말아드립니다 🆕260410.txt claims 5 23s
+16:49:26 [652/2835] ok data/dohwadore_saju/shorts/023_[사주] 4월부터 많은 분들이 풀리기 시작합니다🌟 🆕260401.txt claims 14 23s
+16:49:27 [653/2835] ok data/dohwadore_saju/shorts/005_9월 정유월 운세는 어떤 사주가 기대되냐면.txt claims 18 40s
+16:49:27 [654/2835] ok data/dohwadore_saju/shorts/032_[사주] 임수일간 26년 신년운세 요약 🆕260128.txt claims 3 9s
+16:49:28 [655/2835] ok data/dohwadore_saju/shorts/029_[사주] 26년 재물운이 기대되는 사람들 🆕️260210.txt claims 2 10s
+16:49:30 [656/2835] ok data/dohwadore_saju/shorts/028_26년 재물운이 가장 강한 달은 🆕260219.txt claims 1 15s
+16:49:30 [657/2835] ok data/dohwadore_saju/shorts/036_[사주] 기토일간 26년 신년운세 요약 🆕260114.txt claims 2 5s
+16:49:32 [658/2835] ok a/dohwadore_saju/shorts/025_[사주] 26년 취업운 합격운 이직운의 모든 것(1탄) 🆕260316.txt claims 6 23s
+16:49:33 [659/2835] ok data/dohwadore_saju/shorts/027_[사주] 3월운세, 길게 준비했습니다!(오늘 7시 4분).txt claims 13 18s
+16:49:33 [660/2835] ok data/dohwadore_saju/shorts/031_[사주] 계수일간 26년 신년운세 요약 🆕260128.txt claims 5 15s
+16:49:33    -- 진행 660/2835 경과 10.0분 | 토큰 in 470,406 out 624,245 think 1,760,055 | 누적 약 $9.29
+16:49:35 [661/2835] ok data/dohwadore_saju/shorts/035_[사주] 신금일간 26년 신년운세 요약 🆕260122.txt claims 4 13s
+16:49:37 [662/2835] ok data/dohwadore_saju/shorts/034_[사주] 경금일간 26년 신년운세 요약 🆕260122.txt claims 5 17s
+16:49:38 [663/2835] ok data/dohwadore_saju/shorts/037_[사주] 무토일간 26년 신년운세 요약 🆕260114.txt claims 3 13s
+16:49:38 [664/2835] ok data/dohwadore_saju/shorts/039_정화일간 26년 신년운세 요약 🆕260108.txt claims 3 11s
+16:49:40 [665/2835] ok data/dohwadore_saju/shorts/042_26년 갑목일간 신년운세 및 흐름 🆕251231.txt claims 3 10s
+16:49:41 [666/2835] ok data/dohwadore_saju/shorts/040_화가 많은 사주는 26년 불의 해, 어떨까 🆕260108.txt claims 3 14s
+16:49:41 [667/2835] ok data/dohwadore_saju/shorts/038_병화일간 26년 신년운세 요약 🆕260108.txt claims 5 15s
+16:49:42 [668/2835] ok data/dohwadore_saju/shorts/050_26년 나에게 큰 도움이 되는 귀인 사주로 구분해보기.txt claims 0 3s
+16:49:42 [669/2835] ok data/dohwadore_saju/shorts/019_[사주] 5월운세 - 26년의 클라이맥스🆕️260501.txt claims 15 43s
+16:49:42 [670/2835] ok data/dohwadore_saju/shorts/041_26년 을목일간 신년운세 및 흐름 🆕251231.txt claims 3 14s
+16:49:43 [671/2835] ok data/dohwadore_saju/shorts/045_사주에 나무 기운이 들어오면 생기는 변화 3가지.txt claims 5 10s
+16:49:44 [672/2835] ok data/dohwadore_saju/shorts/046_오행이 다 있는 사주보다 더 좋은 사주.txt claims 3 10s
+16:49:44 [673/2835] ok data/dohwadore_saju/shorts/043_유독 질투를 많이 받는 사주.txt claims 3 14s
+16:49:45 [674/2835] ok data/dohwadore_saju/shorts/044_사주 오행별 혼자 살면 오히려 좋아지는 것들.txt claims 5 13s
+16:49:47 [675/2835] ok data/dohwadore_saju/shorts/048_11월 기대되는 일간 베스트 3가지.txt claims 3 10s
+16:49:47 [676/2835] ok data/dohwadore_saju/shorts/047_관상에 좋은 얼굴점은 이런 점입니다.txt claims 3 12s
+16:49:50 [677/2835] ok data/dohwadore_saju/shorts/056_내 사주에 맞는 식물은 따로 있습니다.txt claims 2 9s
+16:49:51 [678/2835] ok data/dohwadore_saju/shorts/057_내 사주에 들어오면 좋은 오행은 뭘까 🆕250905.txt claims 2 9s
+16:49:54 [679/2835] ok a/dohwadore_saju/shorts/062_사주 속 화개살 잘 풀리는 년도, 시기는 각자 다릅니다 🆕250718.txt claims 2 9s
+16:49:54 [680/2835] ok ta/dohwadore_saju/shorts/059_[사주] 25년 하반기 중 재물운이 가장 강한 시기✦🆕️250822.txt claims 3 11s
+16:49:54    -- 진행 680/2835 경과 10.3분 | 토큰 in 486,627 out 643,996 think 1,816,206 | 누적 약 $9.59
+16:49:55 [681/2835] ok data/dohwadore_saju/shorts/061_다 같은 화개살이 아닙니다.txt claims 4 11s
+16:49:56 [682/2835] ok data/dohwadore_saju/shorts/063_천을귀인보다 좋은 신살이 있다.txt claims 3 9s
+16:49:57 [683/2835] ok data/dohwadore_saju/shorts/060_요즘 토 있는 사주가 말년이 좋은 이유.txt claims 2 14s
+16:49:58 [684/2835] ok data/dohwadore_saju/shorts/067_사주마다 호감을 느끼는 표현은 다릅니다.txt claims 1 4s
+16:49:59 [685/2835] ok data/dohwadore_saju/shorts/065_도움이 많이 따르는 사주 특징.txt claims 2 8s
+16:50:01 [686/2835] ok data/dohwadore_saju/shorts/030_[사주] 2월운세가 기대되는 이유🌟 🆕260131.txt claims 14 43s
+16:50:01 [687/2835] ok data/dohwadore_saju/shorts/054_[사주] 이런 사주, 26년 SNS 꼭 하세요! 🆕251003.txt claims 8 20s
+16:50:02 [688/2835] ok data/dohwadore_saju/shorts/055_26년은 크게 부자되는 시기입니다.txt claims 8 21s
+16:50:04 [689/2835] ok data/dohwadore_saju/shorts/066_양기몰빵 음기몰빵 사주 장점.txt claims 3 13s
+16:50:04 [690/2835] ok data/dohwadore_saju/shorts/049_[사주] 11월이 기대되는 사람들 🆕251029.txt claims 18 26s
+16:50:05 [691/2835] ok data/dohwadore_saju/shorts/069_25~27년 내 사주에 맞는 부업, 직업, 이직.txt claims 3 10s
+16:50:05 [692/2835] ok data/dohwadore_saju/shorts/051_도화살 자체가 아주 강한 사주 예시.txt claims 3 25s
+16:50:05 [693/2835] ok data/dohwadore_saju/shorts/070_[사주] 김문수, 역전할 수 있을까 🆕️250529.txt claims 4 9s
+16:50:09 [694/2835] ok a/dohwadore_saju/shorts/058_[사주] 25년 하반기 운세 2탄 일간별로 자세하게!✦🆕️250829.txt claims 10 27s
+16:50:10 [695/2835] ok data/dohwadore_saju/shorts/075_사주로 취업 이직 보는 꿀팁✨️ 🆕️250510.txt claims 3 8s
+16:50:10 [696/2835] ok data/dohwadore_saju/shorts/071_[사주] 이재명 후보는 대통령이.. 🆕️250526.txt claims 3 13s
+16:50:12 [697/2835] ok data/dohwadore_saju/shorts/077_헤어진 전애인 사주로 알 수 있는 것들.txt claims 2 9s
+16:50:13 [698/2835] ok data/dohwadore_saju/shorts/081_그래도 방법은 있더라 #사주.txt claims 3 7s
+16:50:13 [699/2835] ok data/dohwadore_saju/shorts/076_사주로 보는 5월 연애운.txt claims 4 11s
+16:50:13 [700/2835] ok data/dohwadore_saju/shorts/073_[사주] 더 높은 연봉으로 이직 가능한 달✨.txt claims 3 15s
+16:50:13    -- 진행 700/2835 경과 10.7분 | 토큰 in 502,145 out 669,334 think 1,883,608 | 누적 약 $9.95
+16:50:15 [701/2835] ok ta/dohwadore_saju/shorts/080_[진로] 하늘이 내려준 '천직'이 정해져 있는 사주 🆕️250422.txt claims 1 10s
+16:50:15 [702/2835] ok data/dohwadore_saju/shorts/072_한동안 잘 풀리는 사주 유형 4가지.txt claims 6 17s
+16:50:16 [703/2835] ok data/dohwadore_saju/shorts/074_같은 글자가 나란히 있는 사주의 잘 맞는 직업.txt claims 1 15s
+16:50:17 [704/2835] ok ta/dohwadore_saju/shorts/079_사주에 나와있는 내 인생의 중요한 시기(ft.병존) 🆕️250426.txt claims 3 12s
+16:50:17 [705/2835] ok data/dohwadore_saju/shorts/083_사주가 비슷한 사람끼리는 잘 맞을까 🆕️250417 #사주.txt claims 3 8s
+16:50:19 [706/2835] ok data/dohwadore_saju/shorts/084_오히려 더 좋은 숨은 뜻이 있음 🆕️250412 #사주.txt claims 4 9s
+16:50:20 [707/2835] ok data/dohwadore_saju/shorts/085_내 사주엔 몇살 결혼으로 나올까 🆕️250412.txt claims 3 8s
+16:50:21 [708/2835] ok data/dohwadore_saju/shorts/091_사주로 전생도 볼 수 있다 [New 콘텐츠!].txt claims 1 5s
+16:50:21 [709/2835] ok data/dohwadore_saju/shorts/064_[사주] 7월운세가 기대되는 사람들💟 🆕️250702.txt claims 7 34s
+16:50:21 [710/2835] ok data/dohwadore_saju/shorts/082_[사주] 결혼 택일할 때 이렇게 하세요 🆕️250417 #사주.txt claims 5 12s
+16:50:24 [711/2835] ok data/dohwadore_saju/shorts/093_사주에 같은 글자가 있으면 좋을까 #shorts.txt claims 1 6s
+16:50:25 [712/2835] ok data/dohwadore_saju/shorts/090_어떤 달이 내 사주에 중요할까 보는법.txt claims 2 10s
+16:50:26 [713/2835] ok data/dohwadore_saju/shorts/087_[사주] 결혼하기 전 궁합 꼭 봐야하는 이유.txt claims 3 12s
+16:50:26 [714/2835] ok data/dohwadore_saju/shorts/098_25년 연애운 이성운 가장 좋은 사람들 🆕️250215 #사주.txt claims 1 5s
+16:50:26 [715/2835] ok data/dohwadore_saju/shorts/068_[사주] 6월 운세가 기대되는 사람들🌺 🆕️250604.txt claims 19 32s
+16:50:27 [716/2835] ok data/dohwadore_saju/shorts/092_병존 사주는 해석법이 다릅니다 #shorts.txt claims 2 10s
+16:50:27 [717/2835] ok data/dohwadore_saju/shorts/094_[사주] 3월 연애운과 이성운 올라가는 사람들💖.txt claims 4 8s
+16:50:27 [718/2835] ok data/dohwadore_saju/shorts/088_25~27년이 좋다고 하던데요 #shorts.txt claims 2 14s
+16:50:30 [719/2835] ok data/dohwadore_saju/shorts/089_사주마다 맞고 안 맞는 계절이 있다 🆕️250320.txt claims 2 16s
+16:50:31 [720/2835] ok data/dohwadore_saju/shorts/100_25년 연애운은 이게 중요합니다 🆕250208 #shorts.txt claims 1 7s
+16:50:31    -- 진행 720/2835 경과 11.0분 | 토큰 in 517,147 out 690,039 think 1,932,226 | 누적 약 $10.22
+16:50:33 [721/2835] ok data/dohwadore_saju/shorts/099_사주로 본 25년 연애운 키워드 #shorts.txt claims 2 10s
+16:50:33 [722/2835] ok dohwadore_saju/shorts/096_[사주] 작년 난리났던 연애운 캘린더 돌아왔습니다.🆕️250222 #사주.txt claims 3 13s
+16:50:34 [723/2835] ok data/dohwadore_saju/shorts/102_재물운 궁금하시면 꼭 보세요.txt claims 2 8s
+16:50:36 [724/2835] ok ohwadore_saju/shorts/105_25년 큰 돈이 들어오고 나가는 시기(몇월 ) 🆕250114 #shorts.txt claims 2 9s
+16:50:37 [725/2835] ok data/dohwadore_saju/shorts/104_이성을 특별히 조심해야하는 사주 #shorts.txt claims 3 11s
+16:50:38 [726/2835] ok data/dohwadore_saju/shorts/097_사주에 자수[子] 있는 사람들 25년 재물운(댓글참고).txt claims 5 17s
+16:50:38 [727/2835] ok data/dohwadore_saju/shorts/106_25년 재물운이 특히 좋은 사람들 🆕250109 #shorts.txt claims 2 11s
+16:50:38 [728/2835] ok data/dohwadore_saju/shorts/101_25년 조심하면 좋은 사주(띠별운세 보다 정확).txt claims 3 13s
+16:50:39 [729/2835] ok dohwadore_saju/shorts/110_25년 내 운세 어떨까 신년운세 1탄 🆕241225 7PM #shorts.txt claims 0 6s
+16:50:40 [730/2835] ok data/dohwadore_saju/shorts/108_25년 가장 기대되는 사주 일간 🆕241229 #shorts.txt claims 2 9s
+16:50:44 [731/2835] ok data/dohwadore_saju/shorts/112_어떤 일이 일어날까 🆕241126 8PM #사주.txt claims 3 8s
+16:50:44 [732/2835] ok data/dohwadore_saju/shorts/078_[사주] 5월 운세가 기대되는 사람들🌺 🆕️250501.txt claims 20 40s
+16:50:45 [733/2835] ok data/dohwadore_saju/shorts/117_내 사주로 쉽게 따라해보세요 🆕241112 8PM #shorts.txt claims 1 5s
+16:50:45 [734/2835] ok data/dohwadore_saju/shorts/115_남자는 없는데 연애하고 싶어질 때 #shorts.txt claims 3 7s
+16:50:46 [735/2835] ok data/dohwadore_saju/shorts/109_내 얘기잖아.txt claims 3 13s
+16:50:47 [736/2835] ok data/dohwadore_saju/shorts/114_이런 일주는 25년 많이 기대됩니다 #사주.txt claims 3 9s
+16:50:47 [737/2835] ok data/dohwadore_saju/shorts/111_현금 쥐고 있으면 안되는 사주 #shorts.txt claims 3 13s
+16:50:49 [738/2835] ok data/dohwadore_saju/shorts/107_내 사주가 3년간 잘 풀리는 이유 #shorts.txt claims 10 19s
+16:50:50 [739/2835] ok data/dohwadore_saju/shorts/116_사주에서 말하는 최고로 좋은 궁합 #shorts.txt claims 3 12s
+16:50:51 [740/2835] ok data/dohwadore_saju/shorts/118_사주보고 주식매매 승률 대공개 #shorts.txt claims 2 10s
+16:50:51    -- 진행 740/2835 경과 11.3분 | 토큰 in 532,000 out 710,659 think 1,977,872 | 누적 약 $10.48
+16:50:52 [741/2835] ok data/dohwadore_saju/shorts/086_[사주] 4월 운세가 기대되는 사람들🌺 🆕️250402.txt claims 17 40s
+16:50:52 [742/2835] ok data/dohwadore_saju/shorts/113_사주로 보는 세계 3차대전(ft.핵폭발).txt claims 1 15s
+16:50:53 [743/2835] ok ata/dohwadore_saju/shorts/103_삼재 중 오히려 사주에 좋은 복삼재 🆕250122 #삼재 #복삼재.txt claims 2 27s
+16:50:54 [744/2835] ok data/dohwadore_saju/shorts/095_[사주] 3월 운세가 기대되는 사람들🌺 🆕️250302.txt claims 19 33s
+16:50:54 [745/2835] ok data/dohwadore_saju/shorts/120_재물운을 기대해도 좋은 이유 🆕241105 8PM.txt claims 3 10s
+16:50:55 [746/2835] ok data/dohwadore_saju/shorts/124_지금부터 바뀌는 이유 #사주.txt claims 2 8s
+16:50:57 [747/2835] ok data/dohwadore_saju/shorts/121_사주별로 미리 알아둬야하는 것들 🆕 241031 8PM.txt claims 5 12s
+16:50:58 [748/2835] ok data/dohwadore_saju/shorts/123_내 사주는 뭐가 더 맞을까 #shorts.txt claims 3 12s
+16:50:58 [749/2835] ok data/dohwadore_saju/shorts/129_시골 사람이라 모르는 것 #shorts.txt claims 0 6s
+16:50:59 [750/2835] ok a/dohwadore_saju/shorts/134_더 인플루언서 인간경매 후기 #shorts #넷플릭스 #netflix.txt claims 0 4s
+16:51:00 [751/2835] ok data/dohwadore_saju/shorts/119_25년 재물운은 특이해요 🆕241105 8PM.txt claims 2 16s
+16:51:01 [752/2835] ok data/dohwadore_saju/shorts/128_혹시 내 사주가... 🆕 240929 8PM #shorts.txt claims 2 10s
+16:51:01 [753/2835] ok dohwadore_saju/shorts/130_나이 들수록 사주 못 무시하는 이유 🆕 240915 8PM #shorts.txt claims 3 9s
+16:51:02 [754/2835] ok data/dohwadore_saju/shorts/122_사주엔 돈 버는 시기도 나와있어요 🆕 241021 8PM.txt claims 1 16s
+16:51:02 [755/2835] ok data/dohwadore_saju/shorts/131_유독 살 찌는 시기도 사주에 있습니다 #shorts.txt claims 3 9s
+16:51:04 [756/2835] ok data/dohwadore_saju/shorts/132_저는 제 사주 이렇게 씁니다 #shorts.txt claims 2 10s
+16:51:04 [757/2835] ok data/dohwadore_saju/shorts/125_이런 현상은 그냥 넘기지 마세요 🆕 241014 8PM.txt claims 1 17s
+16:51:06 [758/2835] ok /dohwadore_saju/shorts/136_8월 운세는 이런 사람이 좋습니다 🆕 240731 8PM #shorts.txt claims 4 8s
+16:51:08 [759/2835] ok data/dohwadore_saju/shorts/135_하반기 운세 1줄요약 🆕 240816 8PM #shorts.txt claims 3 11s
+16:51:08 [760/2835] ok wadore_saju/shorts/126_내 사주에 필요한 운세 메시지(댓글참고) #shorts #25년운세 #신년운세.txt claims 3 19s
+16:51:08    -- 진행 760/2835 경과 11.6분 | 토큰 in 546,796 out 732,360 think 2,040,411 | 누적 약 $10.81
+16:51:08 [761/2835] ok data/dohwadore_saju/shorts/139_사주별 24년 하반기 개운법 🆕 240701 8PM.txt claims 3 9s
+16:51:09 [762/2835] ok data/dohwadore_saju/shorts/140_간여지동 사주 위치별 해석 방법(4가지) #shorts.txt claims 1 8s
+16:51:10 [763/2835] ok a/dohwadore_saju/shorts/138_이성운 안 좋다고 오해받는 사주 🆕 240709 8PM #shorts.txt claims 1 12s
+16:51:11 [764/2835] ok data/dohwadore_saju/shorts/143_사주 오행 중 성공할 확률이 높은 오행 #shorts.txt claims 2 9s
+16:51:12 [765/2835] ok data/dohwadore_saju/shorts/141_세로로 같은 색이 있는 사주 보는법 🆕 240618 8PM.txt claims 1 11s
+16:51:15 [766/2835] ok data/dohwadore_saju/shorts/149_민희진 사주로 본 놀라운 전망 #shorts.txt claims 2 7s
+16:51:16 [767/2835] ok data/dohwadore_saju/shorts/133_내 사주 하반기 몇월 달이 좋을까.txt claims 6 21s
+16:51:16 [768/2835] ok data/dohwadore_saju/shorts/145_방시혁 사주로 본 단월드 논란(소름) #shorts.txt claims 4 13s
+16:51:16 [769/2835] ok data/dohwadore_saju/shorts/153_회사 가는게 싫었어요 #shorts.txt claims 0 4s
+16:51:16 [770/2835] ok data/dohwadore_saju/shorts/150_한동훈 정치 복귀는 사주에 나와 있다 #shorts.txt claims 2 7s
+16:51:18 [771/2835] ok /dohwadore_saju/shorts/137_내 사주에 필요한 운은 따로 있다 🆕 240717 8PM #shorts.txt claims 1 19s
+16:51:19 [772/2835] ok data/dohwadore_saju/shorts/142_외국인 남편 사주는 과연 잘 맞을까 #shorts.txt claims 2 17s
+16:51:19 [773/2835] ok data/dohwadore_saju/shorts/151_공존할 수 없다 최악의 윤한 궁합 #shorts #사주.txt claims 3 9s
+16:51:19 [774/2835] ok data/dohwadore_saju/shorts/144_방시혁 사주대로 흘러가는 현재 상황 #shorts.txt claims 2 16s
+16:51:22 [775/2835] ok data/dohwadore_saju/shorts/154_기 센 사람이 사주보러 가면..#shorts.txt claims 1 6s
+16:51:23 [776/2835] ok data/dohwadore_saju/shorts/155_2030은 뭐가 더 중요할까 #shorts.txt claims 0 8s
+16:51:23 [777/2835] ok data/dohwadore_saju/shorts/148_대운이 바뀐 민희진 어떻게 될까 #shorts.txt claims 1 15s
+16:51:25 [778/2835] ok data/dohwadore_saju/shorts/158_소름돋는 썸남들 사주 #shorts.txt claims 3 8s
+16:51:26 [779/2835] ok data/dohwadore_saju/shorts/159_비견 겁재는 위치별 해석방법 #shorts #사주.txt claims 2 9s
+16:51:27 [780/2835] ok data/dohwadore_saju/shorts/152_사업가들이 사주를 꼭 보는 이유 #shorts.txt claims 3 16s
+16:51:27    -- 진행 780/2835 경과 11.9분 | 토큰 in 561,784 out 746,594 think 2,084,129 | 누적 약 $11.04
+16:51:27 [781/2835] ok data/dohwadore_saju/shorts/147_사주는 미신인 줄 알았는데...#shorts.txt claims 3 20s
+16:51:28 [782/2835] ok data/dohwadore_saju/shorts/161_2달동안 연애운 흐름 #shorts.txt claims 3 9s
+16:51:28 [783/2835] ok data/dohwadore_saju/shorts/163_파묘 속 변태 디테일 구간 1.txt claims 3 7s
+16:51:29 [784/2835] ok data/dohwadore_saju/shorts/162_친구가 신기하다고 함.txt claims 3 10s
+16:51:29 [785/2835] ok data/dohwadore_saju/shorts/164_실화) 직접 들은 얘기 #사주.txt claims 1 6s
+16:51:29 [786/2835] ok data/dohwadore_saju/shorts/157_사주에 남자가 없는데 연애하는 경우 #shorts.txt claims 3 13s
+16:51:31 [787/2835] ok data/dohwadore_saju/shorts/160_반대로 알고 있는 사실... #shorts #연애 #사주.txt claims 2 12s
+16:51:32 [788/2835] ok data/dohwadore_saju/shorts/168_윤석열 대통령이.. #shorts.txt claims 0 6s
+16:51:33 [789/2835] ok data/dohwadore_saju/shorts/127_점점 풀리는 게 느껴지는 사람들 🆕 241001 8PM.txt claims 14 42s
+16:51:33 [790/2835] ok data/dohwadore_saju/shorts/156_홍염살을 잘 살리는 일과 직업 #shorts.txt claims 3 17s
+16:51:36 [791/2835] ok data/dohwadore_saju/shorts/172_뜻밖의 특징 #shorts #불없는사주.txt claims 2 8s
+16:51:37 [792/2835] ok data/dohwadore_saju/shorts/170_낮 vs 밤 하루 중 좋은 시간대 #사주 #개운법.txt claims 2 10s
+16:51:40 [793/2835] ok data/dohwadore_saju/shorts/175_23년 연말 연애운 주의 #사주 #연애운 #사주보는법.txt claims 3 11s
+16:51:40 [794/2835] ok data/dohwadore_saju/shorts/173_역마살 많을수록... #역마살 #역마 #역마살특징.txt claims 2 11s
+16:51:42 [795/2835] ok data/dohwadore_saju/shorts/146_지금부터 향후 4년간 운이 상승하는 사주 #shorts.txt claims 17 36s
+16:51:42 [796/2835] ok ohwadore_saju/shorts/179_(사주)8~9월은 칼부림..10~12월은 ㄱㄱ #운세 #사주보는법 #개운법.txt claims 3 9s
+16:51:44 [797/2835] ok data/dohwadore_saju/shorts/178_완전 다른 화개살 위치별 의미 #화개살 #사주 #shorts.txt claims 3 12s
+16:51:44 [798/2835] ok data/dohwadore_saju/shorts/169_23년 연말에 받게 될 선물 #shorts.txt claims 5 18s
+16:51:46 [799/2835] ok a/dohwadore_saju/shorts/177_토 없는 사주의 인간관계... #shorts #사주 #사주에토가없으면.txt claims 4 14s
+16:51:46 [800/2835] ok data/dohwadore_saju/shorts/176_사주 가스라이팅 더 이상 ㄴㄴ #shorts #사주 #팔자센여자.txt claims 3 15s
+16:51:46    -- 진행 800/2835 경과 12.2분 | 토큰 in 576,257 out 769,421 think 2,146,385 | 누적 약 $11.37
+16:51:47 [801/2835] ok data/dohwadore_saju/shorts/167_내 사주에 필요한 기운이 들어오면 #shorts #사주 #스우파.txt claims 3 22s
+16:51:48 [802/2835] ok ta/dohwadore_saju/shorts/174_화개살 글자별로 성공하는 시기 보는법 #화개살 #사주 #화개살보는법.txt claims 3 19s
+16:51:49 [803/2835] ok ata/dohwadore_saju/shorts/181_사주에 나무가 없을 때 확실한 개운법 #개운법 #사주 #사주보는법.txt claims 2 12s
+16:51:50 [804/2835] ok data/dohwadore_saju/shorts/184_사주 속 공망 위치에 따른 해석법.txt claims 1 8s
+16:51:50 [805/2835] ok dore_saju/shorts/171_내년 경제는 힘들지만 돈은 많이 버는 사주 Top 3 #24년운세 #재물운 #사주.txt claims 4 22s
+16:51:53 [806/2835] ok data/dohwadore_saju/shorts/185_축토(丑)가 사주에 있을 때 인생의 흐름🐮.txt claims 4 10s
+16:51:53 [807/2835] ok data/dohwadore_saju/shorts/183_인목(寅)이 사주에 있을 때 좋은 현상🐯.txt claims 4 13s
+16:51:56 [808/2835] ok ata/dohwadore_saju/shorts/188_지금까지 다 맞은 10년 전 신점 썰 #shorts #사주 #신점.txt claims 2 10s
+16:51:57 [809/2835] ok data/dohwadore_saju/shorts/193_특정 오행이 없는 사주일수록 #shorts.txt claims 2 7s
+16:51:57 [810/2835] ok data/dohwadore_saju/shorts/194_귀문관살 사주가 성공하는 이유 #shorts.txt claims 2 7s
+16:51:57 [811/2835] ok data/dohwadore_saju/shorts/187_사주에 똑같은 글자가 있을 때 #shorts #사주 #사주보는법.txt claims 1 13s
+16:51:58 [812/2835] ok ta/dohwadore_saju/shorts/180_이성이 꼬이는 나이 홍염살이 강해지는 년도 #홍염살 #도화살 #사주.txt claims 16 22s
+16:51:59 [813/2835] ok data/dohwadore_saju/shorts/192_이 방법대로 해보세요 #shorts.txt claims 3 10s
+16:51:59 [814/2835] ok data/dohwadore_saju/shorts/191_8~9월이 칼부림 사건이 많은 이유 #shorts #사주.txt claims 2 11s
+16:51:59 [815/2835] ok data/dohwadore_saju/shorts/189_무슨 직업이 잘 맞을까 #사주 #사주보는법 #shorts.txt claims 2 13s
+16:51:59 [816/2835] ok data/dohwadore_saju/shorts/190_속궁합 사주로 보는 법 #shorts.txt claims 6 12s
+16:52:01 [817/2835] ok data/dohwadore_saju/shorts/195_좋은 대운 오래 유지하는 법 #shorts.txt claims 1 8s
+16:52:02 [818/2835] ok data/dohwadore_saju/shorts/196_유튜브로 사주 독학하는 법 #shorts.txt claims 0 9s
+16:52:02 [819/2835] ok data/dohwadore_saju/shorts/186_자수(子)가 사주에 있을 때 좋은 이유🐹.txt claims 3 18s
+16:52:04 [820/2835] ok data/dohwadore_saju/shorts/198_너무 좋을 것 같아요 #shorts.txt claims 3 8s
+16:52:04    -- 진행 820/2835 경과 12.5분 | 토큰 in 590,698 out 785,914 think 2,195,447 | 누적 약 $11.62
+16:52:05 [821/2835] ok data/dohwadore_saju/shorts/197_돌려차기범 사주 왜 소름 돋냐면 #shorts.txt claims 3 10s

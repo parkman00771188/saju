@@ -1,0 +1,179 @@
+{
+ "source": "data/FORCETELLERKR/shorts/850_생년월일 다 더하면 연애 못하는 이유 알 수 있어요 #지식 #상식 #타로.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "zdQmq-_FVkw",
+ "title": "생년월일 다 더하면 연애 못하는 이유 알 수 있어요 #지식 #상식 #타로",
+ "url": "https://www.youtube.com/watch?v=zdQmq-_FVkw",
+ "upload": "20230711",
+ "duration_sec": "56",
+ "views": "2603",
+ "chars": 467,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "생년월일의 숫자를 모두 더해 한 자리 수로 환산하는 타로 수비학 기반의 '소울 넘버'를 통해 각 번호별 연애가 힘든 이유를 설명합니다. 소울 넘버 1부터 9까지 실패 경험, 의심, 과도한 배려, 제한된 만남, 표현 부족, 운명론, 강한 자기주장, 낮은 자존감, 솔로 생활 만족 등 저마다 다른 연애 장애 요인이 제시됩니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 1"
+    }
+   ],
+   "outcome": "실패가 많아 연애를 포기하게 된다",
+   "tag": "연애가 늦음·서툼",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "1, 실패가 많아 연애를 포기."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 2"
+    }
+   ],
+   "outcome": "상대방을 자꾸 의심해 연애가 힘들다",
+   "tag": "예민·섬세",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2, 상대방을 자꾸 의심해서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 3"
+    }
+   ],
+   "outcome": "혼자 잘해주느라 지쳐 연애가 힘들다",
+   "tag": "희생·봉사 기질",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "3, 혼자 잘해주느라 지쳐서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 4"
+    }
+   ],
+   "outcome": "만나는 사람만 자꾸 만나 연애가 힘들다",
+   "tag": "연애가 늦음·서툼",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4, 만나는 사람만 자꾸 만나서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 5"
+    }
+   ],
+   "outcome": "좋아한다고 표현을 안 해 연애가 힘들다",
+   "tag": "표현·언변",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "5, 좋아한다고 표현 안 해서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 6"
+    }
+   ],
+   "outcome": "운명적인 사랑만 믿어 연애가 힘들다",
+   "tag": "연애가 늦음·서툼",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6, 운명적인 사랑만 믿어서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 7"
+    }
+   ],
+   "outcome": "자기주장이 너무 세서 연애가 힘들다",
+   "tag": "고집·자존심",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "7, 자기주장이 너무 세서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 8"
+    }
+   ],
+   "outcome": "자존감이 너무 낮아서 연애가 힘들다",
+   "tag": "소심·우유부단",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "8, 자존감이 너무 낮아서."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 9"
+    }
+   ],
+   "outcome": "솔로도 나쁘지 않아 연애를 하지 않는다",
+   "tag": "고독·독신",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "9, 솔로도 나쁘지 않아서."
+  }
+ ],
+ "insights": [
+  "타로의 바탕이 되는 수비학에서는 생년월일의 모든 자릿수를 더해 한 자리 수로 환산한 소울 넘버로 연애의 장애 요인을 진단한다."
+ ],
+ "keywords": [
+  "수비학",
+  "소울 넘버",
+  "타로",
+  "연애운",
+  "생년월일",
+  "솔로 탈출"
+ ]
+}

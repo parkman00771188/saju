@@ -1,0 +1,89 @@
+{
+ "source": "data/FORCETELLERKR/shorts/932_제대로 이번 생에 대박나는 사람인지 지금 확인해보세요! 😉 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "9dXMvwdtNIY",
+ "title": "제대로 이번 생에 대박나는 사람인지 지금 확인해보세요! 😉 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=9dXMvwdtNIY",
+ "upload": "20230317",
+ "duration_sec": "51",
+ "views": "2372",
+ "chars": 426,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "사주에 길성인 천덕귀인이 있는 사람은 전생이나 조상의 큰 공덕 덕분에 이번 생에 남들보다 많은 복을 누리게 됩니다. 공무원 등 나라 일에 종사하면 승진이 빠르며 평생 금전 걱정 없이 지낼 수 있습니다. 또한 결혼할 경우 남들이 부러워할 만큼 이상적인 배우자를 만나는 복을 얻습니다.",
+ "topics": [
+  "직장",
+  "금전",
+  "연애·결혼",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천덕귀인"
+    },
+    {
+     "type": "기타",
+     "value": "공직 종사"
+    }
+   ],
+   "outcome": "승진이 매우 빠르다",
+   "tag": "승진·직책",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "공무원과 같이 나라에 종사하면 승진이 빠르고"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천덕귀인"
+    }
+   ],
+   "outcome": "평생 돈 걱정 없이 지낸다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "평생을 돈에 대한 걱정 없이 보낸다고 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천덕귀인"
+    }
+   ],
+   "outcome": "남들이 부러워할 이상적인 배우자를 만난다",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "결혼을 한다면 남들이 다 부러워할 만한 이상적인 상대를 만난다고 하니"
+  }
+ ],
+ "insights": [
+  "천덕귀인은 전생의 공덕으로 주어지는 적금 같은 길성으로, 삶 전반에 걸쳐 지속적인 복락을 가져다준다."
+ ],
+ "keywords": [
+  "천덕귀인",
+  "길성",
+  "공무원",
+  "승진운",
+  "재물복",
+  "배우자복"
+ ]
+}

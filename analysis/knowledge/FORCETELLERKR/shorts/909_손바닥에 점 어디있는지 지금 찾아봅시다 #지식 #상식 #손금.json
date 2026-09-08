@@ -1,0 +1,249 @@
+{
+ "source": "data/FORCETELLERKR/shorts/909_손바닥에 점 어디있는지 지금 찾아봅시다 #지식 #상식 #손금.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "ecYHzKF-Gxs",
+ "title": "손바닥에 점 어디있는지 지금 찾아봅시다  #지식 #상식 #손금",
+ "url": "https://www.youtube.com/watch?v=ecYHzKF-Gxs",
+ "upload": "20230419",
+ "duration_sec": "60",
+ "views": "5265",
+ "chars": 451,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "영상은 손바닥에 위치한 9가지 점 위치에 따른 성격 기질과 건강, 금전적 특성을 설명합니다. 1번부터 9번까지 각 위치별로 호쾌함, 대범함, 사실 중시, 낯가림, 독립성, 신념, 애교, 섬세함, 감수성 등의 성격이 나타납니다. 아울러 위치에 따라 소화기관이나 순환기·호흡기 질환에 주의하거나 과소비와 성급한 판단을 피하라는 실질적인 조언을 제시합니다.",
+ "topics": [
+  "성격·기질",
+  "건강·수명",
+  "금전",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 1번 위치"
+    }
+   ],
+   "outcome": "호쾌한 성격의 기분파 성향을 보임",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "1번, 호쾌한 성격의 기분파예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 1번 위치"
+    }
+   ],
+   "outcome": "소화기관이 약할 수 있음",
+   "tag": "소화기·위장",
+   "category": "건강·수명",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "소화기관 건강에 주의 필요",
+   "quote": "소화기관이 약할 수 있으니 주의하세요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 2번 위치"
+    }
+   ],
+   "outcome": "대범하고 모험심이 넘치며 덤벙댐",
+   "tag": "기타",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "2번, 대범하고 모험심이 넘쳐요. 덤벙거리는 것이 매력 포인트."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 3번 위치"
+    }
+   ],
+   "outcome": "객관적인 사실을 중시함",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "센스를 조금 더 키우면 좋음",
+   "quote": "3번, 객관적인 사실이 중요한 사람이에요. 센스를 조금 더 키워보면 좋을 거예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 4번 위치"
+    }
+   ],
+   "outcome": "낯을 가리는 성격을 지님",
+   "tag": "소심·우유부단",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "4번, 낯을 가리는 성격이에요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 4번 위치"
+    }
+   ],
+   "outcome": "씀씀이가 헤퍼 과소비하기 쉬움",
+   "tag": "낭비·씀씀이",
+   "category": "금전",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "과소비 주의 필요",
+   "quote": "씀씀이가 헤퍼서 과소비를 주의해야 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 5번 위치"
+    }
+   ],
+   "outcome": "독립적이고 결단력이 뛰어남",
+   "tag": "자유·독립 성향",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "섣부르게 판단하지 않도록 주의",
+   "quote": "5번, 독립적이고 결단력이 뛰어나요. 섣부르게 판단하지 않기로 약속."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 6번 위치"
+    }
+   ],
+   "outcome": "신념이 확고하나 차가워 보일 수 있음",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "6번, 자신만의 신념이 확고하지만 차가운 사람으로 볼 수 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 7번 위치"
+    }
+   ],
+   "outcome": "애교가 많고 사랑스러운 매력이 있음",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "7번, 애교가 많고 사랑스러워요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 7번 위치"
+    }
+   ],
+   "outcome": "체력이 약하고 끈기가 부족할 수 있음",
+   "tag": "과로·피로",
+   "category": "건강·수명",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "하지만 체력이 약하고 끈기가 부족할 수 있어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 8번 위치"
+    }
+   ],
+   "outcome": "섬세하고 다정한 성품을 지님",
+   "tag": "예민·섬세",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "8번, 섬세하고 다정한 사람이에요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 8번 위치"
+    }
+   ],
+   "outcome": "순환기와 호흡기가 약할 수 있음",
+   "tag": "폐·기관지·피부",
+   "category": "건강·수명",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "순환기 및 호흡기 질환 주의 필요",
+   "quote": "순환기와 호흡기가 약할 수 있으니 주의하세요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "손바닥 점 9번 위치"
+    }
+   ],
+   "outcome": "감수성과 순발력이 뛰어나나 고집이 셈",
+   "tag": "고집·자존심",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "고집을 줄이도록 노력할 것",
+   "quote": "9번, 감수성이 풍부하고 순발력이 뛰어나요. 고집은 좀 줄여보면 어떨까요?"
+  }
+ ],
+ "insights": [
+  "손바닥에 찍힌 점의 위치(구획별 번호)에 따라 개인의 성격적 장단점뿐만 아니라 주의해야 할 취약 신체 부위 및 소비 성향을 유추할 수 있다."
+ ],
+ "keywords": [
+  "손바닥점",
+  "손금",
+  "수상학",
+  "소화기관",
+  "순환기",
+  "호흡기",
+  "과소비",
+  "결단력",
+  "기분파",
+  "모험심"
+ ]
+}

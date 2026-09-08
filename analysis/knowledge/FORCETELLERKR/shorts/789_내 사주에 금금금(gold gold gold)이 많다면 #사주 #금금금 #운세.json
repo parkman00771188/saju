@@ -1,0 +1,51 @@
+{
+ "source": "data/FORCETELLERKR/shorts/789_내 사주에 금금금(gold gold gold)이 많다면 #사주 #금금금 #운세.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "H5jhDW1thWE",
+ "title": "내 사주에 금금금(gold gold gold)이 많다면? #사주 #금금금 #운세",
+ "url": "https://www.youtube.com/watch?v=H5jhDW1thWE",
+ "upload": "20230923",
+ "duration_sec": "27",
+ "views": "88608",
+ "chars": 204,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:46",
+ "summary": "사주에 금 기운이 많으면 연애할 때 상대방의 부족한 점을 보완해 주고자 가르치려는 성향이 나타납니다. 그러나 상대방 입장에서는 이를 지적으로 느껴 반감을 가질 수 있습니다. 이로 인해 연인 사이에 잦은 트러블과 갈등이 발생하기 쉽습니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "금"
+    }
+   ],
+   "outcome": "연애 시 상대를 가르치려 해 갈등이 생기기 쉽다",
+   "tag": "배우자와 갈등",
+   "category": "연애·결혼",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "금은 뭐냐면 자기가 연애를 할 때 가르치려 들어요... 상대 입장에서는 지적질당한다는 느낌이 들 수 있겠죠. 그래서 네가 뭔데 나한테 지적을 하니 하면서 트러블이 날 수가 있겠고요."
+  }
+ ],
+ "insights": [
+  "금 기운이 강한 사주는 상대를 위한다는 명목으로 부족한 점을 고쳐주려 하지만, 상대에게는 잔소리와 지적으로 인식되어 연애 갈등을 부르기 쉽다."
+ ],
+ "keywords": [
+  "금 기운",
+  "금 과다",
+  "연애 갈등",
+  "지적",
+  "오행 금",
+  "연애 스타일"
+ ]
+}

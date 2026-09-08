@@ -1,0 +1,181 @@
+{
+ "source": "data/FORCETELLERKR/shorts/865_생일로 알아보는 숨겨진 능력 찾는 법 #지식 #상식 #타로.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "dnodftYF4mU",
+ "title": "생일로 알아보는 숨겨진 능력 찾는 법 #지식 #상식 #타로",
+ "url": "https://www.youtube.com/watch?v=dnodftYF4mU",
+ "upload": "20230623",
+ "duration_sec": "58",
+ "views": "5606",
+ "chars": 492,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "생년월일의 모든 숫자를 한 자리 숫자가 될 때까지 더해 구하는 수비학 기반의 '소울 넘버'를 통해 개인의 숨겨진 능력을 설명합니다. 소울 넘버 1번부터 9번까지 각각 천재끼, 이성적 판단력, 성숙한 매력, 냉정한 카리스마, 지도력, 사교성, 추진력, 인내심, 꿰뚫어보는 지혜 등의 고유한 기질과 강점이 나타납니다. 생일에 내재된 특별한 재능과 성향을 수비학적 관점에서 간략히 정리해 줍니다.",
+ "topics": [
+  "성격·기질",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 1"
+    }
+   ],
+   "outcome": "겸손해도 숨길 수 없는 천재끼가 나타남",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "1, 겸손해도 숨길 수 없는 천재끼."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 2"
+    }
+   ],
+   "outcome": "차분하고 이성적인 판단력을 보임",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "2, 차분하고 이성적인 판단력."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 3"
+    }
+   ],
+   "outcome": "다정하고 성숙한 매력을 지님",
+   "tag": "인기·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "3, 다정하고 성숙한 매력."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 4"
+    }
+   ],
+   "outcome": "단호하고 냉정한 카리스마를 지님",
+   "tag": "리더십·카리스마",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "4, 단호하고 냉정한 카리스마."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 5"
+    }
+   ],
+   "outcome": "변화를 이끌어내는 지도력을 발휘함",
+   "tag": "리더십·카리스마",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "5, 변화를 이끌어내는 지도력."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 6"
+    }
+   ],
+   "outcome": "사랑스러운 매력과 뛰어난 사교성을 가짐",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "6, 사랑스러운 매력의 사교성."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 7"
+    }
+   ],
+   "outcome": "목표를 향한 강한 추진력을 지님",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "7, 목표를 향한 강한 추진력."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 8"
+    }
+   ],
+   "outcome": "문제를 피하지 않는 강한 인내심을 가짐",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "8, 문제를 피하지 않는 인내심."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "소울 넘버 9"
+    }
+   ],
+   "outcome": "모든 것을 꿰뚫어보는 통찰과 지혜를 지님",
+   "tag": "직관·촉",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "9, 모든 걸 다 꿰뚫어보는 지혜."
+  }
+ ],
+ "insights": [
+  "수비학에서는 생년월일의 모든 숫자를 합산하여 단자리 숫자로 축약한 소울 넘버를 통해 개인의 선천적인 재능과 성향을 분석한다."
+ ],
+ "keywords": [
+  "수비학",
+  "소울넘버",
+  "타로",
+  "생년월일",
+  "잠재력",
+  "카리스마",
+  "사교성",
+  "추진력"
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "source": "data/FORCETELLERKR/shorts/612_사주에 '이것' 있으면 예쁜데 성격도 좋다 ! 🤭 #사주 #지식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "Mpvo7iHgZIA",
+ "title": "사주에 '이것' 있으면 예쁜데 성격도 좋다?! 🤭 #사주 #지식",
+ "url": "https://www.youtube.com/watch?v=Mpvo7iHgZIA",
+ "upload": "20240616",
+ "duration_sec": "28",
+ "views": "189201",
+ "chars": 195,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:43",
+ "summary": "사주에 길신인 천을귀인이 있으면 외모가 아름답고 성격이 원만하며 지적인 매력을 갖추게 됩니다. 이로 인해 과거에는 고위직 공무원이 되었으며, 현대 사회에서는 기업체의 고위 임직원으로 출세할 수 있습니다. 천을귀인은 사주 내 어느 위치에 있어도 길한 작용을 하지만, 자신을 상징하는 일주에 놓일 때 그 영향력이 가장 강력하게 발현됩니다.",
+ "topics": [
+  "직장",
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천을귀인"
+    }
+   ],
+   "outcome": "외모가 아름답고 성격이 좋으며 지적임",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주에 천을귀인이 있으면 한마디로 미인이고 성격도 좋고 지적입니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천을귀인"
+    }
+   ],
+   "outcome": "고위직 공무원이나 기업체 임직원이 됨",
+   "tag": "승진·직책",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "그래서 고위직 공무원이 되고 현대 사회에서는 기업체의 임직원이 될 수 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "천을귀인"
+    },
+    {
+     "type": "구조·조합",
+     "value": "일주 천을귀인"
+    }
+   ],
+   "outcome": "천을귀인의 작용력이 가장 강력함",
+   "tag": "기타",
+   "category": "명리 이론",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "작용이 강한 자리는 아무래도 일주입니다. 왜냐하면 일주가 나를 의미하기 때문입니다."
+  }
+ ],
+ "insights": [
+  "천을귀인은 위치에 상관없이 길한 복을 주지만, 일간과 일지는 나 자신을 상징하므로 일주에 천을귀인이 임할 때 신살의 긍정적인 효력이 극대화된다."
+ ],
+ "keywords": [
+  "천을귀인",
+  "일주",
+  "미인",
+  "고위직",
+  "공무원",
+  "임직원",
+  "신살",
+  "귀인"
+ ]
+}

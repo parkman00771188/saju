@@ -1,0 +1,68 @@
+{
+ "source": "data/FORCETELLERKR/shorts/896_복권 1등 2등 3등 전부 사주로 다 맞춤 짱신기 #사주 #mbti.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "V3Wo6MQPCp8",
+ "title": "복권 1등 2등 3등 전부 사주로 다 맞춤 짱신기 #사주 #mbti",
+ "url": "https://www.youtube.com/watch?v=V3Wo6MQPCp8",
+ "upload": "20230509",
+ "duration_sec": "37",
+ "views": "2625",
+ "chars": 185,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "편재는 일확천금 및 횡재수와 밀접한 관련이 있는 십성의 기운입니다. 사주 원국에 편재가 발달되어 있거나 편재를 지니고 있다면 복권에 당첨될 확률이 매우 높습니다. 특히 복권을 노릴 때는 편재 기운이 들어오는 날을 활용하는 것이 유리합니다.",
+ "topics": [
+  "금전",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성",
+     "value": "편재"
+    }
+   ],
+   "outcome": "복권에 당첨될 확률이 아주 높다",
+   "tag": "큰돈·대박",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편재는 일확천금과 관련된 기운입니다. 그래서 사주에서 편재가 발달되어 있다고 한다면 복권에 당첨될 확률이 아주 높습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "편재가 들어온 날"
+    }
+   ],
+   "outcome": "복권 당첨운이 따르기 쉽다",
+   "tag": "큰돈·대박",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "편재가 들어오는 날에 복권을 구매하는 것이 유리하다.",
+   "quote": "근데 그중에 제일 첫 번째, 어쨌든 편재가 있어야 한다. 편재가 들어온 날에 복권을 많이 사거든요."
+  }
+ ],
+ "insights": [
+  "편재는 정기적인 근로 소득과 달리 일확천금이나 횡재수와 관련된 기운으로 복권 당첨의 필수 요소로 작용한다."
+ ],
+ "keywords": [
+  "편재",
+  "복권",
+  "복권 당첨",
+  "일확천금",
+  "횡재수",
+  "재물운",
+  "금전운"
+ ]
+}

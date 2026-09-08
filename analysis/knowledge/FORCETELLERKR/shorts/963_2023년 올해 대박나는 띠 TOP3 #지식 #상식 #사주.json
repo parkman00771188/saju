@@ -1,0 +1,60 @@
+{
+ "source": "data/FORCETELLERKR/shorts/963_2023년 올해 대박나는 띠 TOP3 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "7OZND0HqGcA",
+ "title": "2023년 올해 대박나는 띠 TOP3 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=7OZND0HqGcA",
+ "upload": "20230113",
+ "duration_sec": "13",
+ "views": "2645",
+ "chars": 110,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "2023년 계묘년에 대박 나는 세 가지 띠는 새해에 매우 좋은 기운이 찾아옵니다. 특히 2월 4일 입춘이 지나면서부터 본격적으로 많은 복이 들어오게 됩니다. 따라서 입춘이 지나 복이 들어올 때까지 조금만 인내심을 가지고 기다리는 것이 좋습니다.",
+ "topics": [
+  "운세 흐름"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2023
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "세운",
+     "value": "2023년 계묘년"
+    },
+    {
+     "type": "계절·절기",
+     "value": "입춘"
+    },
+    {
+     "type": "기타",
+     "value": "대박 나는 띠 TOP3"
+    }
+   ],
+   "outcome": "입춘 이후 좋은 기운과 많은 복이 들어옴",
+   "tag": "운 상승기",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2023년 입춘 이후",
+   "advice": "2월 4일 입춘이 지날 때까지 인내심을 가지고 기다릴 것",
+   "quote": "2월 4일 입춘이 지나면 많은 복이 오기 때문에 조금만 인내심을 가지고 기다리시면 좋고요."
+  }
+ ],
+ "insights": [
+  "계묘년의 좋은 기운과 복은 2월 4일 입춘을 기점으로 본격적으로 들어온다."
+ ],
+ "keywords": [
+  "계묘년",
+  "2023년",
+  "입춘",
+  "대박나는띠",
+  "운세흐름",
+  "복"
+ ]
+}

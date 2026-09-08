@@ -1,0 +1,101 @@
+{
+ "source": "data/FORCETELLERKR/shorts/849_꿈에서 불이 나오면 어떻게 될까요 #지식 #상식 #꿈해몽.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "mVjpZjz8lVI",
+ "title": "꿈에서 불이 나오면 어떻게 될까요? #지식 #상식 #꿈해몽",
+ "url": "https://www.youtube.com/watch?v=mVjpZjz8lVI",
+ "upload": "20230712",
+ "duration_sec": "42",
+ "views": "1743",
+ "chars": 343,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:47",
+ "summary": "불이 나오는 꿈의 다양한 상황별 길몽 해석을 소개하는 영상입니다. 바람이 불어 불길이 커지거나 공장에 화재·폭발이 나는 꿈은 사업 확장과 성과, 돈과 명예를 가져옵니다. 가스레인지에 파란 불이 피어오르는 꿈은 집안의 재물과 식복을 부르고, 부싯돌이나 촛불로 불을 지피는 꿈은 운기 상승과 장사 번창을 상징합니다.",
+ "topics": [
+  "금전",
+  "직장",
+  "운세 흐름",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "바람이 불어 불길이 거세지는 꿈"
+    }
+   ],
+   "outcome": "주위 협조로 사업이 확장된다",
+   "tag": "창업·사업 확장",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "바람이 불어 불길이 거세지는 꿈은 주위 환경의 협조로 사업이 확장됨을 의미해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "공장에 화재가 발생하거나 폭발한 꿈"
+    }
+   ],
+   "outcome": "사업 성과로 돈과 명예를 얻는다",
+   "tag": "명예·인정",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "공장에 화재가 발생하거나 폭발한 꿈은 사업이 성과를 내고 더욱 발전해 돈과 명예를 얻는다고 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "가스레인지에 파란 불이 타오르는 꿈"
+    }
+   ],
+   "outcome": "집안에 재물과 먹거리가 생긴다",
+   "tag": "재물이 들어옴",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "가스레인지에 파란 불이 타오르는 꿈은 집안에 재물과 돈이 생기고 먹을 것이 들어오는 꿈이에요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "부싯돌이나 촛불로 불을 일으키는 꿈"
+    }
+   ],
+   "outcome": "운이 좋아지고 장사 시 큰 성과를 낸다",
+   "tag": "자영업·장사",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "",
+   "quote": "부싯돌이나 촛불로 불을 일으키는 꿈은 운이 좋아지고 만약 장사를 한다면 큰 성과를 낸다고 해요."
+  }
+ ],
+ "insights": [
+  "불이 나는 꿈은 대체로 길몽에 해당하며 불길의 크기나 발생 상황에 따라 사업 확장, 명예, 재물운 등으로 발현된다."
+ ],
+ "keywords": [
+  "꿈해몽",
+  "불꿈",
+  "화재",
+  "길몽",
+  "사업운",
+  "재물운"
+ ]
+}

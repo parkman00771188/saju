@@ -1,0 +1,70 @@
+{
+ "source": "data/FORCETELLERKR/shorts/292_인성 다자 특 = 말 잘 들음 (ft.사주는 과학).txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "sngeGUDCdBY",
+ "title": "인성 다자 특 = 말 잘 들음 (ft.사주는 과학)",
+ "url": "https://www.youtube.com/watch?v=sngeGUDCdBY",
+ "upload": "20251207",
+ "duration_sec": "25",
+ "views": "25895",
+ "chars": 148,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:37",
+ "summary": "인성 다자(인다)는 지시나 말을 잘 듣고 비가 오기 전부터 우산을 미리 챙겨 쓰는 등 사전 대비가 철저한 특성을 보입니다. 반면 식상과 재성이 발달한 식재 발달 유형은 서로 비슷한 옷 스타일을 공유하는 경향이 관찰됩니다. 영상은 인성과 식재라는 십성 구조 차이에 따라 일상 행동과 패션 스타일에서 뚜렷한 대비가 나타남을 보여줍니다.",
+ "topics": [
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성 과다",
+     "value": "인성"
+    }
+   ],
+   "outcome": "말을 잘 듣고 비 오기 전 미리 우산을 챙겨 씀",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "지금 비가 안 오는데 인다만 이렇게 우산을 쓰고 있네요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "구조·조합",
+     "value": "식재 발달"
+    }
+   ],
+   "outcome": "동일 유형끼리 옷 입는 스타일이 비슷함",
+   "tag": "화려함·멋",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "식재는 또 옷 스타일도 비슷해요."
+  }
+ ],
+ "insights": [
+  "인성 과다(인다) 유형은 타인의 말을 잘 수용하고 매사 사전에 미리 대비하는 특성이 강하다.",
+  "식상과 재성이 발달한 식재 유형은 외적 표현이나 패션 스타일에서 공통된 감각을 공유하는 경향이 있다."
+ ],
+ "keywords": [
+  "인성다자",
+  "인다",
+  "식재발달",
+  "인성",
+  "식상",
+  "재성",
+  "옷스타일",
+  "성격특징"
+ ]
+}

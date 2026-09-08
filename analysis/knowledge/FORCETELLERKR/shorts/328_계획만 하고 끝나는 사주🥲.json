@@ -1,0 +1,68 @@
+{
+ "source": "data/FORCETELLERKR/shorts/328_계획만 하고 끝나는 사주🥲.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "cBxrJzQFuP4",
+ "title": "계획만 하고 끝나는 사주🥲",
+ "url": "https://www.youtube.com/watch?v=cBxrJzQFuP4",
+ "upload": "20251103",
+ "duration_sec": "52",
+ "views": "17811",
+ "chars": 470,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:38",
+ "summary": "사주에 수(水) 기운이 과다한 사람은 행동력보다 생각이 앞서 상상만 하다 지레 겁을 먹고 포기하기 쉽습니다. 하던 대로 살며 흘러가듯 머무르는 경향이 강해 실행으로 옮기지 못하는 일이 많습니다. 또한 돈에 대한 악착같은 집착이 없다 보니 재물이 모이지 않고 그대로 흘러가 버리기 쉽습니다.",
+ "topics": [
+  "성격·기질",
+  "금전"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "상상만 하고 겁먹어 실행하지 못한다",
+   "tag": "소심·우유부단",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "이 수가 많은 사람들이 상상만 해보고 지레 겁먹어서 안 하는 일이 되게 많습니다. 약간 하던 대로 하고 살던 대로 살고 싶으신 분이에요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "재물 집착이 없어 돈이 잘 모이지 않는다",
+   "tag": "돈이 샘·손재",
+   "category": "금전",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "돈이 잘 안 붙는 경향이 있습니다. 그러니까 돈이 안 벌린다는 게요... 악착같이 버는 데 관심이 없으니까 그냥 흘러가 버리는 게 많습니다."
+  }
+ ],
+ "insights": [
+  "수(水)가 많은 사주는 사고력이 깊고 유연한 반면, 현실적인 집착이나 추진력이 약해 재물이나 성과를 악착같이 붙잡는 힘이 부족할 수 있다."
+ ],
+ "keywords": [
+  "수 과다",
+  "수다",
+  "오행 수",
+  "행동력 부족",
+  "생각 과다",
+  "재물 집착 부재",
+  "돈이 안 붙음"
+ ]
+}

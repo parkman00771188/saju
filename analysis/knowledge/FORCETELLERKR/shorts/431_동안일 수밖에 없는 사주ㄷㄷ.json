@@ -1,0 +1,84 @@
+{
+ "source": "data/FORCETELLERKR/shorts/431_동안일 수밖에 없는 사주ㄷㄷ.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "Lo_tp6J58dg",
+ "title": "동안일 수밖에 없는 사주ㄷㄷ",
+ "url": "https://www.youtube.com/watch?v=Lo_tp6J58dg",
+ "upload": "20250704",
+ "duration_sec": "59",
+ "views": "39730",
+ "chars": 485,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:40",
+ "summary": "무토 일간은 남의 말을 잘 받아주고 영혼 없는 리액션을 자주 하여 특유의 멍하거나 수긍하는 표정이 얼굴에 굳어지는 특징이 있습니다. 또한 남의 말을 잘 들어주고 수긍하여 얼굴을 잘 찡그리지 않기 때문에 다른 일간에 비해 주름이 매우 적게 생깁니다. 이로 인해 어릴 때는 다소 노안일 수 있어도 나이가 들수록 동안이 잘 보존되며 덜 늙어 보이는 경향이 있습니다.",
+ "topics": [
+  "성격·기질",
+  "기타"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "영혼 없는 리액션 표정이 얼굴에 굳어짐",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "하도 잘 받아주고 영혼 없는 리액션을 하도 해 가지고 얼굴에 그게 그대로 고정이 됐어요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "잘 안 찡그려 주름이 적고 동안이 유지됨",
+   "tag": "외모·매력",
+   "category": "기타",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "남의 말 잘 들어주고 수긍해 주는 사람들이라 가지고 잘 안 찡그리니까 주름이 되게 적어요. 얼굴이 동안인 경우가 많다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    }
+   ],
+   "outcome": "어릴 때 노안이어도 나이가 덜 들어 보임",
+   "tag": "외모·매력",
+   "category": "기타",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "어릴 때부터 노안인 거는 어쩔 수 없고요. 근데 이제 나이를 좀 다른 일간에 비해서 덜 먹는 특징이."
+  }
+ ],
+ "insights": [
+  "무토 일간의 특성인 수용성과 덤덤한 반응 습관이 표정근 사용을 줄여 동안 유지라는 외모적 결과로 연결된다."
+ ],
+ "keywords": [
+  "무토",
+  "무토 일간",
+  "동안",
+  "노안",
+  "주름",
+  "리액션",
+  "외모"
+ ]
+}

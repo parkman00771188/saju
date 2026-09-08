@@ -1,0 +1,198 @@
+{
+ "source": "data/FORCETELLERKR/shorts/355_사주로 보는 미래 배우자.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "HXJ74Awd3ig",
+ "title": "사주로 보는 미래 배우자",
+ "url": "https://www.youtube.com/watch?v=HXJ74Awd3ig",
+ "upload": "20251002",
+ "duration_sec": "45",
+ "views": "96156",
+ "chars": 403,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:38",
+ "summary": "본 영상은 사주 만세력에서 배우자 자리를 나타내는 일지의 십성을 통해 개인이 선호하는 미래 배우자 및 이상형의 특징을 설명합니다. 일지에 비견·겁재가 있으면 친구 같은 사람에게 호감을 느끼고, 식신·상관이 있으면 잘 꾸미고 표현력이 좋은 사람을 선호합니다. 재성(편재·정재)은 외모와 신체 조건이 좋은 사람을, 관성(편관·정관)은 직업과 재산 등 스펙과 매너를 우선시하며, 인성(편인·정인)은 자신에게 애정을 쏟아줄 사람을 이상형으로 삼습니다.",
+ "topics": [
+  "연애·결혼"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 비견"
+    }
+   ],
+   "outcome": "친구 같은 사람에게 호감을 느낌",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "비견, 겁재. 친구 같은 사람에게 호감을 느껴."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 겁재"
+    }
+   ],
+   "outcome": "친구 같은 사람에게 호감을 느낌",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "비견, 겁재. 친구 같은 사람에게 호감을 느껴."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 식신"
+    }
+   ],
+   "outcome": "잘 꾸미고 표현을 잘하는 사람이 이상형임",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "식신, 상관. 자신을 잘 꾸미고 표현을 잘하는 사람이 이상형이야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 상관"
+    }
+   ],
+   "outcome": "잘 꾸미고 표현을 잘하는 사람이 이상형임",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "식신, 상관. 자신을 잘 꾸미고 표현을 잘하는 사람이 이상형이야."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 편재"
+    }
+   ],
+   "outcome": "잘생기고 몸 좋은 사람이 이상형임",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편재, 정재. 잘생기고 몸 좋은 사람."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 정재"
+    }
+   ],
+   "outcome": "잘생기고 몸 좋은 사람이 이상형임",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편재, 정재. 잘생기고 몸 좋은 사람."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 편관"
+    }
+   ],
+   "outcome": "직업, 재산, 매너 등 좋은 조건을 우선시함",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편관, 정관. 직업, 재산, 매너 등 좋은 조건의 사람을 우선시해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 정관"
+    }
+   ],
+   "outcome": "직업, 재산, 매너 등 좋은 조건을 우선시함",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편관, 정관. 직업, 재산, 매너 등 좋은 조건의 사람을 우선시해."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 편인"
+    }
+   ],
+   "outcome": "나에게 애정을 쏟아줄 사람을 이상형으로 찾음",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편인, 정인. 나에게 애정을 쏟아줄 사람을 찾고 있지."
+  },
+  {
+   "conditions": [
+    {
+     "type": "십성 위치",
+     "value": "일지 정인"
+    }
+   ],
+   "outcome": "나에게 애정을 쏟아줄 사람을 이상형으로 찾음",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 0,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "편인, 정인. 나에게 애정을 쏟아줄 사람을 찾고 있지."
+  }
+ ],
+ "insights": [
+  "사주 만세력에서 배우자궁에 해당하는 일지의 십성을 보면 개인이 추구하거나 매력을 느끼는 이상형의 기준을 파악할 수 있다."
+ ],
+ "keywords": [
+  "일지",
+  "배우자",
+  "이상형",
+  "십성",
+  "비견",
+  "겁재",
+  "식상",
+  "재성",
+  "관성",
+  "인성"
+ ]
+}

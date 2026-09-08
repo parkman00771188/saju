@@ -1,0 +1,50 @@
+{
+ "source": "data/dohwadore_saju/shorts/164_실화) 직접 들은 얘기 #사주.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "vM99fBXxCA0",
+ "title": "실화) 직접 들은 얘기 #사주",
+ "url": "https://www.youtube.com/watch?v=vM99fBXxCA0",
+ "upload": "20240307",
+ "duration_sec": "37",
+ "views": "15038",
+ "chars": 364,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "사주를 공부하면 처음 만난 사람과의 아이스 브레이킹과 라포 형성에 큰 도움이 되어 사회적 기능을 발휘합니다. 화자는 의경 복무 시절 사주 공부로 여자를 유혹하려 한다는 오해를 받기도 했지만, 실제로 남녀를 불문하고 친밀감을 쌓는 데 사주 이야기가 매우 효과적이라고 설명합니다.",
+ "topics": [
+  "궁합·인간관계",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "기타",
+     "value": "사주 공부"
+    }
+   ],
+   "outcome": "초면인 사람과 라포 형성이 수월하다",
+   "tag": "인간관계 원만",
+   "category": "궁합·인간관계",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "남자든 여자든 처음에 만났을 때 사주 얘기로 뭔가 라포 형성하기가 되게 좋아요."
+  }
+ ],
+ "insights": [
+  "사주 지식은 낯선 사람과의 어색함을 깨고 신뢰 관계(라포)를 형성하는 유용한 대화 소재이자 사회적 도구가 될 수 있다."
+ ],
+ "keywords": [
+  "사주 공부",
+  "아이스 브레이킹",
+  "라포 형성",
+  "인간관계",
+  "대화 소재"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "source": "data/FORCETELLERKR/shorts/655_평생동안 이성에게 인기 많은 사주 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "Oej4NsGAiKQ",
+ "title": "평생동안 이성에게 인기 많은 사주 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=Oej4NsGAiKQ",
+ "upload": "20240223",
+ "duration_sec": "50",
+ "views": "2790",
+ "chars": 432,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:44",
+ "summary": "사주에 수(水) 기운이 많으면 도화살보다 강력하게 평생 이성을 끄는 매력이 작용합니다. 귀엽고 편안하면서도 바다처럼 신비로운 매력과 함께 총명함과 다재다능한 끼를 갖추게 됩니다. 다만 걱정이 많아 연애나 일을 시작하는 데 주저하기 쉬우므로 자신감을 갖고 먼저 시도해보는 습관이 필요합니다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "평생 이성이 따르고 인기가 많다",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "도화살보다 훨씬 강력해서 평생 이성이 따른다는 수가 많은 사주"
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "귀엽고 편안하며 신비로운 매력이 있다",
+   "tag": "외모·매력",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "수 기운이 많으면 귀엽고 편안한 느낌을 주면서도 깊은 바닷속처럼 신비로운 매력이 있어 호기심을 자극한다고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "똑똑하고 다채로운 끼를 발휘한다",
+   "tag": "창의·재능",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "똑똑하고 끼도 많아서 팔색조 같은 매력에 흠뻑 빠져들게 된다고 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "오행 과다",
+     "value": "수"
+    }
+   ],
+   "outcome": "걱정이 많아 연애와 일의 시작을 주저한다",
+   "tag": "우울·불안",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "자신감을 갖고 일단 시도해 보는 습관을 가지면 좋을 거예요.",
+   "quote": "단점으로는 걱정이 많아서 연애나 일을 시작하는 데 어려움이 있다고 하니, 자신감을 갖고 일단 시도해 보는 습관을 가지면 좋을 거예요."
+  }
+ ],
+ "insights": [
+  "사주에 수(水) 오행이 많으면 일반적인 도화살보다도 이성을 끌어당기는 매력이 강력하게 나타날 수 있다."
+ ],
+ "keywords": [
+  "수 기운",
+  "오행 과다",
+  "도화살",
+  "인기",
+  "이성운",
+  "신비로운 매력",
+  "자신감"
+ ]
+}

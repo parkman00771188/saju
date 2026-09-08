@@ -1,0 +1,97 @@
+{
+ "source": "data/FORCETELLERKR/shorts/999_도대체 이런 여자분들은 어디계시나요 🥲 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "ZLMBxDbaba4",
+ "title": "도대체 이런 여자분들은 어디계시나요? 🥲 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=ZLMBxDbaba4",
+ "upload": "20221109",
+ "duration_sec": "60",
+ "views": "2064",
+ "chars": 458,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:48",
+ "summary": "남성들에게 인기 있는 여성 MBTI 순위 TOP 3와 각 유형의 매력을 소개한다. 3위는 감정 표현이 솔직하고 낭만적인 ENFP, 2위는 차분하고 배려심 깊은 냉미녀 재질의 ISFP이다. 대망의 1위는 상냥하고 첫사랑의 분위기를 지닌 연애 천재 INFP가 선정되었다.",
+ "topics": [
+  "연애·결혼",
+  "성격·기질"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    },
+    {
+     "type": "기타",
+     "value": "ENFP"
+    }
+   ],
+   "outcome": "확실한 감정 표현으로 남성을 설레게 함",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "감수성이 풍부하고 낭만적인 리트리버 같은 매력이 있어요. 감정에 충실한 편이라 연애할 때도 표현이 확실해 많은 남자들을 심쿵시키곤 해요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    },
+    {
+     "type": "기타",
+     "value": "ISFP"
+    }
+   ],
+   "outcome": "조용하고 차분하며 부드러운 배려심을 보임",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "얼음공주같이 조용하고 차분하지만 다정한 매력이 있어요. 대화할 때 언제나 상대방을 배려하면서 말하는 부드러운 면모를 가지고 있는데요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "성별",
+     "value": "여성"
+    },
+    {
+     "type": "기타",
+     "value": "INFP"
+    }
+   ],
+   "outcome": "따뜻하고 상냥한 첫사랑 분위기로 마음을 끔",
+   "tag": "인기·매력",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "상냥한 마음씨로 남성들의 마음을 절로 따뜻하게 만드는 첫사랑 재질이에요. 언제나 더 좋은 사람이 되기 위해 스스로 채찍질할 정도로 노력하는 성격도 가졌는데요."
+  }
+ ],
+ "insights": [
+  "사주명리 이론이 아닌 MBTI 심리 유형을 적용하여 이성 간의 호감 요소 및 연애 심리를 분석한 내용이다."
+ ],
+ "keywords": [
+  "MBTI",
+  "ENFP",
+  "ISFP",
+  "INFP",
+  "연애",
+  "인기",
+  "첫사랑",
+  "매력"
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "source": "data/dohwadore_saju/shorts/180_이성이 꼬이는 나이 홍염살이 강해지는 년도 #홍염살 #도화살 #사주.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "ECbY5Fh_L1k",
+ "title": "이성이 꼬이는 나이? 홍염살이 강해지는 년도  #홍염살 #도화살 #사주",
+ "url": "https://www.youtube.com/watch?v=ECbY5Fh_L1k",
+ "upload": "20230926",
+ "duration_sec": "59",
+ "views": "33241",
+ "chars": 564,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "각 일간별로 홍염살의 기운이 강하게 들어오는 세운(연도)을 정리한 내용입니다. 갑목은 2026년과 2028년, 을목은 2026년, 무토와 기토는 2024년에 홍염살이 강해지며 무토·기토의 경우 전년도 하반기부터 기운이 발현될 수 있습니다. 경금·임수·계수는 2028년, 신금은 2029년 등 일간에 따라 이성을 끄는 홍염살의 매력이 극대화되는 시기를 구체적으로 제시합니다.",
+ "topics": [
+  "연애·결혼",
+  "운세 흐름"
+ ],
+ "scope": "특정 연도 운세",
+ "years": [
+  2022,
+  2023,
+  2024,
+  2026,
+  2027,
+  2028,
+  2029,
+  2030,
+  2032,
+  2034
+ ],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    },
+    {
+     "type": "세운",
+     "value": "2026년"
+    }
+   ],
+   "outcome": "홍염살의 기운이 강해진다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2026년",
+   "advice": "",
+   "quote": "갑목 일간이신 분들은 26년, 28년에 홍염살이 강해집니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "갑"
+    },
+    {
+     "type": "세운",
+     "value": "2028년"
+    }
+   ],
+   "outcome": "홍염살의 기운이 강해진다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2028년",
+   "advice": "",
+   "quote": "갑목 일간이신 분들은 26년, 28년에 홍염살이 강해집니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "을"
+    },
+    {
+     "type": "세운",
+     "value": "2026년"
+    }
+   ],
+   "outcome": "홍염살이 강하게 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2026년",
+   "advice": "",
+   "quote": "을목 일간이신 분들은 26년에 홍염살이 강하게 들어온다 볼 수 있고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    },
+    {
+     "type": "세운",
+     "value": "2022년"
+    }
+   ],
+   "outcome": "홍염살의 기운이 들어왔었다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2022년",
+   "advice": "",
+   "quote": "병화 일간이신 분들은 22년도에 이미 있었어요. 여러분도 22년도에 홍염살이 왔었습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "병"
+    },
+    {
+     "type": "세운",
+     "value": "2034년"
+    }
+   ],
+   "outcome": "홍염살의 기운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2034년",
+   "advice": "",
+   "quote": "그 다음에 오는 게 언제냐, 2034년도예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "정"
+    },
+    {
+     "type": "세운",
+     "value": "2027년"
+    }
+   ],
+   "outcome": "홍염살의 기운이 강해진다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2027년",
+   "advice": "",
+   "quote": "정화 일간 분들은 2027년도 홍염살이 강해진다 볼 수도 있습니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    },
+    {
+     "type": "세운",
+     "value": "2024년"
+    }
+   ],
+   "outcome": "홍염살이 본격적으로 강하게 작용한다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "",
+   "quote": "무토와 기토 일간이신 분들은 내년에 홍염살이 본격적으로 강하게 작용한다 볼 수 있고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    },
+    {
+     "type": "세운",
+     "value": "2024년"
+    }
+   ],
+   "outcome": "홍염살이 본격적으로 강하게 작용한다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2024년",
+   "advice": "",
+   "quote": "무토와 기토 일간이신 분들은 내년에 홍염살이 본격적으로 강하게 작용한다 볼 수 있고요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "무"
+    },
+    {
+     "type": "세운",
+     "value": "2023년"
+    }
+   ],
+   "outcome": "홍염살의 특징이 미리 발현되기 시작한다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "추측",
+   "time": "2023년 하반기~말",
+   "advice": "",
+   "quote": "아마 23년 하반기부터 혹은 23년 말부터는 여러분들이 제가 이번 영상에서 말씀드리는 홍염살의 특징이 좀 발현되는 경우가 있을 거예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "기"
+    },
+    {
+     "type": "세운",
+     "value": "2023년"
+    }
+   ],
+   "outcome": "홍염살의 특징이 미리 발현되기 시작한다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "추측",
+   "time": "2023년 하반기~말",
+   "advice": "",
+   "quote": "아마 23년 하반기부터 혹은 23년 말부터는 여러분들이 제가 이번 영상에서 말씀드리는 홍염살의 특징이 좀 발현되는 경우가 있을 거예요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    },
+    {
+     "type": "세운",
+     "value": "2028년"
+    }
+   ],
+   "outcome": "홍염살 운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2028년",
+   "advice": "",
+   "quote": "경금 일간 분들은 2028년도와 2030년도"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "경"
+    },
+    {
+     "type": "세운",
+     "value": "2030년"
+    }
+   ],
+   "outcome": "홍염살 운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2030년",
+   "advice": "",
+   "quote": "경금 일간 분들은 2028년도와 2030년도"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "신"
+    },
+    {
+     "type": "세운",
+     "value": "2029년"
+    }
+   ],
+   "outcome": "홍염살 운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2029년",
+   "advice": "",
+   "quote": "신금 일간 분들은 2029년도"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "세운",
+     "value": "2028년"
+    }
+   ],
+   "outcome": "홍염살 운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2028년",
+   "advice": "",
+   "quote": "임수 일간 분들은 28년도와 32년도"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "임"
+    },
+    {
+     "type": "세운",
+     "value": "2032년"
+    }
+   ],
+   "outcome": "홍염살 운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "2032년",
+   "advice": "",
+   "quote": "임수 일간 분들은 28년도와 32년도"
+  },
+  {
+   "conditions": [
+    {
+     "type": "일간",
+     "value": "계"
+    },
+    {
+     "type": "세운",
+     "value": "2028년"
+    }
+   ],
+   "outcome": "홍염살 운이 들어온다",
+   "tag": "인기·매력",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "2028년",
+   "advice": "",
+   "quote": "계수 일간 분들은 28년도라 볼 수도 있겠습니다."
+  }
+ ],
+ "insights": [
+  "홍염살은 일간을 기준으로 특정 지지가 세운으로 들어오는 해에 기운이 강하게 발현된다.",
+  "해당 세운이 본격적으로 시작되기 전인 전년도 하반기나 연말부터 홍염살의 특징과 이성 매력이 미리 체감될 수 있다."
+ ],
+ "keywords": [
+  "홍염살",
+  "도화살",
+  "일간",
+  "세운",
+  "이성운",
+  "매력",
+  "진토"
+ ]
+}

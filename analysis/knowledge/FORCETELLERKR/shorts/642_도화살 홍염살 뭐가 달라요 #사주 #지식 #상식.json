@@ -1,0 +1,73 @@
+{
+ "source": "data/FORCETELLERKR/shorts/642_도화살 홍염살 뭐가 달라요 #사주 #지식 #상식.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "hSIbDAb2fLA",
+ "title": "도화살? 홍염살? 뭐가 달라요? #사주 #지식 #상식",
+ "url": "https://www.youtube.com/watch?v=hSIbDAb2fLA",
+ "upload": "20240324",
+ "duration_sec": "36",
+ "views": "6754",
+ "chars": 212,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:43",
+ "summary": "홍염살은 도화살과 별개의 살이 아니라 도화의 일종인 '홍염도화'로 도화살과 성질이 같다. 사주에 홍염살이 있으면 기본적으로 주색잡기에 능한 성향이 나타날 수 있다. 그러나 사주의 전체적인 구조가 좋으면 대중의 인기를 끄는 연예인이나 예술인으로 발현된다.",
+ "topics": [
+  "명리 이론",
+  "성격·기질",
+  "직장"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "홍염살"
+    }
+   ],
+   "outcome": "주색잡기에 능할 수 있다",
+   "tag": "이성 문제·구설",
+   "category": "성격·기질",
+   "polarity": -1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "홍염살이 사주에 있으면 주색잡기에 능하다"
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "홍염살"
+    },
+    {
+     "type": "구조·조합",
+     "value": "사주 구조가 좋음"
+    }
+   ],
+   "outcome": "인기 연예인이나 예술인이 될 수 있다",
+   "tag": "유명세·연예 기질",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "조건부",
+   "time": "항상",
+   "advice": "",
+   "quote": "사주의 구조가 좋으면 인기 있는 연예인, 예술인이 될 수 있습니다."
+  }
+ ],
+ "insights": [
+  "홍염살은 도화살의 한 종류인 '홍염도화'로 분류되며, 도화살과 본질적인 성질 및 해석이 동일하다."
+ ],
+ "keywords": [
+  "홍염살",
+  "도화살",
+  "홍염도화",
+  "주색잡기",
+  "연예인",
+  "예술인",
+  "신살"
+ ]
+}

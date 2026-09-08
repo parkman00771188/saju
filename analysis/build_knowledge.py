@@ -18,6 +18,9 @@ ROOT = os.path.dirname(HERE)
 KDIR = os.path.join(HERE, "knowledge")
 OUT_APP = os.path.join(ROOT, "saju-site", "public", "kb_claims.json")
 OUT_MD = os.path.join(HERE, "knowledge_digest.md")
+MAX_ITEMS = int(os.environ.get("KB_MAX_ITEMS", "10"))       # 키당 앱에 싣는 결과 라벨 수
+PAIR_MIN_DOCS = int(os.environ.get("KB_PAIR_MIN_DOCS", "3"))  # 짝 키 최소 영상 수
+APP_MIN_YEAR = int(time.strftime("%Y"))                      # 앱 색인에는 올해 이후 연도 키만 (지난 신년운세는 다이제스트에만)
 
 STEM = {"갑": "甲", "을": "乙", "병": "丙", "정": "丁", "무": "戊", "기": "己", "경": "庚", "신": "辛", "임": "壬", "계": "癸"}
 BRANCH = {"자": "子", "축": "丑", "인": "寅", "묘": "卯", "진": "辰", "사": "巳", "오": "午", "미": "未", "신": "申", "유": "酉", "술": "戌", "해": "亥"}
@@ -246,8 +249,14 @@ def main():
             tag = c.get("tag") or "기타"
             tag_docs_total[tag] += 1
             klist = sorted(keys)
-            pairs = [f"{a}&{b}" for i, a in enumerate(klist) for b in klist[i + 1:]] if len(klist) <= 6 else []
-            for k in klist + pairs:
+            ykeys = [k for k in klist if re.match(r"^Y20\d\d(-\d+)?$", k)]
+            if ykeys:
+                # 특정 연도(월)에 한정된 이야기: 'Y2026', 'Y2026&조건' 에만 색인해 일반 성향 근거와 섞이지 않게 한다
+                conds = [k for k in klist if k not in ykeys]
+                index_keys = ykeys + [f"{y}&{k}" if y < k else f"{k}&{y}" for y in ykeys for k in conds]
+            else:
+                index_keys = klist + ([f"{a}&{b}" for i, a in enumerate(klist) for b in klist[i + 1:]] if len(klist) <= 6 else [])
+            for k in index_keys:
                 key_docs[k].add(did)
                 e = idx[k][tag]
                 e["n"] += 1; e["docs"].add(did); e["pol"] += int(c.get("polarity") or 0)
@@ -275,7 +284,7 @@ def main():
     def pack(k, min_docs):
         kd = len(key_docs[k]); items = []
         for t, e in idx[k].items():
-            if len(e["docs"]) < min_docs:
+            if len(e["docs"]) < min_docs or t == "기타":
                 continue
             b = base.get(t, 0)
             rate = (len(e["docs"]) + b * 20) / (kd + 20)
@@ -284,15 +293,24 @@ def main():
             pol = e["pol"] / max(1, e["n"])
             cat = e["cats"].most_common(1)[0][0] if e["cats"] else ""
             items.append({"tag": t, "n": e["n"], "docs": len(e["docs"]), "lift": lift, "pol": round(pol, 2), "cat": CAT_APP.get(cat, "운") or "운",
-                          "outs": outs, "quote": e["quotes"][0] if e["quotes"] else None, "advice": (e["advice"].most_common(1)[0][0] if e["advice"] else ""),
-                          "time": e["times"].most_common(1)[0][0] if e["times"] else "항상"})
+                          "outs": outs, "quote": e["quotes"][0] if e["quotes"] else None, "advice": (e["advice"].most_common(1)[0][0][:90] if e["advice"] else ""),
+                          "time": e["times"].most_common(1)[0][0] if e["times"] else "항상", "times": [t0 for t0, _ in e["times"].most_common(3) if t0 != "항상"]})
         items.sort(key=lambda x: -(x["docs"] * min(x["lift"], 4.0)))
-        return {"docs": kd, "items": items[:14]}
+        items = items[:MAX_ITEMS]
+        for i, it in enumerate(items):   # 용량: 하위 항목은 인용·조언을 줄인다
+            if it["quote"]:
+                it["quote"] = [it["quote"][0][:110], it["quote"][1][:30], it["quote"][2]]
+            if i >= 6:
+                it["quote"] = None; it["advice"] = ""; it["outs"] = it["outs"][:2]
+        return {"docs": kd, "items": items}
 
     app = {"meta": {"docs": len(docs), "claims": n_claims, "built": time.strftime("%Y-%m-%d %H:%M"), "base": {t: round(b, 4) for t, b in base.items()}}, "by_key": {}}
     for k in idx:
         pair = "&" in k
-        if len(key_docs[k]) < (2 if pair else 2):
+        if len(key_docs[k]) < (PAIR_MIN_DOCS if pair else 2):
+            continue
+        ym = re.search(r"Y(20\d\d)", k)
+        if ym and int(ym.group(1)) < APP_MIN_YEAR:
             continue
         p = pack(k, 1 if pair else 2)
         if p["items"]:

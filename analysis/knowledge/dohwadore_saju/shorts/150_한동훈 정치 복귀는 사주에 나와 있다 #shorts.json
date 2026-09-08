@@ -1,0 +1,84 @@
+{
+ "source": "data/dohwadore_saju/shorts/150_한동훈 정치 복귀는 사주에 나와 있다 #shorts.txt",
+ "channel": "dohwadore_saju",
+ "tab": "shorts",
+ "video_id": "yCIx4D43NQE",
+ "title": "한동훈 정치 복귀는 사주에 나와 있다 #shorts",
+ "url": "https://www.youtube.com/watch?v=yCIx4D43NQE",
+ "upload": "20240430",
+ "duration_sec": "28",
+ "views": "33701",
+ "chars": 242,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:51",
+ "summary": "한동훈 위원장의 사주 지지에 배치된 동물 글자(돼지 해, 용 진, 소 축)를 바탕으로 성향과 행보를 짚어보는 영상이다. 사주를 통해 강한 완벽주의자 기질을 엿볼 수 있으며, 조만간 정치에 다시 복귀할 흐름이 나타나 있다고 풀이한다. 구체적인 정치 복귀 분석은 후속 영상에서 다룰 것임을 예고한다.",
+ "topics": [
+  "성격·기질",
+  "직장",
+  "운세 흐름"
+ ],
+ "scope": "사례·상담",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "해"
+    },
+    {
+     "type": "지지",
+     "value": "진"
+    },
+    {
+     "type": "지지",
+     "value": "축"
+    }
+   ],
+   "outcome": "매우 철저한 완벽주의 성향을 보인다",
+   "tag": "완벽주의·깔끔",
+   "category": "성격·기질",
+   "polarity": 0,
+   "certainty": "추측",
+   "time": "항상",
+   "advice": "",
+   "quote": "저는 근데 이 사주를 보고 두 가지 생각이 먼저 들었어요. 와 정말 완벽주의자겠구나"
+  },
+  {
+   "conditions": [
+    {
+     "type": "지지",
+     "value": "해"
+    },
+    {
+     "type": "지지",
+     "value": "진"
+    },
+    {
+     "type": "지지",
+     "value": "축"
+    }
+   ],
+   "outcome": "조만간 정치에 다시 복귀한다",
+   "tag": "권력·정치",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "추측",
+   "time": "가까운 시기",
+   "advice": "",
+   "quote": "조만간 정치에 다시 복귀하겠다. 특히 이 정치 복귀 관련해서는 많은 분들이 궁금해하시던데"
+  }
+ ],
+ "insights": [
+  "사주 지지에 구성된 글자 조합을 바탕으로 인물의 완벽주의 기질 및 사회적 행보의 복귀 시점을 판단할 수 있다."
+ ],
+ "keywords": [
+  "한동훈",
+  "정치복귀",
+  "완벽주의",
+  "해수",
+  "진토",
+  "축토"
+ ]
+}

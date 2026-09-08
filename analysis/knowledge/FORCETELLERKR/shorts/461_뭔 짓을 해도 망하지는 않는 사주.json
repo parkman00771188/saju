@@ -1,0 +1,52 @@
+{
+ "source": "data/FORCETELLERKR/shorts/461_뭔 짓을 해도 망하지는 않는 사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "7koRgADl3ds",
+ "title": "뭔 짓을 해도 망하지는 않는 사주",
+ "url": "https://www.youtube.com/watch?v=7koRgADl3ds",
+ "upload": "20250603",
+ "duration_sec": "46",
+ "views": "26361",
+ "chars": 451,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:41",
+ "summary": "월덕귀인은 달의 은혜를 타고나 달이 자신을 지켜주는 기운을 뜻하는 신살입니다. 사주에 월덕귀인이 있으면 어떤 고난이 찾아와도 귀인의 도움으로 쉽게 이겨낼 수 있어 어떤 시도를 해도 망하지 않는 힘이 있습니다. 영상에서는 강동원의 사례처럼 역경을 딛고 성공할 수 있으니 두려움 없이 원하는 일에 도전해 볼 것을 권장합니다.",
+ "topics": [
+  "운세 흐름",
+  "명리 이론",
+  "개운·조언"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "월덕귀인"
+    }
+   ],
+   "outcome": "고난이 닥쳐도 귀인의 도움으로 쉽게 극복한다",
+   "tag": "어머니·윗사람 덕",
+   "category": "운세 흐름",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "월덕귀인이 있으면 어떤 일이건 두려워하지 말고 시도해 보라.",
+   "quote": "이 기운이 있으면 어떤 고난이 찾아와도 귀인의 도움으로 쉽게 이겨낼 수 있다고 해."
+  }
+ ],
+ "insights": [
+  "월덕귀인은 달의 수호를 받아 역경 속에서도 귀인의 조력을 통해 위기를 벗어나는 길신이다."
+ ],
+ "keywords": [
+  "월덕귀인",
+  "귀인",
+  "신살",
+  "위기극복",
+  "도전",
+  "길신"
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "source": "data/FORCETELLERKR/shorts/665_버티면 마침내 돈복 쏟아지는 사주 #지식 #상식 #사주.txt",
+ "channel": "FORCETELLERKR",
+ "tab": "shorts",
+ "video_id": "9cDW-capGCo",
+ "title": "버티면 마침내 돈복 쏟아지는 사주 #지식 #상식 #사주",
+ "url": "https://www.youtube.com/watch?v=9cDW-capGCo",
+ "upload": "20240207",
+ "duration_sec": "51",
+ "views": "2148",
+ "chars": 451,
+ "model": "gemini-3.8-flash",
+ "thinking": "high",
+ "extracted_at": "2026-09-08 16:44",
+ "summary": "사주에 길신인 금여성(金輿星)이 있으면 고생을 겪더라도 조금만 버티면 하늘이 내린 큰 재물운을 받게 됩니다. 명리학 고전에 따르면 금여성은 왕이 타는 수레를 뜻하며, 재물복뿐 아니라 높은 명예와 아름다운 배우자를 얻게 되는 운명입니다. 또한 금여성을 지닌 사람은 인내심과 버티는 힘이 매우 뛰어나며, 성품이 인자하여 타인의 존경을 받습니다.",
+ "topics": [
+  "금전",
+  "연애·결혼",
+  "직장",
+  "성격·기질",
+  "명리 이론"
+ ],
+ "scope": "일반 원리",
+ "years": [],
+ "claims": [
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "금여성"
+    }
+   ],
+   "outcome": "버티면 하늘이 내린 큰 재물운을 받는다",
+   "tag": "큰 재물·부자",
+   "category": "금전",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "조금만 버티면 하늘이 내린 재물운을 반드시 받게 되는 행운의 길신이라고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "금여성"
+    }
+   ],
+   "outcome": "명예를 얻게 된다",
+   "tag": "명예·인정",
+   "category": "직장",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "금여성은 왕이 타는 수레로, 재물운뿐만 아니라 명예와 아름다운 배우자를 얻게 되는 운명이라고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "금여성"
+    }
+   ],
+   "outcome": "아름다운 배우자를 얻는다",
+   "tag": "결혼·배우자 인연",
+   "category": "연애·결혼",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "재물운뿐만 아니라 명예와 아름다운 배우자를 얻게 되는 운명이라고 합니다."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "금여성"
+    }
+   ],
+   "outcome": "인자한 성품으로 존경을 받는다",
+   "tag": "인간관계 원만",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "경향",
+   "time": "항상",
+   "advice": "",
+   "quote": "금여성을 가진 사람들은 공통적으로 고생은 하되 인자한 성격을 가져 사람들의 존경을 받는다고 하는데요."
+  },
+  {
+   "conditions": [
+    {
+     "type": "신살",
+     "value": "금여성"
+    }
+   ],
+   "outcome": "버티는 힘과 인내심이 대단하다",
+   "tag": "성실·책임감",
+   "category": "성격·기질",
+   "polarity": 1,
+   "certainty": "확언",
+   "time": "항상",
+   "advice": "",
+   "quote": "버티는 힘과 인내심 하나는 대단하다고 합니다."
+  }
+ ],
+ "insights": [
+  "금여성은 왕이 타는 수레를 뜻하는 길신으로, 초기 고생을 견뎌냈을 때 비로소 재물, 명예, 배우자 복으로 발현된다."
+ ],
+ "keywords": [
+  "금여성",
+  "길신",
+  "재물운",
+  "명예",
+  "배우자복",
+  "인내심",
+  "왕의수레"
+ ]
+}
